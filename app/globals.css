@@ -141,3 +141,10 @@
     @apply bg-background text-foreground w-full h-screen;
   }
 }
+
+.triggers {
+    -webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+}

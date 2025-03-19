@@ -1,7 +1,9 @@
-export const slides = [
+import { SliderCardProps } from "@/types";
+
+export const slides : SliderCardProps[] = [
     {
       id: 1,
-       triggerLabel: "Cardiac Sciences",
+       label: "Cardiac Sciences",
        specialties : [
       "Coronary Angiography",
       "Coronary Artery Bypass Grafting (CABG)",
@@ -21,7 +23,7 @@ export const slides = [
   },
     {
       id: 2,
-       triggerLabel: "Oncology",
+       label: "Oncology",
        specialties : [
           "Gynec Oncology",
           "Haemato oncology & BMT"
@@ -29,6 +31,26 @@ export const slides = [
     readMoreLink: "",
     findDoctorLink: "",
     description: "Synergy Super-Specialty Hospital and Cancer Institute offers cutting-edge oncology care, combining advanced diagnostics, personalized treatment plans, and state-of-the-art technology. Our expert team specializes in Gynec Oncology, Hemato-Oncology, and Bone Marrow Transplantation (BMT), ensuring comprehensive and compassionate cancer care. With a patient-centric approach, we strive to deliver the highest standards of excellence in cancer treatment and survivorship.",
+    imgSrc: "/oncology_2.jpg.webp"
+  },
+    {
+      id: 3,
+       label: "Neurosciences",
+       specialties : [
+        "PERIPHERAL NERVE SURGERY",
+        "CRANIOTOMY FOR TUMOR REMOVAL",
+        "DEEP BRAIN STIMULATION (DBS)",
+        "CYBERKNIFE",
+        "ROBOTIC NEUROREHABILITATION",
+        "EPILEPSY SURGERY",
+        "LUMBAR PUNCTURE (SPINAL TAP)",
+        "NEUROVASCULAR BYPASS SURGERY",
+        "BRAIN ANEURYSM REPAIR",
+        "NEURO NAVIGATION"
+    ],
+    readMoreLink: "",
+    findDoctorLink: "",
+    description: "Synergy Super-Specialty Hospital and Cancer Institute offers cutting-edge neurological care, providing advanced diagnostics, innovative surgical solutions, and comprehensive neurorehabilitation programs. Our expert team specializes in a wide range of neurological procedures, including Peripheral Nerve Surgery, Craniotomy for Tumor Removal, Deep Brain Stimulation (DBS), and CyberKnife treatments. With state-of-the-art technology and a compassionate approach, we are dedicated to enhancing the quality of life for patients with neurological conditions",
     imgSrc: "/oncology_2.jpg.webp"
   },
   ];

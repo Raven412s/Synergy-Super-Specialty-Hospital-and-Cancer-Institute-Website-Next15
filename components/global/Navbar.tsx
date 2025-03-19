@@ -44,7 +44,7 @@ export const Navbar = () => {
         {/* Center: Navigation Links (Hidden on Mobile) */}
         <div
           className={cn(
-            "hidden md:flex items-center space-x-6 uppercase font-semibold transition-all duration-300",
+            "hidden md:flex font-display items-center space-x-6 uppercase font-semibold transition-all duration-300",
             (isHovered || isScrolled) ? "text-primary" : "text-white"
           )}
         >
@@ -63,9 +63,9 @@ export const Navbar = () => {
           <Link href="/search">
             <Button
               size="icon"
-              className={cn("rounded-full size-9 bg-fuchsia-300 border  hover:bg-fuchsia-400 cursor-pointer", (isHovered || isScrolled) ? "text-primary bg-fuchsia-400 border-indigo-900" : "text-fuchsia-50 bg-transparent border-transparent")}
+              className={cn("rounded-full size-9 bg-fuchsia-300 border  hover:bg-fuchsia-400 cursor-pointer ", (isHovered || isScrolled) ? "text-primary bg-fuchsia-400 border-indigo-900" : "text-fuchsia-50 bg-transparent border-transparent")}
             >
-              <Search className="size-4" />
+              <Search className="size-4 text-primary" />
             </Button>
           </Link>
 
