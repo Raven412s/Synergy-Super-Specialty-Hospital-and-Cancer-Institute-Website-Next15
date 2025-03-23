@@ -1,12 +1,24 @@
-"use client";
-import { Menu, Search, X } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import { Button } from "../ui/button";
-import { cn } from "@/lib/utils";
+'use client'
 
-export const Navbar = () => {
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
+import { discoverSynergyPages, quickLinks } from "@/data"
+import { cn } from "@/lib/utils"
+import Image from "next/image"
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { Button } from "../ui/button"
+import {usePathname} from "next/navigation"
+
+export function Navbar() {
+ const pathname = usePathname()
+  const [activePageIndex, setActivePageIndex] = useState(0)
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,74 +42,143 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+const result:boolean = (isHovered || isScrolled || pathname !== "/")
+
+  const activeLinks = discoverSynergyPages[activePageIndex]?.links || []
 
   return (
-    <nav
-      className={cn(
-        "h-16 xl:h-20 fixed w-full top-0 z-50 transition-all duration-300",
-        (isHovered || isScrolled) ? "bg-fuchsia-200" : "bg-transparent"
+    <div     className={cn(
+        "h-16 xl:h-20 fixed w-full top-0 z-50  transition-all duration-300 m-0 p-0 space-y-0",
+        (isHovered || isScrolled) ? "bg-white shadow-md" : "bg-transparent"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="container mx-auto flex justify-center items-center h-full px-4">
-        {/* Center: Navigation Links (Hidden on Mobile) */}
-        <div
-          className={cn(
-            "hidden md:flex font-display items-center space-x-6 uppercase font-semibold transition-all duration-300",
-            (isHovered || isScrolled) ? "text-primary" : "text-white"
-          )}
-        >
-          <Link href="/discover">Discover Synergy</Link>
-          <Link href="/services">Medical Services</Link>
-          {/* Center: Logo & Brand */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Image src="/vercel.svg" alt="Logo" height={40} width={50} />
-          </Link>
-          <Link href="/health-library">Health Library</Link>
-          <Link href="/cancer-survivors">Cancer Survivors</Link>
-        </div>
-
-        {/* Right: Search & Mobile Menu Toggle */}
-        <div className="flex items-center space-x-4 absolute right-5">
-          <Link href="/search">
-            <Button
-              size="icon"
-              className={cn("rounded-full size-9 bg-fuchsia-300 border  hover:bg-fuchsia-400 cursor-pointer ", (isHovered || isScrolled) ? "text-primary bg-fuchsia-400 border-indigo-900" : "text-fuchsia-50 bg-transparent border-transparent")}
-            >
-              <Search className="size-4 text-primary" />
-            </Button>
-          </Link>
-
-          {/* Mobile Menu Button (Only Visible on Small Screens) */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="size-6" /> : <Menu className="size-6" />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Navigation Menu (Hidden on Desktop) */}
-      {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg py-4 px-6">
-          <div className="flex flex-col space-y-4 text-lg uppercase font-semibold text-primary">
-            <Link href="/discover" onClick={() => setIsOpen(false)}>
+      >
+      <NavigationMenu       className={cn(
+            "hidden md:flex h-full font-display items-center space-x-6  transition-all duration-300",
+            result ? "text-primary" : "text-white"
+          )}>
+        <NavigationMenuList className="w-full flex space-x-4">
+          {/* Discover Synergy Trigger */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="px-4 py-2  uppercase font-semibold font-display text-base">
               Discover Synergy
-            </Link>
-            <Link href="/services" onClick={() => setIsOpen(false)}>
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
+              <div className="flex w-full">
+                {/* LEFT: Page Names */}
+                <div className="w-1/4  p-4 flex flex-col space-y-2 items-start ">
+                  {discoverSynergyPages.map((page, index) => (
+                    <Button
+                    variant={"ghost"}
+                      key={index}
+                      onMouseEnter={() => setActivePageIndex(index)}
+                      className={`text-left hover:text-indigo-600 w-full items-start justify-start ${
+                        activePageIndex === index ? "text-indigo-600 font-semibold" : ""
+                      }`}
+                    >
+                      {page.name}
+                    </Button>
+                  ))}
+                </div>
+
+                {/* CENTER: Links Grid */}
+                <div className="w-2/4 border-x border-gray-300 p-4 flex flex-col gap-4">
+                  {activeLinks.map((link, index) => (
+                    <Link key={index} href={link.href} className="hover:underline">
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+
+                {/* RIGHT: Quick Links */}
+                <div className="w-1/4 p-4 space-y-4 bg-fuchsia-100">
+                  <h4 className="font-semibold text-gray-700">Quick Links</h4>
+                  {quickLinks.map((item, i) => (
+                    <div
+                      key={i}
+                      className="bg-indigo-100 px-4 py-2 rounded text-sm"
+                    >
+                      <div className="text-gray-500">{item.label}</div>
+                      <div className="font-medium">{item.value}</div>
+                    </div>
+                  ))}
+                  <Button
+                  variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full">
+                    Book Appointment <span>→</span>
+                  </Button>
+                  <Button
+                  variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full">
+                    Find Doctors <span>→</span>
+                  </Button>
+                  <Button
+                  variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full">
+                    Contact Us <span>→</span>
+                  </Button>
+                </div>
+              </div>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          {/* More menu triggers */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="px-4 py-2  uppercase font-semibold font-display text-base">
               Medical Services
-            </Link>
-            <Link href="/health-library" onClick={() => setIsOpen(false)}>
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
+                <div className="flex w-full">
+                    {/* LEFT: Page Names (e.g. departments, categories) */}
+                    <div className="w-1/4 border-r border-gray-300 p-4 flex flex-col space-y-2">
+                    {discoverSynergyPages.map((page, index) => (
+                        <Button
+                        variant={"ghost"}
+                        key={index}
+                        onMouseEnter={() => setActivePageIndex(index)}
+                        className={`text-left hover:text-indigo-600 ${
+                            activePageIndex === index ? "text-indigo-600 font-semibold" : ""
+                        }`}
+                        >
+                        {page.name}
+                        </Button>
+                    ))}
+                    </div>
+
+                    {/* CENTER: Links Grid */}
+                    <div className="w-3/4 p-4 flex flex-col gap-4">
+                    {activeLinks.map((link, index) => (
+                        <Link key={index} href={link.href} className="hover:underline">
+                        {link.label}
+                        </Link>
+                    ))}
+                    </div>
+                </div>
+                </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          {/* Center: Logo & Brand */}
+         <NavigationMenuLink href="/" className="w-[160px] h-[68px] !p-0 rounded-none  !m-0 ">
+            <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none  " />
+         </NavigationMenuLink>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="px-4 py-2  uppercase font-semibold font-display text-base">
               Health Library
-            </Link>
-            <Link href="/cancer-survivors" onClick={() => setIsOpen(false)}>
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
+              <p>Health Library content here</p>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="px-4 py-2  uppercase font-semibold font-display text-base">
               Cancer Survivors
-            </Link>
-          </div>
-        </div>
-      )}
-    </nav>
-  );
-};
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
+              <p>Cancer Survivors content here</p>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
+  )
+}

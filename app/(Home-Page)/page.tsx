@@ -1,14 +1,17 @@
+import { FloatingBarWrapper } from "@/components/global/FloatingBarWrapper";
+import PatientTestimonialMarquee from "@/components/global/PatientTestimonialMarquee";
+import FaqAccordion from "@/components/homepage/FaqAccordion";
 import NewsSlider from "@/components/homepage/NewsSlider";
 import SliderWithTriggers from "@/components/homepage/SliderWithTriggers";
-import { Button } from "@/components/ui/button";
-import { MoveRightIcon } from "lucide-react";
-import Link from "next/link";
+import TestimonialCard from "@/components/homepage/TestimonialCard";
+import { faqItems, testimonialsForMarquee } from "@/data";
+import { hospitalHighlights } from "./_data";
 
 export default function Home() {
   return (
     <main className="w-full">
       {/* Hero Section with Video */}
-      <section className="relative min-h-screen w-full">
+      <section id="banner" className="relative min-h-screen w-full">
         <video
           autoPlay
           loop
@@ -22,25 +25,27 @@ export default function Home() {
           {/* Fallback content for accessibility */}
           Your browser does not support the video tag. Please visit our website for more information.
         </video>
+        <FloatingBarWrapper   />
         {/* Scroll-to-next-section Button */}
         <div className="absolute bottom-5 w-full flex justify-center">
-          <a href="#about" className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+          <a href="#specialties" className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition">
             Explore More
           </a>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Excelent Specialties Section */}
       <section
-        id="about"
-        className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-5 lg:px-28 py-10 relative"
+        id="specialties"
+        className="min-h-[120vh] h-full w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-5 lg:px-28 py-10 relative flex items-center justify-center "
       >
-        {/* First Texts */}
-        <div className="space-y-4">
+   <div className="">
+         {/* First Texts */}
+         <div className="space-y-4">
           <h1 className="text-2xl lg:text-3xl font-display font-semibold">
             Discover Our Centres of Clinical Excellence
           </h1>
-          <p className="font-sans text-lg">
+          <p className="font-sans lg:text-lg text-base">
             At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare
             through our specialized centers of medical excellence. Our state-of-the-art facilities offer unparalleled
             expertise in various medical disciplines, setting new benchmarks in clinical outcomes globally.
@@ -51,27 +56,68 @@ export default function Home() {
         <div className="flex flex-col gap-5 items-center w-full h-auto mt-8">
           <SliderWithTriggers />
         </div>
+   </div>
       </section>
 
-      {/* Additional Section Placeholder */}
+      {/* Testimonial Cards */}
       <section
-        className="bg-gradient-to-b from-[#dceaff] to-indigo-200 min-h-screen px-5 lg:px-28 py-10"
+        id="specialties"
+        className=" min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-5 lg:px-28 py-10 relative flex items-center justify-center "
       >
-        <NewsSlider/>
-        {/* Add more content or features here */}
-        <div className="text-center">
-          <h2 className="text-2xl lg:text-4xl font-display font-semibold">
-            Unmatched Expertise, Compassionate Care
-          </h2>
-          <p className="font-sans text-lg mt-4">
-            Discover how Synergy Superspecialty Hospital is redefining healthcare with groundbreaking treatments and
-            patient-centered care.
+        <div className="space-y-5 lg:space-y-20 ">
+                    {/* First Texts */}
+        <div className="space-y-4 lg:space-y-8">
+          <h1 className="text-2xl lg:text-3xl font-display font-semibold">
+          Transforming Lives Through Healthcare Excellence
+          </h1>
+          <p className="font-sans lg:text-lg text-base">
+          Synergy Super-specialty Hospital and Cancer Institute, established in 2021, is committed to delivering exceptional healthcare services with a focus on cancer care. Located in Gorakhpur, Uttar Pradesh, our hospital offers state-of-the-art facilities and a comprehensive range of medical services to meet the diverse needs of our patients.
           </p>
-          <Button className="mt-6" size="lg">
-            Learn More <MoveRightIcon className="ml-2" />
-          </Button>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="flex  flex-wrap gap-5 lg:gap-7 items-center w-full h-auto mt-8 justify-center">
+            {hospitalHighlights.map((cardDetails, index)=>(
+                <TestimonialCard {...cardDetails} key={index} />
+            ))}
+        </div>
         </div>
       </section>
+
+      {/* News Section */}
+      <section
+        className=" w-full bg-gradient-to-b from-indigo-100 to-indigo-200  px-5 lg:px-28 py-10"
+      >
+        <NewsSlider/>
+      </section>
+
+     {/* Patient Speaks */}
+        <section
+            className=" w-full bg-gradient-to-b from-fuchsia-100 to-indigo-200 px-5 lg:px-28 py-10 space-y-4"
+        >
+            <h1 className="text-2xl lg:text-3xl font-display font-semibold">
+                See What Our Patient Say
+            </h1>
+
+            <PatientTestimonialMarquee marqueeArray={testimonialsForMarquee} />
+        </section>
+
+{/* Frequently asked questions */}
+<section className="w-full bg-gradient-to-t from-white from-60% to-100% to-indigo-200 px-5 lg:px-28 py-10">
+<div className="space-y-6 my-6">
+<h1 className="text-2xl lg:text-3xl font-display font-semibold">
+      Frequently Asked Questions
+    </h1>
+    <p className="text-slate-600 text-base lg:text-lg">
+      Find answers to common questions about our services, treatments, appointments, and patient care options to help you make informed health decisions.
+    </p>
+</div>
+<div >
+    <FaqAccordion items={faqItems} />
+</div>
+
+</section>
+
     </main>
   );
 }

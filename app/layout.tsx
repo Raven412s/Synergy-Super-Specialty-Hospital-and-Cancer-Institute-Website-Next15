@@ -27,11 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressContentEditableWarning suppressHydrationWarning>
       <body
-        suppressContentEditableWarning
-        suppressHydrationWarning
-        className={cn(nunito.variable, nunito_sans.variable)}
+        className={cn(nunito.variable, nunito_sans.variable, "")}
+        suppressContentEditableWarning suppressHydrationWarning
       >
         <NavAndFooterWrapper>
             <main className="min-h-screen ">

@@ -4,7 +4,7 @@ import { Footer } from '../global/Footer'
 
 export const NavAndFooterWrapper = ({children}:PropsWithChildren) => {
   return (
-    <div>
+    <div className='w-full'>
         <Navbar/>
         {children}
         <Footer/>

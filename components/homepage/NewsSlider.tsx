@@ -37,8 +37,8 @@ export default function NewsSlider() {
   };
 
   return (
-    <div className="relative w-full px-6 py-10">
-      <h2 className="text-3xl font-semibold text-primary text-pretty mb-6 font-display">What’s New At Synergy</h2>
+    <div className="relative w-full px-6 py-10 hide-scrollbar">
+      <h2 className="text-2xl lg:text-3xl font-semibold text-primary text-pretty lg:mb-6 md:mb-5 sm:mb-3 mb-1 font-display">What’s New At Synergy</h2>
 
       {/* Carousel */}
       <div className="relative flex items-center">
@@ -47,7 +47,7 @@ export default function NewsSlider() {
           onClick={() => scroll("left")}
           variant="outline"
           size="xl"
-          className="absolute size-12 !p-5 left-0 z-10 rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
+          className="absolute size-12 !p-5 left-0 z-10 hidden md:flex rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
         >
           <ChevronLeft className="size-6" />
         </Button>
@@ -55,12 +55,12 @@ export default function NewsSlider() {
         {/* Scrollable Container */}
         <div
           ref={carouselRef}
-          className="flex overflow-x-auto w-full py-3 space-x-4 scrollbar-hide snap-x snap-mandatory scroll-smooth triggers"
+          className="flex overflow-x-auto w-full py-3 space-x-4 scrollbar-hide snap-x snap-mandatory scroll-smooth hide-scrollbar"
         >
           {newsData.map((news, index) => (
             <motion.div
               key={index}
-              className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72 bg-blue-900 rounded-xl shadow-lg overflow-hidden relative snap-start"
+              className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72  rounded-xl overflow-hidden relative snap-start hide-scrollbar"
               whileHover={{ scale: 1.05 }}
             >
               <Image
@@ -70,7 +70,7 @@ export default function NewsSlider() {
                 layout="fill"
                 className="w-full h-60 object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-transparent p-4">
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/90 from-20% via-transparent to-transparent p-4">
                 <p className="text-white font-sans font-bold">Latest Update</p>
                 <h3 className="text-lg text-white font-sans font-semibold">{news.title}</h3>
               </div>
@@ -83,7 +83,7 @@ export default function NewsSlider() {
           onClick={() => scroll("right")}
           variant="outline"
           size="xl"
-          className="absolute size-12 !p-5 right-0 z-10 rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
+          className="absolute size-12 !p-5 right-0 z-10 hidden md:flex rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
         >
           <ChevronRight className="size-6" />
         </Button>

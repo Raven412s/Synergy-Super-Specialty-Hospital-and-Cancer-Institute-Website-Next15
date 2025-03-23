@@ -44,7 +44,6 @@
   --radius-xl: calc(var(--radius) + 4px);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
-
   @keyframes accordion-down {
     from {
       height: 0;
@@ -142,9 +141,38 @@
   }
 }
 
-.triggers {
-    -webkit-scrollbar {
-        display: none;
-      }
-      scrollbar-width: none;
+.hide-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: transparent transparent; /* Thumb and track color */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0; /* Adjust width as needed */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent; /* Scrollbar thumb color */
+    border-radius: 0;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: transparent; /* Darker on hover */
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Scrollbar track color */
+}
+
+button {
+    @apply hover:cursor-pointer
+}
+
+.shadow-blob {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.5) 0px -2px 6px 0px inset;
+}
+
+
+.shadow-expanded {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

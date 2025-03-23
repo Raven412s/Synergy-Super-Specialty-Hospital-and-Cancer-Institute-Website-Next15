@@ -41,7 +41,7 @@ export default function SliderWithTriggers() {
   return (
     <div className="w-full flex flex-col gap-5">
       {/* Trigger Buttons */}
-      <div className="flex overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0">
+      <div className="flex overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar">
         {slides.map((slide, index) => (
           <Button
             key={slide.id}
@@ -69,7 +69,7 @@ export default function SliderWithTriggers() {
       {/* Slider */}
       <div className="relative flex items-center justify-center w-full overflow-hidden">
 
-        <div className="w-full flex justify-center items-center overflow-hidden">
+        <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
           <AnimatePresence mode="wait">
             {slides.map((slide, index) =>
               index === currentIndex ? (
@@ -125,14 +125,14 @@ const SliderCard = ({
   return (
     <Card
       className={cn(
-        "flex flex-col md:flex-row rounded-2xl overflow-hidden p-6 shadow-lg bg-white min-h-[350px] w-full border border-white hover:border-blue-950 relative",
+        "flex flex-col md:flex-row rounded-2xl overflow-hidden p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg bg-white min-h-[350px] w-full border border-white hover:border-blue-950 relative",
         id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       )}
       onMouseEnter={() => setCardHovered(true)}
       onMouseLeave={() => setCardHovered(false)}
     >
-      <div className="md:w-2/5 w-full flex justify-center items-center">
-        <div className="w-full md:w-[90%] overflow-hidden rounded-4xl">
+      <div className="md:w-2/5 w-full flex justify-center items-center ">
+        <div className="w-full md:w-[90%] overflow-hidden xl:rounded-4xl lg:rounded-3xl md:rounded-2xl sm:rounded-xl rounded-lg">
           {imgSrc && (
             <Image
               src={imgSrc}
@@ -159,22 +159,20 @@ const SliderCard = ({
         </CardHeader>
         <CardContent className="w-full">
                     <p className="font-medium text-base">Top Specialities & Procedures</p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 py-4">
                         {(showAll ? specialties : specialties.slice(0, 2)).map((specialty, index) => (
-                            <Badge key={index} className="bg-transparent border border-fuchsia-100 text-fuchsia-400 text-sm">
+                            <Badge key={index} className="bg-transparent border border-fuchsia-100 text-fuchsia-400 text-xs">
                                 {specialty}
                             </Badge>
                         ))}
                         {specialties.length > 2 && (
-                            <Button
-                                variant="outline"
-                                size="default"
-                                className="rounded-md flex items-center border-fuchsia-100 text-fuchsia-400 hover:bg-transparent text-sm"
+                            <Badge
+                                className="bg-transparent border border-fuchsia-100 text-fuchsia-400 text-xs cursor-pointer"
                                 onClick={() => setShowAll(!showAll)}
                             >
                                 {showAll ? <MinusIcon className="size-3" /> : <><PlusIcon className="size-3 mr-1" />{specialties.length - 2} </>}
                                 {showAll ? "Less" : "More"}
-                            </Button>
+                            </Badge>
                         )}
                     </div>
                 </CardContent>
@@ -182,10 +180,10 @@ const SliderCard = ({
             <Separator className="bg-neutral-300 "/>
       <div className="flex flex-row gap-4">
       <Link href={findDoctorLink || "#"}>
-            <Button variant={"outline"} size={"xl"} className="rounded-full py-2 px-4 lg:px-8 lg:py-4 lg:text-lg hover:bg-fuchsia-500">Find Doctor</Button>
+            <Button variant={"outline"} className="rounded-full py-2 px-4 lg:px-8 lg:py-4 lg:text-lg hover:bg-fuchsia-500">Find Doctor</Button>
           </Link>
           <Link href={readMoreLink || "#"}>
-            <Button variant={"outline"} size={"xl"} className="rounded-full py-2 px-4 lg:px-8 lg:py-4 lg:text-lg hover:bg-indigo-800">Explore More</Button>
+            <Button variant={"outline"}  className="rounded-full py-2 px-4 lg:px-8 lg:py-4 lg:text-lg hover:bg-indigo-800">Explore More</Button>
           </Link>
       </div>
         </CardFooter>
