@@ -268,6 +268,7 @@ export function Navbar() {
                               {menuItems.map((item, index) =>
                                 item.pages.map((page) =>
                                   page.links.map((link, index) => (
+                                    <SheetClose asChild>
                                     <Link
                                       key={index}
                                       href={link.href}
@@ -275,6 +276,7 @@ export function Navbar() {
                                     >
                                       {link.label}
                                     </Link>
+                                    </SheetClose>
                                   )),
                                 ),
                               )}
