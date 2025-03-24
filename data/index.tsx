@@ -1,6 +1,13 @@
-import { ActionItem, MenuItemProps, NavigationMenuStructureProps, TestimonialItem } from "@/types";
+import {DrAlokTiwari} from "@/components/Modules/leadership/DrAlokTiwari";
+import { DrAnjaliJain } from "@/components/Modules/leadership/DrAnjaliJain";
+import { DrSaurabhMishra } from "@/components/Modules/leadership/DrSaurabhMishra";
+import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare";
+import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities";
+import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic";
+import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion";
+import {MedicalOncology} from "@/components/Modules/services/MedicalOncology";
+import { ActionItem, MenuItemProps, TestimonialItem } from "@/types";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
-
 export const menuItems: MenuItemProps[] = [
     {
       label: "discover synergy",
@@ -133,14 +140,11 @@ export const menuItems: MenuItemProps[] = [
       ],
     },
   ];
-
-
 export  const quickLinks = [
     { label: "Emergency", value: "1066" },
     { label: "Global Helpline", value: "+91 4043441066" },
     { label: "Support", value: "1800-500-1066" },
   ]
-
   export const testimonialsForMarquee: TestimonialItem[] = [
     {
       type: "written",
@@ -239,8 +243,6 @@ export  const quickLinks = [
       videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
     },
   ];
-
-
   export const faqItems = [
     {
       question: "How can I book an appointment at Synergy Hospital?",
@@ -303,14 +305,12 @@ export  const quickLinks = [
         "We offer a wide range of specialties including Cardiology, Neurology, Orthopedics, Pediatrics, Oncology, Gynecology, and many more.",
     }
   ];
-
 export const actions: ActionItem[] = [
     { icon: <FaUserMd className="size-6" />, label: "Book Appointment", onClick: ()=>{}, className: "rounded-l-xl rounded-r-none border-r-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
     { icon: <FaHospital className="size-6" />, label: "Hospitals", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
     { icon: <FaPhone className="size-6" />, label: "Call Us", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
     { icon: <FaSearch className="size-6" />, label: "Search", onClick: ()=>{}, className: "rounded-r-xl rounded-l-none border-l-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
   ];
-
   export const excellenceItems = [
     {
       question: "01. Quality and Patient Centricity",
@@ -333,3 +333,21 @@ export const actions: ActionItem[] = [
       answer: "SSSHCI integrates the latest in oncology—like targeted therapy, hormonal therapy, and day-care procedures—ensuring our patients benefit from globally recognized treatment protocols and research-backed practices."
     }
   ];
+
+  export const LeadershipMap = {
+    "Dr-Alok-Tiwari": <DrAlokTiwari />,
+    "Dr-Anjali-Jain": <DrAnjaliJain />,
+    "Dr-Saurabh-Mishra": <DrSaurabhMishra />
+  };
+
+  export const ServicesMap = {
+    "medical-oncology": <MedicalOncology />,
+    // Add others
+  };
+
+  export const PatientCareMap = {
+    emergency: <EmergencyCare />,
+    "second-opinion" : <SecondOpinion />,
+    "in-patient" : <InPatientFacilities />,
+    "out-patient" : <OutPatientClinic />,
+  };
