@@ -12,7 +12,7 @@ import { discoverSynergyPages, menuItems, quickLinks } from "@/data";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
 import {
@@ -74,23 +74,27 @@ export function Navbar() {
           result ? "text-primary" : "text-white",
         )}
       >
-        <NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
-          {/* Discover Synergy Trigger */}
-          <NavigationMenuItem className="">
-            <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2  uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
-              Discover Synergy
-            </NavigationMenuTrigger>
-            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
-              <div className="flex w-full">
+<NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
+  {menuItems.map((item, index) => (
+    <React.Fragment key={item.label}>
+      <NavigationMenuItem>
+        <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
+          {item.label}
+        </NavigationMenuTrigger>
+
+        <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
+          <div className="flex w-full">
+            {item.pages[0]?.name && (
+              <>
                 {/* LEFT: Page Names */}
-                <div className="w-1/4  p-4 flex flex-col space-y-2 items-start ">
-                  {discoverSynergyPages.map((page, index) => (
+                <div className="w-1/4 p-4 flex flex-col space-y-2 items-start">
+                  {item.pages.map((page, pageIndex) => (
                     <Button
+                      key={pageIndex}
                       variant={"ghost"}
-                      key={index}
-                      onMouseEnter={() => setActivePageIndex(index)}
+                      onMouseEnter={() => setActivePageIndex(pageIndex)}
                       className={`text-left hover:text-indigo-600 w-full items-start justify-start ${
-                        activePageIndex === index
+                        activePageIndex === pageIndex
                           ? "text-indigo-600 font-semibold"
                           : ""
                       }`}
@@ -100,127 +104,67 @@ export function Navbar() {
                   ))}
                 </div>
 
-                {/* CENTER: Links Grid */}
+                {/* CENTER: Links */}
                 <div className="w-2/4 border-x border-gray-300 p-4 flex flex-col gap-4">
-                  {activeLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      href={link.href}
-                      className="hover:underline"
-                    >
+                  {item.pages[activePageIndex]?.links.map((link, linkIndex) => (
+                    <Link key={linkIndex} href={link.href} className="hover:underline">
                       {link.label}
                     </Link>
                   ))}
                 </div>
 
-                {/* RIGHT: Quick Links */}
-                <div className="w-1/4 p-4 space-y-4 bg-fuchsia-100">
-                  <h4 className="font-semibold text-gray-700">Quick Links</h4>
-                  {quickLinks.map((item, i) => (
-                    <div
-                      key={i}
-                      className="bg-indigo-100 px-4 py-2 rounded text-sm"
-                    >
-                      <div className="text-gray-500">{item.label}</div>
-                      <div className="font-medium">{item.value}</div>
-                    </div>
-                  ))}
-                  <Button
-                    variant={"link"}
-                    className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full"
-                  >
-                    Book Appointment <span>→</span>
-                  </Button>
-                  <Button
-                    variant={"link"}
-                    className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full"
-                  >
-                    Find Doctors <span>→</span>
-                  </Button>
-                  <Button
-                    variant={"link"}
-                    className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full"
-                  >
-                    Contact Us <span>→</span>
-                  </Button>
-                </div>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
-          {/* More menu triggers */}
-          <NavigationMenuItem className="">
-            <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2  uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
-              Medical Services
-            </NavigationMenuTrigger>
-            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
-              <div className="flex w-full">
-                {/* LEFT: Page Names (e.g. departments, categories) */}
-                <div className="w-1/4 border-r border-gray-300 p-4 flex flex-col space-y-2">
-                  {discoverSynergyPages.map((page, index) => (
-                    <Button
-                      variant={"ghost"}
-                      key={index}
-                      onMouseEnter={() => setActivePageIndex(index)}
-                      className={`text-left hover:text-indigo-600 ${
-                        activePageIndex === index
-                          ? "text-indigo-600 font-semibold"
-                          : ""
-                      }`}
-                    >
-                      {page.name}
+                {/* RIGHT: Quick Links for first menu only */}
+                {index === 0 && (
+                  <div className="w-1/4 p-4 space-y-4 bg-fuchsia-100">
+                    <h4 className="font-semibold text-gray-700">Quick Links</h4>
+                    {quickLinks.map((item, i) => (
+                      <div key={i} className="bg-indigo-100 px-4 py-2 rounded text-sm">
+                        <div className="text-gray-500">{item.label}</div>
+                        <div className="font-medium">{item.value}</div>
+                      </div>
+                    ))}
+                    <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between">
+                      Book Appointment <span>→</span>
                     </Button>
-                  ))}
-                </div>
+                    <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between">
+                      Find Doctors <span>→</span>
+                    </Button>
+                    <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between">
+                      Contact Us <span>→</span>
+                    </Button>
+                  </div>
+                )}
+              </>
+            )}
 
-                {/* CENTER: Links Grid */}
-                <div className="w-3/4 p-4 flex flex-col gap-4">
-                  {activeLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      href={link.href}
-                      className="hover:underline"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
+            {!item.pages[0]?.name && (
+              <div className="w-full p-4">
+                <p>{item.label} content here</p>
               </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+            )}
+          </div>
+        </NavigationMenuContent>
+      </NavigationMenuItem>
 
-          {/* Center: Logo & Brand */}
-          <NavigationMenuLink
-            href="/"
-            className="w-[160px] h-[68px] py-2 xl:!p-0  rounded-none  !m-0 "
-          >
-            <Image
-              src="/LOGO.svg"
-              alt="Logo"
-              height={40}
-              width={50}
-              className="size-full rounded-none  "
-            />
-          </NavigationMenuLink>
+      {/* Insert the logo after the second item (index === 1) */}
+      {index === 1 && (
+        <NavigationMenuLink
+          href="/"
+          className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0"
+        >
+          <Image
+            src="/LOGO.svg"
+            alt="Logo"
+            height={40}
+            width={50}
+            className="size-full rounded-none"
+          />
+        </NavigationMenuLink>
+      )}
+    </React.Fragment>
+  ))}
+</NavigationMenuList>
 
-          <NavigationMenuItem className="">
-            <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2  uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
-              Health Library
-            </NavigationMenuTrigger>
-            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
-              <p>Health Library content here</p>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem className="">
-            <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2  uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
-              Cancer Survivors
-            </NavigationMenuTrigger>
-            <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
-              <p>Cancer Survivors content here</p>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenuList>
       </NavigationMenu>
 
       {/* Mobile Menu/Navbar */}
@@ -285,29 +229,41 @@ export function Navbar() {
                                 variant={"ghost"}
                                 key={index}
                                 onMouseEnter={() => setActivePageIndex(index)}
-                                className={`text-left hover:text-indigo-600 w-max items-start justify-start ${
-                                  activePageIndex === index
-                                    ? "text-indigo-600 font-semibold"
-                                    : ""
-                                }`}
+                                className={cn("text-left hover:text-indigo-600 w-max items-start justify-start", { "text-indigo-600 font-semibold": activePageIndex === index })}
                               >
                                 {page.name}
                               </Button>
                             ))}
                           </div>
                           {/* CENTER: Links Grid */}
-                          <div className="w-full p-4 flex flex-col gap-2">
-                            {activeLinks.map((link, index) => (
-                              <SheetClose key={index} asChild>
-                                <Link
-                                  href={link.href}
-                                  className="hover:underline"
+                          <ScrollArea className="h-[calc(100vh-4rem)] pr-4">
+                            <div className="flex flex-col space-y-4 mt-4">
+                              {menuItems.map((item, index) =>
+                                item.pages.map((page) =>
+                                  page.links.map((link, index) => (
+                                    <Link
+                                      key={index}
+                                      href={link.href}
+                                      className="text-lg font-medium text-gray-800 hover:text-indigo-600"
+                                    >
+                                      {link.label}
+                                    </Link>
+                                  )),
+                                ),
+                              )}
+                              <div className="pt-4 border-t">
+                                <Button variant="default" className="w-full">
+                                  Book Appointment
+                                </Button>
+                                <Button
+                                  variant="outline"
+                                  className="w-full mt-2"
                                 >
-                                  {link.label}
-                                </Link>
-                              </SheetClose>
-                            ))}
-                          </div>
+                                  Contact Us
+                                </Button>
+                              </div>
+                            </div>
+                          </ScrollArea>
                         </div>
                       </div>
                     </SheetContent>
