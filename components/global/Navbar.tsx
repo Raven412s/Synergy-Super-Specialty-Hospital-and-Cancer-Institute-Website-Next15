@@ -55,8 +55,6 @@ export function Navbar() {
   }, []);
   const result: boolean = isHovered || isScrolled || pathname !== "/";
 
-  const activeLinks = discoverSynergyPages[activePageIndex]?.links || [];
-
   return (
     <div
       className={cn(
@@ -264,7 +262,7 @@ export function Navbar() {
                           {/* CENTER: Links Grid */}
                           <ScrollArea className="h-[calc(100vh-4rem)] pr-4">
                             <div className="flex flex-col space-y-4 mt-4">
-                              {menuItems.map((item, index) =>
+                              {menuItems.map((item) =>
                                 item.pages.map((page) =>
                                   page.links.map((link, index) => (
                                     <SheetClose asChild>
