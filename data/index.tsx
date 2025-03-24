@@ -1,5 +1,77 @@
-import { ActionItem, NavigationMenuStructureProps, TestimonialItem } from "@/types";
+import { ActionItem, MenuItemProps, NavigationMenuStructureProps, TestimonialItem } from "@/types";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
+
+export const menuItems: MenuItemProps[] = [
+    {
+        label: "discover synergy",
+        pages: [
+            {
+               name: "synergy story",
+               links: [
+                {label: "Overview", href: "/the-synergy-story#Overview"},
+                {label: "Our Vision",  href: "/the-synergy-story#Our-Vision"},
+                {label: "Our Mission",  href: "/the-synergy-story#Our-Mission"},
+                {label: "Leadership",  href: "/the-synergy-story#Leadership"},
+                {label: "Awards and Accolades",  href: "/the-synergy-story#Awards-and-Accolades"},
+                {label: "Achievements and Milestones",  href: "/the-synergy-story#Achievements-and-Milestones"},
+                {label: "A Day at Synergy",  href: "/the-synergy-story#A-Day-at-Synergy"}
+              ]
+            },
+            {
+               name: "leadership",
+               links: [
+                {label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari"},
+                {label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain"},
+                {label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra"},
+              ]
+            },
+            {
+               name: "media center",
+               links: [
+                {label: "Synergy in the News", href: "/media-center#synergy-in-the-news"},
+                {label: "Press Releases", href: "/media-center#press-releases"},
+                {label: "Events", href: "/media-center#events"},
+                {label: "Media Gallery", href: "/media-center#media-gallery"},
+                {label: "Media Contacts", href: "/media-center#media-contacts"},
+              ]
+            },
+        ]
+    },
+    {
+        label: "medical services",
+        pages: [
+            {
+               name: "",
+               links: [
+                {label: "", href: ""}
+               ]
+            }
+        ]
+    },
+    {
+        label: "health library",
+        pages: [
+            {
+               name: "",
+               links: [
+                {label: "", href: ""}
+               ]
+            }
+        ]
+    },
+    {
+        label: "cancer survivors",
+        pages: [
+            {
+               name: "",
+               links: [
+                {label: "", href: ""}
+               ]
+            }
+        ]
+    }
+]
+
 export const discoverSynergyPages: NavigationMenuStructureProps[] = [
     {
       name: "The Synergy Story",

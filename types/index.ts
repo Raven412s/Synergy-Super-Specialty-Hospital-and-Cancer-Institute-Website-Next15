@@ -24,6 +24,11 @@ export interface TestimonialCardProps {
     titleText: string
 }
 
+export interface MenuItemProps {
+    label: string,
+    pages: NavigationMenuStructureProps[]
+}
+
 export interface NavigationMenuStructureProps {
     name: string;
     links: link []
