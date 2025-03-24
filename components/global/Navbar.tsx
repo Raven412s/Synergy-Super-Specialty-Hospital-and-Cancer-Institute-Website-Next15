@@ -71,8 +71,8 @@ export function Navbar() {
                   {item.label}
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
-                  <div className="flex w-full">
+                <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none min-h-[428px] h-full">
+                  <div className="flex w-full min-h-full ">
                     {item.pages[0]?.name && (
                       <>
                         {/* LEFT: Page Names */}
@@ -88,7 +88,7 @@ export function Navbar() {
                         <div className="w-2/4 border-x border-gray-300 p-4 flex flex-col gap-4">
                           {item.pages[activePageIndex]?.links.map(
                             (link, linkIndex) => (
-                              <Link key={linkIndex} href={link.href} className="hover:underline" >
+                              <Link key={linkIndex} href={link.href} className="hover:underline w-max" >
                                 {link.label}
                               </Link>
                             ),
@@ -143,7 +143,7 @@ export function Navbar() {
         </NavigationMenuList>
       </NavigationMenu>
 
-      {/* Mobile Menu/Navbar */}
+
 {/* Mobile Menu/Navbar */}
 <div className="w-full md:hidden flex h-full relative">
   <Link href={"/"} className="w-[160px] h-[68px] !py-2 rounded-none !m-0">

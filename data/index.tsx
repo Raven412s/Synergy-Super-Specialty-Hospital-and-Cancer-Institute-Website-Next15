@@ -1,3 +1,21 @@
+import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns";
+import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer";
+import { PatientTestimonials } from "@/components/Modules/cancer-survivors/stories-of-hope/PatientTestimonials";
+import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of-hope/VictoryStories";
+import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-hope/VideoMessages";
+import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth";
+import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms";
+import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics";
+import { Faqs } from "@/components/Modules/health-library/faqs/Faqs";
+import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention";
+import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging";
+import { NutritionAndWellness } from "@/components/Modules/health-library/patient-education/NutritionAndWellness";
+import { TreatmentOptions } from "@/components/Modules/health-library/patient-education/TreatmentOptions";
+import { BloodCancer } from "@/components/Modules/health-library/types-of-cancer/BloodCancer";
+import { BreastCancer } from "@/components/Modules/health-library/types-of-cancer/BreastCancer";
+import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer";
+import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer";
+import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer";
 import {DrAlokTiwari} from "@/components/Modules/leadership/DrAlokTiwari";
 import { DrAnjaliJain } from "@/components/Modules/leadership/DrAnjaliJain";
 import { DrSaurabhMishra } from "@/components/Modules/leadership/DrSaurabhMishra";
@@ -5,7 +23,15 @@ import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare";
 import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities";
 import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic";
 import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion";
-import {MedicalOncology} from "@/components/Modules/services/MedicalOncology";
+import { HematoOncology } from "@/components/Modules/services/our-specialities/HematoOncology";
+import {MedicalOncology} from "@/components/Modules/services/our-specialities/MedicalOncology";
+import { PalliativeCare } from "@/components/Modules/services/our-specialities/PalliativeCare";
+import { RadiationOncology } from "@/components/Modules/services/our-specialities/RadiationOncology";
+import { SurgicalOncology } from "@/components/Modules/services/our-specialities/SurgicalOncology";
+import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging";
+import { Laboratory } from "@/components/Modules/services/support-services/Laboratory";
+import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy";
+import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy";
 import { ActionItem, MenuItemProps, TestimonialItem } from "@/types";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
 export const menuItems: MenuItemProps[] = [
@@ -342,7 +368,14 @@ export const actions: ActionItem[] = [
 
   export const ServicesMap = {
     "medical-oncology": <MedicalOncology />,
-    // Add others
+    "radiation-oncology": <RadiationOncology />,
+    "surgical-oncology": <SurgicalOncology />,
+    "hemato-oncology": <HematoOncology />,
+    "palliative-care": <PalliativeCare />,
+    "diagnostic-imaging": <DiagnosticImaging />,
+    "laboratory": <Laboratory />,
+    "pharmacy": <Pharmacy />,
+    "physiotherapy": <Physiotherapy />,
   };
 
   export const PatientCareMap = {
@@ -350,4 +383,28 @@ export const actions: ActionItem[] = [
     "second-opinion" : <SecondOpinion />,
     "in-patient" : <InPatientFacilities />,
     "out-patient" : <OutPatientClinic />,
+  };
+
+  export const HealthLibraryMap = {
+    "breast-cancer": <BreastCancer />,
+    "prostate-cancer" : <ProstateCancer />,
+    "lung-cancer" : <LungCancer />,
+    "cervical-cancer" : <CervicalCancer />,
+    "blood-cancer" : <BloodCancer />,
+    "prevention" : <CancerPrevention />,
+    "diagnosis" : <DiagnosisAndStaging />,
+    "treatments" : <TreatmentOptions />,
+    "nutrition" : <NutritionAndWellness />,
+    "faqs": <Faqs/>
+  };
+
+  export const CancerSurvivorsMap = {
+    testimonials: <PatientTestimonials />,
+    "victory-stories" : <VictoryStories />,
+    videos : <VideoMessages />,
+    counseling : <CounselingAndMentalHealth />,
+    rehab : <RehabilationPrograms />,
+    clinics : <SurvivorshipClinics />,
+    volunteer : <Volunteer />,
+    awareness : <AwarenessCampaigns />,
   };
