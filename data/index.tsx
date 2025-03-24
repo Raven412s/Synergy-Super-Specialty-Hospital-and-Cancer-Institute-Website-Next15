@@ -208,3 +208,26 @@ export const actions: ActionItem[] = [
     { icon: <FaPhone className="size-6" />, label: "Call Us", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
     { icon: <FaSearch className="size-6" />, label: "Search", onClick: ()=>{}, className: "rounded-r-xl rounded-l-none border-l-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
   ];
+
+  export const excellenceItems = [
+    {
+      question: "01. Quality and Patient Centricity",
+      answer: "At SSSHCI, we place patients at the heart of everything we do. Our team works with compassion and professionalism to ensure each patient receives personalized, evidence-based cancer care with dignity and respect."
+    },
+    {
+      question: "02. Multidisciplinary Centres of Excellence",
+      answer: "Our hospital houses advanced facilities for surgery, chemotherapy, immunotherapy, palliative care, and diagnostics—all under one roof. A unified approach ensures seamless coordination and holistic treatment planning."
+    },
+    {
+      question: "03. Affordable and Accessible Care",
+      answer: "We believe that quality cancer treatment should be accessible to all. Located in Gorakhpur, we serve patients from Eastern Uttar Pradesh, Western Bihar, and Southern Nepal with cost-effective yet advanced medical care."
+    },
+    {
+      question: "04. Compassionate Team and Environment",
+      answer: "Driven by our SYNERGY values, our dedicated medical professionals create a peaceful, respectful, and healing environment that supports patients and their families through every step of their journey."
+    },
+    {
+      question: "05. Innovation and Advanced Therapies",
+      answer: "SSSHCI integrates the latest in oncology—like targeted therapy, hormonal therapy, and day-care procedures—ensuring our patients benefit from globally recognized treatment protocols and research-backed practices."
+    }
+  ];

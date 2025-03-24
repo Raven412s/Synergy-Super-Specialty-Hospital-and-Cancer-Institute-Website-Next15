@@ -7,7 +7,7 @@ export default function Layout({
 }) {
   return (
 
-            <main suppressHydrationWarning suppressContentEditableWarning className=" pt-20 lg:pt-24 ">
+            <main suppressHydrationWarning suppressContentEditableWarning className=" pt-20 ">
                 {children}
             </main>
 

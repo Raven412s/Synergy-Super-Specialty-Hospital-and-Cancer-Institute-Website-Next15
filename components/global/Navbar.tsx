@@ -19,7 +19,7 @@ import {usePathname} from "next/navigation"
 export function Navbar() {
  const pathname = usePathname()
   const [activePageIndex, setActivePageIndex] = useState(0)
-  const [isOpen, setIsOpen] = useState(false);
+//   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -49,7 +49,7 @@ const result:boolean = (isHovered || isScrolled || pathname !== "/")
   return (
     <div     className={cn(
         "h-16 xl:h-20 fixed w-full top-0 z-50  transition-all duration-300 m-0 p-0 space-y-0",
-        (isHovered || isScrolled) ? "bg-white shadow-md" : "bg-transparent"
+        result ? "bg-white shadow-md" : "bg-transparent"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

@@ -174,5 +174,9 @@ button {
 
 
 .shadow-expanded {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.text-heading {
+    @apply text-2xl lg:text-3xl font-display font-semibold text-primary;
 }

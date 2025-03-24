@@ -42,7 +42,7 @@ export default function Home() {
    <div className="">
          {/* First Texts */}
          <div className="space-y-4">
-          <h1 className="text-2xl lg:text-3xl font-display font-semibold">
+          <h1 className="text-heading">
             Discover Our Centres of Clinical Excellence
           </h1>
           <p className="font-sans lg:text-lg text-base">
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="space-y-5 lg:space-y-20 ">
                     {/* First Texts */}
         <div className="space-y-4 lg:space-y-8">
-          <h1 className="text-2xl lg:text-3xl font-display font-semibold">
+          <h1 className="text-heading">
           Transforming Lives Through Healthcare Excellence
           </h1>
           <p className="font-sans lg:text-lg text-base">
@@ -95,7 +95,7 @@ export default function Home() {
         <section
             className=" w-full bg-gradient-to-b from-fuchsia-100 to-indigo-200 px-5 lg:px-28 py-10 space-y-4"
         >
-            <h1 className="text-2xl lg:text-3xl font-display font-semibold">
+            <h1 className="text-heading">
                 See What Our Patient Say
             </h1>
 
@@ -105,7 +105,7 @@ export default function Home() {
 {/* Frequently asked questions */}
 <section className="w-full bg-gradient-to-t from-white from-60% to-100% to-indigo-200 px-5 lg:px-28 py-10">
 <div className="space-y-6 my-6">
-<h1 className="text-2xl lg:text-3xl font-display font-semibold">
+<h1 className="text-heading">
       Frequently Asked Questions
     </h1>
     <p className="text-slate-600 text-base lg:text-lg">
