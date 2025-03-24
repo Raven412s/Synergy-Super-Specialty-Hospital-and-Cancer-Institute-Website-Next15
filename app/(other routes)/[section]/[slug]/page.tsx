@@ -1,8 +1,68 @@
 // app/[section]/[slug]/page.tsx
 
-import { CancerSurvivorsMap, HealthLibraryMap, LeadershipMap, PatientCareMap, ServicesMap } from "@/data";
-import { notFound } from "next/navigation";
-import { JSX } from "react";
+import {
+    CancerSurvivorsMap,
+    HealthLibraryMap,
+    LeadershipMap,
+    PatientCareMap,
+    ServicesMap,
+  } from "@/data";
+  import { notFound } from "next/navigation";
+  import { Metadata } from "next";
+  import { JSX } from "react";
+import { seoData } from "@/data/seoData";
+
+
+
+  export async function generateMetadata(props: {
+    params: Promise<{ section: string; slug: string }>;
+  }): Promise<Metadata> {
+    const { section, slug } = await props.params;
+
+    const meta = seoData[section]?.[slug];
+
+    if (!meta) {
+      return {
+        title: "Page Not Found",
+        description: "This page does not exist.",
+      };
+    }
+
+    return {
+      title: meta.title,
+      description: meta.description,
+      keywords: meta.keywords,
+      openGraph: {
+        title: meta.title,
+        description: meta.description,
+        type: "website",
+        url: `https://yourdomain.com/${section}/${slug}`,
+        images: [
+          {
+            url: meta.ogImage,
+            width: 1200,
+            height: 630,
+            alt: meta.title,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: meta.title,
+        description: meta.description,
+        images: [meta.ogImage],
+      },
+      robots: {
+        index: true,
+        follow: true,
+      },
+      icons: {
+        icon: "/favicon.ico",
+      },
+    };
+  }
+
+
 
 export default async function DynamicPage(props: {
     params: Promise<{ section: string; slug: string }>;
