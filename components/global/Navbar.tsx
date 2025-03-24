@@ -32,6 +32,9 @@ export function Navbar() {
   const [activePageIndex, setActivePageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [outerOpen, setOuterOpen] = useState(false);
+  const [innerOpen, setInnerOpen] = useState(false);
+
 
   // Function to handle scroll events
   const handleScroll = () => {
@@ -200,9 +203,9 @@ export function Navbar() {
           />
         </Link>
         <div className="  absolute right-10 top-1/2 -translate-y-1/2">
-          <Sheet>
+          <Sheet open={outerOpen} onOpenChange={setOuterOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost">
+              <Button variant="ghost" onClick={() => setOuterOpen(true)}>
                 <MenuIcon
                   className={cn(result ? "text-primary" : "text-background")}
                 />
@@ -219,11 +222,19 @@ export function Navbar() {
               </SheetHeader>
               <div className="px-4 h-full flex flex-col space-y-2">
                 {menuItems.map((item) => (
-                  <Sheet key={item.label}>
+                  <Sheet
+                  key={item.label}
+                  open={innerOpen}
+                  onOpenChange={(val) => {
+                    setInnerOpen(val);
+                    if (!val) setOuterOpen(false); // Close outer when inner closes
+                  }}
+                  >
                     <SheetTrigger asChild>
                       <Button
                         variant="ghost"
                         className="uppercase text-primary font-display hover:text-primary w-max"
+                        onClick={() => setInnerOpen(true)}
                       >
                         {item.label}
                       </Button>
@@ -244,7 +255,7 @@ export function Navbar() {
                           <div className="w-full  p-4 flex flex-col space-x-2 items-start ">
                             {item.pages.map((page, index) => (
                               <Button
-                                variant={"ghost"}
+                                variant={"default"}
                                 key={index}
                                 onMouseEnter={() => setActivePageIndex(index)}
                                 className={cn(
@@ -260,34 +271,23 @@ export function Navbar() {
                             ))}
                           </div>
                           {/* CENTER: Links Grid */}
-                          <ScrollArea className="h-[calc(100vh-4rem)] pr-4">
+                          <ScrollArea className="h-[calc(100vh-4rem)] w-full pr-4">
                             <div className="flex flex-col space-y-4 mt-4">
                               {menuItems.map((item) =>
-                                item.pages.map((page) =>
-                                  page.links.map((link, index) => (
-                                    <SheetClose asChild>
+                                item.pages[activePageIndex]?.links.map((link,index) => (
+                                    <SheetClose key={index} asChild>
                                     <Link
-                                      key={index}
                                       href={link.href}
-                                      className="text-lg font-medium text-gray-800 hover:text-indigo-600"
+                                      className="text-base    hover:text-fuchsia-600"
+                                      onClick={() => {
+                                        setInnerOpen(false);
+                                        setOuterOpen(false);
+                                      }}
                                     >
                                       {link.label}
                                     </Link>
                                     </SheetClose>
-                                  )),
-                                ),
-                              )}
-                              <div className="pt-4 border-t">
-                                <Button variant="default" className="w-full">
-                                  Book Appointment
-                                </Button>
-                                <Button
-                                  variant="outline"
-                                  className="w-full mt-2"
-                                >
-                                  Contact Us
-                                </Button>
-                              </div>
+                              )))}
                             </div>
                           </ScrollArea>
                         </div>
