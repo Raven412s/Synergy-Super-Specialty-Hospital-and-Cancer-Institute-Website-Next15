@@ -8,7 +8,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { discoverSynergyPages, menuItems, quickLinks } from "@/data";
+import { menuItems, quickLinks } from "@/data";
 import { cn } from "@/lib/utils";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
