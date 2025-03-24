@@ -74,97 +74,118 @@ export function Navbar() {
           result ? "text-primary" : "text-white",
         )}
       >
-<NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
-  {menuItems.map((item, index) => (
-    <React.Fragment key={item.label}>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
-          {item.label}
-        </NavigationMenuTrigger>
+        <NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
+          {menuItems.map((item, index) => (
+            <React.Fragment key={item.label}>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
+                  {item.label}
+                </NavigationMenuTrigger>
 
-        <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
-          <div className="flex w-full">
-            {item.pages[0]?.name && (
-              <>
-                {/* LEFT: Page Names */}
-                <div className="w-1/4 p-4 flex flex-col space-y-2 items-start">
-                  {item.pages.map((page, pageIndex) => (
-                    <Button
-                      key={pageIndex}
-                      variant={"ghost"}
-                      onMouseEnter={() => setActivePageIndex(pageIndex)}
-                      className={`text-left hover:text-indigo-600 w-full items-start justify-start ${
-                        activePageIndex === pageIndex
-                          ? "text-indigo-600 font-semibold"
-                          : ""
-                      }`}
-                    >
-                      {page.name}
-                    </Button>
-                  ))}
-                </div>
+                <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none">
+                  <div className="flex w-full">
+                    {item.pages[0]?.name && (
+                      <>
+                        {/* LEFT: Page Names */}
+                        <div className="w-1/4 p-4 flex flex-col space-y-2 items-start">
+                          {item.pages.map((page, pageIndex) => (
+                            <Button
+                              key={pageIndex}
+                              variant={"ghost"}
+                              onMouseEnter={() => setActivePageIndex(pageIndex)}
+                              className={`text-left hover:text-indigo-600 w-full items-start justify-start ${
+                                activePageIndex === pageIndex
+                                  ? "text-indigo-600 font-semibold"
+                                  : ""
+                              }`}
+                            >
+                              {page.name}
+                            </Button>
+                          ))}
+                        </div>
 
-                {/* CENTER: Links */}
-                <div className="w-2/4 border-x border-gray-300 p-4 flex flex-col gap-4">
-                  {item.pages[activePageIndex]?.links.map((link, linkIndex) => (
-                    <Link key={linkIndex} href={link.href} className="hover:underline">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
+                        {/* CENTER: Links */}
+                        <div className="w-2/4 border-x border-gray-300 p-4 flex flex-col gap-4">
+                          {item.pages[activePageIndex]?.links.map(
+                            (link, linkIndex) => (
+                              <Link
+                                key={linkIndex}
+                                href={link.href}
+                                className="hover:underline"
+                              >
+                                {link.label}
+                              </Link>
+                            ),
+                          )}
+                        </div>
 
-                {/* RIGHT: Quick Links for first menu only */}
-                {index === 0 && (
-                  <div className="w-1/4 p-4 space-y-4 bg-fuchsia-100">
-                    <h4 className="font-semibold text-gray-700">Quick Links</h4>
-                    {quickLinks.map((item, i) => (
-                      <div key={i} className="bg-indigo-100 px-4 py-2 rounded text-sm">
-                        <div className="text-gray-500">{item.label}</div>
-                        <div className="font-medium">{item.value}</div>
+                        {/* RIGHT: Quick Links for first menu only */}
+                        {index === 0 && (
+                          <div className="w-1/4 p-4 space-y-4 bg-fuchsia-100">
+                            <h4 className="font-semibold text-gray-700">
+                              Quick Links
+                            </h4>
+                            {quickLinks.map((item, i) => (
+                              <div
+                                key={i}
+                                className="bg-indigo-100 px-4 py-2 rounded text-sm"
+                              >
+                                <div className="text-gray-500">
+                                  {item.label}
+                                </div>
+                                <div className="font-medium">{item.value}</div>
+                              </div>
+                            ))}
+                            <Button
+                              variant={"link"}
+                              className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between"
+                            >
+                              Book Appointment <span>→</span>
+                            </Button>
+                            <Button
+                              variant={"link"}
+                              className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between"
+                            >
+                              Find Doctors <span>→</span>
+                            </Button>
+                            <Button
+                              variant={"link"}
+                              className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between"
+                            >
+                              Contact Us <span>→</span>
+                            </Button>
+                          </div>
+                        )}
+                      </>
+                    )}
+
+                    {!item.pages[0]?.name && (
+                      <div className="w-full p-4">
+                        <p>{item.label} content here</p>
                       </div>
-                    ))}
-                    <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between">
-                      Book Appointment <span>→</span>
-                    </Button>
-                    <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between">
-                      Find Doctors <span>→</span>
-                    </Button>
-                    <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between">
-                      Contact Us <span>→</span>
-                    </Button>
+                    )}
                   </div>
-                )}
-              </>
-            )}
+                </NavigationMenuContent>
+              </NavigationMenuItem>
 
-            {!item.pages[0]?.name && (
-              <div className="w-full p-4">
-                <p>{item.label} content here</p>
-              </div>
-            )}
-          </div>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-
-      {/* Insert the logo after the second item (index === 1) */}
-      {index === 1 && (
-        <NavigationMenuLink
-          href="/"
-          className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0"
-        >
-          <Image
-            src="/LOGO.svg"
-            alt="Logo"
-            height={40}
-            width={50}
-            className="size-full rounded-none"
-          />
-        </NavigationMenuLink>
-      )}
-    </React.Fragment>
-  ))}
-</NavigationMenuList>
-
+              {/* Insert the logo after the second item (index === 1) */}
+              {index === 1 && (
+                <NavigationMenuLink
+                  href="/"
+                  className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0"
+                >
+                  <Image
+                    src="/LOGO.svg"
+                    alt="Logo"
+                    height={40}
+                    width={50}
+                    className="size-full rounded-none"
+                  />
+                </NavigationMenuLink>
+              )}
+            </React.Fragment>
+          ))}
+        </NavigationMenuList>
       </NavigationMenu>
 
       {/* Mobile Menu/Navbar */}
@@ -229,7 +250,13 @@ export function Navbar() {
                                 variant={"ghost"}
                                 key={index}
                                 onMouseEnter={() => setActivePageIndex(index)}
-                                className={cn("text-left hover:text-indigo-600 w-max items-start justify-start", { "text-indigo-600 font-semibold": activePageIndex === index })}
+                                className={cn(
+                                  "text-left hover:text-indigo-600 w-max items-start justify-start",
+                                  {
+                                    "text-indigo-600 font-semibold":
+                                      activePageIndex === index,
+                                  },
+                                )}
                               >
                                 {page.name}
                               </Button>
