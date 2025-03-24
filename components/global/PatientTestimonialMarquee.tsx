@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { PatientTestimonialMarqueeProps } from "@/types";
-import React, { ComponentPropsWithoutRef } from "react";
+import React from "react";
 import Marquee from "react-fast-marquee";
 import { VideoModal } from "./VideoModal";
 import PatientSpeaksWrittenTestimonialCard from "./PatientSpeaksWrittenTestimonialCard";

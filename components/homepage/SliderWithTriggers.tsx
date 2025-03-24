@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/card";
 import {
   MinusIcon,
-  MoveRightIcon,
   PlusIcon,
   ChevronLeft,
   ChevronRight,

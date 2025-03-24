@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import { cn } from '@/lib/utils';
 import { TestimonialCardProps } from '@/types';
+import { useState } from 'react';
+import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card';
 
-const TestimonialCard = ({ imgAlt, imgSrc, description, titleText, titleNumber }: TestimonialCardProps) => {
+const TestimonialCard = ({ imgSrc, description, titleText, titleNumber }: TestimonialCardProps) => {
   const [isCardHovered, setIsCardHovered] = useState(false);
 
   return (
