@@ -3,107 +3,137 @@ import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
 
 export const menuItems: MenuItemProps[] = [
     {
-        label: "discover synergy",
-        pages: [
-            {
-               name: "synergy story",
-               links: [
-                {label: "Overview", href: "/the-synergy-story#Overview"},
-                {label: "Our Vision",  href: "/the-synergy-story#Our-Vision"},
-                {label: "Our Mission",  href: "/the-synergy-story#Our-Mission"},
-                {label: "Leadership",  href: "/the-synergy-story#Leadership"},
-                {label: "Awards and Accolades",  href: "/the-synergy-story#Awards-and-Accolades"},
-                {label: "Achievements and Milestones",  href: "/the-synergy-story#Achievements-and-Milestones"},
-                {label: "A Day at Synergy",  href: "/the-synergy-story#A-Day-at-Synergy"}
-              ]
-            },
-            {
-               name: "leadership",
-               links: [
-                {label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari"},
-                {label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain"},
-                {label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra"},
-              ]
-            },
-            {
-               name: "media center",
-               links: [
-                {label: "Synergy in the News", href: "/media-center#synergy-in-the-news"},
-                {label: "Press Releases", href: "/media-center#press-releases"},
-                {label: "Events", href: "/media-center#events"},
-                {label: "Media Gallery", href: "/media-center#media-gallery"},
-                {label: "Media Contacts", href: "/media-center#media-contacts"},
-              ]
-            },
-        ]
+      label: "discover synergy",
+      pages: [
+        {
+          name: "Synergy Story",
+          links: [
+            { label: "Overview", href: "/the-synergy-story#Overview" },
+            { label: "Our Vision", href: "/the-synergy-story#Our-Vision" },
+            { label: "Our Mission", href: "/the-synergy-story#Our-Mission" },
+            { label: "Leadership", href: "/the-synergy-story#Leadership" },
+            { label: "Milestones", href: "/the-synergy-story#Achievements-and-Milestones" },
+            { label: "Awards", href: "/the-synergy-story#Awards-and-Accolades" },
+            { label: "Life at Synergy", href: "/the-synergy-story#A-Day-at-Synergy" },
+          ],
+        },
+        {
+          name: "Leadership",
+          links: [
+            { label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari" },
+            { label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain" },
+            { label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra" },
+          ],
+        },
+        {
+          name: "Media Center",
+          links: [
+            { label: "In the News", href: "/media-center#synergy-in-the-news" },
+            { label: "Press Releases", href: "/media-center#press-releases" },
+            { label: "Events & Conferences", href: "/media-center#events" },
+            { label: "Media Gallery", href: "/media-center#media-gallery" },
+            { label: "Media Contact", href: "/media-center#media-contacts" },
+          ],
+        },
+      ],
     },
     {
-        label: "medical services",
-        pages: [
-            {
-               name: "",
-               links: [
-                {label: "", href: ""}
-               ]
-            }
-        ]
+      label: "medical services",
+      pages: [
+        {
+          name: "Our Specialties",
+          links: [
+            { label: "Medical Oncology", href: "/services/medical-oncology" },
+            { label: "Radiation Oncology", href: "/services/radiation-oncology" },
+            { label: "Surgical Oncology", href: "/services/surgical-oncology" },
+            { label: "Hemato-Oncology", href: "/services/hemato-oncology" },
+            { label: "Pain & Palliative Care", href: "/services/palliative-care" },
+          ],
+        },
+        {
+          name: "Support Services",
+          links: [
+            { label: "Diagnostic Imaging", href: "/services/diagnostic-imaging" },
+            { label: "Laboratory Services", href: "/services/laboratory" },
+            { label: "Pharmacy", href: "/services/pharmacy" },
+            { label: "Physiotherapy", href: "/services/physiotherapy" },
+          ],
+        },
+        {
+          name: "Patient Care",
+          links: [
+            { label: "Second Opinion", href: "/patient-care/second-opinion" },
+            { label: "24x7 Emergency", href: "/patient-care/emergency" },
+            { label: "In-Patient Facilities", href: "/patient-care/in-patient" },
+            { label: "Outpatient Clinics", href: "/patient-care/out-patient" },
+          ],
+        },
+      ],
     },
     {
-        label: "health library",
-        pages: [
-            {
-               name: "",
-               links: [
-                {label: "", href: ""}
-               ]
-            }
-        ]
+      label: "health library",
+      pages: [
+        {
+          name: "Cancer Types",
+          links: [
+            { label: "Breast Cancer", href: "/health-library/breast-cancer" },
+            { label: "Lung Cancer", href: "/health-library/lung-cancer" },
+            { label: "Blood Cancer", href: "/health-library/blood-cancer" },
+            { label: "Prostate Cancer", href: "/health-library/prostate-cancer" },
+            { label: "Cervical Cancer", href: "/health-library/cervical-cancer" },
+          ],
+        },
+        {
+          name: "Patient Education",
+          links: [
+            { label: "Cancer Prevention", href: "/health-library/prevention" },
+            { label: "Diagnosis & Staging", href: "/health-library/diagnosis" },
+            { label: "Treatment Options", href: "/health-library/treatments" },
+            { label: "Nutrition & Wellness", href: "/health-library/nutrition" },
+          ],
+        },
+        {
+          name: "FAQs",
+          links: [
+            { label: "General Questions", href: "/health-library/faqs#general" },
+            { label: "Before Your Visit", href: "/health-library/faqs#before-visit" },
+            { label: "During Treatment", href: "/health-library/faqs#during-treatment" },
+            { label: "After Treatment", href: "/health-library/faqs#after-treatment" },
+          ],
+        },
+      ],
     },
     {
-        label: "cancer survivors",
-        pages: [
-            {
-               name: "",
-               links: [
-                {label: "", href: ""}
-               ]
-            }
-        ]
-    }
-]
+      label: "cancer survivors",
+      pages: [
+        {
+          name: "Stories of Hope",
+          links: [
+            { label: "Patient Testimonials", href: "/survivors/testimonials" },
+            { label: "Victory Stories", href: "/survivors/victory-stories" },
+            { label: "Video Messages", href: "/survivors/videos" },
+          ],
+        },
+        {
+          name: "Support Programs",
+          links: [
+            { label: "Counseling & Mental Health", href: "/survivors/counseling" },
+            { label: "Rehabilitation Programs", href: "/survivors/rehab" },
+            { label: "Survivorship Clinics", href: "/survivors/clinics" },
+          ],
+        },
+        {
+          name: "Get Involved",
+          links: [
+            { label: "Volunteer", href: "/survivors/volunteer" },
+            { label: "Awareness Campaigns", href: "/survivors/awareness" },
+            { label: "Donate", href: "/donate" },
+          ],
+        },
+      ],
+    },
+  ];
 
-export const discoverSynergyPages: NavigationMenuStructureProps[] = [
-    {
-      name: "The Synergy Story",
-      links: [
-        {label: "Overview", href: "/the-synergy-story#Overview"},
-        {label: "Our Vision",  href: "/the-synergy-story#Our-Vision"},
-        {label: "Our Mission",  href: "/the-synergy-story#Our-Mission"},
-        {label: "Leadership",  href: "/the-synergy-story#Leadership"},
-        {label: "Awards and Accolades",  href: "/the-synergy-story#Awards-and-Accolades"},
-        {label: "Achievements and Milestones",  href: "/the-synergy-story#Achievements-and-Milestones"},
-        {label: "A Day at Synergy",  href: "/the-synergy-story#A-Day-at-Synergy"}
-      ]
-    },
-    {
-      name: "Leadership",
-      links: [
-        {label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari"},
-        {label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain"},
-        {label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra"},
-      ]
-    },
-    {
-      name: "Media Center",
-      links: [
-        {label: "Synergy in the News", href: "/media-center#synergy-in-the-news"},
-        {label: "Press Releases", href: "/media-center#press-releases"},
-        {label: "Events", href: "/media-center#events"},
-        {label: "Media Gallery", href: "/media-center#media-gallery"},
-        {label: "Media Contacts", href: "/media-center#media-contacts"},
-      ]
-    },
-  ]
 
 export  const quickLinks = [
     { label: "Emergency", value: "1066" },
