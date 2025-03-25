@@ -24,7 +24,7 @@ export const metadata = {
       title: "Synergy Super Speciality Hospital | Our Mission & Vision",
       description:
         "Learn about Synergy's journey to becoming a beacon of hope in cancer treatment through dedication, innovation, and compassion.",
-      url: "https://yourdomain.com/the-synergy-story",
+      url: "https://synergy-website-alpha.vercel.app/the-synergy-story",
       siteName: "Synergy Super Speciality Hospital",
       images: [
         {
@@ -46,7 +46,7 @@ export const metadata = {
       },
     },
     alternates: {
-      canonical: "https://yourdomain.com/the-synergy-story",
+      canonical: "https://synergy-website-alpha.vercel.app/the-synergy-story",
     },
   };
 

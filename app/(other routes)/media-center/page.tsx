@@ -18,7 +18,7 @@ export const metadata = {
       title: "Media Center - Synergy Super Speciality Hospital",
       description:
         "Catch all the latest updates and media buzz from Synergy Super Speciality Hospital, Gorakhpur.",
-      url: "https://yourdomain.com/media-center",
+      url: "https://synergy-website-alpha.vercel.app/media-center",
       siteName: "Synergy Super Speciality Hospital",
       images: [
         {
