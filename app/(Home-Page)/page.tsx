@@ -76,6 +76,7 @@ export default function Home() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="Promotional video showcasing Synergy Hospital"
         >
           <source src="/Banner.webm" type="video/webm" />
           <source src="/Banner.mp4" type="video/mp4" />
