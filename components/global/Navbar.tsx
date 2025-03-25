@@ -134,7 +134,7 @@ export function Navbar() {
               {/* Insert the logo after the second item (index === 1) */}
               {index === 1 && (
                 <NavigationMenuLink href="/" className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0" >
-                  <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" />
+                  <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
                 </NavigationMenuLink>
               )}
             </React.Fragment>
@@ -146,7 +146,7 @@ export function Navbar() {
 {/* Mobile Menu/Navbar */}
 <div className="w-full md:hidden flex h-full relative">
   <Link href={"/"} className="w-[160px] h-[68px] !py-2 rounded-none !m-0">
-    <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" />
+    <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
   </Link>
   <div className="absolute right-10 top-1/2 -translate-y-1/2">
     <Sheet open={outerOpen} onOpenChange={setOuterOpen}>
