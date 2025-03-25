@@ -76,16 +76,16 @@ export function Navbar() {
                     {item.pages[0]?.name && (
                       <>
                         {/* LEFT: Page Names */}
-                        <div className="w-1/4 p-4 flex flex-col space-y-2 items-start">
+                        <div className="w-1/6 p-4 flex flex-col space-y-2 items-start">
                           {item.pages.map((page, pageIndex) => (
-                            <Button key={pageIndex} variant={"ghost"} onMouseEnter={() => setActivePageIndex(pageIndex)} className={cn("text-left hover:text-indigo-600 w-full items-start justify-start", { "text-indigo-600 font-semibold": activePageIndex === pageIndex })}>
+                            <Button key={pageIndex} variant={"ghost"} onMouseEnter={() => setActivePageIndex(pageIndex)} className={cn("text-left hover:text-indigo-600 w-full items-start justify-start text-lg", { "text-indigo-600 font-semibold": activePageIndex === pageIndex })}>
                               {page.name}
                             </Button>
                           ))}
                         </div>
 
                         {/* CENTER: Links */}
-                        <div className="w-2/4 border-x border-gray-300 p-4 flex flex-col gap-4">
+                        <div className="w-3/6 border-x border-gray-300 p-4 flex flex-col gap-4">
                           {item.pages[activePageIndex]?.links.map(
                             (link, linkIndex) => (
                               <Link key={linkIndex} href={link.href} className="hover:underline w-max" >
@@ -96,8 +96,8 @@ export function Navbar() {
                         </div>
 
                         {/* RIGHT: Quick Links for first menu only */}
-                        {index === 0 && (
-                          <div className="w-1/4 p-4 space-y-4 bg-fuchsia-100">
+
+                          <div className="w-2/6 p-4 space-y-4 bg-fuchsia-100">
                             <h4 className="font-semibold text-gray-700">
                               Quick Links
                             </h4>
@@ -119,7 +119,6 @@ export function Navbar() {
                               Contact Us <span>→</span>
                             </Button>
                           </div>
-                        )}
                       </>
                     )}
 

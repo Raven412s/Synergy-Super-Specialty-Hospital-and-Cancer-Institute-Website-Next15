@@ -88,7 +88,7 @@ export const seoData: Record<
     },
   },
 
-  patientCare: {
+  "patient-care": {
     emergency: {
       title: "24x7 Emergency Medical Services",
       description: "Round-the-clock emergency care with advanced life-saving facilities and expert doctors.",

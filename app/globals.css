@@ -180,3 +180,11 @@ button {
 .text-heading {
     @apply text-2xl lg:text-3xl font-display font-semibold text-primary;
 }
+
+element {
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
