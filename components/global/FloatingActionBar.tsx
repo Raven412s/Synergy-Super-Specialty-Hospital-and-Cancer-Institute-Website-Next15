@@ -50,7 +50,6 @@ export const FloatingActionBar = ({ items }: Props) => {
                   onClick={item.onClick}
                   variant="default"
                   size={isSticky ? "icon" : "lg"}
-                  aria-label={item.label}
                   className={cn(
                     "flex items-center justify-center gap-2",
                     isSticky ? "p-5 rounded-full flex-col shadow-2xl bg-indigo-800" :  item.className
