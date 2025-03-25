@@ -1,10 +1,4 @@
-// next.config.ts
-
-import { type NextConfig } from "next";
-import { URL } from "url";
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -21,6 +15,7 @@ const nextConfig: NextConfig = {
     unoptimized: false,
   },
 
+
   experimental: {
     scrollRestoration: true,
   },
@@ -31,21 +26,14 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: [
           { key: "X-DNS-Prefetch-Control", value: "on" },
-          {
-            key: "Strict-Transport-Security",
-            value: "max-age=63072000; includeSubDomains; preload",
-          },
+          { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
         ],
       },
     ];
   },
 };
 
-// 👇 Wrap and export the config with the analyzer
-export default withBundleAnalyzer(nextConfig);
+export default nextConfig;
