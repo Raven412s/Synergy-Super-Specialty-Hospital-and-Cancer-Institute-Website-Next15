@@ -3,7 +3,55 @@ import { excellenceItems } from '@/data'
 import Image from 'next/image'
 import React from 'react'
 
-const DiscoverPage = () => {
+// app/the-synergy-story/page.tsx
+
+export const metadata = {
+    title: "Synergy Super Speciality Hospital | Our Mission & Vision",
+    description:
+      "Discover Synergy's mission to offer affordable, compassionate, and comprehensive cancer care in Gorakhpur and beyond.",
+    keywords: [
+      "Cancer hospital in Gorakhpur",
+      "Synergy Super Speciality Hospital",
+      "Oncology",
+      "Cancer treatment",
+      "Comprehensive care",
+      "Cancer surgery",
+      "chemotherapy",
+      "immunotherapy",
+    ],
+    authors: [{ name: "Synergy Super Speciality Hospital and Cancer Institute" }],
+    openGraph: {
+      title: "Synergy Super Speciality Hospital | Our Mission & Vision",
+      description:
+        "Learn about Synergy's journey to becoming a beacon of hope in cancer treatment through dedication, innovation, and compassion.",
+      url: "https://yourdomain.com/the-synergy-story",
+      siteName: "Synergy Super Speciality Hospital",
+      images: [
+        {
+          url: "/og-image.jpg", // place the image inside /public folder
+          width: 1200,
+          height: 630,
+          alt: "Synergy Super Speciality Hospital",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+    alternates: {
+      canonical: "https://yourdomain.com/the-synergy-story",
+    },
+  };
+
+
+const TheSynergyStory = () => {
   return (
     <main id='Overview'>
 <section className='min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-6 lg:px-24 py-4' id='Our-Mission'>
@@ -13,7 +61,7 @@ const DiscoverPage = () => {
         <div className="relative block lg:hidden w-full h-64">
             <Image
             src="/mission-horizontal.webp"
-            alt="Our Mission"
+            alt="Doctors treating cancer patients at Synergy Super Specialty Hospital"
             fill
             className="object-cover w-full h-full rounded-2xl bg-indigo-900"
             />
@@ -23,7 +71,7 @@ const DiscoverPage = () => {
         <div className="relative hidden lg:block w-full h-full">
             <Image
             src="/mission-vertical.webp"
-            alt="Our Mission"
+            alt="Doctors treating cancer patients at Synergy Super Specialty Hospital"
             fill
             className="object-cover w-full h-auto rounded-2xl bg-indigo-900"
             />
@@ -86,7 +134,6 @@ const DiscoverPage = () => {
       </section>
       <section
   className='min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4'
-  id='Leadership'
 >
   <div className='max-w-4xl mx-auto text-center py-12'>
     <h2 className='text-heading'>Synergy Excellence</h2>
@@ -119,4 +166,4 @@ const DiscoverPage = () => {
   )
 }
 
-export default DiscoverPage
+export default TheSynergyStory

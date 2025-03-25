@@ -16,9 +16,9 @@ import { BreastCancer } from "@/components/Modules/health-library/types-of-cance
 import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer";
 import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer";
 import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer";
-import {DrAlokTiwari} from "@/components/Modules/leadership/DrAlokTiwari";
-import { DrAnjaliJain } from "@/components/Modules/leadership/DrAnjaliJain";
-import { DrSaurabhMishra } from "@/components/Modules/leadership/DrSaurabhMishra";
+import {DrAlokTiwari} from "@/components/Modules/discover-synergy/leadership/DrAlokTiwari";
+import { DrAnjaliJain } from "@/components/Modules/discover-synergy/leadership/DrAnjaliJain";
+import { DrSaurabhMishra } from "@/components/Modules/discover-synergy/leadership/DrSaurabhMishra";
 import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare";
 import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities";
 import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic";
