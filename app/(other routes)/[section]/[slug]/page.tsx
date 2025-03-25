@@ -36,7 +36,7 @@ import { seoData } from "@/data/seoData";
         title: meta.title,
         description: meta.description,
         type: "website",
-        url: `https://yourdomain.com/${section}/${slug}`,
+        url: `https://synergy-website-alpha.vercel.app/${section}/${slug}`,
         images: [
           {
             url: meta.ogImage,

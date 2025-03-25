@@ -21,7 +21,7 @@ export const metadata = {
       title: "Support Cancer Care | Donate to Synergy Hospital",
       description:
         "Your support brings hope. Join us in the fight against cancer by donating to Synergy Super Speciality Hospital, Gorakhpur.",
-      url: "https://yourdomain.com/donate",
+      url: "https://synergy-website-alpha.vercel.app/donate",
       siteName: "Synergy Super Speciality Hospital",
       images: [
         {
@@ -43,7 +43,7 @@ export const metadata = {
       },
     },
     alternates: {
-      canonical: "https://yourdomain.com/donate",
+      canonical: "https://synergy-website-alpha.vercel.app/donate",
     },
     icons: {
       icon: "/favicon.ico",
