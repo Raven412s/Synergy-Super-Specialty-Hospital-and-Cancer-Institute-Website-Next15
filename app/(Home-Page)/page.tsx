@@ -27,7 +27,7 @@ export const metadata = {
       title: "Synergy Super Speciality Hospital - Best Cancer Hospital in Gorakhpur",
       description:
         "Get world-class cancer treatment at Synergy Hospital, Gorakhpur. Our expert oncologists and modern facilities offer hope and healing.",
-      url: "https://yourdomain.com/",
+      url: "https://synergy-website-alpha.vercel.app/",
       siteName: "Synergy Super Speciality Hospital",
       images: [
         {
@@ -49,12 +49,11 @@ export const metadata = {
       },
     },
     alternates: {
-      canonical: "https://yourdomain.com/",
+      canonical: "https://synergy-website-alpha.vercel.app/",
     },
     icons: {
       icon: "/favicon.ico",
     },
-    themeColor: "#007f5f", // Brand primary color
     twitter: {
       card: "summary_large_image",
       title: "Synergy Super Speciality Hospital - Best Cancer Hospital in Gorakhpur",
