@@ -80,8 +80,8 @@ export default function Home() {
         >
           <source src="/Banner.webm" type="video/webm" />
           <source src="/Banner.mp4" type="video/mp4" />
-          {/* Fallback content for accessibility */}
-          Your browser does not support the video tag. Please visit our website for more information.
+          {/* Fallback content for accessibility
+          Your browser does not support the video tag. Please visit our website for more information. */}
         </video>
         <FloatingBarWrapper   />
         {/* Scroll-to-next-section Button */}
