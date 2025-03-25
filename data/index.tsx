@@ -373,9 +373,9 @@ export const actions: ActionItem[] = [
     "hemato-oncology": <HematoOncology />,
     "palliative-care": <PalliativeCare />,
     "diagnostic-imaging": <DiagnosticImaging />,
-    "laboratory": <Laboratory />,
-    "pharmacy": <Pharmacy />,
-    "physiotherapy": <Physiotherapy />,
+    laboratory: <Laboratory />,
+    pharmacy: <Pharmacy />,
+    physiotherapy: <Physiotherapy />,
   };
 
   export const PatientCareMap = {
@@ -391,11 +391,11 @@ export const actions: ActionItem[] = [
     "lung-cancer" : <LungCancer />,
     "cervical-cancer" : <CervicalCancer />,
     "blood-cancer" : <BloodCancer />,
-    "prevention" : <CancerPrevention />,
-    "diagnosis" : <DiagnosisAndStaging />,
-    "treatments" : <TreatmentOptions />,
-    "nutrition" : <NutritionAndWellness />,
-    "faqs": <Faqs/>
+    prevention : <CancerPrevention />,
+    diagnosis : <DiagnosisAndStaging />,
+    treatments : <TreatmentOptions />,
+    nutrition : <NutritionAndWellness />,
+    faqs: <Faqs/>
   };
 
   export const CancerSurvivorsMap = {

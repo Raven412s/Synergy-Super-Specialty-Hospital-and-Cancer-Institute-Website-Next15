@@ -62,8 +62,6 @@ import { seoData } from "@/data/seoData";
     };
   }
 
-
-
 export default async function DynamicPage(props: {
     params: Promise<{ section: string; slug: string }>;
   }) {
