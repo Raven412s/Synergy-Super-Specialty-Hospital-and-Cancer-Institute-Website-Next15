@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <main className="w-full">
       {/* Hero Section with Video */}
-      <section id="banner" className="relative min-h-screen w-full">
+      <section id="banner" className="relative min-h-screen w-full ">
         <video
           autoPlay
           loop
