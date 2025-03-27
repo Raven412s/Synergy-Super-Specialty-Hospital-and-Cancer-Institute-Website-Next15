@@ -30,6 +30,26 @@ export const seoData: Record<
       ogImage: "/images/doctors/dr-saurabh-mishra.jpg",
     },
   },
+  doctors: {
+    "Dr-Alok-Tiwari": {
+      title: "Dr. Alok Tiwari - Oncology Specialist",
+      description: "Meet Dr. Alok Tiwari, a leading specialist in oncology with years of experience.",
+      keywords: ["Dr. Alok Tiwari", "Oncologist", "Cancer Specialist"],
+      ogImage: "/images/doctors/dr-alok-tiwari.jpg",
+    },
+    "Dr-Anjali-Jain": {
+      title: "Dr. Anjali Jain - Senior Oncologist",
+      description: "Know more about Dr. Anjali Jain’s contribution to cancer treatment and research.",
+      keywords: ["Dr. Anjali Jain", "Cancer Expert", "Senior Doctor"],
+      ogImage: "/images/doctors/dr-anjali-jain.jpg",
+    },
+    "Dr-Saurabh-Mishra": {
+      title: "Dr. Saurabh Mishra - Radiation Oncology Expert",
+      description: "Expert in radiation oncology, Dr. Saurabh Mishra brings hope to countless patients.",
+      keywords: ["Dr. Saurabh Mishra", "Radiation Oncologist"],
+      ogImage: "/images/doctors/dr-saurabh-mishra.jpg",
+    },
+  },
 
   services: {
     "medical-oncology": {
@@ -62,58 +82,198 @@ export const seoData: Record<
       keywords: ["Palliative Care", "Cancer Pain Relief", "Supportive Oncology"],
       ogImage: "/images/services/palliative-care.jpg",
     },
+    cardiology: {
+      title: "Cardiology Services",
+      description: "Advanced cardiac care for diagnosis, treatment, and prevention of heart-related diseases.",
+      keywords: ["Cardiology", "Heart Specialist", "Cardiac Care", "ECG", "Angioplasty"],
+      ogImage: "/images/services/cardiology.jpg",
+    },
+    neurology: {
+      title: "Neurology Services",
+      description: "Comprehensive care for neurological conditions including stroke, epilepsy, and migraines.",
+      keywords: ["Neurology", "Brain Health", "Stroke Treatment", "Neurological Disorders"],
+      ogImage: "/images/services/neurology.jpg",
+    },
+    neurosurgery: {
+      title: "Neurosurgery",
+      description: "Expert surgical interventions for brain and spinal cord disorders.",
+      keywords: ["Neurosurgery", "Brain Surgery", "Spine Surgery", "Neuro Intervention"],
+      ogImage: "/images/services/neurosurgery.jpg",
+    },
+    nephrology: {
+      title: "Nephrology Services",
+      description: "Specialized care for kidney diseases, dialysis, and chronic renal conditions.",
+      keywords: ["Nephrology", "Kidney Specialist", "Dialysis", "CKD Treatment"],
+      ogImage: "/images/services/nephrology.jpg",
+    },
+    urology: {
+      title: "Urology Services",
+      description: "Comprehensive treatment for urinary tract and male reproductive health issues.",
+      keywords: ["Urology", "Urinary Problems", "Kidney Stones", "Prostate Health"],
+      ogImage: "/images/services/urology.jpg",
+    },
+    gastroenterology: {
+      title: "Gastroenterology",
+      description: "Diagnosis and treatment for digestive system disorders and gastrointestinal issues.",
+      keywords: ["Gastroenterology", "Digestive Health", "Endoscopy", "Liver & Stomach Issues"],
+      ogImage: "/images/services/gastroenterology.jpg",
+    },
+    hepatology: {
+      title: "Hepatology Services",
+      description: "Liver disease management including hepatitis, cirrhosis, and fatty liver.",
+      keywords: ["Hepatology", "Liver Specialist", "Hepatitis Treatment", "Liver Health"],
+      ogImage: "/images/services/hepatology.jpg",
+    },
+    orthopedics: {
+      title: "Orthopedic Services",
+      description: "Treatment for bone, joint, and musculoskeletal conditions and injuries.",
+      keywords: ["Orthopedics", "Joint Pain", "Fracture Treatment", "Arthroscopy", "Bone Surgery"],
+      ogImage: "/images/services/orthopedics.jpg",
+    },
+    rheumatology: {
+      title: "Rheumatology",
+      description: "Care for autoimmune and inflammatory diseases like arthritis and lupus.",
+      keywords: ["Rheumatology", "Arthritis", "Joint Pain", "Autoimmune Treatment"],
+      ogImage: "/images/services/rheumatology.jpg",
+    },
+    endocrinology: {
+      title: "Endocrinology",
+      description: "Diagnosis and management of hormone-related conditions including diabetes and thyroid.",
+      keywords: ["Endocrinology", "Diabetes", "Thyroid", "Hormone Disorders"],
+      ogImage: "/images/services/endocrinology.jpg",
+    },
+    pulmonology: {
+      title: "Pulmonology",
+      description: "Respiratory care for asthma, COPD, lung infections, and sleep disorders.",
+      keywords: ["Pulmonology", "Lung Specialist", "Asthma", "Breathing Problems"],
+      ogImage: "/images/services/pulmonology.jpg",
+    },
+    dermatology: {
+      title: "Dermatology Services",
+      description: "Expert care for skin, hair, and nail conditions including acne, eczema, and infections.",
+      keywords: ["Dermatology", "Skin Specialist", "Acne Treatment", "Hair Loss", "Eczema"],
+      ogImage: "/images/services/dermatology.jpg",
+    },
+    ent: {
+      title: "ENT (Ear, Nose, Throat) Services",
+      description: "Comprehensive ENT care including sinus issues, hearing problems, and throat disorders.",
+      keywords: ["ENT", "Ear Specialist", "Sinus Treatment", "Tonsillitis", "Hearing Loss"],
+      ogImage: "/images/services/ent.jpg",
+    },
+    ophthalmology: {
+      title: "Ophthalmology Services",
+      description: "Advanced eye care including cataract surgery, vision correction, and eye exams.",
+      keywords: ["Ophthalmology", "Eye Specialist", "Cataract", "LASIK", "Vision Care"],
+      ogImage: "/images/services/ophthalmology.jpg",
+    },
+    "general-surgery": {
+      title: "General Surgery",
+      description: "Expert surgical procedures for a wide range of general and abdominal conditions.",
+      keywords: ["General Surgery", "Appendix Surgery", "Gallbladder Removal", "Hernia Repair"],
+      ogImage: "/images/services/general-surgery.jpg",
+    },
+    "internal-medicine": {
+      title: "Internal Medicine",
+      description: "Comprehensive care for adult diseases with a focus on diagnosis and prevention.",
+      keywords: ["Internal Medicine", "General Physician", "Chronic Disease Management"],
+      ogImage: "/images/services/internal-medicine.jpg",
+    },
+    pediatrics: {
+      title: "Pediatrics",
+      description: "Dedicated care for infants, children, and adolescents by experienced pediatricians.",
+      keywords: ["Pediatrics", "Child Specialist", "Newborn Care", "Vaccination"],
+      ogImage: "/images/services/pediatrics.jpg",
+    },
+    gynecology: {
+      title: "Gynecology Services",
+      description: "Women's health services including pregnancy care, menstrual issues, and gynecologic surgery.",
+      keywords: ["Gynecology", "Women's Health", "Pregnancy Care", "Menstrual Issues"],
+      ogImage: "/images/services/gynecology.jpg",
+    },
+    psychiatry: {
+      title: "Psychiatry Services",
+      description: "Mental health support and treatment for conditions like anxiety, depression, and more.",
+      keywords: ["Psychiatry", "Mental Health", "Depression", "Anxiety", "Therapy"],
+      ogImage: "/images/services/psychiatry.jpg",
+    },
     "diagnostic-imaging": {
       title: "Diagnostic Imaging",
       description: "Accurate and advanced imaging for early cancer detection and treatment planning.",
       keywords: ["Diagnostic Imaging", "CT Scan", "MRI", "Cancer Detection"],
       ogImage: "/images/services/diagnostic-imaging.jpg",
     },
-    "laboratory": {
+    laboratory: {
       title: "Laboratory Services",
       description: "Comprehensive lab testing for accurate cancer diagnosis and monitoring.",
       keywords: ["Cancer Lab Tests", "Pathology", "Blood Tests", "Biopsy Analysis"],
       ogImage: "/images/services/laboratory.jpg",
     },
-    "pharmacy": {
+    pharmacy: {
       title: "Oncology Pharmacy",
       description: "Dedicated pharmacy offering cancer-specific medications and expert guidance.",
       keywords: ["Oncology Pharmacy", "Cancer Medicines", "Chemotherapy Drugs"],
       ogImage: "/images/services/pharmacy.jpg",
     },
-    "physiotherapy": {
+    physiotherapy: {
       title: "Cancer Physiotherapy",
       description: "Rehabilitation therapies to regain strength and mobility during or after cancer treatment.",
       keywords: ["Cancer Physiotherapy", "Rehabilitation", "Post-Treatment Recovery"],
       ogImage: "/images/services/physiotherapy.jpg",
     },
+    "blood-bank": {
+      title: "Blood Bank",
+      description: "Reliable blood banking services ensuring safe and timely transfusions for patients in need.",
+      keywords: ["Blood Bank", "Blood Donation", "Blood Transfusion Services"],
+      ogImage: "/images/services/blood-bank.jpg",
+    },
+    dialysis: {
+      title: "Dialysis Services",
+      description: "State-of-the-art dialysis care for patients with chronic kidney conditions.",
+      keywords: ["Dialysis", "Kidney Treatment", "Hemodialysis", "Renal Care"],
+      ogImage: "/images/services/dialysis.jpg",
+    },
   },
 
-  "patient-care": {
-    emergency: {
-      title: "24x7 Emergency Medical Services",
-      description: "Round-the-clock emergency care with advanced life-saving facilities and expert doctors.",
-      keywords: ["Emergency Care", "24x7 Hospital Emergency", "Urgent Medical Help"],
-      ogImage: "/images/patient-care/emergency.jpg",
-    },
-    "second-opinion": {
-      title: "Second Medical Opinion",
-      description: "Consult senior specialists for a second opinion on your diagnosis or treatment plan.",
-      keywords: ["Second Medical Opinion", "Specialist Consultation", "Medical Advice"],
-      ogImage: "/images/patient-care/second-opinion.jpg",
-    },
-    "in-patient": {
-      title: "In-Patient Care Services",
-      description: "Well-equipped in-patient wards with compassionate care, advanced monitoring, and 24x7 support.",
-      keywords: ["In-Patient Care", "Hospital Stay", "Admitted Patient Services"],
-      ogImage: "/images/patient-care/in-patient.jpg",
-    },
-    "out-patient": {
-      title: "Out-Patient Department (OPD) Services",
-      description: "Quick and efficient consultations, follow-ups, and diagnostics for out-patient needs.",
-      keywords: ["OPD Services", "Doctor Consultation", "Out-Patient Department"],
-      ogImage: "/images/patient-care/out-patient.jpg",
-    },
+
+"patient-care": {
+  emergency: {
+    title: "24x7 Emergency Medical Services",
+    description: "Round-the-clock emergency care with advanced life-saving facilities and expert doctors.",
+    keywords: ["Emergency Care", "24x7 Hospital Emergency", "Urgent Medical Help"],
+    ogImage: "/images/patient-care/emergency.jpg",
   },
+  "second-opinion": {
+    title: "Second Medical Opinion",
+    description: "Consult senior specialists for a second opinion on your diagnosis or treatment plan.",
+    keywords: ["Second Medical Opinion", "Specialist Consultation", "Medical Advice"],
+    ogImage: "/images/patient-care/second-opinion.jpg",
+  },
+  "in-patient": {
+    title: "In-Patient Care Services",
+    description: "Well-equipped in-patient wards with compassionate care, advanced monitoring, and 24x7 support.",
+    keywords: ["In-Patient Care", "Hospital Stay", "Admitted Patient Services"],
+    ogImage: "/images/patient-care/in-patient.jpg",
+  },
+  "out-patient": {
+    title: "Out-Patient Department (OPD) Services",
+    description: "Quick and efficient consultations, follow-ups, and diagnostics for out-patient needs.",
+    keywords: ["OPD Services", "Doctor Consultation", "Out-Patient Department"],
+    ogImage: "/images/patient-care/out-patient.jpg",
+  },
+  insurance: {
+    title: "Health Insurance Assistance",
+    description: "Comprehensive support for insurance claims, cashless hospitalization, and empaneled providers.",
+    keywords: ["Health Insurance", "Cashless Hospitalization", "Insurance Claim Support"],
+    ogImage: "/images/patient-care/insurance.jpg",
+  },
+  "health-checks": {
+    title: "Preventive Health Check-Up Packages",
+    description: "Tailored health check-up plans for early detection and preventive care.",
+    keywords: ["Health Check-Up", "Preventive Care", "Medical Screening Packages"],
+    ogImage: "/images/patient-care/health-checks.jpg",
+  },
+},
+
 
   "health-library": {
     "breast-cancer": {

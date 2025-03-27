@@ -34,6 +34,30 @@ import { Pharmacy } from "@/components/Modules/services/support-services/Pharmac
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy";
 import { ActionItem, MenuItemProps, TestimonialItem } from "@/types";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
+import Cardiology from "@/components/Modules/services/our-specialities/Cardiology";
+import Neurology from "@/components/Modules/services/our-specialities/Neurology";
+import Neurosurgery from "@/components/Modules/services/our-specialities/Neurosurgery";
+import Nephrology from "@/components/Modules/services/our-specialities/Nephrology";
+import Urology from "@/components/Modules/services/our-specialities/Urology";
+import Gastroenterology from "@/components/Modules/services/our-specialities/Gastroenterology";
+import Hepatology from "@/components/Modules/services/our-specialities/Hepatology";
+import Orthopedics from "@/components/Modules/services/our-specialities/Orthopedics";
+import Rheumatology from "@/components/Modules/services/our-specialities/Rheumatology";
+import Pulmonology from "@/components/Modules/services/our-specialities/Pulmonology";
+import Endocrinology from "@/components/Modules/services/our-specialities/Endocrinology";
+import Dermatology from "@/components/Modules/services/our-specialities/Dermatology";
+import ENT from "@/components/Modules/services/our-specialities/ENT";
+import Ophthalmology from "@/components/Modules/services/our-specialities/Ophthalmology";
+import GeneralSurgery from "@/components/Modules/services/our-specialities/GeneralSurgery";
+import InternalMedicine from "@/components/Modules/services/our-specialities/InternalMedicine";
+import Pediatrics from "@/components/Modules/services/our-specialities/Pediatrics";
+import Gynecology from "@/components/Modules/services/our-specialities/Gynecology";
+import Psychiatry from "@/components/Modules/services/our-specialities/Psychiatry";
+import BloodBank from "@/components/Modules/services/support-services/BloodBank";
+import Dialysis from "@/components/Modules/services/support-services/Dialysis";
+import { Ambulance } from "lucide-react";
+import HealthChecks from "@/components/Modules/patient-care/HealthChecks";
+import Insurance from "@/components/Modules/patient-care/Insurance";
 export const menuItems: MenuItemProps[] = [
     {
       label: "discover synergy",
@@ -59,6 +83,14 @@ export const menuItems: MenuItemProps[] = [
           ],
         },
         {
+          name: "doctors",
+          links: [
+            { label: "Dr. Alok Tiwari", href: "/doctors/Dr-Alok-Tiwari" },
+            { label: "Dr. Anjali Jain", href: "/doctors/Dr-Anjali-Jain" },
+            { label: "Dr. Saurabh Mishra", href: "/doctors/Dr-Saurabh-Mishra" },
+          ],
+        },
+        {
           name: "Media Center",
           links: [
             { label: "In the News", href: "/media-center#synergy-in-the-news" },
@@ -68,41 +100,72 @@ export const menuItems: MenuItemProps[] = [
             { label: "Media Contact", href: "/media-center#media-contacts" },
           ],
         },
+        {
+          name: "Terms And Privacy Policy",
+          links: [
+            { label: "Your Privacy is Our Policy", href: "/privacy-policy" },
+            { label: "Our Terms and Conditions", href: "/term-and-conditions" },
+          ],
+        },
       ],
     },
     {
-      label: "medical services",
-      pages: [
-        {
-          name: "Our Specialties",
-          links: [
-            { label: "Medical Oncology", href: "/services/medical-oncology" },
-            { label: "Radiation Oncology", href: "/services/radiation-oncology" },
-            { label: "Surgical Oncology", href: "/services/surgical-oncology" },
-            { label: "Hemato-Oncology", href: "/services/hemato-oncology" },
-            { label: "Pain & Palliative Care", href: "/services/palliative-care" },
-          ],
-        },
-        {
-          name: "Support Services",
-          links: [
-            { label: "Diagnostic Imaging", href: "/services/diagnostic-imaging" },
-            { label: "Laboratory Services", href: "/services/laboratory" },
-            { label: "Pharmacy", href: "/services/pharmacy" },
-            { label: "Physiotherapy", href: "/services/physiotherapy" },
-          ],
-        },
-        {
-          name: "Patient Care",
-          links: [
-            { label: "Second Opinion", href: "/patient-care/second-opinion" },
-            { label: "24x7 Emergency", href: "/patient-care/emergency" },
-            { label: "In-Patient Facilities", href: "/patient-care/in-patient" },
-            { label: "Outpatient Clinics", href: "/patient-care/out-patient" },
-          ],
-        },
-      ],
-    },
+        label: "medical services",
+        pages: [
+          {
+            name: "Our Specialties",
+            links: [
+              { label: "Medical Oncology", href: "/services/medical-oncology" },
+              { label: "Radiation Oncology", href: "/services/radiation-oncology" },
+              { label: "Surgical Oncology", href: "/services/surgical-oncology" },
+              { label: "Hemato-Oncology", href: "/services/hemato-oncology" },
+              { label: "Pain & Palliative Care", href: "/services/palliative-care" },
+              { label: "Cardiology", href: "/services/cardiology" },
+              { label: "Neurology", href: "/services/neurology" },
+              { label: "Neurosurgery", href: "/services/neurosurgery" },
+              { label: "Nephrology", href: "/services/nephrology" },
+              { label: "Urology", href: "/services/urology" },
+              { label: "Gastroenterology", href: "/services/gastroenterology" },
+              { label: "Hepatology", href: "/services/hepatology" },
+              { label: "Orthopedics", href: "/services/orthopedics" },
+              { label: "Rheumatology", href: "/services/rheumatology" },
+              { label: "Endocrinology", href: "/services/endocrinology" },
+              { label: "Pulmonology", href: "/services/pulmonology" },
+              { label: "Dermatology", href: "/services/dermatology" },
+              { label: "ENT (Otorhinolaryngology)", href: "/services/ent" },
+              { label: "Ophthalmology", href: "/services/ophthalmology" },
+              { label: "General Surgery", href: "/services/general-surgery" },
+              { label: "Internal Medicine", href: "/services/internal-medicine" },
+              { label: "Pediatrics", href: "/services/pediatrics" },
+              { label: "Gynecology & Obstetrics", href: "/services/gynecology" },
+              { label: "Psychiatry", href: "/services/psychiatry" }
+            ]
+          },
+          {
+            name: "Support Services",
+            links: [
+              { label: "Diagnostic Imaging", href: "/services/diagnostic-imaging" },
+              { label: "Laboratory Services", href: "/services/laboratory" },
+              { label: "Pharmacy", href: "/services/pharmacy" },
+              { label: "Physiotherapy", href: "/services/physiotherapy" },
+              { label: "Blood Bank", href: "/services/blood-bank" },
+              { label: "Dialysis Unit", href: "/services/dialysis" },
+              { label: "Ambulance Services", href: "/services/ambulance" }
+            ]
+          },
+          {
+            name: "Patient Care",
+            links: [
+              { label: "Second Opinion", href: "/patient-care/second-opinion" },
+              { label: "24x7 Emergency", href: "/patient-care/emergency" },
+              { label: "In-Patient Facilities", href: "/patient-care/in-patient" },
+              { label: "Outpatient Clinics", href: "/patient-care/out-patient" },
+              { label: "Health Check Packages", href: "/patient-care/health-checks" },
+              { label: "Insurance & TPA Services", href: "/patient-care/insurance" }
+            ]
+          }
+        ]
+      },
     {
       label: "health library",
       pages: [
@@ -337,6 +400,7 @@ export const actions: ActionItem[] = [
     { icon: <FaPhone className="size-6" />, label: "Call Us", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
     { icon: <FaSearch className="size-6" />, label: "Search", onClick: ()=>{}, className: "rounded-r-xl rounded-l-none border-l-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
   ];
+
   export const excellenceItems = [
     {
       question: "01. Quality and Patient Centricity",
@@ -360,7 +424,17 @@ export const actions: ActionItem[] = [
     }
   ];
 
+
+
+// MAPS FOR DYNAMIC PAGES
+
   export const LeadershipMap = {
+    "Dr-Alok-Tiwari": <DrAlokTiwari />,
+    "Dr-Anjali-Jain": <DrAnjaliJain />,
+    "Dr-Saurabh-Mishra": <DrSaurabhMishra />
+  };
+
+  export const DoctorsMap = {
     "Dr-Alok-Tiwari": <DrAlokTiwari />,
     "Dr-Anjali-Jain": <DrAnjaliJain />,
     "Dr-Saurabh-Mishra": <DrSaurabhMishra />
@@ -372,10 +446,34 @@ export const actions: ActionItem[] = [
     "surgical-oncology": <SurgicalOncology />,
     "hemato-oncology": <HematoOncology />,
     "palliative-care": <PalliativeCare />,
+    "cardiology": <Cardiology />,
+    "neurology": <Neurology />,
+    "neurosurgery": <Neurosurgery />,
+    "nephrology": <Nephrology />,
+    "urology": <Urology />,
+    "gastroenterology": <Gastroenterology />,
+    "hepatology": <Hepatology />,
+    "orthopedics": <Orthopedics />,
+    "rheumatology": <Rheumatology />,
+    "endocrinology": <Endocrinology />,
+    "pulmonology": <Pulmonology />,
+    "dermatology": <Dermatology />,
+    "ent": <ENT />,
+    "ophthalmology": <Ophthalmology />,
+    "general-surgery": <GeneralSurgery />,
+    "internal-medicine": <InternalMedicine />,
+    "pediatrics": <Pediatrics />,
+    "gynecology": <Gynecology />,
+    "psychiatry": <Psychiatry />,
+
+    // Support Services
     "diagnostic-imaging": <DiagnosticImaging />,
     laboratory: <Laboratory />,
     pharmacy: <Pharmacy />,
     physiotherapy: <Physiotherapy />,
+    "blood-bank": <BloodBank />,
+    dialysis: <Dialysis />,
+    ambulance: <Ambulance />,
   };
 
   export const PatientCareMap = {
@@ -383,6 +481,8 @@ export const actions: ActionItem[] = [
     "second-opinion" : <SecondOpinion />,
     "in-patient" : <InPatientFacilities />,
     "out-patient" : <OutPatientClinic />,
+    "health-checks" : <HealthChecks />,
+    "insurance" : <Insurance />,
   };
 
   export const HealthLibraryMap = {

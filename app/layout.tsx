@@ -1,8 +1,7 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
+import { Nunito, Nunito_Sans } from 'next/font/google';
 import "./globals.css";
-import { NavAndFooterWrapper } from "@/components/wrapper/NavAndFooterWrapper";
-import {Nunito, Nunito_Sans} from 'next/font/google'
 
 const nunito = Nunito({
     subsets: ['latin'],
@@ -32,11 +31,10 @@ export default function RootLayout({
         className={cn(nunito.variable, nunito_sans.variable, "")}
         suppressContentEditableWarning suppressHydrationWarning
       >
-        <NavAndFooterWrapper>
             <main className="min-h-screen ">
                 {children}
             </main>
-        </NavAndFooterWrapper>
+
       </body>
     </html>
   );

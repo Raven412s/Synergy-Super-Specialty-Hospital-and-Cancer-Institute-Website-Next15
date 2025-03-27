@@ -21,7 +21,7 @@ import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { slides } from "@/app/(Home-Page)/_data";
+import { slides } from "@/app/(with nav and footer)/(Home-Page)/_data";
 import { SliderCardProps } from "@/types";
 
 export default function SliderWithTriggers() {

@@ -1,69 +1,150 @@
-// components/StickyActionBar.tsx
 "use client";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ActionItem } from "@/types";
 
 type Props = {
   items: ActionItem[];
+  isOnFooter?: boolean; // 🌟 New optional prop
 };
 
-export const FloatingActionBar = ({ items }: Props) => {
+export const FloatingActionBar = ({ items, isOnFooter = false }: Props) => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isTouchingFooter, setIsTouchingFooter] = useState(false);
 
+  const normalizedIsOnFooter = !!isOnFooter;
 
   useEffect(() => {
-    const banner = document.getElementById('banner')
+    if (normalizedIsOnFooter) return;
+
+    const banner = document.getElementById("banner");
+    const footer = document.getElementById("footer");
+
     const handleScroll = () => {
-      if (!banner) return
-      const bottom = banner.getBoundingClientRect().bottom
-      setIsSticky(bottom <= 0)
+      if (!banner) return;
+      const bottom = banner.getBoundingClientRect().bottom;
+      setIsSticky(bottom <= 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    let observer: IntersectionObserver;
+
+    if (footer) {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsTouchingFooter(entry.isIntersecting);
+        },
+        { root: null, threshold: 0.01 }
+      );
+      observer.observe(footer);
     }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (observer && footer) observer.unobserve(footer);
+    };
+  }, [normalizedIsOnFooter]);
+
 
   return (
     <TooltipProvider>
       <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -30 }}
-          transition={{ duration: 0.3 }}
-          className={cn(
-            `z-10 transition-all duration-300 ease-in-out`,
-            isSticky
-              ? 'fixed bottom-0 w-full flex justify-around bg-white/10 backdrop-blur-sm p-2 shadow-md md:flex-col md:top-1/2 md:-translate-y-1/2 md:left-0 md:w-auto md:rounded-r-xl'
-              : 'absolute left-1/2 -translate-x-1/2 bottom-[90px] hidden md:flex flex-col lg:flex-row'
-          )}
-        >
-          {items.map((item, idx) => (
-            <Tooltip key={idx}>
-              <TooltipTrigger asChild>
-                <Button
-                  onClick={item.onClick}
-                  variant="default"
-                  size={isSticky ? "icon" : "lg"}
-                  aria-label={item.label}
-                  className={cn(
-                    "flex items-center justify-center gap-2",
-                    isSticky ? "p-5 rounded-full flex-col shadow-2xl bg-indigo-800" :  item.className
-                  )}
-                >
-                  {item.icon}
-                  <span className={cn("text-xl", isSticky && "sr-only")}>{item.label}</span>
-                </Button>
-              </TooltipTrigger>
-              {isSticky && <TooltipContent side="right">{item.label}</TooltipContent>}
-            </Tooltip>
-          ))}
-        </motion.div>
+        {/* 🔘 New: Footer Mode */}
+{isOnFooter && (
+  <div className="w-full flex justify-center mb-8 md:mb-10">
+    <div className="flex flex-wrap justify-center items-center bg-white/10 backdrop-blur-sm p-3 rounded-xl shadow-md w-fit">
+      {items.map((item, idx) => (
+        <Tooltip key={idx}>
+          <TooltipTrigger asChild>
+            <Button
+              onClick={item.onClick}
+              variant="default"
+              size="lg"
+              aria-label={item.label}
+              className={cn("flex items-center justify-center gap-2", item.className)}
+            >
+              {item.icon}
+              <span className="text-base">{item.label}</span>
+            </Button>
+          </TooltipTrigger>
+        </Tooltip>
+      ))}
+    </div>
+  </div>
+)}
+
+
+        {/* Sticky Mode + Footer Not Touching → Show */}
+        {!isOnFooter && isSticky && !isTouchingFooter && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.3 }}
+            className={cn(
+              "z-10 fixed transition-all duration-300 ease-in-out w-full flex justify-around bg-white/10 backdrop-blur-sm p-2 shadow-md md:flex-col md:w-auto md:rounded-r-xl",
+              "bottom-0 md:top-1/2 md:-translate-y-1/2"
+            )}
+          >
+            {items.map((item, idx) => (
+              <Tooltip key={idx}>
+                <TooltipTrigger asChild>
+                  <Button
+                    onClick={item.onClick}
+                    variant="default"
+                    size="icon"
+                    aria-label={item.label}
+                    className={cn(
+                      "flex items-center justify-center gap-2 p-5 rounded-full flex-col shadow-2xl bg-indigo-800"
+                    )}
+                  >
+                    {item.icon}
+                    <span className="sr-only">{item.label}</span>
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent side="right">{item.label}</TooltipContent>
+              </Tooltip>
+            ))}
+          </motion.div>
+        )}
+
+        {/* Non-sticky Mode (when banner visible) — Center Floating Bar */}
+        {!isOnFooter && !isSticky && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.3 }}
+            className="z-10 absolute left-1/2 -translate-x-1/2 bottom-[90px] hidden md:flex flex-col lg:flex-row"
+          >
+            {items.map((item, idx) => (
+              <Tooltip key={idx}>
+                <TooltipTrigger asChild>
+                  <Button
+                    onClick={item.onClick}
+                    variant="default"
+                    size="lg"
+                    aria-label={item.label}
+                    className={cn("flex items-center justify-center gap-2", item.className)}
+                  >
+                    {item.icon}
+                    <span className="text-xl">{item.label}</span>
+                  </Button>
+                </TooltipTrigger>
+              </Tooltip>
+            ))}
+          </motion.div>
+        )}
       </AnimatePresence>
     </TooltipProvider>
   );

@@ -36,7 +36,6 @@ export function Navbar() {
   const [innerOpen, setInnerOpen] = useState(false);
   const [selectedMenuItem, setSelectedMenuItem] = useState<typeof menuItems[0] | null>(null);
 
-
   // Function to handle scroll events
   const handleScroll = () => {
     // Calculate the scroll percentage
@@ -76,7 +75,7 @@ export function Navbar() {
                     {item.pages[0]?.name && (
                       <>
                         {/* LEFT: Page Names */}
-                        <div className="w-1/6 p-4 flex flex-col space-y-2 items-start">
+                        <div className="w-1/6 p-4 flex flex-col space-y-2 items-start min-h-full">
                           {item.pages.map((page, pageIndex) => (
                             <Button key={pageIndex} variant={"ghost"} onMouseEnter={() => setActivePageIndex(pageIndex)} className={cn("text-left hover:text-indigo-600 w-full items-start justify-start text-lg", { "text-indigo-600 font-semibold": activePageIndex === pageIndex })}>
                               {page.name}
@@ -84,16 +83,28 @@ export function Navbar() {
                           ))}
                         </div>
 
-                        {/* CENTER: Links */}
-                        <div className="w-3/6 border-x border-gray-300 p-4 flex flex-col gap-4">
-                          {item.pages[activePageIndex]?.links.map(
-                            (link, linkIndex) => (
-                              <Link key={linkIndex} href={link.href} className="hover:underline w-max" >
-                                {link.label}
-                              </Link>
-                            ),
-                          )}
-                        </div>
+   {/* CENTER: Links */}
+<div className="w-3/6 border-x border-gray-300 p-4 min-h-full overflow-auto">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    {Array.from({ length: Math.ceil(item.pages[activePageIndex]?.links.length / 10) }).map((_, colIndex) => {
+      const start = colIndex * 10;
+      const columnLinks = item.pages[activePageIndex]?.links.slice(start, start + 10);
+
+      return (
+        <div key={colIndex} className="flex flex-col gap-2">
+          {columnLinks.map((link, linkIndex) => (
+            <Link key={linkIndex} href={link.href} className="hover:underline w-max block">
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      );
+    })}
+  </div>
+</div>
+
+
+
 
                         {/* RIGHT: Quick Links for first menu only */}
 

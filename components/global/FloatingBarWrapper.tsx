@@ -3,6 +3,10 @@
 import { actions } from "@/data";
 import { FloatingActionBar } from "./FloatingActionBar";
 
-export const FloatingBarWrapper = () => {
-  return <FloatingActionBar items={actions} />;
+type Props = {
+  isOnFooter?: boolean;
+};
+
+export const FloatingBarWrapper = ({ isOnFooter }: Props) => {
+  return <FloatingActionBar isOnFooter={isOnFooter} items={actions} />;
 };

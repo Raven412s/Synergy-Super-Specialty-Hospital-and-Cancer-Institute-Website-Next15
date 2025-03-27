@@ -2,6 +2,7 @@
 
 import {
     CancerSurvivorsMap,
+    DoctorsMap,
     HealthLibraryMap,
     LeadershipMap,
     PatientCareMap,
@@ -73,6 +74,7 @@ export default async function DynamicPage(props: {
       "patient-care": PatientCareMap,
       "health-library": HealthLibraryMap,
       survivors: CancerSurvivorsMap,
+      doctors: DoctorsMap,
     };
 
     const Component = sectionMap[section]?.[slug];
