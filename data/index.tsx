@@ -32,7 +32,7 @@ import { DiagnosticImaging } from "@/components/Modules/services/support-service
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory";
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy";
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy";
-import { ActionItem, MenuItemProps, TestimonialItem } from "@/types";
+import { ActionItem, LeaderCardProps, MenuItemProps, TestimonialItem } from "@/types";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
 import Cardiology from "@/components/Modules/services/our-specialities/Cardiology";
 import Neurology from "@/components/Modules/services/our-specialities/Neurology";
@@ -58,6 +58,7 @@ import Dialysis from "@/components/Modules/services/support-services/Dialysis";
 import { Ambulance } from "lucide-react";
 import HealthChecks from "@/components/Modules/patient-care/HealthChecks";
 import Insurance from "@/components/Modules/patient-care/Insurance";
+
 export const menuItems: MenuItemProps[] = [
     {
       label: "discover synergy",
@@ -424,7 +425,176 @@ export const actions: ActionItem[] = [
     }
   ];
 
+  export const generalQuestions = [
+    {
+      question: "What services does Synergy Super Speciality Hospital and Cancer Institute provide?",
+      answer: "We offer a complete range of oncology services including Surgical, Medical, and Radiation Oncology, along with diagnostics, rehabilitation, pain management, and supportive care."
+    },
+    {
+      question: "Is Synergy Cancer Hospital open 24/7?",
+      answer: "Yes, our hospital is operational 24 hours a day, 7 days a week to ensure timely care for patients."
+    },
+    {
+      question: "Do you treat all types of cancers?",
+      answer: "Yes, we specialize in treating various forms of cancer including breast, lung, prostate, cervical, colorectal, blood cancers, and more."
+    },
+    {
+      question: "Are walk-in consultations available?",
+      answer: "While walk-ins are accepted, we recommend booking an appointment in advance to avoid waiting."
+    },
+    {
+      question: "How do I reach the hospital from the Gorakhpur railway station?",
+      answer: "We are located a short drive from Gorakhpur Junction. You can use cab services, autos, or contact us for location assistance."
+    },
+    {
+      question: "Are the doctors certified and experienced in oncology?",
+      answer: "Yes, all our oncologists are highly qualified and have advanced training in surgical, medical, and radiation oncology."
+    },
+    {
+      question: "What are the available payment options?",
+      answer: "We accept cash, credit/debit cards, UPI payments, and most major health insurance plans."
+    },
+    {
+      question: "Is insurance accepted at your hospital?",
+      answer: "Yes, we work with multiple insurance providers. Please bring your insurance documents for smooth processing."
+    }
+  ];
 
+  export const beforeVisitQuestions = [
+    {
+      question: "How can I schedule my first appointment?",
+      answer: "You can call us directly or use the appointment booking form on our official website."
+    },
+    {
+      question: "What documents should I carry for the first consultation?",
+      answer: "Please bring a valid ID proof, referral letter (if any), past medical records, test results, and insurance documents."
+    },
+    {
+      question: "Can I get a second opinion before starting treatment?",
+      answer: "Yes, we encourage second opinions to ensure you’re comfortable and confident with your treatment plan."
+    },
+    {
+      question: "How do I prepare for my first consultation?",
+      answer: "Be ready with your medical history, a list of current medications, and any specific questions you have for the doctor."
+    },
+    {
+      question: "Is there any cost for the first consultation?",
+      answer: "Yes, consultation fees apply but may vary based on the specialist. You can call our helpdesk for the exact pricing."
+    },
+    {
+      question: "Do I need to fast or follow any dietary restrictions before my visit?",
+      answer: "Only if you're scheduled for blood tests or scans that require fasting. Our team will inform you in advance."
+    },
+    {
+      question: "Can a family member accompany me to my consultation?",
+      answer: "Absolutely. We encourage a family member to join for support and to help remember important details."
+    },
+    {
+      question: "Is parking available on-site?",
+      answer: "Yes, we provide ample parking for patients and visitors free of charge."
+    }
+  ];
+
+  export const duringTreatmentQuestions = [
+    {
+      question: "What should I expect during chemotherapy?",
+      answer: "Our staff will guide you through every step. Sessions may take a few hours and you might experience fatigue, nausea, or hair loss."
+    },
+    {
+      question: "Are side effects from treatment common?",
+      answer: "Side effects are common but manageable. Our doctors will provide medications and support to reduce discomfort."
+    },
+    {
+      question: "Can I continue working during my treatment?",
+      answer: "Depending on the treatment and your physical condition, many patients continue to work part-time. Discuss with your doctor for personalized advice."
+    },
+    {
+      question: "Will I need to be admitted for treatment?",
+      answer: "Some treatments are day-care procedures, while others may require admission. It varies based on your treatment plan."
+    },
+    {
+      question: "Are meals provided during hospital stays?",
+      answer: "Yes, we offer dietician-approved meals tailored for patients undergoing cancer treatment."
+    },
+    {
+      question: "What support services are available during treatment?",
+      answer: "We offer psychological counseling, nutritional support, pain management, and support groups."
+    },
+    {
+      question: "Can my family visit me during treatment?",
+      answer: "Yes, family visits are allowed with some restrictions depending on your condition and COVID-19 protocols."
+    },
+    {
+      question: "Will I have access to a dedicated care coordinator?",
+      answer: "Yes, we assign case managers or coordinators to help guide patients through each stage of care."
+    }
+  ];
+
+  export const afterTreatmentQuestions = [
+    {
+      question: "How often do I need to follow up after treatment?",
+      answer: "Follow-ups typically occur every 3 to 6 months initially and gradually decrease depending on your recovery and condition."
+    },
+    {
+      question: "Are rehabilitation services provided post-treatment?",
+      answer: "Yes, we offer physical therapy, occupational therapy, and psychological support to aid in recovery."
+    },
+    {
+      question: "Will I experience long-term side effects?",
+      answer: "Some patients may experience fatigue, cognitive changes, or hormonal imbalances. Our team helps monitor and manage them."
+    },
+    {
+      question: "Is lifestyle counseling offered post-treatment?",
+      answer: "Yes, we provide dietary advice, exercise routines, and mental wellness support to help you resume a healthy life."
+    },
+    {
+      question: "Can cancer come back after treatment?",
+      answer: "There is always a chance of recurrence. That’s why regular follow-ups and scans are crucial to detect any changes early."
+    },
+    {
+      question: "How can I monitor my health after treatment?",
+      answer: "Stick to your follow-up schedule, report new symptoms promptly, and maintain a healthy lifestyle."
+    },
+    {
+      question: "Will I need to take medication long-term?",
+      answer: "Depending on the cancer type and treatment, you may be prescribed long-term maintenance medications."
+    },
+    {
+      question: "How do I deal with emotional challenges post-treatment?",
+      answer: "We offer support groups and one-on-one counseling with psychologists to help patients transition emotionally post-treatment."
+    }
+  ];
+
+
+  export const Leaders: LeaderCardProps[] = [
+    {
+      name: "Dr. Alok Tiwari",
+      role: "Surgical Oncologist",
+      description:
+        "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
+      image: "", // Add actual image URL or path here
+      onDownload() {},
+      onReadMore() {},
+    },
+    {
+      name: "Dr. Anjali Jain",
+      role: "Director & Head – Gynae Oncology",
+      description:
+        "Specialist in gynaecologic oncology and minimal invasive gynaecologic surgeries, offering advanced and compassionate care in women's cancer treatment.",
+      image: "", // Add actual image URL or path here
+      onDownload() {},
+      onReadMore() {},
+    },
+    {
+      name: "Dr. Saurabh Mishra",
+      role: "Medical Oncologist & Haemat Oncologist",
+      description:
+        "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
+      image: "", // Add actual image URL or path here
+      onDownload() {},
+      onReadMore() {},
+    },
+  ];
 
 // MAPS FOR DYNAMIC PAGES
 

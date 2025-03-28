@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { menuItems } from '@/data';
-import { FloatingBarWrapper } from './FloatingBarWrapper';
+import Link from 'next/link';
+import { FooterFormContainer } from './FooterFormContainer';
 
 export const Footer = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer = () => {
       id="footer"
       className="relative container mx-auto  py-12 px-4 sm:px-6 lg:px-8 "
     >
-      <FloatingBarWrapper isOnFooter={true} />
+        <FooterFormContainer/>
     <div className="flex items-center justify-center w-full  ">
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  w-full">
         {menuItems.map((menu) => {

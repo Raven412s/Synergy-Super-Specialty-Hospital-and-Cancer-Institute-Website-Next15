@@ -1,5 +1,6 @@
 import FaqAccordion from '@/components/homepage/FaqAccordion'
-import { excellenceItems } from '@/data'
+import { LeaderCard } from '@/components/the-synergy-story/LeaderCard';
+import { excellenceItems, Leaders } from '@/data'
 import Image from 'next/image'
 import React from 'react'
 
@@ -133,11 +134,12 @@ const TheSynergyStory = () => {
         </div>
       </section>
       <section
-  className='min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4'
+  className="min-h-screen w-full bg-gradient-to-b from-white via-indigo-100 to-white px-6 lg:px-24 py-4 my-12"
 >
-  <div className='max-w-4xl mx-auto text-center py-12'>
-    <h2 className='text-heading'>Synergy Excellence</h2>
-<div className="space-y-4">
+<div className='p-8 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+<div className='container mx-auto   '>
+    <h2 className='text-heading '>Synergy Excellence</h2>
+<div className="space-y-4 ">
     {/* sub-heading */}
 <p className='text-base md:text-lg text-gray-700 leading-relaxed '>
       A Journey of Compassion, Quality, and Comprehensive Cancer Care
@@ -151,14 +153,18 @@ const TheSynergyStory = () => {
     </p>
 </div>
   </div>
-
   {/* Accordion Component  */}
-  <div className='max-w-4xl mx-auto'>
+  <div className=' flex items-center justify-start w-full'>
     <FaqAccordion items={excellenceItems} />
   </div>
-</section>
+</div>
 
-      <section className='min-h-screen w-full   bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Leadership'>Leadership</section>
+</section>
+      <section className='min-h-screen w-full   bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Leadership'>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center lg:gap-8 gap-y-8 gap-x-4">
+            {Leaders.map((leader,i)=>< LeaderCard key={i} image={leader.image? leader.image : "/Dummy.png"} name={leader.name? leader.name : "Leader Name"} role={leader.role ? leader.role : "senior doctor"} description={leader.description ? leader.description : "No description provided"} />)}
+        </div>
+      </section>
       <section className='min-h-screen w-full  bg-gradient-to-t from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Awards-and-Accolades'>Awards-and-Accolades</section>
       <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Achievements-and-Milestones'>Achievements-and-Milestones</section>
       <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-6 lg:px-24 py-4 ' id='A-Day-at-Synergy'>A-Day-at-Synergy</section>

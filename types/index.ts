@@ -65,3 +65,12 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
     label: string;
     onClick?: () => void;
   };
+
+  export type LeaderCardProps = {
+    image: string
+    name: string
+    role: string
+    description: string
+    onReadMore?: () => void
+    onDownload?: () => void
+  }
