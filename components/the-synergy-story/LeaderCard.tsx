@@ -15,6 +15,7 @@ import Image from 'next/image'
 import { ImageDown } from 'lucide-react'
 import { LeaderCardProps } from '@/types'
 import { useRouter } from 'next/navigation'
+import { DownloadImageButton } from './DownloadImageButton'
 
 
 
@@ -61,19 +62,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     >
       Read more...
     </Button>
-    <Button
-      variant="outline"
-      size="icon"
-      className="w-8 h-8 text-gray-700 hover:text-primary"
-      onClick={()=>{
-        if (onDownload) {
-            router.push(onDownload)
-        }
-      }
-      }
-    >
-      <ImageDown className="w-4 h-4" />
-    </Button>
+      <DownloadImageButton filePath={onDownload!} />
   </CardFooter>
 </Card>
 

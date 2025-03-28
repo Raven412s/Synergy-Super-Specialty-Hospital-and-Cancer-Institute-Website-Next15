@@ -1,0 +1,25 @@
+'use client'
+import { ImageDown } from "lucide-react";
+import { Button } from "../ui/button";
+
+export const DownloadImageButton = ({ filePath }: { filePath: string }) => {
+  const handleDownload = () => {
+    const link = document.createElement("a")
+    link.href = filePath
+    link.download = "" // optional: keeps the original file name
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
+  return (
+    <Button
+      variant="outline"
+      size="icon"
+      className="hover:text-primary"
+      onClick={handleDownload}
+    >
+      <ImageDown />
+    </Button>
+  )
+}
