@@ -13,7 +13,7 @@ export const Faqs = () => {
       {/* General FAQs */}
       <section
         id='general'
-        className="min-h-screen w-full my-12   px-6 lg:px-24 py-4 "
+        className="min-h-screen w-full my-12   px-2 md:px-6 lg:px-24 py-4 "
       >
         <div className='lg:p-8 p-4 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
           <div className='container mx-auto'>
