@@ -67,115 +67,106 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="w-full">
-      {/* Hero Section with Video */}
-      <section id="banner" className="relative min-h-screen w-full ">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          aria-label="Promotional video showcasing Synergy Hospital"
-        >
-          <source src="/Banner.webm" type="video/webm" />
-          <source src="/Banner.mp4" type="video/mp4" />
-          {/* Fallback content for accessibility
-          Your browser does not support the video tag. Please visit our website for more information. */}
-        </video>
-        <FloatingBarWrapper   />
-        {/* Scroll-to-next-section Button */}
-        <div className="absolute bottom-5 w-full flex justify-center">
-          <a href="#specialties" className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition">
-            Explore More
-          </a>
-        </div>
-      </section>
-
-      {/* Excelent Specialties Section */}
-      <section
-        id="specialties"
-        className="min-h-[120vh] h-full w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-5 lg:px-28 py-10 relative flex items-center justify-center "
+<main className="w-full">
+  {/* Hero Section with Video */}
+  <section id="banner" className="relative min-h-screen w-full">
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+      aria-label="Promotional video showcasing Synergy Hospital"
+    >
+      <source src="/Banner.webm" type="video/webm" />
+      <source src="/Banner.mp4" type="video/mp4" />
+    </video>
+    <FloatingBarWrapper />
+    <div className="absolute bottom-5 w-full flex justify-center px-4">
+      <a
+        href="#specialties"
+        className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base"
       >
-   <div className="">
-         {/* First Texts */}
-         <div className="space-y-4">
-          <h1 className="text-heading">
-            Discover Our Centres of Clinical Excellence
-          </h1>
-          <p className="font-sans lg:text-lg text-base">
-            At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare
-            through our specialized centers of medical excellence. Our state-of-the-art facilities offer unparalleled
-            expertise in various medical disciplines, setting new benchmarks in clinical outcomes globally.
-          </p>
-        </div>
+        Explore More
+      </a>
+    </div>
+  </section>
 
-        {/* Slider */}
-        <div className="flex flex-col gap-5 items-center w-full h-auto mt-8">
-          <SliderWithTriggers />
-        </div>
-   </div>
-      </section>
+  {/* Specialties Section */}
+  <section
+    id="specialties"
+    className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-4 sm:px-8 lg:px-20 py-10 flex items-center justify-center"
+  >
+    <div className="max-w-7xl w-full space-y-6">
+      <div className="space-y-4">
+        <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
+          Discover Our Centres of Clinical Excellence
+        </h1>
+        <p className="font-sans text-sm sm:text-base lg:text-lg text-slate-700">
+          At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare...
+        </p>
+      </div>
 
-      {/* Testimonial Cards */}
-      <section
-        id="specialties"
-        className=" min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-5 lg:px-28 py-10 relative flex items-center justify-center "
-      >
-        <div className="space-y-5 lg:space-y-20 ">
-                    {/* First Texts */}
-        <div className="space-y-4 lg:space-y-8">
-          <h1 className="text-heading">
+      <div className="mt-6">
+        <SliderWithTriggers />
+      </div>
+    </div>
+  </section>
+
+  {/* Testimonial Cards */}
+  <section
+    className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-4 sm:px-8 lg:px-20 py-10 flex items-center justify-center"
+  >
+    <div className="max-w-7xl w-full space-y-10">
+      <div className="space-y-4">
+        <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
           Transforming Lives Through Healthcare Excellence
-          </h1>
-          <p className="font-sans lg:text-lg text-base">
-          Synergy Super-specialty Hospital and Cancer Institute, established in 2021, is committed to delivering exceptional healthcare services with a focus on cancer care. Located in Gorakhpur, Uttar Pradesh, our hospital offers state-of-the-art facilities and a comprehensive range of medical services to meet the diverse needs of our patients.
-          </p>
-        </div>
+        </h1>
+        <p className="font-sans text-sm sm:text-base lg:text-lg text-slate-700">
+          Synergy Super-specialty Hospital and Cancer Institute, established in 2021, is committed to delivering exceptional healthcare...
+        </p>
+      </div>
 
-        {/* Cards Grid */}
-        <div className="flex  flex-wrap gap-5 lg:gap-7 items-center w-full h-auto mt-8 justify-center">
-            {hospitalHighlights.map((cardDetails, index)=>(
-                <TestimonialCard {...cardDetails} key={index} />
-            ))}
-        </div>
-        </div>
-      </section>
+      <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
+        {hospitalHighlights.map((cardDetails, index) => (
+          <TestimonialCard {...cardDetails} key={index} />
+        ))}
+      </div>
+    </div>
+  </section>
 
-      {/* News Section */}
-      <section
-        className=" w-full bg-gradient-to-b from-indigo-100 to-indigo-200  px-5 lg:px-28 py-10"
-      >
-        <NewsSlider/>
-      </section>
+  {/* News Section */}
+  <section className="w-full bg-gradient-to-b from-indigo-100 to-indigo-200 px-4 sm:px-8 lg:px-20 py-10">
+    <div className="max-w-7xl mx-auto">
+      <NewsSlider />
+    </div>
+  </section>
 
-     {/* Patient Speaks */}
-        <section
-            className=" w-full bg-gradient-to-b from-fuchsia-100 to-indigo-200 px-5 lg:px-28 py-10 space-y-4"
-        >
-            <h1 className="text-heading">
-                See What Our Patient Say
-            </h1>
+  {/* Patient Speaks */}
+  <section className="w-full bg-gradient-to-b from-fuchsia-100 to-indigo-200 px-4 sm:px-8 lg:px-20 py-10">
+    <div className="max-w-7xl mx-auto space-y-6">
+      <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
+        See What Our Patients Say
+      </h1>
+      <PatientTestimonialMarquee marqueeArray={testimonialsForMarquee} />
+    </div>
+  </section>
 
-            <PatientTestimonialMarquee marqueeArray={testimonialsForMarquee} />
-        </section>
+  {/* FAQs */}
+  <section className="w-full bg-gradient-to-t from-white to-indigo-200 px-4 sm:px-8 lg:px-20 py-10">
+    <div className="max-w-7xl mx-auto space-y-6">
+      <div className="space-y-4">
+        <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
+          Frequently Asked Questions
+        </h1>
+        <p className="text-slate-600 text-sm sm:text-base lg:text-lg">
+          Find answers to common questions about our services, treatments, appointments...
+        </p>
+      </div>
+      <FaqAccordion items={faqItems} />
+    </div>
+  </section>
+</main>
 
-{/* Frequently asked questions */}
-<section className="w-full bg-gradient-to-t from-white from-60% to-100% to-indigo-200 px-5 lg:px-28 py-10">
-<div className="space-y-6 my-6">
-<h1 className="text-heading">
-      Frequently Asked Questions
-    </h1>
-    <p className="text-slate-600 text-base lg:text-lg">
-      Find answers to common questions about our services, treatments, appointments, and patient care options to help you make informed health decisions.
-    </p>
-</div>
-<div >
-    <FaqAccordion items={faqItems} />
-</div>
-
-</section>
-
-    </main>
   );
 }
