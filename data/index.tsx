@@ -71,6 +71,7 @@ export const menuItems: MenuItemProps[] = [
             { label: "Our Vision", href: "/the-synergy-story#Our-Vision" },
             { label: "Our Mission", href: "/the-synergy-story#Our-Mission" },
             { label: "Leadership", href: "/the-synergy-story#Leadership" },
+            { label: "See What Synergy Achieved", href: "/the-synergy-story#Awards-and-Accolades" },
             { label: "Milestones", href: "/the-synergy-story#Achievements-and-Milestones" },
             { label: "Awards", href: "/the-synergy-story#Awards-and-Accolades" },
             { label: "Life at Synergy", href: "/the-synergy-story#A-Day-at-Synergy" },
@@ -573,8 +574,8 @@ export const actions: ActionItem[] = [
       role: "Surgical Oncologist",
       description:
         "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
-      image: "", 
-      onDownload: "",
+      image: "/doctors/doc-alok-tiwari.png",
+      onDownload: "/doctors/doc-alok-tiwari.png",
       onReadMore: "/leadership/Dr-Alok-Tiwari"
     },
     {
@@ -591,7 +592,7 @@ export const actions: ActionItem[] = [
       role: "Medical Oncologist & Haemat Oncologist",
       description:
         "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-      image: "/doctors/doc-saurabh-mishra.png", 
+      image: "/doctors/doc-saurabh-mishra.png",
       onDownload: "/doctors/doc-saurabh-mishra.png",
       onReadMore: "/leadership/Dr-Saurabh-Mishra",
     },
