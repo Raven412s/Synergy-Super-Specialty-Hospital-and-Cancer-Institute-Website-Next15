@@ -116,7 +116,7 @@ const TheSynergyStory = () => {
                         </div>
                     </div>
                     <div className="w-full lg:w-4/6 px-0 lg:px-8 space-y-10">
-                        <h2 className='text-heading'>Synergy Super Specialty Hospital & Cancer Institute: A Beacon of Hope in the Fight Against Cancer</h2>
+                        <h1 className='text-heading'>Synergy Super Specialty Hospital & Cancer Institute: A Beacon of Hope in the Fight Against Cancer</h1>
                         <div className="space-y-4 text-base sm:text-lg md:text-xl lg:text-xl">
                             <p>Synergy Super Specialty Hospital & Cancer Institute (SSSHCI) stands as a beacon of hope for cancer patients in the Eastern Uttar Pradesh region, aiming to become the <strong className='text-primary'>trusted choice</strong> for comprehensive cancer care. Their vision is clear: to <strong className='text-primary'>eliminate the fear of cancer</strong> and instill the understanding that it is indeed a <strong className='text-primary'>curable disease</strong>. This vision is driven by a passionate team dedicated to providing <strong className='text-primary'>cost-effective</strong> and <strong className='text-primary'>comprehensive cancer care</strong> to all.</p>
 
@@ -138,7 +138,7 @@ const TheSynergyStory = () => {
             >
                 <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                     <div className='container mx-auto   '>
-                        <h2 className='text-heading '>Synergy Excellence</h2>
+                        <h1 className='text-heading '>Synergy Excellence</h1>
                         <div className="space-y-4 ">
                             {/* sub-heading */}
                             <p className='text-base md:text-lg text-gray-700 leading-relaxed '>
@@ -149,7 +149,7 @@ const TheSynergyStory = () => {
                                 Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) is committed to offering world-class, affordable,
                                 and comprehensive cancer care. With a team of passionate oncology specialists and a focus on innovation and empathy,
                                 we provide cutting-edge treatments tailored to each patient’s needs. At SSSHCI, clinical excellence is not just a goal —
-                                it’s our way of serving humanity with dignity and courage.
+                                it&apos;s our way of serving humanity with dignity and courage.
                             </p>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ const TheSynergyStory = () => {
                     {/* Heading + Subheading */}
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">
                         {/* Heading */}
-                        <h2 className="text-heading text-left">Meet Our Leadership</h2>
+                        <h1 className="text-heading text-left">Meet Our Leadership</h1>
 
                         {/* Subheading + Description */}
                         <div className="space-y-4">
@@ -179,8 +179,8 @@ const TheSynergyStory = () => {
                             <p className="text-base md:text-lg text-gray-800 leading-relaxed">
                                 Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) is committed to offering world-class, affordable,
                                 and comprehensive cancer care. With a team of passionate oncology specialists and a focus on innovation and empathy,
-                                we provide cutting-edge treatments tailored to each patient’s needs. At SSSHCI, clinical excellence is not just a goal —
-                                it’s our way of serving humanity with dignity and courage.
+                                we provide cutting-edge treatments tailored to each patient&apos;s needs. At SSSHCI, clinical excellence is not just a goal —
+                                it&apos;s our way of serving humanity with dignity and courage.
                             </p>
                         </div>
                     </div>
@@ -189,9 +189,9 @@ const TheSynergyStory = () => {
 
                     {/* Cards Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {Leaders.map((leader, i) => (
+                        {Leaders.map((leader, index) => (
                             <LeaderCard
-                                key={i}
+                                key={index}
                                 image={leader.image || "/Dummy.png"}
                                 name={leader.name || "Leader Name"}
                                 role={leader.role || "Senior Doctor"}
@@ -211,7 +211,7 @@ const TheSynergyStory = () => {
                     {/* Heading + Subheading */}
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">
                         {/* Heading */}
-                        <h2 className="text-heading text-left">Awards and Accolades</h2>
+                        <h1 className="text-heading text-left">Awards and Accolades</h1>
 
                         {/* Subheading + Description */}
                         <div className="space-y-4">
@@ -234,7 +234,7 @@ const TheSynergyStory = () => {
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded">
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">
                         {/* Heading */}
-                        <h2 className="text-heading text-left">Achievements and Milestones</h2>
+                        <h1 className="text-heading text-left">Achievements and Milestones</h1>
 
                         {/* Subheading + Description */}
                         <div className="space-y-4">
@@ -257,7 +257,7 @@ const TheSynergyStory = () => {
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded">
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">
                         {/* Heading */}
-                        <h2 className="text-heading text-left">A Day at Synergy</h2>
+                        <h1 className="text-heading text-left">A Day at Synergy</h1>
 
                         {/* Subheading + Description */}
                         <div className="space-y-4">
@@ -266,7 +266,7 @@ const TheSynergyStory = () => {
                             </p>
 
                             <p className="text-base md:text-lg text-gray-800 leading-relaxed">
-                                At SSSHCI, each day begins with a shared commitment to healing. From morning rounds and multidisciplinary team huddles to life-saving surgeries and comforting patient interactions, our hospital operates like a well-coordinated symphony. It's a place where expertise meets empathy, technology meets touch, and every action is rooted in our core purpose—serving humanity with dignity.
+                                At SSSHCI, each day begins with a shared commitment to healing. From morning rounds and multidisciplinary team huddles to life-saving surgeries and comforting patient interactions, our hospital operates like a well-coordinated symphony. It&apos;s a place where expertise meets empathy, technology meets touch, and every action is rooted in our core purpose—serving humanity with dignity.
                             </p>
                         </div>
                     </div>
