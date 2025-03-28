@@ -55,8 +55,8 @@ export const metadata = {
 const TheSynergyStory = () => {
   return (
     <main id='Overview'>
-<section className='min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-6 lg:px-24 py-4' id='Our-Mission'>
-  <div className="p-8 rounded-3xl bg-white flex flex-col lg:flex-row border-3 border-neutral-200 shadow-expanded">
+<section className='min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-2 md:px-6 lg:px-24 py-4' id='Our-Mission'>
+  <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row border-3 border-neutral-200 shadow-expanded">
   <div className="w-full lg:w-2/6 mb-6 lg:mb-0 relative">
         {/* Horizontal Image for small and medium screens */}
         <div className="relative block lg:hidden w-full h-64">
@@ -92,8 +92,8 @@ const TheSynergyStory = () => {
             </div>
         </div>
       </section>
-      <section className='min-h-screen w-full bg-gradient-to-t from-transparent via-[#dceaff30] to-fuchsia-100 px-6 lg:px-24 py-4' id='Our-Vision'>
-        <div className="p-8 rounded-3xl bg-white flex flex-col lg:flex-row-reverse border-3 border-neutral-200 shadow-expanded">
+      <section className='min-h-screen w-full bg-gradient-to-t from-transparent via-[#dceaff30] to-fuchsia-100 px-2 md:px-6 lg:px-24 py-4' id='Our-Vision'>
+        <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row-reverse border-3 border-neutral-200 shadow-expanded">
     <div className="w-full lg:w-2/6 mb-6 lg:mb-0 relative">
         {/* Horizontal Image for small and medium screens */}
         <div className="relative block lg:hidden w-full h-64">
@@ -134,9 +134,9 @@ const TheSynergyStory = () => {
         </div>
       </section>
       <section
-  className="min-h-screen w-full bg-gradient-to-b from-white via-indigo-100 to-white px-6 lg:px-24 py-4 my-12"
+  className="min-h-screen w-full bg-gradient-to-b from-white via-indigo-100 to-white px-2 md:px-6 lg:px-24 py-4 my-12"
 >
-<div className='p-8 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+<div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
 <div className='container mx-auto   '>
     <h2 className='text-heading '>Synergy Excellence</h2>
 <div className="space-y-4 ">
@@ -160,14 +160,14 @@ const TheSynergyStory = () => {
 </div>
 
 </section>
-      <section className='min-h-screen w-full   bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Leadership'>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center lg:gap-8 gap-y-8 gap-x-4">
+      <section className='min-h-screen w-full   bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Leadership'>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center lg:galg:p-8 md:px-4 px-2 py-5 gap-y-8 gap-x-4">
             {Leaders.map((leader,i)=>< LeaderCard key={i} image={leader.image? leader.image : "/Dummy.png"} name={leader.name? leader.name : "Leader Name"} role={leader.role ? leader.role : "senior doctor"} description={leader.description ? leader.description : "No description provided"} />)}
         </div>
       </section>
-      <section className='min-h-screen w-full  bg-gradient-to-t from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Awards-and-Accolades'>Awards-and-Accolades</section>
-      <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-6 lg:px-24 py-4 ' id='Achievements-and-Milestones'>Achievements-and-Milestones</section>
-      <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-6 lg:px-24 py-4 ' id='A-Day-at-Synergy'>A-Day-at-Synergy</section>
+      <section className='min-h-screen w-full  bg-gradient-to-t from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Awards-and-Accolades'>Awards-and-Accolades</section>
+      <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Achievements-and-Milestones'>Achievements-and-Milestones</section>
+      <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-2 md:px-6 lg:px-24 py-4 ' id='A-Day-at-Synergy'>A-Day-at-Synergy</section>
     </main>
   )
 }
