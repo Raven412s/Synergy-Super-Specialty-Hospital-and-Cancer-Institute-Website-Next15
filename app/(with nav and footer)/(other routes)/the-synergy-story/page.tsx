@@ -64,6 +64,7 @@ const TheSynergyStory = () => {
                                 src="/mission-horizontal.webp"
                                 alt="Doctors treating cancer patients at Synergy Super Specialty Hospital"
                                 fill
+                                priority
                                 className="object-cover w-full h-full rounded-2xl bg-indigo-900"
                             />
                         </div>
@@ -74,6 +75,7 @@ const TheSynergyStory = () => {
                                 src="/mission-vertical.webp"
                                 alt="Doctors treating cancer patients at Synergy Super Specialty Hospital"
                                 fill
+                                priority
                                 className="object-cover w-full h-auto rounded-2xl bg-indigo-900"
                             />
                         </div>
@@ -101,6 +103,7 @@ const TheSynergyStory = () => {
                                 src="/vision-horizontal.webp"
                                 alt="Our Vision"
                                 fill
+                                priority
                                 className="object-cover w-full h-full rounded-2xl bg-indigo-900"
                             />
                         </div>
@@ -111,6 +114,7 @@ const TheSynergyStory = () => {
                                 src="/vision-vertical.webp"
                                 alt="Our Vision"
                                 fill
+                                priority
                                 className="object-cover w-full h-auto rounded-2xl bg-indigo-900"
                             />
                         </div>
