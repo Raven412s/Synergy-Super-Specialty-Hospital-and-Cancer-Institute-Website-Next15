@@ -15,7 +15,7 @@ export const Faqs = () => {
         id='general'
         className="min-h-screen w-full my-12   px-6 lg:px-24 py-4 "
       >
-        <div className='p-8 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+        <div className='lg:p-8 p-4 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
           <div className='container mx-auto'>
             <h2 className='text-heading'>General Questions</h2>
             <div className="space-y-4">
