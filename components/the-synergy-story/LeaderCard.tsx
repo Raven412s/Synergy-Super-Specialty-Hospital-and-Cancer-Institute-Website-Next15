@@ -1,20 +1,19 @@
 // components/cards/LeaderCard.tsx
 "use client"
 
-import React from 'react'
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "@/components/ui/card"
-import { Button } from '../ui/button'
-import Image from 'next/image'
-import { ImageDown } from 'lucide-react'
 import { LeaderCardProps } from '@/types'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import React from 'react'
+import { Button } from '../ui/button'
 import { DownloadImageButton } from './DownloadImageButton'
 
 
