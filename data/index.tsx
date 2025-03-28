@@ -573,8 +573,8 @@ export const actions: ActionItem[] = [
       role: "Surgical Oncologist",
       description:
         "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
-      image: "/doctors/doc-alok-tiwari.png",
-      onDownload: "/doctors/doc-alok-tiwari.png",
+      image: "/doctors/doc-alok-tiwari.webp",
+      onDownload: "/doctors/doc-alok-tiwari.webp",
       onReadMore: "/leadership/Dr-Alok-Tiwari"
     },
     {
@@ -582,8 +582,8 @@ export const actions: ActionItem[] = [
       role: "Director & Head – Gynae Oncology",
       description:
         "Specialist in gynaecologic oncology and minimal invasive gynaecologic surgeries, offering advanced and compassionate care in women's cancer treatment.",
-      image: "/doctors/doc-anjali-jain.png",
-      onDownload: '/doctors/doc-anjali-jain.png',
+      image: "/doctors/doc-anjali-jain.webp",
+      onDownload: '/doctors/doc-anjali-jain.webp',
       onReadMore: '/leadership/Dr-Anjali-Jain'
     },
     {
@@ -591,8 +591,8 @@ export const actions: ActionItem[] = [
       role: "Medical Oncologist & Haemat Oncologist",
       description:
         "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-      image: "/doctors/doc-saurabh-mishra.png",
-      onDownload: "/doctors/doc-saurabh-mishra.png",
+      image: "/doctors/doc-saurabh-mishra.webp",
+      onDownload: "/doctors/doc-saurabh-mishra.webp",
       onReadMore: "/leadership/Dr-Saurabh-Mishra",
     },
   ];
