@@ -36,7 +36,7 @@ export const Faqs = () => {
 
       {/* Before You Visit */}
       <section
-        className='min-h-screen w-full my-12 bg-indigo-50 px-6 lg:px-24 py-4'
+        className='min-h-screen w-full my-12 bg-indigo-50 px-2 md:px-6 lg:px-24 py-4'
         id='before-visit'
       >
         <div className='p-8 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
@@ -60,7 +60,7 @@ export const Faqs = () => {
 
       {/* During Treatment */}
       <section
-        className='min-h-screen w-full my-12 bg-indigo-50 px-6 lg:px-24 py-4'
+        className='min-h-screen w-full my-12 bg-indigo-50 px-2 md:px-6 lg:px-24 py-4'
         id='during-treatment'
       >
         <div className='p-8 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
@@ -83,7 +83,7 @@ export const Faqs = () => {
 
       {/* After Treatment */}
       <section
-        className='min-h-screen w-full my-12 bg-indigo-50 px-6 lg:px-24 py-4'
+        className='min-h-screen w-full my-12 bg-indigo-50 px-2 md:px-6 lg:px-24 py-4'
         id='after-treatment'
       >
         <div className='p-8 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
