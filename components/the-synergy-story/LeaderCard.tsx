@@ -24,43 +24,44 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
   onDownload,
 }) => {
   return (
-    <Card className="w-full max-w-sm lg:max-w-xs">
-      <CardContent className="flex justify-center py-4">
-        <div className="relative w-[110px] h-[180px]">
-          <Image
-            src={image}
-            alt={name}
-            fill
-            className="object-cover rounded-md"
-          />
-        </div>
-      </CardContent>
+<Card className="min-w-full bg-background  sm:max-w-xs rounded-xl shadow-md">
+  <CardContent className="flex justify-center py-3 px-3">
+    <div className="relative w-full min-h-[26rem] sm:h-[28rem]">
+      <Image
+        src={image}
+        alt={name}
+        fill
+        className="object-cover rounded-md object-left-top"
+      />
+    </div>
+  </CardContent>
 
-      <CardHeader>
-        <CardTitle className="text-lg sm:text-xl">{name}</CardTitle>
-        <CardDescription className="text-gray-500">{role}</CardDescription>
-        <CardDescription className="text-gray-900 w-full line-clamp-4">
-          {description}
-        </CardDescription>
-      </CardHeader>
+  <CardHeader className="px-4 pt-2 pb-1 space-y-1">
+    <CardTitle className="text-base sm:text-lg font-semibold">{name}</CardTitle>
+    <CardDescription className="text-sm text-gray-500">{role}</CardDescription>
+    <CardDescription className="text-sm text-gray-700 w-full line-clamp-4">
+      {description}
+    </CardDescription>
+  </CardHeader>
 
-      <CardFooter className="flex justify-between items-center gap-2 px-6 pb-4">
-        <Button
-          variant="default"
-          className="text-sm sm:text-base"
-          onClick={onReadMore}
-        >
-          Read more...
-        </Button>
-        <Button
-          variant="outline"
-          size="icon"
-          className="hover:text-primary"
-          onClick={onDownload}
-        >
-          <ImageDown />
-        </Button>
-      </CardFooter>
-    </Card>
+  <CardFooter className="flex justify-between items-center gap-2 px-4 pb-3 pt-1">
+    <Button
+      variant="default"
+      className="text-xs sm:text-sm px-3 py-1.5"
+      onClick={onReadMore}
+    >
+      Read more...
+    </Button>
+    <Button
+      variant="outline"
+      size="icon"
+      className="w-8 h-8 text-gray-700 hover:text-primary"
+      onClick={onDownload}
+    >
+      <ImageDown className="w-4 h-4" />
+    </Button>
+  </CardFooter>
+</Card>
+
   )
 }

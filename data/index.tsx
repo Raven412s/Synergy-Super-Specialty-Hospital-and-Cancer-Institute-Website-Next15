@@ -581,7 +581,7 @@ export const actions: ActionItem[] = [
       role: "Director & Head – Gynae Oncology",
       description:
         "Specialist in gynaecologic oncology and minimal invasive gynaecologic surgeries, offering advanced and compassionate care in women's cancer treatment.",
-      image: "", // Add actual image URL or path here
+      image: "/doctors/doc-anjali-jain.png", // Add actual image URL or path here
       onDownload() {},
       onReadMore() {},
     },
@@ -590,7 +590,7 @@ export const actions: ActionItem[] = [
       role: "Medical Oncologist & Haemat Oncologist",
       description:
         "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-      image: "", // Add actual image URL or path here
+      image: "/doctors/doc-saurabh-mishra.png", // Add actual image URL or path here
       onDownload() {},
       onReadMore() {},
     },

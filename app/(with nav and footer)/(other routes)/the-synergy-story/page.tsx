@@ -160,11 +160,23 @@ const TheSynergyStory = () => {
 </div>
 
 </section>
-      <section className='min-h-screen w-full   bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Leadership'>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center lg:galg:p-8 md:px-4 px-2 py-5 gap-y-8 gap-x-4">
-            {Leaders.map((leader,i)=>< LeaderCard key={i} image={leader.image? leader.image : "/Dummy.png"} name={leader.name? leader.name : "Leader Name"} role={leader.role ? leader.role : "senior doctor"} description={leader.description ? leader.description : "No description provided"} />)}
-        </div>
-      </section>
+<section
+  id="Leadership"
+  className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-10"
+>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+    {Leaders.map((leader, i) => (
+      <LeaderCard
+        key={i}
+        image={leader.image || "/Dummy.png"}
+        name={leader.name || "Leader Name"}
+        role={leader.role || "Senior Doctor"}
+        description={leader.description || "No description provided"}
+      />
+    ))}
+  </div>
+</section>
+
       <section className='min-h-screen w-full  bg-gradient-to-t from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Awards-and-Accolades'>Awards-and-Accolades</section>
       <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Achievements-and-Milestones'>Achievements-and-Milestones</section>
       <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-2 md:px-6 lg:px-24 py-4 ' id='A-Day-at-Synergy'>A-Day-at-Synergy</section>
