@@ -15,7 +15,7 @@ export const Faqs = () => {
         id='general'
         className="min-h-screen w-full my-12   px-2 md:px-6 lg:px-24 py-4 "
       >
-        <div className='lg:p-8 md:p-4 p-2 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+        <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
           <div className='container mx-auto'>
             <h2 className='text-heading'>General Questions</h2>
             <div className="space-y-4">
@@ -39,7 +39,7 @@ export const Faqs = () => {
         className='min-h-screen w-full my-12 bg-indigo-50 px-2 md:px-6 lg:px-24 py-4'
         id='before-visit'
       >
-        <div className='lg:p-8 md:p-4 p-2 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+        <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
           <div className='container mx-auto'>
             <h2 className='text-heading'>Before You Visit</h2>
             <div className="space-y-4">
@@ -63,7 +63,7 @@ export const Faqs = () => {
         className='min-h-screen w-full my-12 bg-indigo-50 px-2 md:px-6 lg:px-24 py-4'
         id='during-treatment'
       >
-        <div className='lg:p-8 md:p-4 p-2 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+        <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
           <div className='container mx-auto'>
             <h2 className='text-heading'>During Treatment</h2>
             <div className="space-y-4">
@@ -86,7 +86,7 @@ export const Faqs = () => {
         className='min-h-screen w-full my-12 bg-indigo-50 px-2 md:px-6 lg:px-24 py-4'
         id='after-treatment'
       >
-        <div className='lg:p-8 md:p-4 p-2 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+        <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
           <div className='container mx-auto'>
             <h2 className='text-heading'>After Treatment</h2>
             <div className="space-y-4">
