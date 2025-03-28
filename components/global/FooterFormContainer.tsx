@@ -8,9 +8,10 @@ export const FooterFormContainer = () => {
       <h4 className="text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-black text-primary mb-6">
         Request A Callback
       </h4>
-      <div className="flex">
+      <div className="flex flex-col-reverse lg:flex-row ">
         <RequestCallBackForm />
-        <Image width={180} height={180} src={"/image.png"} alt='foooter form image' className='w-1/4' />
+        <Image width={180} height={180} src={"/image.png"} alt='foooter form image' className='hidden lg:block w-1/4' />
+        <Image width={180} height={180} src={"/nurse-down.webp"} alt='foooter form image' className='block lg:hidden w-full' />
       </div>
     </div>
   )
