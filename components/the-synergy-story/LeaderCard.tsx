@@ -1,4 +1,6 @@
 // components/cards/LeaderCard.tsx
+"use client"
+
 import React from 'react'
 import {
   Card,
@@ -12,6 +14,7 @@ import { Button } from '../ui/button'
 import Image from 'next/image'
 import { ImageDown } from 'lucide-react'
 import { LeaderCardProps } from '@/types'
+import { useRouter } from 'next/navigation'
 
 
 
@@ -23,6 +26,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
   onReadMore,
   onDownload,
 }) => {
+    const router = useRouter()
   return (
 <Card className="min-w-full bg-background  sm:max-w-xs rounded-xl shadow-md">
   <CardContent className="flex justify-center py-3 px-3">
@@ -48,7 +52,12 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     <Button
       variant="default"
       className="text-xs sm:text-sm px-3 py-1.5"
-      onClick={onReadMore}
+      onClick={()=>{
+        if (onReadMore) {
+            router.push(onReadMore)
+        }
+      }
+      }
     >
       Read more...
     </Button>
@@ -56,7 +65,12 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
       variant="outline"
       size="icon"
       className="w-8 h-8 text-gray-700 hover:text-primary"
-      onClick={onDownload}
+      onClick={()=>{
+        if (onDownload) {
+            router.push(onDownload)
+        }
+      }
+      }
     >
       <ImageDown className="w-4 h-4" />
     </Button>

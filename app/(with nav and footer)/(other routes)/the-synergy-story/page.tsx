@@ -164,7 +164,31 @@ const TheSynergyStory = () => {
   id="Leadership"
   className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-10"
 >
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+<div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+  {/* Heading + Subheading */}
+  <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">
+  {/* Heading */}
+  <h2 className="text-heading text-left">Meet Our Leadership</h2>
+
+  {/* Subheading + Description */}
+  <div className="space-y-4">
+    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+      Guided by a team of experienced professionals dedicated to driving innovation, compassion, and excellence in healthcare.
+    </p>
+
+    <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+      Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) is committed to offering world-class, affordable,
+      and comprehensive cancer care. With a team of passionate oncology specialists and a focus on innovation and empathy,
+      we provide cutting-edge treatments tailored to each patient’s needs. At SSSHCI, clinical excellence is not just a goal —
+      it’s our way of serving humanity with dignity and courage.
+    </p>
+  </div>
+</div>
+
+
+
+  {/* Cards Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {Leaders.map((leader, i) => (
       <LeaderCard
         key={i}
@@ -172,11 +196,13 @@ const TheSynergyStory = () => {
         name={leader.name || "Leader Name"}
         role={leader.role || "Senior Doctor"}
         description={leader.description || "No description provided"}
+        onReadMore={leader.onReadMore}
+        onDownload={leader.onDownload}
       />
     ))}
   </div>
+  </div>
 </section>
-
       <section className='min-h-screen w-full  bg-gradient-to-t from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Awards-and-Accolades'>Awards-and-Accolades</section>
       <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-2 md:px-6 lg:px-24 py-4 ' id='Achievements-and-Milestones'>Achievements-and-Milestones</section>
       <section className='min-h-screen w-full  bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-2 md:px-6 lg:px-24 py-4 ' id='A-Day-at-Synergy'>A-Day-at-Synergy</section>

@@ -71,6 +71,6 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
     name: string
     role: string
     description: string
-    onReadMore?: () => void
-    onDownload?: () => void
+    onReadMore?:string
+    onDownload?:string
   }

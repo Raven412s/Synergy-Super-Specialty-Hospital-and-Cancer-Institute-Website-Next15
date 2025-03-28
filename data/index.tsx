@@ -58,6 +58,7 @@ import Dialysis from "@/components/Modules/services/support-services/Dialysis";
 import { Ambulance } from "lucide-react";
 import HealthChecks from "@/components/Modules/patient-care/HealthChecks";
 import Insurance from "@/components/Modules/patient-care/Insurance";
+import { useRouter } from "next/navigation";
 
 export const menuItems: MenuItemProps[] = [
     {
@@ -572,27 +573,27 @@ export const actions: ActionItem[] = [
       role: "Surgical Oncologist",
       description:
         "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
-      image: "", // Add actual image URL or path here
-      onDownload() {},
-      onReadMore() {},
+      image: "", 
+      onDownload: "",
+      onReadMore: "/leadership/Dr-Alok-Tiwari"
     },
     {
       name: "Dr. Anjali Jain",
       role: "Director & Head – Gynae Oncology",
       description:
         "Specialist in gynaecologic oncology and minimal invasive gynaecologic surgeries, offering advanced and compassionate care in women's cancer treatment.",
-      image: "/doctors/doc-anjali-jain.png", // Add actual image URL or path here
-      onDownload() {},
-      onReadMore() {},
+      image: "/doctors/doc-anjali-jain.png",
+      onDownload: '/doctors/doc-anjali-jain.png',
+      onReadMore: '/leadership/Dr-Anjali-Jain'
     },
     {
       name: "Dr. Saurabh Mishra",
       role: "Medical Oncologist & Haemat Oncologist",
       description:
         "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-      image: "/doctors/doc-saurabh-mishra.png", // Add actual image URL or path here
-      onDownload() {},
-      onReadMore() {},
+      image: "/doctors/doc-saurabh-mishra.png", 
+      onDownload: "/doctors/doc-saurabh-mishra.png",
+      onReadMore: "/leadership/Dr-Saurabh-Mishra",
     },
   ];
 
