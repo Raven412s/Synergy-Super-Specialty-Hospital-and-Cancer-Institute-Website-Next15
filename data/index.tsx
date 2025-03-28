@@ -6,6 +6,9 @@ import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-
 import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth";
 import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms";
 import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics";
+import { DrAlokTiwari } from "@/components/Modules/discover-synergy/leadership/DrAlokTiwari";
+import { DrAnjaliJain } from "@/components/Modules/discover-synergy/leadership/DrAnjaliJain";
+import { DrSaurabhMishra } from "@/components/Modules/discover-synergy/leadership/DrSaurabhMishra";
 import { Faqs } from "@/components/Modules/health-library/faqs/Faqs";
 import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention";
 import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging";
@@ -16,49 +19,45 @@ import { BreastCancer } from "@/components/Modules/health-library/types-of-cance
 import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer";
 import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer";
 import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer";
-import {DrAlokTiwari} from "@/components/Modules/discover-synergy/leadership/DrAlokTiwari";
-import { DrAnjaliJain } from "@/components/Modules/discover-synergy/leadership/DrAnjaliJain";
-import { DrSaurabhMishra } from "@/components/Modules/discover-synergy/leadership/DrSaurabhMishra";
 import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare";
+import HealthChecks from "@/components/Modules/patient-care/HealthChecks";
 import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities";
+import Insurance from "@/components/Modules/patient-care/Insurance";
 import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic";
 import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion";
+import Cardiology from "@/components/Modules/services/our-specialities/Cardiology";
+import Dermatology from "@/components/Modules/services/our-specialities/Dermatology";
+import Endocrinology from "@/components/Modules/services/our-specialities/Endocrinology";
+import ENT from "@/components/Modules/services/our-specialities/ENT";
+import Gastroenterology from "@/components/Modules/services/our-specialities/Gastroenterology";
+import GeneralSurgery from "@/components/Modules/services/our-specialities/GeneralSurgery";
+import Gynecology from "@/components/Modules/services/our-specialities/Gynecology";
 import { HematoOncology } from "@/components/Modules/services/our-specialities/HematoOncology";
-import {MedicalOncology} from "@/components/Modules/services/our-specialities/MedicalOncology";
+import Hepatology from "@/components/Modules/services/our-specialities/Hepatology";
+import InternalMedicine from "@/components/Modules/services/our-specialities/InternalMedicine";
+import { MedicalOncology } from "@/components/Modules/services/our-specialities/MedicalOncology";
+import Nephrology from "@/components/Modules/services/our-specialities/Nephrology";
+import Neurology from "@/components/Modules/services/our-specialities/Neurology";
+import Neurosurgery from "@/components/Modules/services/our-specialities/Neurosurgery";
+import Ophthalmology from "@/components/Modules/services/our-specialities/Ophthalmology";
+import Orthopedics from "@/components/Modules/services/our-specialities/Orthopedics";
 import { PalliativeCare } from "@/components/Modules/services/our-specialities/PalliativeCare";
+import Pediatrics from "@/components/Modules/services/our-specialities/Pediatrics";
+import Psychiatry from "@/components/Modules/services/our-specialities/Psychiatry";
+import Pulmonology from "@/components/Modules/services/our-specialities/Pulmonology";
 import { RadiationOncology } from "@/components/Modules/services/our-specialities/RadiationOncology";
+import Rheumatology from "@/components/Modules/services/our-specialities/Rheumatology";
 import { SurgicalOncology } from "@/components/Modules/services/our-specialities/SurgicalOncology";
+import Urology from "@/components/Modules/services/our-specialities/Urology";
+import BloodBank from "@/components/Modules/services/support-services/BloodBank";
 import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging";
+import Dialysis from "@/components/Modules/services/support-services/Dialysis";
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory";
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy";
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy";
 import { ActionItem, LeaderCardProps, MenuItemProps, TestimonialItem } from "@/types";
-import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
-import Cardiology from "@/components/Modules/services/our-specialities/Cardiology";
-import Neurology from "@/components/Modules/services/our-specialities/Neurology";
-import Neurosurgery from "@/components/Modules/services/our-specialities/Neurosurgery";
-import Nephrology from "@/components/Modules/services/our-specialities/Nephrology";
-import Urology from "@/components/Modules/services/our-specialities/Urology";
-import Gastroenterology from "@/components/Modules/services/our-specialities/Gastroenterology";
-import Hepatology from "@/components/Modules/services/our-specialities/Hepatology";
-import Orthopedics from "@/components/Modules/services/our-specialities/Orthopedics";
-import Rheumatology from "@/components/Modules/services/our-specialities/Rheumatology";
-import Pulmonology from "@/components/Modules/services/our-specialities/Pulmonology";
-import Endocrinology from "@/components/Modules/services/our-specialities/Endocrinology";
-import Dermatology from "@/components/Modules/services/our-specialities/Dermatology";
-import ENT from "@/components/Modules/services/our-specialities/ENT";
-import Ophthalmology from "@/components/Modules/services/our-specialities/Ophthalmology";
-import GeneralSurgery from "@/components/Modules/services/our-specialities/GeneralSurgery";
-import InternalMedicine from "@/components/Modules/services/our-specialities/InternalMedicine";
-import Pediatrics from "@/components/Modules/services/our-specialities/Pediatrics";
-import Gynecology from "@/components/Modules/services/our-specialities/Gynecology";
-import Psychiatry from "@/components/Modules/services/our-specialities/Psychiatry";
-import BloodBank from "@/components/Modules/services/support-services/BloodBank";
-import Dialysis from "@/components/Modules/services/support-services/Dialysis";
 import { Ambulance } from "lucide-react";
-import HealthChecks from "@/components/Modules/patient-care/HealthChecks";
-import Insurance from "@/components/Modules/patient-care/Insurance";
-import { useRouter } from "next/navigation";
+import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
 
 export const menuItems: MenuItemProps[] = [
     {
@@ -86,7 +85,7 @@ export const menuItems: MenuItemProps[] = [
           ],
         },
         {
-          name: "doctors",
+          name: "Doctors",
           links: [
             { label: "Dr. Alok Tiwari", href: "/doctors/Dr-Alok-Tiwari" },
             { label: "Dr. Anjali Jain", href: "/doctors/Dr-Anjali-Jain" },
