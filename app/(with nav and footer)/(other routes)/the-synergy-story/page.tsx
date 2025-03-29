@@ -142,7 +142,7 @@ const TheSynergyStory = () => {
             >
                 <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                     <div className='container mx-auto   '>
-                        <h1 className='text-heading '>Synergy Excellence</h1>
+                        <h2 className='text-heading '>Synergy Excellence</h2>
                         <div className="space-y-4 ">
                             {/* sub-heading */}
                             <p className='text-base md:text-lg text-gray-700 leading-relaxed '>
