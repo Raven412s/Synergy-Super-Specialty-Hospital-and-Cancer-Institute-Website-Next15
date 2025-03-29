@@ -7,6 +7,7 @@ import SliderWithTriggers from "@/components/homepage/SliderWithTriggers";
 import TestimonialCard from "@/components/homepage/TestimonialCard";
 import { faqItems, testimonialsForMarquee } from "@/data";
 import { hospitalHighlights } from "./_data";
+import HeroSection from "@/components/homepage/HeroSection";
 
 
 export const metadata = {
@@ -69,28 +70,7 @@ export default function Home() {
   return (
 <main className="w-full">
   {/* Hero Section with Video */}
-  <section id="banner" className="relative min-h-screen w-full">
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="absolute inset-0 w-full h-full object-cover"
-      aria-label="Promotional video showcasing Synergy Hospital"
-    >
-      <source src="/Banner.webm" type="video/webm" />
-      <source src="/Banner.mp4" type="video/mp4" />
-    </video>
-    <FloatingBarWrapper />
-    <div className="absolute bottom-5 w-full flex justify-center px-4">
-      <a
-        href="#specialties"
-        className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base"
-      >
-        Explore More
-      </a>
-    </div>
-  </section>
+<HeroSection/>
 
   {/* Specialties Section */}
   <section
