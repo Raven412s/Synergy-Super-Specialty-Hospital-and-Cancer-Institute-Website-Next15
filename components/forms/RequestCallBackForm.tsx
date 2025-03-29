@@ -69,12 +69,12 @@ export default function RequestCallBackForm() {
                 <FormControl>
                   <Input
                     placeholder="Krishna"
-                    className="text-indigo-800 placeholder:text-neutral-400"
+                    className="text-indigo-800 placeholder:text-neutral-500"
                     type="text"
                     {...field}
                   />
                 </FormControl>
-                <FormDescription className="text-neutral-400">Enter your name here.</FormDescription>
+                <FormDescription className="text-neutral-500">Enter your name here.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -91,7 +91,7 @@ export default function RequestCallBackForm() {
                   <FormControl>
                     <Input
                       placeholder="+91XXXXXXXXXX"
-                      className="text-indigo-800 placeholder:text-neutral-400"
+                      className="text-indigo-800 placeholder:text-neutral-500"
                       type="number"
                       {...field}
                     />
@@ -104,7 +104,7 @@ export default function RequestCallBackForm() {
                     Request OTP
                   </Button>
                 </div>
-                <FormDescription className="text-neutral-400">Enter your number here.</FormDescription>
+                <FormDescription className="text-neutral-500">Enter your number here.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -138,7 +138,7 @@ export default function RequestCallBackForm() {
                     Verify OTP
                   </Button>
                 </div>
-                <FormDescription className="text-neutral-400">
+                <FormDescription className="text-neutral-500">
                   Please enter the OTP sent to your phone.
                 </FormDescription>
                 <FormMessage />
