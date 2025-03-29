@@ -611,7 +611,7 @@ export const actions: ActionItem[] = [
     thirdImage: "/doctors/doc-alok-tiwari.webp",
     thirdSectionDescription: ["", ""],
     fourthSectionDescription: ["", ""],
-    fifthSectionDescription: "",
+    fifthSectionDescription: "Dr. Alok Tiwari, a distinguished Surgical Oncologist, is widely recognized for his exceptional skills and experience in the field of breast cancer treatments. His expertise and compassionate care have positively impacted numerous lives, earning him a reputation as a leading authority in oncology.",
     videoModalForJourney: {
       image: "/mission-horizontal.webp",
       videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
@@ -631,7 +631,7 @@ export const actions: ActionItem[] = [
     thirdImage: "/doctors/doc-anjali-jain.webp",
     thirdSectionDescription: ["", ""],
     fourthSectionDescription: ["", ""],
-    fifthSectionDescription: "",
+    fifthSectionDescription: "Dr. Anjali Jain is a distinguished gynaec oncologist with extensive experience in women's cancer treatment, offering advanced and compassionate care in gynaecologic oncology and minimal invasive gynaecologic surgeries, improving lives with her expertise and dedication to delivering exceptional patient outcomes.",
     videoModalForJourney: {
       image: "/mission-horizontal.webp",
       videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
@@ -651,7 +651,7 @@ export const actions: ActionItem[] = [
     thirdImage: "/doctors/doc-saurabh-mishra.webp",
     thirdSectionDescription: ["", ""],
     fourthSectionDescription: ["", ""],
-    fifthSectionDescription: "",
+    fifthSectionDescription: "Meet Dr. Saurabh Mishra, a distinguished Medical Oncologist & Haematoncologist with over 9 years of experience. His unwavering commitment to patient care and groundbreaking research has earned him a reputation as a leader in the field of oncology, transforming the lives of countless patients.",
     videoModalForJourney: {
       image: "/mission-horizontal.webp",
       videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
