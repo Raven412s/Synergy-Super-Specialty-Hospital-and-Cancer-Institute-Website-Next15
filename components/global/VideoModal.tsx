@@ -12,7 +12,7 @@ import {
     image,
     videoUrl,
     className,
-  }: VideoModalTriggerProps) {
+  }: VideoModalTriggerProps) {    
     return (
       <Dialog>
         <DialogTrigger asChild>
