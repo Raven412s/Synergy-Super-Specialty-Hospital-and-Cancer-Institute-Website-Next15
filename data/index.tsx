@@ -6,9 +6,9 @@ import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-
 import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth";
 import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms";
 import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics";
-import { DrAlokTiwari } from "@/components/Modules/discover-synergy/leadership/DrAlokTiwari";
-import { DrAnjaliJain } from "@/components/Modules/discover-synergy/leadership/DrAnjaliJain";
-import { DrSaurabhMishra } from "@/components/Modules/discover-synergy/leadership/DrSaurabhMishra";
+import { DoctorsPage } from "@/components/Modules/discover-synergy/doctors/DoctorsPage";
+import LeadershipPage from "@/components/Modules/discover-synergy/leadership/LeadershipPage";
+
 import { Faqs } from "@/components/Modules/health-library/faqs/Faqs";
 import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention";
 import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging";
@@ -55,7 +55,7 @@ import Dialysis from "@/components/Modules/services/support-services/Dialysis";
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory";
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy";
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy";
-import { ActionItem, LeaderCardProps, MenuItemProps, TestimonialItem } from "@/types";
+import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, TestimonialItem } from "@/types";
 import { Ambulance } from "lucide-react";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
 
@@ -597,18 +597,80 @@ export const actions: ActionItem[] = [
     },
   ];
 
+  export const leaderAlokTiwari: LeaderPageProps = {
+    name: "Dr. Alok Tiwari",
+    role: "Surgical Oncologist",
+    description:
+      "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
+    image: "/doctors/doc-alok-tiwari.webp",
+    customFirstHeading: "Meet Our Expert",
+    theirStory: ["Dr. Alok Tiwari's journey in surgical oncology..."],
+    customSeconHeading: "A Visionary in Oncology",
+    secondImage: "/doctors/doc-alok-tiwari.webp",
+    secondSectionDescription: ["", ""],
+    thirdImage: "/doctors/doc-alok-tiwari.webp",
+    thirdSectionDescription: ["", ""],
+    fourthSectionDescription: ["", ""],
+    fifthSectionDescription: "",
+    videoModalForJourney: {
+      image: "/mission-horizontal.webp",
+      videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+    },
+  }
+  export const leaderAnjaliJain: LeaderPageProps = {
+    name: "Dr. Anjali Jain",
+    role: "Gynea Oncologist",
+    description:
+      "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
+    image: "/doctors/doc-anjali-jain.webp",
+    customFirstHeading: "Meet Our Expert",
+    theirStory: ["Dr. Alok Tiwari's journey in surgical oncology..."],
+    customSeconHeading: "A Visionary in Oncology",
+    secondImage: "/doctors/doc-anjali-jain.webp",
+    secondSectionDescription: ["", ""],
+    thirdImage: "/doctors/doc-anjali-jain.webp",
+    thirdSectionDescription: ["", ""],
+    fourthSectionDescription: ["", ""],
+    fifthSectionDescription: "",
+    videoModalForJourney: {
+      image: "/mission-horizontal.webp",
+      videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+    },
+  }
+  export const leaderSaurabhMishra: LeaderPageProps = {
+    name: "Dr. Alok Tiwari",
+    role: "Surgical Oncologist",
+    description:
+      "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
+    image: "/doctors/doc-saurabh-mishra.webp",
+    customFirstHeading: "Meet Our Expert",
+    theirStory: ["Dr. Alok Tiwari's journey in surgical oncology..."],
+    customSeconHeading: "A Visionary in Oncology",
+    secondImage: "/doctors/doc-saurabh-mishra.webp",
+    secondSectionDescription: ["", ""],
+    thirdImage: "/doctors/doc-saurabh-mishra.webp",
+    thirdSectionDescription: ["", ""],
+    fourthSectionDescription: ["", ""],
+    fifthSectionDescription: "",
+    videoModalForJourney: {
+      image: "/mission-horizontal.webp",
+      videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+    },
+  }
+
+
 // MAPS FOR DYNAMIC PAGES
 
   export const LeadershipMap = {
-    "Dr-Alok-Tiwari": <DrAlokTiwari />,
-    "Dr-Anjali-Jain": <DrAnjaliJain />,
-    "Dr-Saurabh-Mishra": <DrSaurabhMishra />
+    "Dr-Alok-Tiwari": <LeadershipPage {...leaderAlokTiwari}  />,
+    "Dr-Anjali-Jain": <LeadershipPage {...leaderAnjaliJain}/>,
+    "Dr-Saurabh-Mishra": <LeadershipPage {...leaderSaurabhMishra}/>
   };
 
   export const DoctorsMap = {
-    "Dr-Alok-Tiwari": <DrAlokTiwari />,
-    "Dr-Anjali-Jain": <DrAnjaliJain />,
-    "Dr-Saurabh-Mishra": <DrSaurabhMishra />
+    "Dr-Alok-Tiwari": <DoctorsPage />,
+    "Dr-Anjali-Jain": <DoctorsPage />,
+    "Dr-Saurabh-Mishra": <DoctorsPage />
   };
 
   export const ServicesMap = {

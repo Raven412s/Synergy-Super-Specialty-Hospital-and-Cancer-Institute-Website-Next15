@@ -8,7 +8,7 @@ import {
   import { VideoModalTriggerProps } from "@/types";
   import Image from "next/image";
 
-  export function VideoModal({
+  export function VideoModalForJourney({
     image,
     videoUrl,
     className,
@@ -17,7 +17,7 @@ import {
       <Dialog>
         <DialogTrigger
             className={cn(
-              "relative rounded-xl aspect-square w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[280px] lg:h-[280px] overflow-hidden group cursor-pointer",
+              "relative rounded-xl aspect-video w-full h-full overflow-hidden group cursor-pointer",
               className
             )}
             title="Play Patient Testimonial Video"

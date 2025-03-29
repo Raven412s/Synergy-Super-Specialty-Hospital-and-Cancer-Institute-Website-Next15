@@ -66,11 +66,28 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
     onClick?: () => void;
   };
 
-  export type LeaderCardProps = {
+  export interface LeaderCardProps {
     image: string
     name: string
     role: string
     description: string
-    onReadMore?:string
-    onDownload?:string
+    onReadMore?: string
+    onDownload?: string
   }
+
+  export interface LeaderPageProps extends LeaderCardProps {
+    customFirstHeading: string
+    theirStory: string[]
+    customSeconHeading: string
+    secondImage: string
+    secondSectionDescription: string[]
+    thirdImage: string
+    thirdSectionDescription: string[]
+    fourthSectionDescription: string[]
+    fifthSectionDescription: string
+    videoModalForJourney: {
+      image: string
+      videoUrl: string
+    }
+  }
+
