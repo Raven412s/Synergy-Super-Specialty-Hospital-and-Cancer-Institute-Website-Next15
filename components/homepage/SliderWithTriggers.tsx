@@ -45,10 +45,10 @@ export default function SliderWithTriggers() {
           <Button
             key={slide.id}
             className={cn(
-              "px-4 py-2 rounded-full border-2 min-w-max cursor-pointer",
-              currentIndex === index
-                ? "bg-fuchsia-500 text-white border-fuchsia-500"
-                : "bg-transparent text-fuchsia-400 border-fuchsia-400 hover:bg-fuchsia-400 hover:text-white"
+                "px-4 py-2 rounded-full border-2 min-w-max cursor-pointer",
+                currentIndex === index
+                  ? "bg-primary text-white border-primary"
+                  : "bg-transparent text-fuchsia-700 border-fuchsia-700 hover:bg-primary/50 hover:backdrop-blur-sm hover:text-white hover:border-primary/50 hover:shadow-blob"
             )}
             onClick={() => setCurrentIndex(index)}
           >
