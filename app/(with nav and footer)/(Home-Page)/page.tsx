@@ -136,14 +136,14 @@ export default function Home() {
   </section>
 
   {/* News Section */}
-  <section className="w-full bg-gradient-to-b from-indigo-100 to-indigo-200 px-4 sm:px-8 lg:px-20 py-10">
+  <section className="w-full bg-gradient-to-b from-indigo-50 to-indigo-100 px-4 sm:px-8 lg:px-20 py-10">
     <div className="max-w-7xl mx-auto">
       <NewsSlider />
     </div>
   </section>
 
   {/* Patient Speaks */}
-  <section className="w-full bg-gradient-to-b from-fuchsia-100 to-indigo-200 px-4 sm:px-8 lg:px-20 py-10">
+  <section className="w-full bg-gradient-to-b from-fuchsia-100 to-indigo-100 px-4 sm:px-8 lg:px-20 py-10">
     <div className="max-w-7xl mx-auto space-y-6">
       <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
         See What Our Patients Say
@@ -153,7 +153,7 @@ export default function Home() {
   </section>
 
   {/* FAQs */}
-  <section className="w-full bg-gradient-to-t from-white to-indigo-200 px-4 sm:px-8 lg:px-20 py-10">
+  <section className="w-full bg-gradient-to-t from-white to-indigo-50 px-4 sm:px-8 lg:px-20 py-10">
     <div className="max-w-7xl mx-auto space-y-6">
       <div className="space-y-4">
         <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
