@@ -12,11 +12,10 @@ import {
     image,
     videoUrl,
     className,
-  }: VideoModalTriggerProps) {    
+  }: VideoModalTriggerProps) {
     return (
       <Dialog>
-        <DialogTrigger asChild>
-          <div
+        <DialogTrigger
             className={cn(
               "relative rounded-xl aspect-square w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[280px] lg:h-[280px] overflow-hidden group cursor-pointer",
               className
@@ -37,7 +36,6 @@ import {
               height={70}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none"
             />
-          </div>
         </DialogTrigger>
 
         <DialogContent className="rounded-2xl p-0 overflow-hidden min-w-[90vw] max-w-5xl w-full">
