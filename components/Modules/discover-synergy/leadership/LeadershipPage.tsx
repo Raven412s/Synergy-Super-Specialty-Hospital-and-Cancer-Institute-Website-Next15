@@ -12,7 +12,7 @@ const LeadershipPage = (props: LeaderPageProps) => {
     image,
     customFirstHeading,
     theirStory,
-    customSeconHeading,
+    customSecondHeading,
     secondImage,
     secondSectionDescription,
     thirdImage,
@@ -33,7 +33,7 @@ const LeadershipPage = (props: LeaderPageProps) => {
             </div>
             <div className="w-2/3 space-y-8">
               <h1 className="font-display text-heading">
-                Compassion Meets Expertise at Apollo: Your Health, Our Mission
+                {customFirstHeading}
               </h1>
               <div className="space-y-2">
                 <h2 className="text-heading !text-synergy-pink !font-bold">{name}</h2>
@@ -54,7 +54,7 @@ const LeadershipPage = (props: LeaderPageProps) => {
       </section>
 
       {/* Second Section */}
-      <h1 className="text-heading !text-synergy-pink !text-center">{customSeconHeading}</h1>
+      <h1 className="text-heading !text-synergy-pink !text-center">{customSecondHeading}</h1>
       <section className="w-full px-2 md:px-6 lg:px-24 py-4 my-12">
         <div className="lg:p-8 rounded-3xl bg-white border-3 border-neutral-200 shadow-expanded space-y-12">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8">

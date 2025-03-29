@@ -78,7 +78,7 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
   export interface LeaderPageProps extends LeaderCardProps {
     customFirstHeading: string
     theirStory: string[]
-    customSeconHeading: string
+    customSecondHeading: string
     secondImage: string
     secondSectionDescription: string[]
     thirdImage: string
@@ -90,4 +90,3 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
       videoUrl: string
     }
   }
-
