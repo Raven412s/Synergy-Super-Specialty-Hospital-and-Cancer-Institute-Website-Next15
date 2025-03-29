@@ -47,6 +47,7 @@ export default function NewsSlider() {
           onClick={() => scroll("left")}
           variant="outline"
           size="xl"
+          title="Slide left by one card."
           className="absolute size-12 !p-5 left-0 z-10 hidden md:flex rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
         >
           <ChevronLeft className="size-6" />
@@ -83,6 +84,7 @@ export default function NewsSlider() {
           onClick={() => scroll("right")}
           variant="outline"
           size="xl"
+          title="Slide Right by one card."
           className="absolute size-12 !p-5 right-0 z-10 hidden md:flex rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
         >
           <ChevronRight className="size-6" />
