@@ -61,97 +61,143 @@ export function Navbar() {
   return (
     <div className={cn("h-16 xl:h-20 fixed w-full top-0 z-50  transition-all duration-300 m-0 p-0 space-y-0", result ? "bg-white shadow-md" : "bg-transparent",)} onMouseEnter={() => setIsHovered(true)}  onMouseLeave={() => setIsHovered(false)}>
       {/* desktop menu/navbar */}
-      <NavigationMenu className={cn("hidden md:flex h-full font-display items-center   transition-all duration-300",result ? "text-primary" : "text-white")}>
-        <NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
-          {menuItems.map((item, index) => (
-            <React.Fragment key={item.label}>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-semibold font-display xl:text-lg lg:text-base text-xs">
-                  {item.label}
-                </NavigationMenuTrigger>
+      <NavigationMenu
+  aria-label="Main navigation"
+  role="navigation"
+  className={cn(
+    "hidden md:flex h-full font-display items-center transition-all duration-300",
+    result ? "text-primary" : "text-white"
+  )}
+>
+  <NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
+    {menuItems.map((item, index) => (
+      <React.Fragment key={item.label}>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger
+            onMouseEnter={() => setActivePageIndex(0)} // optional: reset to first page
+            className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-semibold font-display xl:text-lg lg:text-base text-xs"
+          >
+            {item.label}
+          </NavigationMenuTrigger>
 
-                <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none min-h-[428px] h-full">
-                  <div className="flex w-full min-h-full ">
-                    {item.pages[0]?.name && (
-                      <>
-                        {/* LEFT: Page Names */}
-                        <div className="w-1/6 p-4 flex flex-col space-y-2 items-start min-h-full">
-                          {item.pages.map((page, pageIndex) => (
-                            <Button key={pageIndex} variant={"ghost"} onMouseEnter={() => setActivePageIndex(pageIndex)} className={cn("text-left hover:text-indigo-600 w-full items-start justify-start text-lg", { "text-indigo-600 font-semibold": activePageIndex === pageIndex })}>
-                              {page.name}
-                            </Button>
-                          ))}
-                        </div>
-
-   {/* CENTER: Links */}
-<div className="w-3/6 border-x border-gray-300 p-4 min-h-full overflow-auto">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    {Array.from({ length: Math.ceil(item.pages[activePageIndex]?.links.length / 10) }).map((_, colIndex) => {
-      const start = colIndex * 10;
-      const columnLinks = item.pages[activePageIndex]?.links.slice(start, start + 10);
-
-      return (
-        <div key={colIndex} className="flex flex-col gap-2">
-          {columnLinks.map((link, linkIndex) => (
-            <Link key={linkIndex} href={link.href} className="hover:underline w-max block">
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      );
-    })}
-  </div>
-</div>
-
-
-
-
-                        {/* RIGHT: Quick Links for first menu only */}
-
-                          <div className="w-2/6 p-4 space-y-4 bg-fuchsia-50">
-                            <h4 className="font-semibold text-gray-700">
-                              Quick Links
-                            </h4>
-                            {quickLinks.map((item, i) => (
-                              <div key={i} className="bg-white px-4 py-2 rounded text-sm border border-neutral-300" >
-                                <div className="text-gray-500">
-                                  {item.label}
-                                </div>
-                                <div className="font-medium">{item.value}</div>
-                              </div>
-                            ))}
-                            <Button variant={"link"} className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full  justify-between" >
-                              Book Appointment <span>→</span>
-                            </Button>
-                            <Button variant={"link"} className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between" >
-                              Find Doctors <span>→</span>
-                            </Button>
-                            <Button variant={"link"} className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between" >
-                              Contact Us <span>→</span>
-                            </Button>
-                          </div>
-                      </>
-                    )}
-
-                    {!item.pages[0]?.name && (
-                      <div className="w-full p-4">
-                        <p>{item.label} content here</p>
-                      </div>
-                    )}
+          <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none min-h-[428px] h-full">
+            <div className="flex w-full min-h-full">
+              {item.pages[0]?.name ? (
+                <>
+                  {/* LEFT: Page Names */}
+                  <div className="w-1/6 p-4 flex flex-col space-y-2 items-start min-h-full">
+                    {item.pages.map((page) => (
+                      <Button
+                        key={page.name}
+                        variant="ghost"
+                        onMouseEnter={() => setActivePageIndex(item.pages.indexOf(page))}
+                        className={cn(
+                          "text-left hover:text-indigo-600 w-full items-start justify-start text-lg",
+                          {
+                            "text-indigo-600 font-semibold":
+                              activePageIndex === item.pages.indexOf(page),
+                          }
+                        )}
+                      >
+                        {page.name}
+                      </Button>
+                    ))}
                   </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
 
-              {/* Insert the logo after the second item (index === 1) */}
-              {index === 1 && (
-                <NavigationMenuLink href="/" className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0" >
-                  <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
-                </NavigationMenuLink>
+                  {/* CENTER: Links */}
+                  <div className="w-3/6 border-x border-gray-300 p-4 min-h-full overflow-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                      {Array.from({
+                        length: Math.ceil(item.pages[activePageIndex]?.links.length / 10),
+                      }).map((_, colIndex) => {
+                        const start = colIndex * 10;
+                        const columnLinks = item.pages[activePageIndex]?.links.slice(
+                          start,
+                          start + 10
+                        );
+
+                        return (
+                          <div key={colIndex} className="flex flex-col gap-2">
+                            {columnLinks.map((link) => (
+                              <Link
+                                key={link.label}
+                                href={link.href}
+                                className="hover:underline w-max block"
+                              >
+                                {link.label}
+                              </Link>
+                            ))}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* RIGHT: Quick Links */}
+                  <div className="w-2/6 p-4 space-y-4 bg-fuchsia-50 overflow-y-auto max-h-[428px]">
+                    <h4 className="font-semibold text-gray-700">Quick Links</h4>
+
+                    {quickLinks.map((qLink) => (
+                      <div
+                        key={qLink.label}
+                        className="bg-white px-4 py-2 rounded text-sm border border-neutral-300"
+                      >
+                        <div className="text-gray-500">{qLink.label}</div>
+                        <div className="font-medium">{qLink.value}</div>
+                      </div>
+                    ))}
+
+                    <Button
+                      variant="link"
+                      className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between"
+                      title="Book an Appointment"
+                    >
+                      Book Appointment <span>→</span>
+                    </Button>
+
+                    <Button
+                      variant="link"
+                      className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between"
+                      title="Search for available doctors"
+                    >
+                      Find Doctors <span>→</span>
+                    </Button>
+
+                    <Button
+                      variant="link"
+                      className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between"
+                      title="Get in touch with us"
+                    >
+                      Contact Us <span>→</span>
+                    </Button>
+                  </div>
+                </>
+              ) : (
+                <div className="w-full p-4">
+                  <p>{item.label} content here</p>
+                </div>
               )}
-            </React.Fragment>
-          ))}
-        </NavigationMenuList>
-      </NavigationMenu>
+            </div>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        {/* Logo Insert after 2nd item */}
+        {index === 1 && (
+  <NavigationMenuItem>
+    <NavigationMenuLink
+      href="/"
+      className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0"
+    >
+      <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
+    </NavigationMenuLink>
+  </NavigationMenuItem>
+)}
+
+      </React.Fragment>
+    ))}
+  </NavigationMenuList>
+</NavigationMenu>
+
 
 
 {/* Mobile Menu/Navbar */}
