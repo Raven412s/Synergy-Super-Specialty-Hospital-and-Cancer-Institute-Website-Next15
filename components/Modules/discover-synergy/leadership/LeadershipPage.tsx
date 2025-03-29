@@ -28,10 +28,10 @@ const LeadershipPage = (props: LeaderPageProps) => {
             <section className="min-h-screen w-full px-2 md:px-6 lg:px-24 py-4 my-12">
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded">
                     <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-                        <div className="relative rounded-3xl w-1/3 h-[40rem] overflow-hidden">
+                        <div className="relative rounded-3xl lg:w-1/3 w-full h-[40rem] overflow-hidden">
                             <Image src={image} alt={name} fill className="object-cover" priority />
                         </div>
-                        <div className="w-2/3 space-y-8">
+                        <div className="lg:w-2/3 w-full space-y-8">
                             <h1 className="font-display text-heading">
                                 {customFirstHeading}
                             </h1>
