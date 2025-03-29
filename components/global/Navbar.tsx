@@ -108,25 +108,25 @@ export function Navbar() {
 
                         {/* RIGHT: Quick Links for first menu only */}
 
-                          <div className="w-2/6 p-4 space-y-4 bg-fuchsia-100">
+                          <div className="w-2/6 p-4 space-y-4 bg-fuchsia-50">
                             <h4 className="font-semibold text-gray-700">
                               Quick Links
                             </h4>
                             {quickLinks.map((item, i) => (
-                              <div key={i} className="bg-indigo-100 px-4 py-2 rounded text-sm" >
+                              <div key={i} className="bg-white px-4 py-2 rounded text-sm border border-neutral-300" >
                                 <div className="text-gray-500">
                                   {item.label}
                                 </div>
                                 <div className="font-medium">{item.value}</div>
                               </div>
                             ))}
-                            <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full  justify-between" >
+                            <Button variant={"link"} className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full  justify-between" >
                               Book Appointment <span>→</span>
                             </Button>
-                            <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between" >
+                            <Button variant={"link"} className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between" >
                               Find Doctors <span>→</span>
                             </Button>
-                            <Button variant={"link"} className="bg-indigo-400 text-black px-4 py-2 rounded w-full justify-between" >
+                            <Button variant={"link"} className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between" >
                               Contact Us <span>→</span>
                             </Button>
                           </div>

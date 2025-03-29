@@ -31,10 +31,7 @@ export default function RootLayout({
         className={cn(nunito.variable, nunito_sans.variable, "")}
         suppressContentEditableWarning suppressHydrationWarning
       >
-            <main className="min-h-screen ">
-                {children}
-            </main>
-
+        {children}
       </body>
     </html>
   );

@@ -397,10 +397,10 @@ export  const quickLinks = [
     }
   ];
 export const actions: ActionItem[] = [
-    { icon: <FaUserMd className="size-6" />, label: "Book Appointment", onClick: ()=>{}, className: "rounded-l-xl rounded-r-none border-r-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
-    { icon: <FaHospital className="size-6" />, label: "Hospitals", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
-    { icon: <FaPhone className="size-6" />, label: "Call Us", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
-    { icon: <FaSearch className="size-6" />, label: "Search", onClick: ()=>{}, className: "rounded-r-xl rounded-l-none border-l-none bg-black/40 backdrop-blur-sm hover:bg-white/70 hover:text-slate-700 border-1 font-bold " },
+    { icon: <FaUserMd className="size-6" />, label: "Book Appointment", onClick: ()=>{}, className: "lg:rounded-l-xl  lg:rounded-r-none rounded-none border-r-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
+    { icon: <FaHospital className="size-6" />, label: "Hospitals", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
+    { icon: <FaPhone className="size-6" />, label: "Call Us", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
+    { icon: <FaSearch className="size-6" />, label: "Search", onClick: ()=>{}, className: "lg:rounded-r-xl lg:rounded-l-none rounded-none border-l-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
   ];
 
   export const excellenceItems = [
