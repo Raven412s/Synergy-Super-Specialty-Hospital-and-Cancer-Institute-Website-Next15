@@ -15,7 +15,7 @@ const PatientTestimonialMarquee = (props: PatientTestimonialMarqueeProps) => {
       {/* Vignette Effect */}
       <div className="absolute inset-1 bg-gradient-to-r max-w-full pointer-events-none z-10 " />
 
-      <Marquee speed={50} gradient={false} pauseOnHover className="my-4">
+      <Marquee speed={50} gradient={true} gradientColor="#FFC2FB50" pauseOnHover className="my-4">
   {marqueeArray.map((item, index) => {
     if (item.type === "written") {
       return (
@@ -33,7 +33,7 @@ const PatientTestimonialMarquee = (props: PatientTestimonialMarqueeProps) => {
   })}
       </Marquee>
 
-      <Marquee speed={50} gradient={false} pauseOnHover direction="right">
+      <Marquee speed={50} gradient={true} gradientColor="#FFC2FB50" pauseOnHover direction="right">
   {marqueeArray.map((item, index) => {
     if (item.type === "written") {
       return (
