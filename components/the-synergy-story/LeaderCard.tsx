@@ -52,6 +52,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     <Button
       variant="default"
       className="text-xs sm:text-sm px-3 py-1.5"
+      title={`Read More About Doctor, ${name} and his journey`}
       onClick={()=>{
         if (onReadMore) {
             router.push(onReadMore)

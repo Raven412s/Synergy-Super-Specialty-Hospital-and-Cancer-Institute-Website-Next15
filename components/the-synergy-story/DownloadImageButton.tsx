@@ -16,6 +16,7 @@ export const DownloadImageButton = ({ filePath }: { filePath: string }) => {
     <Button
       variant="outline"
       size="icon"
+      title="click to download the image"
       className="hover:text-primary"
       onClick={handleDownload}
     >
