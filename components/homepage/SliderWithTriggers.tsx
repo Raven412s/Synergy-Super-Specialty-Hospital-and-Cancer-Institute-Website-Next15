@@ -38,9 +38,9 @@ export default function SliderWithTriggers() {
   };
 
   return (
-    <div className="w-full flex flex-col gap-5">
+    <div className="w-full flex flex-col gap-5 relative">
       {/* Trigger Buttons */}
-      <div className="flex overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar">
+      <div className="flex overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar ">
         {slides.map((slide, index) => (
           <Button
             key={slide.id}
@@ -59,10 +59,11 @@ export default function SliderWithTriggers() {
 
         <Button
           size="icon"
-          className="absolute hidden left-6 top-1/2 lg:block -translate-y-1/12 p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-14"
+          className="absolute hidden left-3 bottom-4  lg:block   p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
           onClick={prevSlide}
+          title="move to the previous speciality slide"
         >
-          <ChevronLeft  className="size-8"/>
+          <ChevronLeft  className="size-4"/>
         </Button>
 
       {/* Slider */}
@@ -91,10 +92,11 @@ export default function SliderWithTriggers() {
 
         <Button
           size="icon"
-          className="absolute hidden right-6 top-1/2 lg:block -translate-y-1/12 p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-14"
+          className="absolute hidden right-3 bottom-4  lg:block   p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
           onClick={nextSlide}
+          title="move to the next speciality slide"
         >
-          <ChevronRight className="size-8"/>
+          <ChevronRight className="size-4"/>
         </Button>
 
       {/* View All Specialties */}
