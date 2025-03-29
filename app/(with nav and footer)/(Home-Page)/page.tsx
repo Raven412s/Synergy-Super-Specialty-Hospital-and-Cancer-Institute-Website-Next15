@@ -1,13 +1,12 @@
 // app/page.tsx
-import { FloatingBarWrapper } from "@/components/global/FloatingBarWrapper";
 import PatientTestimonialMarquee from "@/components/global/PatientTestimonialMarquee";
 import FaqAccordion from "@/components/homepage/FaqAccordion";
+import HeroSection from "@/components/homepage/HeroSection";
 import NewsSlider from "@/components/homepage/NewsSlider";
 import SliderWithTriggers from "@/components/homepage/SliderWithTriggers";
 import TestimonialCard from "@/components/homepage/TestimonialCard";
 import { faqItems, testimonialsForMarquee } from "@/data";
 import { hospitalHighlights } from "./_data";
-import HeroSection from "@/components/homepage/HeroSection";
 
 
 export const metadata = {
