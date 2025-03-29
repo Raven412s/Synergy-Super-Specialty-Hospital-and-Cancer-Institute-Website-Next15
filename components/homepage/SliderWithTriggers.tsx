@@ -162,13 +162,13 @@ const SliderCard = ({
                     <p className="font-medium text-base">Top Specialities & Procedures</p>
                     <div className="flex flex-wrap gap-2 py-4">
                         {(showAll ? specialties : specialties.slice(0, 2)).map((specialty, index) => (
-                            <Badge key={index} className="bg-transparent border border-fuchsia-100 text-fuchsia-400 text-xs">
+                            <Badge key={index} className="bg-transparent border border-fuchsia-100 text-fuchsia-600 text-xs">
                                 {specialty}
                             </Badge>
                         ))}
                         {specialties.length > 2 && (
                             <Badge
-                                className="bg-transparent border border-fuchsia-100 text-fuchsia-400 text-xs cursor-pointer"
+                                className="bg-transparent border border-fuchsia-100 text-fuchsia-600 text-xs cursor-pointer"
                                 onClick={() => setShowAll(!showAll)}
                             >
                                 {showAll ? <MinusIcon className="size-3" /> : <><PlusIcon className="size-3 mr-1" />{specialties.length - 2} </>}
