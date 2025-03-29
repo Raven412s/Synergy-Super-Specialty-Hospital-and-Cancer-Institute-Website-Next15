@@ -156,9 +156,9 @@ export default function Home() {
   <section className="w-full bg-gradient-to-t from-white to-indigo-50 px-4 sm:px-8 lg:px-20 py-10">
     <div className="max-w-7xl mx-auto space-y-6">
       <div className="space-y-4">
-        <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
+        <h2 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
           Frequently Asked Questions
-        </h1>
+        </h2>
         <p className="text-slate-600 text-sm sm:text-base lg:text-lg">
           Find answers to common questions about our services, treatments, appointments...
         </p>
