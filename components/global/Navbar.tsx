@@ -75,7 +75,7 @@ export function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuTrigger
             onMouseEnter={() => setActivePageIndex(0)} // optional: reset to first page
-            className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-semibold font-display xl:text-lg lg:text-base text-xs"
+            className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-bold font-display !text-black  lg:text-sm text-xs"
           >
             {item.label}
           </NavigationMenuTrigger>
@@ -140,7 +140,7 @@ export function Navbar() {
                     {quickLinks.map((qLink) => (
                       <div
                         key={qLink.label}
-                        className="bg-white px-4 py-2 rounded text-sm border border-neutral-300"
+                        className="bg-white px-4 py-2 rounded-lg text-sm border border-neutral-300"
                       >
                         <div className="text-gray-500">{qLink.label}</div>
                         <div className="font-medium">{qLink.value}</div>
@@ -149,7 +149,7 @@ export function Navbar() {
 
                     <Button
                       variant="link"
-                      className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between"
+                      className="bg-fuchsia-200 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                       title="Book an Appointment"
                     >
                       Book Appointment <span>→</span>
@@ -157,7 +157,7 @@ export function Navbar() {
 
                     <Button
                       variant="link"
-                      className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between"
+                      className="bg-fuchsia-200 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                       title="Search for available doctors"
                     >
                       Find Doctors <span>→</span>
@@ -165,7 +165,7 @@ export function Navbar() {
 
                     <Button
                       variant="link"
-                      className="bg-fuchsia-200 text-black px-4 py-2 rounded w-full justify-between"
+                      className="bg-fuchsia-200 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                       title="Get in touch with us"
                     >
                       Contact Us <span>→</span>
@@ -186,7 +186,7 @@ export function Navbar() {
   <NavigationMenuItem>
     <NavigationMenuLink
       href="/"
-      className="w-[160px] h-[68px] py-2 xl:!p-0 rounded-none !m-0"
+      className="w-[100px] h-[48px] py-2 xl:!p-0 rounded-none !m-0"
     >
       <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
     </NavigationMenuLink>

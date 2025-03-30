@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Nunito, Nunito_Sans } from 'next/font/google';
+import { Figtree, Nunito_Sans } from 'next/font/google';
 import "./globals.css";
 
-const nunito = Nunito({
+const nunito = Figtree({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-nunito',
