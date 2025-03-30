@@ -66,7 +66,7 @@ export function Navbar() {
   role="navigation"
   className={cn(
     "hidden md:flex h-full font-display items-center transition-all duration-300",
-    result ? "text-primary" : "text-white"
+    result ? "text-black" : "text-white"
   )}
 >
   <NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
@@ -75,7 +75,7 @@ export function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuTrigger
             onMouseEnter={() => setActivePageIndex(0)} // optional: reset to first page
-            className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-bold font-display !text-white hover:!text-black  lg:text-sm text-xs"
+            className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-bold font-display !text-white lg:text-sm text-xs"
           >
             {item.label}
           </NavigationMenuTrigger>
