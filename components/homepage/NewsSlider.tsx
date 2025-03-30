@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useRef, useState } from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, ChevronRightCircleIcon } from "lucide-react";
+import Image from "next/image";
+import { useRef } from "react";
 
 const newsData = [
     {
@@ -27,7 +27,7 @@ const newsData = [
 
 export default function NewsSlider() {
     const carouselRef = useRef<HTMLDivElement>(null);
-    
+
     const scroll = (direction: "left" | "right") => {
         if (carouselRef.current) {
             const containerWidth = carouselRef.current.offsetWidth;
