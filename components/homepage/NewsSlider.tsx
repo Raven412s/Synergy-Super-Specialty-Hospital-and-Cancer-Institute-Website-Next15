@@ -27,7 +27,7 @@ const newsData = [
 
 export default function NewsSlider() {
     const carouselRef = useRef<HTMLDivElement>(null);
-    const [isHovered, setIsHovered] = useState(false)
+    
     const scroll = (direction: "left" | "right") => {
         if (carouselRef.current) {
             const containerWidth = carouselRef.current.offsetWidth;
