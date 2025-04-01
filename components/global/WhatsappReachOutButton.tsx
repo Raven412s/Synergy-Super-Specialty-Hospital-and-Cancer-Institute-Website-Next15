@@ -7,7 +7,7 @@ export const WhatsappReachOutButton = () => {
         <Button
             variant="link"
             size="icon"
-            className="rounded-full fixed bottom-0 md:left-1/2 md:-translate-x-1/2 right-0 z-50 shadow-lg size-12"
+            className="rounded-full fixed bottom-2  md:bottom-0 md:left-1/2 md:-translate-x-1/2 right-2 z-50 shadow-lg size-12"
         >
             {/* WhatsApp Floating Button */}
             <Image
