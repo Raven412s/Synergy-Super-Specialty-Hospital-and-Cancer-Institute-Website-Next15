@@ -1,3 +1,4 @@
+import { WhatsappReachOutButton } from "@/components/global/WhatsappReachOutButton";
 import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns";
 import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer";
 import { PatientTestimonials } from "@/components/Modules/cancer-survivors/stories-of-hope/PatientTestimonials";
@@ -396,11 +397,38 @@ export  const quickLinks = [
         "We offer a wide range of specialties including Cardiology, Neurology, Orthopedics, Pediatrics, Oncology, Gynecology, and many more.",
     }
   ];
-export const actions: ActionItem[] = [
-    { icon: FaUserMd , label: "Book Appointment", onClick: ()=>{}, className: "lg:rounded-l-xl  lg:rounded-r-none rounded-none border-r-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
-    { icon: FaHospital , label: "Hospitals", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
-    { icon: FaPhone , label: "Call Us", onClick: ()=>{}, className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
-    { icon: FaSearch , label: "Search", onClick: ()=>{}, className: "lg:rounded-r-xl lg:rounded-l-none rounded-none border-l-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold " },
+
+  export const actions: ActionItem[] = [
+    {
+      icon: FaUserMd,
+      label: "Book Appointment",
+      onClick: () => {},
+      className: "lg:rounded-l-xl lg:rounded-r-none rounded-none border-r-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+    },
+    {
+      icon: FaHospital,
+      label: "Hospitals",
+      onClick: () => {},
+      className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+    },
+    {
+      icon: FaPhone,
+      label: "Call Us",
+      onClick: () => {},
+      className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+    },
+    {
+      icon: FaSearch,
+      label: "Search",
+      onClick: () => {},
+      className: "lg:rounded-r-xl lg:rounded-l-none rounded-none border-l-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+    },
+    {
+      label: "WhatsApp",
+      onClick: () => {},
+      className: "!hidden", // Hide it because we will render WhatsApp button separately
+      component: <WhatsappReachOutButton /> // Include the WhatsApp button as a component here
+    },
   ];
 
   export const excellenceItems = [
