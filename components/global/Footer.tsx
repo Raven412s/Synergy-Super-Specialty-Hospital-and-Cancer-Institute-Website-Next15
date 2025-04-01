@@ -35,24 +35,25 @@ export const Footer = () => {
                 if (uniqueLinks.length === 0) return null;
 
                 return (
-                  <div key={page.name} className="mb-4 w-max  px-1 py-1">
-                    {hasMultiplePages && (
-                      <h3 className="text-sm font-semibold mb-2">{page.name}</h3>
-                    )}
-                    <ul className="space-y-0">
-                      {uniqueLinks.map(([href, label]) => (
-                        <li key={href}>
-                          <Link
-                            href={href}
-                            className="text-sm hover:text-primary transition-colors duration-200 text-neutral-500 "
-                          >
-                            {label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                );
+                    <div key={page.name} className="mb-4 max-w-max min-w-[100px] px-1 py-1 overflow-hidden">
+                      {hasMultiplePages && (
+                        <h3 className="text-sm font-semibold mb-2">{page.name}</h3>
+                      )}
+                      <ul className="space-y-0">
+                        {uniqueLinks.map(([href, label]) => (
+                          <li key={href} className="text-wrap">
+                            <Link
+                              href={href}
+                              className="text-sm hover:text-primary transition-colors duration-200 text-neutral-500 block max-w-full overflow-hidden whitespace-nowrap text-ellipsis"
+                            >
+                              {label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+
               })}
             </div>
           );

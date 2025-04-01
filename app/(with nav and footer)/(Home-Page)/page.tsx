@@ -127,7 +127,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 justify-center">
         {hospitalHighlights.map((cardDetails, index) => (
           <TestimonialCard {...cardDetails} key={index} />
         ))}

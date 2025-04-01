@@ -83,42 +83,54 @@ export const FloatingActionBar = ({ items, isOnFooter = false }: Props) => {
                     </div>
                 )}
 
-                {/* Sticky Mode + Footer Not Touching → Show */}
-                {!isOnFooter && isSticky && !isTouchingFooter && (
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 30 }}
-                        transition={{ duration: 0.3 }}
-                        className={cn(
-                            "z-10 fixed transition-all duration-300 ease-in-out w-full flex justify-around bg-white/10 backdrop-blur-sm p-2 shadow-md md:flex-col md:w-auto md:rounded-r-xl",
-                            "bottom-0 md:top-1/2 md:-translate-y-1/2"
-                        )}
-                    >
-                        {items.map((item, idx) => {
-                            const Icon = item.icon;
-                            return (
-                                <Tooltip key={idx}>
-                                    <TooltipTrigger asChild>
-                                        <Button
-                                            onClick={item.onClick}
-                                            variant="default"
-                                            size="icon"
-                                            aria-label={item.label}
-                                            className={cn(
-                                                "flex items-center justify-center gap-2 p-5 rounded-full flex-col shadow-2xl bg-indigo-800"
-                                            )}
-                                        >
-                                            <Icon className="size-4 text-white" /> {/* ← fixed usage */}
-                                            <span className="sr-only">{item.label}</span>
-                                        </Button>
-                                    </TooltipTrigger>
-                                    <TooltipContent side="right">{item.label}</TooltipContent>
-                                </Tooltip>
-                            );
-                        })}
-                    </motion.div>
+{!isOnFooter && isSticky && !isTouchingFooter && (
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: 30 }}
+    transition={{ duration: 0.3 }}
+    className={cn(
+      "z-10 fixed  p-2  transition-all duration-300 ease-in-out",
+      "flex flex-wrap items-center gap-3", // ← changed this
+      "md:flex-col md:w-auto md:rounded-r-xl items-start justify-evenly",
+      "bottom-0 md:top-1/2 md:-translate-y-1/2"
+    )}
+  >
+    {items.map((item, idx) => {
+      const Icon = item.icon;
+      return (
+        <Tooltip key={idx}>
+          <TooltipTrigger asChild>
+            <Button
+              onClick={item.onClick}
+              variant="default"
+              size="default"
+              aria-label={item.label}
+              className={cn(
+                "group flex items-center  bg-indigo-800 text-white rounded-full shadow-2xl overflow-hidden min-w-10 min-h-10 ",
+                "transition-all duration-300 ease-in-out",
+                "hover:rounded-lg px-5 py-4 hover:px-6 transition-all duration-300 ease-in-out"
+              )}
+            >
+              <Icon className="size-5  " />
+              <span
+                className={cn(
+                  "text-sm opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-[200px] hidden group-hover:block",
+                  "transition-all duration-300 ease-in-out whitespace-nowrap overflow-hidden"
                 )}
+              >
+                {item.label}
+              </span>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent side="right" className="hidden md:block">{item.label}</TooltipContent>
+        </Tooltip>
+      );
+    })}
+  </motion.div>
+)}
+
+
 
                 {/* Non-sticky Mode (when banner visible) — Center Floating Bar */}
                 {!isOnFooter && !isSticky && (
