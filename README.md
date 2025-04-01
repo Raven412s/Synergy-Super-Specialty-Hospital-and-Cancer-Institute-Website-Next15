@@ -1,167 +1,100 @@
-Synergy Super-Specialty Hospital and Cancer Institute
-Welcome to the GitHub repository for the Synergy Super-Specialty Hospital and Cancer Institute's website. This project aims to provide comprehensive information about our hospital's services, specialties, and patient care initiatives.
+# Synergy Super-Specialty Hospital and Cancer Institute
 
-About Synergy Super-Specialty Hospital and Cancer Institute
-Established in 2021, Synergy Super-Specialty Hospital and Cancer Institute is committed to delivering exceptional healthcare services. We have treated over 100,000 patients, performed more than 12,000 successful surgeries, and offer 25+ departments of excellence, including advanced oncology treatments.
+Welcome to the GitHub repository for the **Synergy Super-Specialty Hospital and Cancer Institute** website. This project aims to create a modern, informative, and accessible website for a healthcare facility focused on excellence in specialty treatments and cancer care.
 
-Our Vision and Mission
-Vision: To be the trusted choice as a regional destination for cancer care and to eliminate the fear of cancer from people's minds, making them realize that cancer is indeed a curable disease. ​
-synergycancer.com
+🌐 **Preview the website (Testing Domain):**
+[https://synergy-website-alpha.vercel.app](https://synergy-website-alpha.vercel.app)
+> ⚠️ This is a temporary testing domain hosted on Vercel and not the final production URL.
 
-Mission: We are a passionate team providing comprehensive cancer care treatment for all in a cost-effective manner. ​
-synergycancer.com
+---
 
-Services Offered
-Our hospital offers a wide range of medical services, including:
+## 🏥 About the Hospital
 
-Cardiac Sciences: Comprehensive cardiac care, including diagnostic, interventional, and surgical treatments.​
+Established in 2021, **Synergy Super-Specialty Hospital and Cancer Institute** is dedicated to delivering world-class healthcare services. With a strong commitment to clinical excellence and patient care, the hospital has treated over **100,000+ patients**, completed **12,000+ surgeries**, and continues to expand across 25+ departments.
 
-Oncology: Advanced treatments for various types of cancer, supported by a team of expert oncologists.​
+---
 
-Neurosciences: Specialized care for neurological conditions, including neurology and neurosurgery services.​
+## 🎯 Vision and Mission
 
-Departments of Excellence
-We offer a variety of super-specialty departments, such as:
+**Vision:**
+To be the most trusted destination for cancer care and eliminate the fear of cancer by proving that **cancer is curable**.
 
-Medical Oncology​
-Medical Dialogues
-+1
-synergycancer.com
-+1
+**Mission:**
+To provide **comprehensive, compassionate, and cost-effective** cancer treatment accessible to all.
 
-Radiation Oncology​
+---
 
-Surgical Oncology​
-ABP News
-+2
-synergycancer.com
-+2
-synergycancer.com
-+2
+## 🧬 Departments of Excellence
 
-Hemato-Oncology​
+- Medical Oncology
+- Radiation Oncology
+- Surgical Oncology
+- Hemato-Oncology
+- Pain & Palliative Care
+- Cardiology
+- Neurology & Neurosurgery
+- Nephrology & Urology
+- Gastroenterology & Hepatology
+- Orthopedics & Rheumatology
+- Endocrinology & Pulmonology
+- Dermatology, ENT, Ophthalmology
+- General Surgery & Internal Medicine
+- Pediatrics, Gynecology & Obstetrics
+- Psychiatry
 
-Pain & Palliative Care​
-synergycancer.com
-+1
-synergyhospital.co.in
-+1
+---
 
-Cardiology​
-synergycancer.com
-+1
-synergycancer.com
-+1
+## 👨‍⚕️ Leadership Team
 
-Neurology​
+- **Dr. Alok Tiwari** – Surgical Oncology
+- **Dr. Saurabh Mishra** – Medical Hemato-Oncologist
+- **Dr. Anjali Jain** – Gynecological Oncologist
 
-Neurosurgery​
-synergyhospital.co.in
+---
 
-Nephrology​
+## 📞 Contact Information
 
-Urology​
+**Address:**
+Synergy Super-Specialty Hospital & Cancer Institute
+Bilandpur, Gorakhpur, Uttar Pradesh 273012
 
-Gastroenterology​
-Medical Dialogues
-+1
-synergyhospital.co.in
-+1
+**Phone:** +91-72340 06597
+**Email:** info@synergycancer.com
+**Website:** [https://synergycancer.com](https://synergycancer.com)
 
-Hepatology​
-synergycancer.com
+---
 
-Orthopedics​
+## 🚀 Project Stack
 
-Rheumatology​
-Medical Dialogues
-+4
-ABP News
-+4
-synergyhospital.co.in
-+4
+- **Next.js** with **TypeScript**
+- **Tailwind CSS** for styling
+- **Vercel** for deployment
+- **Shadcn UI** for components
+- Fully responsive and SEO-optimized
 
-Endocrinology​
-synergycancer.com
-+3
-ABP News
-+3
-Medical Dialogues
-+3
+---
 
-Pulmonology​
+## 🛠️ Development Status
 
-Dermatology​
+✅ Initial layout completed
+✅ Department and leadership sections
+🛠️ Integrating appointment booking, health packages, and more
+🧪 Testing responsiveness and accessibility
+📦 CMS and Admin Panel (Upcoming)
 
-ENT (Otorhinolaryngology)​
-ABP News
-+4
-Medical Dialogues
-+4
-synergycancer.com
-+4
+---
 
-Ophthalmology​
+## 🤝 Contributing
 
-General Surgery​
-synergycancer.com
+Contributions, issues, and feature requests are welcome!
+Please feel free to fork the repo and submit a pull request.
 
-Internal Medicine​
+---
 
-Pediatrics​
+## 📄 License
 
-Gynecology & Obstetrics​
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for more info.
 
-Psychiatry​
+---
 
-Leadership Team
-Our leadership team comprises esteemed medical professionals:
-
-Dr. Alok Tiwari: Surgical Oncology​
-synergycancer.com
-+2
-Medical Dialogues
-+2
-synergycancer.com
-+2
-
-Dr. Saurabh Mishra: Medical Hemato-Oncologist​
-synergycancer.com
-+1
-synergycancer.com
-+1
-
-Dr. Anjali Jain: Gynecological Oncologist​
-ABP News
-
-Contact Information
-Address: Synergy Superspeciality Hospital & Cancer Institute, Bilandpur, Gorakhpur, Uttar Pradesh 273012​
-ABP News
-+3
-synergycancer.com
-+3
-synergycancer.com
-+3
-
-Phone: +91-72340 06597​
-synergycancer.com
-+1
-synergycancer.com
-+1
-
-Email: info@synergycancer.com​
-synergycancer.com
-+1
-synergycancer.com
-+1
-
-Website
-For more information, please visit our website: https://synergy-website-alpha.vercel.app
-
-Note: The domain "synergy-website-alpha.vercel.app" is a temporary testing domain and is not the permanent domain name.​
-
-Contributing
-We welcome contributions to enhance the functionality and content of this repository. Please follow the standard fork-and-pull request workflow for submitting changes.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+> **Note:** This website is currently under active development. The live preview is for testing purposes only and may not reflect the final design/content.
