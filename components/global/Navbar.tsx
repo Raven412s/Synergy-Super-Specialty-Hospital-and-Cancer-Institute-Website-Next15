@@ -105,7 +105,7 @@ export function Navbar() {
                   </div>
 
                   {/* CENTER: Links */}
-                  <div className="w-4/6 border-x border-gray-300 p-4 min-h-full overflow-auto">
+                <div className="w-4/6 border-x border-gray-300 p-4 min-h-full overflow-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                       {Array.from({
                         length: Math.ceil(item.pages[activePageIndex]?.links.length / 10),
