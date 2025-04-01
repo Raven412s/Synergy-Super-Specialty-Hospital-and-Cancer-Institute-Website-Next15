@@ -95,9 +95,9 @@ export default function Home() {
   {/* Specialties Section */}
   <section
     id="specialties"
-    className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-4 sm:px-8 lg:px-20 py-10 flex items-center justify-center"
+    className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-1 sm:px-8 lg:px-20 py-10 flex items-center justify-center"
   >
-    <div className=" w-full space-y-6 px-10">
+    <div className=" w-full space-y-6 md:px-10">
       <div className="space-y-4">
         <h1 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
           Discover Our Centres of Clinical Excellence
