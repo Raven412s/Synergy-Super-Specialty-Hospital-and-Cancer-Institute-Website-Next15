@@ -54,8 +54,8 @@ export const metadata = {
 
 const TheSynergyStory = () => {
     return (
-        <main id='Overview' style={{backgroundImage: `url("/bg-section-opacity-80.png")`}}>
-            <section className='min-h-screen w-full px-2 md:px-6 lg:px-24 py-4' id='Our-Mission'>
+        <main id='Overview' style={{backgroundImage: `url("/bg-section-opacity-80.png")`}} className='-mt-5'>
+            <section className='min-h-max w-full px-2 md:px-6 lg:px-24 py-4 mb-12' id='Our-Mission'>
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row border-3 border-neutral-200 shadow-expanded">
                     <div className="w-full lg:w-2/6 mb-6 lg:mb-0 relative">
                         {/* Horizontal Image for small and medium screens */}
@@ -94,7 +94,7 @@ const TheSynergyStory = () => {
                     </div>
                 </div>
             </section>
-            <section className='min-h-screen w-full px-2 md:px-6 lg:px-24 py-4' id='Our-Vision'>
+            <section className='min-h-max w-full px-2 md:px-6 lg:px-24 py-4 my-12' id='Our-Vision'>
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row-reverse border-3 border-neutral-200 shadow-expanded">
                     <div className="w-full lg:w-2/6 mb-6 lg:mb-0 relative">
                         {/* Horizontal Image for small and medium screens */}
@@ -138,7 +138,7 @@ const TheSynergyStory = () => {
                 </div>
             </section>
             <section
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
+                className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 my-12 "
             >
                 <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                     <div className='container mx-auto   '>
@@ -166,7 +166,7 @@ const TheSynergyStory = () => {
             </section>
             <section
                 id="Leadership"
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-10"
+                className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
             >
                 <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                     {/* Heading + Subheading */}
@@ -209,7 +209,7 @@ const TheSynergyStory = () => {
             </section>
             <section
                 id="Awards-and-Accolades"
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-10"
+                className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
             >
                 <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                     {/* Heading + Subheading */}
@@ -233,7 +233,7 @@ const TheSynergyStory = () => {
 
             <section
                 id="Achievements-and-Milestones"
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-10"
+                className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
             >
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded">
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">
@@ -256,7 +256,7 @@ const TheSynergyStory = () => {
 
             <section
                 id="A-Day-at-Synergy"
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-10"
+                className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 mt-12"
             >
                 <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded">
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-6">

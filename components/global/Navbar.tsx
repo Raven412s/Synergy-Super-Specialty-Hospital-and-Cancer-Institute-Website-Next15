@@ -81,7 +81,7 @@ export function Navbar() {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none min-h-[428px] h-full">
-            <div className="flex w-full min-h-full">
+            <div className="flex w-full min-h-full justify-between">
               {item.pages[0]?.name ? (
                 <>
                   {/* LEFT: Page Names */}
@@ -105,7 +105,7 @@ export function Navbar() {
                   </div>
 
                   {/* CENTER: Links */}
-                <div className="w-4/6 border-x border-gray-300 p-4 min-h-full overflow-auto">
+                <div className="w-6/8 border-x border-gray-300 p-4 min-h-full overflow-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                       {Array.from({
                         length: Math.ceil(item.pages[activePageIndex]?.links.length / 10),
@@ -134,7 +134,7 @@ export function Navbar() {
                   </div>
 
                   {/* RIGHT: Quick Links */}
-                  <div className="w-1/6 p-4 space-y-4 bg-fuchsia-50 overflow-y-auto max-h-[428px]">
+                  <div className="w-2/8 p-4 space-y-4 bg-fuchsia-50 overflow-y-auto max-h-[428px]">
                     <h4 className="font-semibold text-gray-700">Quick Links</h4>
 
                     {quickLinks.map((qLink) => (

@@ -44,13 +44,13 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
           >
             <AccordionTrigger
               onClick={() => handleToggle(value)}
-              className={cn("flex justify-between items-center px-4 py-3 text-left text-base lg:text-lg font-medium hover:no-underline", isOpen ? "text-primary" : "text-foreground")}
+              className={cn("flex  justify-between items-center px-4 py-3 text-left text-base lg:text-lg font-medium hover:no-underline", isOpen ? "text-primary" : "text-foreground")}
             >
-                <span className="w-full">
+                <span className="w-full text-sm md:text-base  ">
                     {item.question}
                 </span>
-              <span className="">
-                {isOpen ? <MinusCircle className="size-10 text-primary" /> : <PlusCircle className="size-10 text-primary" />}
+              <span className="w-max">
+                {isOpen ? <MinusCircle className="size-7 md:size-8 text-primary" /> : <PlusCircle className="size-7 md:size-8 text-primary" />}
               </span>
             </AccordionTrigger>
             <AccordionContent className="px-4  text-gray-800">
