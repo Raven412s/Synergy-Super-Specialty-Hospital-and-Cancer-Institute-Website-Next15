@@ -44,7 +44,7 @@ export const Footer = () => {
                           <li key={href} className="text-wrap">
                             <Link
                               href={href}
-                              className="text-sm hover:text-primary transition-colors duration-200 text-neutral-500 block max-w-full overflow-hidden whitespace-nowrap text-ellipsis"
+                              className="text-sm hover:text-primary py-0.5 mb-0.5 transition-colors duration-200 text-neutral-500 block max-w-full overflow-hidden whitespace-nowrap text-ellipsis"
                             >
                               {label}
                             </Link>
