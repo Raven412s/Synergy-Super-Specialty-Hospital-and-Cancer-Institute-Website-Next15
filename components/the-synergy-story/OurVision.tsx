@@ -8,7 +8,7 @@ export const OurVision = () => {
     const isInView = useInView(VisionRef, { once: true, margin: "-100px" });
     return (
         <section ref={VisionRef} className='min-h-max w-full px-2 md:px-6 lg:px-24 py-4 my-12' id='Our-Vision'>
-            <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row-reverse border-3 border-neutral-200 shadow-expanded">
+            <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row-reverse border-3 border-neutral-200 shadow-expanded overflow-hidden">
                 <motion.div
                     initial={{ x: 100, opacity: 0 }}
                     animate={isInView ? { x: 0, opacity: 1 } : {}}
