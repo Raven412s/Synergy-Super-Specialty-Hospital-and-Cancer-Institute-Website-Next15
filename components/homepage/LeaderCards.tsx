@@ -8,7 +8,7 @@ export const LeaderCards = () => {
     const leaderRef = useRef(null);
     const isInView = useInView(leaderRef, { once: false, margin: "-100px" });
   return (
-          <div ref={leaderRef} className="w-full p-16 space-y-10">
+          <div ref={leaderRef} className="w-full lg:p-16 p-4 space-y-10">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
