@@ -2,12 +2,13 @@ import { pressReleases } from '@/data';
 import { PressRelease } from '@/types';
 import { notFound } from 'next/navigation';
 
-export default function PressReleasePage({
+export default async function PressReleasePage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>
 }) {
-  const release = pressReleases.find((r: PressRelease) => r.id === params.id);
+   const awaitedParams = await params
+  const release = pressReleases.find((r: PressRelease) => r.id === awaitedParams.id);
 
   if (!release) return notFound();
 
