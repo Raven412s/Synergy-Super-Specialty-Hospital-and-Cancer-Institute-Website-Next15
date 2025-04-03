@@ -48,7 +48,6 @@ export const metadata = {
     icons: {
         icon: "/favicon.ico",
     },
-    themeColor: "#007f5f",
     twitter: {
         card: "summary_large_image",
         title: "Media Center - Synergy Super Speciality Hospital",

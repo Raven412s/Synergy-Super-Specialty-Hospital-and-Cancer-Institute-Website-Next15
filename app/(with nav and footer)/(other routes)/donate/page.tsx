@@ -48,7 +48,6 @@ export const metadata = {
     icons: {
       icon: "/favicon.ico",
     },
-    themeColor: "#007f5f", // You can match your brand theme
     twitter: {
       card: "summary_large_image",
       title: "Support Cancer Care | Donate to Synergy Hospital",
