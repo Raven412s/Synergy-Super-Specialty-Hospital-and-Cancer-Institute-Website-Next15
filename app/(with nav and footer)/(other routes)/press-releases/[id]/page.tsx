@@ -30,6 +30,8 @@ export default async function PressReleasePage({
             <iframe
               src={release.videoPreview}
               className="w-full h-full"
+              title="Patient Testimonial Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           </div>
