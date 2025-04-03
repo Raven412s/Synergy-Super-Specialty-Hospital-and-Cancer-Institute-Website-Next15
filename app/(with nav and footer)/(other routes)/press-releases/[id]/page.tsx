@@ -1,5 +1,5 @@
 import { pressReleases } from '@/data';
-import { DownloadItem, PressRelease } from '@/types';
+import { PressRelease } from '@/types';
 import { notFound } from 'next/navigation';
 
 export default function PressReleasePage({
@@ -34,7 +34,7 @@ export default function PressReleasePage({
           </div>
         )}
 
-        {release.downloads?.length > 0 && (
+        {release.downloads && release.downloads?.length > 0 && (
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">Downloads</h3>
             <div className="flex flex-wrap gap-4">
