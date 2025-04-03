@@ -37,7 +37,7 @@ export const PressReleasesSection = () => {
     ]
 
     return (
-        <section className='w-full px-2 md:px-6 lg:px-24 py-4' id='press-releases'>
+        <section className='min-h-[80vh] w-full px-2 md:px-6 lg:px-24 py-4' id='press-releases'>
             <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row-reverse border-3 border-neutral-200 shadow-expanded">
                 {/* Interactive Timeline */}
                 <motion.div

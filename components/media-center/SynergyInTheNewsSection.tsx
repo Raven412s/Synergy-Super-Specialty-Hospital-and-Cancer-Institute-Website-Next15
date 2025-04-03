@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 export const SynergyInTheNewsSection = () => {
   return (
-    <section className='w-full px-2 md:px-6 lg:px-24 py-4' id='synergy-in-the-news'>
+    <section className='min-h-[80vh] w-full px-2 md:px-6 lg:px-24 py-4' id='synergy-in-the-news'>
       <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row border-3 border-neutral-200 shadow-expanded">
         {/* New Content Section */}
         <div className="w-full lg:w-1/3 flex flex-col space-y-6 pr-0 lg:pr-8 mb-8 lg:mb-0">
