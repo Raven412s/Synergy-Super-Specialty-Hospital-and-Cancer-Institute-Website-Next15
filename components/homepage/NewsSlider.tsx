@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, ChevronRightCircleIcon } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -120,7 +120,6 @@ export default function NewsSlider() {
                         </motion.div>
                     ))}
                 </div>
-
                 {/* Right Scroll Button */}
                 <Button
                     onClick={() => scroll("right")}
