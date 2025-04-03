@@ -117,18 +117,6 @@ export default function NewsSlider() {
                                     {news.title}
                                 </h3>
                             </div>
-
-                            {/* Red Animated Button */}
-                            <motion.div
-                                variants={{
-                                    initial: { x: '-100%' },
-                                    hover: { x: 10 },
-                                }}
-                                transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-                                className="absolute bottom-4 text-white z-40 rounded-full p-0 m-0"
-                            >
-                                <ChevronRightCircleIcon className="size-12 stroke-1 m-0 p-0 fill-synergy-pink/90" />
-                            </motion.div>
                         </motion.div>
                     ))}
                 </div>

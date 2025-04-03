@@ -26,56 +26,83 @@ import { toast } from "sonner"
 import * as z from "zod"
 
 const formSchema = z.object({
-  name: z.string().min(3).max(80),
-  number: z.number().min(1000000000, "Invalid number").max(9999999999999),
-  one_time_password: z.string().min(6).max(6)
+  name: z.string().min(3, "Name must be at least 3 characters").max(80, "Name is too long"),
+  number: z.string()
+    .min(10, "Number must be at least 10 digits")
+    .max(13, "Number is too long")
+    .regex(/^[0-9]+$/, "Must be a valid number"),
+  one_time_password: z.string().min(6, "OTP must be 6 digits").max(6)
 });
 
 export default function RequestCallBackForm() {
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      number: "",
+      one_time_password: ""
+    }
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       console.log(values);
-      toast(
-        <pre className="mt-2 w-[340px] rounded-md bg-primary p-4">
-          <code className="text-white">{JSON.stringify(values, null, 2)}</code>
-        </pre>
-      );
+      toast.success("Callback request submitted successfully!", {
+        description: "We'll contact you shortly.",
+      });
     } catch (error) {
       console.error("Form submission error", error);
       toast.error("Failed to submit the form. Please try again.");
     }
   }
 
+  const handleRequestOTP = () => {
+    const number = form.getValues("number");
+    if (!number || number.length < 10) {
+      form.setError("number", {
+        message: "Please enter a valid 10-digit number first"
+      });
+      return;
+    }
+    toast.info("OTP sent to your number");
+    // Here you would typically call your OTP API
+  };
+
+  const handleVerifyOTP = () => {
+    const otp = form.getValues("one_time_password");
+    if (!otp || otp.length < 6) {
+      form.setError("one_time_password", {
+        message: "Please enter the full 6-digit OTP"
+      });
+      return;
+    }
+    toast.success("OTP verified successfully");
+    // Here you would typically verify the OTP
+  };
+
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-6 max-w-6xl mx-auto w-full px-4 sm:px-6"
+        className="space-y-4 w-full px-2 sm:px-4"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
+        <div className="grid grid-cols-1 gap-4 md:gap-6">
           {/* Name Field */}
           <FormField
             control={form.control}
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Name</FormLabel>
+                <FormLabel className="text-sm md:text-base">Full Name</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Krishna"
-                    className="text-indigo-800 placeholder:text-neutral-500"
+                    placeholder="Enter your full name"
+                    className="text-gray-800 placeholder:text-neutral-500 font-semibold h-12 md:h-14 text-sm md:text-base border-primary"
                     type="text"
                     {...field}
                   />
                 </FormControl>
-                <FormDescription className="text-neutral-500">Enter your name here.</FormDescription>
-                <FormMessage />
+                <FormMessage className="text-xs md:text-sm" />
               </FormItem>
             )}
           />
@@ -86,26 +113,26 @@ export default function RequestCallBackForm() {
             name="number"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Number</FormLabel>
-                <div className="flex flex-col sm:flex-row gap-2">
+                <FormLabel className="text-sm md:text-base">Phone Number</FormLabel>
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                   <FormControl>
                     <Input
-                      placeholder="+91XXXXXXXXXX"
-                      className="text-indigo-800 placeholder:text-neutral-500"
-                      type="number"
+                      placeholder="Enter 10-digit phone number"
+                      className="text-gray-800 placeholder:text-neutral-500 font-semibold h-12 md:h-14 text-sm md:text-base border-primary"
+                      type="tel"
                       {...field}
                     />
                   </FormControl>
                   <Button
                     type="button"
                     variant="outline"
-                    className="shrink-0 hover:text-primary hover:bg-indigo-50 transition-all duration-300"
+                    className="h-12 md:h-14 text-sm md:text-base hover:bg-gray-50 hover:text-primary transition-colors"
+                    onClick={handleRequestOTP}
                   >
                     Request OTP
                   </Button>
                 </div>
-                <FormDescription className="text-neutral-500">Enter your number here.</FormDescription>
-                <FormMessage />
+                <FormMessage className="text-xs md:text-sm" />
               </FormItem>
             )}
           />
@@ -116,40 +143,43 @@ export default function RequestCallBackForm() {
             name="one_time_password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>OTP</FormLabel>
-                <div className="flex flex-col sm:flex-row gap-2 items-center">
+                <FormLabel className="text-sm md:text-base">OTP Verification</FormLabel>
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-start sm:items-center">
                   <FormControl>
                     <InputOTP maxLength={6} {...field}>
                       <InputOTPGroup>
-                        <InputOTPSlot index={0} />
-                        <InputOTPSlot index={1} />
-                        <InputOTPSlot index={2} />
-                        <InputOTPSlot index={3} />
-                        <InputOTPSlot index={4} />
-                        <InputOTPSlot index={5} />
+                        {[...Array(6)].map((_, i) => (
+                          <InputOTPSlot
+                            key={i}
+                            index={i}
+                            className="w-10 h-12 sm:w-12 sm:h-14 text-sm md:text-base border-primary "
+                          />
+                        ))}
                       </InputOTPGroup>
                     </InputOTP>
                   </FormControl>
                   <Button
                     type="button"
                     variant="outline"
-                    className="shrink-0 hover:text-primary hover:bg-indigo-50 transition-all duration-300"
+                    className="h-12 md:h-14 text-sm md:text-base hover:bg-gray-50 hover:text-primary transition-colors"
+                    onClick={handleVerifyOTP}
                   >
                     Verify OTP
                   </Button>
                 </div>
-                <FormDescription className="text-neutral-500">
-                  Please enter the OTP sent to your phone.
-                </FormDescription>
-                <FormMessage />
+                <FormMessage className="text-xs md:text-sm" />
               </FormItem>
             )}
           />
         </div>
 
-        <div className="pt-4">
-          <Button type="submit" className="w-full sm:w-auto">
-            Send a Request
+        <div className="pt-2">
+          <Button
+            type="submit"
+            className="w-full h-12 md:h-14 text-sm md:text-base"
+            size="lg"
+          >
+            Request Callback
           </Button>
         </div>
       </form>

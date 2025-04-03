@@ -56,7 +56,7 @@ import Dialysis from "@/components/Modules/services/support-services/Dialysis";
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory";
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy";
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy";
-import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, TestimonialItem } from "@/types";
+import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types";
 import { Ambulance } from "lucide-react";
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa";
 
@@ -733,8 +733,32 @@ export  const quickLinks = [
     },
   };
 
-
-
+  export const pressReleases: PressRelease[] = [
+    {
+      id: 'ai-diagnostic-center', // Add unique ID for routing
+      date: '2024-03-15',
+      title: 'Synergy Hospital Launches AI-Driven Diagnostic Center',
+      type: 'innovation',
+      summary: 'Groundbreaking AI integration revolutionizes patient diagnostics with 95% accuracy',
+      link: '/press-releases/ai-diagnostic-center', // Dynamic route
+      videoPreview: 'https://www.youtube.com/embed/OgIKy2FK2i0?si=Ij2vY30t01XugGTc',
+      downloads: [
+        { name: 'Press Kit', url: '/downloads/ai-diagnostic-press-kit.pdf' },
+        { name: 'High-Res Images', url: '/downloads/ai-diagnostic-images.zip' }
+      ],
+      content: `Full article content with HTML formatting...` // Add full content
+    },
+    {
+      id: 'top-cancer-care',
+      date: '2024-03-12',
+      title: 'Synergy Recognized as Top Hospital for Cancer Care',
+      type: 'award',
+      summary: 'National healthcare award for excellence in oncology treatment',
+      link: '/press-releases/top-cancer-care',
+      images: ['/img/award-ceremony.jpg'],
+      content: `Full content...`
+    }
+  ];
 
 
 // MAPS FOR DYNAMIC PAGES

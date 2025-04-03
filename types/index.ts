@@ -55,7 +55,8 @@ export type WrittenTestimonial = {
   }
 
 export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"> {
-    image: string;
+    image?: string;
+    children?: React.ReactNode;
     videoUrl: string;
   }
 
@@ -91,4 +92,24 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
       image: string
       videoUrl: string
     }
+  }
+
+ export interface DownloadItem {
+    name: string;
+    url: string;
+  }
+
+
+export  interface PressRelease {
+    id: string;
+    date: string;
+    title: string;
+    type: 'innovation' | 'partnership' | 'award' | 'research';
+    summary: string;
+    link: string;
+    content: string;
+    videoPreview?: string;
+    downloads?: DownloadItem[];
+    pdf?: string;
+    images?: string[];
   }
