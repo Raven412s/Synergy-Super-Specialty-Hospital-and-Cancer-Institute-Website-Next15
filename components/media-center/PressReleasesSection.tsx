@@ -163,6 +163,7 @@ export const PressReleasesSection = () => {
                                     >
                                         <Link href={release.link} title={release.summary}>
                                             Read More
+                                            <span className='sr-only'>{release.summary}</span>
                                             <ArrowRight className="w-4 h-4" />
                                         </Link>
                                     </Button>
