@@ -2,10 +2,6 @@ import { pressReleases } from '@/data';
 import { DownloadItem, PressRelease } from '@/types';
 import { notFound } from 'next/navigation';
 
-
-
-
-
 export default function PressReleasePage({
   params,
 }: {
@@ -28,7 +24,6 @@ export default function PressReleasePage({
 
         <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: release.content }} />
 
-        {/* Media section */}
         {release.videoPreview && (
           <div className="mt-8 aspect-video">
             <iframe
@@ -39,13 +34,11 @@ export default function PressReleasePage({
           </div>
         )}
 
-        {/* Downloads section */}
-
-        {release.downloads && release.downloads?.length > 0 && (
+        {release.downloads?.length > 0 && (
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">Downloads</h3>
             <div className="flex flex-wrap gap-4">
-              {release.downloads.map((download: DownloadItem) => (
+              {release.downloads.map((download) => (
                 <a
                   key={download.name}
                   href={download.url}
@@ -63,9 +56,9 @@ export default function PressReleasePage({
   );
 }
 
-// Generate static paths
-export async function generateStaticParams() {
-  return pressReleases.map((release: PressRelease) => ({
+// Correct generateStaticParams implementation
+export async function generateStaticParams(): Promise<{ id: string }[]> {
+  return pressReleases.map((release) => ({
     id: release.id,
   }));
 }
