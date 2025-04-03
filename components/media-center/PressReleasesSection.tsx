@@ -161,7 +161,7 @@ export const PressReleasesSection = () => {
                                         className="gap-2 text-synergy-blue"
                                         asChild
                                     >
-                                        <Link href={release.link}>
+                                        <Link href={release.link} title={release.summary}>
                                             Read More
                                             <ArrowRight className="w-4 h-4" />
                                         </Link>
