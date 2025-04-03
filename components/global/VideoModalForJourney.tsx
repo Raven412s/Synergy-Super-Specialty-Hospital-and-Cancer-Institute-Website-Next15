@@ -24,7 +24,21 @@ export function VideoModalForJourney({
                 title="Play Patient Testimonial Video"
             >
                 {
-                    image ? <></> : children ? children : null
+                    image ? <>
+                        <Image
+                            src={image}
+                            alt="Video thumbnail"
+                            fill
+                            className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <Image
+                            src="/player-thumb-overlay.svg"
+                            alt="Play button overlay"
+                            width={70}
+                            height={70}
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none"
+                        />
+                    </> : children ? children : null
                 }
             </DialogTrigger>
 
