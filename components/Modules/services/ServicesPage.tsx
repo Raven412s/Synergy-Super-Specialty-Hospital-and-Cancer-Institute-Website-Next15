@@ -101,7 +101,7 @@ export default function ServicesPage() {
               <ImageWithFallback
                 fallbackSrc='/fallback-image.webp'
                 fill
-                src="/images/hospital-hero.jpg"
+                src="/fallback-image.webp"
                 alt="Synergy Hospital Facility"
                 className="object-cover"
                 priority
