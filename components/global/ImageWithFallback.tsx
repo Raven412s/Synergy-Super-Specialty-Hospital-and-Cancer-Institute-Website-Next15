@@ -19,7 +19,10 @@ export function ImageWithFallback({ src, fallbackSrc, alt, ...props }: ImageWith
       {...props}
       src={imgSrc || fallbackSrc}
       alt={alt}
-      onError={() => setImgSrc(fallbackSrc)}
+      onError={(e) =>{
+        e.preventDefault()
+         setImgSrc(fallbackSrc)
+        }}
     />
   );
 }
