@@ -25,23 +25,25 @@ import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 
 export default function SliderWithTriggers() {
+    // Filter to only get featured departments
+    const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % departmentData.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % featuredDepartments.length);
     };
 
     const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? departmentData.length - 1 : prevIndex - 1
+            prevIndex === 0 ? featuredDepartments.length - 1 : prevIndex - 1
         );
     };
 
     return (
         <div className="w-full flex flex-col gap-5 relative">
-            {/* Trigger Buttons */}
+            {/* Trigger Buttons - Only show featured departments */}
             <div className="flex overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar ">
-                {departmentData.map((slide, index) => (
+                {featuredDepartments.map((slide, index) => (
                     <Button
                         key={slide.id}
                         className={cn(
@@ -59,19 +61,18 @@ export default function SliderWithTriggers() {
 
             <Button
                 size="icon"
-                className="absolute hidden left-3 bottom-4  lg:block   p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
+                className="absolute hidden left-3 bottom-4 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
                 onClick={prevSlide}
                 title="move to the previous speciality slide"
             >
                 <ChevronLeft className="size-4" />
             </Button>
 
-            {/* Slider */}
+            {/* Slider - Only show featured departments */}
             <div className="relative flex items-center justify-center w-full overflow-hidden">
-
                 <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
                     <AnimatePresence mode="wait">
-                        {departmentData.map((department, index) =>
+                        {featuredDepartments.map((department, index) =>
                             index === currentIndex ? (
                                 <motion.div
                                     key={department.id}
@@ -87,12 +88,11 @@ export default function SliderWithTriggers() {
                         )}
                     </AnimatePresence>
                 </div>
-
             </div>
 
             <Button
                 size="icon"
-                className="absolute hidden right-3 bottom-4  lg:block   p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
+                className="absolute hidden right-3 bottom-4 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
                 onClick={nextSlide}
                 title="move to the next speciality slide"
             >
@@ -111,6 +111,7 @@ export default function SliderWithTriggers() {
     );
 }
 
+// SliderCard component remains exactly the same
 const SliderCard = (props: DepartmentData) => {
     const [showAll, setShowAll] = useState(false);
     const [cardHovered, setCardHovered] = useState(false);
@@ -118,13 +119,13 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "flex flex-col md:flex-row rounded-4xl p-2 sm:p-3 md:p-4 lg:p-6 bg-white min-h-[350px] w-full shadow-md shadow-black/20  transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400",
+                "flex flex-col md:flex-row rounded-4xl p-2 sm:p-3 md:p-4 lg:p-6 bg-white min-h-[350px] w-full shadow-md shadow-black/20 transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
             onMouseLeave={() => setCardHovered(false)}
         >
-            <div className="md:w-2/8 w-full flex justify-center items-center  aspect-square">
+                        <div className="md:w-2/8 w-full flex justify-center items-center  aspect-square">
                 <div className="w-full md:w-full overflow-hidden xl:rounded-4xl lg:rounded-3xl md:rounded-2xl sm:rounded-xl rounded-lg shadow-sm">
                     {props.heroImage && (
                         <ImageWithFallback
