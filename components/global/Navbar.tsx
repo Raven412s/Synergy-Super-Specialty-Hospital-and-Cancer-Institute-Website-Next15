@@ -104,7 +104,7 @@ export function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger
                   onMouseEnter={() => setActivePageIndex(0)}
-                  className="xl:px-4 md:px-2 !px-0 py-2 uppercase font-bold font-display lg:text-sm text-xs"
+                  className="xl:px-4 md:px-2 !px-0 py-2 uppercase !font-[500] font-display lg:text-sm text-xs"
                 >
                   {item.label}
                 </NavigationMenuTrigger>
