@@ -6,16 +6,6 @@ interface link  {
     href: string
 }
 
-export interface SliderCardProps {
-    id: number,
-    label: string,
-    specialties: string[],
-    readMoreLink: string,
-    findDoctorLink: string,
-    description: string,
-    imgSrc: string
-}
-
 export interface TestimonialCardProps {
     imgSrc: string | React.ReactNode
     imgAlt: string
@@ -112,4 +102,75 @@ export  interface PressRelease {
     downloads?: DownloadItem[];
     pdf?: string;
     images?: string[];
+  }
+
+
+export interface DepartmentData {
+    id: string;
+    index: number;
+    name: string;
+    slug: string;
+    heroImage: string;
+    heroTitle: string;
+    heroSubtitle: string;
+    isFeatured: boolean;
+    overview: {
+      title: string;
+      description: string[];
+      whyChooseUs: string[];
+    };
+    treatments: {
+      title: string;
+      items: {
+        title: string;
+        description: string;
+      }[];
+    };
+    stats: {
+      title: string;
+      items: {
+        value: string;
+        label: string;
+      }[];
+    };
+    team: {
+      title: string;
+      members: {
+        name: string;
+        role: string;
+        credentials: string;
+        image: string;
+        specialty: string;
+      }[];
+    };
+    facilities: {
+      title: string;
+      description: string;
+      features: string[];
+      image: string;
+    };
+    research: {
+      title: string;
+      items: {
+        title: string;
+        content: string;
+        icon: string;
+      }[];
+    };
+    testimonials: {
+      title: string;
+      items: {
+        quote: string;
+        author: string;
+        image: string;
+      }[];
+    };
+    cta: {
+      title: string;
+      subtitle: string;
+      buttons: {
+        text: string;
+        isPrimary: boolean;
+      }[];
+    };
   }

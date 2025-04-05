@@ -9,9 +9,9 @@ export const RestSections = () => {
     const dayAtSynergyRef = useRef(null);
 
     // Use `useInView` separately for each section
-    const isAwardsInView = useInView(awardsRef, { once: false, margin: "-100px" });
-    const isAchievementsInView = useInView(achievementsRef, { once: false, margin: "-100px" });
-    const isDayAtSynergyInView = useInView(dayAtSynergyRef, { once: false, margin: "-100px" });
+    const isAwardsInView = useInView(awardsRef, { once: true, margin: "-100px" });
+    const isAchievementsInView = useInView(achievementsRef, { once: true, margin: "-100px" });
+    const isDayAtSynergyInView = useInView(dayAtSynergyRef, { once: true, margin: "-100px" });
 
     return (
         <>
@@ -34,7 +34,7 @@ export const RestSections = () => {
 
                         <div className="space-y-4">
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                            Over the years, Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) has earned numerous accolades for our unwavering commitment to clinical excellence, compassionate care, and cutting-edge research. These honors reflect the dedication of our doctors, nurses, and staff who work tirelessly to deliver outstanding healthcare services. We are proud to be acknowledged for setting new standards in oncology and multi-specialty care, both regionally and nationally.
+                                Over the years, Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) has earned numerous accolades for our unwavering commitment to clinical excellence, compassionate care, and cutting-edge research. These honors reflect the dedication of our doctors, nurses, and staff who work tirelessly to deliver outstanding healthcare services. We are proud to be acknowledged for setting new standards in oncology and multi-specialty care, both regionally and nationally.
                             </p>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ export const RestSections = () => {
 
                         <div className="space-y-4">
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                            From pioneering treatments to expanding our facilities, Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) has crossed significant milestones over the years. We have introduced advanced medical technologies, opened new departments, and reached more communities with our healing mission. Every achievement reflects our resolve to redefine healthcare excellence and make a difference in countless lives.
+                                From pioneering treatments to expanding our facilities, Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) has crossed significant milestones over the years. We have introduced advanced medical technologies, opened new departments, and reached more communities with our healing mission. Every achievement reflects our resolve to redefine healthcare excellence and make a difference in countless lives.
                             </p>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export const RestSections = () => {
 
                         <div className="space-y-4">
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                            At SSSHCI, each day begins with a shared commitment to healing. From morning rounds and multidisciplinary team huddles to life-saving surgeries and comforting patient interactions, our hospital operates like a well-coordinated symphony. It&apos;s a place where expertise meets empathy, technology meets touch, and every action is rooted in our core purpose—serving humanity with dignity.
+                                At SSSHCI, each day begins with a shared commitment to healing. From morning rounds and multidisciplinary team huddles to life-saving surgeries and comforting patient interactions, our hospital operates like a well-coordinated symphony. It&apos;s a place where expertise meets empathy, technology meets touch, and every action is rooted in our core purpose—serving humanity with dignity.
                             </p>
                         </div>
                     </div>

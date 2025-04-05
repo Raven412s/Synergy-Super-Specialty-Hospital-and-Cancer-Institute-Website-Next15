@@ -6,7 +6,7 @@ import { useInView, motion } from 'framer-motion';
 
 export const OurExcellence = () => {
     const ExcellenceRef = useRef(null);
-    const isInView = useInView(ExcellenceRef, { once: false, margin: "-100px" });
+    const isInView = useInView(ExcellenceRef, { once: true, margin: "-100px" });
 
     return (
         <section
@@ -23,10 +23,10 @@ export const OurExcellence = () => {
                     <div className="space-y-4 ">
                         {/* sub-heading */}
                         <motion.p
-                                initial={{ x: -100, opacity: 0 }}
-                                animate={isInView ? { x: 0, opacity: 1 } : {}}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                        className='text-base md:text-lg text-gray-700 leading-relaxed '>
+                            initial={{ x: -100, opacity: 0 }}
+                            animate={isInView ? { x: 0, opacity: 1 } : {}}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className='text-base md:text-lg text-gray-700 leading-relaxed '>
                             A Journey of Compassion, Quality, and Comprehensive Cancer Care
                         </motion.p>
                         {/* description */}

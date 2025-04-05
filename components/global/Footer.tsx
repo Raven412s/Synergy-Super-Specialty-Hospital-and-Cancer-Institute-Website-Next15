@@ -9,8 +9,8 @@ export const Footer = () => {
             className="relative container mx-auto  py-12 px-4 sm:px-6 lg:px-8 "
         >
             <FooterFormContainer />
-            <div className="flex items-center justify-center w-full  ">
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  w-full">
+            <div className="flex items-center justify-center  w-full  ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg;gap-10 gap-1 md:gap-6  w-max  sm:w-full">
                     {menuItems.map((menu) => {
                         const hasMultiplePages = menu.pages.length > 1;
 
@@ -44,7 +44,7 @@ export const Footer = () => {
                                                     <li key={href} className="text-wrap">
                                                         <Link
                                                             href={href}
-                                                            className="text-sm hover:text-primary py-0.5 mb-0.5 transition-colors duration-200 text-neutral-500 block max-w-max overflow-hidden whitespace-nowrap text-ellipsis"
+                                                            className="md:text-sm text-xs hover:text-primary py-0.5 mb-0.5 transition-colors duration-200 text-neutral-500 block max-w-max overflow-hidden whitespace-nowrap text-ellipsis"
                                                         >
                                                             <span className='pr-2 text-left'>
                                                                 {label}

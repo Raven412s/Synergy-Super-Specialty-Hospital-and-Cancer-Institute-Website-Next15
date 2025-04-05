@@ -6,7 +6,7 @@ import { LeaderCard } from '../global/LeaderCard';
 
 export const OurLeaders = () => {
     const LeaderRef = useRef(null);
-    const isInView = useInView(LeaderRef, { once: false, margin: "-100px" });
+    const isInView = useInView(LeaderRef, { once: true, margin: "-100px" });
 
     return (
         <section

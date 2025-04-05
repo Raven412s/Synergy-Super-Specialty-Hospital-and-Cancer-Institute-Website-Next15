@@ -1,21 +1,21 @@
-// components/cards/LeaderCard.tsx
 "use client"
 
 import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
-    CardFooter,
 } from "@/components/ui/card"
+import { imageVariants } from "@/lib/utils"
 import { LeaderCardProps } from '@/types'
-import Image from 'next/image'
+import { motion, useInView } from "framer-motion"
 import { useRouter } from 'next/navigation'
 import React, { useRef } from 'react'
-import { Button } from '../ui/button'
 import { DownloadImageButton } from '../the-synergy-story/DownloadImageButton'
-import { motion, useInView } from "framer-motion"
+import { Button } from '../ui/button'
+import { ImageWithFallback } from "./ImageWithFallback"
 
 export const LeaderCard: React.FC<LeaderCardProps> = ({
     image,
@@ -26,30 +26,25 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     onDownload,
 }) => {
     const router = useRouter()
-    const HeaderRef = useRef(null);
-    const isInView = useInView(HeaderRef, { once: false, margin: "-100px" });
+
+    const HeaderRef = useRef(null)
+    const imageRef = useRef(null)
+
+    const isInView = useInView(HeaderRef, { once: true, margin: "-100px" })
+    const isImageInView = useInView(imageRef, { once: true, margin: "-100px" })
 
     return (
-        <Card
-
-            className="min-w-full bg-background sm:max-w-xs rounded-xl shadow-md overflow-hidden"
-        >
+        <Card className="min-w-full bg-background sm:max-w-xs rounded-xl shadow-md overflow-hidden">
             <CardContent className="flex justify-center py-3 px-3">
                 <motion.div
-                    initial={{ y: 100, opacity: 0, filter: "blur(10px)" }}
-                    animate={isInView ? {
-                        y: 0,
-                        opacity: 1,
-                        filter: "blur(0px)"
-                    } : {}}
-                    transition={{
-                        duration: 0.8,
-                        ease: "easeOut",
-                        filter: { duration: 0.6 }
-                    }}
+                    ref={imageRef}
+                    variants={imageVariants}
+                    initial="hidden"
+                    animate={isImageInView ? "visible" : "hidden"}
                     className="relative w-full min-h-[26rem] sm:h-[28rem]"
                 >
-                    <Image
+                    <ImageWithFallback
+                   fallbackSrc="/fallback-image.webp"
                         src={image}
                         alt={name}
                         fill

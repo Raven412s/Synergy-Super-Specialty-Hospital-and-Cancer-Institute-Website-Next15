@@ -232,6 +232,12 @@ export const seoData: Record<
       keywords: ["Dialysis", "Kidney Treatment", "Hemodialysis", "Renal Care"],
       ogImage: "/images/services/dialysis.jpg",
     },
+    all: {
+      title: "Comprehensive Medical Services",
+      description: "Explore our wide range of medical services, from cancer care to general health and wellness.",
+      keywords: ["Medical Services", "Healthcare", "Cancer Treatment", "General Health", "Wellness"],
+      ogImage: "/images/services/all.jpg",
+    },
   },
 
 

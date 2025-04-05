@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { menuItems, quickLinks } from "@/data";
 import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +27,6 @@ import {
     SheetTitle,
     SheetTrigger
 } from "../ui/sheet";
-import { motion, AnimatePresence } from "framer-motion";
 
 // Animation variants
 const dropdownVariants = {

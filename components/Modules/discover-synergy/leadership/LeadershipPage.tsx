@@ -1,46 +1,12 @@
 "use client"
-import Image from "next/image";
-import React from "react";
-import { LeaderPageProps } from "@/types";
 import { VideoModalForJourney } from "@/components/global/VideoModalForJourney";
+import { containerVariants, imageVariants, itemVariants } from "@/lib/utils";
+import { LeaderPageProps } from "@/types";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-// Animation variants
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3
-    }
-  }
-};
 
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut"
-    }
-  }
-};
-
-const imageVariants = {
-  hidden: { scale: 0.95, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut"
-    }
-  }
-};
 
 const LeadershipPage = (props: LeaderPageProps) => {
     const {

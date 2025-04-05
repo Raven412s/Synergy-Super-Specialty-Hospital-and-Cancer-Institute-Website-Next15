@@ -7,11 +7,11 @@ import {
     LeadershipMap,
     PatientCareMap,
     ServicesMap,
-  } from "@/data";
-  import { notFound } from "next/navigation";
-  import { Metadata } from "next";
-  import { JSX } from "react";
+} from "@/data";
 import { seoData } from "@/data/seoData";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { JSX } from "react";
 
 
 
