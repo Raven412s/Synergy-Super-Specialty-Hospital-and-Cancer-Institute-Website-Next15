@@ -6,7 +6,7 @@ export const departmentData: DepartmentData[] = [
         index: 1,
         name: 'Medical Oncology',
         slug: 'medical-oncology',
-        heroImage: '/images/medical-oncology-hero.jpg',
+        heroImage: '/fallback-image.webp',
         heroTitle: 'Precision Oncology Care',
         isFeatured: true,
         heroSubtitle: 'Where cutting-edge research meets compassionate patient care in the heart of New York',
@@ -72,28 +72,28 @@ export const departmentData: DepartmentData[] = [
               name: 'Dr. Elena Martinez',
               role: 'Chief Medical Oncologist',
               credentials: 'MD, PhD',
-              image: '/images/team/elena-martinez.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Breast and Ovarian Cancers'
             },
             {
               name: 'Dr. Rajiv Patel',
               role: 'Senior Oncologist',
               credentials: 'MD',
-              image: '/images/team/rajiv-patel.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Lung and GI Malignancies'
             },
             {
               name: 'Dr. Linda Cheng',
               role: 'Clinical Trials Director',
               credentials: 'MD, MPH',
-              image: '/images/team/linda-cheng.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Immunotherapy & Targeted Agents'
             },
             {
               name: 'Dr. Thomas Greene',
               role: 'Pediatric Oncologist',
               credentials: 'MD',
-              image: '/images/team/thomas-greene.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Childhood Leukemias and Lymphomas'
             },
           ]
@@ -109,7 +109,7 @@ export const departmentData: DepartmentData[] = [
             'Private consultation rooms for family discussions',
             'Fully integrated electronic health records'
           ],
-          image: '/images/facilities/medical-oncology-facility.jpg',
+          image: '/fallback-image.webp',
         },
 
         research: {
@@ -139,12 +139,12 @@ export const departmentData: DepartmentData[] = [
             {
               quote: 'The care I received at Synergy Oncology was beyond exceptional. Every doctor and nurse treated me like family.',
               author: 'Sophia M.',
-              image: '/images/testimonials/sophia.jpg',
+              image: '/fallback-image.webp',
             },
             {
               quote: 'They gave me hope when I had none. I’m now two years cancer-free and forever grateful.',
               author: 'James R.',
-              image: '/images/testimonials/james.jpg',
+              image: '/fallback-image.webp',
             },
           ]
         },
@@ -169,7 +169,7 @@ export const departmentData: DepartmentData[] = [
         index: 2,
         name: 'Radiation Oncology',
         slug: 'radiation-oncology',
-        heroImage: '/images/radiation-oncology-hero.jpg',
+        heroImage: '/fallback-image.webp',
         heroTitle: 'Precision Radiation Therapy',
         isFeatured: true,
         heroSubtitle: 'Advanced radiation techniques delivering targeted cancer treatment with minimal side effects.',
@@ -223,14 +223,14 @@ export const departmentData: DepartmentData[] = [
               name: 'Dr. Monica Ray',
               role: 'Chief Radiation Oncologist',
               credentials: 'MD',
-              image: '/images/team/monica-ray.jpg',
+              image: '/fallback-image.webp',
               specialty: 'IMRT and SRS'
             },
             {
               name: 'Dr. Kenji Tanaka',
               role: 'Senior Radiation Physicist',
               credentials: 'PhD',
-              image: '/images/team/kenji-tanaka.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Dosimetry and Planning'
             }
           ]
@@ -245,7 +245,7 @@ export const departmentData: DepartmentData[] = [
             'Real-time image guidance',
             'Comfortable and private treatment bays'
           ],
-          image: '/images/facilities/radiation-oncology.jpg'
+          image: '/fallback-image.webp',
         },
 
         research: {
@@ -275,12 +275,12 @@ export const departmentData: DepartmentData[] = [
             {
               quote: 'The precision and care I received were extraordinary. My side effects were minimal and the results were fantastic.',
               author: 'Karen D.',
-              image: '/images/testimonials/karen.jpg',
+              image: '/fallback-image.webp',
             },
             {
               quote: 'From planning to delivery, the radiation team made me feel safe and hopeful every step of the way.',
               author: 'Martin L.',
-              image: '/images/testimonials/martin.jpg',
+              image: '/fallback-image.webp',
             }
           ]
         },
@@ -353,14 +353,14 @@ export const departmentData: DepartmentData[] = [
               name: 'Dr. Ana Rodrigues',
               role: 'Director of Surgical Oncology',
               credentials: 'MD, FACS',
-              image: '/images/team/ana-rodrigues.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Breast & GI Surgeries'
             },
             {
               name: 'Dr. Jason Meyer',
               role: 'Robotic Surgery Specialist',
               credentials: 'MD',
-              image: '/images/team/jason-meyer.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Urologic and Hepatobiliary Cancers'
             }
           ]
@@ -375,7 +375,7 @@ export const departmentData: DepartmentData[] = [
             'Dedicated post-op recovery zones',
             'Sterile surgical robotics labs'
           ],
-          image: '/images/facilities/surgical-oncology.jpg'
+          image: '/fallback-image.webp',
         },
 
         research: {
@@ -405,12 +405,12 @@ export const departmentData: DepartmentData[] = [
             {
               quote: 'My robotic surgery left barely any scars. The team was phenomenal.',
               author: 'Emily P.',
-              image: '/images/testimonials/emily.jpg',
+              image: '/fallback-image.webp',
             },
             {
               quote: 'They removed the tumor without compromising function. I feel whole again.',
               author: 'Ron K.',
-              image: '/images/testimonials/ron.jpg',
+              image: '/fallback-image.webp',
             }
           ]
         },
@@ -483,14 +483,14 @@ export const departmentData: DepartmentData[] = [
               name: 'Dr. Meera Nair',
               role: 'Director, Hemato-Oncology',
               credentials: 'MD, DM',
-              image: '/images/team/meera-nair.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Lymphomas & Myelomas'
             },
             {
               name: 'Dr. Arjun Kapoor',
               role: 'Transplant Specialist',
               credentials: 'MD',
-              image: '/images/team/arjun-kapoor.jpg',
+              image: '/fallback-image.webp',
               specialty: 'Leukemia & Bone Marrow Transplants'
             }
           ]
@@ -505,7 +505,7 @@ export const departmentData: DepartmentData[] = [
             'Isolation rooms for immunocompromised patients',
             'Real-time vitals and monitoring dashboards'
           ],
-          image: '/images/facilities/hemato-oncology.jpg'
+          image: '/fallback-image.webp',
         },
 
         research: {
@@ -535,12 +535,12 @@ export const departmentData: DepartmentData[] = [
             {
               quote: 'The transplant team saved my life. I am now 18 months cancer-free and thriving.',
               author: 'Lena T.',
-              image: '/images/testimonials/lena.jpg',
+              image: '/fallback-image.webp',
             },
             {
               quote: 'They gave me world-class treatment with a deeply human touch.',
               author: 'Ahmed B.',
-              image: '/images/testimonials/ahmed.jpg',
+              image: '/fallback-image.webp',
             }
           ]
         },
