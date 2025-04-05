@@ -173,7 +173,7 @@ function DepartmentCard(department: DepartmentData) {
           </h3>
           {department.isFeatured && (
             <motion.span
-              className="text-xs font-semibold text-white bg-pink-400 px-2 py-0.5 rounded"
+              className="text-xs font-semibold text-white bg-pink-600 px-2 py-0.5 rounded"
               whileHover={{ scale: 1.1 }}
             >
               Featured
