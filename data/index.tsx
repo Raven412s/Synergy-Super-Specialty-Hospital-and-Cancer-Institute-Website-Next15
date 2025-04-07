@@ -69,6 +69,7 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Dr. Alok Tiwari", href: "/doctors/Dr-Alok-Tiwari" },
                     { label: "Dr. Anjali Jain", href: "/doctors/Dr-Anjali-Jain" },
                     { label: "Dr. Saurabh Mishra", href: "/doctors/Dr-Saurabh-Mishra" },
+                    { label: "View All", href: "/doctors/all" },
                 ],
             },
             {
@@ -750,7 +751,8 @@ export const LeadershipMap = {
 export const DoctorsMap = {
     "Dr-Alok-Tiwari": <DoctorsPage />,
     "Dr-Anjali-Jain": <DoctorsPage />,
-    "Dr-Saurabh-Mishra": <DoctorsPage />
+    "Dr-Saurabh-Mishra": <DoctorsPage />,
+    "all": <DoctorsPage />,
 }
 
 export const ServicesMap = {

@@ -49,6 +49,12 @@ export const seoData: Record<
       keywords: ["Dr. Saurabh Mishra", "Radiation Oncologist"],
       ogImage: "/images/doctors/dr-saurabh-mishra.jpg",
     },
+    "all": {
+      title: "Doctors Page",
+      description: "Explore our team of expert doctors dedicated to providing top-notch medical care.",
+      keywords: ["Doctors", "Medical Experts", "Healthcare Professionals"],
+      ogImage: "/images/doctors/doctors-page.jpg",
+    },
   },
 
   services: {
