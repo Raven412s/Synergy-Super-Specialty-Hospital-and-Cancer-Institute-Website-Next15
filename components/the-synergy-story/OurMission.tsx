@@ -1,7 +1,7 @@
 "use client"
-import React, { useRef } from 'react'
-import Image from 'next/image'
-import { useInView, motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { ImageWithFallback } from '../global/ImageWithFallback'
 
 export const OurMission = () => {
     const ref = useRef(null);
@@ -16,7 +16,8 @@ export const OurMission = () => {
                 className="w-full lg:w-2/6 mb-6 lg:mb-0 relative">
                     {/* Horizontal Image for small and medium screens */}
                     <div className="relative block lg:hidden w-full h-64">
-                        <Image
+                        <ImageWithFallback
+                            fallbackSrc='/fallback-image.webp'
                             src="/mission-horizontal.webp"
                             alt="Doctors treating cancer patients at Synergy Super Specialty Hospital"
                             fill
@@ -27,7 +28,8 @@ export const OurMission = () => {
 
                     {/* Vertical Image for large screens */}
                     <div className="relative hidden lg:block w-full h-full">
-                        <Image
+                        <ImageWithFallback
+                            fallbackSrc='/fallback-image.webp'
                             src="/mission-vertical.webp"
                             alt="Doctors treating cancer patients at Synergy Super Specialty Hospital"
                             fill

@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { VideoModalTriggerProps } from "@/types";
-import Image from "next/image";
+import { ImageWithFallback } from "./ImageWithFallback";
 
 export function VideoModalForJourney({
     image,
@@ -25,13 +25,15 @@ export function VideoModalForJourney({
             >
                 {
                     image ? <>
-                        <Image
+                        <ImageWithFallback
+                            fallbackSrc='/fallback-image.webp'
                             src={image}
                             alt="Video thumbnail"
                             fill
                             className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
-                        <Image
+                        <ImageWithFallback
+                            fallbackSrc='/fallback-image.webp'
                             src="/player-thumb-overlay.svg"
                             alt="Play button overlay"
                             width={70}

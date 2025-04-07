@@ -3,8 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Image from "next/image";
 import { useRef } from "react";
+import { ImageWithFallback } from "../global/ImageWithFallback";
 
 const newsData = [
     {
@@ -104,7 +104,8 @@ export default function NewsSlider() {
                             viewport={{ once: true }}
                         >
                             {/* Image */}
-                            <Image
+                            <ImageWithFallback
+                                fallbackSrc='/fallback-image.webp'
                                 src={news.image}
                                 alt={news.title}
                                 fill

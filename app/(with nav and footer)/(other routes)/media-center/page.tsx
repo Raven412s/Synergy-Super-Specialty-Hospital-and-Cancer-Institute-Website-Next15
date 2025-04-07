@@ -1,8 +1,9 @@
 // app/media-center/page.tsx
+import { EventsAndConferences } from '@/components/media-center/EventsAndConferences';
+import { MediaContacts } from '@/components/media-center/MediaContacts';
+import { MediaGallery } from '@/components/media-center/MediaGallery';
 import { PressReleasesSection } from '@/components/media-center/PressReleasesSection';
 import { SynergyInTheNewsSection } from '@/components/media-center/SynergyInTheNewsSection';
-import React from 'react'
-
 
 export const metadata = {
     title: "Media Center - Synergy Super Speciality Hospital, Gorakhpur",
@@ -61,32 +62,12 @@ export const metadata = {
 
 const MediaCenter = () => {
     return (
-        <main  className='bg-accent lg:pt-20 lg:-mt-10'>
+        <main className='bg-accent lg:pt-20 lg:-mt-10'>
             <SynergyInTheNewsSection />
             <PressReleasesSection />
-            <section
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
-                id='events'
-            >
-                <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
-
-                </div>
-            </section>
-            <section
-                id="media-gallery"
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-10"
-            >
-                <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
-                </div>
-            </section>
-            <section
-                id="media-contacts"
-                className="min-h-screen w-full  px-2 md:px-6 lg:px-24 py-10"
-            >
-                <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
-
-                </div>
-            </section>
+            <EventsAndConferences />
+            <MediaGallery />
+            <MediaContacts />
         </main>
     )
 }
