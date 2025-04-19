@@ -61,7 +61,7 @@ export default function SliderWithTriggers() {
 
             <Button
                 size="icon"
-                className="absolute hidden left-3 bottom-4 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
+                className="absolute hidden left-1 bottom-4 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
                 onClick={prevSlide}
                 title="move to the previous speciality slide"
             >
@@ -69,14 +69,14 @@ export default function SliderWithTriggers() {
             </Button>
 
             {/* Slider - Only show featured departments */}
-            <div className="relative flex items-center justify-center w-full overflow-hidden">
-                <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
+            <div className="relative  flex items-center justify-center w-full overflow-hidden">
+                <div className="w-full  flex justify-center items-center overflow-hidden rounded-2xl">
                     <AnimatePresence mode="wait">
                         {featuredDepartments.map((department, index) =>
                             index === currentIndex ? (
                                 <motion.div
                                     key={department.id}
-                                    className="w-full p-3"
+                                    className="w-full p-3 mx-auto flex justify-center items-center"
                                     initial={{ opacity: 0, x: 100 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -100 }}
@@ -92,7 +92,7 @@ export default function SliderWithTriggers() {
 
             <Button
                 size="icon"
-                className="absolute hidden right-3 bottom-4 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
+                className="absolute hidden right-1 bottom-4 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-10"
                 onClick={nextSlide}
                 title="move to the next speciality slide"
             >
@@ -119,21 +119,21 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "flex flex-col md:flex-row rounded-4xl p-2 sm:p-3 md:p-4 lg:p-6 bg-white min-h-[350px] w-full shadow-md shadow-black/20 transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400",
+                "max-w-5xl flex flex-col md:flex-row rounded-4xl p-2 sm:p-3 md:p-4 lg:p-6 bg-white min-h-[350px] w-full shadow-md shadow-black/20 transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
             onMouseLeave={() => setCardHovered(false)}
         >
-                        <div className="md:w-2/8 w-full flex justify-center items-center  aspect-square">
-                <div className="w-full md:w-full overflow-hidden xl:rounded-4xl lg:rounded-3xl md:rounded-2xl sm:rounded-xl rounded-lg shadow-sm">
+                        <div className="md:w-3/8 w-full flex justify-center items-center  aspect-square">
+                <div className="w-full md:w-full overflow-hidden xl:rounded-4xl lg:rounded-3xl md:rounded-2xl sm:rounded-xl rounded-lg shadow-sm h-8/12">
                     {props.heroImage && (
                         <ImageWithFallback
                             fallbackSrc="/fallback-image.webp"
                             src={props.heroImage}
                             className={cn("object-cover w-full transition-all duration-300", cardHovered && "scale-110")}
                             width={400}
-                            height={250}
+                            height={350}
                             alt={props.name}
                             layout="responsive"
                             placeholder="blur"
@@ -147,7 +147,7 @@ const SliderCard = (props: DepartmentData) => {
             <div className="flex flex-col md:w-6/8 w-full justify-between">
                 <CardHeader className="w-7/8 px-0 mx-2">
                     <CardTitle className="font-display font-semibold text-left text-2xl">{props.name}</CardTitle>
-                    <CardDescription className="hidden md:block text-neutral-700 text-base sm:text-lg md:text-lg leading-loose tracking-wide">
+                    <CardDescription className="hidden md:block text-neutral-700 text-base sm:text-lg md:text-lg leading-normal tracking-normal">
                         {props.heroTitle + "  " + props.heroSubtitle} ...
                         <br />
                         <Link href={`/services/${props.slug}`} className="underline"> Read More</Link>
