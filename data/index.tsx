@@ -34,6 +34,7 @@ import Dialysis from "@/components/Modules/services/support-services/Dialysis"
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory"
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
+import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
 import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
 import { Ambulance } from "lucide-react"
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa"
@@ -133,7 +134,8 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Physiotherapy", href: "/services/physiotherapy" },
                     { label: "Blood Bank", href: "/services/blood-bank" },
                     { label: "Dialysis Unit", href: "/services/dialysis" },
-                    { label: "Ambulance Services", href: "/services/ambulance" }
+                    { label: "Ambulance Services", href: "/services/ambulance" },
+                    { label: "View All", href: "/services/support-services" }
                 ]
             },
             {
@@ -790,6 +792,7 @@ export const ServicesMap = {
     "blood-bank": <BloodBank />,
     dialysis: <Dialysis />,
     ambulance: <Ambulance />,
+    "support-services" : <SupportServicesPage/>
 }
 
 export const PatientCareMap = {

@@ -244,6 +244,13 @@ export const seoData: Record<
       keywords: ["Medical Services", "Healthcare", "Cancer Treatment", "General Health", "Wellness"],
       ogImage: "/images/services/all.jpg",
     },
+    'support-services': {
+      title: "Support Services for Comprehensive Care",
+      description: "Discover our range of support services, designed to enhance your healthcare experience.",
+      keywords: ["Support Services", "Healthcare Support", "Medical Assistance", "Patient Care"],
+      ogImage: "/images/services/support-services.jpg",
+    },
+
   },
 
 

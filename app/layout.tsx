@@ -1,19 +1,21 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Figtree, Nunito_Sans } from 'next/font/google';
+import { NextIntlClientProvider } from "next-intl";
+import { Kantumruy_Pro } from 'next/font/google';
 import "./globals.css";
 
-const nunito = Figtree({
+const nunito = Kantumruy_Pro({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-nunito',
 })
 
-const nunito_sans = Nunito_Sans({
+const nunito_sans = Kantumruy_Pro({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-nunito-sans',
 })
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,12 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressContentEditableWarning suppressHydrationWarning>
+    <html lang="en">
       <body
         className={cn(nunito.variable, nunito_sans.variable, "")}
         suppressContentEditableWarning suppressHydrationWarning
       >
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

@@ -16,7 +16,7 @@ export const PatientTestimonials = () => {
                     initial={{ x: -100, opacity: 0 }}
                     animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }} // Animate when in view
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="text-heading text-2xl sm:text-3xl lg:text-4xl px-4 sm:px-8 lg:px-20"
+                    className="text-heading text-2xl sm:text-3xl lg:text-4xl px-4 sm:px-8 lg:px-20 text-center"
                 >
                     See What Our Patients Say
                 </motion.h1>

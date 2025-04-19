@@ -155,7 +155,7 @@ export const DoctorsPage = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-heading mb-2">
             Find Your Doctor
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-4xl">
@@ -333,4 +333,3 @@ export const DoctorsPage = () => {
     </section>
   )
 }
-

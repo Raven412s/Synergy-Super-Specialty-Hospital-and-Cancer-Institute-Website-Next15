@@ -69,32 +69,11 @@ export const departmentData: DepartmentData[] = [
           title: 'Meet Our Specialists',
           members: [
             {
-              name: 'Dr. Elena Martinez',
+              name: 'Dr. Saurabh Mishra',
               role: 'Chief Medical Oncologist',
               credentials: 'MD, PhD',
               image: '/fallback-image.webp',
               specialty: 'Breast and Ovarian Cancers'
-            },
-            {
-              name: 'Dr. Rajiv Patel',
-              role: 'Senior Oncologist',
-              credentials: 'MD',
-              image: '/fallback-image.webp',
-              specialty: 'Lung and GI Malignancies'
-            },
-            {
-              name: 'Dr. Linda Cheng',
-              role: 'Clinical Trials Director',
-              credentials: 'MD, MPH',
-              image: '/fallback-image.webp',
-              specialty: 'Immunotherapy & Targeted Agents'
-            },
-            {
-              name: 'Dr. Thomas Greene',
-              role: 'Pediatric Oncologist',
-              credentials: 'MD',
-              image: '/fallback-image.webp',
-              specialty: 'Childhood Leukemias and Lymphomas'
             },
           ]
         },
@@ -165,138 +144,8 @@ export const departmentData: DepartmentData[] = [
         },
       },
       {
-        id: 'radiation-oncology',
-        index: 2,
-        name: 'Radiation Oncology',
-        slug: 'radiation-oncology',
-        heroImage: '/fallback-image.webp',
-        heroTitle: 'Precision Radiation Therapy',
-        isFeatured: true,
-        heroSubtitle: 'Advanced radiation techniques delivering targeted cancer treatment with minimal side effects.',
-
-        overview: {
-          title: 'Our Approach',
-          description: [
-            'At Synergy Oncology Center, our radiation oncologists use state-of-the-art technologies like IMRT, IGRT, and stereotactic radiosurgery to deliver accurate, effective treatment.',
-            'Since 2007, we’ve pioneered personalized radiation plans, prioritizing both tumor control and healthy tissue preservation.'
-          ],
-          whyChooseUs: [
-            'Highly experienced radiation specialists',
-            'Precision technologies minimizing side effects',
-            'Dedicated planning and simulation suites',
-            'Integrated care with medical and surgical teams'
-          ]
-        },
-
-        treatments: {
-          title: 'Treatment Specialties',
-          items: [
-            {
-              title: 'IMRT (Intensity-Modulated Radiation Therapy)',
-              description: 'Allows for precise dose distribution, reducing radiation to surrounding healthy tissue.'
-            },
-            {
-              title: 'Stereotactic Radiosurgery (SRS)',
-              description: 'Non-invasive treatment for brain and spine tumors with pinpoint accuracy.'
-            },
-            {
-              title: 'Brachytherapy',
-              description: 'Internal radiation for prostate, cervical, and breast cancers.'
-            }
-          ]
-        },
-
-        stats: {
-          title: 'Our Impact in Numbers',
-          items: [
-            { value: '15+', label: 'Years of Radiation Expertise' },
-            { value: '10K+', label: 'Patients Treated with Radiation' },
-            { value: '40+', label: 'Types of Cancers Treated' },
-            { value: '97%', label: 'Treatment Accuracy Rate' }
-          ]
-        },
-
-        team: {
-          title: 'Meet Our Specialists',
-          members: [
-            {
-              name: 'Dr. Monica Ray',
-              role: 'Chief Radiation Oncologist',
-              credentials: 'MD',
-              image: '/fallback-image.webp',
-              specialty: 'IMRT and SRS'
-            },
-            {
-              name: 'Dr. Kenji Tanaka',
-              role: 'Senior Radiation Physicist',
-              credentials: 'PhD',
-              image: '/fallback-image.webp',
-              specialty: 'Dosimetry and Planning'
-            }
-          ]
-        },
-
-        facilities: {
-          title: 'Advanced Radiation Suites',
-          description: 'Equipped with linear accelerators, planning systems, and advanced imaging for precise treatment delivery.',
-          features: [
-            'Varian TrueBeam® systems',
-            'Dedicated planning CT and MRI',
-            'Real-time image guidance',
-            'Comfortable and private treatment bays'
-          ],
-          image: '/fallback-image.webp',
-        },
-
-        research: {
-          title: 'Research & Innovation',
-          items: [
-            {
-              title: 'Adaptive Radiation Protocols',
-              content: 'Refining dose plans in real time to respond to tumor changes.',
-              icon: 'radar'
-            },
-            {
-              title: 'Radiogenomics',
-              content: 'Studying genetic factors influencing radiation response.',
-              icon: 'activity'
-            },
-            {
-              title: 'AI-based Planning Tools',
-              content: 'Leveraging AI to optimize radiation delivery plans.',
-              icon: 'cpu'
-            }
-          ]
-        },
-
-        testimonials: {
-          title: 'Patient Experiences',
-          items: [
-            {
-              quote: 'The precision and care I received were extraordinary. My side effects were minimal and the results were fantastic.',
-              author: 'Karen D.',
-              image: '/fallback-image.webp',
-            },
-            {
-              quote: 'From planning to delivery, the radiation team made me feel safe and hopeful every step of the way.',
-              author: 'Martin L.',
-              image: '/fallback-image.webp',
-            }
-          ]
-        },
-
-        cta: {
-          title: 'Explore Radiation Treatment Options',
-          subtitle: 'Speak with our radiation oncology team to understand your best options.',
-          buttons: [
-            { text: 'Schedule a Consultation', isPrimary: true },
-            { text: 'View Facility', isPrimary: false }
-          ]
-        }
-      },
-      {
         id: 'surgical-oncology',
-        index: 3,
+        index: 2,
         name: 'Surgical Oncology',
         slug: 'surgical-oncology',
         heroImage: 'fallback-image.webp',
@@ -350,19 +199,12 @@ export const departmentData: DepartmentData[] = [
           title: 'Meet Our Surgeons',
           members: [
             {
-              name: 'Dr. Ana Rodrigues',
+              name: 'Dr. Alok Tiwari',
               role: 'Director of Surgical Oncology',
               credentials: 'MD, FACS',
               image: '/fallback-image.webp',
               specialty: 'Breast & GI Surgeries'
             },
-            {
-              name: 'Dr. Jason Meyer',
-              role: 'Robotic Surgery Specialist',
-              credentials: 'MD',
-              image: '/fallback-image.webp',
-              specialty: 'Urologic and Hepatobiliary Cancers'
-            }
           ]
         },
 
@@ -424,11 +266,141 @@ export const departmentData: DepartmentData[] = [
           ]
         }
       },
+    //   {
+    //     id: 'hemato-oncology',
+    //     index: 1,
+    //     name: 'Hemato-Oncology',
+    //     slug: 'hemato-oncology',
+    //     heroImage: '/fallback-image.webp',
+    //     heroTitle: 'Advanced Blood Cancer Care',
+    //     isFeatured: true,
+    //     heroSubtitle: 'Specialized treatments for leukemia, lymphoma, and multiple myeloma with compassion and precision.',
+
+    //     overview: {
+    //       title: 'Our Approach',
+    //       description: [
+    //         'Our Hemato-Oncology program provides cutting-edge care for hematologic malignancies through a multidisciplinary approach.',
+    //         'Combining diagnostics, chemotherapy, immunotherapy, and transplants, we aim to improve survival and quality of life.'
+    //       ],
+    //       whyChooseUs: [
+    //         'Dedicated blood cancer unit',
+    //         'Expertise in rare and complex hematologic conditions',
+    //         'In-house bone marrow transplant program',
+    //         '24/7 hematology support and transfusion services'
+    //       ]
+    //     },
+
+    //     treatments: {
+    //       title: 'Blood Cancer Treatments',
+    //       items: [
+    //         {
+    //           title: 'Chemotherapy & Immunotherapy',
+    //           description: 'Custom protocols tailored for leukemia, lymphoma, and myeloma.'
+    //         },
+    //         {
+    //           title: 'Bone Marrow Transplants',
+    //           description: 'Autologous and allogeneic transplants in our HEPA-filtered transplant suites.'
+    //         },
+    //         {
+    //           title: 'Targeted Agents',
+    //           description: 'Monoclonal antibodies and kinase inhibitors improving disease control.'
+    //         }
+    //       ]
+    //     },
+
+    //     stats: {
+    //       title: 'Hemato-Oncology in Numbers',
+    //       items: [
+    //         { value: '3K+', label: 'Blood Cancer Cases Treated' },
+    //         { value: '150+', label: 'Transplants Performed' },
+    //         { value: '95%', label: 'Post-Treatment Survival (1 Year)' },
+    //         { value: '99%', label: 'Infection-Control Compliance' }
+    //       ]
+    //     },
+
+    //     team: {
+    //       title: 'Meet Our Hemato-Oncologists',
+    //       members: [
+    //         {
+    //           name: 'Dr. Meera Nair',
+    //           role: 'Director, Hemato-Oncology',
+    //           credentials: 'MD, DM',
+    //           image: '/fallback-image.webp',
+    //           specialty: 'Lymphomas & Myelomas'
+    //         },
+    //         {
+    //           name: 'Dr. Arjun Kapoor',
+    //           role: 'Transplant Specialist',
+    //           credentials: 'MD',
+    //           image: '/fallback-image.webp',
+    //           specialty: 'Leukemia & Bone Marrow Transplants'
+    //         }
+    //       ]
+    //     },
+
+    //     facilities: {
+    //       title: 'HEPA-Safe Cancer Suites',
+    //       description: 'Specialized infrastructure supporting high-risk treatments with a focus on infection control and patient safety.',
+    //       features: [
+    //         'HEPA-filtered transplant units',
+    //         'Dedicated transfusion bays',
+    //         'Isolation rooms for immunocompromised patients',
+    //         'Real-time vitals and monitoring dashboards'
+    //       ],
+    //       image: '/fallback-image.webp',
+    //     },
+
+    //     research: {
+    //       title: 'Blood Cancer Research',
+    //       items: [
+    //         {
+    //           title: 'CAR-T Trials',
+    //           content: 'Testing immune-engineered cell therapies for relapsed leukemia.',
+    //           icon: 'droplet'
+    //         },
+    //         {
+    //           title: 'Real-World Data Analytics',
+    //           content: 'Leveraging patient data to optimize treatment outcomes.',
+    //           icon: 'bar-chart'
+    //         },
+    //         {
+    //           title: 'Transplant Conditioning Protocols',
+    //           content: 'Exploring safer, more effective pre-transplant regimens.',
+    //           icon: 'thermometer'
+    //         }
+    //       ]
+    //     },
+
+    //     testimonials: {
+    //       title: 'Voices of Hope',
+    //       items: [
+    //         {
+    //           quote: 'The transplant team saved my life. I am now 18 months cancer-free and thriving.',
+    //           author: 'Lena T.',
+    //           image: '/fallback-image.webp',
+    //         },
+    //         {
+    //           quote: 'They gave me world-class treatment with a deeply human touch.',
+    //           author: 'Ahmed B.',
+    //           image: '/fallback-image.webp',
+    //         }
+    //       ]
+    //     },
+
+    //     cta: {
+    //       title: 'Need Help with Blood Cancer Treatment?',
+    //       subtitle: 'Book a session with our hemato-oncology team to begin your healing journey.',
+    //       buttons: [
+    //         { text: 'Start Consultation', isPrimary: true },
+    //         { text: 'Know More', isPrimary: false }
+    //       ]
+    //     }
+    //   },
       {
-        id: 'hemato-oncology',
+        id: 'orthopedics',
         index: 1,
-        name: 'Hemato-Oncology',
-        slug: 'hemato-oncology',
+        name: 'Orthopedics',
+        slug: 'orthopedics',
         heroImage: '/fallback-image.webp',
         heroTitle: 'Advanced Blood Cancer Care',
         isFeatured: true,
@@ -467,7 +439,7 @@ export const departmentData: DepartmentData[] = [
         },
 
         stats: {
-          title: 'Hemato-Oncology in Numbers',
+          title: 'Orthopedics in Numbers',
           items: [
             { value: '3K+', label: 'Blood Cancer Cases Treated' },
             { value: '150+', label: 'Transplants Performed' },
@@ -477,17 +449,17 @@ export const departmentData: DepartmentData[] = [
         },
 
         team: {
-          title: 'Meet Our Hemato-Oncologists',
+          title: 'Meet Our Orthopedics',
           members: [
             {
-              name: 'Dr. Meera Nair',
-              role: 'Director, Hemato-Oncology',
+              name: 'Dr. Prateek',
+              role: 'Director, Orthopedics',
               credentials: 'MD, DM',
               image: '/fallback-image.webp',
               specialty: 'Lymphomas & Myelomas'
             },
             {
-              name: 'Dr. Arjun Kapoor',
+              name: 'Dr. Anil Srivastava',
               role: 'Transplant Specialist',
               credentials: 'MD',
               image: '/fallback-image.webp',

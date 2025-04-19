@@ -18,6 +18,7 @@ type Props = {
 };
 
 export const FloatingActionBar = ({ items, isOnFooter = false }: Props) => {
+    
     const [isSticky, setIsSticky] = useState(false);
     const [isTouchingFooter, setIsTouchingFooter] = useState(false);
     const normalizedIsOnFooter = !!isOnFooter;

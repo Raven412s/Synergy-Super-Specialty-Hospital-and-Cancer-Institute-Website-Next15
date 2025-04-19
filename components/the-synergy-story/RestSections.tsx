@@ -28,13 +28,13 @@ export const RestSections = () => {
                             initial={{ x: -100, opacity: 0 }}
                             animate={isAwardsInView ? { x: 0, opacity: 1 } : {}}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-left leading-tight"
+                            className="text-heading text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-left leading-tight"
                         >
                             Awards and Accolades
                         </motion.h1>
 
                         <div className="space-y-10">
-                            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed md:leading-loose max-w-5xl">
+                            <p className=" text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed md:leading-normal max-w-5xl">
                                 Over the years, Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) has earned numerous accolades for our unwavering commitment to clinical excellence, compassionate care, and cutting-edge research. These honors reflect the dedication of our doctors, nurses, and staff who work tirelessly to deliver outstanding healthcare services.
                             </p>
 
@@ -82,13 +82,13 @@ export const RestSections = () => {
                             initial={{ x: -100, opacity: 0 }}
                             animate={isAchievementsInView ? { x: 0, opacity: 1 } : {}}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-left leading-tight"
+                            className="text-heading text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-left leading-tight"
                         >
                             Achievements and Milestones
                         </motion.h1>
 
                         <div className="space-y-10">
-                            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed md:leading-loose max-w-5xl">
+                            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed md:leading-normal max-w-5xl">
                                 From pioneering treatments to expanding our facilities, Synergy has crossed significant milestones that mark our journey toward transforming healthcare delivery in the region.
                             </p>
 
@@ -152,13 +152,13 @@ export const RestSections = () => {
                             initial={{ x: -100, opacity: 0 }}
                             animate={isDayAtSynergyInView ? { x: 0, opacity: 1 } : {}}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-left leading-tight"
+                            className="text-heading text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-left leading-tight"
                         >
                             A Day at Synergy
                         </motion.h1>
 
                         <div className="space-y-10">
-                            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed md:leading-loose max-w-5xl">
+                            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed md:leading-normal max-w-5xl">
                                 At SSSHCI, each day begins with a shared commitment to healing. Our hospital operates like a well-coordinated symphony where expertise meets empathy, and technology meets compassionate care.
                             </p>
 

@@ -139,7 +139,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground w-screen h-screen;
+    @apply bg-background text-foreground w-screen h-screen font-sans;
   }
 }
 
@@ -180,7 +180,7 @@ button {
 }
 
 .text-heading {
-    @apply text-2xl lg:text-3xl font-display font-semibold text-primary;
+    @apply text-2xl lg:text-3xl font-display uppercase font-bold text-primary;
 }
 
 element {
