@@ -180,7 +180,7 @@ button {
 }
 
 .text-heading {
-    @apply text-2xl lg:text-3xl font-display uppercase font-bold text-primary;
+    @apply text-2xl lg:text-4xl font-display uppercase font-bold text-primary;
 }
 
 element {
