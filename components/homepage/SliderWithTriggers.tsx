@@ -40,9 +40,9 @@ export default function SliderWithTriggers() {
     };
 
     return (
-        <div className="w-full flex flex-col gap-5 relative">
+        <div className="w-fit  flex flex-col gap-5 relative items-center justify-center">
             {/* Trigger Buttons - Only show featured departments */}
-            <div className="flex overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar ">
+            <div className="flex  overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar ">
                 {featuredDepartments.map((slide, index) => (
                     <Button
                         key={slide.id}
@@ -69,8 +69,8 @@ export default function SliderWithTriggers() {
             </Button>
 
             {/* Slider - Only show featured departments */}
-            <div className="relative  flex items-center justify-center w-full overflow-hidden">
-                <div className="w-full  flex justify-center items-center overflow-hidden rounded-2xl">
+            <div className="relative flex items-center justify-center w-full overflow-hidden">
+                <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
                     <AnimatePresence mode="wait">
                         {featuredDepartments.map((department, index) =>
                             index === currentIndex ? (

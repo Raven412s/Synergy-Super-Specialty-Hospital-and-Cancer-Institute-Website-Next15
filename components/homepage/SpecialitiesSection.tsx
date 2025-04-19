@@ -34,7 +34,7 @@ export const SpecialitiesSection = () => {
                     </motion.p>
                 </div>
 
-                <div className="max-w-7xl">
+                <div className="max-w-7xl flex items-center justify-center">
                     <SliderWithTriggers />
                 </div>
             </div>
