@@ -14,7 +14,7 @@ export const SpecialitiesSection = () => {
             ref={ref}
             className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-1 sm:px-8 lg:px-20 py-10 flex items-center justify-center flex-col"
         >
-            <div className="w-full space-y-4 md:px-10 ">
+            <div className="md:w-full w-screen space-y-4 md:px-10 ">
                 <div className="space-y-4 overflow-hidden w-full">
                     <motion.h1
                         initial={{ x: -100, opacity: 0 }}

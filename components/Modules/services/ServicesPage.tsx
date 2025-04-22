@@ -2,8 +2,8 @@
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
 import { departmentData } from '@/data/departmentData';
 import { DepartmentData } from '@/types';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 // Animation variants (unchanged)
 const containerVariants = {

@@ -19,13 +19,14 @@ import {
     PlusIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ImageWithFallback } from "../global/ImageWithFallback";
 import { Badge } from "../ui/badge";
 
 export default function SliderWithTriggers() {
     // Filter to only get featured departments
     const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
+    const [isHovered, setIsHovered] = useState<boolean>(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -38,10 +39,25 @@ export default function SliderWithTriggers() {
         );
     };
 
+ // Auto-rotation with hover pause
+ useEffect(() => {
+    let interval: NodeJS.Timeout;
+
+    if (!isHovered) { // Only auto-rotate if not hovered
+        interval = setInterval(() => {
+            nextSlide();
+        }, 5000);
+    }
+
+    return () => {
+        if (interval) clearInterval(interval);
+    };
+}, [currentIndex, isHovered]); // Reset interval when hover state changes
+
     return (
-        <div className="w-fit  flex flex-col gap-5 relative items-center justify-center">
+        <div className="w-full  flex flex-col gap-5 relative items-center justify-center">
             {/* Trigger Buttons - Only show featured departments */}
-            <div className="flex  overflow-x-auto gap-2 items-center justify-start w-full px-4 md:px-0 hide-scrollbar ">
+            <div className="flex  overflow-x-auto gap-2 items-center lg:justify-center justify-start lg:!max-w-7xl w-screen px-4 md:px-0 hide-scrollbar overflow-hidden ">
                 {featuredDepartments.map((slide, index) => (
                     <Button
                         key={slide.id}
@@ -80,6 +96,8 @@ export default function SliderWithTriggers() {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -100 }}
                                     transition={{ duration: 0.5 }}
+                                    onMouseEnter={() => setIsHovered(true)}  // Pause on hover
+                                    onMouseLeave={() => setIsHovered(false)} // Resume on leave
                                 >
                                     <SliderCard {...department} />
                                 </motion.div>
@@ -116,85 +134,108 @@ const SliderCard = (props: DepartmentData) => {
     const [cardHovered, setCardHovered] = useState(false);
 
     return (
-        <Card
-            className={cn(
-                "max-w-5xl flex flex-col md:flex-row xl:rounded-2xl lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-lg p-2 sm:p-3 md:p-4 lg:p-6 bg-gradient-to-tl from-indigo-100 to-fuchsia-50 min-h-[350px] w-full  transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400 shadow-blob",
-                props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            )}
-            onMouseEnter={() => setCardHovered(true)}
-            onMouseLeave={() => setCardHovered(false)}
-        >
-                        <div className="md:w-3/8 w-full flex justify-center items-start py-5  aspect-square">
-                <div className="w-full md:w-full overflow-hidden xl:rounded-2xl lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-lg shadow-sm aspect-square h-full">
-                    {props.heroImage && (
-                        <ImageWithFallback
-                            fallbackSrc="/fallback-image.webp"
-                            src={props.heroImage}
-                            className={cn("object-cover w-full h-full aspect-square transition-all duration-300", cardHovered && "scale-110")}
-                            width={400}
-                            height={400}
-                            alt={props.name}
-                            layout="responsive"
-                            placeholder="blur"
-                            blurDataURL={props.heroImage}
-                            priority={props.index === 1}
-                        />
+<Card
+    className={cn(
+        "lg:max-w-5xl w-screen flex flex-col xl:rounded-2xl lg:rounded-2xl md:rounded-xl rounded-lg p-2 sm:p-3 md:p-4 lg:p-6 bg-gradient-to-tl from-indigo-100 to-fuchsia-50 min-h-[350px]  transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400 shadow-blob",
+        props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+    )}
+    onMouseEnter={() => setCardHovered(true)}
+    onMouseLeave={() => setCardHovered(false)}
+>
+    {/* Image Section - Full width on mobile, 3/8 on desktop */}
+    <div className="w-full md:w-3/8 flex justify-center items-start py-2 md:py-5 aspect-square">
+        <div className="lg:w-full overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl shadow-sm aspect-square lg:h-full">
+            {props.heroImage && (
+                <ImageWithFallback
+                    fallbackSrc="/fallback-image.webp"
+                    src={props.heroImage}
+                    className={cn(
+                        "object-cover w-full h-full aspect-square transition-all duration-300",
+                        cardHovered && "md:scale-110" // Only scale on desktop hover
                     )}
-                </div>
-            </div>
+                    width={100}
+                    height={200}
+                    alt={props.name}
+                    layout="responsive"
+                    placeholder="blur"
+                    blurDataURL={props.heroImage}
+                    priority={props.index === 1}
+                />
+            )}
+        </div>
+    </div>
 
-            <div className="flex flex-col md:w-6/8 w-full justify-between">
-                <CardHeader className="w-7/8 px-0 mx-2">
-                    <CardTitle className="font-display font-semibold text-left text-3xl mb-2">{props.name}</CardTitle>
-                    <CardDescription className="hidden md:block font-normal text-neutral-700 text-base sm:text-sm md:text-sm leading-normal tracking-normal mb-2">
-                        {props.heroTitle + "  " + props.heroSubtitle} ...
-                        <br />
-                        <Link href={`/services/${props.slug}`} className="underline"> Read More</Link>
-                    </CardDescription>
-                </CardHeader>
-                <CardContent className="w-7/8 !p-0">
-                    <p className="font-medium text-base">Top Specialities & Procedures</p>
-                    <div className="flex flex-wrap gap-2 py-4">
-                        {props.treatments.items
-                            .slice(0, showAll ? props.treatments.items.length : 2)
-                            .map((item, index) => (
-                                <Badge
-                                    key={index}
-                                    className="bg-transparent border border-fuchsia-400 text-fuchsia-600 text-xs"
-                                >
-                                    {item.title}
-                                </Badge>
-                            ))}
+    {/* Content Section - Full width on mobile, 5/8 on desktop */}
+    <div className="flex flex-col w-full md:w-5/8 justify-between px-2 sm:px-4">
+        <CardHeader className="w-full px-0">
+            <CardTitle className="font-display font-semibold text-left text-2xl sm:text-3xl mb-1 sm:mb-2">
+                {props.name}
+            </CardTitle>
+            <CardDescription className="font-normal text-neutral-700 text-sm sm:text-base leading-normal tracking-normal mb-2">
+                {props.heroTitle + " " + props.heroSubtitle} ...
+                <br />
+                <Link href={`/services/${props.slug}`} className="underline">
+                    Read More
+                </Link>
+            </CardDescription>
+        </CardHeader>
 
-                        {props.treatments.items.length > 2 && (
-                            <Badge
-                                className="bg-transparent border border-fuchsia-400 text-fuchsia-600 text-xs cursor-pointer"
-                                onClick={() => setShowAll(!showAll)}
-                            >
-                                {showAll ? (
-                                    <MinusIcon className="size-3" />
-                                ) : (
-                                    <>
-                                        <PlusIcon className="!size-2 -mr-1" />
-                                        {props.treatments.items.length - 2}
-                                    </>
-                                )}
-                                {showAll ? " Less" : " More"}
-                            </Badge>
+        <CardContent className="w-full !p-0">
+            <p className="font-medium text-sm sm:text-base">Top Specialities & Procedures</p>
+            <div className="flex flex-wrap gap-2 py-2 sm:py-4">
+                {props.treatments.items
+                    .slice(0, showAll ? props.treatments.items.length : 2)
+                    .map((item, index) => (
+                        <Badge
+                            key={index}
+                            className="bg-transparent border border-fuchsia-400 text-fuchsia-600 text-xs"
+                        >
+                            {item.title}
+                        </Badge>
+                    ))}
+
+                {props.treatments.items.length > 2 && (
+                    <Badge
+                        className="bg-transparent border border-fuchsia-400 text-fuchsia-600 text-xs cursor-pointer"
+                        onClick={() => setShowAll(!showAll)}
+                    >
+                        {showAll ? (
+                            <MinusIcon className="size-3" />
+                        ) : (
+                            <>
+                                <PlusIcon className="!size-2 -mr-1" />
+                                {props.treatments.items.length - 2}
+                            </>
                         )}
-                    </div>
-                </CardContent>
-                <CardFooter className="flex flex-col gap-4">
-                    <div className="flex flex-row gap-4">
-                        <Link href={"#"}>
-                            <Button variant={"outline"} className="rounded-full border-gray-600/40 py-2 px-4 lg:px-5 lg:py-5 lg:text-lg hover:bg-synergy-pink">Find Doctor</Button>
-                        </Link>
-                        <Link href={`/services/${props.slug}` || "#"}>
-                            <Button variant={"outline"} className="rounded-full border-gray-600/40 py-2 px-4 lg:px-5 lg:py-5 lg:text-lg hover:bg-synergy-blue">Explore More</Button>
-                        </Link>
-                    </div>
-                </CardFooter>
+                        {showAll ? " Less" : " More"}
+                    </Badge>
+                )}
             </div>
-        </Card>
+        </CardContent>
+
+        <CardFooter className="flex flex-col gap-2 sm:gap-4 !px-0 !pb-0">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full">
+                <Link href={"#"} className="w-full sm:w-auto">
+                    <Button
+                        variant={"outline"}
+                        size={"sm"}
+                        className="w-full rounded-full border-gray-600/40 py-1 px-3 sm:py-2 sm:px-4 lg:px-5 lg:py-3 text-sm sm:text-base lg:text-lg hover:bg-synergy-pink"
+                    >
+                        Find Doctor
+                    </Button>
+                </Link>
+                <Link href={`/services/${props.slug}` || "#"} className="w-full sm:w-auto">
+                    <Button
+                        variant={"outline"}
+                        size={"sm"}
+                        className="w-full rounded-full border-gray-600/40 py-1 px-3 sm:py-2 sm:px-4 lg:px-5 lg:py-3 text-sm sm:text-base lg:text-lg hover:bg-synergy-blue"
+                    >
+                        Explore More
+                    </Button>
+                </Link>
+            </div>
+        </CardFooter>
+    </div>
+</Card>
     );
 };
