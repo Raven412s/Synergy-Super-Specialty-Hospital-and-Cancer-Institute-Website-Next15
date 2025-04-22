@@ -118,21 +118,21 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "max-w-5xl flex flex-col md:flex-row rounded-4xl p-2 sm:p-3 md:p-4 lg:p-6 bg-gradient-to-tl from-indigo-100 to-fuchsia-50 min-h-[350px] w-full shadow-md shadow-black/20 transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400",
+                "max-w-5xl flex flex-col md:flex-row xl:rounded-2xl lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-lg p-2 sm:p-3 md:p-4 lg:p-6 bg-gradient-to-tl from-indigo-100 to-fuchsia-50 min-h-[350px] w-full  transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400 shadow-blob",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
             onMouseLeave={() => setCardHovered(false)}
         >
                         <div className="md:w-3/8 w-full flex justify-center items-start py-5  aspect-square">
-                <div className="w-full md:w-full overflow-hidden xl:rounded-4xl lg:rounded-3xl md:rounded-2xl sm:rounded-xl rounded-lg shadow-sm aspect-video">
+                <div className="w-full md:w-full overflow-hidden xl:rounded-2xl lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-lg shadow-sm aspect-square h-full">
                     {props.heroImage && (
                         <ImageWithFallback
                             fallbackSrc="/fallback-image.webp"
                             src={props.heroImage}
-                            className={cn("object-cover w-full h-full transition-all duration-300", cardHovered && "scale-110")}
+                            className={cn("object-cover w-full h-full aspect-square transition-all duration-300", cardHovered && "scale-110")}
                             width={400}
-                            height={350}
+                            height={400}
                             alt={props.name}
                             layout="responsive"
                             placeholder="blur"
@@ -145,14 +145,14 @@ const SliderCard = (props: DepartmentData) => {
 
             <div className="flex flex-col md:w-6/8 w-full justify-between">
                 <CardHeader className="w-7/8 px-0 mx-2">
-                    <CardTitle className="font-display font-semibold text-left text-2xl">{props.name}</CardTitle>
-                    <CardDescription className="hidden md:block text-neutral-700 text-base sm:text-lg md:text-lg leading-normal tracking-normal">
+                    <CardTitle className="font-display font-semibold text-left text-3xl mb-2">{props.name}</CardTitle>
+                    <CardDescription className="hidden md:block font-normal text-neutral-700 text-base sm:text-sm md:text-sm leading-normal tracking-normal mb-2">
                         {props.heroTitle + "  " + props.heroSubtitle} ...
                         <br />
                         <Link href={`/services/${props.slug}`} className="underline"> Read More</Link>
                     </CardDescription>
                 </CardHeader>
-                <CardContent className="w-7/8">
+                <CardContent className="w-7/8 !p-0">
                     <p className="font-medium text-base">Top Specialities & Procedures</p>
                     <div className="flex flex-wrap gap-2 py-4">
                         {props.treatments.items
@@ -187,10 +187,10 @@ const SliderCard = (props: DepartmentData) => {
                 <CardFooter className="flex flex-col gap-4">
                     <div className="flex flex-row gap-4">
                         <Link href={"#"}>
-                            <Button variant={"outline"} className="rounded-full border-gray-600/40 py-2 px-4 lg:px-8 lg:py-4 lg:text-lg hover:bg-synergy-pink">Find Doctor</Button>
+                            <Button variant={"outline"} className="rounded-full border-gray-600/40 py-2 px-4 lg:px-5 lg:py-5 lg:text-lg hover:bg-synergy-pink">Find Doctor</Button>
                         </Link>
                         <Link href={`/services/${props.slug}` || "#"}>
-                            <Button variant={"outline"} className="rounded-full border-gray-600/40 py-2 px-4 lg:px-8 lg:py-4 lg:text-lg hover:bg-synergy-blue">Explore More</Button>
+                            <Button variant={"outline"} className="rounded-full border-gray-600/40 py-2 px-4 lg:px-5 lg:py-5 lg:text-lg hover:bg-synergy-blue">Explore More</Button>
                         </Link>
                     </div>
                 </CardFooter>

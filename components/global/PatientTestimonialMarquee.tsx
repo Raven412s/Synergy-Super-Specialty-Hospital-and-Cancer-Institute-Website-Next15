@@ -5,52 +5,44 @@ import Marquee from "react-fast-marquee";
 import { VideoModal } from "./VideoModal";
 import PatientSpeaksWrittenTestimonialCard from "./PatientSpeaksWrittenTestimonialCard";
 
-
-
 const PatientTestimonialMarquee = (props: PatientTestimonialMarqueeProps) => {
   const { marqueeArray, className, ...rest } = props;
 
   return (
-    <div className={cn("relative mt-6 overflow-hidden", className)} {...rest}>
-      {/* Vignette Effect */}
-      <div className="absolute inset-1 bg-gradient-to-r max-w-full pointer-events-none z-10 " />
-
-      <Marquee speed={50} gradient={true} gradientColor="#FFC2FB50" pauseOnHover className="my-4">
-  {marqueeArray.map((item, index) => {
-    if (item.type === "written") {
-      return (
-            <PatientSpeaksWrittenTestimonialCard key={index} testimonial={item}/>
-      );
-    }
-
-    if (item.type === "video") {
-      return (
-          <VideoModal key={index} image={item.image} videoUrl={item.videoUrl} className="mx-5 lg:mx-12 " />
-      );
-    }
-
-    return null;
-  })}
+    <div className={cn("relative mt-6 overflow-hidden space-y-10", className)} {...rest}>
+      <Marquee speed={60}  pauseOnHover className="pt-4 ">
+        {marqueeArray.map((item, index) => (
+          <div key={index} className="mx-4">
+            {item.type === "written" && (
+              <PatientSpeaksWrittenTestimonialCard testimonial={item} />
+            )}
+            {item.type === "video" && (
+              <VideoModal
+                image={item.image}
+                videoUrl={item.videoUrl}
+                className="w-full"
+              />
+            )}
+          </div>
+        ))}
       </Marquee>
 
-      <Marquee speed={50} gradient={true} gradientColor="#FFC2FB50" pauseOnHover direction="right">
-  {marqueeArray.map((item, index) => {
-    if (item.type === "written") {
-      return (
-            <PatientSpeaksWrittenTestimonialCard key={index} testimonial={item}/>
-      );
-    }
-
-    if (item.type === "video") {
-      return (
-          <VideoModal key={index} image={item.image} videoUrl={item.videoUrl} className="mx-5 lg:mx-12 " />
-      );
-    }
-
-    return null;
-  })}
+      <Marquee speed={60}  pauseOnHover direction="right" className=" pb-4 ">
+        {marqueeArray.map((item, index) => (
+          <div key={index} className="mx-4">
+            {item.type === "written" && (
+              <PatientSpeaksWrittenTestimonialCard testimonial={item} />
+            )}
+            {item.type === "video" && (
+              <VideoModal
+                image={item.image}
+                videoUrl={item.videoUrl}
+                className="w-full"
+              />
+            )}
+          </div>
+        ))}
       </Marquee>
-
     </div>
   );
 };

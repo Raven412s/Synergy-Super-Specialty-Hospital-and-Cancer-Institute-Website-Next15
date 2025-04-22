@@ -112,9 +112,9 @@ export default function NewsSlider() {
                                 className="w-full h-60 object-cover object-center hover:scale-110 transition-all duration-400 ease-in-out"
                             />
                             {/* Gradient + Text Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-primary/90 from-20% via-transparent to-transparent p-4 pointer-events-none z-10">
-                                <p className="text-white font-sans font-bold">Latest Update</p>
-                                <h3 className="text-lg text-white font-sans font-semibold">
+                            <div className="absolute flex items-center justify-end flex-col inset-0 bg-gradient-to-t from-black/60 to-transparent p-4 pointer-events-none z-10">
+                                {/* <p className="text-stone-50 font-medium text-lg">Latest Update</p> */}
+                                <h3 className="text-base text-stone-50 font-medium text-center">
                                     {news.title}
                                 </h3>
                             </div>

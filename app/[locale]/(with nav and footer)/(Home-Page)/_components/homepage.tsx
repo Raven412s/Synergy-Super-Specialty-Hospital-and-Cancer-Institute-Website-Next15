@@ -10,7 +10,7 @@ import { faqItems } from "@/data";
 export const Homepage = () => {
 
   return (
-    <main className="w-full">
+    <main className="w-full flex flex-col items-center justify-center">
     {/* Hero Section with Video */}
     <section id="banner" className="relative min-h-screen w-full">
         <video
@@ -55,7 +55,7 @@ export const Homepage = () => {
 <PatientTestimonials />
 
     {/* FAQs */}
-    <section className="w-full bg-gradient-to-t from-white to-indigo-50 px-4 sm:px-8 lg:px-20 py-10">
+    <section className="w-full bg-gradient-to-t from-white to-slate-100 px-4 sm:px-8 lg:px-20 py-10">
         <div className="max-w-7xl mx-auto space-y-6">
             <div className="space-y-4 text-center">
                 <h2 className="text-heading text-2xl sm:text-3xl lg:text-4xl">

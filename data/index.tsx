@@ -99,30 +99,35 @@ export const menuItems: MenuItemProps[] = [
                 name: "Our Specialties",
                 links: [
                     { label: "Medical Oncology", href: "/services/medical-oncology" },
-                    { label: "Radiation Oncology", href: "/services/radiation-oncology" },
                     { label: "Surgical Oncology", href: "/services/surgical-oncology" },
-                    { label: "Hemato-Oncology", href: "/services/hemato-oncology" },
-                    { label: "Pain & Palliative Care", href: "/services/palliative-care" },
-                    { label: "Cardiology", href: "/services/cardiology" },
                     { label: "Neurology", href: "/services/neurology" },
                     { label: "Neurosurgery", href: "/services/neurosurgery" },
+                    { label: "Gastroenterology", href: "/services/gastroenterology" },
                     { label: "Nephrology", href: "/services/nephrology" },
                     { label: "Urology", href: "/services/urology" },
-                    { label: "Gastroenterology", href: "/services/gastroenterology" },
-                    { label: "Hepatology", href: "/services/hepatology" },
                     { label: "Orthopedics", href: "/services/orthopedics" },
-                    { label: "Rheumatology", href: "/services/rheumatology" },
-                    { label: "Endocrinology", href: "/services/endocrinology" },
-                    { label: "Pulmonology", href: "/services/pulmonology" },
-                    { label: "Dermatology", href: "/services/dermatology" },
-                    { label: "ENT (Otorhinolaryngology)", href: "/services/ent" },
-                    { label: "Ophthalmology", href: "/services/ophthalmology" },
+                    { label: "Anesthesia", href: "/services/anesthesia" },
                     { label: "General Surgery", href: "/services/general-surgery" },
-                    { label: "Internal Medicine", href: "/services/internal-medicine" },
                     { label: "Pediatrics", href: "/services/pediatrics" },
                     { label: "Gynecology & Obstetrics", href: "/services/gynecology" },
-                    { label: "Psychiatry", href: "/services/psychiatry" },
+                    { label: "Head & Neck", href: "/services/head-and-neck" },
+                    { label: "Emergency & Critical Care", href: "/services/emergency-and-critical-care" },
                     { label: "View All", href: "/services/all" },
+
+                    // { label: "Radiation Oncology", href: "/services/radiation-oncology" },
+                    // { label: "Hemato-Oncology", href: "/services/hemato-oncology" },
+                    // { label: "Pain & Palliative Care", href: "/services/palliative-care" },
+                    // { label: "Cardiology", href: "/services/cardiology" },
+                    // { label: "Neurosurgery", href: "/services/neurosurgery" },
+                    // { label: "Hepatology", href: "/services/hepatology" },
+                    // { label: "Rheumatology", href: "/services/rheumatology" },
+                    // { label: "Endocrinology", href: "/services/endocrinology" },
+                    // { label: "Pulmonology", href: "/services/pulmonology" },
+                    // { label: "Dermatology", href: "/services/dermatology" },
+                    // { label: "ENT (Otorhinolaryngology)", href: "/services/ent" },
+                    // { label: "Ophthalmology", href: "/services/ophthalmology" },
+                    // { label: "Internal Medicine", href: "/services/internal-medicine" },
+                    // { label: "Psychiatry", href: "/services/psychiatry" },
                 ]
             },
             {
@@ -246,21 +251,16 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Amit Kumar",
+        name: "Priya Singh",
         description:
-            "I was thoroughly impressed by the expertise and compassion shown by the doctors at Synergy. They understood my condition well and created a treatment plan tailored specifically to my needs. Their patient-first approach and the state-of-the-art facilities made all the difference. Thanks to their dedication, I was able to recover faster than I thought possible. I would strongly recommend Synergy to anyone in need of quality medical care.",
-        image: "/patients/anita.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/rahul-thumb.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+        image: "/patients/suresh.jpeg",
     },
     {
         type: "written",
-        name: "Sonia Sharma",
+        name: "Priya Singh",
         description:
-            "The facilities at Synergy are top-notch and extremely well maintained. I was really nervous before starting my treatment, but the warmth of the staff and the comfort of the environment quickly put me at ease. Every step of the way, the doctors and nurses made sure I understood the process and felt supported. I genuinely appreciate their professionalism and kindness. My experience here was truly positive and healing.",
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
         image: "/patients/suresh.jpeg",
     },
     {
@@ -270,21 +270,9 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Rohan Gupta",
+        name: "Priya Singh",
         description:
-            "I'm thankful for the personalized care I received at Synergy. The doctors took time to listen and understand my concerns. They explained the treatment plan clearly and kept me informed throughout. The nursing staff was always available and ready to help. Their approach made me feel like more than just a patient. I regained my health with confidence, thanks to the excellent team at Synergy.",
-        image: "/patients/anita.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/rahul-thumb.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "written",
-        name: "Nalini Jain",
-        description:
-            "Synergy's team is extremely supportive, and they made my treatment journey feel much less daunting. Their commitment to patient care is visible in everything they do — from their clear communication to the genuine concern they show for your well-being. I always felt heard and respected during my visits. It's rare to find such a combination of professionalism and empathy in healthcare. I'm truly grateful.",
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
         image: "/patients/suresh.jpeg",
     },
     {
@@ -294,22 +282,22 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Vikram Singh",
+        name: "Priya Singh",
         description:
-            "I'm impressed by the cutting-edge technology and treatment methods used at Synergy. What really stood out to me, though, was the personalized care I received. The doctors made sure I was involved in every decision, and the staff ensured I was always comfortable. Every appointment felt like a step forward in my healing journey. It's comforting to know that such advanced care is delivered with such kindness.",
-        image: "/patients/anita.jpeg",
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "written",
+        name: "Priya Singh",
+        description:
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+        image: "/patients/suresh.jpeg",
     },
     {
         type: "video",
         image: "/patients/rahul-thumb.jpeg",
         videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "written",
-        name: "Preeti Rao",
-        description:
-            "The doctors at Synergy are incredibly knowledgeable and experienced. From my first consultation to the end of my treatment, I felt like I was in expert hands. They answered every question patiently and made sure I was comfortable throughout the process. The hospital environment is calm, clean, and well-organized. It's rare to find such a perfect blend of medical expertise and human compassion in one place.",
-        image: "/patients/suresh.jpeg",
     },
     {
         type: "video",
@@ -583,8 +571,8 @@ export const Leaders: LeaderCardProps[] = [
         role: "Surgical Oncologist",
         description:
             "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
-        image: "/doctors/doc-alok-tiwari.webp",
-        onDownload: "/doctors/doc-alok-tiwari.webp",
+        image: "/leaders/doc-alok-tiwari.webp",
+        onDownload: "/leaders/doc-alok-tiwari.webp",
         onReadMore: "/leadership/Dr-Alok-Tiwari"
     },
     {
@@ -592,8 +580,8 @@ export const Leaders: LeaderCardProps[] = [
         role: "Director & Head – Gynae Oncology",
         description:
             "Specialist in gynaecologic oncology and minimal invasive gynaecologic surgeries, offering advanced and compassionate care in women's cancer treatment.",
-        image: "/doctors/doc-anjali-jain.webp",
-        onDownload: '/doctors/doc-anjali-jain.webp',
+        image: "/leaders/doc-anjali-jain.webp",
+        onDownload: '/leaders/doc-anjali-jain.webp',
         onReadMore: '/leadership/Dr-Anjali-Jain'
     },
     {
@@ -601,8 +589,8 @@ export const Leaders: LeaderCardProps[] = [
         role: "Medical Oncologist & Haemat Oncologist",
         description:
             "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-        image: "/doctors/doc-saurabh-mishra.webp",
-        onDownload: "/doctors/doc-saurabh-mishra.webp",
+        image: "/leaders/doc-saurabh-mishra.webp",
+        onDownload: "/leaders/doc-saurabh-mishra.webp",
         onReadMore: "/leadership/Dr-Saurabh-Mishra",
     },
 ]
@@ -759,30 +747,30 @@ export const DoctorsMap = {
 
 export const ServicesMap = {
     "medical-oncology": <SingleServicePage />,
-    "radiation-oncology": <SingleServicePage />,
     "surgical-oncology": <SingleServicePage />,
-    "hemato-oncology": <SingleServicePage />,
-    "palliative-care": <SingleServicePage />,
-    "cardiology": <SingleServicePage />,
     "neurology": <SingleServicePage />,
     "neurosurgery": <SingleServicePage />,
+    "gastroenterology": <SingleServicePage />,
     "nephrology": <SingleServicePage />,
     "urology": <SingleServicePage />,
-    "gastroenterology": <SingleServicePage />,
-    "hepatology": <SingleServicePage />,
     "orthopedics": <SingleServicePage />,
-    "rheumatology": <SingleServicePage />,
-    "endocrinology": <SingleServicePage />,
-    "pulmonology": <SingleServicePage />,
-    "dermatology": <SingleServicePage />,
-    "ent": <SingleServicePage />,
-    "ophthalmology": <SingleServicePage />,
+    "anesthesia": <SingleServicePage />,
     "general-surgery": <SingleServicePage />,
-    "internal-medicine": <SingleServicePage />,
     "pediatrics": <SingleServicePage />,
     "gynecology": <SingleServicePage />,
-    "psychiatry": <SingleServicePage />,
+    "head-and-neck": <SingleServicePage />,
+    "emergency-and-critical-care": <SingleServicePage />,
     "all": <ServicesPage />,
+    // "cardiology": <SingleServicePage />,
+    // "hepatology": <SingleServicePage />,
+    // "rheumatology": <SingleServicePage />,
+    // "endocrinology": <SingleServicePage />,
+    // "pulmonology": <SingleServicePage />,
+    // "dermatology": <SingleServicePage />,
+    // "ent": <SingleServicePage />,
+    // "ophthalmology": <SingleServicePage />,
+    // "internal-medicine": <SingleServicePage />,
+    // "psychiatry": <SingleServicePage />,
 
     // Support Services
     "diagnostic-imaging": <DiagnosticImaging />,

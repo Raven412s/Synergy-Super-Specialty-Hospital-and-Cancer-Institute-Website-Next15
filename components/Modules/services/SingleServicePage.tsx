@@ -42,9 +42,9 @@ const scaleUp = {
 };
 
 const newYorkTypography = {
-  h1: "text-4xl md:text-5xl font-serif font-bold tracking-tight",
-  h2: "text-3xl font-serif font-semibold border-b-2 border-gray-200 pb-2 mb-6",
-  h3: "text-2xl font-serif font-medium",
+  h1: "text-4xl md:text-5xl font-display font-bold tracking-tight",
+  h2: "text-3xl font-display font-semibold border-b-2 border-gray-200 pb-2 mb-6",
+  h3: "text-2xl font-display font-medium",
   body: "text-gray-700 leading-relaxed font-sans",
   quote: "text-lg italic font-serif text-gray-600"
 };
@@ -99,12 +99,12 @@ export default function DepartmentPage() {
           />
           <motion.div
             variants={fadeIn}
-            className="absolute inset-0 bg-blue-900/60 flex items-center justify-center"
+            className="absolute inset-0 bg-synergy-blue flex items-center justify-center"
           >
             <div className="text-center px-4">
               <motion.h1
                 variants={scaleUp}
-                className={`${newYorkTypography.h1} text-white mb-6`}
+                className={`${newYorkTypography.h1} text-white mb-6 `}
               >
                 {department.heroTitle}
               </motion.h1>

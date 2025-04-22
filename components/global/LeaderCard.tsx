@@ -34,14 +34,14 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     const isImageInView = useInView(imageRef, { once: true, margin: "-100px" })
 
     return (
-        <Card className="min-w-full bg-background sm:max-w-xs rounded-xl shadow-md overflow-hidden">
-            <CardContent className="flex justify-center py-3 px-3">
+        <Card className="min-w-full bg-gradient-to-t from-slate-100 to-transparent sm:max-w-xs rounded-xl shadow-md overflow-hidden !py-2">
+            <CardContent className="flex justify-center py-1 px-3 ">
                 <motion.div
                     ref={imageRef}
                     variants={imageVariants}
                     initial="hidden"
                     animate={isImageInView ? "visible" : "hidden"}
-                    className="relative w-full min-h-[26rem] sm:h-[28rem]"
+                    className="relative w-full min-h-[20rem] sm:h-[22rem]"
                 >
                     <ImageWithFallback
                    fallbackSrc="/fallback-image.webp"

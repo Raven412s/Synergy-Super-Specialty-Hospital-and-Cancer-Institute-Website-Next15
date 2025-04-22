@@ -25,10 +25,10 @@ const TestimonialCard = ({ imgSrc, description, titleText, titleNumber }: Testim
       {/* Content */}
       <CardHeader className="w-full sm:w-[70%] p-0">
         <CardTitle className="text-lg sm:text-xl font-semibold text-[#005670]">
-          <span className="text-xl sm:text-2xl font-bold text-[#007b9c]">{titleNumber}</span>{' '}
+          <span className="text-xl  font-bold text-[#007b9c]">{titleNumber}</span>{' '}
           <span className="text-xs sm:text-sm font-medium text-[#005670]">{titleText}</span>
         </CardTitle>
-        <CardDescription className="text-sm sm:text-base text-gray-700 mt-2 leading-snug">
+        <CardDescription className="text-sm sm:text-sm text-gray-700 mt-2 leading-snug">
           {description}
         </CardDescription>
       </CardHeader>
