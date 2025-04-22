@@ -112,7 +112,7 @@ export default function ServicesPage() {
         </div>
       </motion.section>
 
-      {/* Departments Grid Section - UNCHANGED */}
+      {/* Improved Departments Grid Section */}
       <motion.section
         className="py-12 px-4"
         variants={fadeIn}
@@ -139,101 +139,96 @@ export default function ServicesPage() {
   );
 }
 
-// DepartmentCard component remains EXACTLY THE SAME
+// Improved DepartmentCard component with consistent sizing
 function DepartmentCard(department: DepartmentData) {
   return (
-    <motion.div variants={itemVariants}>
+    <motion.div
+      variants={itemVariants}
+      className="h-full" // Ensure all cards take full height of their container
+    >
       <Link
         href={`/services/${department.slug}`}
-        className="group block rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1"
+        className="group block h-full rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 flex flex-col"
       >
         {/* Image or Icon */}
-        {department.heroImage && (
-          <motion.div
-            className="mb-4 w-full h-12 relative"
-            whileHover={{ scale: 1.02 }}
-          >
-            <ImageWithFallback
-              fallbackSrc='/fallback-image.webp'
-              fill
-              src={department.heroImage}
-              alt={department.name}
-              className="object-cover rounded"
-            />
-          </motion.div>
-        )}
-
-        {/* Header with name and featured tag */}
-        <motion.div
-          className="mb-2 flex items-center justify-between"
-          whileHover={{ x: 2 }}
-        >
-          <h3 className="text-xl font-semibold text-gray-900 group-hover:text-primary">
-            {department.name}
-          </h3>
-          {department.isFeatured && (
-            <motion.span
-              className="text-xs font-semibold text-white bg-pink-600 px-2 py-0.5 rounded"
-              whileHover={{ scale: 1.1 }}
+        <div className="mb-4 flex-shrink-0">
+          {department.heroImage ? (
+            <motion.div
+              className="w-full h-40 relative rounded-lg overflow-hidden"
+              whileHover={{ scale: 1.02 }}
             >
-              Featured
-            </motion.span>
+              <ImageWithFallback
+                fallbackSrc='/fallback-image.webp'
+                fill
+                src={department.heroImage}
+                alt={department.name}
+                className="object-cover"
+              />
+            </motion.div>
+          ) : (
+            <div className="w-full h-40 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
           )}
-        </motion.div>
+        </div>
 
-        {/* Description */}
-        <motion.p
-          className="text-gray-600 text-sm leading-relaxed line-clamp-3"
-          whileHover={{ x: 2 }}
-        >
-          {department.overview.description}
-        </motion.p>
-
-        {/* Tags */}
-        {department.treatments.items?.length > 0 && (
-          <motion.div
-            className="flex flex-wrap gap-1 mt-3"
-            variants={containerVariants}
-          >
-            {department.treatments.items.map((item, index) =>
-              <motion.span
-                className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded"
-                key={index}
-                variants={itemVariants}
-                whileHover={{ y: -2 }}
-              >
-                {item.title}
-              </motion.span>
+        {/* Content area with consistent height */}
+        <div className="flex flex-col flex-grow">
+          {/* Header with name and featured tag */}
+          <div className="mb-2 flex items-start justify-between">
+            <h3 className="text-xl font-semibold text-gray-900 group-hover:text-primary line-clamp-2">
+              {department.name}
+            </h3>
+            {department.isFeatured && (
+              <span className="text-xs font-semibold text-white bg-pink-600 px-2 py-0.5 rounded ml-2 flex-shrink-0">
+                Featured
+              </span>
             )}
-          </motion.div>
-        )}
+          </div>
 
-        {/* Services count and rating */}
-        <motion.div
-          className="mt-3 flex items-center justify-between text-xs text-gray-500"
-          whileHover={{ x: 2 }}
-        >
-          {department.facilities.features && (
-            <span>{department.facilities.features} services</span>
+          {/* Description with fixed height */}
+          <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4 min-h-[60px]">
+            {department.overview.description}
+          </p>
+
+          {/* Tags with scroll if too many */}
+          {department.treatments.items?.length > 0 && (
+            <div className="mt-auto">
+              <div className="flex flex-wrap gap-1 mb-3 max-h-20 overflow-y-auto py-1">
+                {department.treatments.items.slice(0, 6).map((item, index) => (
+                  <span
+                    className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded"
+                    key={index}
+                  >
+                    {item.title.length > 20 ? `${item.title.substring(0, 20)}...` : item.title}
+                  </span>
+                ))}
+              </div>
+            </div>
           )}
-        </motion.div>
+        </div>
 
-        {/* Learn More link */}
-        <motion.div
-          className="mt-4 flex items-center text-blue-700 group-hover:text-primary"
-          whileHover={{ x: 4 }}
-        >
-          <span className="text-sm font-medium">Learn More</span>
-          <motion.svg
-            className="w-4 h-4 ml-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            whileHover={{ x: 2 }}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </motion.svg>
-        </motion.div>
+        {/* Footer with consistent positioning */}
+        <div className="mt-4 flex flex-col gap-6  items-start justify-between">
+          {department.facilities.features && (
+            <span className="text-xs text-gray-500">
+              {department.facilities.features} services
+            </span>
+          )}
+          <div className="flex items-center text-white bg-gradient-to-tl from-synergy-blue to-indigo-300 from-40% shadow-blob  py-1 px-2 rounded-sm group-hover:text-slate-50">
+            <span className="text-sm font-medium">Learn More</span>
+            <svg
+              className="w-4 h-4 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
       </Link>
     </motion.div>
   );
