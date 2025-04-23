@@ -52,7 +52,7 @@ export default function SliderWithTriggers() {
     return () => {
         if (interval) clearInterval(interval);
     };
-}, [currentIndex, isHovered]); // Reset interval when hover state changes
+}, [currentIndex, isHovered, nextSlide]); // Reset interval when hover state changes
 
     return (
         <div className="w-full  flex flex-col gap-5 relative items-center justify-center ">

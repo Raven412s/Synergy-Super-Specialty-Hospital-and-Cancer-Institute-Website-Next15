@@ -137,7 +137,7 @@ export default function NewsSlider() {
                 viewport={{ once: true }}
             >
                 <h2 className="text-2xl lg:text-3xl font-semibold text-primary text-pretty lg:mb-6 md:mb-5 sm:mb-3 mb-1 font-display">
-                    What's New At Synergy
+                    What&apos;s New At Synergy
                 </h2>
                 <Button variant="default" className="bg-indigo-800 text-fuchsia-50 px-6 py-2 rounded-full font-semibold">
                     EXPLORE MORE →
