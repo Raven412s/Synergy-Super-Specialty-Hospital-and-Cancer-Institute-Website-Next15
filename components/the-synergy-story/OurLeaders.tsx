@@ -12,9 +12,9 @@ export const OurLeaders = () => {
         <section
             ref={LeaderRef}
             id="Leadership"
-            className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
+            className="min-h-max  w-full max-w-screen  px-2 md:px-6 lg:px-24 py-4 my-12"
         >
-            <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded flex flex-col items-center justify-center w-full'>
+            <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded flex flex-col items-center justify-center  w-full'>
                 {/* Heading + Subheading */}
                 <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-4">
                     {/* Heading */}
@@ -42,8 +42,10 @@ export const OurLeaders = () => {
                         </p>
                     </div>
                 </div>
+
+                <div className="max-w-7xl w-full  ">
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  w-full">
                     {Leaders.map((leader, index) => (
                         <motion.div
                             key={index}
@@ -67,6 +69,8 @@ export const OurLeaders = () => {
                         </motion.div>
                     ))}
                 </div>
+                </div>
+
             </div>
         </section>
     )
