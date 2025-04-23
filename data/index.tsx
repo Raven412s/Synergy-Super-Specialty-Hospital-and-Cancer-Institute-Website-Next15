@@ -30,7 +30,8 @@ import ServicesPage from "@/components/Modules/services/ServicesPage"
 import SingleServicePage from "@/components/Modules/services/SingleServicePage"
 import BloodBank from "@/components/Modules/services/support-services/BloodBank"
 import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging"
-import Dialysis from "@/components/Modules/services/support-services/Dialysis"
+import { Dialysis } from "@/components/Modules/services/support-services/Dialysis"
+
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory"
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
@@ -778,7 +779,7 @@ export const ServicesMap = {
     pharmacy: <Pharmacy />,
     physiotherapy: <Physiotherapy />,
     "blood-bank": <BloodBank />,
-    dialysis: <Dialysis />,
+    "dialysis": <Dialysis />,
     ambulance: <Ambulance />,
     "support-services" : <SupportServicesPage/>
 }

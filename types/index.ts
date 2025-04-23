@@ -174,3 +174,42 @@ export interface DepartmentData {
       }[];
     };
   }
+
+
+export  interface Service {
+    id: string
+    title: string
+    description: string
+    icon: string
+    details: string
+    commonUses: string[]
+}
+
+export interface SupportServiceProps {
+    heroImage: string
+    title: string
+    description: string
+    services: Service[]
+    preparationTips: string[]
+    whyChoose: {
+        title: string
+        items: {
+            badge: string
+            title: string
+            description: string
+        }[]
+    }
+    faqs: {
+        question: string
+        answer: string
+    }[]
+    cta: {
+        title: string
+        description: string
+        buttons: {
+            text: string
+            variant: "default" | "outline"
+            onClick: () => void
+        }[]
+    }
+}

@@ -1,0 +1,560 @@
+import { SupportServiceProps } from "@/types"
+
+export const diagnosticImagingData : SupportServiceProps= {
+    heroImage: "/diagnostic-imaging-hero.jpg",
+    title: "Diagnostic Imaging Services",
+    description: "Advanced imaging technology for accurate diagnosis and treatment planning",
+    services:  [
+        {
+            id: "xray",
+            title: "X-Ray",
+            description: "High-resolution imaging for bones and chest examinations",
+            icon: "/icons/xray.svg",
+            details: "Our digital X-ray technology provides immediate high-quality images with significantly lower radiation exposure compared to traditional methods. Ideal for bone fractures, chest examinations, and dental imaging.",
+            commonUses: ["Fracture detection", "Pneumonia diagnosis", "Dental examinations"]
+        },
+        {
+            id: "mri",
+            title: "MRI Scan",
+            description: "Detailed imaging of organs and tissues using magnetic fields",
+            icon: "/icons/mri.svg",
+            details: "Our 3T MRI scanners offer exceptional image quality for neurological, musculoskeletal, and abdominal imaging. The wide-bore design provides a more comfortable experience for patients with claustrophobia.",
+            commonUses: ["Brain and spinal cord imaging", "Joint and soft tissue evaluation", "Tumor detection"]
+        },
+        {
+            id: "ctscan",
+            title: "CT Scan",
+            description: "Cross-sectional views of body structures with precision",
+            icon: "/icons/ctscan.svg",
+            details: "Advanced 128-slice CT technology enables rapid scanning with exceptional detail, reducing scan times and patient discomfort. Particularly effective for trauma cases, cancer detection, and vascular studies.",
+            commonUses: ["Trauma assessment", "Cancer staging", "Pulmonary embolism detection"]
+        },
+        {
+            id: "ultrasound",
+            title: "Ultrasound",
+            description: "Non-invasive imaging for abdominal and obstetric evaluation",
+            icon: "/icons/ultrasound.svg",
+            details: "Our ultrasound services include abdominal, pelvic, obstetric, vascular, and small parts examinations. Using the latest Doppler technology, we provide comprehensive evaluations without radiation exposure.",
+            commonUses: ["Pregnancy monitoring", "Gallbladder evaluation", "Thyroid assessment"]
+        },
+        {
+            id: "mammography",
+            title: "Mammography",
+            description: "Specialized imaging for breast tissue examination",
+            icon: "/icons/mammogram.svg",
+            details: "Digital mammography with tomosynthesis (3D mammography) provides clearer images with fewer callbacks. Our comfortable mammography suites are staffed by specialized female technologists for your convenience.",
+            commonUses: ["Breast cancer screening", "Lump evaluation", "Implant assessment"]
+        },
+        {
+            id: "fluoroscopy",
+            title: "Fluoroscopy",
+            description: "Real-time moving images of internal structures",
+            icon: "/icons/fluoroscopy.svg",
+            details: "Used for procedures like barium studies, joint injections, and swallowing evaluations. Our pulsed fluoroscopy technique minimizes radiation dose while maintaining excellent image quality.",
+            commonUses: ["Barium swallow studies", "Angiography", "Spinal injections"]
+        }
+    ],
+    preparationTips: [
+        "Fasting may be required for certain scans (4-6 hours)",
+        "Wear comfortable, metal-free clothing",
+        "Inform staff about any implants or pregnancy",
+        "Some procedures may require contrast injection",
+        "Bring previous imaging reports if available"
+    ],
+    whyChoose: {
+      title: "Why Choose Our Imaging Center?",
+      items: [
+        {
+          badge: "1",
+          title: " Cutting-Edge Technology",
+          description: " Latest generation equipment for superior image quality with lower radiation exposure"
+        },
+        {
+          badge: "2",
+          title: "  Expert Radiologists",
+          description: "Board-certified specialists with subspecialty training in various imaging modalities"
+        },
+        {
+          badge: "3",
+          title: "Quick Results",
+          description: "Digital reports available within 24-48 hours through our patient portal"
+        },
+      ]
+    },
+    faqs: [
+        {
+            question: "How long does an imaging test take?",
+            answer: "Most standard X-rays take 15-30 minutes. MRI/CT scans typically take 30-60 minutes depending on the area being scanned."
+        },
+        {
+            question: "Is imaging safe during pregnancy?",
+            answer: "Ultrasound is safe during pregnancy. X-rays and CT scans are generally avoided unless absolutely necessary. Always inform your doctor if you're pregnant."
+        }
+    ],
+    cta: {
+      title: "Need Diagnostic Imaging Services?",
+      description: "Our team is ready to assist you...",
+      buttons: [
+        {
+          text: "Call Now: (123) 456-7890",
+          variant: "default",
+          onClick: () => {console.log("Call clicked")}
+        },
+        {
+          text: "Request Callback",
+          variant: "outline",
+          onClick: () => {console.log("Callback clicked")}
+        }
+      ]
+    }
+  }
+
+  export const laboratoryData : SupportServiceProps= {
+    heroImage: "/lab-services-hero.jpg",
+    title: "Laboratory Services",
+    description: "Precision diagnostics with fastest turnaround times in the region",
+    services: [
+      {
+        id: "hematology",
+        title: "Hematology",
+        description: "Complete blood count and specialized blood tests",
+        icon: "/icons/blood-test.svg",
+        details: "Our fully automated hematology analyzers provide accurate CBC results within minutes. Comprehensive testing including coagulation studies and hemoglobin analysis.",
+        commonUses: ["Anemia diagnosis", "Infection detection", "Blood disorder screening"]
+      },
+      {
+        id: "biochemistry",
+        title: "Biochemistry",
+        description: "Comprehensive metabolic panels and enzyme studies",
+        icon: "/icons/test-tube.svg",
+        details: "Advanced analyzers for liver/kidney function tests, lipid profiles, and diabetes monitoring with STAT testing availability.",
+        commonUses: ["Diabetes management", "Cholesterol checks", "Electrolyte imbalance detection"]
+      },
+      {
+        id: "microbiology",
+        title: "Microbiology",
+        description: "Culture and sensitivity testing for infections",
+        icon: "/icons/microscope.svg",
+        details: "Fully equipped lab with automated culture systems and rapid PCR testing for critical pathogens.",
+        commonUses: ["Bacterial identification", "Antibiotic resistance testing", "Fungal infection diagnosis"]
+      }
+    ],
+    preparationTips: [
+      "Fasting required for 10-12 hours for most blood tests",
+      "Inform about current medications",
+      "Follow instructions for urine/stool samples",
+      "Stay hydrated unless instructed otherwise",
+      "Avoid strenuous exercise before tests"
+    ],
+    whyChoose: {
+      title: "Why Choose Our Laboratory?",
+      items: [
+        {
+          badge: "1",
+          title: "Advanced Technology",
+          description: "Fully automated systems with robotic processing"
+        },
+        {
+          badge: "2",
+          title: "Expert Pathologists",
+          description: "Board-certified specialists overseeing all tests"
+        },
+        {
+          badge: "3",
+          title: "Rapid Results",
+          description: "Same-day reporting for critical tests"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "How long do test results take?",
+        answer: "Routine tests: 4-6 hours, Specialized tests: 24-48 hours"
+      },
+      {
+        question: "Can I eat before blood tests?",
+        answer: "Most tests require fasting, check specific instructions"
+      }
+    ],
+    cta: {
+      title: "Need Laboratory Services?",
+      description: "Get accurate diagnostics with quick results",
+      buttons: [
+        {
+          text: "Book Test: (123) 456-7890",
+          variant: "default",
+          onClick: () => {console.log("Lab call")}
+        },
+        {
+          text: "Download Report",
+          variant: "outline",
+          onClick: () => {console.log("Download lab")}
+        }
+      ]
+    }
+  }
+
+  export const pharmacyData : SupportServiceProps= {
+    heroImage: "/pharmacy-hero.jpg",
+    title: "Pharmacy Services",
+    description: "Quality medications with expert pharmaceutical care",
+    services: [
+      {
+        id: "opd",
+        title: "Outpatient Pharmacy",
+        description: "24/7 medication dispensing",
+        icon: "/icons/pharmacy.svg",
+        details: "Robotic dispensing system with wide range of medicines and OTC products",
+        commonUses: ["Prescription filling", "Chronic medication", "Emergency supplies"]
+      },
+      {
+        id: "clinical",
+        title: "Clinical Pharmacy",
+        description: "Medication therapy management",
+        icon: "/icons/medication.svg",
+        details: "Medication review and reconciliation services by clinical pharmacists",
+        commonUses: ["Drug interaction checks", "Dosage adjustments", "Therapy monitoring"]
+      }
+    ],
+    preparationTips: [
+      "Carry valid prescription",
+      "Check insurance coverage",
+      "Bring medication list",
+      "Ask about generic alternatives",
+      "Verify dosage instructions"
+    ],
+    whyChoose: {
+      title: "Why Our Pharmacy?",
+      items: [
+        {
+          badge: "1",
+          title: "24/7 Availability",
+          description: "Round-the-clock emergency services"
+        },
+        {
+          badge: "2",
+          title: "Accuracy Guaranteed",
+          description: "Robotic dispensing with triple checks"
+        },
+        {
+          badge: "3",
+          title: "Expert Counsel",
+          description: "Free medication counseling"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Do you deliver medications?",
+        answer: "Yes, free delivery within 5km radius"
+      },
+      {
+        question: "Can I get generic medicines?",
+        answer: "We stock both brand and FDA-approved generics"
+      }
+    ],
+    cta: {
+      title: "Pharmacy Services",
+      description: "Get your medications safely and conveniently",
+      buttons: [
+        {
+          text: "Emergency Meds: 123-456-7890",
+          variant: "default",
+          onClick: () => {console.log("Pharmacy call")}
+        }
+      ]
+    }
+  }
+
+  export const physiotherapyData : SupportServiceProps= {
+    heroImage: "/physio-hero.jpg",
+    title: "Physiotherapy Services",
+    description: "Restoring movement and improving quality of life",
+    services: [
+      {
+        id: "ortho",
+        title: "Orthopedic Rehab",
+        description: "Post-surgical recovery",
+        icon: "/icons/bone.svg",
+        details: "Specialized programs for joint replacements and sports injuries",
+        commonUses: ["Fracture rehab", "Arthritis management", "Post-op recovery"]
+      },
+      {
+        id: "neuro",
+        title: "Neuro Rehab",
+        description: "Stroke rehabilitation",
+        icon: "/icons/brain.svg",
+        details: "Advanced techniques for neurological disorders",
+        commonUses: ["Stroke recovery", "Parkinson's therapy", "Spinal cord injury"]
+      }
+    ],
+    preparationTips: [
+      "Wear comfortable clothing",
+      "Bring previous reports",
+      "Arrive 10 mins early",
+      "Hydrate well",
+      "Inform about pain levels"
+    ],
+    whyChoose: {
+      title: "Why Choose Our Physio?",
+      items: [
+        {
+          badge: "1",
+          title: "Personalized Plans",
+          description: "Tailored exercise regimens"
+        },
+        {
+          badge: "2",
+          title: "Modern Equipment",
+          description: "Electrotherapy and hydrotherapy"
+        },
+        {
+          badge: "3",
+          title: "Experienced Therapists",
+          description: "Specialized certifications"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "How long are sessions?",
+        answer: "Typically 45-60 minutes depending on treatment"
+      },
+      {
+        question: "Do I need referral?",
+        answer: "Direct access available, insurance may require referral"
+      }
+    ],
+    cta: {
+      title: "Start Your Recovery",
+      description: "Book assessment with our physiotherapists",
+      buttons: [
+        {
+          text: "Book Now",
+          variant: "default",
+          onClick: () => {console.log("Physio booking")}
+        }
+      ]
+    }
+  }
+
+  export const bloodBankData : SupportServiceProps= {
+    heroImage: "/bloodbank-hero.jpg",
+    title: "Blood Bank Services",
+    description: "Saving lives through safe blood services",
+    services: [
+      {
+        id: "donation",
+        title: "Blood Donation",
+        description: "Safe blood collection",
+        icon: "/icons/blood-donation.svg",
+        details: "Sterile donation process with post-donation care",
+        commonUses: ["Whole blood donation", "Platelet apheresis", "Plasma donation"]
+      },
+      {
+        id: "storage",
+        title: "Blood Storage",
+        description: "Component separation",
+        icon: "/icons/blood-bag.svg",
+        details: "State-of-the-art storage with temperature monitoring",
+        commonUses: ["RBC storage", "Platelet storage", "Plasma freezing"]
+      }
+    ],
+    preparationTips: [
+      "Eat iron-rich meals",
+      "Hydrate well",
+      "Avoid alcohol 24h prior",
+      "Bring ID proof",
+      "Rest after donation"
+    ],
+    whyChoose: {
+      title: "Why Our Blood Bank?",
+      items: [
+        {
+          badge: "1",
+          title: "Safe Processing",
+          description: "Nucleic acid testing for all donations"
+        },
+        {
+          badge: "2",
+          title: "24/7 Availability",
+          description: "Emergency blood supply always ready"
+        },
+        {
+          badge: "3",
+          title: "Quick Turnaround",
+          description: "Same-day crossmatching"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "How often can I donate?",
+        answer: "Every 3 months for whole blood"
+      },
+      {
+        question: "Is donation safe?",
+        answer: "Yes, sterile single-use equipment only"
+      }
+    ],
+    cta: {
+      title: "Donate Blood Today",
+      description: "Your donation can save up to 3 lives",
+      buttons: [
+        {
+          text: "Emergency: 123-789-4560",
+          variant: "default",
+          onClick: () => {console.log("Blood emergency")}
+        }
+      ]
+    }
+  }
+
+  export const dialysisData : SupportServiceProps= {
+    heroImage: "/dialysis-hero.jpg",
+    title: "Dialysis Services",
+    description: "Compassionate care for kidney patients",
+    services: [
+      {
+        id: "hemo",
+        title: "Hemodialysis",
+        description: "Blood filtration treatment",
+        icon: "/icons/kidney.svg",
+        details: "Advanced machines with biocompatible membranes",
+        commonUses: ["ESRD management", "Toxin removal", "Fluid overload"]
+      },
+      {
+        id: "peritoneal",
+        title: "Peritoneal Dialysis",
+        description: "Home-based treatment",
+        icon: "/icons/peritoneal.svg",
+        details: "Training program for self-care dialysis",
+        commonUses: ["Chronic dialysis", "Home therapy", "Pediatric cases"]
+      }
+    ],
+    preparationTips: [
+      "Follow dietary guidelines",
+      "Monitor fluid intake",
+      "Check access site",
+      "Bring medication list",
+      "Wear comfortable clothes"
+    ],
+    whyChoose: {
+      title: "Why Our Dialysis Unit?",
+      items: [
+        {
+          badge: "1",
+          title: "Advanced Machines",
+          description: "Latest hemodialysis technology"
+        },
+        {
+          badge: "2",
+          title: "Expert Nephrologists",
+          description: "24/7 specialist supervision"
+        },
+        {
+          badge: "3",
+          title: "Comfortable Suites",
+          description: "Private TV-equipped stations"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "How long does dialysis take?",
+        answer: "Typically 3-4 hours per session"
+      },
+      {
+        question: "Can I travel during treatment?",
+        answer: "We help arrange temporary dialysis centers"
+      }
+    ],
+    cta: {
+      title: "Dialysis Care",
+      description: "Schedule your treatment session",
+      buttons: [
+        {
+          text: "Book Dialysis",
+          variant: "default",
+          onClick: () => {console.log("Dialysis booking")}
+        }
+      ]
+    }
+  }
+
+  export const ambulanceData : SupportServiceProps= {
+    heroImage: "/ambulance-hero.jpg",
+    title: "Ambulance Services",
+    description: "24/7 emergency response and medical transport",
+    services: [
+      {
+        id: "als",
+        title: "Advanced Life Support",
+        description: "Mobile ICU ambulances",
+        icon: "/icons/als.svg",
+        details: "Staffed by emergency physicians with full crash cart",
+        commonUses: ["Cardiac emergencies", "Trauma cases", "Critical transfers"]
+      },
+      {
+        id: "bls",
+        title: "Basic Life Support",
+        description: "Emergency transport",
+        icon: "/icons/ambulance.svg",
+        details: "EMT-staffed ambulances for stable patients",
+        commonUses: ["Hospital transfers", "Non-emergency transport", "Discharge pickup"]
+      }
+    ],
+    preparationTips: [
+      "Clear access route",
+      "Gather medical reports",
+      "Prepare medications list",
+      "Designate meeting point",
+      "Stay calm and follow instructions"
+    ],
+    whyChoose: {
+      title: "Why Our Ambulance Service?",
+      items: [
+        {
+          badge: "1",
+          title: "5-Minute Response",
+          description: "Guaranteed in city limits"
+        },
+        {
+          badge: "2",
+          title: "Advanced Equipment",
+          description: "Ventilators, monitors, ECMO"
+        },
+        {
+          badge: "3",
+          title: "Trained Staff",
+          description: "ACLS/PALS certified personnel"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "What's the emergency number?",
+        answer: "Call 108 for immediate assistance"
+      },
+      {
+        question: "Do you handle inter-hospital transfers?",
+        answer: "Yes, with medical escort available"
+      }
+    ],
+    cta: {
+      title: "Emergency Assistance",
+      description: "Immediate medical response when you need it most",
+      buttons: [
+        {
+          text: "Emergency: 108",
+          variant: "default",
+          onClick: () => {console.log("Emergency call")}
+        },
+        {
+          text: "Non-Emergency",
+          variant: "outline",
+          onClick: () => {console.log("Non-emergency")}
+        }
+      ]
+    }
+  }
