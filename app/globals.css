@@ -214,6 +214,6 @@ element {
   }
 
   .animate-heartbeat {
-    animation: heartbeat 5s infinite;
+    animation: heartbeat 3s infinite;
     /* Total duration = 3s (1s for beats + 2s pause) */
   }

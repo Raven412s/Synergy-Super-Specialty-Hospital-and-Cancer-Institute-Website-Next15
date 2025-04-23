@@ -55,7 +55,7 @@ export const metadata = {
 
 const TheSynergyStory = () => {
     return (
-        <main id='Overview' style={{ backgroundImage: `url("/bg-section-opacity-80.png")` }} className='-mt-5'>
+        <main id='Overview' className='-mt-5 bg-slate-100'>
             <OurMission/>
             <OurVision/>
             <OurExcellence/>

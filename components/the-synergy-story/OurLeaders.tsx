@@ -14,7 +14,7 @@ export const OurLeaders = () => {
             id="Leadership"
             className="min-h-max w-full  px-2 md:px-6 lg:px-24 py-4 my-12"
         >
-            <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+            <div className='lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded flex flex-col items-center justify-center w-full'>
                 {/* Heading + Subheading */}
                 <div className="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-4">
                     {/* Heading */}
@@ -54,9 +54,10 @@ export const OurLeaders = () => {
                                 ease: "easeOut",
                                 delay: index * 0.1, // Stagger effect for each card
                             }}
+                            className='w-full hover:shadow-sm hover:shadow-indigo-100'
                         >
                             <LeaderCard
-                                image={leader.image || "/Dummy.png"}
+                                image={leader.image || "/fallback-image.webp"}
                                 name={leader.name || "Leader Name"}
                                 role={leader.role || "Senior Doctor"}
                                 description={leader.description || "No description provided"}

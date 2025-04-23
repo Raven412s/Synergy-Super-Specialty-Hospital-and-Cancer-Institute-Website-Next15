@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { ImageWithFallback } from "../global/ImageWithFallback";
 
 const newsData = [
@@ -43,12 +43,80 @@ const newsData = [
 
 export default function NewsSlider() {
     const carouselRef = useRef<HTMLDivElement>(null);
+    const [isHovered, setIsHovered] = useState(false);
+    const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
     const scroll = (direction: "left" | "right") => {
         if (carouselRef.current) {
             const containerWidth = carouselRef.current.offsetWidth;
             const scrollAmount = containerWidth / 3;
-            carouselRef.current.scrollBy({ left: direction === "left" ? -scrollAmount : scrollAmount, behavior: "smooth" });
+            const newScrollLeft = direction === "left"
+                ? carouselRef.current.scrollLeft - scrollAmount
+                : carouselRef.current.scrollLeft + scrollAmount;
+
+            // Smooth scroll to position
+            carouselRef.current.scrollTo({
+                left: newScrollLeft,
+                behavior: "smooth"
+            });
+        }
+    };
+
+    const scrollToItem = (index: number) => {
+        if (carouselRef.current) {
+            const containerWidth = carouselRef.current.offsetWidth;
+            const itemWidth = containerWidth / 3; // Adjust based on your card width
+            carouselRef.current.scrollTo({
+                left: index * itemWidth,
+                behavior: "smooth"
+            });
+        }
+    };
+
+    // Auto-scroll logic
+    useEffect(() => {
+        const startAutoScroll = () => {
+            intervalRef.current = setInterval(() => {
+                if (!isHovered && carouselRef.current) {
+                    const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+                    const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 10; // 10px buffer
+
+                    if (isAtEnd) {
+                        // If at end, instantly (but invisibly) scroll back to start
+                        carouselRef.current.scrollTo({
+                            left: 0,
+                            behavior: 'auto'
+                        });
+                        // Then animate to first item
+                        setTimeout(() => {
+                            scrollToItem(1);
+                        }, 50);
+                    } else {
+                        scroll("right");
+                    }
+                }
+            }, 5000);
+        };
+
+        startAutoScroll();
+        return () => {
+            if (intervalRef.current) clearInterval(intervalRef.current);
+        };
+    }, [isHovered]);
+
+    // Handle infinite scroll illusion
+    const handleScroll = () => {
+        if (carouselRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+            const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 10; // 10px buffer
+
+            if (isAtEnd) {
+                // Instantly reset scroll position (user won't see this)
+                carouselRef.current.scrollTo({
+                    left: 0,
+                    behavior: 'auto'
+                });
+            }
         }
     };
 
@@ -69,7 +137,7 @@ export default function NewsSlider() {
                 viewport={{ once: true }}
             >
                 <h2 className="text-2xl lg:text-3xl font-semibold text-primary text-pretty lg:mb-6 md:mb-5 sm:mb-3 mb-1 font-display">
-                    What’s New At Synergy
+                    What's New At Synergy
                 </h2>
                 <Button variant="default" className="bg-indigo-800 text-fuchsia-50 px-6 py-2 rounded-full font-semibold">
                     EXPLORE MORE →
@@ -77,7 +145,11 @@ export default function NewsSlider() {
             </motion.div>
 
             {/* Carousel */}
-            <div className="relative flex items-center">
+            <div
+                className="relative flex items-center"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
                 {/* Left Scroll Button */}
                 <Button
                     onClick={() => scroll("left")}
@@ -92,11 +164,12 @@ export default function NewsSlider() {
                 {/* Scrollable Container */}
                 <div
                     ref={carouselRef}
-                    className="flex overflow-x-auto w-full py-3 space-x-4 scrollbar-hide snap-x snap-mandatory scroll-smooth hide-scrollbar   max-h-max overflow-y-hidden"
+                    className="flex overflow-x-auto w-full py-3 space-x-4 scrollbar-hide snap-x snap-mandatory scroll-smooth hide-scrollbar max-h-max overflow-y-hidden"
+                    onScroll={handleScroll}
                 >
-                    {newsData.map((news, index) => (
+                    {[...newsData, newsData[0]].map((news, index) => (
                         <motion.div
-                            key={index}
+                            key={`${index}-${news.title}`}
                             className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72 rounded-xl overflow-hidden relative snap-start hide-scrollbar"
                             initial={{ y: 60, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -113,7 +186,6 @@ export default function NewsSlider() {
                             />
                             {/* Gradient + Text Overlay */}
                             <div className="absolute flex items-center justify-end flex-col inset-0 bg-gradient-to-t from-black/60 to-transparent p-4 pointer-events-none z-10">
-                                {/* <p className="text-stone-50 font-medium text-lg">Latest Update</p> */}
                                 <h3 className="text-base text-stone-50 font-medium text-center">
                                     {news.title}
                                 </h3>
@@ -121,6 +193,7 @@ export default function NewsSlider() {
                         </motion.div>
                     ))}
                 </div>
+
                 {/* Right Scroll Button */}
                 <Button
                     onClick={() => scroll("right")}
