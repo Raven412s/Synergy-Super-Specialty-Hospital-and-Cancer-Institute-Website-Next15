@@ -55,7 +55,7 @@ export default function SliderWithTriggers() {
 }, [currentIndex, isHovered]); // Reset interval when hover state changes
 
     return (
-        <div className="w-full  flex flex-col gap-5 relative items-center justify-center">
+        <div className="w-full  flex flex-col gap-5 relative items-center justify-center ">
             {/* Trigger Buttons - Only show featured departments */}
             <div className="flex  overflow-x-auto gap-2 items-center lg:justify-center justify-start lg:!max-w-7xl w-screen px-4 md:px-0 hide-scrollbar overflow-hidden ">
                 {featuredDepartments.map((slide, index) => (
