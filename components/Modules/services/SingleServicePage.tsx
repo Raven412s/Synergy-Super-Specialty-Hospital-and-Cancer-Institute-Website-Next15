@@ -99,7 +99,7 @@ export default function DepartmentPage() {
           />
           <motion.div
             variants={fadeIn}
-            className="absolute inset-0 bg-synergy-blue flex items-center justify-center"
+            className="absolute inset-0 bg-synergy-blue/10 flex items-center justify-center"
           >
             <div className="text-center px-4">
               <motion.h1
