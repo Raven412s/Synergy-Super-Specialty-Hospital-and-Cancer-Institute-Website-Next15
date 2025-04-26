@@ -24,35 +24,35 @@ import { ImageWithFallback } from "../global/ImageWithFallback";
 import { Badge } from "../ui/badge";
 
 export default function SliderWithTriggers() {
-    // Filter to only get featured departments
-    const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
-    const [isHovered, setIsHovered] = useState<boolean>(false);
-    const [currentIndex, setCurrentIndex] = useState(0);
+// Filter to only get featured departments
+const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
+const [isHovered, setIsHovered] = useState<boolean>(false);
+const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % featuredDepartments.length);
-    };
+const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % featuredDepartments.length);
+};
 
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? featuredDepartments.length - 1 : prevIndex - 1
-        );
-    };
+const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? featuredDepartments.length - 1 : prevIndex - 1
+    );
+};
 
- // Auto-rotation with hover pause
- useEffect(() => {
+// Auto-rotation with hover pause
+useEffect(() => {
     let interval: NodeJS.Timeout;
 
     if (!isHovered) { // Only auto-rotate if not hovered
         interval = setInterval(() => {
-            nextSlide();
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % featuredDepartments.length);
         }, 5000);
     }
 
     return () => {
         if (interval) clearInterval(interval);
     };
-}, [currentIndex, isHovered, nextSlide]); // Reset interval when hover state changes
+}, [isHovered, featuredDepartments.length]); // ✅ Only depend on isHovered and data length
 
     return (
         <div className="w-full  flex flex-col gap-5 relative items-center justify-center ">
