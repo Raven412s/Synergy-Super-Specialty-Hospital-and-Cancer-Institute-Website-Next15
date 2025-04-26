@@ -193,7 +193,7 @@ export const DoctorsPage = () => {
                                                 src={doctor.image}
                                                 alt={doctor.name}
                                                 fill
-                                                className="object-cover aspect-video size-full object-left-top"
+                                                className="object-cover aspect-video size-full object-center lg:object-left-top"
                                             />
                                         ) : (
                                             <div className="absolute inset-0 flex items-center justify-center text-white">

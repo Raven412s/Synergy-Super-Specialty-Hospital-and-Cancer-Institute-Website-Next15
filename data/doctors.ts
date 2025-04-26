@@ -258,7 +258,7 @@ export  const doctors = [
       name: "Dr. D.P. Singh",
       qualification: "M.B.B.S, MS GENERAL SURGERY, DEPARTMENT OF GI SURGERY",
       department: "General Surgery",
-      experience: "8 Years,( 3Years as a Resident & 5 years As a Consultant)",
+      experience: "16 years",
       image: "/doctors/dr-dp-singh.webp",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
@@ -266,7 +266,7 @@ export  const doctors = [
         { day: "Wed", time: "8:00 AM - 4:00 PM" },
         { day: "Fri", time: "8:00 AM - 4:00 PM" }
       ],
-      isSenior: false
+      isSenior: true
     },
     {
       id: 19,
