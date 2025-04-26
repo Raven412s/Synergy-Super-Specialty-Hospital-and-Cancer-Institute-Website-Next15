@@ -170,7 +170,7 @@ export function Navbar() {
                                         href={link.href}
                                         className="hover:underline w-max block text-sm"
                                       >
-                                        {link.label}
+                                        yamraaj {link.label}
                                       </Link>
                                     ))}
                                   </motion.div>
