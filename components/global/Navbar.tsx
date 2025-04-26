@@ -109,7 +109,7 @@ export function Navbar() {
                   {item.label}
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className="max-w-screen !min-w-screen bg-fuchsia-50 p-0 border-none !rounded-none min-h-[428px] h-full">
+                <NavigationMenuContent className="max-w-screen !min-w-screen bg-white p-0 border-none !rounded-none min-h-[428px] h-full">
                   <AnimatePresence>
                     <motion.div
                       initial="hidden"
@@ -150,12 +150,12 @@ export function Navbar() {
                           >
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                               {Array.from({
-                                length: Math.ceil(item.pages[activePageIndex]?.links.length / 10),
+                                length: Math.ceil(item.pages[activePageIndex]?.links.length / 8),
                               }).map((_, colIndex) => {
-                                const start = colIndex * 10;
+                                const start = colIndex * 8;
                                 const columnLinks = item.pages[activePageIndex]?.links.slice(
                                   start,
-                                  start + 10
+                                  start + 8
                                 );
 
                                 return (
@@ -168,9 +168,9 @@ export function Navbar() {
                                       <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="hover:underline w-max block text-sm"
+                                        className="hover:underline font-medium w-max block text-sm bg-indigo-400 text-white py-1 px-4 rounded-full"
                                       >
-                                        yamraaj {link.label}
+                                         {link.label}
                                       </Link>
                                     ))}
                                   </motion.div>
