@@ -7,9 +7,10 @@ import { PatientTestimonials } from "@/components/homepage/PatientTestimonials";
 import { SpecialitiesSection } from "@/components/homepage/SpecialitiesSection";
 import { TestimonialCards } from "@/components/homepage/TestimonialCards";
 import { faqItems } from "@/data";
+import { useTranslations } from "next-intl";
 
 export const Homepage = () => {
-
+    const t = useTranslations('homepage');
     return (
         <main className="w-full flex flex-col items-center justify-center">
             {/* Hero Section with Video */}
@@ -31,7 +32,7 @@ export const Homepage = () => {
                         href="#specialties"
                         className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base"
                     >
-                        Explore More
+                        {t('exploreMore')}
                     </a>
                 </div>
             </section>

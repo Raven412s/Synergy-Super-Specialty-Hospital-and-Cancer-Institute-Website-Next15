@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 // Import your images (replace with actual paths)
 import { ImageWithFallback } from "@/components/global/ImageWithFallback";
+import { supportServices } from "@/data";
 
 
 const SupportServicesPage = () => {
@@ -43,72 +44,7 @@ const SupportServicesPage = () => {
         }
     };
 
-    // Support services data with images
-    const services = [
-        {
-            id: 1,
-            title: "Diagnostic Imaging",
-            description: "State-of-the-art imaging technologies including MRI, CT scans, X-rays, and ultrasound for accurate diagnosis.",
-            link: "/diagnostic-imaging",
-            image: "/images/diagnostic-imaging.webp",
 
-            icon: "🖼️"
-        },
-        {
-            id: 2,
-            title: "Laboratory Services",
-            description: "Comprehensive lab tests with rapid turnaround times, supporting both inpatient and outpatient needs.",
-            link: "/laboratory-services",
-            image: "/images/laboratory-services.webp",
-
-            icon: "🧪"
-        },
-        {
-            id: 3,
-            title: "Pharmacy",
-            description: "24/7 pharmacy services providing all prescribed medications with expert pharmaceutical guidance.",
-            link: "/pharmacy",
-            image: "/images/pharmacy.webp",
-
-            icon: "💊"
-        },
-        {
-            id: 4,
-            title: "Physiotherapy",
-            description: "Rehabilitation services to help patients regain mobility and function after illness or injury.",
-            link: "/physiotherapy",
-            image: "/images/physiotherapy.webp",
-
-            icon: "🦵"
-        },
-        {
-            id: 5,
-            title: "Blood Bank",
-            description: "Fully equipped blood bank ensuring safe and timely availability of blood products.",
-            link: "/blood-bank",
-            image: "/images/blood-bank.webp",
-
-            icon: "🩸"
-        },
-        {
-            id: 6,
-            title: "Dialysis Unit",
-            description: "Advanced renal care with comfortable dialysis facilities staffed by nephrology specialists.",
-            link: "/dialysis-unit",
-            image: "/images/dialysis-unit.webp",
-
-            icon: "💓"
-        },
-        {
-            id: 7,
-            title: "Ambulance Services",
-            description: "24/7 emergency response with fully equipped ambulances and trained paramedical staff.",
-            link: "/ambulance-services",
-            image: "/images/ambulance-services.webp",
-
-            icon: "🚑"
-        },
-    ];
 
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -165,7 +101,7 @@ const SupportServicesPage = () => {
                 variants={containerVariants}
                 className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3"
             >
-                {services.map((service) => (
+                {supportServices.map((service) => (
                     <motion.div
                         key={service.id}
                         variants={cardVariants}
@@ -185,10 +121,7 @@ const SupportServicesPage = () => {
                                     className="size-full object-cover"
                                 />
                             </motion.div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
-                            <div className="absolute top-4 right-4 text-4xl bg-white/20 backdrop-blur-sm rounded-full w-14 h-14 flex items-center justify-center p-4">
-                                {service.icon}
-                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
                             <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-fuchsia-50 font-display">
                                 {service.title}
                             </h3>
@@ -198,7 +131,7 @@ const SupportServicesPage = () => {
                             <p className="text-gray-600 mb-6 text-lg">{service.description}</p>
                             <Link
                                 href={service.link}
-                                className="inline-flex items-center px-5 py-2.5 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 to-teal-400 group-hover:from-blue-600 group-hover:to-teal-500 transition-all duration-300 shadow-md group-hover:shadow-lg"
+                                className="inline-flex items-center px-5 py-2.5 rounded-lg font-medium text-white bg-gradient-to-r from-indigo-500 to-fuchsia-500 group-hover:from-indigo-400 group-hover:to-fuchsia-400 transition-all duration-300 shadow-md group-hover:shadow-lg"
                             >
                                 View All
                                 <svg className="ml-2 -mr-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

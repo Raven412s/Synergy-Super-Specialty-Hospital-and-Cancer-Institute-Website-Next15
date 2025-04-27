@@ -7,7 +7,7 @@ import {
     LeadershipMap,
     PatientCareMap,
     ServicesMap,
-} from "@/data";
+} from "@/data/DYNAMIC_MAPS";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";

@@ -1,76 +1,7 @@
 import { WhatsappReachOutButton } from "@/components/global/WhatsappReachOutButton"
-import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns"
-import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer"
-import { PatientTestimonials } from "@/components/Modules/cancer-survivors/stories-of-hope/PatientTestimonials"
-import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of-hope/VictoryStories"
-import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-hope/VideoMessages"
-import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth"
-import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms"
-import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics"
-import { DoctorsPage } from "@/components/Modules/discover-synergy/doctors/DoctorsPage"
-import LeadershipPage from "@/components/Modules/discover-synergy/leadership/LeadershipPage"
 
-import { Faqs } from "@/components/Modules/health-library/faqs/Faqs"
-import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention"
-import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging"
-import { NutritionAndWellness } from "@/components/Modules/health-library/patient-education/NutritionAndWellness"
-import { TreatmentOptions } from "@/components/Modules/health-library/patient-education/TreatmentOptions"
-import { AdrenalCancer } from "@/components/Modules/health-library/types-of-cancer/AdrenalCancer"
-import { AnalCancer } from "@/components/Modules/health-library/types-of-cancer/AnalCancer"
-import { BileDuctCancer } from "@/components/Modules/health-library/types-of-cancer/BileDuctCancer"
-import { BladderCancer } from "@/components/Modules/health-library/types-of-cancer/BladderCancer"
-import { BloodCancer } from "@/components/Modules/health-library/types-of-cancer/BloodCancer"
-import { BoneCancer } from "@/components/Modules/health-library/types-of-cancer/BoneCancer"
-import { BrainCancer } from "@/components/Modules/health-library/types-of-cancer/BrainCancer"
-import { BreastCancer } from "@/components/Modules/health-library/types-of-cancer/BreastCancer"
-import { BreastCancerInMen } from "@/components/Modules/health-library/types-of-cancer/BreastCancerInMen"
-import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer"
-import { ColonRectalCancer } from "@/components/Modules/health-library/types-of-cancer/ColonRectalCancer"
-import { EndometrialCancer } from "@/components/Modules/health-library/types-of-cancer/EndometrialCancer"
-import { EsophagealCancer } from "@/components/Modules/health-library/types-of-cancer/EsophagealCancer"
-import { EyeCancer } from "@/components/Modules/health-library/types-of-cancer/EyeCancer"
-import { GallbladderCancer } from "@/components/Modules/health-library/types-of-cancer/GallbladderCancer"
-import { GastricCancer } from "@/components/Modules/health-library/types-of-cancer/GastricCancer"
-import { HeadAndNeckCancer } from "@/components/Modules/health-library/types-of-cancer/HeadAndNeckCancer"
-import { KidneyCancer } from "@/components/Modules/health-library/types-of-cancer/KidneyCancer"
-import { LaryngealCancer } from "@/components/Modules/health-library/types-of-cancer/LaryngealCancer"
-import { LiverCancer } from "@/components/Modules/health-library/types-of-cancer/LiverCancer"
-import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer"
-import { MultipleMyeloma } from "@/components/Modules/health-library/types-of-cancer/MultipleMyeloma"
-import { NeuroendocrineTumors } from "@/components/Modules/health-library/types-of-cancer/NeuroendocrineTumors"
-import { NonHodgkinLymphoma } from "@/components/Modules/health-library/types-of-cancer/NonHodgkinLymphoma"
-import { OralCancer } from "@/components/Modules/health-library/types-of-cancer/OralCancer"
-import { OvarianCancer } from "@/components/Modules/health-library/types-of-cancer/OvarianCancer"
-import { PancreaticCancer } from "@/components/Modules/health-library/types-of-cancer/PancreaticCancer"
-import { PenileCancer } from "@/components/Modules/health-library/types-of-cancer/PenileCancer"
-import { PituitaryTumors } from "@/components/Modules/health-library/types-of-cancer/PituitaryTumors"
-import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer"
-import { SalivaryGlandCancer } from "@/components/Modules/health-library/types-of-cancer/SalivaryGlandCancer"
-import { SkinCancer } from "@/components/Modules/health-library/types-of-cancer/SkinCancer"
-import { StomachCancer } from "@/components/Modules/health-library/types-of-cancer/StomachCancer"
-import { UterineCancer } from "@/components/Modules/health-library/types-of-cancer/UterineCancer"
-import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare"
-import HealthChecks from "@/components/Modules/patient-care/HealthChecks"
-import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities"
-import Insurance from "@/components/Modules/patient-care/Insurance"
-import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic"
-import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion"
-import ServicesPage from "@/components/Modules/services/ServicesPage"
-import SingleServicePage from "@/components/Modules/services/SingleServicePage"
-import BloodBank from "@/components/Modules/services/support-services/BloodBank"
-import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging"
-import { Dialysis } from "@/components/Modules/services/support-services/Dialysis"
-import { Dietary } from "@/components/Modules/services/support-services/Dietary"
-import { HouseKeeping } from "@/components/Modules/services/support-services/HouseKeeping"
 
-import { Laboratory } from "@/components/Modules/services/support-services/Laboratory"
-import { Laundry } from "@/components/Modules/services/support-services/Laundry"
-import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
-import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
-import { Security } from "@/components/Modules/services/support-services/Security"
-import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
 import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
-import { Ambulance } from "lucide-react"
 import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa"
 
 export const menuItems: MenuItemProps[] = [
@@ -828,142 +759,56 @@ export const pressReleases: PressRelease[] = [
     }
 ]
 
-// MAPS FOR DYNAMIC PAGES
+// Support services data with images
+export const supportServices = [
+    {
+        id: 1,
+        title: "Pharmacy",
+        description: "24/7 pharmacy services providing all prescribed medications with expert pharmaceutical guidance and medication counseling.",
+        link: "/pharmacy",
+        image: "/images/pharmacy.webp",
+    },
+    {
+        id: 2,
+        title: "Blood Bank",
+        description: "Fully equipped blood bank with component separation facility ensuring safe blood transfusion services and donor programs.",
+        link: "/blood-bank",
+        image: "/images/blood-bank.webp",
+    },
+    {
+        id: 3,
+        title: "Dietary Services",
+        description: "Therapeutic meal planning and nutritional support tailored to patient needs by certified dietitians and nutrition specialists.",
+        link: "/dietary-services",
+        image: "/images/dietary-services.webp",
+    },
+    {
+        id: 4,
+        title: "Laundry Services",
+        description: "Hospital-grade linen and personal laundry services with hygienic processing and sterilization standards.",
+        link: "/laundry-services",
+        image: "/images/laundry-services.webp",
+    },
+    {
+        id: 5,
+        title: "Housekeeping",
+        description: "Professional cleaning and sanitation services maintaining highest standards of hospital hygiene and infection control.",
+        link: "/housekeeping",
+        image: "/images/housekeeping.webp",
+    },
+    {
+        id: 6,
+        title: "Security Services",
+        description: "24/7 campus security with surveillance systems, access control, and emergency response teams for patient safety.",
+        link: "/security-services",
+        image: "/images/security-services.webp",
+    },
+    {
+        id: 7,
+        title: "Ambulance Services",
+        description: "Advanced life support ambulances with trained EMT staff for emergency transport and inter-facility transfers.",
+        link: "/ambulance-services",
+        image: "/images/ambulance-services.webp",
+    }
+];
 
-export const LeadershipMap = {
-    "Dr-Alok-Tiwari": <LeadershipPage {...leaderAlokTiwari} />,
-    "Dr-Anjali-Jain": <LeadershipPage {...leaderAnjaliJain} />,
-    "Dr-Saurabh-Mishra": <LeadershipPage {...leaderSaurabhMishra} />
-}
-
-export const DoctorsMap = {
-    "Dr-Alok-Tiwari": <DoctorsPage />,
-    "Dr-Anjali-Jain": <DoctorsPage />,
-    "Dr-Saurabh-Mishra": <DoctorsPage />,
-    "all": <DoctorsPage />,
-}
-
-export const ServicesMap = {
-    "medical-oncology": <SingleServicePage />,
-    "surgical-oncology": <SingleServicePage />,
-    "neurology": <SingleServicePage />,
-    "neurosurgery": <SingleServicePage />,
-    "gastroenterology": <SingleServicePage />,
-    "nephrology": <SingleServicePage />,
-    "urology": <SingleServicePage />,
-    "orthopedics": <SingleServicePage />,
-    "anesthesia": <SingleServicePage />,
-    "general-surgery": <SingleServicePage />,
-    "pediatrics": <SingleServicePage />,
-    "gynecology": <SingleServicePage />,
-    "head-and-neck": <SingleServicePage />,
-    "emergency-and-critical-care": <SingleServicePage />,
-    "pain-and-palliative-care": <SingleServicePage />,
-    "all": <ServicesPage />,
-    // "cardiology": <SingleServicePage />,
-    // "hepatology": <SingleServicePage />,
-    // "rheumatology": <SingleServicePage />,
-    // "endocrinology": <SingleServicePage />,
-    // "pulmonology": <SingleServicePage />,
-    // "dermatology": <SingleServicePage />,
-    // "ent": <SingleServicePage />,
-    // "ophthalmology": <SingleServicePage />,
-    // "internal-medicine": <SingleServicePage />,
-    // "psychiatry": <SingleServicePage />,
-
-    // Support Services
-    pharmacy: <Pharmacy />,
-    "blood-bank": <BloodBank />,
-    "dietary": <Dietary />,
-    "laundry": <Laundry />,
-    "house-keeping": <HouseKeeping />,
-    "security": <Security />,
-    ambulance: <Ambulance />,
-    "support-services" : <SupportServicesPage/>,
-
-    // Diagnostic Services
-    "diagnostic-imaging" : <SingleServicePage/>,
-    "dialysis" : <SingleServicePage/>,
-    "radiology" : <SingleServicePage/>,
-    "pathology" : <SingleServicePage/>,
-    "microbiology" : <SingleServicePage/>,
-    "biochemistry" : <SingleServicePage/>,
-    "diagonostic-services" : <SingleServicePage/>,
-
-    // Specialized Services
-    "icu" : <DiagnosticImaging/>,
-    "nicu" : <Physiotherapy/>,
-    "operation-theater" : <Dialysis/>,
-    "endoscopy" : <Dialysis/>,
-    "physiotherapy" : <Physiotherapy/>,
-    "specialized-services" : <Dialysis/>,
-
-    // Specialized Services
-    "admission-and-discharge" : <DiagnosticImaging/>,
-    "billing-and-insurance" : <Physiotherapy/>,
-    "medical-records" : <Dialysis/>,
-    "customer-care" : <Dialysis/>,
-    "administrative-services" : <Dialysis/>,
-}
-
-export const PatientCareMap = {
-    emergency: <EmergencyCare />,
-    "second-opinion": <SecondOpinion />,
-    "in-patient": <InPatientFacilities />,
-    "out-patient": <OutPatientClinic />,
-    "health-checks": <HealthChecks />,
-    "insurance": <Insurance />,
-}
-
-export const HealthLibraryMap = {
-    "breast-cancer": <BreastCancer />,
-    "prostate-cancer": <ProstateCancer />,
-    "lung-cancer": <LungCancer />,
-    "cervical-cancer": <CervicalCancer />,
-    "blood-cancer": <BloodCancer />,
-    "adrenal-cancer": <AdrenalCancer />,
-    "anal-cancer": <AnalCancer />,
-    "bile-duct-cancer": <BileDuctCancer />,
-    "bladder-cancer": <BladderCancer />,
-    "bone-cancer": <BoneCancer />,
-    "brain-cancer": <BrainCancer />,
-    "breast-cancer-in-men": <BreastCancerInMen />,
-    "colon-rectal-cancer": <ColonRectalCancer />,
-    "endometrial-cancer": <EndometrialCancer />,
-    "esophageal-cancer": <EsophagealCancer />,
-    "eye-cancer": <EyeCancer />,
-    "gallbladder-cancer": <GallbladderCancer />,
-    "gastric-cancer": <GastricCancer />,
-    "head-and-neck-cancer": <HeadAndNeckCancer />,
-    "kidney-cancer": <KidneyCancer />,
-    "laryngeal-cancer": <LaryngealCancer />,
-    "liver-cancer": <LiverCancer />,
-    "multiple-myeloma": <MultipleMyeloma />,
-    "neuroendocrine-tumors": <NeuroendocrineTumors />,
-    "non-hodgkin-lymphoma": <NonHodgkinLymphoma />,
-    "oral-cancer": <OralCancer />,
-    "ovarian-cancer": <OvarianCancer />,
-    "pancreatic-cancer": <PancreaticCancer />,
-    "penile-cancer": <PenileCancer />,
-    "pituitary-tumors": <PituitaryTumors />,
-    "salivary-gland-cancer": <SalivaryGlandCancer />,
-    "skin-cancer": <SkinCancer />,
-    "stomach-cancer": <StomachCancer />,
-    "uterine-cancer": <UterineCancer />,
-    prevention: <CancerPrevention />,
-    diagnosis: <DiagnosisAndStaging />,
-    treatments: <TreatmentOptions />,
-    nutrition: <NutritionAndWellness />,
-    faqs: <Faqs />
-}
-
-export const CancerSurvivorsMap = {
-    testimonials: <PatientTestimonials />,
-    "victory-stories": <VictoryStories />,
-    videos: <VideoMessages />,
-    counseling: <CounselingAndMentalHealth />,
-    rehab: <RehabilationPrograms />,
-    clinics: <SurvivorshipClinics />,
-    volunteer: <Volunteer />,
-    awareness: <AwarenessCampaigns />,
-}

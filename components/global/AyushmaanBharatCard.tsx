@@ -74,13 +74,13 @@ const AyushmaanBharatCard = () => {
 
           {/* Right Side */}
           <div className="flex-1 flex justify-center">
-            <div className="bg-gradient-to-tl from-white via-fuchsia-100 to-fuchsia-200 text-primary p-6 md:p-8 rounded-xl shadow-lg shadow-black/20 w-full max-w-sm text-center flex flex-col items-center gap-4">
+            <div className="bg-gradient-to-tl from-fuchsia-800 to-fuchsia-900 text-white p-6 md:p-8 rounded-xl shadow-lg shadow-black/20 w-full max-w-sm text-center flex flex-col items-center gap-4">
               <FaHospitalUser className="text-5xl md:text-6xl" />
               <h3 className="text-xl md:text-2xl font-bold">Get Covered Today</h3>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-white/80 text-sm md:text-base">
                 Visit our Insurance Desk for easy enrollment and cashless treatment assistance.
               </p>
-              <button className="mt-4 bg-primary hover:bg-primary/80 text-white font-semibold py-2 px-6 rounded-full transition-colors text-sm md:text-base">
+              <button className="mt-4 bg-white hover:bg-white/80 hover:backdrop-blur-sm text-primary font-semibold py-2 px-6 rounded-full transition-colors text-sm md:text-base">
                 Know More
               </button>
             </div>
