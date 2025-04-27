@@ -1178,7 +1178,7 @@ export const departmentData: DepartmentData[] = [
         index: 8,
         name: 'Anesthesia',
         slug: 'anesthesia',
-        heroImage: '/fallback-image.webp',
+        heroImage: '/department/anesthesia.jpg',
         heroTitle: 'Expert Anesthesia Care for Safe Procedures',
         heroSubtitle: 'Providing advanced anesthesia solutions with patient safety as our top priority in Gorakhpur.',
         isFeatured: true,
@@ -1267,7 +1267,7 @@ export const departmentData: DepartmentData[] = [
             'Advanced pain management equipment',
             'Emergency airway management resources'
           ],
-          image: '/fallback-image.webp'
+          image: '/department/anesthesia-facilities.webp'
         },
 
         research: {
@@ -1328,7 +1328,7 @@ export const departmentData: DepartmentData[] = [
         index: 9,
         name: 'General Surgery',
         slug: 'general-surgery',
-        heroImage: '/fallback-image.webp',
+        heroImage: '/department/general-surgery.webp',
         heroTitle: 'Comprehensive Surgical Care for All Needs',
         heroSubtitle: 'Expert surgical solutions with compassionate care in Gorakhpur.',
         isFeatured: true,
@@ -1756,8 +1756,8 @@ export const departmentData: DepartmentData[] = [
         id: 'head-neck',
         index: 12,
         name: 'Head & Neck',
-        slug: 'head-neck',
-        heroImage: '/fallback-image.webp',
+        slug: 'head-and-neck',
+        heroImage: '/department/head-and-neck.webp',
         heroTitle: 'Specialized Care for Head & Neck Conditions',
         heroSubtitle: 'Expert diagnosis and treatment of complex head and neck disorders in Gorakhpur.',
         isFeatured: true,
@@ -2039,6 +2039,1014 @@ export const departmentData: DepartmentData[] = [
             },
             {
               text: 'Learn About Services',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'diagnostic-imaging',
+        index: 14,
+        name: 'Diagnostic Imaging',
+        slug: 'diagnostic-imaging',
+        heroImage: '/department/diagnostic-imaging.webp',
+        heroTitle: 'Advanced Diagnostic Imaging Services',
+        heroSubtitle: 'Precision imaging for accurate diagnoses in Gorakhpur.',
+        isFeatured: true,
+
+        overview: {
+          title: 'Our Imaging Approach',
+          description: [
+            'The Diagnostic Imaging department at Synergy Super Speciality Hospital utilizes cutting-edge technology to provide comprehensive imaging services.',
+            'Our radiologists and technicians deliver high-quality diagnostic results with minimal patient discomfort using the latest imaging modalities.'
+          ],
+          whyChooseUs: [
+            'Board-certified radiologists',
+            'Advanced imaging technology',
+            'Fast result turnaround',
+            'Low-dose radiation protocols'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'MRI Scans',
+              description: 'High-resolution magnetic resonance imaging for soft tissue evaluation.'
+            },
+            {
+              title: 'CT Scans',
+              description: 'Advanced computed tomography with 3D reconstruction capabilities.'
+            },
+            {
+              title: 'Ultrasound',
+              description: 'Real-time imaging for abdominal, obstetric and vascular studies.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Imaging Statistics',
+          items: [
+            {
+              value: '30 min',
+              label: 'Average Scan Time'
+            },
+            {
+              value: '24/7',
+              label: 'Emergency Imaging Availability'
+            },
+            {
+              value: '98%',
+              label: 'Diagnostic Accuracy Rate'
+            },
+            {
+              value: '10+',
+              label: 'Imaging Modalities Available'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Imaging Team',
+          members: [
+            {
+              name: 'Dr. Rajesh Verma',
+              role: 'Chief Radiologist',
+              credentials: 'M.B.B.S, MD Radiology',
+              image: '/doctors/dr-rajesh-verma.webp',
+              specialty: 'Neuroimaging'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Imaging Facilities',
+          description: 'Our department features state-of-the-art imaging technology for precise diagnostics.',
+          features: [
+            '1.5T MRI machine',
+            '128-slice CT scanner',
+            'Digital mammography',
+            'Fluoroscopy suite',
+            'PACS digital imaging system'
+          ],
+          image: '/imaging-facility.webp'
+        },
+
+        research: {
+          title: 'Imaging Research',
+          items: [
+            {
+              title: 'AI-Assisted Diagnostics',
+              content: 'Developing machine learning tools for image analysis.',
+              icon: 'cpu'
+            },
+            {
+              title: 'Low-Dose Protocols',
+              content: 'Researching radiation reduction techniques.',
+              icon: 'radiation'
+            },
+            {
+              title: 'Functional Imaging',
+              content: 'Advancing dynamic assessment of organ function.',
+              icon: 'brain'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The MRI was much quicker and less claustrophobic than I expected. The staff made me feel comfortable throughout.',
+              author: 'Anjali S.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'The detailed CT scan identified my condition immediately, allowing for prompt treatment.',
+              author: 'Vikram P.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Advanced Imaging Services',
+          subtitle: 'Schedule your diagnostic scan or walk-in for emergency imaging needs.',
+          buttons: [
+            {
+              text: 'Schedule Imaging',
+              isPrimary: true
+            },
+            {
+              text: 'View Preparation Guides',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'dialysis',
+        index: 15,
+        name: 'Dialysis',
+        slug: 'dialysis',
+        heroImage: '/dialysis-hero.webp',
+        heroTitle: 'Comprehensive Renal Care Services',
+        heroSubtitle: 'Advanced dialysis treatments for kidney health in Gorakhpur.',
+        isFeatured: false,
+
+        overview: {
+          title: 'Our Dialysis Approach',
+          description: [
+            'The Dialysis Unit at Synergy Super Speciality Hospital provides life-sustaining treatments for patients with renal failure.',
+            'Our nephrology team offers personalized dialysis regimens using the latest technology in a comfortable environment.'
+          ],
+          whyChooseUs: [
+            'Experienced nephrologists',
+            'Individualized treatment plans',
+            'Advanced water purification',
+            'Compassionate care'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Hemodialysis',
+              description: 'Blood filtration using advanced dialysis machines.'
+            },
+            {
+              title: 'Peritoneal Dialysis',
+              description: 'Home dialysis training and support services.'
+            },
+            {
+              title: 'Continuous Renal Replacement',
+              description: 'Critical care dialysis for ICU patients.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Dialysis Statistics',
+          items: [
+            {
+              value: '15+',
+              label: 'Dialysis Stations'
+            },
+            {
+              value: '6 days',
+              label: 'Weekly Operation'
+            },
+            {
+              value: '95%',
+              label: 'Treatment Efficacy'
+            },
+            {
+              value: '500+',
+              label: 'Patients Served Monthly'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Nephrology Team',
+          members: [
+            {
+              name: 'Dr. Anindya Biswas',
+              role: 'Nephrologist',
+              credentials: 'MBBS, DNB,DrNB(NEFROLOGY), DEPARTMENT OF NEFROLOGY',
+              image: '/doctors/dr-anindya-biswas.webp',
+              specialty: 'Chronic Kidney Disease'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Dialysis Facilities',
+          description: 'Our unit features advanced dialysis technology in a patient-centered environment.',
+          features: [
+            'High-flux dialysis machines',
+            'Ultrapure water system',
+            'Individual TV monitors',
+            'Comfortable recliners',
+            'Emergency response system'
+          ],
+          image: '/dialysis-unit.webp'
+        },
+
+        research: {
+          title: 'Renal Research',
+          items: [
+            {
+              title: 'Vascular Access',
+              content: 'Improving fistula longevity and function.',
+              icon: 'heart-pulse'
+            },
+            {
+              title: 'Dialysis Adequacy',
+              content: 'Optimizing treatment protocols.',
+              icon: 'vial'
+            },
+            {
+              title: 'Anemia Management',
+              content: 'Reducing transfusion requirements.',
+              icon: 'droplet'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The dialysis staff feels like family. They know exactly how to make my treatments comfortable.',
+              author: 'Mahesh K.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'After my kidney failure, their expert care gave me back my quality of life.',
+              author: 'Priya R.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Renal Care Services',
+          subtitle: 'Schedule dialysis treatments or consult with our nephrology team.',
+          buttons: [
+            {
+              text: 'Book Dialysis',
+              isPrimary: true
+            },
+            {
+              text: 'Learn About Options',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'radiology',
+        index: 16,
+        name: 'Radiology',
+        slug: 'radiology',
+        heroImage: '/radiology-hero.webp',
+        heroTitle: 'Comprehensive Radiology Services',
+        heroSubtitle: 'Advanced diagnostic and interventional radiology in Gorakhpur.',
+        isFeatured: false,
+
+        overview: {
+          title: 'Our Radiology Approach',
+          description: [
+            'The Radiology Department at Synergy Super Speciality Hospital provides both diagnostic and therapeutic imaging services.',
+            'Our subspecialty-trained radiologists deliver precise interpretations using cutting-edge imaging technology.'
+          ],
+          whyChooseUs: [
+            'Fellowship-trained radiologists',
+            'Multidisciplinary approach',
+            'Minimally invasive procedures',
+            'Rapid reporting'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Diagnostic Radiology',
+              description: 'X-ray, fluoroscopy and contrast studies for accurate diagnosis.'
+            },
+            {
+              title: 'Interventional Radiology',
+              description: 'Image-guided minimally invasive procedures.'
+            },
+            {
+              title: 'Nuclear Medicine',
+              description: 'Advanced molecular imaging and therapy.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Radiology Statistics',
+          items: [
+            {
+              value: '<2 hrs',
+              label: 'Stat Report Turnaround'
+            },
+            {
+              value: '15+',
+              label: 'Radiology Subspecialties'
+            },
+            {
+              value: '99%',
+              label: 'Procedure Success Rate'
+            },
+            {
+              value: '24/7',
+              label: 'Emergency Coverage'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Radiology Team',
+          members: [
+            {
+              name: 'Dr. Amit Patel',
+              role: 'Interventional Radiologist',
+              credentials: 'M.B.B.S, MD, DNB Radiology',
+              image: '/doctors/dr-amit-patel.webp',
+              specialty: 'Vascular Interventions'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Radiology Facilities',
+          description: 'Our department features comprehensive imaging technology for diagnosis and treatment.',
+          features: [
+            'Digital radiography suites',
+            'Angiography lab',
+            'PET-CT scanner',
+            'Bone densitometry',
+            'Teleradiology capabilities'
+          ],
+          image: '/radiology-lab.webp'
+        },
+
+        research: {
+          title: 'Radiology Research',
+          items: [
+            {
+              title: 'Image-Guided Therapy',
+              content: 'Developing new minimally invasive treatments.',
+              icon: 'syringe'
+            },
+            {
+              title: 'Contrast Optimization',
+              content: 'Reducing contrast media requirements.',
+              icon: 'vial'
+            },
+            {
+              title: 'AI in Radiology',
+              content: 'Implementing machine learning for image analysis.',
+              icon: 'cpu'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The CT-guided biopsy was quick and painless, with precise results that guided my treatment.',
+              author: 'Rahul D.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'Their interventional radiology procedure solved my problem without major surgery.',
+              author: 'Geeta M.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Advanced Radiology Services',
+          subtitle: 'Schedule your imaging study or consult with our radiologists.',
+          buttons: [
+            {
+              text: 'Book Imaging',
+              isPrimary: true
+            },
+            {
+              text: 'Learn About Procedures',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'pathology',
+        index: 17,
+        name: 'Pathology',
+        slug: 'pathology',
+        heroImage: '/pathology-hero.webp',
+        heroTitle: 'Comprehensive Pathology Services',
+        heroSubtitle: 'Precise diagnostic testing for accurate treatment in Gorakhpur.',
+        isFeatured: false,
+
+        overview: {
+          title: 'Our Pathology Approach',
+          description: [
+            'The Pathology Department at Synergy Super Speciality Hospital provides comprehensive laboratory diagnostics.',
+            'Our pathologists deliver accurate and timely results using advanced techniques and quality-controlled processes.'
+          ],
+          whyChooseUs: [
+            'Board-certified pathologists',
+            'CAP-accredited lab',
+            'Rapid turnaround times',
+            'Subspecialty expertise'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Histopathology',
+              description: 'Tissue diagnosis for cancers and other diseases.'
+            },
+            {
+              title: 'Cytopathology',
+              description: 'Cell analysis including Pap smears and FNAC.'
+            },
+            {
+              title: 'Molecular Pathology',
+              description: 'Advanced genetic and molecular testing.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Pathology Statistics',
+          items: [
+            {
+              value: '24 hrs',
+              label: 'Routine Report Time'
+            },
+            {
+              value: '99.8%',
+              label: 'Test Accuracy'
+            },
+            {
+              value: '200+',
+              label: 'Available Tests'
+            },
+            {
+              value: 'NABL',
+              label: 'Accreditation'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Pathology Team',
+          members: [
+            {
+              name: 'Dr. Sunita Rao',
+              role: 'Pathologist',
+              credentials: 'M.B.B.S, MD Pathology',
+              image: '/doctors/dr-sunita-rao.webp',
+              specialty: 'Oncopathology'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Pathology Facilities',
+          description: 'Our laboratory features advanced diagnostic technology with rigorous quality control.',
+          features: [
+            'Automated analyzers',
+            'Immunohistochemistry lab',
+            'Flow cytometry',
+            'Molecular diagnostics',
+            'Digital pathology'
+          ],
+          image: '/pathology-lab.webp'
+        },
+
+        research: {
+          title: 'Pathology Research',
+          items: [
+            {
+              title: 'Cancer Biomarkers',
+              content: 'Identifying new diagnostic markers.',
+              icon: 'dna'
+            },
+            {
+              title: 'Digital Pathology',
+              content: 'Implementing AI for slide analysis.',
+              icon: 'cpu'
+            },
+            {
+              title: 'Liquid Biopsies',
+              content: 'Developing blood-based diagnostics.',
+              icon: 'vial'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The detailed pathology report gave my oncologist exactly the information needed for my treatment plan.',
+              author: 'Arun T.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'Quick and accurate test results helped diagnose my rare condition promptly.',
+              author: 'Meena K.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Precision Diagnostics',
+          subtitle: 'Contact us for pathology services or test result inquiries.',
+          buttons: [
+            {
+              text: 'Request Testing',
+              isPrimary: true
+            },
+            {
+              text: 'Access Results',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'microbiology',
+        index: 18,
+        name: 'Microbiology',
+        slug: 'microbiology',
+        heroImage: '/microbiology-hero.webp',
+        heroTitle: 'Advanced Microbiology Services',
+        heroSubtitle: 'Comprehensive infectious disease diagnostics in Gorakhpur.',
+        isFeatured: false,
+
+        overview: {
+          title: 'Our Microbiology Approach',
+          description: [
+            'The Microbiology Laboratory at Synergy Super Speciality Hospital provides comprehensive infectious disease testing.',
+            'Our team identifies pathogens and provides antimicrobial susceptibility testing to guide effective treatment.'
+          ],
+          whyChooseUs: [
+            'Expert microbiologists',
+            'Rapid diagnostic methods',
+            'Antimicrobial stewardship',
+            'Infection control support'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Culture & Sensitivity',
+              description: 'Identification of pathogens and effective antibiotics.'
+            },
+            {
+              title: 'Molecular Diagnostics',
+              description: 'PCR-based detection of microorganisms.'
+            },
+            {
+              title: 'Serology',
+              description: 'Antibody detection for infectious diseases.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Microbiology Statistics',
+          items: [
+            {
+              value: '48 hrs',
+              label: 'Average Culture Time'
+            },
+            {
+              value: '95%',
+              label: 'Identification Accuracy'
+            },
+            {
+              value: '100+',
+              label: 'Pathogens Tested'
+            },
+            {
+              value: '24/7',
+              label: 'Emergency Testing'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Microbiology Team',
+          members: [
+            {
+              name: 'Dr. Anil Kumar',
+              role: 'Microbiologist',
+              credentials: 'M.B.B.S, MD Microbiology',
+              image: '/doctors/dr-anil-kumar.webp',
+              specialty: 'Antimicrobial Resistance'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Microbiology Facilities',
+          description: 'Our laboratory features advanced technology for comprehensive infectious disease testing.',
+          features: [
+            'Automated culture systems',
+            'MALDI-TOF identification',
+            'Molecular biology lab',
+            'Biosafety level 2 containment',
+            'Antimicrobial susceptibility testing'
+          ],
+          image: '/microbiology-lab.webp'
+        },
+
+        research: {
+          title: 'Microbiology Research',
+          items: [
+            {
+              title: 'Antibiotic Resistance',
+              content: 'Tracking emerging resistance patterns.',
+              icon: 'bacteria'
+            },
+            {
+              title: 'Rapid Diagnostics',
+              content: 'Developing faster identification methods.',
+              icon: 'flask'
+            },
+            {
+              title: 'Hospital Epidemiology',
+              content: 'Studying infection transmission patterns.',
+              icon: 'chart-line'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The microbiology team identified the exact bacteria causing my infection and which antibiotics would work best.',
+              author: 'Sanjay M.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'Their rapid COVID-19 testing helped protect my elderly parents when I developed symptoms.',
+              author: 'Neha S.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Infection Diagnostics',
+          subtitle: 'Contact us for microbiology testing or infection control consultation.',
+          buttons: [
+            {
+              text: 'Request Testing',
+              isPrimary: true
+            },
+            {
+              text: 'View Test Menu',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'biochemistry',
+        index: 19,
+        name: 'Biochemistry',
+        slug: 'biochemistry',
+        heroImage: '/biochemistry-hero.webp',
+        heroTitle: 'Comprehensive Biochemistry Services',
+        heroSubtitle: 'Advanced metabolic and chemical pathology testing in Gorakhpur.',
+        isFeatured: false,
+
+        overview: {
+          title: 'Our Biochemistry Approach',
+          description: [
+            'The Biochemistry Laboratory at Synergy Super Speciality Hospital provides comprehensive metabolic testing.',
+            'Our automated analyzers and quality-controlled processes deliver accurate results for disease diagnosis and monitoring.'
+          ],
+          whyChooseUs: [
+            'Automated analyzers',
+            'Rapid turnaround',
+            'Specialized testing',
+            'Quality assurance'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Routine Chemistry',
+              description: 'Comprehensive metabolic panels and electrolyte analysis.'
+            },
+            {
+              title: 'Endocrinology',
+              description: 'Hormone testing and endocrine function evaluation.'
+            },
+            {
+              title: 'Therapeutic Drug Monitoring',
+              description: 'Medication level testing for optimal dosing.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Biochemistry Statistics',
+          items: [
+            {
+              value: '2 hrs',
+              label: 'Routine Test Turnaround'
+            },
+            {
+              value: '99%',
+              label: 'Analytical Accuracy'
+            },
+            {
+              value: '150+',
+              label: 'Available Tests'
+            },
+            {
+              value: '24/7',
+              label: 'Emergency Testing'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Biochemistry Team',
+          members: [
+            {
+              name: 'Dr. Priya Singh',
+              role: 'Biochemist',
+              credentials: 'M.Sc, PhD Biochemistry',
+              image: '/doctors/dr-priya-singh.webp',
+              specialty: 'Metabolic Disorders'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Biochemistry Facilities',
+          description: 'Our laboratory features state-of-the-art analyzers for precise biochemical testing.',
+          features: [
+            'Automated chemistry analyzers',
+            'Electrolyte analyzers',
+            'HbA1c testing',
+            'Blood gas analysis',
+            'Quality control systems'
+          ],
+          image: '/biochemistry-lab.webp'
+        },
+
+        research: {
+          title: 'Biochemistry Research',
+          items: [
+            {
+              title: 'Cardiac Markers',
+              content: 'Evaluating new biomarkers for heart disease.',
+              icon: 'heart-pulse'
+            },
+            {
+              title: 'Diabetes Monitoring',
+              content: 'Improving glycemic control assessment.',
+              icon: 'vial'
+            },
+            {
+              title: 'Automation',
+              content: 'Enhancing laboratory efficiency.',
+              icon: 'cpu'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The comprehensive metabolic panel gave my doctor a complete picture of my health status.',
+              author: 'Rakesh B.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'Accurate and timely test results helped adjust my diabetes medication perfectly.',
+              author: 'Anita L.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Metabolic Testing',
+          subtitle: 'Contact us for biochemistry testing or result inquiries.',
+          buttons: [
+            {
+              text: 'Request Tests',
+              isPrimary: true
+            },
+            {
+              text: 'View Test Prep',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+      {
+        id: 'pain-and-palliative-care',
+        index: 20,
+        name: 'Pain & Palliative Care',
+        slug: 'pain-and-palliative-care',
+        heroImage: '/fallback-image.webp',
+        heroTitle: 'Compassionate Pain Management & Palliative Care',
+        heroSubtitle: 'Specialized care for chronic pain and serious illness in Gorakhpur.',
+        isFeatured: true,
+
+        overview: {
+          title: 'Our Palliative Approach',
+          description: [
+            'The Pain & Palliative Care department at Synergy Super Speciality Hospital provides comprehensive care for patients with chronic pain and life-limiting illnesses.',
+            'Our interdisciplinary team focuses on improving quality of life through expert pain management, symptom control, and psychosocial support for patients and families.'
+          ],
+          whyChooseUs: [
+            'Board-certified pain specialists',
+            'Personalized treatment plans',
+            'Holistic approach to symptom management',
+            'Emotional and spiritual support services'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Chronic Pain Management',
+              description: 'Multimodal approaches for persistent pain conditions'
+            },
+            {
+              title: 'Symptom Control',
+              description: 'Expert management of pain, nausea, fatigue and other symptoms'
+            },
+            {
+              title: 'End-of-Life Care',
+              description: 'Compassionate care focused on comfort and dignity'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Palliative Care Statistics',
+          items: [
+            {
+              value: '90%',
+              label: 'Patients Report Improved Pain Control'
+            },
+            {
+              value: '24/7',
+              label: 'On-Call Support Available'
+            },
+            {
+              value: '98%',
+              label: 'Family Satisfaction Rate'
+            },
+            {
+              value: '50+',
+              label: 'Pain Management Protocols'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our Palliative Care Team',
+          members: [
+            {
+              name: 'Dr. Anjali Verma',
+              role: 'Palliative Care Specialist',
+              credentials: 'M.B.B.S, MD (Pain Medicine), Fellowship in Palliative Care',
+              image: '/doctors/dr-anjali-verma.webp',
+              specialty: 'Cancer Pain Management'
+            },
+            {
+              name: 'Dr. Rajiv Khanna',
+              role: 'Pain Management Physician',
+              credentials: 'M.B.B.S, DA, FIPM',
+              image: '/doctors/dr-rajiv-khanna.webp',
+              specialty: 'Interventional Pain Procedures'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Palliative Care Facilities',
+          description: 'Our department provides a healing environment with specialized equipment for comprehensive pain and symptom management.',
+          features: [
+            'Dedicated pain management clinic',
+            'Procedure room for nerve blocks',
+            'Comfortable family consultation rooms',
+            'Palliative care inpatient unit',
+            '24/7 pain management support'
+          ],
+          image: '/fallback-image.webp'
+        },
+
+        research: {
+          title: 'Pain Medicine Research',
+          items: [
+            {
+              title: 'Novel Analgesics',
+              content: 'Studying new approaches to opioid-sparing pain control.',
+              icon: 'flask'
+            },
+            {
+              title: 'Quality of Life Metrics',
+              content: 'Developing better measurement tools for palliative outcomes.',
+              icon: 'chart-line'
+            },
+            {
+              title: 'Interventional Techniques',
+              content: 'Researching minimally invasive pain procedures.',
+              icon: 'microscope'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'After years of chronic back pain, the team developed a plan that finally gave me relief and my life back.',
+              author: 'Vikram S.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'The compassionate care my mother received in her final days brought comfort to our whole family.',
+              author: 'Priya K.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Compassionate Care When You Need It Most',
+          subtitle: 'Consultations available for pain management and palliative care services.',
+          buttons: [
+            {
+              text: 'Schedule Consultation',
+              isPrimary: true
+            },
+            {
+              text: 'Learn About Our Approach',
               isPrimary: false
             }
           ]

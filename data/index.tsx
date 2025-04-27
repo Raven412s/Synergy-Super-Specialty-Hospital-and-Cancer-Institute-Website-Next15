@@ -15,11 +15,40 @@ import { CancerPrevention } from "@/components/Modules/health-library/patient-ed
 import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging"
 import { NutritionAndWellness } from "@/components/Modules/health-library/patient-education/NutritionAndWellness"
 import { TreatmentOptions } from "@/components/Modules/health-library/patient-education/TreatmentOptions"
+import { AdrenalCancer } from "@/components/Modules/health-library/types-of-cancer/AdrenalCancer"
+import { AnalCancer } from "@/components/Modules/health-library/types-of-cancer/AnalCancer"
+import { BileDuctCancer } from "@/components/Modules/health-library/types-of-cancer/BileDuctCancer"
+import { BladderCancer } from "@/components/Modules/health-library/types-of-cancer/BladderCancer"
 import { BloodCancer } from "@/components/Modules/health-library/types-of-cancer/BloodCancer"
+import { BoneCancer } from "@/components/Modules/health-library/types-of-cancer/BoneCancer"
+import { BrainCancer } from "@/components/Modules/health-library/types-of-cancer/BrainCancer"
 import { BreastCancer } from "@/components/Modules/health-library/types-of-cancer/BreastCancer"
+import { BreastCancerInMen } from "@/components/Modules/health-library/types-of-cancer/BreastCancerInMen"
 import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer"
+import { ColonRectalCancer } from "@/components/Modules/health-library/types-of-cancer/ColonRectalCancer"
+import { EndometrialCancer } from "@/components/Modules/health-library/types-of-cancer/EndometrialCancer"
+import { EsophagealCancer } from "@/components/Modules/health-library/types-of-cancer/EsophagealCancer"
+import { EyeCancer } from "@/components/Modules/health-library/types-of-cancer/EyeCancer"
+import { GallbladderCancer } from "@/components/Modules/health-library/types-of-cancer/GallbladderCancer"
+import { GastricCancer } from "@/components/Modules/health-library/types-of-cancer/GastricCancer"
+import { HeadAndNeckCancer } from "@/components/Modules/health-library/types-of-cancer/HeadAndNeckCancer"
+import { KidneyCancer } from "@/components/Modules/health-library/types-of-cancer/KidneyCancer"
+import { LaryngealCancer } from "@/components/Modules/health-library/types-of-cancer/LaryngealCancer"
+import { LiverCancer } from "@/components/Modules/health-library/types-of-cancer/LiverCancer"
 import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer"
+import { MultipleMyeloma } from "@/components/Modules/health-library/types-of-cancer/MultipleMyeloma"
+import { NeuroendocrineTumors } from "@/components/Modules/health-library/types-of-cancer/NeuroendocrineTumors"
+import { NonHodgkinLymphoma } from "@/components/Modules/health-library/types-of-cancer/NonHodgkinLymphoma"
+import { OralCancer } from "@/components/Modules/health-library/types-of-cancer/OralCancer"
+import { OvarianCancer } from "@/components/Modules/health-library/types-of-cancer/OvarianCancer"
+import { PancreaticCancer } from "@/components/Modules/health-library/types-of-cancer/PancreaticCancer"
+import { PenileCancer } from "@/components/Modules/health-library/types-of-cancer/PenileCancer"
+import { PituitaryTumors } from "@/components/Modules/health-library/types-of-cancer/PituitaryTumors"
 import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer"
+import { SalivaryGlandCancer } from "@/components/Modules/health-library/types-of-cancer/SalivaryGlandCancer"
+import { SkinCancer } from "@/components/Modules/health-library/types-of-cancer/SkinCancer"
+import { StomachCancer } from "@/components/Modules/health-library/types-of-cancer/StomachCancer"
+import { UterineCancer } from "@/components/Modules/health-library/types-of-cancer/UterineCancer"
 import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare"
 import HealthChecks from "@/components/Modules/patient-care/HealthChecks"
 import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities"
@@ -31,10 +60,14 @@ import SingleServicePage from "@/components/Modules/services/SingleServicePage"
 import BloodBank from "@/components/Modules/services/support-services/BloodBank"
 import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging"
 import { Dialysis } from "@/components/Modules/services/support-services/Dialysis"
+import { Dietary } from "@/components/Modules/services/support-services/Dietary"
+import { HouseKeeping } from "@/components/Modules/services/support-services/HouseKeeping"
 
 import { Laboratory } from "@/components/Modules/services/support-services/Laboratory"
+import { Laundry } from "@/components/Modules/services/support-services/Laundry"
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
 import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
+import { Security } from "@/components/Modules/services/support-services/Security"
 import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
 import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
 import { Ambulance } from "lucide-react"
@@ -113,6 +146,8 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Gynecology & Obstetrics", href: "/services/gynecology" },
                     { label: "Head & Neck", href: "/services/head-and-neck" },
                     { label: "Emergency & Critical Care", href: "/services/emergency-and-critical-care" },
+                    { label: "Pain & Palliative Care", href: "/services/pain-and-palliative-care" },
+
                     { label: "View All", href: "/services/all" },
 
                     // { label: "Radiation Oncology", href: "/services/radiation-oncology" },
@@ -134,14 +169,47 @@ export const menuItems: MenuItemProps[] = [
             {
                 name: "Support Services",
                 links: [
-                    { label: "Diagnostic Imaging", href: "/services/diagnostic-imaging" },
-                    { label: "Laboratory Services", href: "/services/laboratory" },
                     { label: "Pharmacy", href: "/services/pharmacy" },
-                    { label: "Physiotherapy", href: "/services/physiotherapy" },
                     { label: "Blood Bank", href: "/services/blood-bank" },
-                    { label: "Dialysis Unit", href: "/services/dialysis" },
+                    { label: "Dietary", href: "/services/dietary" },
+                    { label: "Laundry", href: "/services/laundry" },
+                    { label: "House Keeping", href: "/services/house-keeping" },
+                    { label: "Security", href: "/services/Security" },
                     { label: "Ambulance Services", href: "/services/ambulance" },
                     { label: "View All", href: "/services/support-services" }
+                ]
+            },
+            {
+                name: "Diagnostic Services",
+                links: [
+                    { label: "Diagnostic Imaging", href: "/services/diagnostic-imaging" },
+                    { label: "Dialysis Unit", href: "/services/dialysis" },
+                    { label: "Radiology", href: "/services/radiology" },
+                    { label: "Pathology", href: "/services/pathology" },
+                    { label: "Microbiology", href: "/services/microbiology" },
+                    { label: "Biochemistry", href: "/services/biochemistry" },
+                    { label: "View All", href: "/services/diagnostic-services" }
+                ]
+            },
+            {
+                name: "Specialized Services",
+                links: [
+                    { label: "ICU (Intensive Care Unit)", href: "/services/icu" },
+                    { label: "NICU (Neonatal Intensive Care Unit)", href: "/services/nicu" },
+                    { label: "OT (Operation Theater)", href: "/services/operation-theater" },
+                    { label: "Endoscopy", href: "/services/endoscopy" },
+                    { label: "Physiotherapy", href: "/services/physiotherapy" },
+                    { label: "View All", href: "/services/specialized-services" }
+                ]
+            },
+            {
+                name: "Administrative Services",
+                links: [
+                    { label: "Admission & Discharge", href: "/services/admission-and-discharge" },
+                    { label: "Billing & Insurance", href: "/services/billing-and-insurance" },
+                    { label: "Medical Records", href: "/services/medical-records" },
+                    { label: "Customer Service", href: "/services/customer-care" },
+                    { label: "View All", href: "/services/administrative-services" }
                 ]
             },
             {
@@ -163,11 +231,40 @@ export const menuItems: MenuItemProps[] = [
             {
                 name: "Cancer Types",
                 links: [
-                    { label: "Breast Cancer", href: "/health-library/breast-cancer" },
-                    { label: "Lung Cancer", href: "/health-library/lung-cancer" },
+                    { label: "Adrenal Cancer", href: "/health-library/adrenal-cancer" },
+                    { label: "Anal Cancer", href: "/health-library/anal-cancer" },
+                    { label: "Bile Duct Cancer", href: "/health-library/bile-duct-cancer" },
+                    { label: "Bladder Cancer", href: "/health-library/bladder-cancer" },
                     { label: "Blood Cancer", href: "/health-library/blood-cancer" },
-                    { label: "Prostate Cancer", href: "/health-library/prostate-cancer" },
+                    { label: "Bone Cancer", href: "/health-library/bone-cancer" },
+                    { label: "Brain Cancer", href: "/health-library/brain-cancer" },
+                    { label: "Breast Cancer", href: "/health-library/breast-cancer" },
+                    { label: "Breast Cancer in Men", href: "/health-library/breast-cancer-in-men" },
                     { label: "Cervical Cancer", href: "/health-library/cervical-cancer" },
+                    { label: "Colon/Rectal Cancer", href: "/health-library/colon-rectal-cancer" },
+                    { label: "Endometrial Cancer", href: "/health-library/endometrial-cancer" },
+                    { label: "Esophageal Cancer", href: "/health-library/esophageal-cancer" },
+                    { label: "Eye Cancer", href: "/health-library/eye-cancer" },
+                    { label: "Gallbladder Cancer", href: "/health-library/gallbladder-cancer" },
+                    { label: "Gastric Cancer", href: "/health-library/gastric-cancer" },
+                    { label: "Head and Neck Cancer", href: "/health-library/head-and-neck-cancer" },
+                    { label: "Kidney Cancer", href: "/health-library/kidney-cancer" },
+                    { label: "Laryngeal Cancer", href: "/health-library/laryngeal-cancer" },
+                    { label: "Liver Cancer", href: "/health-library/liver-cancer" },
+                    { label: "Lung Cancer", href: "/health-library/lung-cancer" },
+                    { label: "Multiple Myeloma", href: "/health-library/multiple-myeloma" },
+                    { label: "Neuroendocrine Tumors", href: "/health-library/neuroendocrine-tumors" },
+                    { label: "Non-Hodgkin Lymphoma", href: "/health-library/non-hodgkin-lymphoma" },
+                    { label: "Oral Cancer", href: "/health-library/oral-cancer" },
+                    { label: "Ovarian Cancer", href: "/health-library/ovarian-cancer" },
+                    { label: "Pancreatic Cancer", href: "/health-library/pancreatic-cancer" },
+                    { label: "Penile Cancer", href: "/health-library/penile-cancer" },
+                    { label: "Pituitary Tumors", href: "/health-library/pituitary-tumors" },
+                    { label: "Prostate Cancer", href: "/health-library/prostate-cancer" },
+                    { label: "Salivary Gland Cancer", href: "/health-library/salivary-gland-cancer" },
+                    { label: "Skin Cancer", href: "/health-library/skin-cancer" },
+                    { label: "Stomach Cancer", href: "/health-library/stomach-cancer" },
+                    { label: "Uterine Cancer", href: "/health-library/uterine-cancer" },
                 ],
             },
             {
@@ -761,6 +858,7 @@ export const ServicesMap = {
     "gynecology": <SingleServicePage />,
     "head-and-neck": <SingleServicePage />,
     "emergency-and-critical-care": <SingleServicePage />,
+    "pain-and-palliative-care": <SingleServicePage />,
     "all": <ServicesPage />,
     // "cardiology": <SingleServicePage />,
     // "hepatology": <SingleServicePage />,
@@ -774,14 +872,38 @@ export const ServicesMap = {
     // "psychiatry": <SingleServicePage />,
 
     // Support Services
-    "diagnostic-imaging": <DiagnosticImaging />,
-    laboratory: <Laboratory />,
     pharmacy: <Pharmacy />,
-    physiotherapy: <Physiotherapy />,
     "blood-bank": <BloodBank />,
-    "dialysis": <Dialysis />,
+    "dietary": <Dietary />,
+    "laundry": <Laundry />,
+    "house-keeping": <HouseKeeping />,
+    "security": <Security />,
     ambulance: <Ambulance />,
-    "support-services" : <SupportServicesPage/>
+    "support-services" : <SupportServicesPage/>,
+
+    // Diagnostic Services
+    "diagnostic-imaging" : <SingleServicePage/>,
+    "dialysis" : <SingleServicePage/>,
+    "radiology" : <SingleServicePage/>,
+    "pathology" : <SingleServicePage/>,
+    "microbiology" : <SingleServicePage/>,
+    "biochemistry" : <SingleServicePage/>,
+    "diagonostic-services" : <SingleServicePage/>,
+
+    // Specialized Services
+    "icu" : <DiagnosticImaging/>,
+    "nicu" : <Physiotherapy/>,
+    "operation-theater" : <Dialysis/>,
+    "endoscopy" : <Dialysis/>,
+    "physiotherapy" : <Physiotherapy/>,
+    "specialized-services" : <Dialysis/>,
+
+    // Specialized Services
+    "admission-and-discharge" : <DiagnosticImaging/>,
+    "billing-and-insurance" : <Physiotherapy/>,
+    "medical-records" : <Dialysis/>,
+    "customer-care" : <Dialysis/>,
+    "administrative-services" : <Dialysis/>,
 }
 
 export const PatientCareMap = {
@@ -799,6 +921,35 @@ export const HealthLibraryMap = {
     "lung-cancer": <LungCancer />,
     "cervical-cancer": <CervicalCancer />,
     "blood-cancer": <BloodCancer />,
+    "adrenal-cancer": <AdrenalCancer />,
+    "anal-cancer": <AnalCancer />,
+    "bile-duct-cancer": <BileDuctCancer />,
+    "bladder-cancer": <BladderCancer />,
+    "bone-cancer": <BoneCancer />,
+    "brain-cancer": <BrainCancer />,
+    "breast-cancer-in-men": <BreastCancerInMen />,
+    "colon-rectal-cancer": <ColonRectalCancer />,
+    "endometrial-cancer": <EndometrialCancer />,
+    "esophageal-cancer": <EsophagealCancer />,
+    "eye-cancer": <EyeCancer />,
+    "gallbladder-cancer": <GallbladderCancer />,
+    "gastric-cancer": <GastricCancer />,
+    "head-and-neck-cancer": <HeadAndNeckCancer />,
+    "kidney-cancer": <KidneyCancer />,
+    "laryngeal-cancer": <LaryngealCancer />,
+    "liver-cancer": <LiverCancer />,
+    "multiple-myeloma": <MultipleMyeloma />,
+    "neuroendocrine-tumors": <NeuroendocrineTumors />,
+    "non-hodgkin-lymphoma": <NonHodgkinLymphoma />,
+    "oral-cancer": <OralCancer />,
+    "ovarian-cancer": <OvarianCancer />,
+    "pancreatic-cancer": <PancreaticCancer />,
+    "penile-cancer": <PenileCancer />,
+    "pituitary-tumors": <PituitaryTumors />,
+    "salivary-gland-cancer": <SalivaryGlandCancer />,
+    "skin-cancer": <SkinCancer />,
+    "stomach-cancer": <StomachCancer />,
+    "uterine-cancer": <UterineCancer />,
     prevention: <CancerPrevention />,
     diagnosis: <DiagnosisAndStaging />,
     treatments: <TreatmentOptions />,

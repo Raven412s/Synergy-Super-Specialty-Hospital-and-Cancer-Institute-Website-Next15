@@ -13,7 +13,7 @@ export const Homepage = () => {
     return (
         <main className="w-full flex flex-col items-center justify-center">
             {/* Hero Section with Video */}
-            <section id="banner" className="relative min-h-screen w-full mb-5">
+            <section id="banner" className="relative min-h-screen w-full ">
                 <video
                     autoPlay
                     loop
@@ -36,7 +36,7 @@ export const Homepage = () => {
                 </div>
             </section>
 
-            <div className="w-screen text-white">
+            <div className="w-screen text-black p-5 ">
                 {/* Ayushmaan Bharat */}
                 <AyushmaanBharatCard />
             </div>

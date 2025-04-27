@@ -109,7 +109,7 @@ export function Navbar() {
                   {item.label}
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className="max-w-screen !min-w-screen bg-white p-0 border-none !rounded-none min-h-[428px] h-full">
+                <NavigationMenuContent className="max-w-screen !min-w-screen bg-white p-0 border-none !rounded-none min-h-[478px] h-full">
                   <AnimatePresence>
                     <motion.div
                       initial="hidden"
@@ -150,12 +150,12 @@ export function Navbar() {
                           >
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                               {Array.from({
-                                length: Math.ceil(item.pages[activePageIndex]?.links.length / 8),
+                                length: Math.ceil(item.pages[activePageIndex]?.links.length / 12),
                               }).map((_, colIndex) => {
-                                const start = colIndex * 8;
+                                const start = colIndex * 12;
                                 const columnLinks = item.pages[activePageIndex]?.links.slice(
                                   start,
-                                  start + 8
+                                  start + 12
                                 );
 
                                 return (
@@ -168,7 +168,7 @@ export function Navbar() {
                                       <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="hover:underline font-medium w-max block text-sm bg-indigo-400 text-white py-1 px-4 rounded-full"
+                                        className="hover:underline font-medium w-max block text-sm bg-indigo-400 text-white py-1 px-4 rounded-full hover:bg-indigo-600 duration-500 transition-colors"
                                       >
                                          {link.label}
                                       </Link>
@@ -182,7 +182,7 @@ export function Navbar() {
                           {/* RIGHT: Quick Links */}
                           <motion.div
                             variants={itemVariants}
-                            className="w-2/8 p-4 space-y-4 bg-fuchsia-50 overflow-y-auto max-h-[428px]"
+                            className="w-2/8 p-4 space-y-4 bg-fuchsia-50 overflow-y-auto max-h-[478px]"
                           >
                             <h4 className="font-semibold text-gray-700">Quick Links</h4>
                             {quickLinks.map((qLink) => (

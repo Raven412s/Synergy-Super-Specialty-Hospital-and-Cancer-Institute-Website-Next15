@@ -558,3 +558,296 @@ export const diagnosticImagingData : SupportServiceProps= {
       ]
     }
   }
+
+  export const dietaryData: SupportServiceProps = {
+    heroImage: "/dietary-hero.jpg",
+    title: "Dietary Services",
+    description: "Nutritional care for health and recovery",
+    services: [
+      {
+        id: "meal-planning",
+        title: "Meal Planning",
+        description: "Customized nutrition plans",
+        icon: "/icons/meal-plan.svg",
+        details: "Dietitian-designed meals for specific health conditions",
+        commonUses: ["Diabetes management", "Cardiac diets", "Post-surgical nutrition"]
+      },
+      {
+        id: "therapeutic-diets",
+        title: "Therapeutic Diets",
+        description: "Specialized meal preparation",
+        icon: "/icons/nutrition.svg",
+        details: "Meals tailored to medical requirements",
+        commonUses: ["Renal diets", "Pureed diets", "Allergy-safe meals"]
+      }
+    ],
+    preparationTips: [
+      "Consult with dietitian",
+      "Provide medical history",
+      "Communicate food preferences",
+      "Note any allergies",
+      "Follow meal schedule"
+    ],
+    whyChoose: {
+      title: "Why Our Dietary Service?",
+      items: [
+        {
+          badge: "1",
+          title: "Certified Dietitians",
+          description: "Board-certified nutrition experts"
+        },
+        {
+          badge: "2",
+          title: "Fresh Ingredients",
+          description: "Daily prepared meals from local sources"
+        },
+        {
+          badge: "3",
+          title: "Customized Plans",
+          description: "Personalized for health conditions"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Can family members order meals?",
+        answer: "Yes, guest meals are available for purchase"
+      },
+      {
+        question: "How are special dietary needs accommodated?",
+        answer: "Our dietitians create individualized meal plans"
+      }
+    ],
+    cta: {
+      title: "Nutritional Support",
+      description: "Helping patients heal through proper nutrition",
+      buttons: [
+        {
+          text: "Dietitian: 123-789-4561",
+          variant: "default",
+          onClick: () => {console.log("Dietary consultation")}
+        }
+      ]
+    }
+  }
+
+  export const laundryData: SupportServiceProps = {
+    heroImage: "/laundry-hero.jpg",
+    title: "Laundry Services",
+    description: "Professional cleaning for patient comfort",
+    services: [
+      {
+        id: "linen-service",
+        title: "Linen Service",
+        description: "Bedding and gown cleaning",
+        icon: "/icons/bed-linen.svg",
+        details: "Sanitary processing of all hospital linens",
+        commonUses: ["Bed sheets", "Patient gowns", "Blankets"]
+      },
+      {
+        id: "personal-laundry",
+        title: "Personal Laundry",
+        description: "Patient clothing care",
+        icon: "/icons/t-shirt.svg",
+        details: "Gentle cleaning of personal items",
+        commonUses: ["Everyday clothing", "Robes", "Special garments"]
+      }
+    ],
+    preparationTips: [
+      "Label personal items",
+      "Separate delicate fabrics",
+      "Note special washing instructions",
+      "Use provided laundry bags",
+      "Request pickup schedule"
+    ],
+    whyChoose: {
+      title: "Why Our Laundry Service?",
+      items: [
+        {
+          badge: "1",
+          title: "Hygienic Processing",
+          description: "Hospital-grade sanitation standards"
+        },
+        {
+          badge: "2",
+          title: "Quick Turnaround",
+          description: "Same-day service available"
+        },
+        {
+          badge: "3",
+          title: "Eco-Friendly",
+          description: "Green cleaning products used"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "How are linens sanitized?",
+        answer: "High-temperature washing with medical-grade detergents"
+      },
+      {
+        question: "Can family use the laundry service?",
+        answer: "Yes, for a small fee"
+      }
+    ],
+    cta: {
+      title: "Laundry Assistance",
+      description: "Keeping patients comfortable with clean linens",
+      buttons: [
+        {
+          text: "Laundry: 123-789-4562",
+          variant: "default",
+          onClick: () => {console.log("Laundry service")}
+        }
+      ]
+    }
+  }
+
+  export const housekeepingData: SupportServiceProps = {
+    heroImage: "/housekeeping-hero.jpg",
+    title: "Housekeeping Services",
+    description: "Maintaining a clean and safe environment",
+    services: [
+      {
+        id: "room-cleaning",
+        title: "Room Cleaning",
+        description: "Daily sanitation service",
+        icon: "/icons/cleaning.svg",
+        details: "Thorough disinfection of patient areas",
+        commonUses: ["Patient rooms", "Bathrooms", "Common areas"]
+      },
+      {
+        id: "waste-management",
+        title: "Waste Management",
+        description: "Medical waste disposal",
+        icon: "/icons/trash.svg",
+        details: "Safe handling of biohazard materials",
+        commonUses: ["Sharps containers", "Biohazard bags", "Recycling"]
+      }
+    ],
+    preparationTips: [
+      "Secure personal items",
+      "Report spills immediately",
+      "Use call button for requests",
+      "Keep walkways clear",
+      "Dispose waste properly"
+    ],
+    whyChoose: {
+      title: "Why Our Housekeeping?",
+      items: [
+        {
+          badge: "1",
+          title: "Trained Staff",
+          description: "Infection control certified"
+        },
+        {
+          badge: "2",
+          title: "24/7 Service",
+          description: "Round-the-clock availability"
+        },
+        {
+          badge: "3",
+          title: "Eco-Conscious",
+          description: "Green cleaning practices"
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "How often are rooms cleaned?",
+        answer: "Daily deep cleaning with spot cleaning as needed"
+      },
+      {
+        question: "What cleaning products are used?",
+        answer: "Hospital-grade, EPA-approved disinfectants"
+      }
+    ],
+    cta: {
+      title: "Clean Environment Matters",
+      description: "Dedicated to your health and safety",
+      buttons: [
+        {
+          text: "Housekeeping: 123-789-4563",
+          variant: "default",
+          onClick: () => {console.log("Housekeeping request")}
+        }
+      ]
+    }
+  }
+
+  export const securityData: SupportServiceProps = {
+  heroImage: "/security-hero.jpg",
+  title: "Security Services",
+  description: "Ensuring a safe environment for all",
+  services: [
+    {
+      id: "patrols",
+      title: "Facility Patrols",
+      description: "24/7 monitoring",
+      icon: "/icons/security-camera.svg",
+      details: "Regular rounds of all hospital areas",
+      commonUses: ["Building security", "Parking lot safety", "Emergency response"]
+    },
+    {
+      id: "access-control",
+      title: "Access Control",
+      description: "Restricted area management",
+      icon: "/icons/id-card.svg",
+      details: "Secure entry to sensitive locations",
+      commonUses: ["NICU access", "Pharmacy security", "Staff areas"]
+    }
+  ],
+  preparationTips: [
+    "Wear visible ID at all times",
+    "Report suspicious activity",
+    "Don't prop open secure doors",
+    "Park in well-lit areas",
+    "Secure personal belongings"
+  ],
+  whyChoose: {
+    title: "Why Our Security?",
+    items: [
+      {
+        badge: "1",
+        title: "Trained Officers",
+        description: "Law enforcement experienced personnel"
+      },
+      {
+        badge: "2",
+        title: "Rapid Response",
+        description: "90-second emergency response time"
+      },
+      {
+        badge: "3",
+        title: "Comprehensive Coverage",
+        description: "Camera monitoring and physical patrols"
+      }
+    ]
+  },
+  faqs: [
+    {
+      question: "How do I report a security concern?",
+      answer: "Use any emergency phone or contact the front desk"
+    },
+    {
+      question: "Are weapons allowed on premises?",
+      answer: "Only by authorized law enforcement personnel"
+    }
+  ],
+  cta: {
+    title: "Your Safety First",
+    description: "Dedicated to protecting patients, staff and visitors",
+    buttons: [
+      {
+        text: "Emergency: 911",
+        variant: "default",
+        onClick: () => {console.log("Security emergency")}
+      },
+      {
+        text: "Security Office: 123-789-4564",
+        variant: "outline",
+        onClick: () => {console.log("Security non-emergency")}
+      }
+    ]
+  }
+}
