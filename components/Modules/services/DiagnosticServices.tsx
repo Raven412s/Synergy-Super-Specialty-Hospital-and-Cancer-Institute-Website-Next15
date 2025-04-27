@@ -76,15 +76,15 @@ export default function DiagnosticServices() {
                 {diagnosticServices.map((service) => (
                     <Card
                         key={service.id}
-                        className="flex flex-col h-full hover:shadow-lg transition-shadow duration-300"
+                        className="flex flex-col h-full hover:shadow-lg transition-shadow duration-300 px-4"
                     >
-                        <div className="relative w-full h-48 bg-blue-300">
+                        <div className="relative w-full h-48 bg-blue-300 ">
                             <ImageWithFallback
                                 fallbackSrc="/fallback-image.webp"
                                 src={service.image}
                                 alt={service.title}
                                 fill
-                                className="object-cover rounded-t-lg"
+                                className="object-cover  "
                             />
                         </div>
                         <div className="flex flex-col flex-1 justify-between">
