@@ -1,11 +1,9 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { Kantumruy_Pro } from 'next/font/google';
 import "./globals.css";
-import { setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 
 const nunito = Kantumruy_Pro({
     subsets: ['latin'],

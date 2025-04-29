@@ -125,11 +125,11 @@ export const menuItems: MenuItemProps[] = [
             {
                 name: "Specialized Services",
                 links: [
-                    { label: "ICU (Intensive Care Unit)", href: "/services/icu" },
-                    { label: "NICU (Neonatal Intensive Care Unit)", href: "/services/nicu" },
-                    { label: "OT (Operation Theater)", href: "/services/operation-theater" },
-                    { label: "Endoscopy", href: "/services/endoscopy" },
-                    { label: "Physiotherapy", href: "/services/physiotherapy" },
+                    { label: "ICU (Intensive Care Unit)", href: "/services/specialized-services#icu" },
+                    { label: "NICU (Neonatal Intensive Care Unit)", href: "/services/specialized-services#nicu" },
+                    { label: "OT (Operation Theater)", href: "/services/specialized-services#ot" },
+                    { label: "Endoscopy", href: "/services/specialized-services#endoscopy" },
+                    { label: "Physiotherapy", href: "/services/specialized-services#physiotherapy" },
                     { label: "View All", href: "/services/specialized-services" }
                 ]
             },
@@ -811,4 +811,3 @@ export const supportServices = [
         image: "/images/ambulance-services.webp",
     }
 ];
-

@@ -23,8 +23,7 @@ export const Homepage = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                     aria-label="Promotional video showcasing Synergy Hospital"
                 >
-                    <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/v1743251914/baakragdxlbykwpi5ubu.webm" type="video/webm" />
-                    <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/v1743251922/wfi5yxe5wotlvfawbtpw.mp4" type="video/mp4" />
+                    <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/v1745917399/s1c21opqc4tub6p20hr5.webm" type="video/webm" />
                 </video>
                 <FloatingBarWrapper />
                 <div className="absolute bottom-5 w-full flex justify-center px-4">

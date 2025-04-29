@@ -217,3 +217,17 @@ element {
     animation: heartbeat 3s infinite;
     /* Total duration = 3s (1s for beats + 2s pause) */
   }
+
+  @layer utilities {
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Disable parallax on mobile */
+    @media (max-width: 768px) {
+      .disable-parallax {
+        transform: none !important;
+      }
+    }
+  }

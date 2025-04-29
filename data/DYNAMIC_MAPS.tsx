@@ -1,39 +1,30 @@
 // MAPS FOR DYNAMIC PAGES
 
-import LeadershipPage from "@/components/Modules/discover-synergy/leadership/LeadershipPage"
-import { leaderAlokTiwari, leaderAnjaliJain, leaderSaurabhMishra } from "."
+import { PatientTestimonials } from "@/components/homepage/PatientTestimonials"
+import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns"
+import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer"
+import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of-hope/VictoryStories"
+import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-hope/VideoMessages"
+import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth"
+import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms"
+import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics"
 import { DoctorsPage } from "@/components/Modules/discover-synergy/doctors/DoctorsPage"
-import DepartmentPage from "@/components/Modules/services/SingleServicePage"
-import ServicesPage from "@/components/Modules/services/ServicesPage"
-import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
-import BloodBank from "@/components/Modules/services/support-services/BloodBank"
-import { Dietary } from "@/components/Modules/services/support-services/Dietary"
-import { Laundry } from "@/components/Modules/services/support-services/Laundry"
-import { HouseKeeping } from "@/components/Modules/services/support-services/HouseKeeping"
-import { Security } from "@/components/Modules/services/support-services/Security"
-import Ambulance from "@/components/Modules/services/support-services/Ambulance"
-import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
-import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging"
-import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
-import { Dialysis } from "@/components/Modules/services/support-services/Dialysis"
-import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare"
-import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion"
-import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities"
-import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic"
-import HealthChecks from "@/components/Modules/patient-care/HealthChecks"
-import Insurance from "@/components/Modules/patient-care/Insurance"
-import { BreastCancer } from "@/components/Modules/health-library/types-of-cancer/BreastCancer"
-import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer"
-import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer"
-import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer"
-import { BloodCancer } from "@/components/Modules/health-library/types-of-cancer/BloodCancer"
+import LeadershipPage from "@/components/Modules/discover-synergy/leadership/LeadershipPage"
+import { Faqs } from "@/components/Modules/health-library/faqs/Faqs"
+import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention"
+import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging"
+import { NutritionAndWellness } from "@/components/Modules/health-library/patient-education/NutritionAndWellness"
+import { TreatmentOptions } from "@/components/Modules/health-library/patient-education/TreatmentOptions"
 import { AdrenalCancer } from "@/components/Modules/health-library/types-of-cancer/AdrenalCancer"
 import { AnalCancer } from "@/components/Modules/health-library/types-of-cancer/AnalCancer"
 import { BileDuctCancer } from "@/components/Modules/health-library/types-of-cancer/BileDuctCancer"
 import { BladderCancer } from "@/components/Modules/health-library/types-of-cancer/BladderCancer"
+import { BloodCancer } from "@/components/Modules/health-library/types-of-cancer/BloodCancer"
 import { BoneCancer } from "@/components/Modules/health-library/types-of-cancer/BoneCancer"
 import { BrainCancer } from "@/components/Modules/health-library/types-of-cancer/BrainCancer"
+import { BreastCancer } from "@/components/Modules/health-library/types-of-cancer/BreastCancer"
 import { BreastCancerInMen } from "@/components/Modules/health-library/types-of-cancer/BreastCancerInMen"
+import { CervicalCancer } from "@/components/Modules/health-library/types-of-cancer/CervicalCancer"
 import { ColonRectalCancer } from "@/components/Modules/health-library/types-of-cancer/ColonRectalCancer"
 import { EndometrialCancer } from "@/components/Modules/health-library/types-of-cancer/EndometrialCancer"
 import { EsophagealCancer } from "@/components/Modules/health-library/types-of-cancer/EsophagealCancer"
@@ -44,6 +35,7 @@ import { HeadAndNeckCancer } from "@/components/Modules/health-library/types-of-
 import { KidneyCancer } from "@/components/Modules/health-library/types-of-cancer/KidneyCancer"
 import { LaryngealCancer } from "@/components/Modules/health-library/types-of-cancer/LaryngealCancer"
 import { LiverCancer } from "@/components/Modules/health-library/types-of-cancer/LiverCancer"
+import { LungCancer } from "@/components/Modules/health-library/types-of-cancer/LungCancer"
 import { MultipleMyeloma } from "@/components/Modules/health-library/types-of-cancer/MultipleMyeloma"
 import { NeuroendocrineTumors } from "@/components/Modules/health-library/types-of-cancer/NeuroendocrineTumors"
 import { NonHodgkinLymphoma } from "@/components/Modules/health-library/types-of-cancer/NonHodgkinLymphoma"
@@ -52,24 +44,33 @@ import { OvarianCancer } from "@/components/Modules/health-library/types-of-canc
 import { PancreaticCancer } from "@/components/Modules/health-library/types-of-cancer/PancreaticCancer"
 import { PenileCancer } from "@/components/Modules/health-library/types-of-cancer/PenileCancer"
 import { PituitaryTumors } from "@/components/Modules/health-library/types-of-cancer/PituitaryTumors"
+import { ProstateCancer } from "@/components/Modules/health-library/types-of-cancer/ProstateCancer"
 import { SalivaryGlandCancer } from "@/components/Modules/health-library/types-of-cancer/SalivaryGlandCancer"
 import { SkinCancer } from "@/components/Modules/health-library/types-of-cancer/SkinCancer"
 import { StomachCancer } from "@/components/Modules/health-library/types-of-cancer/StomachCancer"
 import { UterineCancer } from "@/components/Modules/health-library/types-of-cancer/UterineCancer"
-import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention"
-import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging"
-import { TreatmentOptions } from "@/components/Modules/health-library/patient-education/TreatmentOptions"
-import { NutritionAndWellness } from "@/components/Modules/health-library/patient-education/NutritionAndWellness"
-import { Faqs } from "@/components/Modules/health-library/faqs/Faqs"
-import { PatientTestimonials } from "@/components/homepage/PatientTestimonials"
-import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of-hope/VictoryStories"
-import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-hope/VideoMessages"
-import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth"
-import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms"
-import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics"
-import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer"
-import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns"
+import { EmergencyCare } from "@/components/Modules/patient-care/EmergencyCare"
+import HealthChecks from "@/components/Modules/patient-care/HealthChecks"
+import { InPatientFacilities } from "@/components/Modules/patient-care/InPatientFacilities"
+import Insurance from "@/components/Modules/patient-care/Insurance"
+import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic"
+import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion"
 import DiagnosticServices from "@/components/Modules/services/DiagnosticServices"
+import ServicesPage from "@/components/Modules/services/ServicesPage"
+import DepartmentPage from "@/components/Modules/services/SingleServicePage"
+import SpecializedServices from "@/components/Modules/services/SpecializedServices"
+import Ambulance from "@/components/Modules/services/support-services/Ambulance"
+import BloodBank from "@/components/Modules/services/support-services/BloodBank"
+import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging"
+import { Dialysis } from "@/components/Modules/services/support-services/Dialysis"
+import { Dietary } from "@/components/Modules/services/support-services/Dietary"
+import { HouseKeeping } from "@/components/Modules/services/support-services/HouseKeeping"
+import { Laundry } from "@/components/Modules/services/support-services/Laundry"
+import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
+import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
+import { Security } from "@/components/Modules/services/support-services/Security"
+import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
+import { leaderAlokTiwari, leaderAnjaliJain, leaderSaurabhMishra } from "."
 
 export const LeadershipMap = {
     "Dr-Alok-Tiwari": <LeadershipPage {...leaderAlokTiwari} />,
@@ -132,20 +133,20 @@ export const ServicesMap = {
     "diagnostic-services": <DiagnosticServices />,
 
     // Specialized Services
-    "icu": <DiagnosticImaging />,
-    "nicu": <Physiotherapy />,
-    "operation-theater": <Dialysis />,
-    "endoscopy": <Dialysis />,
-    "physiotherapy": <Physiotherapy />,
-    "specialized-services": <Dialysis />,
+    "specialized-services": <SpecializedServices />,
 
-    // Specialized Services
+    // Administrative Services
     "admission-and-discharge": <DiagnosticImaging />,
     "billing-and-insurance": <Physiotherapy />,
     "medical-records": <Dialysis />,
     "customer-care": <Dialysis />,
     "administrative-services": <Dialysis />,
 }
+
+
+
+
+
 
 export const PatientCareMap = {
     emergency: <EmergencyCare />,
