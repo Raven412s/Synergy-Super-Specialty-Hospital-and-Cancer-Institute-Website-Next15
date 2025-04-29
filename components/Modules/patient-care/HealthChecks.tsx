@@ -1,11 +1,10 @@
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { FaHeartbeat, FaFlask, FaXRay, FaProcedures, FaUserMd } from 'react-icons/fa';
-import Image from 'next/image';
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { FaFlask, FaHeartbeat, FaProcedures, FaUserMd, FaXRay } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
 
 interface Package {
   id: string;
