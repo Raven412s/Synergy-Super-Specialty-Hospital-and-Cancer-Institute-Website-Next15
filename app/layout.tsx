@@ -38,7 +38,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={cn(nunito.variable, nunito_sans.variable, "")}
+        className={cn(nunito.variable, nunito_sans.variable, "m-0 p-0 box-border")}
         suppressContentEditableWarning suppressHydrationWarning
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
