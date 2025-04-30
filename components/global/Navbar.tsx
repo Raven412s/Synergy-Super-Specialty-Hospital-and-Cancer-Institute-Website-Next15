@@ -115,7 +115,7 @@ export function Navbar() {
                 </div>
                 <NavigationMenuList className="w-full flex items-center justify-evenly lg:space-x-4 space-x-0">
                     {menuItems.map((item, index) => (
-                        <React.Fragment key={item.label}>
+                        <React.Fragment key={index}>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger
                                     onMouseEnter={() => setActivePageIndex(0)}

@@ -88,7 +88,7 @@ const SpecializedServices = () => {
             setActiveImageIndex(prev => (prev + 1) % stackedImages.length);
         }, 3000);
         return () => clearInterval(interval);
-    }, []);
+    }, [stackedImages.length]);
 
     // Icon mapping with type safety
     const getIcon = (service: ServiceKey) => {

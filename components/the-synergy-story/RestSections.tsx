@@ -61,7 +61,7 @@ export const RestSections = () => {
                             </div>
 
                             <p className="text-gray-600 italic text-sm text-center max-w-2xl mx-auto">
-                                "These recognitions motivate us to continually raise the bar in patient-centered care."
+                                &quot;These recognitions motivate us to continually raise the bar in patient-centered care.&quot;
                             </p>
                         </div>
                     </div>
@@ -200,7 +200,7 @@ export const RestSections = () => {
                                 </div>
 
                                 <p className="text-gray-600 italic text-sm text-center max-w-2xl mx-auto">
-                                    "Every day at Synergy brings new challenges, new breakthroughs, and most importantly — new hope."
+                                    &quot;Every day at Synergy brings new challenges, new breakthroughs, and most importantly — new hope.&quot;
                                 </p>
                             </div>
                         </div>

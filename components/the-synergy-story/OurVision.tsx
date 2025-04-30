@@ -60,7 +60,7 @@ export const OurVision = () => {
                             <li>Comprehensive services including surgery, chemotherapy, immunotherapy, and palliative care</li>
                         </ul>
 
-                        <p>SSSHCI is more than a medical facility - we're a symbol of hope and resilience in the fight against cancer.</p>
+                        <p>SSSHCI is more than a medical facility - we&apos;re a symbol of hope and resilience in the fight against cancer.</p>
                     </div>
                 </motion.div>
             </div>

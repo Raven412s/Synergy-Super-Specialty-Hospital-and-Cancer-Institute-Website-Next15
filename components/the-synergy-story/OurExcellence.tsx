@@ -41,7 +41,7 @@ export const OurExcellence = () => {
                     >
                         Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) is committed to offering world-class, affordable,
                         and comprehensive cancer care. With a team of passionate oncology specialists and a focus on innovation and empathy,
-                        we provide cutting-edge treatments tailored to each patient's needs.
+                        we provide cutting-edge treatments tailored to each patient&apos;s needs.
                     </motion.p>
                 </div>
 

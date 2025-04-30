@@ -36,7 +36,7 @@ export const OurMission = () => {
                         </p>
 
                         <p>
-                            Our core values, embodied in <strong className="text-primary">"SYNERGY"</strong>, guide our approach:
+                            Our core values, embodied in <strong className="text-primary">&quot;SYNERGY&quot;</strong>, guide our approach:
                             <span className="block mt-1">
                                 <strong className="text-primary">Saviour</strong>, <strong className="text-primary">Youthfully</strong>, <strong className="text-primary">Nirvana</strong>,
                                 <strong className="text-primary"> Excellence</strong>, <strong className="text-primary">Respect</strong>, <strong className="text-primary">Gutsy</strong>, and <strong className="text-primary">Yours</strong>.
