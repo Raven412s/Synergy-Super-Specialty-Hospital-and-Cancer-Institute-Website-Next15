@@ -22,8 +22,8 @@ const PatientSpeaksWrittenTestimonialCard: React.FC<
   return (
     <Card
       className="rounded-2xl
-        max-w-[560px] min-w-[560px]
-        h-[180px] md:h-[220px] lg:h-[280px]
+        max-w-[560px] min-w-[450px]
+        h-[180px] md:h-[220px] lg:h-[240px]
         overflow-hidden bg-gradient-to-t from-slate-100 to-stone-50 border-none m-0 py-0"
     >
       <div className="size-full px-4 py-4 md:px-5 md:py-6 lg:px-6 lg:py-8 shadow-blob rounded-2xl relative space-y-3 md:space-y-4">

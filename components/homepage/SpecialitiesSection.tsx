@@ -12,9 +12,9 @@ export const SpecialitiesSection = () => {
         <section
             id="specialties"
             ref={ref}
-            className="min-h-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-1 sm:px-8 lg:px-20 py-10 flex items-center justify-center flex-col"
+            className=" max-w-screen w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-fuchsia-100 px-1 sm:px-8 lg:px-20 py-10 flex items-center justify-center flex-col"
         >
-            <div className="md:w-full w-screen space-y-4 md:px-10 flex flex-col items-center justify-center ">
+            <div className=" w-screen !max-w-6xl space-y-4 md:px-10 flex flex-col items-center justify-center ">
                 <div className="space-y-4 overflow-hidden w-full">
                     <motion.h1
                         initial={{ x: -100, opacity: 0 }}
@@ -34,7 +34,7 @@ export const SpecialitiesSection = () => {
                     </motion.p>
                 </div>
 
-                <div className="max-w-7xl flex items-center justify-center">
+                <div className="max-w-6xl w-full mx-auto flex items-center justify-center">
                     <SliderWithTriggers />
                 </div>
             </div>

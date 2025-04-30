@@ -10,7 +10,7 @@ export const PatientTestimonials = () => {
 
     return (
         <section className="w-full bg-gradient-to-t from-fuchsia-50 to-indigo-100 py-10">
-            <div ref={ref} className="w-full space-y-6">
+            <div ref={ref} className="w-full md:space-y-4 space-y-4">
                 {/* Animated Heading */}
                 <motion.h1
                     initial={{ x: -100, opacity: 0 }}

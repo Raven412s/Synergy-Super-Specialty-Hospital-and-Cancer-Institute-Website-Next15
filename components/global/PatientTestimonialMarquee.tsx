@@ -9,7 +9,7 @@ const PatientTestimonialMarquee = (props: PatientTestimonialMarqueeProps) => {
   const { marqueeArray, className, ...rest } = props;
 
   return (
-    <div className={cn("relative mt-6 overflow-hidden space-y-10", className)} {...rest}>
+    <div className={cn("relative mt-6 overflow-hidden space-y-6", className)} {...rest}>
       <Marquee speed={60}  pauseOnHover className="pt-4 ">
         {marqueeArray.map((item, index) => (
           <div key={index} className="mx-4">

@@ -11,7 +11,7 @@ import {
 import { menuItems, quickLinks } from "@/data";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { MenuIcon } from "lucide-react";
+import { ArrowRight, MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -109,7 +109,7 @@ export function Navbar() {
                   {item.label}
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className="max-w-screen !min-w-screen bg-white p-0 border-none !rounded-none min-h-[478px] h-full">
+                <NavigationMenuContent className="max-w-screen !min-w-screen bg-yellow-50/50 p-0 border-none !rounded-none min-h-[478px] h-full">
                   <AnimatePresence>
                     <motion.div
                       initial="hidden"
@@ -131,14 +131,18 @@ export function Navbar() {
                                 variant="ghost"
                                 onMouseEnter={() => setActivePageIndex(item.pages.indexOf(page))}
                                 className={cn(
-                                  "text-left hover:text-indigo-600 w-full items-start justify-start text-base",
+                                  "text-left hover:text-indigo-600 w-full items-center justify-between text-base min-w-full flex ",
                                   {
                                     "text-indigo-600 font-semibold":
                                       activePageIndex === item.pages.indexOf(page),
                                   }
                                 )}
                               >
-                                {page.name}
+                                <span>{page.name}</span>
+                                <span><ArrowRight className={cn("size-4 hidden",       {
+                                    "block":
+                                      activePageIndex === item.pages.indexOf(page),
+                                  })}/></span>
                               </Button>
                             ))}
                           </motion.div>
@@ -168,7 +172,7 @@ export function Navbar() {
                                       <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="hover:underline font-medium w-max block text-sm bg-indigo-400 text-white py-1 px-4 rounded-full hover:bg-indigo-600 duration-500 transition-colors"
+                                        className="hover:underline font-normal w-max block text-sm transition-colors"
                                       >
                                          {link.label}
                                       </Link>
@@ -182,14 +186,14 @@ export function Navbar() {
                           {/* RIGHT: Quick Links */}
                           <motion.div
                             variants={itemVariants}
-                            className="w-2/8 p-4 space-y-4 bg-fuchsia-50 overflow-y-auto max-h-[478px]"
+                            className="w-2/8 p-4 space-y-4  overflow-y-auto max-h-[478px]"
                           >
                             <h4 className="font-semibold text-gray-700">Quick Links</h4>
                             {quickLinks.map((qLink) => (
                               <motion.div
                                 key={qLink.label}
                                 variants={itemVariants}
-                                className="bg-white px-4 py-2 rounded-lg text-sm border border-neutral-300"
+                                className={cn("px-4 py-2 rounded-lg text-sm border border-neutral-300", qLink.bg)}
                               >
                                 <div className="text-gray-500 text-[10px]">{qLink.label}</div>
                                 <div className="font-normal ">{qLink.value}</div>
@@ -199,7 +203,7 @@ export function Navbar() {
                             <motion.div variants={itemVariants}>
                               <Button
                                 variant="link"
-                                className="bg-fuchsia-200 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                 title="Book an Appointment"
                               >
                                 Book Appointment <span>→</span>
@@ -209,7 +213,7 @@ export function Navbar() {
                             <motion.div variants={itemVariants}>
                               <Button
                                 variant="link"
-                                className="bg-fuchsia-200 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                 title="Search for available doctors"
                               >
                                 Find Doctors <span>→</span>
@@ -219,7 +223,7 @@ export function Navbar() {
                             <motion.div variants={itemVariants}>
                               <Button
                                 variant="link"
-                                className="bg-fuchsia-200 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                 title="Get in touch with us"
                               >
                                 Contact Us <span>→</span>

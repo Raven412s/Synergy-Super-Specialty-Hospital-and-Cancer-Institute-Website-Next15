@@ -7,7 +7,7 @@ import { ImageWithFallback } from './ImageWithFallback';
 const AyushmaanBharatCard = () => {
   return (
     <section className="py-12 px-4  rounded-2xl  mx-2 md:mx-0 bg-gradient-to-tl from-0% from-synergy-blue/60  via-synergy-blue/50 to-indigo-200 to-80% shadow-lg">
-      <div className="max-w-6xl mx-auto space-y-10">
+      <div className="max-w-6xl w-full mx-auto space-y-10">
 
         {/* Header Section */}
         <div className="relative flex flex-col md:flex-row justify-between items-center gap-6">
@@ -25,6 +25,14 @@ const AyushmaanBharatCard = () => {
           <ImageWithFallback
             fallbackSrc="/fallback-image.webp"
             src="/MODI.png"
+            width={200}
+            height={200}
+            alt="Pradhan Mantri Narendra Modi"
+            className="object-cover object-center rounded-full size-32 md:size-40 border-2 border-synergy-blue"
+          />
+          <ImageWithFallback
+            fallbackSrc="/fallback-image.webp"
+            src="/Oggy.jpg"
             width={200}
             height={200}
             alt="Pradhan Mantri Narendra Modi"

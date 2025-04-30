@@ -49,7 +49,7 @@ export const menuItems: MenuItemProps[] = [
                 ],
             },
             {
-                name: "Terms And Privacy Policy",
+                name: "Terms & Privacy",
                 links: [
                     { label: "Your Privacy is Our Policy", href: "/privacy-policy" },
                     { label: "Our Terms and Conditions", href: "/term-and-conditions" },
@@ -249,9 +249,9 @@ export const menuItems: MenuItemProps[] = [
     },
 ]
 export const quickLinks = [
-    { label: "Emergency", value: "1066" },
-    { label: "Global Helpline", value: "+91 4043441066" },
-    { label: "Support", value: "1800-500-1066" },
+    { label: "Emergency", value: "1066", bg: "bg-teal-50" },
+    { label: "Global Helpline", value: "+91 4043441066", bg: "bg-violet-50" },
+    { label: "Support", value: "1800-500-1066", bg: "bg-gray-50" },
 ]
 export const testimonialsForMarquee: TestimonialItem[] = [
     {
@@ -263,7 +263,7 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "video",
-        image: "/patients/rahul-thumb.jpeg",
+        image: "/patients/anita.jpeg",
         videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
     },
     {
@@ -275,38 +275,7 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "video",
-        image: "/patients/rahul-thumb.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/rahul-thumb.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/rahul-thumb.jpeg",
+        image: "/patients/anita.jpeg",
         videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
     },
     {
@@ -325,12 +294,43 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "video",
-        image: "/patients/rahul-thumb.jpeg",
+        image: "/patients/anita.jpeg",
+        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+    },
+    {
+        type: "written",
+        name: "Priya Singh",
+        description:
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "video",
+        image: "/patients/anita.jpeg",
+        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+    },
+    {
+        type: "written",
+        name: "Priya Singh",
+        description:
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "written",
+        name: "Priya Singh",
+        description:
+            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "video",
+        image: "/patients/anita.jpeg",
         videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
     },
     {
         type: "video",
-        image: "/patients/rahul-thumb.jpeg",
+        image: "/patients/anita.jpeg",
         videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
     },
 ]

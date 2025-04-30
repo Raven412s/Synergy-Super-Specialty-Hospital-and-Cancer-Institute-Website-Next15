@@ -122,7 +122,7 @@ export default function NewsSlider() {
 
     return (
         <motion.div
-            className="relative w-full px-6 py-10 hide-scrollbar"
+            className="relative w-full px-6  hide-scrollbar"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}

@@ -20,7 +20,7 @@ import { ImageWithFallback } from "./ImageWithFallback";
         <DialogTrigger
           className={cn(
             image
-              ? "relative rounded-xl aspect-square w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[280px] lg:h-[280px] overflow-hidden group cursor-pointer"
+              ? "relative rounded-xl aspect-square w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[240px] lg:h-[240px] overflow-hidden group cursor-pointer"
               : "",
             className
           )}
@@ -28,7 +28,7 @@ import { ImageWithFallback } from "./ImageWithFallback";
           asChild={!!children} // Use asChild when children are provided
         >
           {image ? (
-            <>
+            <div className="relative size-full">
               <ImageWithFallback
               fallbackSrc="/fallback-image.webp"
                 src={image}
@@ -44,7 +44,7 @@ import { ImageWithFallback } from "./ImageWithFallback";
                 height={70}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none"
               />
-            </>
+            </div>
           ) : children ? (
             React.isValidElement(children) ? children : <>{children}</>
           ) : null}
