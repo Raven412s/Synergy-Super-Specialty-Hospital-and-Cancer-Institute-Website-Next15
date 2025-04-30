@@ -109,21 +109,21 @@ export function Navbar() {
                   {item.label}
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className="max-w-screen !min-w-screen bg-yellow-50/50 p-0 border-none !rounded-none min-h-[478px] h-full">
+                <NavigationMenuContent className="min-w-7xl  w-full bg-yellow-50/50 flex items-center justify-center p-0 border-none !rounded-none min-h-[450px] h-full ">
                   <AnimatePresence>
                     <motion.div
                       initial="hidden"
                       animate="visible"
                       exit="hidden"
                       variants={dropdownVariants}
-                      className="flex w-full min-h-full justify-between"
+                      className="flex w-full min-h-full justify-center "
                     >
                       {item.pages[0]?.name ? (
                         <>
                           {/* LEFT: Page Names */}
                           <motion.div
                             variants={itemVariants}
-                            className="w-1/6 p-4 flex flex-col space-y-2 items-start min-h-full"
+                            className="w-1/4 p-4 flex flex-col space-y-2 items-start min-h-full"
                           >
                             {item.pages.map((page) => (
                               <Button
@@ -150,7 +150,7 @@ export function Navbar() {
                           {/* CENTER: Links */}
                           <motion.div
                             variants={itemVariants}
-                            className="w-6/8 border-x border-gray-300 p-4 min-h-full overflow-auto"
+                            className="w-5/8 border-x border-gray-300 p-4 min-h-full overflow-auto"
                           >
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                               {Array.from({
@@ -186,7 +186,7 @@ export function Navbar() {
                           {/* RIGHT: Quick Links */}
                           <motion.div
                             variants={itemVariants}
-                            className="w-2/8 p-4 space-y-4  overflow-y-auto max-h-[478px]"
+                            className="w-1/4 p-4 space-y-4  overflow-y-auto max-h-[478px]"
                           >
                             <h4 className="font-semibold text-gray-700">Quick Links</h4>
                             {quickLinks.map((qLink) => (
