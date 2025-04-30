@@ -55,12 +55,14 @@ export const metadata = {
 
 const TheSynergyStory = () => {
     return (
-        <main id='Overview' className='-mt-5 bg-slate-100'>
+        <main id='Overview' className='-mt-5 bg-amber-50'>
+            <div className="max-w-7xl relative left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
             <OurMission/>
             <OurVision/>
             <OurExcellence/>
             <OurLeaders/>
             <RestSections/>
+            </div>
         </main>
     )
 }
