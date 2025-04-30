@@ -12,7 +12,7 @@ const PatientTestimonialMarquee = (props: PatientTestimonialMarqueeProps) => {
     <div className={cn("relative mt-6 overflow-hidden space-y-6", className)} {...rest}>
       <Marquee speed={60}  pauseOnHover className="pt-4 ">
         {marqueeArray.map((item, index) => (
-          <div key={index} className="mx-4">
+          <div key={index} className="mx-4 flex items-center">
             {item.type === "written" && (
               <PatientSpeaksWrittenTestimonialCard testimonial={item} />
             )}
