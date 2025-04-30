@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-
-
 const LeadershipPage = (props: LeaderPageProps) => {
     const {
         name,
@@ -27,72 +25,87 @@ const LeadershipPage = (props: LeaderPageProps) => {
     } = props;
 
     const [firstSectionRef, firstSectionInView] = useInView({
-      triggerOnce: true,
-      threshold: 0.1,
-      rootMargin: "-100px 0px"
+        triggerOnce: true,
+        threshold: 0.1,
+        rootMargin: "-50px 0px"
     });
 
     const [secondSectionRef, secondSectionInView] = useInView({
-      triggerOnce: true,
-      threshold: 0.1,
-      rootMargin: "-100px 0px"
+        triggerOnce: true,
+        threshold: 0.1,
+        rootMargin: "-50px 0px"
     });
 
     const [thirdSectionRef, thirdSectionInView] = useInView({
-      triggerOnce: true,
-      threshold: 0.1,
-      rootMargin: "-100px 0px"
+        triggerOnce: true,
+        threshold: 0.1,
+        rootMargin: "-50px 0px"
     });
 
     const [fourthSectionRef, fourthSectionInView] = useInView({
-      triggerOnce: true,
-      threshold: 0.1,
-      rootMargin: "-100px 0px"
+        triggerOnce: true,
+        threshold: 0.1,
+        rootMargin: "-50px 0px"
     });
 
     const [journeySectionRef, journeySectionInView] = useInView({
-      triggerOnce: true,
-      threshold: 0.1,
-      rootMargin: "-100px 0px"
+        triggerOnce: true,
+        threshold: 0.1,
+        rootMargin: "-50px 0px"
     });
 
     return (
-        <main className="bg-fuchsia-50 -mt-24 pt-24">
+        <main className="bg-fuchsia-50/50 pt-12 md:pt-16 items-center justify-center flex flex-col">
             {/* First Section */}
             <section
-              ref={firstSectionRef}
-              className="min-h-screen w-full px-2 md:px-8 lg:px-24 py-8 my-12"
+                ref={firstSectionRef}
+                className="w-full px-4 sm:px-6 lg:px-8 py-8 max-w-7xl"
             >
                 <motion.div
-                  initial="hidden"
-                  animate={firstSectionInView ? "visible" : "hidden"}
-                  variants={containerVariants}
-                  className="lg:p-10 p-4 md:px-6 px-2 py-6 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded"
+                    initial="hidden"
+                    animate={firstSectionInView ? "visible" : "hidden"}
+                    variants={containerVariants}
+                    className="p-6 sm:p-8 rounded-xl bg-white border border-neutral-100 shadow-sm hover:shadow-md transition-shadow"
                 >
-                    <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+                    <div className="flex flex-col lg:flex-row items-start gap-6 md:gap-8 ">
                         <motion.div
-                          variants={imageVariants}
-                          className="relative rounded-3xl w-full lg:w-1/3 h-[24rem] sm:h-[28rem] md:h-[32rem] lg:h-[36rem] xl:h-[40rem] overflow-hidden"
+                            variants={imageVariants}
+                            className="relative rounded-xl w-2/5  h-full  aspect-[3/4] max-w-md overflow-hidden"
                         >
-                            <Image src={image} alt={name} fill className="object-cover" priority />
+                            <Image
+                                src={image}
+                                alt={name}
+                                fill
+                                className="object-cover"
+                                priority
+                            />
                         </motion.div>
                         <motion.div
-                          variants={containerVariants}
-                          className="w-full lg:w-2/3 space-y-6 md:space-y-8 max-w-4xl"
+                            variants={containerVariants}
+                            className="w-full lg:w-3/5 space-y-4"
                         >
-                            <motion.h1 variants={itemVariants} className="font-display text-heading text-center lg:text-left">
+                            <motion.h1
+                                variants={itemVariants}
+                                className="text-2xl sm:text-3xl font-bold text-gray-900 text-center lg:text-left"
+                            >
                                 {customFirstHeading}
                             </motion.h1>
-                            <motion.div variants={itemVariants} className="space-y-2 text-center lg:text-left">
-                                <h2 className="text-heading text-synergy-pink font-bold">{name}</h2>
-                                <h3 className="text-lg text-neutral-600 font-semibold">{role}</h3>
-                                <p className="text-base leading-relaxed tracking-wide">{description}</p>
+                            <motion.div
+                                variants={itemVariants}
+                                className="space-y-1 text-center lg:text-left"
+                            >
+                                <h2 className="text-xl font-bold text-synergy-pink">{name}</h2>
+                                <h3 className="text-base text-neutral-600 font-medium">{role}</h3>
+                                <p className="text-sm text-neutral-600 leading-relaxed">{description}</p>
                             </motion.div>
-                            <motion.div variants={itemVariants} className="space-y-4">
+                            <motion.div
+                                variants={itemVariants}
+                                className="space-y-3"
+                            >
                                 {theirStory?.map((story, index) => (
                                     <p
                                         key={index}
-                                        className="text-sm sm:text-base md:text-lg text-neutral-600 leading-relaxed tracking-tight"
+                                        className="text-sm text-neutral-600 leading-relaxed"
                                     >
                                         {story}
                                     </p>
@@ -104,41 +117,48 @@ const LeadershipPage = (props: LeaderPageProps) => {
             </section>
 
             {/* Second Section */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={secondSectionInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
-              className="text-heading text-synergy-pink text-center px-2 md:px-8"
-            >
-              {customSecondHeading}
-            </motion.h1>
+
 
             <section
-              ref={secondSectionRef}
-              className="w-full px-2 md:px-8 lg:px-24 py-8 my-12"
+                ref={secondSectionRef}
+                className="w-full px-4 sm:px-6 lg:px-8 py-6 max-w-7xl"
             >
                 <motion.div
-                  initial="hidden"
-                  animate={secondSectionInView ? "visible" : "hidden"}
-                  variants={containerVariants}
-                  className="lg:p-10 p-4 px-2 py-6 rounded-3xl bg-white border-3 border-neutral-200 shadow-expanded space-y-12"
+                    initial="hidden"
+                    animate={secondSectionInView ? "visible" : "hidden"}
+                    variants={containerVariants}
+                    className="p-6 sm:p-8 rounded-xl bg-white border border-neutral-100 shadow-sm hover:shadow-md transition-shadow"
                 >
-                    <div className="flex flex-col lg:flex-row-reverse items-center gap-8">
+                    <div className="flex flex-col lg:flex-row-reverse items-start gap-6 md:gap-8">
                         <motion.div
-                          variants={imageVariants}
-                          className="relative rounded-3xl w-full lg:w-1/3 h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] overflow-hidden"
+                            variants={imageVariants}
+                            className="relative rounded-xl w-full lg:w-2/5 aspect-square max-w-md overflow-hidden"
                         >
-                            <Image src={secondImage} alt={name} fill className="object-cover" priority />
+                            <Image
+                                src={secondImage}
+                                alt={name}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
                         </motion.div>
                         <motion.div
-                          variants={containerVariants}
-                          className="w-full lg:w-2/3 space-y-6 md:space-y-8 max-w-3xl text-center lg:text-left"
-                        >
+                            variants={containerVariants}
+                            className="w-full lg:w-3/5 space-y-4 "
+                            >
+                            <motion.h2
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={secondSectionInView ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.4 }}
+                                className="text-2xl sm:text-3xl font-bold text-synergy-pink text-left  "
+                            >
+                                {customSecondHeading}
+                            </motion.h2>
                             {secondSectionDescription.map((para, idx) => (
                                 <motion.p
-                                  key={idx}
-                                  variants={itemVariants}
-                                  className="text-sm sm:text-base md:text-lg text-neutral-600 leading-relaxed tracking-tight mb-4"
+                                    key={idx}
+                                    variants={itemVariants}
+                                    className="text-sm text-neutral-600 leading-relaxed"
                                 >
                                     {para}
                                 </motion.p>
@@ -150,31 +170,37 @@ const LeadershipPage = (props: LeaderPageProps) => {
 
             {/* Third Section */}
             <section
-              ref={thirdSectionRef}
-              className="w-full px-2 md:px-8 lg:px-24 py-8 my-12"
+                ref={thirdSectionRef}
+                className="w-full px-4 sm:px-6 lg:px-8 py-6 max-w-7xl"
             >
                 <motion.div
-                  initial="hidden"
-                  animate={thirdSectionInView ? "visible" : "hidden"}
-                  variants={containerVariants}
-                  className="lg:p-10 p-4 rounded-3xl bg-white border-3 border-neutral-200 shadow-expanded space-y-12"
+                    initial="hidden"
+                    animate={thirdSectionInView ? "visible" : "hidden"}
+                    variants={containerVariants}
+                    className="p-6 sm:p-8 rounded-xl bg-white border border-neutral-100 shadow-sm hover:shadow-md transition-shadow"
                 >
-                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-8">
                         <motion.div
-                          variants={imageVariants}
-                          className="relative rounded-3xl w-full lg:w-1/3 h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] overflow-hidden"
+                            variants={imageVariants}
+                            className="relative rounded-xl w-full lg:w-2/4 aspect-video max-w-md overflow-hidden"
                         >
-                            <Image src={thirdImage} alt={name} fill className="object-cover" priority />
+                            <Image
+                                src={thirdImage}
+                                alt={name}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
                         </motion.div>
                         <motion.div
-                          variants={containerVariants}
-                          className="w-full lg:w-2/3 space-y-6 md:space-y-8 max-w-3xl text-center lg:text-left"
+                            variants={containerVariants}
+                            className="w-full lg:w-3/5 space-y-4"
                         >
                             {thirdSectionDescription.map((para, idx) => (
                                 <motion.p
-                                  key={idx}
-                                  variants={itemVariants}
-                                  className="text-sm sm:text-base md:text-lg text-neutral-600 leading-relaxed tracking-tight mb-4"
+                                    key={idx}
+                                    variants={itemVariants}
+                                    className="text-sm text-neutral-600 leading-relaxed"
                                 >
                                     {para}
                                 </motion.p>
@@ -187,64 +213,64 @@ const LeadershipPage = (props: LeaderPageProps) => {
             {/* Fourth Section */}
             {fourthSectionDescription?.length > 0 && (
                 <section
-                  ref={fourthSectionRef}
-                  className="w-full px-2 md:px-8 lg:px-24 py-8 my-12"
+                    ref={fourthSectionRef}
+                    className="w-full px-4 sm:px-6 lg:px-8 py-6 max-w-7xl"
                 >
                     <motion.div
-                      initial="hidden"
-                      animate={fourthSectionInView ? "visible" : "hidden"}
-                      variants={containerVariants}
-                      className="lg:p-10 p-4 rounded-3xl bg-white border-3 border-neutral-200 shadow-expanded space-y-6 md:space-y-8 mx-auto"
+                        initial="hidden"
+                        animate={fourthSectionInView ? "visible" : "hidden"}
+                        variants={containerVariants}
+                        className="p-6 sm:p-8 rounded-xl bg-white border border-neutral-100 shadow-sm hover:shadow-md transition-shadow w-full mx-auto"
                     >
-                        {fourthSectionDescription.map((para, idx) => (
-                            <motion.p
-                              key={idx}
-                              variants={itemVariants}
-                              className="text-sm sm:text-base md:text-lg text-neutral-600 leading-relaxed tracking-tight mb-4"
-                            >
-                                {para}
-                            </motion.p>
-                        ))}
+                        <div className="space-y-4">
+                            {fourthSectionDescription.map((para, idx) => (
+                                <motion.p
+                                    key={idx}
+                                    variants={itemVariants}
+                                    className="text-sm text-neutral-600 leading-relaxed"
+                                >
+                                    {para}
+                                </motion.p>
+                            ))}
+                        </div>
                     </motion.div>
                 </section>
             )}
 
             {/* Journey Section */}
             <section
-              ref={journeySectionRef}
-              className="w-full px-2 md:px-8 lg:px-24 py-8 my-12 space-y-6 md:space-y-8"
+                ref={journeySectionRef}
+                className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-6"
             >
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={journeySectionInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6 }}
-                  className="text-heading font-sans text-black text-center uppercase font-bold"
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={journeySectionInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.4 }}
+                    className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-6"
                 >
-                  Journey
-                </motion.h1>
+                    Journey
+                </motion.h2>
                 <motion.div
-                  initial="hidden"
-                  animate={journeySectionInView ? "visible" : "hidden"}
-                  variants={containerVariants}
-                  className="lg:p-10 p-4 px-2 py-6 rounded-3xl bg-white border-3 space-y-6 border-neutral-200 shadow-expanded"
+                    initial="hidden"
+                    animate={journeySectionInView ? "visible" : "hidden"}
+                    variants={containerVariants}
+                    className="p-6 sm:p-8 rounded-xl bg-white border border-neutral-100 shadow-sm hover:shadow-md transition-shadow max-w-7xl mx-auto"
                 >
-                    <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-                        <motion.div
-                          variants={containerVariants}
-                          className="w-full space-y-6 max-w-3xl"
+                    <div className="space-y-6">
+                        <motion.p
+                            variants={itemVariants}
+                            className="text-sm text-neutral-600 leading-relaxed text-center"
                         >
-                            <motion.p
-                              variants={itemVariants}
-                              className="text-sm sm:text-base md:text-lg leading-relaxed tracking-tight text-neutral-600 text-center lg:text-left"
-                            >
-                                {fifthSectionDescription}
-                            </motion.p>
-                            <motion.div
-                              variants={imageVariants}
-                              className="w-full relative h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] overflow-hidden rounded-3xl"
-                            >
-                                <VideoModalForJourney image={videoModalForJourney.image} videoUrl={videoModalForJourney.videoUrl} />
-                            </motion.div>
+                            {fifthSectionDescription}
+                        </motion.p>
+                        <motion.div
+                            variants={imageVariants}
+                            className="w-full relative aspect-video overflow-hidden rounded-xl"
+                        >
+                            <VideoModalForJourney
+                                image={videoModalForJourney.image}
+                                videoUrl={videoModalForJourney.videoUrl}
+                            />
                         </motion.div>
                     </div>
                 </motion.div>

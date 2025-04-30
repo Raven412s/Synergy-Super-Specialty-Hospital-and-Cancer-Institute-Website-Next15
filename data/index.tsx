@@ -629,19 +629,19 @@ export const leaderAlokTiwari: LeaderPageProps = {
     role: "Surgical Oncologist",
     description:
         "Dr. Alok Tiwari is a highly esteemed Surgical Oncologist with a distinguished academic and professional background. He graduated with an MBBS, securing a Gold Medal for his exceptional performance. He further pursued MS in General Surgery from King George's Medical University (KGMU), Lucknow, followed by DNB Superspeciality in Surgical Oncology. Dr. Alok Tiwari has undergone specialized training in Breast Oncoplasty from ESSO and holds certifications in FMAS, FALS (Colorectal), and Dip MAS. Additionally, he is a daVinciXi Certified Robotic Onco Surgeon, reflecting his commitment to embracing advanced surgical technologies. His extensive training and experience have positioned him as a leading authority in the field of oncology, particularly in breast cancer treatments.",
-    image: "/doctors/doc-alok-tiwari.webp",
+    image: "/leaders/doc-alok-tiwari.webp",
     customFirstHeading: "Introducing Dr. Alok Tiwari: A Leader in Surgical Oncology",
     theirStory: [
         "Dr. Alok Tiwari's journey into the realm of surgical oncology is marked by unwavering dedication and a pursuit of excellence. From his early academic achievements, including a Gold Medal in MBBS, to his comprehensive training at prestigious institutions like KGMU Lucknow, his commitment to mastering the intricacies of surgery is evident. His pursuit of specialized skills in breast oncoplasty and robotic surgery showcases his forward-thinking approach, ensuring patients receive state-of-the-art care. Beyond the operating room, Dr. Alok Tiwari's mentorship and research contributions reflect his holistic commitment to advancing oncology.",
-        "His philosophy centers on integrating advanced technology with compassionate care, ensuring each patient receives personalized treatment plans tailored to their unique needs. Dr. Alok Tiwari's vision extends beyond individual patient care, he actively engages in community outreach programs, aiming to raise awareness about early cancer detection and prevention. His leadership in organizing workshops and seminars has educated countless individuals, emphasizing the importance of regular screenings and a proactive approach to health. Through these endeavors, Dr. Alok Tiwari continues to inspire and lead in the fight against cancer."
     ],
     customSecondHeading: "Dr. Alok Tiwari's Approach: Merging Technology with Compassion",
-    secondImage: "/doctors/doc-alok-tiwari.webp",
+    secondImage: "/leaders/doc-alok-tiwari-3.jpg",
     secondSectionDescription: [
         "Dr. Alok Tiwari believes in a patient-centric approach, where each treatment plan is tailored to the individual's specific needs, ensuring the most effective and compassionate care.",
-        "His expertise in robotic-assisted surgeries allows for minimally invasive procedures, leading to faster recovery times and improved patient outcomes, all while maintaining a compassionate bedside manner."
+        "His expertise in robotic-assisted surgeries allows for minimally invasive procedures, leading to faster recovery times and improved patient outcomes, all while maintaining a compassionate bedside manner.",
+         "His philosophy centers on integrating advanced technology with compassionate care, ensuring each patient receives personalized treatment plans tailored to their unique needs. Dr. Alok Tiwari's vision extends beyond individual patient care, he actively engages in community outreach programs, aiming to raise awareness about early cancer detection and prevention. His leadership in organizing workshops and seminars has educated countless individuals, emphasizing the importance of regular screenings and a proactive approach to health. Through these endeavors, Dr. Alok Tiwari continues to inspire and lead in the fight against cancer."
     ],
-    thirdImage: "/doctors/doc-alok-tiwari.webp",
+    thirdImage: "/leaders/doc-alok-tiwari-2.webp",
     thirdSectionDescription: [
         "Dr. Alok Tiwari has actively participated in numerous research projects, focusing on improving surgical techniques and patient care protocols. His work has been published in several reputable medical journals, contributing to the global body of oncology knowledge.",
         "He regularly attends international oncology conferences, both as a participant and a speaker, sharing his insights and learning about the latest advancements in cancer treatment. This continuous engagement ensures that his patients benefit from the most current and effective therapies available.",
@@ -665,19 +665,19 @@ export const leaderAnjaliJain: LeaderPageProps = {
     role: "Gynecologic Oncologist",
     description:
         "Dr. Anjali Jain is a renowned Gynecologic Oncologist with a profound dedication to women's health. She completed her MBBS with a Gold Medal and pursued MS in General Surgery from KGMU Lucknow. Furthering her expertise, she obtained DNB Superspeciality in Surgical Oncology and specialized training in Breast Oncoplasty from ESSO. Dr. Anjali Jain holds certifications in FMAS, FALS (Colorectal), and Dip MAS, and is a daVinciXi Certified Robotic Onco Surgeon. Her comprehensive training equips her to address complex gynecologic cancers with precision and empathy, ensuring optimal outcomes for her patients.",
-    image: "/doctors/doc-anjali-jain.webp",
+    image: "/leaders/doc-anjali-jain.webp",
     customFirstHeading: "Meet Dr. Anjali Jain: Expert in Gynecologic Oncology",
     theirStory: [
-        "Dr. Anjali Jain's commitment to women's health led her to specialize in gynecologic oncology, where she combines her surgical expertise with a compassionate approach. Her academic excellence, highlighted by a Gold Medal in MBBS, laid the foundation for her pursuit of advanced training in surgical oncology. Dr. Anjali Jain's dedication to continuous learning is evident in her certifications and specialized training, which she applies to offer personalized care to each patient. Her approach emphasizes not just treatment but also education, empowering women to take charge of their health.",
-        "Beyond her clinical practice, Dr. Anjali Jain actively engages in research aimed at improving treatment modalities for gynecologic cancers. She collaborates with multidisciplinary teams to enhance patient care protocols and participates in community outreach programs to raise awareness about women's health issues. Her holistic approach addresses both the physical and emotional aspects of cancer care, ensuring that patients receive comprehensive support throughout their journey."
+        "Dr. Anjali Jain's commitment to women's health led her to specialize in gynecologic oncology, where she combines her surgical expertise with a compassionate approach. Her academic excellence, highlighted by a Gold Medal in MBBS, laid the foundation for her pursuit of advanced training in surgical oncology. Dr. Anjali Jain's dedication to continuous learning is evident in her certifications and specialized training, which she applies to offer personalized care to each patient. Her approach emphasizes not just treatment but also education, empowering women to take charge of their health."
     ],
     customSecondHeading: "Dr. Anjali Jain's Philosophy: Personalized and Compassionate Care",
-    secondImage: "/doctors/doc-anjali-jain.webp",
+    secondImage: "/leaders/doc-anjali-jain-2.jpg",
     secondSectionDescription: [
         "Dr. Anjali Jain emphasizes the importance of personalized treatment plans, considering each patient's unique medical history and personal circumstances to ensure the most effective care.",
-        "Her compassionate approach involves active listening and emotional support, creating a safe environment where patients feel valued and understood throughout their treatment journey."
+        "Her compassionate approach involves active listening and emotional support, creating a safe environment where patients feel valued and understood throughout their treatment journey.",
+        "Beyond her clinical practice, Dr. Anjali Jain actively engages in research aimed at improving treatment modalities for gynecologic cancers. She collaborates with multidisciplinary teams to enhance patient care protocols and participates in community outreach programs to raise awareness about women's health issues. Her holistic approach addresses both the physical and emotional aspects of cancer care, ensuring that patients receive comprehensive support throughout their journey."
     ],
-    thirdImage: "/doctors/doc-anjali-jain.webp",
+    thirdImage: "/leaders/doc-anjali-jain-3.webp",
     thirdSectionDescription: [
         "Dr. Anjali Jain's research focuses on developing less invasive surgical techniques and improving postoperative care, aiming to enhance recovery and quality of life for her patients.",
         "She collaborates with international oncology experts and institutions, contributing to global advancements in gynecologic oncology while ensuring her own patients benefit from the latest scientific breakthroughs.",
@@ -701,19 +701,19 @@ export const leaderSaurabhMishra: LeaderPageProps = {
     role: "Head & Neck Surgical Oncologist",
     description:
         "Dr. Saurabh Mishra is a highly respected Head & Neck Surgical Oncologist known for his exceptional surgical skills and deep commitment to patient welfare. He earned his MBBS and MS in General Surgery from KGMU, Lucknow, followed by a DNB in Surgical Oncology. His professional credentials also include FMAS, FALS (Colorectal), Dip MAS, and advanced training in Head & Neck surgeries. Dr. Saurabh Mishra’s expertise lies in treating complex cancers involving the oral cavity, thyroid, larynx, and other structures of the head and neck region. His precise surgical techniques and compassionate patient care have earned him widespread recognition in the field of oncology.",
-    image: "/doctors/doc-saurabh-mishra.webp",
+    image: "/leaders/doc-saurabh-mishra.webp",
     customFirstHeading: "Introducing Dr. Saurabh Mishra: Excellence in Head & Neck Oncology",
     theirStory: [
         "Dr. Saurabh Mishra’s journey into the world of head and neck oncology was driven by a personal mission to make a meaningful impact in the lives of cancer patients. After completing his medical education from KGMU Lucknow, his fascination with complex anatomy and reconstructive surgery led him to specialize in head and neck surgical oncology. Over the years, he has developed a deep understanding of the intricate challenges these cancers pose, especially those affecting speech, swallowing, and facial function. His meticulous approach and deep empathy have earned him immense respect from both colleagues and patients alike.",
-        "What truly sets Dr. Saurabh Mishra apart is his relentless pursuit of surgical precision combined with an innate ability to emotionally connect with his patients. He believes that cancer care is not just about treating the disease—it’s about walking hand-in-hand with patients through their most vulnerable moments. His collaborative work with speech therapists and nutritionists ensures that patients recover not only physically but also emotionally and socially. Dr. Saurabh Mishra is a strong advocate for early detection, routinely conducting screening drives and educating communities about head and neck cancer symptoms and risk factors."
     ],
     customSecondHeading: "Dr. Saurabh Mishra’s Vision: Precision Surgery with Compassionate Healing",
-    secondImage: "/doctors/doc-saurabh-mishra.webp",
+    secondImage: "/leaders/doc-saurabh-mishra-2.jpg",
     secondSectionDescription: [
+        "What truly sets Dr. Saurabh Mishra apart is his relentless pursuit of surgical precision combined with an innate ability to emotionally connect with his patients. He believes that cancer care is not just about treating the disease—it’s about walking hand-in-hand with patients through their most vulnerable moments. His collaborative work with speech therapists and nutritionists ensures that patients recover not only physically but also emotionally and socially. Dr. Saurabh Mishra is a strong advocate for early detection, routinely conducting screening drives and educating communities about head and neck cancer symptoms and risk factors.",
         "Dr. Saurabh Mishra integrates advanced surgical planning with functional and cosmetic preservation, ensuring optimal outcomes in complex head and neck cases.",
         "He prioritizes a patient-first approach, collaborating with multidisciplinary teams to provide comprehensive care that supports not just recovery but complete rehabilitation."
     ],
-    thirdImage: "/doctors/doc-saurabh-mishra.webp",
+    thirdImage: "/leaders/doc-saurabh-mishra-3.jpg",
     thirdSectionDescription: [
         "His research interests include minimally invasive approaches for oral and laryngeal cancers, and he has published extensively on surgical techniques and case studies in peer-reviewed journals.",
         "Dr. Saurabh Mishra is also a passionate educator, regularly training young surgeons and conducting skill-development workshops to promote excellence in oncologic surgery.",

@@ -6,7 +6,7 @@ export  const doctors = [
       qualification: "M.B.B.S. MS ORTHO,FIJR,FAGE orthopedic trauma Jioint Replacement,Spine Specialist Surgeon & Sports Injury  Surgeon",
       department: "Orthopedics",
       experience: "12 years",
-      image: "/doctors/dr-prateek.webp",
+      image: "/doctors/dr-prateek-kumar.png",
       availability: [
         { day: "Mon", time: "9:00 AM - 5:00 PM" },
         { day: "Wed", time: "9:00 AM - 5:00 PM" },
@@ -154,7 +154,7 @@ export  const doctors = [
       qualification: "MBBS, MD ( General Physician) , GENERAL MEDICINE",
       department: "General Physician",
       experience: "30 years",
-      image: "/doctors/dr-vijay-pandey.webp",
+      image: "/doctors/dr-vijay-pandey.png",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
         { day: "Tue", time: "8:00 AM - 4:00 PM" },
@@ -214,7 +214,7 @@ export  const doctors = [
       qualification: "BDS, MDS MAXILLOFACIAL SURGEON, FELLOSHIP IN HEAD & NECK ONCOLOGY",
       department: "Head & Neck",
       experience: "1.5 years",
-      image: "/doctors/dr-tarik-anwar.webp",
+      image: "/doctors/dr-tarik-anwar.png",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
         { day: "Tue", time: "8:00 AM - 4:00 PM" },
@@ -229,7 +229,7 @@ export  const doctors = [
       qualification: "BDS, MDS, MDS MAXILLOFACIAL SURGEON, FELLOSHIP IN HEAD & NECK",
       department: "Head & Neck",
       experience: "1 year",
-      image: "/doctors/dr-vishal-mishra.webp",
+      image: "/doctors/dr-vishal-mishra.png",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
         { day: "Tue", time: "8:00 AM - 4:00 PM" },

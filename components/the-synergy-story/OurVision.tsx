@@ -25,7 +25,7 @@ export const OurVision = () => {
                             className="object-cover"
                         />
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg aspect-video">
+                    <div className="bg-blue-50 p-4 rounded-lg aspect-video outline outline-blue-200">
                             <p className="font-medium mb-2">Our core values:</p>
                             <ul className="grid grid-cols-2 gap-2">
                                 {['Saviour', 'Youthfully', 'Nirvana', 'Excellence', 'Respect', 'Gutsy', 'Yours'].map((value) => (
