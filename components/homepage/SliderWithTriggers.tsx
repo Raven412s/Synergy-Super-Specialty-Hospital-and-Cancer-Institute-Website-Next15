@@ -142,7 +142,7 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "w-full max-w-3xl flex flex-col rounded-xl p-4 bg-white border border-neutral-200 hover:border-neutral-300 shadow-sm hover:shadow-md transition-all duration-300",
+                "w-full max-w-4xl flex flex-col rounded-xl p-4 bg-white border border-neutral-200 hover:border-neutral-300 shadow-sm hover:shadow-md transition-all duration-300",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
@@ -218,7 +218,7 @@ const SliderCard = (props: DepartmentData) => {
                         <Link href={"#"} className="w-full">
                             <Button
                                 variant={"outline"}
-                                className="w-full rounded-lg border-gray-300 py-1 px-3 text-sm hover:bg-synergy-pink/10 hover:border-synergy-pink/50"
+                                className="w-full rounded-lg border-gray-300 py-1 px-3 text-sm hover:bg-synergy-pink/10 hover:border-synergy-pink/50 hover:text-synergy-pink"
                             >
                                 Find Doctor
                             </Button>
