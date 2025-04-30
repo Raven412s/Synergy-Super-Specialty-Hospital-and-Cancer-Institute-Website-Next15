@@ -213,3 +213,56 @@ export interface SupportServiceProps {
         }[]
     }
 }
+
+export interface CancerTypeData {
+    typeName: string;
+    heroSection: {
+      Image: string;
+      title: string;
+      description: string;
+    };
+    overviewSection: {
+      Image: string;
+      h2: string;
+      paragraphs: string[];
+    };
+    symptomsSection: {
+      h2: string;
+      symptoms: {
+        title: string;
+        description: string;
+      }[];
+    };
+    diagnosisSection: {
+      h2: string;
+      diagnosis: {
+        index: string;
+        h3: string;
+        paragraph: string;
+      }[];
+      Image: string;
+    };
+    treatementOptionsSection: {
+      h2: string;
+      options: {
+        h3: {
+          span: string;
+          copy: string;
+        };
+        p: string;
+        Image?: string;
+      }[];
+    };
+    prognosisSection: {
+      h2: string;
+      paragraph: string;
+      table?: {
+        headers: [string, string, string];
+        rows: {
+          stage: string;
+          description: string;
+          survival: string;
+        }[];
+      };
+    };
+  }
