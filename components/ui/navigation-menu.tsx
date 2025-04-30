@@ -90,7 +90,7 @@ function NavigationMenuContent({
       <NavigationMenuPrimitive.Content
         data-slot="navigation-menu-content"
         className={cn(
-          "left-0 right-0 mx-auto w-full max-w-7xl", // Added centering styles
+          "left-0 right-0 mx-auto w-full max-w-7xl border-none border-0", // Added centering styles
           "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out",
           "data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52",
           "data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52",
@@ -124,7 +124,7 @@ function NavigationMenuViewport({
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
         className={cn(
-          "origin-top-center flex justify-center items-center bg-white text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative  h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-b-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
+          "origin-top-center flex justify-center items-center bg-white text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative  h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-b-md  shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
           className
         )}
         {...props}

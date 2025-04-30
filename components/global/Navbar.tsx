@@ -124,7 +124,7 @@ export function Navbar() {
                                     {item.label}
                                 </NavigationMenuTrigger>
 
-                                <NavigationMenuContent className="xl:min-w-7xl lg:min-w-6xl md:min-w-5xl w-full bg-yellow-50/50 flex items-center justify-center p-0 border-none !rounded-none min-h-[450px] h-full ">
+                                <NavigationMenuContent className="xl:min-w-7xl lg:min-w-6xl md:min-w-5xl w-full bg-yellow-50/50 flex items-center justify-center p-0 !outline-none !ring-0 !border-none !rounded-none min-h-[450px] h-full ">
                                     <AnimatePresence>
                                         <motion.div
                                             initial="hidden"
