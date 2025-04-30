@@ -57,27 +57,27 @@ export default function SliderWithTriggers() {
     return (
         <div className="w-full  flex flex-col gap-5 relative items-center justify-center ">
             {/* Trigger Buttons - Only show featured departments */}
-<div className="flex items-center justify-normal">
-<div className="flex  overflow-x-auto gap-2 items-center  justify-start md:w-full md:max-w-5xl w-screen px-4 md:px-0 hide-scrollbar overflow-hidden ">
-                {featuredDepartments.map((slide, index) => (
-                    <Button
-                        key={slide.id}
-                        className={cn(
-                            "px-4 py-2 rounded-full border-2 min-w-max cursor-pointer",
-                            currentIndex === index
-                                ? "bg-primary text-white border-primary"
-                                : "bg-transparent text-fuchsia-700 border-fuchsia-700 hover:bg-primary/50 hover:backdrop-blur-sm hover:text-white hover:border-primary/50 hover:shadow-blob"
-                        )}
-                        onClick={() => setCurrentIndex(index)}
-                    >
-                        {slide.name}
-                    </Button>
-                ))}
+            <div className="flex items-center justify-normal">
+                <div className="flex  overflow-x-auto gap-2 items-center  justify-start md:w-full md:max-w-5xl w-screen px-4 md:px-0 hide-scrollbar overflow-hidden ">
+                    {featuredDepartments.map((slide, index) => (
+                        <Button
+                            key={slide.id}
+                            className={cn(
+                                "px-4 py-2 rounded-full border-2 min-w-max cursor-pointer",
+                                currentIndex === index
+                                    ? "bg-primary text-white border-primary"
+                                    : "bg-transparent text-fuchsia-700 border-fuchsia-700 hover:bg-primary/50 hover:backdrop-blur-sm hover:text-white hover:border-primary/50 hover:shadow-blob"
+                            )}
+                            onClick={() => setCurrentIndex(index)}
+                        >
+                            {slide.name}
+                        </Button>
+                    ))}
+                </div>
+                <span>
+                    <ChevronRight className="size-6" />
+                </span>
             </div>
-            <span>
-                <ChevronRight className="size-6"/>
-            </span>
-</div>
 
 
 
@@ -142,22 +142,22 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "lg:max-w-5xl lg:w-full w-screen flex flex-col xl:rounded-2xl lg:rounded-2xl md:rounded-xl rounded-lg p-2 sm:p-3 md:p-4 lg:p-6 bg-white min-h-[300px]  transition-shadow duration-300 border-2 border-neutral-300 hover:border-neutral-400 shadow-blob",
+                "w-full max-w-3xl flex flex-col rounded-xl p-4 bg-white border border-neutral-200 hover:border-neutral-300 shadow-sm hover:shadow-md transition-all duration-300",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
             onMouseLeave={() => setCardHovered(false)}
         >
-            {/* Image Section - Full width on mobile, 3/8 on desktop */}
-            <div className="w-full md:w-3/8 flex justify-center items-start  aspect-square ">
-                <div className="lg:w-full size-full overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl shadow-sm aspect-square lg:h-full relative">
+            {/* Image Section */}
+            <div className="w-full md:w-2/5 flex justify-center items-start aspect-square">
+                <div className="w-full h-full overflow-hidden rounded-lg shadow-sm relative">
                     {props.heroImage && (
                         <ImageWithFallback
                             fallbackSrc="/fallback-image.webp"
                             src={props.heroImage}
                             className={cn(
-                                "object-cover object-center w-full h-full  transition-all duration-300",
-                                cardHovered && "md:scale-110" // Only scale on desktop hover
+                                "object-cover object-center w-full h-full transition-all duration-300",
+                                cardHovered && "md:scale-105"
                             )}
                             fill
                             alt={props.name}
@@ -167,70 +167,66 @@ const SliderCard = (props: DepartmentData) => {
                 </div>
             </div>
 
-            {/* Content Section - Full width on mobile, 5/8 on desktop */}
-            <div className="flex flex-col w-full md:w-5/8 justify-between px-2 sm:px-4">
+            {/* Content Section */}
+            <div className="flex flex-col w-full md:w-3/5 justify-between px-0 md:px-4 pt-4 md:pt-0">
                 <CardHeader className="w-full px-0">
-                    <CardTitle className="font-display font-semibold text-left text-2xl sm:text-3xl mb-1 sm:mb-2">
+                    <CardTitle className="font-semibold text-left text-xl sm:text-2xl mb-1">
                         {props.name}
                     </CardTitle>
-                    <CardDescription className="font-normal text-neutral-700 text-sm sm:text-base leading-normal tracking-normal mb-2">
+                    <CardDescription className="text-neutral-600 text-sm leading-normal mb-2 line-clamp-3">
                         {props.heroTitle + " " + props.heroSubtitle} ...
-                        <br />
-                        <Link href={`/services/${props.slug}`} className="underline">
+                        <Link href={`/services/${props.slug}`} className="ml-2 underline hover:text-primary">
                             Read More
                         </Link>
                     </CardDescription>
                 </CardHeader>
 
                 <CardContent className="w-full !p-0">
-                    <p className="font-medium text-sm sm:text-base">Top Specialities & Procedures</p>
-                    <div className="flex flex-wrap gap-2 py-2 sm:py-4">
+                    <p className="font-medium text-sm mb-2">Top Specialities & Procedures</p>
+                    <div className="flex flex-wrap gap-2 py-1">
                         {props.treatments.items
-                            .slice(0, showAll ? props.treatments.items.length : 2)
+                            .slice(0, showAll ? props.treatments.items.length : 3)
                             .map((item, index) => (
                                 <Badge
                                     key={index}
-                                    className="bg-transparent border border-fuchsia-400 text-fuchsia-600 text-xs"
+                                    variant="outline"
+                                    className="text-xs text-primary border-primary/50"
                                 >
                                     {item.title}
                                 </Badge>
                             ))}
 
-                        {props.treatments.items.length > 2 && (
+                        {props.treatments.items.length > 3 && (
                             <Badge
-                                className="bg-transparent border border-fuchsia-400 text-fuchsia-600 text-xs cursor-pointer"
+                                variant="outline"
+                                className="text-xs cursor-pointer text-primary border-primary/50"
                                 onClick={() => setShowAll(!showAll)}
                             >
                                 {showAll ? (
-                                    <MinusIcon className="size-3" />
+                                    <MinusIcon className="size-3 mr-1" />
                                 ) : (
-                                    <>
-                                        <PlusIcon className="!size-2 -mr-1" />
-                                        {props.treatments.items.length - 2}
-                                    </>
+                                    <PlusIcon className="size-3 mr-1" />
                                 )}
-                                {showAll ? " Less" : " More"}
+                                {showAll ? "Less" : `${props.treatments.items.length - 3} more`}
                             </Badge>
                         )}
                     </div>
                 </CardContent>
 
-                <CardFooter className="flex flex-col gap-2 sm:gap-4 !px-0 !pb-0">
-                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full">
-                        <Link href={"#"} className="w-full sm:w-auto">
+                <CardFooter className="flex flex-col gap-2 !px-0 !pb-0 mt-4">
+                    <div className="flex flex-col sm:flex-row gap-2 w-full">
+                        <Link href={"#"} className="w-full">
                             <Button
                                 variant={"outline"}
-                                size={"lg"}
-                                className="w-full rounded-full border-gray-600/40 py-1 px-3 sm:py-2 sm:px-4 lg:px-5 lg:py-3 text-sm sm:text-base lg:text-lg hover:bg-synergy-pink"
+                                className="w-full rounded-lg border-gray-300 py-1 px-3 text-sm hover:bg-synergy-pink/10 hover:border-synergy-pink/50"
                             >
                                 Find Doctor
                             </Button>
                         </Link>
-                        <Link href={`/services/${props.slug}` || "#"} className="w-full sm:w-auto">
+                        <Link href={`/services/${props.slug}` || "#"} className="w-full">
                             <Button
-                                variant={"outline"}
-                                size={"lg"}
-                                className="w-full rounded-full border-gray-600/40 py-1 px-3 sm:py-2 sm:px-4 lg:px-5 lg:py-3 text-sm sm:text-base lg:text-lg hover:bg-synergy-blue"
+                                variant={"default"}
+                                className="w-full rounded-lg bg-synergy-blue hover:bg-synergy-blue/90 text-white py-1 px-3 text-sm"
                             >
                                 Explore More
                             </Button>
