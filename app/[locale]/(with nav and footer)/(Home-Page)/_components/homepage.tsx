@@ -51,7 +51,7 @@ export const Homepage = () => {
             <TestimonialCards />
 
             {/* News Section */}
-            <section className="w-full bg-gradient-to-b from-indigo-50 to-indigo-100 px-4 sm:px-8 lg:px-20 py-10">
+            <section className="w-full bg-white px-4 sm:px-8 lg:px-20 py-10">
                 <div className="max-w-6xl mx-auto">
                     <NewsSlider />
                 </div>
