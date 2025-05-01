@@ -88,7 +88,7 @@ export const Footer = () => {
                                             </ul>
                                             {shouldShowMore && (
                                                 <button
-                                                    onClick={() => toggleExpand(menu.label, page.name, currentLimit, uniqueLinks.length)}
+                                                    onMouseOver={() => toggleExpand(menu.label, page.name, currentLimit, uniqueLinks.length)}
                                                     className="text-xs text-primary hover:underline cursor-pointer mt-1"
                                                 >
                                                     + {uniqueLinks.length - currentLimit} more
