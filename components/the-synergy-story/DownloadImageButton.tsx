@@ -1,5 +1,5 @@
 'use client'
-import { DownloadIcon, ImageDown } from "lucide-react";
+import { DownloadIcon } from "lucide-react";
 import { Button } from "../ui/button";
 
 export const DownloadImageButton = ({ filePath }: { filePath: string }) => {
