@@ -1,5 +1,4 @@
 import RequestCallBackForm from '../forms/RequestCallBackForm'
-import { ImageWithFallback } from './ImageWithFallback'
 
 export const FooterFormContainer = () => {
     return (
