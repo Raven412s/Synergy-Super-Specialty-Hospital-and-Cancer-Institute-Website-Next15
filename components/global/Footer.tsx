@@ -7,10 +7,7 @@ import { FooterFormContainer } from './FooterFormContainer';
 
 
 export const Footer = () => {
-    const itemVariants = {
-        hidden: { opacity: 0, y: 5 },
-        visible: { opacity: 1, y: 0 }
-    };
+
     return (
         <footer
             id="footer"

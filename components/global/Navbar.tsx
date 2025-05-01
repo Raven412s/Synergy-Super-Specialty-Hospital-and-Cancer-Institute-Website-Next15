@@ -101,7 +101,7 @@ export function Navbar() {
                 <div className="flex items-center justify-start w-1/4 px-2">
                     <NavigationMenuLink
                         href="/"
-                        className="h-[64px] py-2 xl:!p-0 rounded-none !m-0"
+                        className="h-[64px] py-2 xl:!p-0 rounded-none !m-0 hover:bg-white"
                     >
                         <Image
                             src="/LOGO.svg"

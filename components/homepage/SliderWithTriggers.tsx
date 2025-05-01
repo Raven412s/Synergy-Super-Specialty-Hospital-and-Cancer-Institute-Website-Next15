@@ -63,10 +63,10 @@ export default function SliderWithTriggers() {
                         <Button
                             key={slide.id}
                             className={cn(
-                                "px-4 py-2 rounded-full border-2 min-w-max cursor-pointer",
+                                "px-3 py-1 rounded-md border-1 min-w-max cursor-pointer",
                                 currentIndex === index
                                     ? "bg-primary text-white border-primary"
-                                    : "bg-transparent text-fuchsia-700 border-fuchsia-700 hover:bg-primary/50 hover:backdrop-blur-sm hover:text-white hover:border-primary/50 hover:shadow-blob"
+                                    : "bg-transparent text-synergy-blue border-synergy-blue/80 hover:bg-primary/50 hover:backdrop-blur-sm hover:text-white hover:border-primary/50 hover:shadow-blob"
                             )}
                             onClick={() => setCurrentIndex(index)}
                         >
@@ -107,8 +107,15 @@ export default function SliderWithTriggers() {
 
 
             {/* View All Specialties */}
-            <div className="flex justify-center gap-6 items-center mt-6">
-                <Button
+            <div className="flex justify-evenly w-full items-center mt-6">
+
+                <Link href="/services/all">
+                    <Button variant={"default"} size={"xl"} className="px-6 py-3 opacity-90 hover:opacity-100 rounded-2xl bg-indigo-800 text-white hover:bg-indigo-900">
+                        View All Specialties
+                    </Button>
+                </Link>
+        <div className="flex space-x-4">
+        <Button
                     size="icon"
                     className=" hidden md:flex md:items-center md:justify-center opacity-90 hover:opacity-100 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-12"
                     onClick={prevSlide}
@@ -116,11 +123,6 @@ export default function SliderWithTriggers() {
                 >
                     <ChevronLeft className="size-6" />
                 </Button>
-                <Link href="/services/all">
-                    <Button variant={"default"} size={"xl"} className="px-6 py-3 opacity-90 hover:opacity-100 rounded-full bg-indigo-800 text-white hover:bg-indigo-900">
-                        View All Specialties
-                    </Button>
-                </Link>
                 <Button
                     size="icon"
                     className=" hidden md:flex md:items-center md:justify-center opacity-90 hover:opacity-100  lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-12"
@@ -129,6 +131,7 @@ export default function SliderWithTriggers() {
                 >
                     <ChevronRight className="size-6" />
                 </Button>
+        </div>
             </div>
         </div>
     );
