@@ -1,5 +1,5 @@
 'use client'
-import { ImageDown } from "lucide-react";
+import { DownloadIcon, ImageDown } from "lucide-react";
 import { Button } from "../ui/button";
 
 export const DownloadImageButton = ({ filePath }: { filePath: string }) => {
@@ -20,7 +20,7 @@ export const DownloadImageButton = ({ filePath }: { filePath: string }) => {
       className="hover:text-primary"
       onClick={handleDownload}
     >
-      <ImageDown />
+      <DownloadIcon className="text-destructive stroke-[2.5px]" />
     </Button>
   )
 }

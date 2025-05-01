@@ -143,24 +143,12 @@ export default function NewsSlider() {
                     EXPLORE MORE →
                 </Button>
             </motion.div>
-
             {/* Carousel */}
             <div
                 className="relative flex items-center"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                {/* Left Scroll Button */}
-                <Button
-                    onClick={() => scroll("left")}
-                    variant="outline"
-                    size="xl"
-                    title="Slide left by one card."
-                    className="absolute size-12 !p-5 left-0 z-10 hidden md:flex rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
-                >
-                    <ChevronLeft className="size-6" />
-                </Button>
-
                 {/* Scrollable Container */}
                 <div
                     ref={carouselRef}
@@ -193,17 +181,6 @@ export default function NewsSlider() {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* Right Scroll Button */}
-                <Button
-                    onClick={() => scroll("right")}
-                    variant="outline"
-                    size="xl"
-                    title="Slide Right by one card."
-                    className="absolute size-12 !p-5 right-0 z-10 hidden md:flex rounded-full bg-fuchsia-300 shadow-md hover:bg-fuchsia-100 hover:text-primary text-primary"
-                >
-                    <ChevronRight className="size-6" />
-                </Button>
             </div>
         </motion.div>
     );
