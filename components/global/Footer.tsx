@@ -5,7 +5,7 @@ import { FooterFormContainer } from './FooterFormContainer';
 import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 import { SiGooglemaps } from "react-icons/si";
 import { Button } from '../ui/button';
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import { cn } from '@/lib/utils';
 
 
@@ -23,53 +23,61 @@ export const Footer = () => {
                 <div className="flex-1/2">
                     <FooterFormContainer />
                 </div>
-                <div className="flex-1/2 flex justify-center items-center bg-amber-50 rounded-2xl border-2 h-full">
-                <motion.div
-                                                        variants={itemVariants}
-                                                        className="w-[80%] p-4 space-y-4  overflow-y-auto max-h-[478px]"
-                                                    >
-                                                        <h4 className="font-semibold text-gray-700">Quick Links</h4>
-                                                        {quickLinks.map((qLink) => (
-                                                            <motion.div
-                                                                key={qLink.label}
-                                                                variants={itemVariants}
-                                                                className={cn("px-4 py-2 rounded-lg text-sm border border-neutral-300", qLink.bg)}
-                                                            >
-                                                                <div className="text-gray-500 text-[10px]">{qLink.label}</div>
-                                                                <div className="font-normal ">{qLink.value}</div>
-                                                            </motion.div>
-                                                        ))}
+                <div className="flex-1/2 flex justify-center items-center bg-amber-50 rounded-2xl border-2 h-full overflow-hidden">
+                    {/* <motion.div
+                        variants={itemVariants}
+                        className="w-[80%] p-4 space-y-4  overflow-y-auto max-h-[478px]"
+                    >
+                        <h4 className="font-semibold text-gray-700">Quick Links</h4>
+                        {quickLinks.map((qLink) => (
+                            <motion.div
+                                key={qLink.label}
+                                variants={itemVariants}
+                                className={cn("px-4 py-2 rounded-lg text-sm border border-neutral-300", qLink.bg)}
+                            >
+                                <div className="text-gray-500 text-[10px]">{qLink.label}</div>
+                                <div className="font-normal ">{qLink.value}</div>
+                            </motion.div>
+                        ))}
 
-                                                        <motion.div variants={itemVariants}>
-                                                            <Button
-                                                                variant="link"
-                                                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
-                                                                title="Book an Appointment"
-                                                            >
-                                                                Book Appointment <span>→</span>
-                                                            </Button>
-                                                        </motion.div>
+                        <motion.div variants={itemVariants}>
+                            <Button
+                                variant="link"
+                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                title="Book an Appointment"
+                            >
+                                Book Appointment <span>→</span>
+                            </Button>
+                        </motion.div>
 
-                                                        <motion.div variants={itemVariants}>
-                                                            <Button
-                                                                variant="link"
-                                                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
-                                                                title="Search for available doctors"
-                                                            >
-                                                                Find Doctors <span>→</span>
-                                                            </Button>
-                                                        </motion.div>
+                        <motion.div variants={itemVariants}>
+                            <Button
+                                variant="link"
+                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                title="Search for available doctors"
+                            >
+                                Find Doctors <span>→</span>
+                            </Button>
+                        </motion.div>
 
-                                                        <motion.div variants={itemVariants}>
-                                                            <Button
-                                                                variant="link"
-                                                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
-                                                                title="Get in touch with us"
-                                                            >
-                                                                Contact Us <span>→</span>
-                                                            </Button>
-                                                        </motion.div>
-                                                    </motion.div>
+                        <motion.div variants={itemVariants}>
+                            <Button
+                                variant="link"
+                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                title="Get in touch with us"
+                            >
+                                Contact Us <span>→</span>
+                            </Button>
+                        </motion.div>
+                    </motion.div> */}
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3562.9788065293574!2d83.3793673!3d26.7450524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399145b0d013cef1%3A0xc7d8e7bab401f8fe!2sSynergy%20Superspeciality%20Hospital%20and%20Cancer%20Institute!5e0!3m2!1sen!2sin!4v1746087373998!5m2!1sen!2sin"
+                        className='size-full'
+                        style={{border:0}}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
                 </div>
             </div>
             <div className="flex items-center justify-center  w-full  ">

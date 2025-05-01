@@ -1,7 +1,7 @@
 "use client"
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ImageWithFallback } from '../global/ImageWithFallback'
+import { ImageWithFallback } from '@/components/global/ImageWithFallback'
 
 export const OurMission = () => {
     const ref = useRef(null);

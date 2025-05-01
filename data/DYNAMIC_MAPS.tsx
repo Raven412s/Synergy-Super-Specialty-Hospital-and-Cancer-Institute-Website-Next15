@@ -38,6 +38,9 @@ import { Physiotherapy } from "@/components/Modules/services/support-services/Ph
 import { Security } from "@/components/Modules/services/support-services/Security"
 import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
 import { leaderAlokTiwari, leaderAnjaliJain, leaderSaurabhMishra } from "."
+import AdmissionDischarge from "@/components/Modules/services/administrative-services/AdmissionDischarge"
+import MedicalRecords from "@/components/Modules/services/administrative-services/MedicalRecords"
+
 
 export const LeadershipMap = {
     "Dr-Alok-Tiwari": <LeadershipPage {...leaderAlokTiwari} />,
@@ -103,11 +106,11 @@ export const ServicesMap = {
     "specialized-services": <SpecializedServices />,
 
     // Administrative Services
-    "admission-and-discharge": <DiagnosticImaging />,
-    "billing-and-insurance": <Physiotherapy />,
-    "medical-records": <Dialysis />,
+    "admission-and-discharge": <AdmissionDischarge />,
+    "billing-and-insurance": <Insurance />,
+    "medical-records": <MedicalRecords />,
     "customer-care": <Dialysis />,
-    "administrative-services": <Dialysis />,
+
 }
 
 
