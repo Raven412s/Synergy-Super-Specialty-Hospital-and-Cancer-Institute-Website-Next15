@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef, useEffect, useState } from "react";
 import { ImageWithFallback } from "../global/ImageWithFallback";
 
 const newsData = [
@@ -142,12 +143,15 @@ export default function NewsSlider() {
                     EXPLORE MORE →
                 </Button>
             </motion.div>
+
             {/* Carousel */}
             <div
-                className="relative flex items-center"
+                className="relative flex justify-center flex-col items-end"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
+
+
                 {/* Scrollable Container */}
                 <div
                     ref={carouselRef}
@@ -157,7 +161,7 @@ export default function NewsSlider() {
                     {[...newsData, newsData[0]].map((news, index) => (
                         <motion.div
                             key={`${index}-${news.title}`}
-                            className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72 rounded-xl overflow-hidden relative snap-start hide-scrollbar"
+                            className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72 rounded-xl overflow-hidden relative snap-start hide-scrollbar aspect-[3/4]"
                             initial={{ y: 60, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
@@ -179,6 +183,28 @@ export default function NewsSlider() {
                             </div>
                         </motion.div>
                     ))}
+                </div>
+                <div className="flex gap-6">
+                              {/* Left Scroll Button */}
+              <Button
+                    onClick={() => scroll("left")}
+                    variant="outline"
+                    size="xl"
+                    title="Slide left by one card."
+                    className="size-12 !p-5  z-10 hidden md:flex rounded-full bg-primary shadow-md hover:bg-indigo-100 hover:text-primary text-indigo-100"
+                >
+                    <ChevronLeft className="size-6" />
+                </Button>
+                {/* Right Scroll Button */}
+                <Button
+                    onClick={() => scroll("right")}
+                    variant="outline"
+                    size="xl"
+                    title="Slide Right by one card."
+                    className="size-12 !p-5  z-10 hidden md:flex rounded-full bg-primary shadow-md hover:bg-indigo-100 hover:text-primary text-indigo-100"
+                >
+                    <ChevronRight className="size-6" />
+                </Button>
                 </div>
             </div>
         </motion.div>
