@@ -1,12 +1,9 @@
 "use client"
-import { menuItems, quickLinks } from '@/data';
+import { menuItems } from '@/data';
 import Link from 'next/link';
-import { FooterFormContainer } from './FooterFormContainer';
 import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 import { SiGooglemaps } from "react-icons/si";
-import { Button } from '../ui/button';
-import { motion } from "framer-motion"
-import { cn } from '@/lib/utils';
+import { FooterFormContainer } from './FooterFormContainer';
 
 
 export const Footer = () => {
