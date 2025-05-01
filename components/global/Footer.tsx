@@ -4,83 +4,48 @@ import Link from 'next/link';
 import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 import { SiGooglemaps } from "react-icons/si";
 import { FooterFormContainer } from './FooterFormContainer';
+import { useState } from 'react';
 
 
 export const Footer = () => {
+    const [expandedItems, setExpandedItems] = useState<Record<string, Record<string, number>>>({});
 
+    const toggleExpand = (menuLabel: string, pageName: string, currentLimit: number, totalItems: number) => {
+        setExpandedItems(prev => ({
+            ...prev,
+            [menuLabel]: {
+                ...prev[menuLabel],
+                [pageName]: Math.min(currentLimit + 4, totalItems)
+            }
+        }));
+    };
     return (
         <footer
             id="footer"
             className="relative container mx-auto  py-12 px-4 sm:px-6 lg:px-8 "
         >
-            <div className="flex h-[480px] mb-5 gap-5">
+            <div className="flex h-[480px] mb-8 gap-5">
                 <div className="flex-1/2">
                     <FooterFormContainer />
                 </div>
-                <div className="flex-1/2 flex justify-center items-center bg-amber-50 rounded-2xl border-2 h-full overflow-hidden">
-                    {/* <motion.div
-                        variants={itemVariants}
-                        className="w-[80%] p-4 space-y-4  overflow-y-auto max-h-[478px]"
-                    >
-                        <h4 className="font-semibold text-gray-700">Quick Links</h4>
-                        {quickLinks.map((qLink) => (
-                            <motion.div
-                                key={qLink.label}
-                                variants={itemVariants}
-                                className={cn("px-4 py-2 rounded-lg text-sm border border-neutral-300", qLink.bg)}
-                            >
-                                <div className="text-gray-500 text-[10px]">{qLink.label}</div>
-                                <div className="font-normal ">{qLink.value}</div>
-                            </motion.div>
-                        ))}
-
-                        <motion.div variants={itemVariants}>
-                            <Button
-                                variant="link"
-                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
-                                title="Book an Appointment"
-                            >
-                                Book Appointment <span>→</span>
-                            </Button>
-                        </motion.div>
-
-                        <motion.div variants={itemVariants}>
-                            <Button
-                                variant="link"
-                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
-                                title="Search for available doctors"
-                            >
-                                Find Doctors <span>→</span>
-                            </Button>
-                        </motion.div>
-
-                        <motion.div variants={itemVariants}>
-                            <Button
-                                variant="link"
-                                className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
-                                title="Get in touch with us"
-                            >
-                                Contact Us <span>→</span>
-                            </Button>
-                        </motion.div>
-                    </motion.div> */}
+                <div className="flex-1/2 flex justify-center items-center  rounded-2xl border-2 border-border/10 hover:border-border transition-colors duration-200 ease-in-out h-full overflow-hidden">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3562.9788065293574!2d83.3793673!3d26.7450524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399145b0d013cef1%3A0xc7d8e7bab401f8fe!2sSynergy%20Superspeciality%20Hospital%20and%20Cancer%20Institute!5e0!3m2!1sen!2sin!4v1746087373998!5m2!1sen!2sin"
                         className='size-full'
-                        style={{border:0}}
+                        style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
             </div>
-            <div className="flex items-center justify-center  w-full  ">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg;gap-10 gap-1 md:gap-6  w-max  sm:w-full">
+            <div className="flex items-center justify-center w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-10 gap-1 md:gap-6 w-max sm:w-full">
                     {menuItems.map((menu) => {
                         const hasMultiplePages = menu.pages.length > 1;
 
                         return (
-                            <div key={menu.label} className='w-full '>
+                            <div key={menu.label} className='w-full'>
                                 <h2 className="text-primary font-semibold font-display capitalize text-left mb-4">
                                     {menu.label}
                                 </h2>
@@ -89,15 +54,18 @@ export const Footer = () => {
                                     const uniqueLinksMap = new Map<string, string>();
 
                                     page.links.forEach((link) => {
-                                        // allow both full page & section links
                                         if (!uniqueLinksMap.has(link.href)) {
                                             uniqueLinksMap.set(link.href, link.label);
                                         }
                                     });
 
                                     const uniqueLinks = Array.from(uniqueLinksMap.entries());
-
                                     if (uniqueLinks.length === 0) return null;
+
+                                    const initialLimit = 4;
+                                    const currentLimit = expandedItems[menu.label]?.[page.name] || initialLimit;
+                                    const shouldShowMore = uniqueLinks.length > initialLimit && currentLimit < uniqueLinks.length;
+                                    const visibleLinks = uniqueLinks.slice(0, currentLimit);
 
                                     return (
                                         <div key={page.name} className="mb-4 min-w-[100px] px-1 py-1 overflow-hidden w-full">
@@ -105,7 +73,7 @@ export const Footer = () => {
                                                 <h3 className="text-sm font-semibold mb-2">{page.name}</h3>
                                             )}
                                             <ul className="w-full">
-                                                {uniqueLinks.map(([href, label]) => (
+                                                {visibleLinks.map(([href, label]) => (
                                                     <li key={href} className="text-wrap">
                                                         <Link
                                                             href={href}
@@ -118,9 +86,16 @@ export const Footer = () => {
                                                     </li>
                                                 ))}
                                             </ul>
+                                            {shouldShowMore && (
+                                                <button
+                                                    onClick={() => toggleExpand(menu.label, page.name, currentLimit, uniqueLinks.length)}
+                                                    className="text-xs text-primary hover:underline cursor-pointer mt-1"
+                                                >
+                                                    + {uniqueLinks.length - currentLimit} more
+                                                </button>
+                                            )}
                                         </div>
                                     );
-
                                 })}
                             </div>
                         );

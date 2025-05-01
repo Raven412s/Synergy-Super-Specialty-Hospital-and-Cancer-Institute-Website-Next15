@@ -1,5 +1,4 @@
 "use client";
-
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -101,7 +100,7 @@ export function Navbar() {
                 <div className="flex items-center justify-start w-1/4 px-2">
                     <NavigationMenuLink
                         href="/"
-                        className="h-[64px] py-2 xl:!p-0 rounded-none !m-0 hover:bg-white"
+                        className="h-[64px] py-2 xl:!p-0 rounded-none !m-0 hover:bg-transparent"
                     >
                         <Image
                             src="/LOGO.svg"
@@ -124,7 +123,7 @@ export function Navbar() {
                                     {item.label}
                                 </NavigationMenuTrigger>
 
-                                <NavigationMenuContent className="xl:min-w-7xl lg:min-w-6xl md:min-w-5xl w-full bg-yellow-50/50 flex items-center justify-center p-0 !outline-none !ring-0 !border-none !rounded-none min-h-[450px] h-full ">
+                                <NavigationMenuContent className="xl:min-w-7xl lg:min-w-6xl md:min-w-5xl w-full bg-slate-50 flex items-center justify-center p-0 !outline-none !ring-0 !border-none !rounded-none min-h-[450px] h-full ">
                                     <AnimatePresence>
                                         <motion.div
                                             initial="hidden"
