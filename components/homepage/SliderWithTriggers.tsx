@@ -74,7 +74,7 @@ export default function SliderWithTriggers() {
                         </Button>
                     ))}
                 </div>
-                <span>
+                <span className="hidden xl:block ">
                     <ChevronRight className="size-6" />
                 </span>
             </div>
@@ -82,28 +82,28 @@ export default function SliderWithTriggers() {
 
 
             {/* Slider - Only show featured departments */}
-            <div className="relative flex items-center justify-center w-full overflow-hidden">
-                <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
-                    <AnimatePresence mode="wait">
-                        {featuredDepartments.map((department, index) =>
-                            index === currentIndex ? (
-                                <motion.div
-                                    key={department.id}
-                                    className="w-full p-3 mx-auto flex justify-center items-center"
-                                    initial={{ opacity: 0, x: 100 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: -100 }}
-                                    transition={{ duration: 0.5 }}
-                                    onMouseEnter={() => setIsHovered(true)}  // Pause on hover
-                                    onMouseLeave={() => setIsHovered(false)} // Resume on leave
-                                >
-                                    <SliderCard {...department} />
-                                </motion.div>
-                            ) : null
-                        )}
-                    </AnimatePresence>
-                </div>
-            </div>
+            <div className="relative flex items-center justify-center w-full overflow-hidden bg-white border border-neutral-200 hover:border-neutral-300 shadow-sm hover:shadow-md transition-all duration-300 rounded-xl ">
+    <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
+        <AnimatePresence mode="wait">
+            {featuredDepartments.map((department, index) =>
+                index === currentIndex ? (
+                    <motion.div
+                        key={department.id}
+                        className="w-full p-3 mx-auto flex justify-center items-center"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
+                        <SliderCard {...department} />
+                    </motion.div>
+                ) : null
+            )}
+        </AnimatePresence>
+    </div>
+</div>
 
 
             {/* View All Specialties */}
@@ -145,7 +145,7 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "w-full max-w-4xl flex flex-col rounded-xl p-4 bg-white border border-neutral-200 hover:border-neutral-300 shadow-sm hover:shadow-md transition-all duration-300",
+                "w-full min-w-4xl flex flex-col  p-4 bg-transparent border-transparent shadow-none",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
@@ -153,13 +153,13 @@ const SliderCard = (props: DepartmentData) => {
         >
             {/* Image Section */}
             <div className="w-full md:w-2/5 flex justify-center items-start aspect-square">
-                <div className="w-full h-full overflow-hidden rounded-lg shadow-sm relative">
+                <div className="w-2/3 h-2/3 md:w-full md:h-full  overflow-hidden rounded-lg shadow-sm relative">
                     {props.heroImage && (
                         <ImageWithFallback
                             fallbackSrc="/fallback-image.webp"
                             src={props.heroImage}
                             className={cn(
-                                "object-cover object-center w-full h-full transition-all duration-300",
+                                "object-cover object-center w-2/3 h-2/3 md:w-full md:h-full transition-all duration-300",
                                 cardHovered && "md:scale-105"
                             )}
                             fill

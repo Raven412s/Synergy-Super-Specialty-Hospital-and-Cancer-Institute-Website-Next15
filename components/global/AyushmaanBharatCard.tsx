@@ -6,20 +6,19 @@ import { ImageWithFallback } from './ImageWithFallback';
 
 const AyushmaanBharatCard = () => {
   return (
-    <section className="py-12 px-4  rounded-2xl  mx-2 md:mx-0 bg-gradient-to-tl from-0% from-synergy-blue/60  via-synergy-blue/50 to-indigo-200 to-80% shadow-lg">
+    <section className="py-12 lg:px-4 px-2  rounded-2xl   md:mx-0 bg-gradient-to-tl from-0% from-synergy-blue/60  via-synergy-blue/50 to-indigo-200 to-80% shadow-lg">
       <div className="max-w-6xl w-full mx-auto space-y-10">
-
         {/* Header Section */}
-        <div className="relative flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="relative flex  lg:scale-100 justify-evenly lg:justify-between items-center gap-2 md:gap-6">
           <ImageWithFallback
             fallbackSrc="/fallback-image.webp"
             src="/insurance-companies/PMJAY.png"
             width={200}
             height={200}
             alt="Pradhan Mantri Ayushmaan Bharat Yojana"
-            className="object-cover object-center rounded-full size-32 md:size-40"
+            className="object-cover object-center rounded-full size-20 md:size-32 lg:size-40"
           />
-          <p className="text-2xl md:text-4xl lg:text-5xl uppercase font-extrabold text-center">
+          <p className="text-base  md:text-4xl lg:text-5xl uppercase font-bold md:font-extrabold text-center">
             Pradhan Mantri Ayushmaan Bharat Yojana
           </p>
           <ImageWithFallback
@@ -28,7 +27,7 @@ const AyushmaanBharatCard = () => {
             width={200}
             height={200}
             alt="Pradhan Mantri Narendra Modi"
-            className="object-cover object-center rounded-full size-32 md:size-40 border-2 border-synergy-blue"
+            className="object-cover object-center rounded-full size-20 md:size-32 lg:size-40 border-2 border-synergy-blue"
           />
           <ImageWithFallback
             fallbackSrc="/fallback-image.webp"
@@ -36,7 +35,7 @@ const AyushmaanBharatCard = () => {
             width={200}
             height={200}
             alt="Pradhan Mantri Narendra Modi"
-            className="object-cover object-center rounded-full size-32 md:size-40 border-2 border-synergy-blue"
+            className="object-cover object-center rounded-full size-20 md:size-32 lg:size-40 border-2 border-synergy-blue"
           />
         </div>
 
@@ -48,7 +47,7 @@ const AyushmaanBharatCard = () => {
             width={450}
             height={400}
             alt="Ayushmaan Bharat Card"
-            className="object-cover object-center w-full md:w-1/2 rounded-xl shadow-xl shadow-black/40"
+            className="object-cover object-center w-2/3 md:w-1/2 rounded-xl shadow-xl shadow-black/40"
           />
           <p className="w-full md:w-1/2 font-medium text-sm md:text-base leading-relaxed">
             The Ayushmaan Bharat Card, launched under the Pradhan Mantri Jan Arogya Yojana (PM-JAY), is a revolutionary step toward providing universal health coverage in India. It offers cashless healthcare services up to ₹5 lakh per family per year for secondary and tertiary hospitalization across public and private empanelled hospitals. Targeting economically vulnerable families, the scheme ensures access to quality healthcare without financial hardship. Beneficiaries can avail treatments for a wide range of diseases, surgeries, and medical procedures. With minimal documentation, quick approvals, and a vast network of hospitals, Ayushmaan Bharat empowers millions to lead healthier, more secure lives with dignity.

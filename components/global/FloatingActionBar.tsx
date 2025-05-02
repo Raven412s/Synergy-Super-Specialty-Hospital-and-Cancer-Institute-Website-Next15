@@ -92,9 +92,9 @@ export const FloatingActionBar = ({ items, isOnFooter = false }: Props) => {
                         transition={{ duration: 0.3 }}
                         className={cn(
                             "z-10 fixed p-2 transition-all duration-300 ease-in-out ",
-                            "flex flex-wrap items-center  gap-12 w-full", // ← changed this
+                            "flex justify-evenly items-center   w-full", // ← changed this
                             "md:flex-col md:w-auto md:rounded-r-xl items-start  md:justify-center gap-5",
-                            "bottom-0  md:h-full "
+                            "bottom-0  md:h-full bg-teal-50 "
                         )}
                     >
                         {items.map((item, idx) => {
