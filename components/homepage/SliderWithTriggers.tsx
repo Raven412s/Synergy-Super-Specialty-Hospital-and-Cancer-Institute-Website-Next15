@@ -4,9 +4,9 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
+    CardFooter,
 } from "@/components/ui/card";
 import { departmentData } from "@/data/departmentData";
 import { cn } from "@/lib/utils";
@@ -24,7 +24,6 @@ import { ImageWithFallback } from "../global/ImageWithFallback";
 import { Badge } from "../ui/badge";
 
 export default function SliderWithTriggers() {
-    // Filter to only get featured departments
     const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,11 +38,10 @@ export default function SliderWithTriggers() {
         );
     };
 
-    // Auto-rotation with hover pause
     useEffect(() => {
         let interval: NodeJS.Timeout;
 
-        if (!isHovered) { // Only auto-rotate if not hovered
+        if (!isHovered) {
             interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % featuredDepartments.length);
             }, 5000);
@@ -52,21 +50,21 @@ export default function SliderWithTriggers() {
         return () => {
             if (interval) clearInterval(interval);
         };
-    }, [isHovered, featuredDepartments.length]); // ✅ Only depend on isHovered and data length
+    }, [isHovered, featuredDepartments.length]);
 
     return (
-        <div className="w-full  flex flex-col gap-5 relative items-center justify-center ">
-            {/* Trigger Buttons - Only show featured departments */}
-            <div className="flex items-center justify-normal">
-                <div className="flex  overflow-x-auto gap-2 items-center  justify-start md:w-full md:max-w-5xl w-screen px-4 md:px-0 hide-scrollbar overflow-hidden ">
+        <div className="w-full flex flex-col gap-3 sm:gap-5 relative items-center justify-center px-2 sm:px-4">
+            {/* Trigger Buttons */}
+            <div className="flex items-center justify-normal w-full">
+                <div className="flex overflow-x-auto gap-2 items-center justify-start w-full max-w-5xl px-2 sm:px-4 hide-scrollbar">
                     {featuredDepartments.map((slide, index) => (
                         <Button
                             key={slide.id}
                             className={cn(
-                                "px-3 py-1 rounded-md border-1 min-w-max cursor-pointer",
+                                "px-3 py-1 rounded-md border-1 min-w-max cursor-pointer text-xs sm:text-sm",
                                 currentIndex === index
                                     ? "bg-primary text-white border-primary"
-                                    : "bg-transparent text-synergy-blue border-synergy-blue/80 hover:bg-primary/50 hover:backdrop-blur-sm hover:text-white hover:border-primary/50 hover:shadow-blob"
+                                    : "bg-transparent text-synergy-blue border-synergy-blue/80 hover:bg-primary/50 hover:text-white"
                             )}
                             onClick={() => setCurrentIndex(index)}
                         >
@@ -74,70 +72,83 @@ export default function SliderWithTriggers() {
                         </Button>
                     ))}
                 </div>
-                <span className="hidden xl:block ">
-                    <ChevronRight className="size-6" />
-                </span>
             </div>
 
+            {/* Slider */}
+            <div className="relative w-full bg-white border border-neutral-200 hover:border-neutral-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl">
+                <div className="w-full flex justify-center items-center overflow-hidden rounded-xl">
+                    <AnimatePresence mode="wait">
+                        {featuredDepartments.map((department, index) =>
+                            index === currentIndex ? (
+                                <motion.div
+                                    key={department.id}
+                                    className="w-full p-0 mx-auto flex justify-center items-center"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    onMouseEnter={() => setIsHovered(true)}
+                                    onMouseLeave={() => setIsHovered(false)}
+                                >
+                                    <SliderCard {...department} />
+                                </motion.div>
+                            ) : null
+                        )}
+                    </AnimatePresence>
+                </div>
 
-
-            {/* Slider - Only show featured departments */}
-            <div className="relative flex items-center justify-center w-full overflow-hidden bg-white border border-neutral-200 hover:border-neutral-300 shadow-sm hover:shadow-md transition-all duration-300 rounded-xl ">
-    <div className="w-full flex justify-center items-center overflow-hidden rounded-2xl">
-        <AnimatePresence mode="wait">
-            {featuredDepartments.map((department, index) =>
-                index === currentIndex ? (
-                    <motion.div
-                        key={department.id}
-                        className="w-full p-3 mx-auto flex justify-center items-center"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.5 }}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+                {/* Mobile Navigation Arrows */}
+                <div className="md:hidden flex justify-between w-full absolute top-1/2 -translate-y-1/2 px-2">
+                    <Button
+                        size="icon"
+                        className="p-2 bg-white/90 text-primary rounded-full shadow-lg hover:bg-white z-20 size-8"
+                        onClick={prevSlide}
                     >
-                        <SliderCard {...department} />
-                    </motion.div>
-                ) : null
-            )}
-        </AnimatePresence>
-    </div>
-</div>
+                        <ChevronLeft className="size-4" />
+                    </Button>
+                    <Button
+                        size="icon"
+                        className="p-2 bg-white/90 text-primary rounded-full shadow-lg hover:bg-white z-20 size-8"
+                        onClick={nextSlide}
+                    >
+                        <ChevronRight className="size-4" />
+                    </Button>
+                </div>
+            </div>
 
-
-            {/* View All Specialties */}
-            <div className="flex justify-evenly w-full items-center mt-6">
-
-                <Link href="/services/all">
-                    <Button variant={"default"} size={"xl"} className="px-6 py-3 opacity-90 hover:opacity-100 rounded-2xl bg-indigo-800 text-white hover:bg-indigo-900">
+            {/* Bottom Controls */}
+            <div className="flex flex-col sm:flex-row justify-between w-full items-center gap-4 mt-4 sm:mt-6 px-2 sm:px-0">
+                <Link href="/services/all" className="w-full sm:w-auto">
+                    <Button
+                        variant="default"
+                        size="lg"
+                        className="w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 rounded-xl bg-indigo-800 text-white hover:bg-indigo-900"
+                    >
                         View All Specialties
                     </Button>
                 </Link>
-        <div className="flex space-x-4">
-        <Button
-                    size="icon"
-                    className=" hidden md:flex md:items-center md:justify-center opacity-90 hover:opacity-100 lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-12"
-                    onClick={prevSlide}
-                    title="move to the previous speciality slide"
-                >
-                    <ChevronLeft className="size-6" />
-                </Button>
-                <Button
-                    size="icon"
-                    className=" hidden md:flex md:items-center md:justify-center opacity-90 hover:opacity-100  lg:block p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 z-20 size-12"
-                    onClick={nextSlide}
-                    title="move to the next speciality slide"
-                >
-                    <ChevronRight className="size-6" />
-                </Button>
-        </div>
+
+                <div className="hidden sm:flex space-x-2 sm:space-x-4">
+                    <Button
+                        size="icon"
+                        className="p-2 sm:p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 size-10 sm:size-12"
+                        onClick={prevSlide}
+                    >
+                        <ChevronLeft className="size-4 sm:size-6" />
+                    </Button>
+                    <Button
+                        size="icon"
+                        className="p-2 sm:p-3 bg-indigo-800 text-white rounded-full shadow-lg hover:bg-indigo-700 size-10 sm:size-12"
+                        onClick={nextSlide}
+                    >
+                        <ChevronRight className="size-4 sm:size-6" />
+                    </Button>
+                </div>
             </div>
         </div>
     );
 }
 
-// SliderCard component remains exactly the same
 const SliderCard = (props: DepartmentData) => {
     const [showAll, setShowAll] = useState(false);
     const [cardHovered, setCardHovered] = useState(false);
@@ -145,21 +156,21 @@ const SliderCard = (props: DepartmentData) => {
     return (
         <Card
             className={cn(
-                "w-full min-w-4xl flex flex-col  p-4 bg-transparent border-transparent shadow-none",
+                "w-full flex flex-col md:flex-row p-3 sm:p-4 bg-transparent border-transparent shadow-none",
                 props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             )}
             onMouseEnter={() => setCardHovered(true)}
             onMouseLeave={() => setCardHovered(false)}
         >
             {/* Image Section */}
-            <div className="w-full md:w-2/5 flex justify-center items-start aspect-square">
-                <div className="w-2/3 h-2/3 md:w-full md:h-full  overflow-hidden rounded-lg shadow-sm relative">
+            <div className="w-full md:w-2/5 flex justify-center items-start aspect-square p-2 sm:p-4">
+                <div className="w-full h-full max-w-xs overflow-hidden rounded-lg shadow-sm relative">
                     {props.heroImage && (
                         <ImageWithFallback
                             fallbackSrc="/fallback-image.webp"
                             src={props.heroImage}
                             className={cn(
-                                "object-cover object-center w-2/3 h-2/3 md:w-full md:h-full transition-all duration-300",
+                                "object-cover object-center w-full h-full transition-all duration-300",
                                 cardHovered && "md:scale-105"
                             )}
                             fill
@@ -171,29 +182,29 @@ const SliderCard = (props: DepartmentData) => {
             </div>
 
             {/* Content Section */}
-            <div className="flex flex-col w-full md:w-3/5 justify-between px-0 md:px-4 pt-4 md:pt-0">
+            <div className="flex flex-col w-full md:w-3/5 justify-between px-0 sm:px-2 md:px-4 pt-3 sm:pt-4 md:pt-0">
                 <CardHeader className="w-full px-0">
-                    <CardTitle className="font-semibold text-left text-xl sm:text-2xl mb-1">
+                    <CardTitle className="font-semibold text-left text-lg sm:text-xl md:text-2xl mb-1">
                         {props.name}
                     </CardTitle>
-                    <CardDescription className="text-neutral-600 text-sm leading-normal mb-2 line-clamp-3">
+                    <CardDescription className="text-neutral-600 text-xs sm:text-sm leading-normal mb-2 line-clamp-3">
                         {props.heroTitle + " " + props.heroSubtitle} ...
-                        <Link href={`/services/${props.slug}`} className="ml-2 underline hover:text-primary">
+                        <Link href={`/services/${props.slug}`} className="ml-1 sm:ml-2 underline hover:text-primary text-xs sm:text-sm">
                             Read More
                         </Link>
                     </CardDescription>
                 </CardHeader>
 
                 <CardContent className="w-full !p-0">
-                    <p className="font-medium text-sm mb-2">Top Specialities & Procedures</p>
-                    <div className="flex flex-wrap gap-2 py-1">
+                    <p className="font-medium text-xs sm:text-sm mb-2">Top Specialities & Procedures</p>
+                    <div className="flex flex-wrap gap-1 sm:gap-2 py-1">
                         {props.treatments.items
                             .slice(0, showAll ? props.treatments.items.length : 3)
                             .map((item, index) => (
                                 <Badge
                                     key={index}
                                     variant="outline"
-                                    className="text-xs text-primary border-primary/50"
+                                    className="text-[10px] sm:text-xs text-primary border-primary/50"
                                 >
                                     {item.title}
                                 </Badge>
@@ -202,13 +213,13 @@ const SliderCard = (props: DepartmentData) => {
                         {props.treatments.items.length > 3 && (
                             <Badge
                                 variant="outline"
-                                className="text-xs cursor-pointer text-primary border-primary/50"
+                                className="text-[10px] sm:text-xs cursor-pointer text-primary border-primary/50"
                                 onClick={() => setShowAll(!showAll)}
                             >
                                 {showAll ? (
-                                    <MinusIcon className="size-3 mr-1" />
+                                    <MinusIcon className="size-2 sm:size-3 mr-1" />
                                 ) : (
-                                    <PlusIcon className="size-3 mr-1" />
+                                    <PlusIcon className="size-2 sm:size-3 mr-1" />
                                 )}
                                 {showAll ? "Less" : `${props.treatments.items.length - 3} more`}
                             </Badge>
@@ -216,25 +227,23 @@ const SliderCard = (props: DepartmentData) => {
                     </div>
                 </CardContent>
 
-                <CardFooter className="flex flex-col gap-2 !px-0 !pb-0 mt-4">
-                    <div className="flex flex-col sm:flex-row gap-2 w-full">
-                        <Link href={"#"} className="w-full">
-                            <Button
-                                variant={"outline"}
-                                className="w-full rounded-lg border-gray-300 py-1 px-3 text-sm hover:bg-synergy-pink/10 hover:border-synergy-pink/50 hover:text-synergy-pink"
-                            >
-                                Find Doctor
-                            </Button>
-                        </Link>
-                        <Link href={`/services/${props.slug}` || "#"} className="w-full">
-                            <Button
-                                variant={"default"}
-                                className="w-full rounded-lg bg-synergy-blue hover:bg-synergy-blue/90 text-white py-1 px-3 text-sm"
-                            >
-                                Explore More
-                            </Button>
-                        </Link>
-                    </div>
+                <CardFooter className="flex flex-col sm:flex-row gap-2 !px-0 !pb-0 mt-3 sm:mt-4">
+                    <Link href={"#"} className="w-full">
+                        <Button
+                            variant={"outline"}
+                            className="w-full rounded-lg border-gray-300 py-1 px-3 text-xs sm:text-sm"
+                        >
+                            Find Doctor
+                        </Button>
+                    </Link>
+                    <Link href={`/services/${props.slug}` || "#"} className="w-full">
+                        <Button
+                            variant={"default"}
+                            className="w-full rounded-lg bg-synergy-blue hover:bg-synergy-blue/90 text-white py-1 px-3 text-xs sm:text-sm"
+                        >
+                            Explore More
+                        </Button>
+                    </Link>
                 </CardFooter>
             </div>
         </Card>

@@ -26,7 +26,7 @@ export const SynergyInTheNewsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed"
+                className="text-gray-600 text-sm md:text-base lg:text-lg leading-normal"
             >
                 Stay updated with our latest achievements, breakthroughs, and contributions to healthcare innovation.
             </motion.p>

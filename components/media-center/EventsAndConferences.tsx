@@ -58,23 +58,25 @@ export const EventsAndConferences = () => {
     return (
         <section
             ref={ref}
-            className="min-h-screen w-full px-4 sm:px-6 lg:px-16 xl:px-24 py-12 md:py-20"
+            className="min-h-screen w-full px-2 sm:px-4 lg:px-16 xl:px-24 py-12 md:py-20"
             id='events'
         >
-            <div className='lg:p-10 md:p-8 p-6 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+            <div className='lg:p-10 md:p-8 p-2 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8 }}
-                    className="container mx-auto"
+                    className="container mx-auto "
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                 <div className="p-4">
+                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                         Events & Conferences
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-4xl">
+                    <p className="text-lg md:text-lg text-gray-700 mb-12 max-w-4xl">
                         Synergy Hospital hosts and participates in numerous medical conferences, workshops, and community events throughout the year, bringing together healthcare professionals and the community to advance medical knowledge and practice.
                     </p>
 
+                 </div>
                     {/* Featured Events */}
                     <div className="mb-20">
                         <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8 pb-2 border-b border-gray-200">

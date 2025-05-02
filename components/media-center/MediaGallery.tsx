@@ -71,24 +71,26 @@ export const MediaGallery = () => {
         <section
             ref={ref}
             id="media-gallery"
-            className="min-h-screen w-full px-4 sm:px-6 lg:px-16 xl:px-24 py-12 md:py-20"
+            className="min-h-screen w-full px-2 sm:px-4 lg:px-16 xl:px-24 py-12 md:py-20"
         >
-            <div className='lg:p-10 md:p-8 p-6 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+            <div className='lg:p-10 md:p-8 p-2 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8 }}
                 >
+                    <div className="p-3">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Media Gallery
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-4xl">
+                    <p className="text-lg md:text-lg text-gray-700 mb-8 max-w-4xl">
                         Explore our collection of photos and videos showcasing hospital facilities, medical advancements, community events, and patient stories.
                     </p>
+                    </div>
 
                     {/* Media Type Filter */}
                     <motion.div
-                        className="flex flex-wrap gap-4 mb-12"
+                        className="flex flex-wrap gap-2 lg:gap-4 mb-12"
                         initial={{ opacity: 0 }}
                         animate={isInView ? { opacity: 1 } : {}}
                         transition={{ delay: 0.2 }}
@@ -101,7 +103,7 @@ export const MediaGallery = () => {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                                 transition={{ delay: 0.3 + index * 0.1 }}
-                                className={`flex items-center px-5 py-3 rounded-full text-sm font-medium transition-colors ${index === 0 ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+                                className={`flex items-center py-2 px-3 lg:px-5 lg:py-3 rounded-lg text-sm font-medium transition-colors ${index === 0 ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
                             >
                                 {type.icon}
                                 {type.name} ({type.count})
@@ -111,7 +113,7 @@ export const MediaGallery = () => {
 
                     {/* Gallery Grid */}
                     <motion.div
-                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-3"
                         initial={{ opacity: 0 }}
                         animate={isInView ? { opacity: 1 } : {}}
                         transition={{ delay: 0.5 }}
@@ -161,7 +163,7 @@ export const MediaGallery = () => {
                         animate={isInView ? { opacity: 1 } : {}}
                         transition={{ delay: 1 }}
                     >
-                        <button className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center">
+                        <button className="lg:px-8 lg:py-3 text-sm lg:text-base py-2 px-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center">
                             <FaImages className="mr-2" />
                             View Full Gallery
                         </button>

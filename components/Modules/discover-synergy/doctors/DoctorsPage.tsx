@@ -74,7 +74,7 @@ export const DoctorsPage = () => {
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-heading mb-2">
                         Find Your Doctor
                     </h1>
-                    <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-4xl">
+                    <p className="text-lg  text-gray-700 mb-8 max-w-4xl">
                         Connect with our team of expert physicians dedicated to your health and wellbeing.
                     </p>
 
@@ -176,14 +176,14 @@ export const DoctorsPage = () => {
                             variants={container}
                             initial="hidden"
                             animate={isInView ? "show" : "hidden"}
-                             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-8"
+                             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8"
                         >
                             {filteredDoctors.map((doctor) => (
                                 <motion.div
                                     key={doctor.id}
                                     variants={item}
                                     whileHover={{ y: -5 }}
-                                    className="flex flex-col h-full bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden"
+                                    className="flex flex-col h-full bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden max-w-[400px]"
                                 >
                                     {/* Image/Header */}
                                     <div className="relative h-60 bg-gradient-to-r from-fuchsia-400 to-indigo-700">

@@ -37,7 +37,7 @@ export const Homepage = () => {
                 </div>
             </section>
 
-            <div className="max-w-screen w-full text-black p-5 ">
+            <div className="max-w-screen w-full text-black lg:p-5 p-2 ">
                 {/* Ayushmaan Bharat */}
                 <AyushmaanBharatCard />
             </div>

@@ -56,23 +56,25 @@ export const MediaContacts = () => {
     <section
       ref={ref}
       id="media-contacts"
-      className="min-h-screen w-full px-4 sm:px-6 lg:px-16 xl:px-24 py-12 md:py-20"
+      className="min-h-screen w-full px-2 sm:px-2  lg:px-16 xl:px-24 py-12 md:py-20"
     >
-      <div className='lg:p-10 md:p-8 p-6 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
+      <div className='lg:p-10 md:p-8 p-2 py-4 rounded-3xl bg-white border-3 space-y-12 border-neutral-200 shadow-expanded'>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+<div className="px-2">
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Media Contacts
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-4xl">
+          <p className="text-lg md:text-lg text-gray-700 mb-12 max-w-4xl">
             Our dedicated media team is available to assist journalists, content creators, and media professionals with inquiries, interviews, and hospital information.
           </p>
+</div>
 
           {/* Contact Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 mb-5 lg:mb-16">
             {contacts.map((contact, index) => (
               <motion.div
                 key={contact.name}

@@ -20,7 +20,7 @@ export const SpecialitiesSection = () => {
                         initial={{ x: -100, opacity: 0 }}
                         animate={isInView ? { x: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-heading text-2xl sm:text-3xl lg:text-4xl text-center leading-20 "
+                        className="text-heading text-2xl sm:text-3xl lg:text-4xl text-center leading-relaxed "
                     >
                         Discover Our Centres of Clinical Excellence
                     </motion.h1>
