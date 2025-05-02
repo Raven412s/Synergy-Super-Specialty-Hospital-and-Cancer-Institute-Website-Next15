@@ -44,7 +44,9 @@ export const Homepage = () => {
             {/* Specialties Section */}
             <SpecialitiesSection />
             {/*The Leader Card Grid*/}
+            <div className="bg-gradient-to-b from-fuchsia-100 to-white w-full flex items-center justify-center">
             <LeaderCards />
+            </div>
 
 
             {/* Testimonial Cards */}

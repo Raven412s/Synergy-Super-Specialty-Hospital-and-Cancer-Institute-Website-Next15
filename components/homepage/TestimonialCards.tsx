@@ -11,7 +11,7 @@ export const TestimonialCards = () => {
     return (
         <section
             ref={testimonialRef}
-            className=" w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-indigo-100 px-4 sm:px-8 lg:px-20 py-10 flex items-center justify-center"
+            className=" w-full bg-gradient-to-b from-transparent via-[#dceaff30] to-white px-4 sm:px-8 lg:px-20 py-10 flex items-center justify-center"
         >
             <div className="max-w-6xl w-full space-y-10">
                 {/* Heading & Subheading Animation */}
