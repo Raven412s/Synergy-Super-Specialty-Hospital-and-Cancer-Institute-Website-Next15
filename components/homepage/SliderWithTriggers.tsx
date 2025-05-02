@@ -75,7 +75,7 @@ export default function SliderWithTriggers() {
             </div>
 
             {/* Slider */}
-            <div className="relative w-full bg-white border border-neutral-200 hover:border-neutral-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl">
+            <div className="relative max-w-4xl w-full bg-white border border-neutral-200 hover:border-neutral-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl">
                 <div className="w-full flex justify-center items-center overflow-hidden rounded-xl">
                     <AnimatePresence mode="wait">
                         {featuredDepartments.map((department, index) =>
