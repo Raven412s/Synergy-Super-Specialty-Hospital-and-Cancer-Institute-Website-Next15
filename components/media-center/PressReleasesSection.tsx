@@ -159,7 +159,7 @@ export const PressReleasesSection = () => {
                                             shareText={`${release.title}: ${release.summary}`}
                                             shareUrl={`https://synergy-website-alpha.vercel.app${release.link}` || window.location.href}
                                             className="gap-1 md:gap-2 hover:bg-synergy-pink/10 text-synergy-pink hover:text-synergy-pink text-xs md:text-sm"
-                                            size="sm"
+                                            
                                         >
                                             <Share2 className="w-3 h-3 md:w-4 md:h-4" />
                                             Share
