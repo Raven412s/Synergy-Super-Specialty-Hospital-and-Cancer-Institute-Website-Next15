@@ -52,7 +52,7 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
 
   export type ActionItem = {
     className: string;
-    icon?: React.ElementType;
+    icon?:  string;
     label: string;
     onClick?: () => void;
     component?: React.ReactNode; // Optional field for custom components

@@ -1,8 +1,6 @@
-import { WhatsappReachOutButton } from "@/components/global/WhatsappReachOutButton"
 
 
 import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
-import { FaHospital, FaPhone, FaSearch, FaUserMd } from "react-icons/fa"
 
 export const menuItems: MenuItemProps[] = [
     {
@@ -226,7 +224,6 @@ export const menuItems: MenuItemProps[] = [
                 links: [
                     { label: "Patient Testimonials", href: "/survivors/testimonials" },
                     { label: "Victory Stories", href: "/survivors/victory-stories" },
-                    { label: "Video Messages", href: "/survivors/videos" },
                 ],
             },
             {
@@ -234,7 +231,6 @@ export const menuItems: MenuItemProps[] = [
                 links: [
                     { label: "Counseling & Mental Health", href: "/survivors/counseling" },
                     { label: "Rehabilitation Programs", href: "/survivors/rehab" },
-                    { label: "Survivorship Clinics", href: "/survivors/clinics" },
                 ],
             },
             {
@@ -399,34 +395,28 @@ export const faqItems = [
 
 export const actions: ActionItem[] = [
     {
-        icon: FaUserMd,
+        icon: "/icons/online-appointment.png",
         label: "Book Appointment",
         onClick: () => { },
         className: "lg:rounded-l-xl lg:rounded-r-none rounded-none border-r-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
     },
     {
-        icon: FaHospital,
+        icon: "/icons/hospital.png",
         label: "Hospitals",
         onClick: () => { },
         className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
     },
     {
-        icon: FaPhone,
+        icon: "/icons/phone.png",
         label: "Call Us",
         onClick: () => { },
         className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
     },
     {
-        icon: FaSearch,
+        icon: "/icons/search-interface-symbol.png",
         label: "Search",
         onClick: () => { },
         className: "lg:rounded-r-xl lg:rounded-l-none rounded-none border-l-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
-    },
-    {
-        label: "WhatsApp",
-        onClick: () => { },
-        className: "!hidden", // Hide it because we will render WhatsApp button separately
-        component: <WhatsappReachOutButton /> // Include the WhatsApp button as a component here
     },
 ]
 

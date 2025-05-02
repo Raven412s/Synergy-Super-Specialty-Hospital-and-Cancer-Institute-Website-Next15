@@ -26,8 +26,7 @@ export const Homepage = () => {
                 >
                     <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto:best/s1c21opqc4tub6p20hr5" type="video/webm" />
                 </video>
-                <FloatingBarWrapper />
-                <div className="absolute bottom-5 w-full flex justify-center px-4">
+                <div className="absolute lg:bottom-5 bottom-20 w-full flex justify-center px-4">
                     <Link
                         href="#specialties"
                         className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base"
@@ -35,6 +34,7 @@ export const Homepage = () => {
                         {t('exploreMore')}
                     </Link>
                 </div>
+                <FloatingBarWrapper isOnHomePage={true} />
             </section>
 
             <div className="max-w-screen w-full text-black lg:p-5 p-2 ">

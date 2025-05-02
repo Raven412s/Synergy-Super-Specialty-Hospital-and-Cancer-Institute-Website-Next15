@@ -4,10 +4,9 @@
 import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns"
 import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer"
 import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of-hope/VictoryStories"
-import { VideoMessages } from "@/components/Modules/cancer-survivors/stories-of-hope/VideoMessages"
 import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth"
 import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms"
-import { SurvivorshipClinics } from "@/components/Modules/cancer-survivors/support-programs/SurvivorshipClinics"
+
 import { DoctorsPage } from "@/components/Modules/discover-synergy/doctors/DoctorsPage"
 import LeadershipPage from "@/components/Modules/discover-synergy/leadership/LeadershipPage"
 import { Faqs } from "@/components/Modules/health-library/faqs/Faqs"
@@ -173,10 +172,8 @@ export const HealthLibraryMap = {
 export const CancerSurvivorsMap = {
     testimonials: <PatientTestimonials />,
     "victory-stories": <VictoryStories />,
-    videos: <VideoMessages />,
     counseling: <CounselingAndMentalHealth />,
     rehab: <RehabilationPrograms />,
-    clinics: <SurvivorshipClinics />,
     volunteer: <Volunteer />,
     awareness: <AwarenessCampaigns />,
 }

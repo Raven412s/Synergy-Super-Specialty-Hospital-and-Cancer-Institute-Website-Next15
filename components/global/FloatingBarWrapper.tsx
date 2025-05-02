@@ -4,9 +4,10 @@ import { actions } from "@/data";
 import { FloatingActionBar } from "./FloatingActionBar";
 
 type Props = {
-  isOnFooter?: boolean;
+    isOnFooter?: boolean;
+    isOnHomePage?: boolean;
 };
 
-export const FloatingBarWrapper = ({ isOnFooter }: Props) => {
-  return <FloatingActionBar isOnFooter={isOnFooter} items={actions} />;
+export const FloatingBarWrapper = ({ isOnFooter, isOnHomePage }: Props) => {
+    return <FloatingActionBar isOnFooter={isOnFooter} isOnHomePage={isOnHomePage} items={actions} />;
 };
