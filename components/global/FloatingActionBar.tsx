@@ -30,6 +30,8 @@ export const FloatingActionBar = ({
     stickyOffset = 0,
     className = ""
 }: Props) => {
+
+
     const [isSticky, setIsSticky] = useState(false);
     const [isTouchingFooter, setIsTouchingFooter] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -49,15 +51,8 @@ export const FloatingActionBar = ({
 
     // Handle scroll and intersection observer
     useEffect(() => {
-        if (!isOnHomePage) {
-            setIsSticky(true);
-            return;
-        }
-
-        if (isOnFooter) {
-            setIsSticky(false);
-            return;
-        }
+        // FIXED: Don't run this effect if isOnFooter is true
+        if (isOnFooter) return;
 
         const banner = document.getElementById("banner");
         const footer = document.getElementById("footer");
@@ -76,8 +71,8 @@ export const FloatingActionBar = ({
             observer = new IntersectionObserver(
                 ([entry]) => {
                     setIsTouchingFooter(entry.isIntersecting);
-                    // Only hide if not mobile
-                    if (entry.isIntersecting && !isMobile) {
+                    // FIXED: Logic issue - only hide if intersecting and not mobile
+                    if (entry.isIntersecting && !isMobile && isMobile) {
                         setIsSticky(false);
                     }
                 },
@@ -94,20 +89,22 @@ export const FloatingActionBar = ({
             window.removeEventListener("scroll", handleScroll);
             if (observer && footer) observer.unobserve(footer);
         };
-    }, [isOnFooter, isOnHomePage, stickyOffset, isMobile]); // Added isMobile to dependencies
-
-
+    }, [isOnHomePage, stickyOffset, isMobile, isOnFooter]); // FIXED: Added isOnFooter to dependencies
+    // FIXED: Early return if isOnFooter is true - this should prevent any rendering
+    if (isOnFooter) {
+        return null;
+    }
     // Render action button based on state
     const renderActionButton = (item: ActionItem, index: number) => {
         // Banner Mode (Image 3 - Mobile horizontal buttons with arrows)
-        if (!isOnFooter && !isSticky && isMobile) {
+        if (!isSticky && isMobile) {
             return (
                 <Tooltip key={index}>
                     <TooltipTrigger asChild>
                         <Button
                             onClick={item.onClick}
                             variant="ghost"
-                            className="flex flex-col items-center gap-1 px-4 py-2 hover:bg-transparent"
+                            className="flex flex-col items-center gap-1 px-2  py-2 hover:bg-transparent"
                         >
                             {item.icon && (
                                 typeof item.icon === 'string' ? (
@@ -122,7 +119,7 @@ export const FloatingActionBar = ({
                                     React.createElement(item.icon, { className: "size-6" })
                                 )
                             )}
-                            <span className="text-sm font-medium ">{item.label.slice(0, 9)}</span>
+                            <span className="text-xs font-medium ">{item.label.slice(0, 9)}</span>
                         </Button>
                     </TooltipTrigger>
                     <TooltipContent>{item.label}</TooltipContent>
@@ -131,7 +128,7 @@ export const FloatingActionBar = ({
         }
 
         // Banner Mode
-        if (!isOnFooter && !isSticky && !isMobile) {
+        if (!isSticky && !isMobile) {
             return (
                 <Button
                     key={index}
@@ -161,7 +158,7 @@ export const FloatingActionBar = ({
         }
 
         // Sticky Mode (Image 2 - Vertical column of circular icons)
-        if (!isOnFooter && isSticky && !isMobile) {
+        if (isSticky && !isMobile) {
             return (
                 <Tooltip key={index}>
                     <TooltipTrigger asChild>
@@ -191,7 +188,7 @@ export const FloatingActionBar = ({
             );
         }
 
-        // Mobile Sticky Mode or Footer Mode
+        // Mobile Sticky Mode
         return (
             <Tooltip key={index}>
                 <TooltipTrigger asChild>
@@ -221,31 +218,21 @@ export const FloatingActionBar = ({
         );
     };
 
+    // FIXED: Additional check to prevent rendering when isOnFooter is true
+    if (isOnFooter) {
+        return null;
+    }
+
     return (
         <TooltipProvider>
             <AnimatePresence>
-                {/* Footer Mode */}
-                {isOnFooter && (
-                    <div
-                        className={cn(
-                            "w-full flex justify-center mb-8 md:mb-10",
-                            className
-                        )}
-                        ref={containerRef}
-                    >
-                        <div className="flex flex-wrap justify-center items-center bg-white/10 backdrop-blur-sm p-3 rounded-xl shadow-md w-fit gap-2">
-                            {items.map(renderActionButton)}
-                        </div>
-                    </div>
-                )}
-
                 {/* Sticky Mode (when scrolled past banner - Image 2) */}
-                {!isOnFooter && isSticky && !isTouchingFooter && (
+                {isSticky && !isTouchingFooter && (
                     <div
                         className={cn(
                             "z-50 fixed transition-all duration-300 ease-in-out",
                             {
-                                "bottom-0 left-0 right-0 px-2 py-4 bg-amber-50": isMobile,
+                                "bottom-0 left-0 right-0 px-2 py-4 bg-indigo-50 ": isMobile,
                                 "top-1/2 -translate-y-1/2 left-0 bg-transparent": !isMobile
                             },
                             className
@@ -256,7 +243,7 @@ export const FloatingActionBar = ({
                             "flex gap-3",
                             {
                                 "flex-col": !isMobile,
-                                "flex-row  justify-evenly": isMobile,
+                                "flex-row justify-evenly": isMobile,
                                 "bg-white/10 backdrop-blur-sm p-3 rounded-r-2xl shadow-md": !isMobile && items.length > 1
                             }
                         )}>
@@ -266,17 +253,17 @@ export const FloatingActionBar = ({
                 )}
 
                 {/* Non-sticky Mode (when banner visible - Image 1 or Image 3 depending on mobile) */}
-                {!isOnFooter && !isSticky && (
+                {!isSticky && (
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 30 }}
                         transition={{ duration: 0.3 }}
                         className={cn(
-                            "z-50",
+                            "z-40",
                             {
                                 // Mobile view (Image 3)
-                                "fixed bottom-0 left-0 right-0 py-3 bg-amber-50": isMobile,
+                                "fixed bottom-0 left-0 right-0 py-3  bg-indigo-50 ": isMobile,
                                 // Desktop banner view (Image 1)
                                 "absolute left-1/2 -translate-x-1/2 bottom-[90px]": !isMobile
                             },

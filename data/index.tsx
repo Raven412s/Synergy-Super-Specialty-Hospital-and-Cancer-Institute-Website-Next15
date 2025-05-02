@@ -409,7 +409,7 @@ export const actions: ActionItem[] = [
     {
         icon: "/icons/phone.png",
         label: "Call Us",
-        onClick: () => { },
+        onClick: () => { console.log("call us clicked")},
         className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
     },
     {
