@@ -8,8 +8,10 @@ import { VideoModal } from '@/components/global/VideoModal'
 import ShareButton from '../global/ShareButton'
 import Link from 'next/link'
 
+type FilterType = 'innovation' | 'partnership' | 'award' | 'research' | 'all';
+
 export const PressReleasesSection = () => {
-    const [activeFilter, setActiveFilter] = useState<string>('all')
+    const [activeFilter, setActiveFilter] = useState<FilterType>('all')
     const [filteredReleases, setFilteredReleases] = useState(pressReleases)
 
     const formatDate = (dateString: string) => {
@@ -17,7 +19,7 @@ export const PressReleasesSection = () => {
         return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
     }
 
-    const handleFilter = (filterType: 'innovation' | 'partnership' | 'award' | 'research' | "all") => {
+    const handleFilter = (filterType: FilterType) => {
         setActiveFilter(filterType)
         if (filterType === 'all') {
             setFilteredReleases(pressReleases)
@@ -29,11 +31,11 @@ export const PressReleasesSection = () => {
     }
 
     const filterButtons = [
-        { label: 'All', value: 'all' },
-        { label: 'Innovations', value: 'innovation' },
-        { label: 'Partnership', value: 'partnership' },
-        { label: 'Awards', value: 'award' },
-        { label: 'Research', value: 'research' }
+        { label: 'All', value: 'all' as const },
+        { label: 'Innovations', value: 'innovation' as const },
+        { label: 'Partnership', value: 'partnership' as const },
+        { label: 'Awards', value: 'award' as const },
+        { label: 'Research', value: 'research' as const }
     ]
 
     return (
@@ -86,7 +88,7 @@ export const PressReleasesSection = () => {
                                 size="sm"
                                 className={`text-xs md:text-sm border-synergy-blue text-synergy-blue hover:text-synergy-blue hover:bg-synergy-blue/10 ${activeFilter === button.value ? 'bg-synergy-blue/10 font-medium' : ''
                                     }`}
-                                onClick={() => handleFilter(button.value as any)}
+                                onClick={() => handleFilter(button.value)}
                             >
                                 {button.label}
                             </Button>
