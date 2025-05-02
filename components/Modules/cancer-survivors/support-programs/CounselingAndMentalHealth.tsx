@@ -216,7 +216,7 @@ export const CounselingAndMentalHealth = () => {
                   ))}
                 </div>
                 <blockquote className="text-base sm:text-lg text-gray-700 italic mb-4 sm:mb-5">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </blockquote>
                 <div className="flex items-center">
                   <div className="relative rounded-full w-10 h-10 sm:w-12 sm:h-12 mr-3 sm:mr-4 overflow-hidden">

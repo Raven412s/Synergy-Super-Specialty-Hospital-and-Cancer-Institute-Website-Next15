@@ -21,7 +21,7 @@ export const VideoMessages = () => {
     // Generate consistent random paddings on client only after hydration
     const paddings = videoStories.map(() => Math.floor(Math.random() * 60));
     setRandomPaddings(paddings);
-  }, [videoStories.length]);
+  }, [videoStories, videoStories.length]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-20">
