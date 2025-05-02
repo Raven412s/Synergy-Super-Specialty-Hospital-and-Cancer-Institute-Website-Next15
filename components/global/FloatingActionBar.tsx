@@ -198,7 +198,7 @@ export const FloatingActionBar = ({
                     <Button
                         onClick={item.onClick}
                         variant="ghost"
-                        className="flex flex-col items-center gap-1 px-4 py-2 hover:bg-transparent"
+                        className="flex flex-col items-center gap-1 px-1 py-2 hover:bg-transparent"
                     >
                         {item.icon && (
                             typeof item.icon === 'string' ? (
@@ -213,7 +213,7 @@ export const FloatingActionBar = ({
                                 React.createElement(item.icon, { className: "size-6" })
                             )
                         )}
-                        <span className="text-sm font-medium ">{item.label.slice(0, 9)}</span>
+                        <span className="text-xs font-medium ">{item.label.slice(0, 9)}</span>
                     </Button>
                 </TooltipTrigger>
                 <TooltipContent>{item.label}</TooltipContent>
@@ -240,12 +240,12 @@ export const FloatingActionBar = ({
                 )}
 
                 {/* Sticky Mode (when scrolled past banner - Image 2) */}
-                {!isOnFooter && isSticky && !(isTouchingFooter && !isMobile) && (
+                {!isOnFooter && isSticky && !isTouchingFooter && (
                     <div
                         className={cn(
                             "z-50 fixed transition-all duration-300 ease-in-out",
                             {
-                                "bottom-0 left-0 right-0 p-4 bg-amber-50": isMobile,
+                                "bottom-0 left-0 right-0 px-2 py-4 bg-amber-50": isMobile,
                                 "top-1/2 -translate-y-1/2 left-0 bg-transparent": !isMobile
                             },
                             className
@@ -256,7 +256,7 @@ export const FloatingActionBar = ({
                             "flex gap-3",
                             {
                                 "flex-col": !isMobile,
-                                "flex-row flex-wrap justify-center": isMobile,
+                                "flex-row  justify-evenly": isMobile,
                                 "bg-white/10 backdrop-blur-sm p-3 rounded-r-2xl shadow-md": !isMobile && items.length > 1
                             }
                         )}>
@@ -266,7 +266,7 @@ export const FloatingActionBar = ({
                 )}
 
                 {/* Non-sticky Mode (when banner visible - Image 1 or Image 3 depending on mobile) */}
-                {!isOnFooter && !isSticky && !(isTouchingFooter && !isMobile) && (
+                {!isOnFooter && !isSticky && (
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -276,7 +276,7 @@ export const FloatingActionBar = ({
                             "z-50",
                             {
                                 // Mobile view (Image 3)
-                                "fixed bottom-0 left-0 right-0 p-4 bg-amber-50": isMobile,
+                                "fixed bottom-0 left-0 right-0 py-3 bg-amber-50": isMobile,
                                 // Desktop banner view (Image 1)
                                 "absolute left-1/2 -translate-x-1/2 bottom-[90px]": !isMobile
                             },
