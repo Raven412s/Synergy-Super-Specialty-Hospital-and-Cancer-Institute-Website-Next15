@@ -49,8 +49,13 @@ export const FloatingActionBar = ({
 
     // Handle scroll and intersection observer
     useEffect(() => {
-        if (isOnFooter || !isOnHomePage) {
+        if (!isOnHomePage) {
             setIsSticky(true);
+            return;
+        }
+
+        if (isOnFooter) {
+            setIsSticky(false);
             return;
         }
 
@@ -71,6 +76,10 @@ export const FloatingActionBar = ({
             observer = new IntersectionObserver(
                 ([entry]) => {
                     setIsTouchingFooter(entry.isIntersecting);
+                    // Only hide if not mobile
+                    if (entry.isIntersecting && !isMobile) {
+                        setIsSticky(false);
+                    }
                 },
                 {
                     root: null,
@@ -85,7 +94,8 @@ export const FloatingActionBar = ({
             window.removeEventListener("scroll", handleScroll);
             if (observer && footer) observer.unobserve(footer);
         };
-    }, [isOnFooter, isOnHomePage, stickyOffset]);
+    }, [isOnFooter, isOnHomePage, stickyOffset, isMobile]); // Added isMobile to dependencies
+
 
     // Render action button based on state
     const renderActionButton = (item: ActionItem, index: number) => {
@@ -230,7 +240,7 @@ export const FloatingActionBar = ({
                 )}
 
                 {/* Sticky Mode (when scrolled past banner - Image 2) */}
-                {!isOnFooter && isSticky && !isTouchingFooter && (
+                {!isOnFooter && isSticky && !(isTouchingFooter && !isMobile) && (
                     <div
                         className={cn(
                             "z-50 fixed transition-all duration-300 ease-in-out",
@@ -256,7 +266,7 @@ export const FloatingActionBar = ({
                 )}
 
                 {/* Non-sticky Mode (when banner visible - Image 1 or Image 3 depending on mobile) */}
-                {!isOnFooter && !isSticky && (
+                {!isOnFooter && !isSticky && !(isTouchingFooter && !isMobile) && (
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
