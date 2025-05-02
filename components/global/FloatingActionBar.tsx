@@ -237,7 +237,7 @@ export const FloatingActionBar = ({
                         className={cn(
                             "z-50 fixed transition-all duration-300 ease-in-out",
                             {
-                                "bottom-0 left-0 right-0 px-2 py-4 bg-indigo-50 ": isMobile,
+                                "bottom-0 left-0 right-0  py-4 bg-indigo-50 ": isMobile,
                                 "top-1/2 -translate-y-1/2 left-0 bg-transparent": !isMobile
                             },
                             className
@@ -268,7 +268,7 @@ export const FloatingActionBar = ({
                             "z-40",
                             {
                                 // Mobile view (Image 3)
-                                "fixed bottom-0 left-0 right-0 py-3  bg-indigo-50 ": isMobile,
+                                "fixed bottom-0 left-0 right-0 py-4  bg-indigo-50 ": isMobile,
                                 // Desktop banner view (Image 1)
                                 "absolute left-1/2 -translate-x-1/2 bottom-[90px]": !isMobile
                             },
