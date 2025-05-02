@@ -139,7 +139,7 @@ export const FloatingActionBar = ({
                     key={index}
                     onClick={item.onClick}
                     variant="ghost"
-                    className="flex items-center justify-between rounded-full px-5 py-3 bg-white/90 border-none min-w-52"
+                    className={cn("flex items-center justify-between rounded-full px-5 py-3 border-none min-w-52 ", item.className)}
                 >
                     <div className="flex items-center gap-2">
                         {item.icon && (
@@ -171,7 +171,7 @@ export const FloatingActionBar = ({
                             onClick={item.onClick}
                             variant="ghost"
                             size="icon"
-                            className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-sm hover:bg-white mb-2"
+                            className={cn("w-12 h-12 rounded-full  flex items-center justify-center shadow-sm  mb-2", item.className)}
                         >
                             {item.icon && (
                                 typeof item.icon === 'string' ? (

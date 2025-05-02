@@ -398,25 +398,25 @@ export const actions: ActionItem[] = [
         icon: "/icons/online-appointment.png",
         label: "Book Appointment",
         onClick: () => { },
-        className: "lg:rounded-l-xl lg:rounded-r-none rounded-none border-r-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+        className: "bg-teal-50 hover:bg-teal-100 transtion-all duration-300 ease-in-out"
     },
     {
         icon: "/icons/hospital.png",
         label: "Hospitals",
         onClick: () => { },
-        className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+        className: "bg-indigo-50 hover:bg-indigo-100 transtion-all duration-300 ease-in-out"
     },
     {
         icon: "/icons/phone.png",
         label: "Call Us",
         onClick: () => { console.log("call us clicked")},
-        className: "rounded-none border-x-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+        className: "bg-pink-50 hover:bg-pink-100 transtion-all duration-300 ease-in-out"
     },
     {
         icon: "/icons/search-interface-symbol.png",
         label: "Search",
         onClick: () => { },
-        className: "lg:rounded-r-xl lg:rounded-l-none rounded-none border-l-none bg-black/10 backdrop-blur-sm hover:bg-white/40 hover:text-slate-700 border-1 font-bold"
+        className: "bg-yellow-50 hover:bg-yellow-100 transtion-all duration-300 ease-in-out"
     },
 ]
 
