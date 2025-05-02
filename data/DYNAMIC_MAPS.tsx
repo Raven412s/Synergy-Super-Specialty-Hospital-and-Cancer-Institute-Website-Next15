@@ -1,6 +1,6 @@
 // MAPS FOR DYNAMIC PAGES
 
-import { PatientTestimonials } from "@/components/homepage/PatientTestimonials"
+
 import { AwarenessCampaigns } from "@/components/Modules/cancer-survivors/get-involved/AwarenessCampaigns"
 import { Volunteer } from "@/components/Modules/cancer-survivors/get-involved/Volunteer"
 import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of-hope/VictoryStories"
@@ -40,6 +40,7 @@ import SupportServicesPage from "@/components/Modules/services/support-services/
 import { leaderAlokTiwari, leaderAnjaliJain, leaderSaurabhMishra } from "."
 import AdmissionDischarge from "@/components/Modules/services/administrative-services/AdmissionDischarge"
 import MedicalRecords from "@/components/Modules/services/administrative-services/MedicalRecords"
+import { PatientTestimonials } from "@/components/Modules/cancer-survivors/stories-of-hope/PatientTestimonials"
 
 
 export const LeadershipMap = {

@@ -98,13 +98,15 @@ export const CancerPrevention = () => {
             {preventionTips.map((tip, index) => (
               <Card
                 key={index}
-                className="hover:shadow-xl transition-shadow border border-muted rounded-xl bg-gray-50"
+                className="hover:shadow-xl transition-shadow border border-muted rounded-xl bg-gray-100 py-0"
               >
                 <CardContent className="p-6 space-y-4">
+                <div className="flex gap-4 items-center">
                   <div className="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center">
                     {tip.icon}
                   </div>
                   <h4 className="text-lg font-semibold">{tip.title}</h4>
+                </div>
                   <p className="text-sm text-gray-700">{tip.description}</p>
                 </CardContent>
               </Card>
