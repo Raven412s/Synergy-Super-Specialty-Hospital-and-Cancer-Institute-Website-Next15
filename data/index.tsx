@@ -233,14 +233,14 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Rehabilitation Programs", href: "/survivors/rehab" },
                 ],
             },
-            {
-                name: "Get Involved",
-                links: [
-                    { label: "Volunteer", href: "/survivors/volunteer" },
-                    { label: "Awareness Campaigns", href: "/survivors/awareness" },
-                    { label: "Donate", href: "/donate" },
-                ],
-            },
+            // {
+            //     name: "Get Involved",
+            //     links: [
+            //         { label: "Volunteer", href: "/survivors/volunteer" },
+            //         { label: "Awareness Campaigns", href: "/survivors/awareness" },
+            //         { label: "Donate", href: "/donate" },
+            //     ],
+            // },
         ],
     },
 ]
