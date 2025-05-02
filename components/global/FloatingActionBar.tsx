@@ -51,6 +51,11 @@ export const FloatingActionBar = ({
 
     // Handle scroll and intersection observer
     useEffect(() => {
+
+        if (isOnHomePage) {
+            setIsSticky(true)
+        }
+
         // FIXED: Don't run this effect if isOnFooter is true
         if (isOnFooter) return;
 
