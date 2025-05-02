@@ -279,7 +279,7 @@ export const FloatingActionBar = ({
                         <div className={cn(
                             "flex gap-3 justify-evenly",
                             {
-                                "flex-row justify-center flex-wrap": !isMobile,
+                                "flex-row justify-center ": !isMobile,
                                 "flex-row items-center w-full": isMobile
                             }
                         )}>
