@@ -89,7 +89,7 @@ export const ServicesMap = {
     "dietary": <Dietary />,
     "laundry": <Laundry />,
     "house-keeping": <HouseKeeping />,
-    "security": <Security />,
+    "Security": <Security />,
     ambulance: <Ambulance />,
     "support-services": <SupportServicesPage />,
 
@@ -109,7 +109,7 @@ export const ServicesMap = {
     "admission-and-discharge": <AdmissionDischarge />,
     "billing-and-insurance": <Insurance />,
     "medical-records": <MedicalRecords />,
-    "customer-care": <Dialysis />,
+
 
 }
 

@@ -129,8 +129,6 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Admission & Discharge", href: "/services/admission-and-discharge" },
                     { label: "Billing & Insurance", href: "/services/billing-and-insurance" },
                     { label: "Medical Records", href: "/services/medical-records" },
-                    { label: "Customer Service", href: "/services/customer-care" },
-                    { label: "View All", href: "/services/administrative-services" }
                 ]
             },
             {
