@@ -42,7 +42,7 @@ export const menuItems: MenuItemProps[] = [
                 name: "Terms & Privacy",
                 links: [
                     { label: "Your Privacy is Our Policy", href: "/privacy-policy" },
-                    { label: "Our Terms and Conditions", href: "/term-and-conditions" },
+                    { label: "Our Terms and Conditions", href: "/terms-and-conditions" },
                 ],
             },
         ],
