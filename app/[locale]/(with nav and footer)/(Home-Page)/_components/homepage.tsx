@@ -1,6 +1,7 @@
 import AyushmaanBharatCard from "@/components/global/AyushmaanBharatCard";
 import { FloatingBarWrapper } from "@/components/global/FloatingBarWrapper";
 import FaqAccordion from "@/components/homepage/FaqAccordion";
+import { GalleryMarquee } from "@/components/homepage/GalleryMarquee";
 import { LeaderCards } from "@/components/homepage/LeaderCards";
 import NewsSlider from "@/components/homepage/NewsSlider";
 import { PatientTestimonials } from "@/components/homepage/PatientTestimonials";
@@ -47,6 +48,8 @@ export const Homepage = () => {
             <div className="bg-gradient-to-b from-fuchsia-100 to-white w-full flex items-center justify-center">
             <LeaderCards />
             </div>
+
+    <GalleryMarquee/>
 
 
             {/* Testimonial Cards */}

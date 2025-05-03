@@ -25,15 +25,7 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari" },
                     { label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain" },
                     { label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra" },
-                ],
-            },
-            {
-                name: "Doctors",
-                links: [
-                    { label: "Dr. Alok Tiwari", href: "/doctors/Dr-Alok-Tiwari" },
-                    { label: "Dr. Anjali Jain", href: "/doctors/Dr-Anjali-Jain" },
-                    { label: "Dr. Saurabh Mishra", href: "/doctors/Dr-Saurabh-Mishra" },
-                    { label: "View All", href: "/doctors/all" },
+                    { label: "See All Our Doctors", href: "/doctors/all" },
                 ],
             },
             {
