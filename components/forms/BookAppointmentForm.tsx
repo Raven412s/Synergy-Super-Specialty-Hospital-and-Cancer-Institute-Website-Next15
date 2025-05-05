@@ -105,19 +105,10 @@ export default function BookAppointmentForm() {
     try {
       setIsSubmitting(true);
 
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Simulate API call (optional)
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
-      console.log(values);
-
-      // Show success message
-      toast.success("Appointment scheduled successfully!", {
-        description: `Your appointment has been booked for ${format(values.appointmentDate, "MMMM d, yyyy")} at ${timeSlots.find(slot => slot.id === values.timeSlot)?.time}.`,
-        duration: 5000,
-      });
-
-      // ✅ WhatsApp Message Logic
-      const message = encodeURIComponent(`
+      const messageBody = `
   New Appointment Booked:
   Patient Name - ${values.patientName}
   Phone Number - ${values.phoneNumber}
@@ -129,12 +120,23 @@ export default function BookAppointmentForm() {
   Time - ${timeSlots.find(slot => slot.id === values.timeSlot)?.time}
   Insurance - ${values.insurance}
   Emergency - ${values.emergency ? "Yes" : "No"}
-      `);
+      `;
 
-      const whatsappUrl = `https://wa.me/6393883250?text=${message}`;
-      window.open(whatsappUrl, "_blank");
+      // 🔗 Call your API route
+      await fetch("/api/send-whatsapp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messageBody,
+          to: "6393883250", // Target WhatsApp number
+        }),
+      });
 
-      // Reset form after submission
+      // ✅ Toast & reset
+      toast.success("Appointment scheduled and WhatsApp sent!", {
+        duration: 5000,
+      });
+
       form.reset();
       setSelectedDepartment("");
 
@@ -145,6 +147,7 @@ export default function BookAppointmentForm() {
       setIsSubmitting(false);
     }
   }
+
 
 
   return (
