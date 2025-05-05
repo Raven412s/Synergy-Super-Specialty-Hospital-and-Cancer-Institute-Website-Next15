@@ -92,7 +92,7 @@ export  const doctors = [
       id: 7,
       name: "Dr. Upendra Gupta",
       qualification: "M.B.B.S , MD, DM-(GASTROENTEROLOGY)",
-      department: "Gastro",
+      department: "Gastroenterology",
       experience: "7 years",
       image: "/doctors/dr-upendra-gupta.webp",
       availability: [
@@ -107,7 +107,7 @@ export  const doctors = [
       id: 8,
       name: "Dr. AP Shahi",
       qualification: "M.B.B.S, DCH,MIAP ,Pediatrician & Neonatologist Fellowship ,POPN Boston(USA)",
-      department: "Pediatrics ",
+      department: "Pediatrics",
       experience: "15 years",
       image: "/doctors/dr-ap-shahi.webp",
       availability: [
@@ -122,7 +122,7 @@ export  const doctors = [
       id: 9,
       name: "Dr. Harshit Mishra",
       qualification: "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
-      department: "Anesthesia ",
+      department: "Anesthesia",
       experience: "8 Years,( 3Years as a Resident & 5 years As a Consultant)",
       image: "/doctors/dr-harshit-mishra.webp",
       availability: [
@@ -197,7 +197,7 @@ export  const doctors = [
       id: 14,
       name: "Dr. Anjali Jain",
       qualification: "MBBS, MD ( General Physician) , GENERAL MEDICINE",
-      department: "Gynae",
+      department: "Gynecology & Obstetrics",
       experience: "30 years",
       image: "/doctors/dr-anjali-jain.webp",
       availability: [
@@ -242,7 +242,7 @@ export  const doctors = [
       id: 17,
       name: "Dr. Harshit Mishra",
       qualification: "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
-      department: "Emergency & Critical Care Department",
+      department: "Emergency & Critical Care",
       experience: "8 Years,( 3Years as a Resident & 5 years As a Consultant)",
       image: "/doctors/dr-harshit-mishra.webp",
       availability: [

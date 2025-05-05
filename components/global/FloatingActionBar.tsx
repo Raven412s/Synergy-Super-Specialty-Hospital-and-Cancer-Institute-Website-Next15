@@ -14,6 +14,8 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { ChevronRight } from "lucide-react";
 import React from "react";
+import { useRouter } from "next/navigation";
+
 
 type Props = {
     items: ActionItem[];
@@ -31,11 +33,22 @@ export const FloatingActionBar = ({
     className = ""
 }: Props) => {
 
-
+const router = useRouter()
     const [isSticky, setIsSticky] = useState(false);
     const [isTouchingFooter, setIsTouchingFooter] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
+
+    // Process items to use the open function for "Book Appointment" buttons
+    const processedItems = items.map(item => {
+        if (item.label === "Book Appointment") {
+            return {
+                ...item,
+                onClick:  () => { router.push("/book-appointment")}
+            };
+        }
+        return item;
+    });
 
     // Check mobile viewport
     useEffect(() => {
@@ -252,7 +265,7 @@ export const FloatingActionBar = ({
                                 "bg-white/10 backdrop-blur-sm p-3 rounded-r-2xl shadow-md": !isMobile && items.length > 1
                             }
                         )}>
-                            {items.map(renderActionButton)}
+                            {processedItems.map(renderActionButton)}
                         </div>
                     </div>
                 )}
@@ -283,7 +296,7 @@ export const FloatingActionBar = ({
                                 "flex-row items-center w-full": isMobile
                             }
                         )}>
-                            {items.map(renderActionButton)}
+                            {processedItems.map(renderActionButton)}
                         </div>
                     </motion.div>
                 )}

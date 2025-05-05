@@ -45,6 +45,7 @@ export default async function RootLayout({
                 <NextIntlClientProvider>
                     <WhatsappReachOutButton />
                     {children}
+                    
                 </NextIntlClientProvider>
             </body>
         </html>
