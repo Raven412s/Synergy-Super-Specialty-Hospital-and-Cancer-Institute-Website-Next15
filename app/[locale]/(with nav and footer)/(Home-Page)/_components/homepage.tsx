@@ -18,6 +18,7 @@ export const Homepage = () => {
             {/* Hero Section with Video */}
             <section id="banner" className="relative min-h-screen w-full ">
                 <video
+                    preload="auto"
                     autoPlay
                     loop
                     muted
@@ -25,7 +26,7 @@ export const Homepage = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                     aria-label="Promotional video showcasing Synergy Hospital"
                 >
-                    <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto:best/s1c21opqc4tub6p20hr5" type="video/webm" />
+                    <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto/sxrr4rljzjnqcw8ap6lv" type="video/webm" />
                 </video>
                 <div className="absolute lg:bottom-5 bottom-20 w-full flex justify-center px-4">
                     <Link
