@@ -128,8 +128,7 @@ export default function BookAppointmentForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messageBody,
-          to: "9198704352
-          ", // Target WhatsApp number
+          to: "9198704352"
         }),
       });
 
