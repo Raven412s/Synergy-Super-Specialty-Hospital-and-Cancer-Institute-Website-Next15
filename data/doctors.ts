@@ -168,7 +168,7 @@ export  const doctors = [
       name: "Dr. Alok Tiwari",
       qualification: "Chief Surgical Oncologist, MBBS (Gold Medalist), MS (Gen Surgery) KGMU LucknowDNB, Dip MAS daVinciXi Certified Robotic Onco Surgeon, Surgical Oncology, ESSO (Breast Oncoplasty) FMAS, FALS (Colorectal)",
       department: "Surgical Oncology",
-      experience: "30 years",
+      experience: " ",
       image: "/doctors/dr-alok-tiwari.webp",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
@@ -183,7 +183,7 @@ export  const doctors = [
       name: "Dr. Saurabh Mishra",
       qualification: "Medical Oncologist & Haemat Oncologist, Director Synergy Super Speciality Hospital & Cancer Institue, MBBS (KGMU), MD (internal Medicine) ECMO DNB",
       department: "Medical Oncology",
-      experience: "30 years",
+      experience: " ",
       image: "/doctors/dr-saurabh-mishra.webp",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
@@ -198,7 +198,7 @@ export  const doctors = [
       name: "Dr. Anjali Jain",
       qualification: "MBBS, MD ( General Physician) , GENERAL MEDICINE",
       department: "Gynecology & Obstetrics",
-      experience: "30 years",
+      experience: " ",
       image: "/doctors/dr-anjali-jain.webp",
       availability: [
         { day: "Mon", time: "8:00 AM - 4:00 PM" },
