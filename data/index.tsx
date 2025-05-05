@@ -20,7 +20,7 @@ export const menuItems: MenuItemProps[] = [
                 ],
             },
             {
-                name: "Leadership",
+                name: "Our Doctors",
                 links: [
                     { label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari" },
                     { label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain" },
