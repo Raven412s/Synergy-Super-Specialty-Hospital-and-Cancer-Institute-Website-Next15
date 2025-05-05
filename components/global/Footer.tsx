@@ -104,7 +104,7 @@ export const Footer = () => {
             </div>
 
             {/* Bottom Section - Social and Copyright */}
-            <div className="mt-8 pt-5 border-t border-gray-400 w-full">
+            <div className="mt-8 pt-5 border-t border-gray-400 w-full relative">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 w-full">
                     {/* Social Links - Center on mobile */}
                     <div className="flex items-center justify-center md:justify-start gap-4 order-2 md:order-1">
@@ -132,8 +132,8 @@ export const Footer = () => {
                     </div>
 
                     {/* Copyright - Center on mobile */}
-                    <div className="text-center order-1 md:order-2 w-full md:w-auto">
-                        <p className="text-sm font-light text-slate-500">
+                    <div className=" order-1 md:order-2 w-full md:w-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2">
+                        <p className="text-center text-sm font-light text-slate-500">
                             Synergy Super Speciality Hospital & Cancer Institute © 2025 All Rights Reserved
                         </p>
                     </div>
