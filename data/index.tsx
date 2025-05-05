@@ -55,6 +55,7 @@ export const menuItems: MenuItemProps[] = [
                 links: [
                     { label: "Medical Oncology", href: "/services/medical-oncology" },
                     { label: "Surgical Oncology", href: "/services/surgical-oncology" },
+                    { label: "Gynecology & Obstetrics", href: "/services/gynecology" },
                     { label: "Neurology", href: "/services/neurology" },
                     { label: "Neurosurgery", href: "/services/neurosurgery" },
                     { label: "Gastroenterology", href: "/services/gastroenterology" },
@@ -64,7 +65,6 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Anesthesia", href: "/services/anesthesia" },
                     { label: "General Surgery", href: "/services/general-surgery" },
                     { label: "Pediatrics", href: "/services/pediatrics" },
-                    { label: "Gynecology & Obstetrics", href: "/services/gynecology" },
                     { label: "Head & Neck", href: "/services/head-and-neck" },
                     { label: "Emergency & Critical Care", href: "/services/emergency-and-critical-care" },
                     { label: "Pain & Palliative Care", href: "/services/pain-and-palliative-care" },
