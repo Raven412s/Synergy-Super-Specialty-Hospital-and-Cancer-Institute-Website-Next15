@@ -141,6 +141,12 @@ export const menuItems: MenuItemProps[] = [
                     { label: "Health Check Packages", href: "/patient-care/health-checks" },
                     { label: "Insurance & TPA Services", href: "/patient-care/insurance" }
                 ]
+            },
+            {
+                name: "Insurance",
+                links: [
+                    { label: "Insurance & TPA Services", href: "/patient-care/insurance" }
+                ]
             }
         ]
     },
