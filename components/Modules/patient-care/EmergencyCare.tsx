@@ -1,10 +1,31 @@
+"use client"
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
-import { ArrowBigDownDash, BoltIcon, HeartIcon, MapPinIcon, PhoneIcon, TruckIcon } from 'lucide-react';
-import React from 'react';
+import {
+    ArrowBigDownDash,
+    BoltIcon,
+    HeartIcon,
+    MapPinIcon,
+    PhoneIcon,
+    TruckIcon,
+    X as XIcon
+} from 'lucide-react';
+
+import { useEffect, useState } from 'react';
 import { FaUserGroup } from 'react-icons/fa6';
 
-
 export const EmergencyCare = () => {
+  // State to control the visibility of the emergency dialog
+  const [showEmergencyDialog, setShowEmergencyDialog] = useState(false);
+
+  // Show the dialog when the component mounts (page loads)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowEmergencyDialog(true);
+    }, 500); // Small delay for better user experience
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const services = [
     { icon: HeartIcon, title: 'Cardiac Emergencies', description: '24/7 cardiology team for heart attacks & cardiac events' },
     { icon: BoltIcon, title: 'Accidents & Trauma', description: 'Level 1 trauma center with immediate response' },
@@ -20,8 +41,51 @@ export const EmergencyCare = () => {
     date: "May 15, 2023"
   };
 
+  // Emergency numbers
+  const emergencyNumber = "+91-123-456-7890";
+  const ambulanceNumber = "+91-123-456-5555";
+
   return (
     <div className="font-sans">
+      {/* Emergency Dialog Popup */}
+      {showEmergencyDialog && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-xl shadow-xl max-w-md w-full p-6 animate-in fade-in zoom-in">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-bold text-red-600">Have an emergency? Don&apos;t hesitate</h2>
+              <button
+                onClick={() => setShowEmergencyDialog(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <XIcon className="h-6 w-6" />
+              </button>
+            </div>
+
+            <div className="space-y-4 my-6">
+              <a
+                href={`tel:${emergencyNumber}`}
+                className="bg-red-600 hover:bg-red-700 text-white py-4 px-6 rounded-lg text-lg font-bold flex items-center justify-center transition-all w-full"
+              >
+                <PhoneIcon className="h-5 w-5 mr-2" />
+                Call Emergency: {emergencyNumber}
+              </a>
+
+              <a
+                href={`tel:${ambulanceNumber}`}
+                className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-lg text-lg font-bold flex items-center justify-center transition-all w-full"
+              >
+                <TruckIcon className="h-5 w-5 mr-2" />
+                Call Ambulance: {ambulanceNumber}
+              </a>
+            </div>
+
+            <p className="text-gray-600 text-center text-sm">
+              Our team is available 24/7 to assist you in medical emergencies
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Sticky Emergency Contact Bar */}
       <div className="bg-red-600 text-white py-2 px-4 sticky top-20 z-20">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -32,7 +96,7 @@ export const EmergencyCare = () => {
           </div>
           <div className="flex items-center">
             <MapPinIcon className="h-5 w-5 mr-2" />
-            <span>Emergency Entrance: Gate 1, Main Hospital Building</span>
+            <span>Emergency Entrance: Gate 1, Synergy Super Speciality Hospital Building</span>
           </div>
         </div>
       </div>
@@ -142,10 +206,10 @@ export const EmergencyCare = () => {
             </div>
             <div className="bg-gray-100 relative rounded-xl overflow-hidden">
               <ImageWithFallback
-              fallbackSrc='/fallback-image.webp'
-              width={720}
-              height={560}
-              src="/emergency-team.jpg"
+                fallbackSrc='/fallback-image.webp'
+                width={720}
+                height={560}
+                src="/emergency-team.jpg"
                 alt="Emergency medical team ready for action"
                 className="w-full h-full object-cover"
               />

@@ -10,11 +10,12 @@ import {
 import { menuItems, quickLinks } from "@/data";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, MenuIcon } from "lucide-react";
+import { ArrowRight, MenuIcon, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { GiSiren } from "react-icons/gi";
 import { Button } from "../ui/button";
 import { ScrollArea } from "../ui/scroll-area";
 import {
@@ -63,7 +64,7 @@ export function Navbar() {
     const [outerOpen, setOuterOpen] = useState(false);
     const [innerOpen, setInnerOpen] = useState(false);
     const [selectedMenuItem, setSelectedMenuItem] = useState<typeof menuItems[0] | null>(null);
-
+    
     const handleScroll = () => {
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -257,7 +258,41 @@ export function Navbar() {
                         </React.Fragment>
                     ))}
                 </NavigationMenuList>
-                <div className="w-1/4">{/* Optional right section */}</div>
+                <div className="w-1/4 flex items-center justify-end gap-4">
+                    {/* Emergency Button */}
+                    <Link href="/patient-care/emergency">
+                        <Button
+                            variant="destructive"
+                            size="icon"
+                            className="group relative rounded-full border-2 border-red-500 bg-transparent p-3 transition-colors duration-200"
+                        >
+                            <GiSiren
+                                className={`size-7 transition-colors duration-200 group-hover:text-white ${result ? "text-red-500" : "text-white"
+                                    }`}
+                            />
+                            <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-red-600 px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Emergency
+                            </span>
+                        </Button>
+                    </Link>
+
+                    {/* Search Button */}
+                    <Link href="/search">
+                        <Button
+                            variant="default"
+                            size="icon"
+                            className="group relative rounded-full border-2 border-synergy-blue bg-transparent p-3 transition-colors duration-200"
+                        >
+                            <Search
+                                className={`size-4 transition-colors duration-200 group-hover:text-white ${result ? "text-synergy-blue" : "text-white"
+                                    }`}
+                            />
+                            <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-synergy-blue px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Search
+                            </span>
+                        </Button>
+                    </Link>
+                </div>
             </NavigationMenu>
 
             {/* Mobile Menu */}
