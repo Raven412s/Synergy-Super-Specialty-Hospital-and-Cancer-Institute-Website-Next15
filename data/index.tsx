@@ -23,8 +23,8 @@ export const menuItems: MenuItemProps[] = [
                 name: "Our Doctors",
                 links: [
                     { label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari" },
-                    { label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain" },
                     { label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra" },
+                    { label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain" },
                     { label: "See All Our Doctors", href: "/doctors/all" },
                 ],
             },
@@ -139,7 +139,6 @@ export const menuItems: MenuItemProps[] = [
                     { label: "In-Patient Facilities", href: "/patient-care/in-patient" },
                     { label: "Outpatient Clinics", href: "/patient-care/out-patient" },
                     { label: "Health Check Packages", href: "/patient-care/health-checks" },
-                    { label: "Insurance & TPA Services", href: "/patient-care/insurance" }
                 ]
             },
             {

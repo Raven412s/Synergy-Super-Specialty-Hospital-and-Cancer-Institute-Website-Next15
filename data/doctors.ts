@@ -1,6 +1,111 @@
   // Sample doctor data
 export  const doctors = [
     {
+        id: 12,
+        name: "Dr. Alok Tiwari",
+        qualification: "Chief Surgical Oncologist, MBBS (Gold Medalist), MS (Gen Surgery) KGMU LucknowDNB, Dip MAS daVinciXi Certified Robotic Onco Surgeon, Surgical Oncology, ESSO (Breast Oncoplasty) FMAS, FALS (Colorectal)",
+        department: "Surgical Oncology",
+        experience: " ",
+        image: "/doctors/dr-alok-tiwari.webp",
+        availability: [
+          { day: "Mon", time: "8:00 AM - 4:00 PM" },
+          { day: "Tue", time: "8:00 AM - 4:00 PM" },
+          { day: "Wed", time: "8:00 AM - 4:00 PM" },
+          { day: "Fri", time: "8:00 AM - 4:00 PM" }
+        ],
+        isSenior: true
+      },
+      {
+        id: 13,
+        name: "Dr. Saurabh Mishra",
+        qualification: "Medical Oncologist & Haemat Oncologist, Director Synergy Super Speciality Hospital & Cancer Institue, MBBS (KGMU), MD (internal Medicine) ECMO DNB",
+        department: "Medical Oncology",
+        experience: " ",
+        image: "/doctors/dr-saurabh-mishra.webp",
+        availability: [
+          { day: "Mon", time: "8:00 AM - 4:00 PM" },
+          { day: "Tue", time: "8:00 AM - 4:00 PM" },
+          { day: "Wed", time: "8:00 AM - 4:00 PM" },
+          { day: "Fri", time: "8:00 AM - 4:00 PM" }
+        ],
+        isSenior: true
+      },
+      {
+        id: 14,
+        name: "Dr. Anjali Jain",
+        qualification: "MBBS, MD ( General Physician) , GENERAL MEDICINE",
+        department: "Gynecology & Obstetrics",
+        experience: " ",
+        image: "/doctors/dr-anjali-jain.webp",
+        availability: [
+          { day: "Mon", time: "8:00 AM - 4:00 PM" },
+          { day: "Tue", time: "8:00 AM - 4:00 PM" },
+          { day: "Wed", time: "8:00 AM - 4:00 PM" },
+          { day: "Fri", time: "8:00 AM - 4:00 PM" }
+        ],
+        isSenior: true
+      },
+      {
+        id: 9,
+        name: "Dr. Harshit Mishra",
+        qualification: "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
+        department: "Anesthesia",
+        experience: "8 Years,( 3Years as a Resident & 5 years As a Consultant)",
+        image: "/doctors/dr-harshit-mishra.webp",
+        availability: [
+          { day: "Mon", time: "8:00 AM - 4:00 PM" },
+          { day: "Tue", time: "8:00 AM - 4:00 PM" },
+          { day: "Wed", time: "8:00 AM - 4:00 PM" },
+          { day: "Fri", time: "8:00 AM - 4:00 PM" }
+        ],
+        isSenior: false
+      },
+      {
+          id: 6,
+          name: "Dr. Vishrut Bharti",
+          qualification: "M.B.B.S M.S (General Surgery) MCH (Urologist) Gold Medalist",
+          department: "Urology",
+          experience: "12 years",
+          image: "/doctors/dr-vishrut-bharti.webp",
+          availability: [
+            { day: "Mon", time: "8:00 AM - 4:00 PM" },
+            { day: "Tue", time: "8:00 AM - 4:00 PM" },
+            { day: "Wed", time: "8:00 AM - 4:00 PM" },
+            { day: "Fri", time: "8:00 AM - 4:00 PM" }
+          ],
+          isSenior: false
+        },
+            {
+          id: 15,
+          name: "Dr. Tarik Anwar",
+          qualification: "BDS, MDS MAXILLOFACIAL SURGEON, FELLOSHIP IN HEAD & NECK ONCOLOGY",
+          department: "Head & Neck",
+          experience: "1.5 years",
+          image: "/doctors/dr-tarik-anwar.png",
+          availability: [
+            { day: "Mon", time: "8:00 AM - 4:00 PM" },
+            { day: "Tue", time: "8:00 AM - 4:00 PM" },
+            { day: "Wed", time: "8:00 AM - 4:00 PM" },
+            { day: "Fri", time: "8:00 AM - 4:00 PM" }
+          ],
+          isSenior: false
+        },
+        {
+          id: 16,
+          name: "Dr. Vishal Mishra",
+          qualification: "BDS, MDS, MDS MAXILLOFACIAL SURGEON, FELLOSHIP IN HEAD & NECK",
+          department: "Head & Neck",
+          experience: "1 year",
+          image: "/doctors/dr-vishal-mishra.png",
+          availability: [
+            { day: "Mon", time: "8:00 AM - 4:00 PM" },
+            { day: "Tue", time: "8:00 AM - 4:00 PM" },
+            { day: "Wed", time: "8:00 AM - 4:00 PM" },
+            { day: "Fri", time: "8:00 AM - 4:00 PM" }
+          ],
+          isSenior: false
+        },
+    {
       id: 1,
       name: "Dr. Prateek",
       qualification: "M.B.B.S. MS ORTHO,FIJR,FAGE orthopedic trauma Jioint Replacement,Spine Specialist Surgeon & Sports Injury  Surgeon",
@@ -73,21 +178,7 @@ export  const doctors = [
       ],
       isSenior: false
     },
-    {
-      id: 6,
-      name: "Dr. Vishrut Bharti",
-      qualification: "M.B.B.S M.S (General Surgery) MCH (Urologist) Gold Medalist",
-      department: "Urology",
-      experience: "12 years",
-      image: "/doctors/dr-vishrut-bharti.webp",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: false
-    },
+
     {
       id: 7,
       name: "Dr. Upendra Gupta",
@@ -118,21 +209,7 @@ export  const doctors = [
       ],
       isSenior: true
     },
-    {
-      id: 9,
-      name: "Dr. Harshit Mishra",
-      qualification: "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
-      department: "Anesthesia",
-      experience: "8 Years,( 3Years as a Resident & 5 years As a Consultant)",
-      image: "/doctors/dr-harshit-mishra.webp",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: false
-    },
+
     {
       id: 10,
       name: "Dr. Amritansh Pandey",
@@ -163,81 +240,7 @@ export  const doctors = [
       ],
       isSenior: true
     },
-    {
-      id: 12,
-      name: "Dr. Alok Tiwari",
-      qualification: "Chief Surgical Oncologist, MBBS (Gold Medalist), MS (Gen Surgery) KGMU LucknowDNB, Dip MAS daVinciXi Certified Robotic Onco Surgeon, Surgical Oncology, ESSO (Breast Oncoplasty) FMAS, FALS (Colorectal)",
-      department: "Surgical Oncology",
-      experience: " ",
-      image: "/doctors/dr-alok-tiwari.webp",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: true
-    },
-    {
-      id: 13,
-      name: "Dr. Saurabh Mishra",
-      qualification: "Medical Oncologist & Haemat Oncologist, Director Synergy Super Speciality Hospital & Cancer Institue, MBBS (KGMU), MD (internal Medicine) ECMO DNB",
-      department: "Medical Oncology",
-      experience: " ",
-      image: "/doctors/dr-saurabh-mishra.webp",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: true
-    },
-    {
-      id: 14,
-      name: "Dr. Anjali Jain",
-      qualification: "MBBS, MD ( General Physician) , GENERAL MEDICINE",
-      department: "Gynecology & Obstetrics",
-      experience: " ",
-      image: "/doctors/dr-anjali-jain.webp",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: true
-    },
-    {
-      id: 15,
-      name: "Dr. Tarik Anwar",
-      qualification: "BDS, MDS MAXILLOFACIAL SURGEON, FELLOSHIP IN HEAD & NECK ONCOLOGY",
-      department: "Head & Neck",
-      experience: "1.5 years",
-      image: "/doctors/dr-tarik-anwar.png",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: false
-    },
-    {
-      id: 16,
-      name: "Dr. Vishal Mishra",
-      qualification: "BDS, MDS, MDS MAXILLOFACIAL SURGEON, FELLOSHIP IN HEAD & NECK",
-      department: "Head & Neck",
-      experience: "1 year",
-      image: "/doctors/dr-vishal-mishra.png",
-      availability: [
-        { day: "Mon", time: "8:00 AM - 4:00 PM" },
-        { day: "Tue", time: "8:00 AM - 4:00 PM" },
-        { day: "Wed", time: "8:00 AM - 4:00 PM" },
-        { day: "Fri", time: "8:00 AM - 4:00 PM" }
-      ],
-      isSenior: false
-    },
+
     {
       id: 17,
       name: "Dr. Harshit Mishra",
