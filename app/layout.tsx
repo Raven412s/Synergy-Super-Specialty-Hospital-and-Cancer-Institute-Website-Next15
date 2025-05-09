@@ -1,4 +1,3 @@
-import { WhatsappReachOutButton } from "@/components/global/WhatsappReachOutButton";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
@@ -43,9 +42,7 @@ export default async function RootLayout({
                 suppressContentEditableWarning suppressHydrationWarning
             >
                 <NextIntlClientProvider>
-                    <WhatsappReachOutButton />
                     {children}
-                    
                 </NextIntlClientProvider>
             </body>
         </html>
