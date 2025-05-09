@@ -4,7 +4,8 @@ import { ImageWithFallback } from './ImageWithFallback'
 export const WhatsappReachOutButton = () => {
     return (
         <Link
-            href={"#"}
+            href="https://wa.me/917234006595"
+            target='_blank'
             className="rounded-full fixed right-2 z-50 shadow-lg size-12 animate-heartbeat
                       md:bottom-1 md:left-2
                       bottom-20" // Bottom position on mobile placed above floating bar
