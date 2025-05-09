@@ -186,9 +186,9 @@ const HospitalSearchPage = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-indigo-600 text-white py-16 px-4">
+            <div className="bg-indigo-600  py-16 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <h1 className="text-4xl font-bold mb-6">Find Healthcare Support</h1>
+                    <h1 className="text-4xl font-black mb-6 text-white font-display -tracking-tighter ">Find Healthcare Support</h1>
 
                     <div className="bg-white rounded-xl p-2 shadow-lg">
                         <div className="flex gap-2">

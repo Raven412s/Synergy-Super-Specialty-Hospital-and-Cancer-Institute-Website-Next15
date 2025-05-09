@@ -54,6 +54,7 @@ import {
     toast
 } from "sonner"
 import * as z from "zod"
+import { useForm as useFormspreeForm } from '@formspree/react';
 
 const formSchema = z.object({
     patientName: z.string().min(3, "Name must be at least 3 characters"),
@@ -62,25 +63,23 @@ const formSchema = z.object({
     message: z.string().optional(),
     department: z.string({
       required_error: "Please select a department",
-    }),
+    }).optional(),
     selectedDoctor: z.string({
       required_error: "Please select a doctor",
-    }),
+    }).optional(),
     appointmentDate: z.date({
       required_error: "Please select a date for your appointment",
-    }),
+    }).optional(),
     timeSlot: z.string({
       required_error: "Please select a time slot",
-    }),
+    }).optional(),
     insurance: z.string().optional(),
     emergency: z.boolean().default(false).optional(),
-  });
-
+});
 
 export default function BookAppointmentForm() {
   const [selectedDepartment, setSelectedDepartment] = useState<string>("")
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
+  const [state, handleSubmit] = useFormspreeForm("xldbldyr");
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -103,57 +102,42 @@ export default function BookAppointmentForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      setIsSubmitting(true);
+      // Format the data for Formspree
+      const formData = {
+        patientName: values.patientName,
+        phoneNumber: values.phoneNumber,
+        email: values.email,
+        message: values.message,
+        department: values.department,
+        selectedDoctor: values.selectedDoctor,
+        appointmentDate: values.appointmentDate ? format(values.appointmentDate, "MMMM d, yyyy") : '',
+        timeSlot: timeSlots.find(slot => slot.id === values.timeSlot)?.time,
+        insurance: values.insurance,
+        emergency: values.emergency ? "Yes" : "No"
+      };
 
-      // Simulate API call (optional)
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Submit to Formspree - this returns void
+      await handleSubmit(formData);
 
-      const messageBody = `
-  New Appointment Booked:
-  Patient Name - ${values.patientName}
-  Phone Number - ${values.phoneNumber}
-  Email - ${values.email}
-  Message - ${values.message}
-  Department - ${values.department}
-  Doctor - ${values.selectedDoctor}
-  Date - ${format(values.appointmentDate, "MMMM d, yyyy")}
-  Time - ${timeSlots.find(slot => slot.id === values.timeSlot)?.time}
-  Insurance - ${values.insurance}
-  Emergency - ${values.emergency ? "Yes" : "No"}
-      `;
-
-      // 🔗 Call your API route
-      await fetch("/api/send-whatsapp", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          messageBody,
-          to: "9198704352"
-        }),
-      });
-
-      // ✅ Toast & reset
-      toast.success("Appointment scheduled and WhatsApp sent!", {
+      // If we get here, submission was successful
+      toast.success("Appointment request submitted successfully!", {
         duration: 5000,
       });
-
       form.reset();
       setSelectedDepartment("");
 
     } catch (error) {
       console.error("Form submission error", error);
-      toast.error("Failed to schedule appointment. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+      toast.error("Failed to submit appointment request. Please try again.");
     }
   }
 
 
 
   return (
-    <div className="bg-white  px-4 py-6 md:p-8 rounded-lg shadow-md max-w-6xl w-full my-10">
+    <div className="bg-white px-4 py-6 md:p-8 rounded-lg shadow-md max-w-6xl w-full my-10">
       <div className="mb-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">Book Your Appointment</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Book Your Appointment</h2>
         <p className="text-gray-600 mt-2">Fill out the form below to schedule an appointment with our medical specialists</p>
       </div>
 
@@ -233,7 +217,7 @@ export default function BookAppointmentForm() {
               name="department"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-base">Department</FormLabel>
+                  <FormLabel className="text-base">Department <span className="text-sm text-neutral-900">(optional)</span></FormLabel>
                   <Select onValueChange={handleDepartmentChange} value={field.value ?? ''}>
                     <FormControl>
                       <SelectTrigger>
@@ -259,7 +243,7 @@ export default function BookAppointmentForm() {
               name="selectedDoctor"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-base">Select Doctor</FormLabel>
+                  <FormLabel className="text-base">Select Doctor <span className="text-sm text-neutral-900">(optional)</span></FormLabel>
                   <Select onValueChange={field.onChange} value={field.value} disabled={!selectedDepartment}>
                     <FormControl>
                       <SelectTrigger>
@@ -288,7 +272,7 @@ export default function BookAppointmentForm() {
               name="appointmentDate"
               render={({ field }) => (
                 <FormItem className="flex flex-col">
-                  <FormLabel className="text-base">Appointment Date</FormLabel>
+                  <FormLabel className="text-base">Appointment Date <span className="text-sm text-neutral-900">(optional)</span></FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
                       <FormControl>
@@ -334,7 +318,7 @@ export default function BookAppointmentForm() {
               name="timeSlot"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-base">Preferred Time</FormLabel>
+                  <FormLabel className="text-base">Preferred Time <span className="text-sm text-neutral-900">(optional)</span></FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
                       <SelectTrigger>
@@ -400,14 +384,14 @@ export default function BookAppointmentForm() {
             )}
           />
 
-          {/* Submit Button */}
-          <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
+         {/* Submit Button */}
+         <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
             <Button
               type="submit"
               className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-2"
-              disabled={isSubmitting}
+              disabled={state.submitting}
             >
-              {isSubmitting ? "Scheduling..." : "Book Appointment"}
+              {state.submitting ? "Submitting..." : "Book Appointment"}
             </Button>
 
             <p className="text-sm text-neutral-900">
