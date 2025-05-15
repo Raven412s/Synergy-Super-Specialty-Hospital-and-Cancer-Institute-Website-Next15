@@ -78,7 +78,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
         >
-            <CardDescription className="text-sm text-gray-700 w-full line-clamp-4 min-h-[6rem]">
+            <CardDescription className="text-sm text-gray-700 w-full line-clamp-5 min-h-[6rem]">
                 {description}
             </CardDescription>
         </motion.div>

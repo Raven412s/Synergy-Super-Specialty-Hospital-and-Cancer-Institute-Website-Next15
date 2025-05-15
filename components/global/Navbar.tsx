@@ -13,7 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, MenuIcon, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { GiSiren } from "react-icons/gi";
 import { Button } from "../ui/button";
@@ -57,6 +57,7 @@ const itemVariants = {
 };
 
 export function Navbar() {
+    const router = useRouter()
     const pathname = usePathname();
     const [activePageIndex, setActivePageIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
@@ -64,7 +65,7 @@ export function Navbar() {
     const [outerOpen, setOuterOpen] = useState(false);
     const [innerOpen, setInnerOpen] = useState(false);
     const [selectedMenuItem, setSelectedMenuItem] = useState<typeof menuItems[0] | null>(null);
-    
+
     const handleScroll = () => {
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -220,6 +221,7 @@ export function Navbar() {
                                                                 variant="link"
                                                                 className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                                                 title="Book an Appointment"
+                                                                onClick={() => { router.push("/book-appointment") }}
                                                             >
                                                                 Book Appointment <span>→</span>
                                                             </Button>
@@ -230,6 +232,7 @@ export function Navbar() {
                                                                 variant="link"
                                                                 className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                                                 title="Search for available doctors"
+                                                                onClick={() => { router.push("/doctors/all") }}
                                                             >
                                                                 Find Doctors <span>→</span>
                                                             </Button>
@@ -240,9 +243,13 @@ export function Navbar() {
                                                                 variant="link"
                                                                 className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                                                 title="Get in touch with us"
+                                                                onClick={() => {
+                                                                   router.push("#footer")
+                                                                }}
                                                             >
                                                                 Contact Us <span>→</span>
                                                             </Button>
+
                                                         </motion.div>
                                                     </motion.div>
                                                 </>

@@ -240,91 +240,91 @@ export const menuItems: MenuItemProps[] = [
     },
 ]
 export const quickLinks = [
-    { label: "Emergency", value: "1066", bg: "bg-teal-50" },
-    { label: "Global Helpline", value: "+91 4043441066", bg: "bg-violet-50" },
-    { label: "Support", value: "1800-500-1066", bg: "bg-gray-50" },
+    { label: "Emergency", value: "+91 7234006595", bg: "bg-teal-50" },
+    { label: "Contact Numbers", value: "+91 7234006597", bg: "bg-violet-50" },
+    { label: "Support", value: "+91 7234006595", bg: "bg-gray-50" },
 ]
+
 export const testimonialsForMarquee: TestimonialItem[] = [
     {
         type: "written",
-        name: "Rahul Patel",
+        name: "Mohammad Waris Ali",
         description:
-            "The care I received at Synergy was exceptional. From the moment I walked in, the staff was attentive, kind, and professional. They made sure I was comfortable and informed throughout my treatment. The doctors were knowledgeable and took the time to answer all my questions. I'm genuinely grateful for the support and guidance I received during my recovery. Highly recommend Synergy for anyone seeking quality care.",
+            "Mere marij ka nam Jahir ahamd hai jeske surgry Dr Alok tiwari sir ne kiya ab mera marij puri tarah thik hai. Lap cholecystectomy. kiya hai  ab",
         image: "/patients/anita.jpeg",
     },
     {
         type: "video",
-        image: "/patients/anita.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+        image: "/patients/mrs-saroj-devi.png",
+        videoUrl: "/videos/testimonials/mrs-saroj-devi.mp4",
     },
     {
         type: "written",
-        name: "Priya Singh",
+        name: "Parmatma Mishra",
         description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+            "Han Main Apne bacche ko lekar aaya aur ulcer ki shikayat Thi usko aur Vishal sar Vishal Mishra ji aur Alok Tiwari ji doctor ne bahut acche se ilaaj Kiya mera baccha ekadam abhi swasth ho gaya hai aur bahut hi achcha Laga yahan ki jo doctor aaya tha aur itne acche se treatment karna yah sab bahut achcha Laga sar",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "video",
+        image: "/patients/mahaveeram.png",
+        videoUrl: "/videos/testimonials/mahaveeram.mp4",
+    },
+    {
+        type: "video",
+        image: "/patients/mrs-neetu.png",
+        videoUrl: "/videos/testimonials/mrs-neetu.mp4",
+    },
+    {
+        type: "written",
+        name: "Sohan Paswan",
+        description:
+            "Mere mariz ka nam ramesh inki surgery alok sir ne ki abhi vo thik hai inka sekaye chl rha hai aur sir ko bhi dikha rhe hai",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "written",
+        name: "Govind Verma",
+        description:
+            "Mera naam Govind verma mere chacha ji ka naam ramkishun verma hai inko bahut dino se chhati me dard rahta tha aur bahut khansi aati thi pr jbse Dr.Saurabh sir se dikhaye hain avi chachaji bahut he achhe ho gye h dhyanbaad doctor sahab",
+        image: "/patients/suresh.jpeg",
+    },
+    {
+        type: "video",
+        image: "/patients/siddhi-mishra.png",
+        videoUrl: "/videos/testimonials/siddhi-mishra.mp4",
+    },
+    {
+        type: "written",
+        name: "Tiger Kumar",
+        description:
+            "Mere marij ka naam Kunti Devi Hai unka bahut jyada problem ho gaya tha Ham logon Ne Synergy Cancer institute hospital me admit Kiya sepsis or hupoalbuminemia ho gya tha abhi Mera marij ekdum se sahi h isliye mai hospital ke sare team or dr ko dhyanbaad krta hun",
         image: "/patients/suresh.jpeg",
     },
     {
         type: "video",
         image: "/patients/anita.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+        videoUrl: "/videos/testimonials/vid.mp4",
+    },
+    {
+        type: "video",
+        image: "/patients/mr-naresh-ram.png",
+        videoUrl: "/videos/testimonials/mr-naresh-ram.mp4",
     },
     {
         type: "written",
-        name: "Priya Singh",
+        name: "Arman Ali",
         description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
+            "Meri mata ji nooraisa BEGAM ko utrs me gath tha jisse bahut presan thi Maine bahut hospital ka chakr lgaya but kahi se kuchh profit nhi hua phir mujhe synergy hospital Gorakpur ka pta chal synergy me mai Dr.Anjali Jain se mila Aur phir synergy me Dr.Anjali Jain se surgery ki ab meri mata ji puri tarah se thik h thanks for all staff and Synergy team",
         image: "/patients/suresh.jpeg",
     },
     {
         type: "video",
-        image: "/patients/anita.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/anita.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "written",
-        name: "Priya Singh",
-        description:
-            "Synergy's team made my recovery journey smoother than I ever expected. Their expertise, professionalism, and genuine compassion gave me the confidence to keep pushing forward. The environment is welcoming, and the staff ensures that each patient receives personalized attention. I felt like I was in the right hands from day one. They truly go above and beyond to make sure you’re not just treated but also cared for.",
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/anita.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
-    },
-    {
-        type: "video",
-        image: "/patients/anita.jpeg",
-        videoUrl: "https://www.youtube.com/embed/bMqi1ujAgUc",
+        image: "/patients/kalavati-devi.png",
+        videoUrl: "/videos/testimonials/kalavati-devi.mp4",
     },
 ]
+
 export const faqItems = [
     {
         question: "How can I book an appointment at Synergy Hospital?",
@@ -593,7 +593,8 @@ export const Leaders: LeaderCardProps[] = [
         name: "Dr. Anjali Jain",
         role: "Director & Head – Gynae Oncology",
         description:
-            "Specialist in gynaecologic oncology and minimal invasive gynaecologic surgeries, offering advanced and compassionate care in women's cancer treatment.",
+        "Dr. Anjali Jain Director and Head, Department of Gynae Oncology Minimally Invasive Gynaecological Surgeon MBBS, AUB (Obstetrics & Gynaecology) FMAS (Fellowship in Minimal Access Surgery) FARIS (Fellowship in Advanced Robotic and Innovative Surgery)",
+
         image: "/leaders/doc-anjali-jain.webp",
         onDownload: '/leaders/doc-anjali-jain.webp',
         onReadMore: '/leadership/Dr-Anjali-Jain'
@@ -641,7 +642,7 @@ export const leaderAlokTiwari: LeaderPageProps = {
         "Dr. Alok Tiwari, a distinguished Surgical Oncologist, is widely recognized for his exceptional skills and experience in breast cancer treatments. His expertise and compassionate care have positively impacted numerous lives, earning him a reputation as a leading authority in oncology.",
     videoModalForJourney: {
         image: "/mission-horizontal.webp",
-        videoUrl: "https://www.youtube.com/embed/4eLwOZi5aH8?si=jN68v1Z9wEIu05B6",
+        videoUrl: "/videos/testimonials/vid.mp4",
     },
 }
 
@@ -677,7 +678,7 @@ export const leaderAnjaliJain: LeaderPageProps = {
         "Dr. Anjali Jain stands out as a compassionate Gynecologic Oncologist committed to empowering women through early detection, advanced treatment options, and holistic support. Her expertise and empathetic approach ensure that her patients feel cared for at every step of their cancer journey.",
     videoModalForJourney: {
         image: "/mission-horizontal.webp",
-        videoUrl: "https://www.youtube.com/embed/4eLwOZi5aH8?si=jN68v1Z9wEIu05B6",
+        videoUrl: "/videos/testimonials/vid.mp4",
     },
 }
 
@@ -713,7 +714,7 @@ export const leaderSaurabhMishra: LeaderPageProps = {
         "Dr. Saurabh Mishra is a distinguished Head & Neck Surgical Oncologist whose surgical precision, patient empathy, and commitment to long-term wellness make him a trusted name in cancer care. His vision is to restore both function and confidence to every life he touches.",
     videoModalForJourney: {
         image: "/mission-horizontal.webp",
-        videoUrl: "https://www.youtube.com/embed/4eLwOZi5aH8?si=jN68v1Z9wEIu05B6",
+        videoUrl: "/videos/testimonials/vid.mp4",
     },
 }
 
@@ -743,6 +744,11 @@ export const pressReleases: PressRelease[] = [
         content: `Full content...`
     }
 ]
+
+export const ContactUsMessage = encodeURIComponent("Hello, I would like to know more about your services.");
+export const phoneNumber = "917234006595";
+
+
 
 // Support services data with images
 export const supportServices = [

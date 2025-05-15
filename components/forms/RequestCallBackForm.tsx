@@ -14,11 +14,7 @@ import {
 import {
     Input
 } from "@/components/ui/input"
-import {
-    InputOTP,
-    InputOTPGroup,
-    InputOTPSlot
-} from "@/components/ui/input-otp"
+import { useForm as useFormspreeForm } from '@formspree/react'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { toast } from "sonner"
@@ -29,60 +25,32 @@ const formSchema = z.object({
     number: z.string()
         .min(10, "Number must be at least 10 digits")
         .max(13, "Number is too long")
-        .regex(/^[0-9]+$/, "Must be a valid number"),
-    one_time_password: z.string().min(6, "OTP must be 6 digits").max(6)
+        .regex(/^[0-9]+$/, "Must be a valid number")
 });
 
 export default function RequestCallBackForm() {
+    const [state, handleSubmit] = useFormspreeForm("mwpoaewv");
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
-            number: "",
-            one_time_password: ""
+            number: ""
         }
     });
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        try {
-            console.log(values);
-            toast.success("Callback request submitted successfully!", {
-                description: "We'll contact you shortly.",
-            });
-        } catch (error) {
-            console.error("Form submission error", error);
-            toast.error("Failed to submit the form. Please try again.");
-        }
+    if(state.succeeded){
+        toast.success("Callback request submitted successfully!", {
+            description: "We'll contact you shortly.",
+        });
     }
 
-    const handleRequestOTP = () => {
-        const number = form.getValues("number");
-        if (!number || number.length < 10) {
-            form.setError("number", {
-                message: "Please enter a valid 10-digit number first"
-            });
-            return;
-        }
-        toast.info("OTP sent to your number");
-        // Here you would typically call your OTP API
-    };
-
-    const handleVerifyOTP = () => {
-        const otp = form.getValues("one_time_password");
-        if (!otp || otp.length < 6) {
-            form.setError("one_time_password", {
-                message: "Please enter the full 6-digit OTP"
-            });
-            return;
-        }
-        toast.success("OTP verified successfully");
-        // Here you would typically verify the OTP
-    };
-
+    if(state.errors){
+        toast.error("Failed to submit the form. Please try again.");
+    }
     return (
         <Form {...form}>
             <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                onSubmit={handleSubmit}
                 className="space-y-3 w-full px-2 sm:px-3"
             >
                 <div className="grid grid-cols-1 gap-3 md:gap-4">
@@ -122,49 +90,6 @@ export default function RequestCallBackForm() {
                                             {...field}
                                         />
                                     </FormControl>
-                                    <Button
-                                        type="button"
-                                        variant="outline"
-                                        className="h-10 md:h-11 text-xs md:text-sm px-3 hover:bg-gray-50 hover:text-primary transition-colors"
-                                        onClick={handleRequestOTP}
-                                    >
-                                        Request OTP
-                                    </Button>
-                                </div>
-                                <FormMessage className="text-xs" />
-                            </FormItem>
-                        )}
-                    />
-
-                    {/* OTP Field + Verify Button */}
-                    <FormField
-                        control={form.control}
-                        name="one_time_password"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel className="text-xs md:text-sm">OTP Verification</FormLabel>
-                                <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-2 items-start sm:items-center">
-                                    <FormControl>
-                                        <InputOTP maxLength={6} {...field}>
-                                            <InputOTPGroup>
-                                                {[...Array(6)].map((_, i) => (
-                                                    <InputOTPSlot
-                                                        key={i}
-                                                        index={i}
-                                                        className="w-8 h-10 sm:w-9 sm:h-11 text-xs md:text-sm border-primary"
-                                                    />
-                                                ))}
-                                            </InputOTPGroup>
-                                        </InputOTP>
-                                    </FormControl>
-                                    <Button
-                                        type="button"
-                                        variant="outline"
-                                        className="h-10 md:h-11 text-xs md:text-sm px-3 hover:bg-gray-50 hover:text-primary transition-colors"
-                                        onClick={handleVerifyOTP}
-                                    >
-                                        Verify OTP
-                                    </Button>
                                 </div>
                                 <FormMessage className="text-xs" />
                             </FormItem>
@@ -177,8 +102,9 @@ export default function RequestCallBackForm() {
                         type="submit"
                         className="w-full h-10 md:h-11 text-xs md:text-sm"
                         size="default"
-                    >
-                        Request Callback
+                        disabled={state.submitting}
+                        >
+                          {state.submitting ? "Submitting..." : "Request Callback"}
                     </Button>
                 </div>
             </form>

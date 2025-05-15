@@ -42,8 +42,8 @@ export const EmergencyCare = () => {
   };
 
   // Emergency numbers
-  const emergencyNumber = "+91-123-456-7890";
-  const ambulanceNumber = "+91-123-456-5555";
+  const emergencyNumber = "+91-7234006595";
+  const ambulanceNumber = "+91-7234006597";
 
   return (
     <div className="font-sans">
@@ -92,7 +92,7 @@ export const EmergencyCare = () => {
           <div className="flex items-center">
             <PhoneIcon className="h-5 w-5 mr-2 animate-pulse" />
             <span className="font-bold">FOR EMERGENCIES: </span>
-            <a href="tel:+911234567890" className="ml-2 hover:underline">+91-123-456-7890</a>
+            <a href="tel:+917234006595" className="ml-2 hover:underline">+91-7234006595</a>
           </div>
           <div className="flex items-center">
             <MapPinIcon className="h-5 w-5 mr-2" />
@@ -117,13 +117,17 @@ export const EmergencyCare = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+911234567890"
+                href="tel:+917234006595"
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center justify-center transition-all animate-pulse"
               >
                 <PhoneIcon className="h-6 w-6 mr-2" />
-                CALL NOW: +91-123-456-7890
+                CALL NOW: +91-7234006595
               </a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center justify-center transition-all">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center justify-center transition-all"
+              onClick={() => {
+                window.open("https://maps.app.goo.gl/MXM5snovbSDPidJy5", "_blank");
+            }}
+              >
                 <MapPinIcon className="h-6 w-6 mr-2" />
                 LOCATE EMERGENCY ENTRANCE
               </button>
@@ -242,13 +246,17 @@ export const EmergencyCare = () => {
           <h2 className="text-3xl font-bold mb-6">Need Emergency Care Right Now?</h2>
           <div className="flex flex-col md:flex-row justify-center gap-6 mb-8">
             <a
-              href="tel:+911234567890"
+              href="tel:+917234006595"
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-bold flex items-center justify-center transition-all"
             >
               <PhoneIcon className="h-6 w-6 mr-2" />
-              CALL EMERGENCY: +91-123-456-7890
+              CALL EMERGENCY: +91-7234006595
             </a>
-            <button className="bg-transparent border-2 border-white hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-bold flex items-center justify-center transition-all">
+            <button className="bg-transparent border-2 border-white hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-bold flex items-center justify-center transition-all"
+            onClick={() => {
+                window.open("https://maps.app.goo.gl/MXM5snovbSDPidJy5", "_blank");
+            }}
+            >
               <MapPinIcon className="h-6 w-6 mr-2" />
               GET DIRECTIONS
             </button>

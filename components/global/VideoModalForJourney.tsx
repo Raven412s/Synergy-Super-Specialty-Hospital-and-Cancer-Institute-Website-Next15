@@ -1,3 +1,5 @@
+"use client"
+
 import {
     Dialog,
     DialogContent,
@@ -6,7 +8,9 @@ import {
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { VideoModalTriggerProps } from "@/types";
+import React, { useRef, useState } from "react";
 import { ImageWithFallback } from "./ImageWithFallback";
+import { Pause, Play, Volume2, VolumeX } from "lucide-react";
 
 export function VideoModalForJourney({
     image,
@@ -14,6 +18,29 @@ export function VideoModalForJourney({
     children,
     className,
 }: VideoModalTriggerProps) {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [isMuted, setIsMuted] = useState(false);
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+
+    const togglePlay = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play().catch((error: unknown) => {
+                    console.error("Error playing the video: ", error);
+                });
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
+
+    const toggleMute = () => {
+        if (videoRef.current) {
+            videoRef.current.muted = !isMuted;
+            setIsMuted(!isMuted);
+        }
+    };
     return (
         <Dialog>
             <DialogTrigger
@@ -45,16 +72,33 @@ export function VideoModalForJourney({
             </DialogTrigger>
 
             <DialogContent className="rounded-2xl p-0 overflow-hidden min-w-[90vw] max-w-5xl w-full">
-                <DialogTitle className="sr-only">Patient Testimonial Video</DialogTitle>
-                <div className="aspect-video w-full">
-                    <iframe
-                        className="w-full h-full"
+                <DialogTitle className="sr-only">Video Preview</DialogTitle>
+                <div className="aspect-video w-full relative bg-black">
+                    <video
+                        ref={videoRef}
                         src={videoUrl}
-                        title="Patient Testimonial Video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
+                        className="w-full h-full"
+                        onPlay={() => setIsPlaying(true)}
+                        onPause={() => setIsPlaying(false)}
+                        onClick={togglePlay}
                     />
-                    {/* Optional: If autoplay is needed only on modal open, use a state and conditional rendering */}
+
+                    {/* Video controls */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent flex items-center">
+                        <button
+                            onClick={togglePlay}
+                            className="p-2 rounded-full bg-white/10 hover:bg-white/20 mr-4 flex items-center justify-center"
+                        >
+                            {isPlaying ? <Pause size={20} className="text-white" /> : <Play size={20} className="text-white" />}
+                        </button>
+
+                        <button
+                            onClick={toggleMute}
+                            className="p-2 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center"
+                        >
+                            {isMuted ? <VolumeX size={20} className="text-white" /> : <Volume2 size={20} className="text-white" />}
+                        </button>
+                    </div>
                 </div>
             </DialogContent>
         </Dialog>

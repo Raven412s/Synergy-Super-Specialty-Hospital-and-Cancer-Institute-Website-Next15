@@ -148,7 +148,7 @@ function DepartmentCard(department: DepartmentData) {
     >
       <Link
         href={`/services/${department.slug}`}
-        className="group block h-full rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 flex flex-col"
+        className="group  h-full rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 flex flex-col"
       >
         {/* Image or Icon */}
         <div className="mb-4 flex-shrink-0">

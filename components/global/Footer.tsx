@@ -23,6 +23,7 @@ export const Footer = () => {
         <footer
             id="footer"
             className="relative w-full mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-white "
+            
         >
             {/* Top Section - Form and Map */}
             <div className="flex flex-col lg:flex-row mb-8 gap-5 w-full">

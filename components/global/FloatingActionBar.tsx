@@ -47,6 +47,15 @@ const router = useRouter()
                 onClick:  () => { router.push("/book-appointment")}
             };
         }
+        if (item.label === "Hospitals") {
+            return {
+                ...item,
+                onClick: () => {
+                    window.open("https://maps.app.goo.gl/MXM5snovbSDPidJy5", "_blank");
+                }
+            };
+        }
+
         return item;
     });
 
