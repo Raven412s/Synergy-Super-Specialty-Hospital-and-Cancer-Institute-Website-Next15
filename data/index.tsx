@@ -2,6 +2,8 @@
 
 import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
 
+export const MAIN_URL = "https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto/qi0ggafhojvfvpjcuunt"
+
 export const menuItems: MenuItemProps[] = [
     {
         label: "discover synergy",

@@ -98,13 +98,13 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
                 Read more...
             </Button>
         </motion.div>
-        <motion.div
+        {/* <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
         >
             <DownloadImageButton filePath={onDownload!} />
-        </motion.div>
+        </motion.div> */}
     </CardFooter>
 </Card>
 

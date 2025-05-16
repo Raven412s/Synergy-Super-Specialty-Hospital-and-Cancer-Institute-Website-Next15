@@ -7,7 +7,7 @@ import NewsSlider from "@/components/homepage/NewsSlider";
 import { PatientTestimonials } from "@/components/homepage/PatientTestimonials";
 import { SpecialitiesSection } from "@/components/homepage/SpecialitiesSection";
 import { TestimonialCards } from "@/components/homepage/TestimonialCards";
-import { faqItems } from "@/data";
+import { faqItems, MAIN_URL } from "@/data";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -26,7 +26,7 @@ export const Homepage = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                     aria-label="Promotional video showcasing Synergy Hospital"
                 >
-                    <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto/sxrr4rljzjnqcw8ap6lv" type="video/webm" />
+                    <source src={MAIN_URL} type="video/webm" />
                 </video>
                 <div className="absolute lg:bottom-5 bottom-20 w-full flex justify-center px-4">
                     <Link
