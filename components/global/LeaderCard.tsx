@@ -13,7 +13,7 @@ import { LeaderCardProps } from '@/types'
 import { motion, useInView } from "framer-motion"
 import { useRouter } from 'next/navigation'
 import React, { useRef } from 'react'
-import { DownloadImageButton } from '../the-synergy-story/DownloadImageButton'
+// import { DownloadImageButton } from '../the-synergy-story/DownloadImageButton'
 import { Button } from '../ui/button'
 import { ImageWithFallback } from "./ImageWithFallback"
 
@@ -23,7 +23,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     role,
     description,
     onReadMore,
-    onDownload,
+    // onDownload,
 }) => {
     const router = useRouter()
 
