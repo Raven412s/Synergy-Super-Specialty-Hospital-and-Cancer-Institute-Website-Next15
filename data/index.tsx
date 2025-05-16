@@ -404,7 +404,7 @@ export const actions: ActionItem[] = [
     {
         icon: "/icons/phone.png",
         label: "Call Us",
-        onClick: () => { console.log("call us clicked")},
+        onClick: () => { },
         className: "bg-pink-50 hover:bg-pink-100 transtion-all duration-300 ease-in-out"
     },
     {
@@ -585,7 +585,7 @@ export const Leaders: LeaderCardProps[] = [
         role: "Surgical Oncologist",
         description:
             "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
-        image: "/leaders/doc-alok-tiwari.webp",
+        image: "/leaders/doc-alok-tiwari-with-background.jpg",
         onDownload: "/leaders/doc-alok-tiwari.webp",
         onReadMore: "/leadership/Dr-Alok-Tiwari"
     },
@@ -595,7 +595,7 @@ export const Leaders: LeaderCardProps[] = [
         description:
         "Dr. Anjali Jain Director and Head, Department of Gynae Oncology Minimally Invasive Gynaecological Surgeon MBBS, AUB (Obstetrics & Gynaecology) FMAS (Fellowship in Minimal Access Surgery) FARIS (Fellowship in Advanced Robotic and Innovative Surgery)",
 
-        image: "/leaders/doc-anjali-jain.webp",
+        image: "/leaders/doc-anjali-jain-with-background.jpg",
         onDownload: '/leaders/doc-anjali-jain.webp',
         onReadMore: '/leadership/Dr-Anjali-Jain'
     },
@@ -604,7 +604,7 @@ export const Leaders: LeaderCardProps[] = [
         role: "Medical Oncologist & Haemat Oncologist",
         description:
             "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-        image: "/leaders/doc-saurabh-mishra.webp",
+        image: "/leaders/doc-saurabh-mishra-with-background.jpg",
         onDownload: "/leaders/doc-saurabh-mishra.webp",
         onReadMore: "/leadership/Dr-Saurabh-Mishra",
     },
@@ -687,7 +687,7 @@ export const leaderSaurabhMishra: LeaderPageProps = {
     role: "Head & Neck Surgical Oncologist",
     description:
         "Dr. Saurabh Mishra is a highly respected Head & Neck Surgical Oncologist known for his exceptional surgical skills and deep commitment to patient welfare. He earned his MBBS and MS in General Surgery from KGMU, Lucknow, followed by a DNB in Surgical Oncology. His professional credentials also include FMAS, FALS (Colorectal), Dip MAS, and advanced training in Head & Neck surgeries. Dr. Saurabh Mishra’s expertise lies in treating complex cancers involving the oral cavity, thyroid, larynx, and other structures of the head and neck region. His precise surgical techniques and compassionate patient care have earned him widespread recognition in the field of oncology.",
-    image: "/leaders/doc-saurabh-mishra.webp",
+    image: "/leaders/doc-saurabh-mishra.jpg",
     customFirstHeading: "Introducing Dr. Saurabh Mishra: Excellence in Head & Neck Oncology",
     theirStory: [
         "Dr. Saurabh Mishra’s journey into the world of head and neck oncology was driven by a personal mission to make a meaningful impact in the lives of cancer patients. After completing his medical education from KGMU Lucknow, his fascination with complex anatomy and reconstructive surgery led him to specialize in head and neck surgical oncology. Over the years, he has developed a deep understanding of the intricate challenges these cancers pose, especially those affecting speech, swallowing, and facial function. His meticulous approach and deep empathy have earned him immense respect from both colleagues and patients alike.",

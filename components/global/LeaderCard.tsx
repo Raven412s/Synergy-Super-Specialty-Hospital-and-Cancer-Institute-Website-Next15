@@ -48,7 +48,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
                 src={image}
                 alt={name}
                 fill
-                className="object-cover rounded-md object-left-top"
+                className="object-cover rounded-md  object-center"
                 priority={false}
             />
         </motion.div>

@@ -55,6 +55,14 @@ const router = useRouter()
                 }
             };
         }
+        if (item.label === "Call Us") {
+            return {
+                ...item,
+                onClick: () => {
+                    window.open("tel:7234006597", "_blank");
+                }
+            };
+        }
 
         return item;
     });
