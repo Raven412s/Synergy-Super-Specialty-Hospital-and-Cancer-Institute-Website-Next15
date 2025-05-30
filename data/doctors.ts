@@ -1,5 +1,7 @@
+import { Doctor } from "@/types";
+
   // Sample doctor data
-export  const doctors = [
+export  const doctors: Doctor[] = [
     {
         id: 12,
         name: "Dr. Alok Tiwari",

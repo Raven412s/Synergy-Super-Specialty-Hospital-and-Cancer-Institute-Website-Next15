@@ -7,6 +7,7 @@ export const departmentData: DepartmentData[] = [
       name: 'Medical Oncology',
       slug: 'medical-oncology',
       heroImage: '/department/medical-oncology.jpeg',
+      bannerImage: '/department/medical-oncology-banner.jpeg',
       heroTitle: 'Comprehensive Cancer Treatment & Care',
       isFeatured: true,
       heroSubtitle: 'Advanced medical oncology services with personalized treatment plans in Gorakhpur.',
@@ -150,6 +151,7 @@ export const departmentData: DepartmentData[] = [
       name: 'Surgical Oncology',
       slug: 'surgical-oncology',
       heroImage: '/department/surgical-oncology.webp',
+      bannerImage: '/department/surgical-oncology-banner.jpeg',
       heroTitle: 'Expert Surgical Solutions for Cancer Care',
       isFeatured: true,
       heroSubtitle: 'Combining surgical excellence with personalized oncology care in Gorakhpur.',
@@ -288,11 +290,156 @@ export const departmentData: DepartmentData[] = [
     },
 
     {
+        id: 'gynecology',
+        index: 11,
+        name: 'Gynecology & Obstetrics',
+        slug: 'gynecology',
+        heroImage: '/department/gynaecology.webp',
+        bannerImage: '/department/gynae-banner.jpeg',
+        heroTitle: 'Comprehensive Women\'s Health Services',
+        heroSubtitle: 'Expert care for all stages of a woman\'s life in Gorakhpur.',
+        isFeatured: true,
+
+        overview: {
+          title: 'Our Women\'s Health Approach',
+          description: [
+            'The Gynecology & Obstetrics department at Synergy Super Speciality Hospital provides complete care for women through all life stages, from adolescence through menopause.',
+            'Our team offers compassionate, personalized care for routine gynecologic needs, high-risk pregnancies, fertility concerns, and gynecologic surgeries.'
+          ],
+          whyChooseUs: [
+            'Experienced OB/GYN specialists',
+            'Comprehensive prenatal and maternity care',
+            'Advanced gynecologic surgery options',
+            'Personalized approach to women\'s health'
+          ]
+        },
+
+        treatments: {
+          title: 'Our Services',
+          items: [
+            {
+              title: 'Prenatal & Maternity Care',
+              description: 'Comprehensive care through pregnancy, delivery, and postpartum.'
+            },
+            {
+              title: 'Gynecologic Surgery',
+              description: 'Minimally invasive options for hysterectomy, fibroid removal, and other procedures.'
+            },
+            {
+              title: 'Preventive Care',
+              description: 'Annual exams, cancer screenings, and contraceptive counseling.'
+            }
+          ]
+        },
+
+        stats: {
+          title: 'Women\'s Health Statistics',
+          items: [
+            {
+              value: '2,000+',
+              label: 'Healthy Babies Delivered'
+            },
+            {
+              value: '90%',
+              label: 'Minimally Invasive Gynecologic Surgeries'
+            },
+            {
+              value: '24/7',
+              label: 'Labor & Delivery Availability'
+            },
+            {
+              value: '30+',
+              label: 'Years of Combined Experience'
+            }
+          ]
+        },
+
+        team: {
+          title: 'Our OB/GYN Team',
+          members: [
+            {
+              name: 'Dr. Anjali Jain',
+              role: 'Gynecologist',
+              credentials: 'MBBS, MD (General Physician), GENERAL MEDICINE',
+              image: '/doctors/dr-anjali-jain.webp',
+              specialty: 'General Gynecology, Obstetrics'
+            }
+          ]
+        },
+
+        facilities: {
+          title: 'Women\'s Health Facilities',
+          description: 'Our department offers comfortable, private spaces for all women\'s health needs.',
+          features: [
+            'Modern labor and delivery suites',
+            'Advanced ultrasound technology',
+            'Comfortable exam rooms',
+            'Private consultation areas',
+            'Minimally invasive surgery capabilities'
+          ],
+          image: '/fallback-image.webp'
+        },
+
+        research: {
+          title: 'Women\'s Health Research',
+          items: [
+            {
+              title: 'Pregnancy Outcomes',
+              content: 'Studies on optimizing care for high-risk pregnancies.',
+              icon: 'flask'
+            },
+            {
+              title: 'Minimally Invasive Techniques',
+              content: 'Developing new approaches to gynecologic surgery.',
+              icon: 'dna'
+            },
+            {
+              title: 'Reproductive Health',
+              content: 'Research on common gynecologic conditions.',
+              icon: 'cpu'
+            }
+          ]
+        },
+
+        testimonials: {
+          title: 'Patient Experiences',
+          items: [
+            {
+              quote: 'The OB team made my pregnancy and delivery such a positive experience with their expertise and kindness.',
+              author: 'Priya K.',
+              image: '/fallback-image.webp'
+            },
+            {
+              quote: 'My gynecologic surgery went smoothly with minimal discomfort thanks to their skilled approach.',
+              author: 'Ananya S.',
+              image: '/fallback-image.webp'
+            }
+          ]
+        },
+
+        cta: {
+          title: 'Schedule Your Women\'s Health Visit',
+          subtitle: 'Our OB/GYN team is ready to provide compassionate, expert care.',
+          buttons: [
+            {
+              text: 'Book Appointment',
+              isPrimary: true
+            },
+            {
+              text: 'Learn About Services',
+              isPrimary: false
+            }
+          ]
+        }
+      },
+
+    {
       id: 'neurology',
       index: 2,
       name: 'Neurology',
       slug: 'neurology',
       heroImage: '/department/neurology.jpeg',
+      bannerImage: '/department/neurology-banner.webp',
       heroTitle: 'Expert Care for Neurological Conditions',
       isFeatured: false,
       heroSubtitle: 'Comprehensive diagnosis and treatment for disorders of the nervous system.',
@@ -443,6 +590,7 @@ export const departmentData: DepartmentData[] = [
       name: 'Neurosurgery',
       slug: 'neurosurgery',
       heroImage: '/department/neurosurgery.jpg',
+      bannerImage: '/department/neurology-banner.webp',
       heroTitle: 'Advanced Surgical Care for Brain and Spine',
       isFeatured: false,
       heroSubtitle: 'Precision neurosurgical interventions for complex neurological conditions.',
@@ -593,6 +741,7 @@ export const departmentData: DepartmentData[] = [
       name: 'Gastroenterology',
       slug: 'gastroenterology',
       heroImage: '/department/gastroenterology.webp',
+      bannerImage: '/department/gastroenterology-banner.jpg',
       heroTitle: 'Comprehensive Digestive Health Care',
       isFeatured: false,
       heroSubtitle: 'Expert diagnosis and treatment for gastrointestinal and liver disorders.',
@@ -736,9 +885,10 @@ export const departmentData: DepartmentData[] = [
       name: 'Nephrology',
       slug: 'nephrology',
       heroImage: '/department/pediatrics.jpeg',
-      heroTitle: 'Comprehensive Kidney Care',
+      bannerImage: '/department/nephrology-banner.jpg',
+      heroTitle: '',
       isFeatured: false,
-      heroSubtitle: 'Expert diagnosis and treatment for kidney diseases and hypertension.',
+      heroSubtitle: '',
 
       overview: {
         title: 'Our Nephrology Approach',
@@ -878,7 +1028,8 @@ export const departmentData: DepartmentData[] = [
       index: 6,
       name: 'Urology',
       slug: 'urology',
-      heroImage: '/department/pediatrics.jpeg',
+      heroImage: '/department/urology.jpeg',
+      bannerImage: '/department/urology-banner.jpeg',
       heroTitle: 'Comprehensive Urological Care',
       isFeatured: false,
       heroSubtitle: 'Advanced diagnosis and treatment for urinary tract and male reproductive system disorders.',
@@ -1029,9 +1180,10 @@ export const departmentData: DepartmentData[] = [
       name: 'Orthopedics',
       slug: 'orthopedics',
       heroImage: '/department/pediatrics.jpeg',
-      heroTitle: 'Comprehensive Musculoskeletal Care',
+      bannerImage: '/department/orthopaedic-banner.jpg',
+      heroTitle: '',
       isFeatured: false,
-      heroSubtitle: 'Expert diagnosis and treatment for bone, joint, and muscle disorders.',
+      heroSubtitle: '.',
 
       overview: {
         title: 'Our Orthopedic Approach',
@@ -1179,6 +1331,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Anesthesia',
         slug: 'anesthesia',
         heroImage: '/department/anesthesia.jpg',
+        bannerImage: '/department/anesthesia-banner.webp',
         heroTitle: 'Expert Anesthesia Care for Safe Procedures',
         heroSubtitle: 'Providing advanced anesthesia solutions with patient safety as our top priority in Gorakhpur.',
         isFeatured: true,
@@ -1329,6 +1482,7 @@ export const departmentData: DepartmentData[] = [
         name: 'General Surgery',
         slug: 'general-surgery',
         heroImage: '/department/general-surgery.webp',
+        bannerImage: '/department/general-surgery.webp',
         heroTitle: 'Comprehensive Surgical Care for All Needs',
         heroSubtitle: 'Expert surgical solutions with compassionate care in Gorakhpur.',
         isFeatured: true,
@@ -1472,6 +1626,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Pediatrics',
         slug: 'pediatrics',
         heroImage: '/department/pediatrics.jpeg',
+        bannerImage: '/department/pediatric-banner.jpeg',
         heroTitle: 'Compassionate Care for Children of All Ages',
         heroSubtitle: 'Specialized pediatric services for infants through adolescents in Gorakhpur.',
         isFeatured: true,
@@ -1610,154 +1765,12 @@ export const departmentData: DepartmentData[] = [
       },
 
       {
-        id: 'gynecology',
-        index: 11,
-        name: 'Gynecology & Obstetrics',
-        slug: 'gynecology',
-        heroImage: '/department/gynaecology.webp',
-        heroTitle: 'Comprehensive Women\'s Health Services',
-        heroSubtitle: 'Expert care for all stages of a woman\'s life in Gorakhpur.',
-        isFeatured: true,
-
-        overview: {
-          title: 'Our Women\'s Health Approach',
-          description: [
-            'The Gynecology & Obstetrics department at Synergy Super Speciality Hospital provides complete care for women through all life stages, from adolescence through menopause.',
-            'Our team offers compassionate, personalized care for routine gynecologic needs, high-risk pregnancies, fertility concerns, and gynecologic surgeries.'
-          ],
-          whyChooseUs: [
-            'Experienced OB/GYN specialists',
-            'Comprehensive prenatal and maternity care',
-            'Advanced gynecologic surgery options',
-            'Personalized approach to women\'s health'
-          ]
-        },
-
-        treatments: {
-          title: 'Our Services',
-          items: [
-            {
-              title: 'Prenatal & Maternity Care',
-              description: 'Comprehensive care through pregnancy, delivery, and postpartum.'
-            },
-            {
-              title: 'Gynecologic Surgery',
-              description: 'Minimally invasive options for hysterectomy, fibroid removal, and other procedures.'
-            },
-            {
-              title: 'Preventive Care',
-              description: 'Annual exams, cancer screenings, and contraceptive counseling.'
-            }
-          ]
-        },
-
-        stats: {
-          title: 'Women\'s Health Statistics',
-          items: [
-            {
-              value: '2,000+',
-              label: 'Healthy Babies Delivered'
-            },
-            {
-              value: '90%',
-              label: 'Minimally Invasive Gynecologic Surgeries'
-            },
-            {
-              value: '24/7',
-              label: 'Labor & Delivery Availability'
-            },
-            {
-              value: '30+',
-              label: 'Years of Combined Experience'
-            }
-          ]
-        },
-
-        team: {
-          title: 'Our OB/GYN Team',
-          members: [
-            {
-              name: 'Dr. Anjali Jain',
-              role: 'Gynecologist',
-              credentials: 'MBBS, MD (General Physician), GENERAL MEDICINE',
-              image: '/doctors/dr-anjali-jain.webp',
-              specialty: 'General Gynecology, Obstetrics'
-            }
-          ]
-        },
-
-        facilities: {
-          title: 'Women\'s Health Facilities',
-          description: 'Our department offers comfortable, private spaces for all women\'s health needs.',
-          features: [
-            'Modern labor and delivery suites',
-            'Advanced ultrasound technology',
-            'Comfortable exam rooms',
-            'Private consultation areas',
-            'Minimally invasive surgery capabilities'
-          ],
-          image: '/fallback-image.webp'
-        },
-
-        research: {
-          title: 'Women\'s Health Research',
-          items: [
-            {
-              title: 'Pregnancy Outcomes',
-              content: 'Studies on optimizing care for high-risk pregnancies.',
-              icon: 'flask'
-            },
-            {
-              title: 'Minimally Invasive Techniques',
-              content: 'Developing new approaches to gynecologic surgery.',
-              icon: 'dna'
-            },
-            {
-              title: 'Reproductive Health',
-              content: 'Research on common gynecologic conditions.',
-              icon: 'cpu'
-            }
-          ]
-        },
-
-        testimonials: {
-          title: 'Patient Experiences',
-          items: [
-            {
-              quote: 'The OB team made my pregnancy and delivery such a positive experience with their expertise and kindness.',
-              author: 'Priya K.',
-              image: '/fallback-image.webp'
-            },
-            {
-              quote: 'My gynecologic surgery went smoothly with minimal discomfort thanks to their skilled approach.',
-              author: 'Ananya S.',
-              image: '/fallback-image.webp'
-            }
-          ]
-        },
-
-        cta: {
-          title: 'Schedule Your Women\'s Health Visit',
-          subtitle: 'Our OB/GYN team is ready to provide compassionate, expert care.',
-          buttons: [
-            {
-              text: 'Book Appointment',
-              isPrimary: true
-            },
-            {
-              text: 'Learn About Services',
-              isPrimary: false
-            }
-          ]
-        }
-      },
-
-      {
         id: 'head-neck',
         index: 12,
         name: 'Head & Neck',
         slug: 'head-and-neck',
         heroImage: '/department/head-and-neck.jpeg',
+        bannerImage: '/department/head-and-neck-banner.jpeg',
         heroTitle: 'Specialized Care for Head & Neck Conditions',
         heroSubtitle: 'Expert diagnosis and treatment of complex head and neck disorders in Gorakhpur.',
         isFeatured: true,
@@ -1908,6 +1921,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Emergency & Critical Care',
         slug: 'emergency-critical-care',
         heroImage: '/department/emergency.jpg',
+        bannerImage: '/department/emergency-banner.jpg',
         heroTitle: '24/7 Emergency & Critical Care Services',
         heroSubtitle: 'Immediate, life-saving care when every second counts in Gorakhpur.',
         isFeatured: true,
@@ -2051,6 +2065,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Diagnostic Imaging',
         slug: 'diagnostic-imaging',
         heroImage: '/department/diagnostic-imaging.webp',
+        bannerImage: '/department/diagnostic-imaging-banner.webp',
         heroTitle: 'Advanced Diagnostic Imaging Services',
         heroSubtitle: 'Precision imaging for accurate diagnoses in Gorakhpur.',
         isFeatured: true,
@@ -2194,6 +2209,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Dialysis',
         slug: 'dialysis',
         heroImage: '/dialysis-hero.webp',
+        bannerImage: '/dialysis-hero-banner.webp',
         heroTitle: 'Comprehensive Renal Care Services',
         heroSubtitle: 'Advanced dialysis treatments for kidney health in Gorakhpur.',
         isFeatured: false,
@@ -2337,6 +2353,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Radiology',
         slug: 'radiology',
         heroImage: '/radiology-hero.webp',
+        bannerImage: '/radiology-hero-banner.webp',
         heroTitle: 'Comprehensive Radiology Services',
         heroSubtitle: 'Advanced diagnostic and interventional radiology in Gorakhpur.',
         isFeatured: false,
@@ -2480,6 +2497,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Pathology',
         slug: 'pathology',
         heroImage: '/pathology-hero.webp',
+        bannerImage: '/pathology-hero-banner.webp',
         heroTitle: 'Comprehensive Pathology Services',
         heroSubtitle: 'Precise diagnostic testing for accurate treatment in Gorakhpur.',
         isFeatured: false,
@@ -2623,6 +2641,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Microbiology',
         slug: 'microbiology',
         heroImage: '/microbiology-hero.webp',
+        bannerImage: '/microbiology-hero-banner.webp',
         heroTitle: 'Advanced Microbiology Services',
         heroSubtitle: 'Comprehensive infectious disease diagnostics in Gorakhpur.',
         isFeatured: false,
@@ -2766,6 +2785,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Biochemistry',
         slug: 'biochemistry',
         heroImage: '/biochemistry-hero.webp',
+        bannerImage: '/biochemistry-hero-banner.webp',
         heroTitle: 'Comprehensive Biochemistry Services',
         heroSubtitle: 'Advanced metabolic and chemical pathology testing in Gorakhpur.',
         isFeatured: false,
@@ -2909,6 +2929,7 @@ export const departmentData: DepartmentData[] = [
         name: 'Pain & Palliative Care',
         slug: 'pain-and-palliative-care',
         heroImage: '/department/pain-and-palliative-care.jpeg',
+        bannerImage: '/department/pain-and-palliative-care-banner.jpeg',
         heroTitle: 'Compassionate Pain Management & Palliative Care',
         heroSubtitle: 'Specialized care for chronic pain and serious illness in Gorakhpur.',
         isFeatured: true,

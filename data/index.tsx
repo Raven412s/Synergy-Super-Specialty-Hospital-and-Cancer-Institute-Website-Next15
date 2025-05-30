@@ -241,6 +241,7 @@ export const menuItems: MenuItemProps[] = [
         ],
     },
 ]
+
 export const quickLinks = [
     { label: "Emergency", value: "+91 7234006595", bg: "bg-teal-50" },
     { label: "Contact Numbers", value: "+91 7234006597", bg: "bg-violet-50" },
@@ -595,7 +596,7 @@ export const Leaders: LeaderCardProps[] = [
         name: "Dr. Anjali Jain",
         role: "Director & Head – Gynae Oncology",
         description:
-        "Dr. Anjali Jain Director and Head, Department of Gynae Oncology Minimally Invasive Gynaecological Surgeon MBBS, AUB (Obstetrics & Gynaecology) FMAS (Fellowship in Minimal Access Surgery) FARIS (Fellowship in Advanced Robotic and Innovative Surgery)",
+        "Dr. Anjali Jain Director and Head, Department of Gynae & Oncology Minimally Invasive Gynaecological Surgeon MBBS, DNB (Obstetrics & Gynaecology) FMAS (Fellowship in Minimal Access Surgery) FARIS (Fellowship in Advanced Robotic and Innovative Surgery)",
 
         image: "/leaders/doc-anjali-jain-with-background.jpg",
         onDownload: '/leaders/doc-anjali-jain.webp',
@@ -652,7 +653,7 @@ export const leaderAnjaliJain: LeaderPageProps = {
     name: "Dr. Anjali Jain",
     role: "Gynecologic Oncologist",
     description:
-        "Dr. Anjali Jain is a renowned Gynecologic Oncologist with a profound dedication to women's health. She completed her MBBS with a Gold Medal and pursued MS in General Surgery from KGMU Lucknow. Furthering her expertise, she obtained DNB Superspeciality in Surgical Oncology and specialized training in Breast Oncoplasty from ESSO. Dr. Anjali Jain holds certifications in FMAS, FALS (Colorectal), and Dip MAS, and is a daVinciXi Certified Robotic Onco Surgeon. Her comprehensive training equips her to address complex gynecologic cancers with precision and empathy, ensuring optimal outcomes for her patients.",
+        "Dr. Anjali Jain is a renowned gynae oncologist, laparoscopic and robotic surgeon, presently working at Synergy Super Speciality Hospital & Cancer Institute. She has a vast experience in the field of gynae oncology and has performed many surgeries related to ovarian, cervical, endometrial, vulval cancers. She has worked at many reputed institutes of Delhi NCR region like Fortis memorial research institute and Medanta The Medicity Gurugram. She is routinely performing cervical cancer screening, hysteroscopies, cystoscopies, conization, LEEP/LLETZ, open and laparoscopic procedures, cytoreductive surgeries, radical hysterectomies at her center. She has a keen interest in the management of ovarian and primary peritoneal malignancies and HIPEC surgeries. She actively participates in many activities and conducts free camps related to cancer screening and awareness.",
     image: "/leaders/doc-anjali-jain.webp",
     customFirstHeading: "Meet Dr. Anjali Jain: Expert in Gynecologic Oncology",
     theirStory: [

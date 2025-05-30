@@ -111,6 +111,7 @@ export interface DepartmentData {
     name: string;
     slug: string;
     heroImage: string;
+    bannerImage: string;
     heroTitle: string;
     heroSubtitle: string;
     isFeatured: boolean;
@@ -267,5 +268,18 @@ export interface CancerTypeData {
     };
   }
 
+  export interface DoctorAvailability {
+    day: string;
+    time: string;
+  }
 
-  
+  export interface Doctor {
+    id: number;
+    name: string;
+    qualification: string;
+    department: string;
+    experience: string;
+    image: string;
+    availability: DoctorAvailability[];
+    isSenior: boolean;
+  }

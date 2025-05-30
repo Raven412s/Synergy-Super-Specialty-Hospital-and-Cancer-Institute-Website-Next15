@@ -6,64 +6,14 @@ import { FaPlay } from 'react-icons/fa6'
 import { ImageWithFallback } from '../global/ImageWithFallback'
 import { Button } from '../ui/button'
 import Link from "next/link";
+import { galleryItems } from "@/data/mediaData";
 
-// Sample media data
-const galleryItems = [
-    {
-        id: 1,
-        type: 'image',
-        title: 'Hospital Inauguration',
-        date: '15 Jan 2023',
-        category: 'Events',
-        image: '/media/inauguration.jpg'
-    },
-    {
-        id: 2,
-        type: 'video',
-        title: 'Cardiology Department Tour',
-        date: '22 Mar 2023',
-        category: 'Facilities',
-        image: '/media/cardiology-tour.jpg'
-    },
-    {
-        id: 3,
-        type: 'image',
-        title: 'Annual Health Camp',
-        date: '5 Apr 2023',
-        category: 'Community',
-        image: '/media/health-camp.jpg'
-    },
-    {
-        id: 4,
-        type: 'image',
-        title: 'New Robotic Surgery System',
-        date: '18 May 2023',
-        category: 'Technology',
-        image: '/media/robotic-surgery.jpg'
-    },
-    {
-        id: 5,
-        type: 'video',
-        title: 'Patient Success Stories',
-        date: '30 Jun 2023',
-        category: 'Testimonials',
-        image: '/media/patient-story.jpg'
-    },
-    {
-        id: 6,
-        type: 'image',
-        title: 'Research Symposium',
-        date: '12 Jul 2023',
-        category: 'Education',
-        image: '/media/symposium.jpg'
-    }
-]
+
 
 export const GalleryMarquee = () => {
 
     return (
         <div className="py-10 overflow-hidden w-full " >
-
             <div className="p-3 flex flex-col items-center justify-start">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-left text-heading mb-4">
                     Media Gallery

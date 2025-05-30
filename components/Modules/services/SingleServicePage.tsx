@@ -6,6 +6,7 @@ import { departmentData } from '@/data/departmentData';
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
 
 // Animation variants
 const containerVariants = {
@@ -91,15 +92,15 @@ export default function DepartmentPage() {
         >
           <ImageWithFallback
             fallbackSrc="/fallback-image.webp"
-            src={department.heroImage}
+            src={department.bannerImage}
             alt={`${department.name} Department`}
             fill
-            className="object-cover"
+            className="object-cover "
             priority
           />
           <motion.div
             variants={fadeIn}
-            className="absolute inset-0 bg-synergy-blue/10 flex items-center justify-center"
+            className={cn("absolute inset-0  flex items-center justify-center", department.heroTitle ? "bg-gradient-to-t from-0% from-neutral-800/70  to-transparent" : "" )}
           >
             <div className="text-center px-4">
               <motion.h1
@@ -239,7 +240,7 @@ export default function DepartmentPage() {
                 <div className="p-6">
                   <h3 className="font-serif text-xl font-semibold mb-1">{member.name}</h3>
                   <p className="text-blue-600 text-sm mb-2">{member.role}</p>
-                  <p className="text-gray-500 text-xs mb-3">{member.credentials}</p>
+                  <p className="text-gray-500 text-xs mb-3 ">{member.credentials}</p>
                   <div className="text-xs bg-blue-50 text-blue-800 px-2 py-1 rounded inline-block">
                     {member.specialty}
                   </div>
