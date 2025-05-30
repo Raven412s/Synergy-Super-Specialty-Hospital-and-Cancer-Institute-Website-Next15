@@ -596,7 +596,7 @@ export const Leaders: LeaderCardProps[] = [
         name: "Dr. Anjali Jain",
         role: "Director & Head – Gynae Oncology",
         description:
-        "Dr. Anjali Jain Director and Head, Department of Gynae & Oncology Minimally Invasive Gynaecological Surgeon MBBS, DNB (Obstetrics & Gynaecology) FMAS (Fellowship in Minimal Access Surgery) FARIS (Fellowship in Advanced Robotic and Innovative Surgery)",
+        "Dr. Anjali Jain Director and Head, Department of Gynae & Oncology. Dr. Anjali Jain is a renowned gynae oncologist, laparoscopic and robotic surgeon, presently working at Synergy Super Speciality Hospital & Cancer Institute.",
 
         image: "/leaders/doc-anjali-jain-with-background.jpg",
         onDownload: '/leaders/doc-anjali-jain.webp',
