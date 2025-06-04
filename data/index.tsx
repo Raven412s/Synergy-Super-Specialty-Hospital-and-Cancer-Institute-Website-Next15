@@ -1,259 +1,258 @@
-
-
 import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
+import { useTranslations } from 'next-intl';
 
 export const MAIN_URL = "https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto/qi0ggafhojvfvpjcuunt"
 
-export const menuItems: MenuItemProps[] = [
-    {
-        label: "discover synergy",
-        pages: [
-            {
-                name: "Synergy Story",
-                links: [
-                    { label: "Overview", href: "/the-synergy-story#Overview" },
-                    { label: "Our Vision", href: "/the-synergy-story#Our-Vision" },
-                    { label: "Our Mission", href: "/the-synergy-story#Our-Mission" },
-                    { label: "Leadership", href: "/the-synergy-story#Leadership" },
-                    { label: "See What Synergy Achieved", href: "/the-synergy-story#Awards-and-Accolades" },
-                    { label: "Milestones", href: "/the-synergy-story#Achievements-and-Milestones" },
-                    { label: "Awards", href: "/the-synergy-story#Awards-and-Accolades" },
-                    { label: "Life at Synergy", href: "/the-synergy-story#A-Day-at-Synergy" },
-                ],
-            },
-            {
-                name: "Our Doctors",
-                links: [
-                    { label: "Dr. Alok Tiwari", href: "/leadership/Dr-Alok-Tiwari" },
-                    { label: "Dr. Saurabh Mishra", href: "/leadership/Dr-Saurabh-Mishra" },
-                    { label: "Dr. Anjali Jain", href: "/leadership/Dr-Anjali-Jain" },
-                    { label: "See All Our Doctors", href: "/doctors/all" },
-                ],
-            },
-            {
-                name: "Media Center",
-                links: [
-                    { label: "In the News", href: "/media-center#synergy-in-the-news" },
-                    { label: "Press Releases", href: "/media-center#press-releases" },
-                    { label: "Events & Conferences", href: "/media-center#events" },
-                    { label: "Media Gallery", href: "/media-center#media-gallery" },
-                    { label: "Media Contact", href: "/media-center#media-contacts" },
-                ],
-            },
-            {
-                name: "Terms & Privacy",
-                links: [
-                    { label: "Your Privacy is Our Policy", href: "/privacy-policy" },
-                    { label: "Our Terms and Conditions", href: "/terms-and-conditions" },
-                ],
-            },
-        ],
-    },
-    {
-        label: "medical services",
-        pages: [
-            {
-                name: "Our Specialties",
-                links: [
-                    { label: "Medical Oncology", href: "/services/medical-oncology" },
-                    { label: "Surgical Oncology", href: "/services/surgical-oncology" },
-                    { label: "Gynecology & Obstetrics", href: "/services/gynecology" },
-                    { label: "Neurology", href: "/services/neurology" },
-                    { label: "Neurosurgery", href: "/services/neurosurgery" },
-                    { label: "Gastroenterology", href: "/services/gastroenterology" },
-                    { label: "Nephrology", href: "/services/nephrology" },
-                    { label: "Urology", href: "/services/urology" },
-                    { label: "Orthopedics", href: "/services/orthopedics" },
-                    { label: "Anesthesia", href: "/services/anesthesia" },
-                    { label: "General Surgery", href: "/services/general-surgery" },
-                    { label: "Pediatrics", href: "/services/pediatrics" },
-                    { label: "Head & Neck", href: "/services/head-and-neck" },
-                    { label: "Emergency & Critical Care", href: "/services/emergency-and-critical-care" },
-                    { label: "Pain & Palliative Care", href: "/services/pain-and-palliative-care" },
 
-                    { label: "View All", href: "/services/all" },
+export const useMenuItems = () => {
+    const t = useTranslations('menu');
 
-                    // { label: "Radiation Oncology", href: "/services/radiation-oncology" },
-                    // { label: "Hemato-Oncology", href: "/services/hemato-oncology" },
-                    // { label: "Pain & Palliative Care", href: "/services/palliative-care" },
-                    // { label: "Cardiology", href: "/services/cardiology" },
-                    // { label: "Neurosurgery", href: "/services/neurosurgery" },
-                    // { label: "Hepatology", href: "/services/hepatology" },
-                    // { label: "Rheumatology", href: "/services/rheumatology" },
-                    // { label: "Endocrinology", href: "/services/endocrinology" },
-                    // { label: "Pulmonology", href: "/services/pulmonology" },
-                    // { label: "Dermatology", href: "/services/dermatology" },
-                    // { label: "ENT (Otorhinolaryngology)", href: "/services/ent" },
-                    // { label: "Ophthalmology", href: "/services/ophthalmology" },
-                    // { label: "Internal Medicine", href: "/services/internal-medicine" },
-                    // { label: "Psychiatry", href: "/services/psychiatry" },
-                ]
-            },
-            {
-                name: "Support Services",
-                links: [
-                    { label: "Pharmacy", href: "/services/pharmacy" },
-                    { label: "Blood Bank", href: "/services/blood-bank" },
-                    { label: "Dietary", href: "/services/dietary" },
-                    { label: "Laundry", href: "/services/laundry" },
-                    { label: "House Keeping", href: "/services/house-keeping" },
-                    { label: "Security", href: "/services/Security" },
-                    { label: "Ambulance Services", href: "/services/ambulance" },
-                    { label: "View All", href: "/services/support-services" }
-                ]
-            },
-            {
-                name: "Diagnostic Services",
-                links: [
-                    { label: "Diagnostic Imaging", href: "/services/diagnostic-imaging" },
-                    { label: "Dialysis Unit", href: "/services/dialysis" },
-                    { label: "Radiology", href: "/services/radiology" },
-                    { label: "Pathology", href: "/services/pathology" },
-                    { label: "Microbiology", href: "/services/microbiology" },
-                    { label: "Biochemistry", href: "/services/biochemistry" },
-                    { label: "View All", href: "/services/diagnostic-services" }
-                ]
-            },
-            {
-                name: "Specialized Services",
-                links: [
-                    { label: "ICU (Intensive Care Unit)", href: "/services/specialized-services#icu" },
-                    { label: "NICU (Neonatal Intensive Care Unit)", href: "/services/specialized-services#nicu" },
-                    { label: "OT (Operation Theater)", href: "/services/specialized-services#ot" },
-                    { label: "Endoscopy", href: "/services/specialized-services#endoscopy" },
-                    { label: "Physiotherapy", href: "/services/specialized-services#physiotherapy" },
-                    { label: "View All", href: "/services/specialized-services" }
-                ]
-            },
-            {
-                name: "Administrative Services",
-                links: [
-                    { label: "Admission & Discharge", href: "/services/admission-and-discharge" },
-                    { label: "Billing & Insurance", href: "/services/billing-and-insurance" },
-                    { label: "Medical Records", href: "/services/medical-records" },
-                ]
-            },
-            {
-                name: "Patient Care",
-                links: [
-                    { label: "Second Opinion", href: "/patient-care/second-opinion" },
-                    { label: "24x7 Emergency", href: "/patient-care/emergency" },
-                    { label: "In-Patient Facilities", href: "/patient-care/in-patient" },
-                    { label: "Outpatient Clinics", href: "/patient-care/out-patient" },
-                    { label: "Health Check Packages", href: "/patient-care/health-checks" },
-                ]
-            },
-            {
-                name: "Insurance",
-                links: [
-                    { label: "Insurance & TPA Services", href: "/patient-care/insurance" }
-                ]
-            }
-        ]
-    },
-    {
-        label: "health library",
-        pages: [
-            {
-                name: "Cancer Types",
-                links: [
-                    { label: "Adrenal Cancer", href: "/health-library/adrenal-cancer" },
-                    { label: "Anal Cancer", href: "/health-library/anal-cancer" },
-                    { label: "Bile Duct Cancer", href: "/health-library/bile-duct-cancer" },
-                    { label: "Bladder Cancer", href: "/health-library/bladder-cancer" },
-                    { label: "Blood Cancer", href: "/health-library/blood-cancer" },
-                    { label: "Bone Cancer", href: "/health-library/bone-cancer" },
-                    { label: "Brain Cancer", href: "/health-library/brain-cancer" },
-                    { label: "Breast Cancer", href: "/health-library/breast-cancer" },
-                    { label: "Breast Cancer in Men", href: "/health-library/breast-cancer-in-men" },
-                    { label: "Cervical Cancer", href: "/health-library/cervical-cancer" },
-                    { label: "Colon/Rectal Cancer", href: "/health-library/colon-rectal-cancer" },
-                    { label: "Endometrial Cancer", href: "/health-library/endometrial-cancer" },
-                    { label: "Esophageal Cancer", href: "/health-library/esophageal-cancer" },
-                    { label: "Eye Cancer", href: "/health-library/eye-cancer" },
-                    { label: "Gallbladder Cancer", href: "/health-library/gallbladder-cancer" },
-                    { label: "Gastric Cancer", href: "/health-library/gastric-cancer" },
-                    { label: "Head and Neck Cancer", href: "/health-library/head-and-neck-cancer" },
-                    { label: "Kidney Cancer", href: "/health-library/kidney-cancer" },
-                    { label: "Laryngeal Cancer", href: "/health-library/laryngeal-cancer" },
-                    { label: "Liver Cancer", href: "/health-library/liver-cancer" },
-                    { label: "Lung Cancer", href: "/health-library/lung-cancer" },
-                    { label: "Multiple Myeloma", href: "/health-library/multiple-myeloma" },
-                    { label: "Neuroendocrine Tumors", href: "/health-library/neuroendocrine-tumors" },
-                    { label: "Non-Hodgkin Lymphoma", href: "/health-library/non-hodgkin-lymphoma" },
-                    { label: "Oral Cancer", href: "/health-library/oral-cancer" },
-                    { label: "Ovarian Cancer", href: "/health-library/ovarian-cancer" },
-                    { label: "Pancreatic Cancer", href: "/health-library/pancreatic-cancer" },
-                    { label: "Penile Cancer", href: "/health-library/penile-cancer" },
-                    { label: "Pituitary Tumors", href: "/health-library/pituitary-tumors" },
-                    { label: "Prostate Cancer", href: "/health-library/prostate-cancer" },
-                    { label: "Salivary Gland Cancer", href: "/health-library/salivary-gland-cancer" },
-                    { label: "Skin Cancer", href: "/health-library/skin-cancer" },
-                    { label: "Stomach Cancer", href: "/health-library/stomach-cancer" },
-                    { label: "Uterine Cancer", href: "/health-library/uterine-cancer" },
-                ],
-            },
-            {
-                name: "Patient Education",
-                links: [
-                    { label: "Cancer Prevention", href: "/health-library/prevention" },
-                    { label: "Diagnosis & Staging", href: "/health-library/diagnosis" },
-                    { label: "Treatment Options", href: "/health-library/treatments" },
-                    { label: "Nutrition & Wellness", href: "/health-library/nutrition" },
-                ],
-            },
-            {
-                name: "FAQs",
-                links: [
-                    { label: "General Questions", href: "/health-library/faqs#general" },
-                    { label: "Before Your Visit", href: "/health-library/faqs#before-visit" },
-                    { label: "During Treatment", href: "/health-library/faqs#during-treatment" },
-                    { label: "After Treatment", href: "/health-library/faqs#after-treatment" },
-                ],
-            },
-        ],
-    },
-    {
-        label: "cancer survivors",
-        pages: [
-            {
-                name: "Stories of Hope",
-                links: [
-                    { label: "Patient Testimonials", href: "/survivors/testimonials" },
-                    { label: "Victory Stories", href: "/survivors/victory-stories" },
-                ],
-            },
-            {
-                name: "Support Programs",
-                links: [
-                    { label: "Counseling & Mental Health", href: "/survivors/counseling" },
-                    { label: "Rehabilitation Programs", href: "/survivors/rehab" },
-                ],
-            },
-            // {
-            //     name: "Get Involved",
-            //     links: [
-            //         { label: "Volunteer", href: "/survivors/volunteer" },
-            //         { label: "Awareness Campaigns", href: "/survivors/awareness" },
-            //         { label: "Donate", href: "/donate" },
-            //     ],
-            // },
-        ],
-    },
-]
+    const menuItems: MenuItemProps[] = [
+        {
+            label: t('discoverSynergy'),
+            pages: [
+                {
+                    name: t('sections.synergyStory.name'),
+                    links: [
+                        { label: t('sections.synergyStory.links.overview'), href: "/the-synergy-story#Overview" },
+                        { label: t('sections.synergyStory.links.ourVision'), href: "/the-synergy-story#Our-Vision" },
+                        { label: t('sections.synergyStory.links.ourMission'), href: "/the-synergy-story#Our-Mission" },
+                        { label: t('sections.synergyStory.links.leadership'), href: "/the-synergy-story#Leadership" },
+                        { label: t('sections.synergyStory.links.achievements'), href: "/the-synergy-story#Awards-and-Accolades" },
+                        { label: t('sections.synergyStory.links.milestones'), href: "/the-synergy-story#Achievements-and-Milestones" },
+                        { label: t('sections.synergyStory.links.awards'), href: "/the-synergy-story#Awards-and-Accolades" },
+                        { label: t('sections.synergyStory.links.lifeAtSynergy'), href: "/the-synergy-story#A-Day-at-Synergy" },
+                    ],
+                },
+                {
+                    name: t('sections.ourDoctors.name'),
+                    links: [
+                        { label: t('sections.ourDoctors.links.drAlokTiwari'), href: "/leadership/Dr-Alok-Tiwari" },
+                        { label: t('sections.ourDoctors.links.drSaurabhMishra'), href: "/leadership/Dr-Saurabh-Mishra" },
+                        { label: t('sections.ourDoctors.links.drAnjaliJain'), href: "/leadership/Dr-Anjali-Jain" },
+                        { label: t('sections.ourDoctors.links.seeAll'), href: "/doctors/all" },
+                    ],
+                },
+                {
+                    name: t('sections.mediaCenter.name'),
+                    links: [
+                        { label: t('sections.mediaCenter.links.inTheNews'), href: "/media-center#synergy-in-the-news" },
+                        { label: t('sections.mediaCenter.links.pressReleases'), href: "/media-center#press-releases" },
+                        { label: t('sections.mediaCenter.links.events'), href: "/media-center#events" },
+                        { label: t('sections.mediaCenter.links.mediaGallery'), href: "/media-center#media-gallery" },
+                        { label: t('sections.mediaCenter.links.mediaContact'), href: "/media-center#media-contacts" },
+                    ],
+                },
+                {
+                    name: t('sections.termsPrivacy.name'),
+                    links: [
+                        { label: t('sections.termsPrivacy.links.privacyPolicy'), href: "/privacy-policy" },
+                        { label: t('sections.termsPrivacy.links.termsConditions'), href: "/terms-and-conditions" },
+                    ],
+                },
+            ],
+        },
+        {
+            label: t('medicalServices'),
+            pages: [
+                {
+                    name: t('sections.specialties.name'),
+                    links: [
+                        { label: t('sections.specialties.links.medicalOncology'), href: "/services/medical-oncology" },
+                        { label: t('sections.specialties.links.surgicalOncology'), href: "/services/surgical-oncology" },
+                        { label: t('sections.specialties.links.gynecology'), href: "/services/gynecology" },
+                        { label: t('sections.specialties.links.neurology'), href: "/services/neurology" },
+                        { label: t('sections.specialties.links.neurosurgery'), href: "/services/neurosurgery" },
+                        { label: t('sections.specialties.links.gastroenterology'), href: "/services/gastroenterology" },
+                        { label: t('sections.specialties.links.nephrology'), href: "/services/nephrology" },
+                        { label: t('sections.specialties.links.urology'), href: "/services/urology" },
+                        { label: t('sections.specialties.links.orthopedics'), href: "/services/orthopedics" },
+                        { label: t('sections.specialties.links.anesthesia'), href: "/services/anesthesia" },
+                        { label: t('sections.specialties.links.generalSurgery'), href: "/services/general-surgery" },
+                        { label: t('sections.specialties.links.pediatrics'), href: "/services/pediatrics" },
+                        { label: t('sections.specialties.links.headNeck'), href: "/services/head-and-neck" },
+                        { label: t('sections.specialties.links.emergency'), href: "/services/emergency-and-critical-care" },
+                        { label: t('sections.specialties.links.palliativeCare'), href: "/services/pain-and-palliative-care" },
+                        { label: t('sections.specialties.links.viewAll'), href: "/services/all" },
+                    ]
+                },
+                {
+                    name: t('sections.supportServices.name'),
+                    links: [
+                        { label: t('sections.supportServices.links.pharmacy'), href: "/services/pharmacy" },
+                        { label: t('sections.supportServices.links.bloodBank'), href: "/services/blood-bank" },
+                        { label: t('sections.supportServices.links.dietary'), href: "/services/dietary" },
+                        { label: t('sections.supportServices.links.laundry'), href: "/services/laundry" },
+                        { label: t('sections.supportServices.links.houseKeeping'), href: "/services/house-keeping" },
+                        { label: t('sections.supportServices.links.security'), href: "/services/Security" },
+                        { label: t('sections.supportServices.links.ambulance'), href: "/services/ambulance" },
+                        { label: t('sections.supportServices.links.viewAll'), href: "/services/support-services" }
+                    ]
+                },
+                {
+                    name: t('sections.diagnosticServices.name'),
+                    links: [
+                        { label: t('sections.diagnosticServices.links.diagnosticImaging'), href: "/services/diagnostic-imaging" },
+                        { label: t('sections.diagnosticServices.links.dialysis'), href: "/services/dialysis" },
+                        { label: t('sections.diagnosticServices.links.radiology'), href: "/services/radiology" },
+                        { label: t('sections.diagnosticServices.links.pathology'), href: "/services/pathology" },
+                        { label: t('sections.diagnosticServices.links.microbiology'), href: "/services/microbiology" },
+                        { label: t('sections.diagnosticServices.links.biochemistry'), href: "/services/biochemistry" },
+                        { label: t('sections.diagnosticServices.links.viewAll'), href: "/services/diagnostic-services" }
+                    ]
+                },
+                {
+                    name: t('sections.specializedServices.name'),
+                    links: [
+                        { label: t('sections.specializedServices.links.icu'), href: "/services/specialized-services#icu" },
+                        { label: t('sections.specializedServices.links.nicu'), href: "/services/specialized-services#nicu" },
+                        { label: t('sections.specializedServices.links.ot'), href: "/services/specialized-services#ot" },
+                        { label: t('sections.specializedServices.links.endoscopy'), href: "/services/specialized-services#endoscopy" },
+                        { label: t('sections.specializedServices.links.physiotherapy'), href: "/services/specialized-services#physiotherapy" },
+                        { label: t('sections.specializedServices.links.viewAll'), href: "/services/specialized-services" }
+                    ]
+                },
+                {
+                    name: t('sections.administrativeServices.name'),
+                    links: [
+                        { label: t('sections.administrativeServices.links.admission'), href: "/services/admission-and-discharge" },
+                        { label: t('sections.administrativeServices.links.billing'), href: "/services/billing-and-insurance" },
+                        { label: t('sections.administrativeServices.links.medicalRecords'), href: "/services/medical-records" },
+                    ]
+                },
+                {
+                    name: t('sections.patientCare.name'),
+                    links: [
+                        { label: t('sections.patientCare.links.secondOpinion'), href: "/patient-care/second-opinion" },
+                        { label: t('sections.patientCare.links.emergency'), href: "/patient-care/emergency" },
+                        { label: t('sections.patientCare.links.inPatient'), href: "/patient-care/in-patient" },
+                        { label: t('sections.patientCare.links.outPatient'), href: "/patient-care/out-patient" },
+                        { label: t('sections.patientCare.links.healthChecks'), href: "/patient-care/health-checks" },
+                    ]
+                },
+                {
+                    name: t('sections.insurance.name'),
+                    links: [
+                        { label: t('sections.insurance.links.insuranceServices'), href: "/patient-care/insurance" }
+                    ]
+                }
+            ]
+        },
+        {
+            label: t('healthLibrary'),
+            pages: [
+                {
+                    name: t('sections.cancerTypes.name'),
+                    links: [
+                        { label: t('sections.cancerTypes.links.adrenalCancer'), href: "/health-library/adrenal-cancer" },
+                        { label: t('sections.cancerTypes.links.analCancer'), href: "/health-library/anal-cancer" },
+                        { label: t('sections.cancerTypes.links.bileDuctCancer'), href: "/health-library/bile-duct-cancer" },
+                        { label: t('sections.cancerTypes.links.bladderCancer'), href: "/health-library/bladder-cancer" },
+                        { label: t('sections.cancerTypes.links.bloodCancer'), href: "/health-library/blood-cancer" },
+                        { label: t('sections.cancerTypes.links.boneCancer'), href: "/health-library/bone-cancer" },
+                        { label: t('sections.cancerTypes.links.brainCancer'), href: "/health-library/brain-cancer" },
+                        { label: t('sections.cancerTypes.links.breastCancer'), href: "/health-library/breast-cancer" },
+                        { label: t('sections.cancerTypes.links.breastCancerMen'), href: "/health-library/breast-cancer-in-men" },
+                        { label: t('sections.cancerTypes.links.cervicalCancer'), href: "/health-library/cervical-cancer" },
+                        { label: t('sections.cancerTypes.links.colonRectalCancer'), href: "/health-library/colon-rectal-cancer" },
+                        { label: t('sections.cancerTypes.links.endometrialCancer'), href: "/health-library/endometrial-cancer" },
+                        { label: t('sections.cancerTypes.links.esophagealCancer'), href: "/health-library/esophageal-cancer" },
+                        { label: t('sections.cancerTypes.links.eyeCancer'), href: "/health-library/eye-cancer" },
+                        { label: t('sections.cancerTypes.links.gallbladderCancer'), href: "/health-library/gallbladder-cancer" },
+                        { label: t('sections.cancerTypes.links.gastricCancer'), href: "/health-library/gastric-cancer" },
+                        { label: t('sections.cancerTypes.links.headNeckCancer'), href: "/health-library/head-and-neck-cancer" },
+                        { label: t('sections.cancerTypes.links.kidneyCancer'), href: "/health-library/kidney-cancer" },
+                        { label: t('sections.cancerTypes.links.laryngealCancer'), href: "/health-library/laryngeal-cancer" },
+                        { label: t('sections.cancerTypes.links.liverCancer'), href: "/health-library/liver-cancer" },
+                        { label: t('sections.cancerTypes.links.lungCancer'), href: "/health-library/lung-cancer" },
+                        { label: t('sections.cancerTypes.links.multipleMyeloma'), href: "/health-library/multiple-myeloma" },
+                        { label: t('sections.cancerTypes.links.neuroendocrineTumors'), href: "/health-library/neuroendocrine-tumors" },
+                        { label: t('sections.cancerTypes.links.nonHodgkinLymphoma'), href: "/health-library/non-hodgkin-lymphoma" },
+                        { label: t('sections.cancerTypes.links.oralCancer'), href: "/health-library/oral-cancer" },
+                        { label: t('sections.cancerTypes.links.ovarianCancer'), href: "/health-library/ovarian-cancer" },
+                        { label: t('sections.cancerTypes.links.pancreaticCancer'), href: "/health-library/pancreatic-cancer" },
+                        { label: t('sections.cancerTypes.links.penileCancer'), href: "/health-library/penile-cancer" },
+                        { label: t('sections.cancerTypes.links.pituitaryTumors'), href: "/health-library/pituitary-tumors" },
+                        { label: t('sections.cancerTypes.links.prostateCancer'), href: "/health-library/prostate-cancer" },
+                        { label: t('sections.cancerTypes.links.salivaryGlandCancer'), href: "/health-library/salivary-gland-cancer" },
+                        { label: t('sections.cancerTypes.links.skinCancer'), href: "/health-library/skin-cancer" },
+                        { label: t('sections.cancerTypes.links.stomachCancer'), href: "/health-library/stomach-cancer" },
+                        { label: t('sections.cancerTypes.links.uterineCancer'), href: "/health-library/uterine-cancer" },
+                    ],
+                },
+                {
+                    name: t('sections.patientEducation.name'),
+                    links: [
+                        { label: t('sections.patientEducation.links.prevention'), href: "/health-library/prevention" },
+                        { label: t('sections.patientEducation.links.diagnosis'), href: "/health-library/diagnosis" },
+                        { label: t('sections.patientEducation.links.treatments'), href: "/health-library/treatments" },
+                        { label: t('sections.patientEducation.links.nutrition'), href: "/health-library/nutrition" },
+                    ],
+                },
+                {
+                    name: t('sections.faqs.name'),
+                    links: [
+                        { label: t('sections.faqs.links.general'), href: "/health-library/faqs#general" },
+                        { label: t('sections.faqs.links.beforeVisit'), href: "/health-library/faqs#before-visit" },
+                        { label: t('sections.faqs.links.duringTreatment'), href: "/health-library/faqs#during-treatment" },
+                        { label: t('sections.faqs.links.afterTreatment'), href: "/health-library/faqs#after-treatment" },
+                    ],
+                },
+            ],
+        },
+        {
+            label: t('cancerSurvivors'),
+            pages: [
+                {
+                    name: t('sections.storiesOfHope.name'),
+                    links: [
+                        { label: t('sections.storiesOfHope.links.testimonials'), href: "/survivors/testimonials" },
+                        { label: t('sections.storiesOfHope.links.victoryStories'), href: "/survivors/victory-stories" },
+                    ],
+                },
+                {
+                    name: t('sections.supportPrograms.name'),
+                    links: [
+                        { label: t('sections.supportPrograms.links.counseling'), href: "/survivors/counseling" },
+                        { label: t('sections.supportPrograms.links.rehab'), href: "/survivors/rehab" },
+                    ],
+                },
+            ],
+        },
+    ];
 
-export const quickLinks = [
-    { label: "Emergency", value: "+91 7234006595", bg: "bg-teal-50" },
-    { label: "Contact Numbers", value: "+91 7234006597", bg: "bg-violet-50" },
-    { label: "Support", value: "+91 7234006595", bg: "bg-gray-50" },
-]
+    return menuItems;
+};
 
-export const testimonialsForMarquee: TestimonialItem[] = [
+export const useQuickLinks = () => {
+    const t = useTranslations('quickLinks');
+
+    return [
+        {
+            label: t('emergency.label'),
+            value: t('emergency.value'),
+            bg: "bg-teal-50"
+        },
+        {
+            label: t('contactNumbers.label'),
+            value: t('contactNumbers.value'),
+            bg: "bg-violet-50"
+        },
+        {
+            label: t('support.label'),
+            value: t('support.value'),
+            bg: "bg-gray-50"
+        },
+    ];
+};
+
+export const useTestimonials = () => {
+    const t = useTranslations('testimonials');
+const testimonials: TestimonialItem[] =  [
     {
         type: "written",
-        name: "Mohammad Waris Ali",
-        description:
-            "Mere marij ka nam Jahir ahamd hai jeske surgry Dr Alok tiwari sir ne kiya ab mera marij puri tarah thik hai. Lap cholecystectomy. kiya hai  ab",
+        name: t('mohammadWarisAli.name'),
+        description: t('mohammadWarisAli.description'),
         image: "/patients/anita.jpeg",
     },
     {
@@ -263,9 +262,8 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Parmatma Mishra",
-        description:
-            "Han Main Apne bacche ko lekar aaya aur ulcer ki shikayat Thi usko aur Vishal sar Vishal Mishra ji aur Alok Tiwari ji doctor ne bahut acche se ilaaj Kiya mera baccha ekadam abhi swasth ho gaya hai aur bahut hi achcha Laga yahan ki jo doctor aaya tha aur itne acche se treatment karna yah sab bahut achcha Laga sar",
+        name: t('parmatmaMishra.name'),
+        description: t('parmatmaMishra.description'),
         image: "/patients/suresh.jpeg",
     },
     {
@@ -280,16 +278,14 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Sohan Paswan",
-        description:
-            "Mere mariz ka nam ramesh inki surgery alok sir ne ki abhi vo thik hai inka sekaye chl rha hai aur sir ko bhi dikha rhe hai",
+        name: t('sohanPaswan.name'),
+        description: t('sohanPaswan.description'),
         image: "/patients/suresh.jpeg",
     },
     {
         type: "written",
-        name: "Govind Verma",
-        description:
-            "Mera naam Govind verma mere chacha ji ka naam ramkishun verma hai inko bahut dino se chhati me dard rahta tha aur bahut khansi aati thi pr jbse Dr.Saurabh sir se dikhaye hain avi chachaji bahut he achhe ho gye h dhyanbaad doctor sahab",
+        name: t('govindVerma.name'),
+        description: t('govindVerma.description'),
         image: "/patients/suresh.jpeg",
     },
     {
@@ -299,9 +295,8 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Tiger Kumar",
-        description:
-            "Mere marij ka naam Kunti Devi Hai unka bahut jyada problem ho gaya tha Ham logon Ne Synergy Cancer institute hospital me admit Kiya sepsis or hupoalbuminemia ho gya tha abhi Mera marij ekdum se sahi h isliye mai hospital ke sare team or dr ko dhyanbaad krta hun",
+        name: t('tigerKumar.name'),
+        description: t('tigerKumar.description'),
         image: "/patients/suresh.jpeg",
     },
     {
@@ -316,9 +311,8 @@ export const testimonialsForMarquee: TestimonialItem[] = [
     },
     {
         type: "written",
-        name: "Arman Ali",
-        description:
-            "Meri mata ji nooraisa BEGAM ko utrs me gath tha jisse bahut presan thi Maine bahut hospital ka chakr lgaya but kahi se kuchh profit nhi hua phir mujhe synergy hospital Gorakpur ka pta chal synergy me mai Dr.Anjali Jain se mila Aur phir synergy me Dr.Anjali Jain se surgery ki ab meri mata ji puri tarah se thik h thanks for all staff and Synergy team",
+        name: t('armanAli.name'),
+        description: t('armanAli.description'),
         image: "/patients/suresh.jpeg",
     },
     {
@@ -326,400 +320,303 @@ export const testimonialsForMarquee: TestimonialItem[] = [
         image: "/patients/kalavati-devi.png",
         videoUrl: "/videos/testimonials/kalavati-devi.mp4",
     },
-]
+];
+    return testimonials
+};
 
-export const faqItems = [
-    {
-        question: "How can I book an appointment at Synergy Hospital?",
-        answer:
-            "You can book an appointment online through our website, by calling our helpline, or visiting the hospital in person. Walk-ins may also be available.",
-    },
-    {
-        question: "Can I seek an appointment with a specialist even if I don’t have a referral?",
-        answer:
-            "Yes, you can directly book appointments with our specialists without needing a local referral.",
-    },
-    {
-        question: "Does Synergy offer second opinions or online consultations?",
-        answer:
-            "Absolutely. We provide second opinions and online consultations through our digital health platform.",
-    },
-    {
-        question: "What type of information do I need to provide before booking?",
-        answer:
-            "Basic personal information, medical history, and any prior reports or prescriptions will help us serve you better.",
-    },
-    {
-        question: "Is Synergy Hospital open 24/7 for emergencies?",
-        answer:
-            "Yes, our Emergency Department operates 24/7 with trained medical staff and necessary infrastructure to handle critical situations.",
-    },
-    {
-        question: "Does the hospital accept insurance or cashless claims?",
-        answer:
-            "Yes, we have tie-ups with most major insurance providers and offer cashless claim facilities. Please check with our billing desk for details.",
-    },
-    {
-        question: "How do I access my lab test reports or medical records?",
-        answer:
-            "Patients can access lab reports and medical records via our patient portal or by contacting the hospital's medical records department.",
-    },
-    {
-        question: "Are there accommodation facilities for family members of in-patients?",
-        answer:
-            "Yes, we have comfortable waiting areas and arrangements for attendant stays. Some patient rooms also allow one family member to stay overnight.",
-    },
-    {
-        question: "Can I reschedule or cancel my appointment?",
-        answer:
-            "Yes, appointments can be rescheduled or cancelled through our website or by calling our helpdesk. We recommend informing us at least 24 hours in advance.",
-    },
-    {
-        question: "Are there interpreters available for non-local or international patients?",
-        answer:
-            "Yes, we offer interpretation services for various languages to support both local and international patients.",
-    },
-    {
-        question: "What safety protocols are in place for infection control?",
-        answer:
-            "We follow strict hygiene protocols, including regular sanitization, PPE usage, and isolated zones for infectious patients to ensure everyone's safety.",
-    },
-    {
-        question: "What specialties and departments are available at Synergy Hospital?",
-        answer:
-            "We offer a wide range of specialties including Cardiology, Neurology, Orthopedics, Pediatrics, Oncology, Gynecology, and many more.",
-    }
-]
+export const useFaqItems = () => {
+    const t = useTranslations('faqs.general');
 
-export const actions: ActionItem[] = [
-    {
-        icon: "/icons/online-appointment.png",
-        label: "Book Appointment",
-        onClick: () => { },
-        className: "bg-teal-50 hover:bg-teal-100 transtion-all duration-300 ease-in-out"
-    },
-    {
-        icon: "/icons/hospital.png",
-        label: "Hospitals",
-        onClick: () => { },
-        className: "bg-indigo-50 hover:bg-indigo-100 transtion-all duration-300 ease-in-out"
-    },
-    {
-        icon: "/icons/phone.png",
-        label: "Call Us",
-        onClick: () => { },
-        className: "bg-pink-50 hover:bg-pink-100 transtion-all duration-300 ease-in-out"
-    },
-    {
-        icon: "/icons/search-interface-symbol.png",
-        label: "Search",
-        onClick: () => { },
-        className: "bg-yellow-50 hover:bg-yellow-100 transtion-all duration-300 ease-in-out"
-    },
-]
+    return [
+        {
+            question: t('appointment.question'),
+            answer: t('appointment.answer'),
+        },
+        {
+            question: t('specialist.question'),
+            answer: t('specialist.answer'),
+        },
+        {
+            question: t('secondOpinion.question'),
+            answer: t('secondOpinion.answer'),
+        },
+        {
+            question: t('bookingInfo.question'),
+            answer: t('bookingInfo.answer'),
+        },
+        {
+            question: t('emergency.question'),
+            answer: t('emergency.answer'),
+        },
+        {
+            question: t('insurance.question'),
+            answer: t('insurance.answer'),
+        },
+        {
+            question: t('medicalRecords.question'),
+            answer: t('medicalRecords.answer'),
+        },
+        {
+            question: t('accommodation.question'),
+            answer: t('accommodation.answer'),
+        },
+        {
+            question: t('reschedule.question'),
+            answer: t('reschedule.answer'),
+        },
+        {
+            question: t('interpreters.question'),
+            answer: t('interpreters.answer'),
+        },
+        {
+            question: t('safety.question'),
+            answer: t('safety.answer'),
+        },
+        {
+            question: t('specialties.question'),
+            answer: t('specialties.answer'),
+        },
+    ];
+};
 
-export const excellenceItems = [
-    {
-        question: "01. Quality and Patient Centricity",
-        answer: "At SSSHCI, we place patients at the heart of everything we do. Our team works with compassion and professionalism to ensure each patient receives personalized, evidence-based cancer care with dignity and respect."
-    },
-    {
-        question: "02. Multidisciplinary Centres of Excellence",
-        answer: "Our hospital houses advanced facilities for surgery, chemotherapy, immunotherapy, palliative care, and diagnostics—all under one roof. A unified approach ensures seamless coordination and holistic treatment planning."
-    },
-    {
-        question: "03. Affordable and Accessible Care",
-        answer: "We believe that quality cancer treatment should be accessible to all. Located in Gorakhpur, we serve patients from Eastern Uttar Pradesh, Western Bihar, and Southern Nepal with cost-effective yet advanced medical care."
-    },
-    {
-        question: "04. Compassionate Team and Environment",
-        answer: "Driven by our SYNERGY values, our dedicated medical professionals create a peaceful, respectful, and healing environment that supports patients and their families through every step of their journey."
-    },
-    {
-        question: "05. Innovation and Advanced Therapies",
-        answer: "SSSHCI integrates the latest in oncology—like targeted therapy, hormonal therapy, and day-care procedures—ensuring our patients benefit from globally recognized treatment protocols and research-backed practices."
-    }
-]
+export const useActions = () => {
+    const t = useTranslations('actions');
+    return [
+        {
+            icon: "/icons/online-appointment.png",
+            label: t('bookAppointment.label'),
+            onClick: () => { },
+            className: "bg-teal-50 hover:bg-teal-100 transtion-all duration-300 ease-in-out"
+        },
+        {
+            icon: "/icons/hospital.png",
+            label: t('hospitals.label'),
+            onClick: () => { },
+            className: "bg-indigo-50 hover:bg-indigo-100 transtion-all duration-300 ease-in-out"
+        },
+        {
+            icon: "/icons/phone.png",
+            label: t('callUs.label'),
+            onClick: () => { },
+            className: "bg-pink-50 hover:bg-pink-100 transtion-all duration-300 ease-in-out"
+        },
+        {
+            icon: "/icons/search-interface-symbol.png",
+            label: t('search.label'),
+            onClick: () => { },
+            className: "bg-yellow-50 hover:bg-yellow-100 transtion-all duration-300 ease-in-out"
+        },
+    ];
+};
 
-export const generalQuestions = [
-    {
-        question: "What services does Synergy Super Speciality Hospital and Cancer Institute provide?",
-        answer: "We offer a complete range of oncology services including Surgical, Medical, and Radiation Oncology, along with diagnostics, rehabilitation, pain management, and supportive care."
-    },
-    {
-        question: "Is Synergy Cancer Hospital open 24/7?",
-        answer: "Yes, our hospital is operational 24 hours a day, 7 days a week to ensure timely care for patients."
-    },
-    {
-        question: "Do you treat all types of cancers?",
-        answer: "Yes, we specialize in treating various forms of cancer including breast, lung, prostate, cervical, colorectal, blood cancers, and more."
-    },
-    {
-        question: "Are walk-in consultations available?",
-        answer: "While walk-ins are accepted, we recommend booking an appointment in advance to avoid waiting."
-    },
-    {
-        question: "How do I reach the hospital from the Gorakhpur railway station?",
-        answer: "We are located a short drive from Gorakhpur Junction. You can use cab services, autos, or contact us for location assistance."
-    },
-    {
-        question: "Are the doctors certified and experienced in oncology?",
-        answer: "Yes, all our oncologists are highly qualified and have advanced training in surgical, medical, and radiation oncology."
-    },
-    {
-        question: "What are the available payment options?",
-        answer: "We accept cash, credit/debit cards, UPI payments, and most major health insurance plans."
-    },
-    {
-        question: "Is insurance accepted at your hospital?",
-        answer: "Yes, we work with multiple insurance providers. Please bring your insurance documents for smooth processing."
-    }
-]
+export const useExcellenceItems = () => {
+    const t = useTranslations('excellence.items');
+    return [
+        {
+            question: t('quality.question'),
+            answer: t('quality.answer')
+        },
+        {
+            question: t('multidisciplinary.question'),
+            answer: t('multidisciplinary.answer')
+        },
+        {
+            question: t('affordable.question'),
+            answer: t('affordable.answer')
+        },
+        {
+            question: t('compassionate.question'),
+            answer: t('compassionate.answer')
+        },
+        {
+            question: t('innovation.question'),
+            answer: t('innovation.answer')
+        }
+    ];
+};
 
-export const beforeVisitQuestions = [
-    {
-        question: "How can I schedule my first appointment?",
-        answer: "You can call us directly or use the appointment booking form on our official website."
-    },
-    {
-        question: "What documents should I carry for the first consultation?",
-        answer: "Please bring a valid ID proof, referral letter (if any), past medical records, test results, and insurance documents."
-    },
-    {
-        question: "Can I get a second opinion before starting treatment?",
-        answer: "Yes, we encourage second opinions to ensure you’re comfortable and confident with your treatment plan."
-    },
-    {
-        question: "How do I prepare for my first consultation?",
-        answer: "Be ready with your medical history, a list of current medications, and any specific questions you have for the doctor."
-    },
-    {
-        question: "Is there any cost for the first consultation?",
-        answer: "Yes, consultation fees apply but may vary based on the specialist. You can call our helpdesk for the exact pricing."
-    },
-    {
-        question: "Do I need to fast or follow any dietary restrictions before my visit?",
-        answer: "Only if you're scheduled for blood tests or scans that require fasting. Our team will inform you in advance."
-    },
-    {
-        question: "Can a family member accompany me to my consultation?",
-        answer: "Absolutely. We encourage a family member to join for support and to help remember important details."
-    },
-    {
-        question: "Is parking available on-site?",
-        answer: "Yes, we provide ample parking for patients and visitors free of charge."
-    }
-]
+export const useGeneralQuestions = () => {
+    const t = useTranslations('faqs.generalQuestions');
+    return [
+        {
+            question: t('services.question'),
+            answer: t('services.answer')
+        },
+        {
+            question: t('operational.question'),
+            answer: t('operational.answer')
+        },
+        {
+            question: t('cancerTypes.question'),
+            answer: t('cancerTypes.answer')
+        },
+        {
+            question: t('walkIn.question'),
+            answer: t('walkIn.answer')
+        },
+        {
+            question: t('location.question'),
+            answer: t('location.answer')
+        },
+        {
+            question: t('doctors.question'),
+            answer: t('doctors.answer')
+        },
+        {
+            question: t('payment.question'),
+            answer: t('payment.answer')
+        },
+        {
+            question: t('insurance.question'),
+            answer: t('insurance.answer')
+        }
+    ];
+};
 
-export const duringTreatmentQuestions = [
-    {
-        question: "What should I expect during chemotherapy?",
-        answer: "Our staff will guide you through every step. Sessions may take a few hours and you might experience fatigue, nausea, or hair loss."
-    },
-    {
-        question: "Are side effects from treatment common?",
-        answer: "Side effects are common but manageable. Our doctors will provide medications and support to reduce discomfort."
-    },
-    {
-        question: "Can I continue working during my treatment?",
-        answer: "Depending on the treatment and your physical condition, many patients continue to work part-time. Discuss with your doctor for personalized advice."
-    },
-    {
-        question: "Will I need to be admitted for treatment?",
-        answer: "Some treatments are day-care procedures, while others may require admission. It varies based on your treatment plan."
-    },
-    {
-        question: "Are meals provided during hospital stays?",
-        answer: "Yes, we offer dietician-approved meals tailored for patients undergoing cancer treatment."
-    },
-    {
-        question: "What support services are available during treatment?",
-        answer: "We offer psychological counseling, nutritional support, pain management, and support groups."
-    },
-    {
-        question: "Can my family visit me during treatment?",
-        answer: "Yes, family visits are allowed with some restrictions depending on your condition and COVID-19 protocols."
-    },
-    {
-        question: "Will I have access to a dedicated care coordinator?",
-        answer: "Yes, we assign case managers or coordinators to help guide patients through each stage of care."
-    }
-]
+export const useBeforeVisitQuestions = () => {
+    const t = useTranslations('faqs.beforeVisitQuestions');
+    return [
+        {
+            question: t('appointment.question'),
+            answer: t('appointment.answer')
+        },
+        {
+            question: t('documents.question'),
+            answer: t('documents.answer')
+        },
+        {
+            question: t('secondOpinion.question'),
+            answer: t('secondOpinion.answer')
+        },
+        {
+            question: t('preparation.question'),
+            answer: t('preparation.answer')
+        },
+        {
+            question: t('cost.question'),
+            answer: t('cost.answer')
+        },
+        {
+            question: t('fasting.question'),
+            answer: t('fasting.answer')
+        },
+        {
+            question: t('familyMember.question'),
+            answer: t('familyMember.answer')
+        },
+        {
+            question: t('parking.question'),
+            answer: t('parking.answer')
+        }
+    ];
+};
 
-export const afterTreatmentQuestions = [
-    {
-        question: "How often do I need to follow up after treatment?",
-        answer: "Follow-ups typically occur every 3 to 6 months initially and gradually decrease depending on your recovery and condition."
-    },
-    {
-        question: "Are rehabilitation services provided post-treatment?",
-        answer: "Yes, we offer physical therapy, occupational therapy, and psychological support to aid in recovery."
-    },
-    {
-        question: "Will I experience long-term side effects?",
-        answer: "Some patients may experience fatigue, cognitive changes, or hormonal imbalances. Our team helps monitor and manage them."
-    },
-    {
-        question: "Is lifestyle counseling offered post-treatment?",
-        answer: "Yes, we provide dietary advice, exercise routines, and mental wellness support to help you resume a healthy life."
-    },
-    {
-        question: "Can cancer come back after treatment?",
-        answer: "There is always a chance of recurrence. That’s why regular follow-ups and scans are crucial to detect any changes early."
-    },
-    {
-        question: "How can I monitor my health after treatment?",
-        answer: "Stick to your follow-up schedule, report new symptoms promptly, and maintain a healthy lifestyle."
-    },
-    {
-        question: "Will I need to take medication long-term?",
-        answer: "Depending on the cancer type and treatment, you may be prescribed long-term maintenance medications."
-    },
-    {
-        question: "How do I deal with emotional challenges post-treatment?",
-        answer: "We offer support groups and one-on-one counseling with psychologists to help patients transition emotionally post-treatment."
-    }
-]
+export const useDuringTreatmentQuestions = () => {
+    const t = useTranslations('faqs.duringTreatmentQuestions');
+    return [
+        {
+            question: t('chemotherapy.question'),
+            answer: t('chemotherapy.answer')
+        },
+        {
+            question: t('sideEffects.question'),
+            answer: t('sideEffects.answer')
+        },
+        {
+            question: t('working.question'),
+            answer: t('working.answer')
+        },
+        {
+            question: t('admission.question'),
+            answer: t('admission.answer')
+        },
+        {
+            question: t('meals.question'),
+            answer: t('meals.answer')
+        },
+        {
+            question: t('supportServices.question'),
+            answer: t('supportServices.answer')
+        },
+        {
+            question: t('familyVisits.question'),
+            answer: t('familyVisits.answer')
+        },
+        {
+            question: t('careCoordinator.question'),
+            answer: t('careCoordinator.answer')
+        }
+    ];
+};
 
+export const useAfterTreatmentQuestions = () => {
+    const t = useTranslations('faqs.afterTreatmentQuestions');
+    return [
+        {
+            question: t('followUp.question'),
+            answer: t('followUp.answer')
+        },
+        {
+            question: t('rehabilitation.question'),
+            answer: t('rehabilitation.answer')
+        },
+        {
+            question: t('sideEffects.question'),
+            answer: t('sideEffects.answer')
+        },
+        {
+            question: t('lifestyle.question'),
+            answer: t('lifestyle.answer')
+        },
+        {
+            question: t('recurrence.question'),
+            answer: t('recurrence.answer')
+        },
+        {
+            question: t('monitoring.question'),
+            answer: t('monitoring.answer')
+        },
+        {
+            question: t('medication.question'),
+            answer: t('medication.answer')
+        },
+        {
+            question: t('emotional.question'),
+            answer: t('emotional.answer')
+        }
+    ];
+};
 
-export const Leaders: LeaderCardProps[] = [
-    {
-        name: "Dr. Alok Tiwari",
-        role: "Surgical Oncologist",
-        description:
-            "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon",
-        image: "/leaders/doc-alok-tiwari-with-background.jpg",
-        onDownload: "/leaders/doc-alok-tiwari.webp",
-        onReadMore: "/leadership/Dr-Alok-Tiwari"
-    },
-    {
-        name: "Dr. Anjali Jain",
-        role: "Director & Head – Gynae Oncology",
-        description:
-        "Dr. Anjali Jain Director and Head, Department of Gynae & Oncology. Dr. Anjali Jain is a renowned gynae oncologist, laparoscopic and robotic surgeon, presently working at Synergy Super Speciality Hospital & Cancer Institute.",
+export const useLeaders = () => {
+    const t = useTranslations('leaders');
 
-        image: "/leaders/doc-anjali-jain-with-background.jpg",
-        onDownload: '/leaders/doc-anjali-jain.webp',
-        onReadMore: '/leadership/Dr-Anjali-Jain'
-    },
-    {
-        name: "Dr. Saurabh Mishra",
-        role: "Medical Oncologist & Haemat Oncologist",
-        description:
-            "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology).",
-        image: "/leaders/doc-saurabh-mishra-with-background.jpg",
-        onDownload: "/leaders/doc-saurabh-mishra.webp",
-        onReadMore: "/leadership/Dr-Saurabh-Mishra",
-    },
-]
-
-export const leaderAlokTiwari: LeaderPageProps = {
-    name: "Dr. Alok Tiwari",
-    role: "Surgical Oncologist",
-    description:
-        "Dr. Alok Tiwari is a highly esteemed Surgical Oncologist with a distinguished academic and professional background. He graduated with an MBBS, securing a Gold Medal for his exceptional performance. He further pursued MS in General Surgery from King George's Medical University (KGMU), Lucknow, followed by DNB Superspeciality in Surgical Oncology. Dr. Alok Tiwari has undergone specialized training in Breast Oncoplasty from ESSO and holds certifications in FMAS, FALS (Colorectal), and Dip MAS. Additionally, he is a daVinciXi Certified Robotic Onco Surgeon, reflecting his commitment to embracing advanced surgical technologies. His extensive training and experience have positioned him as a leading authority in the field of oncology, particularly in breast cancer treatments.",
-    image: "/leaders/doc-alok-tiwari.webp",
-    customFirstHeading: "Introducing Dr. Alok Tiwari: A Leader in Surgical Oncology",
-    theirStory: [
-        "Dr. Alok Tiwari's journey into the realm of surgical oncology is marked by unwavering dedication and a pursuit of excellence. From his early academic achievements, including a Gold Medal in MBBS, to his comprehensive training at prestigious institutions like KGMU Lucknow, his commitment to mastering the intricacies of surgery is evident. His pursuit of specialized skills in breast oncoplasty and robotic surgery showcases his forward-thinking approach, ensuring patients receive state-of-the-art care. Beyond the operating room, Dr. Alok Tiwari's mentorship and research contributions reflect his holistic commitment to advancing oncology.",
-    ],
-    customSecondHeading: "Dr. Alok Tiwari's Approach: Merging Technology with Compassion",
-    secondImage: "/leaders/doc-alok-tiwari-3.jpg",
-    secondSectionDescription: [
-        "Dr. Alok Tiwari believes in a patient-centric approach, where each treatment plan is tailored to the individual's specific needs, ensuring the most effective and compassionate care.",
-        "His expertise in robotic-assisted surgeries allows for minimally invasive procedures, leading to faster recovery times and improved patient outcomes, all while maintaining a compassionate bedside manner.",
-         "His philosophy centers on integrating advanced technology with compassionate care, ensuring each patient receives personalized treatment plans tailored to their unique needs. Dr. Alok Tiwari's vision extends beyond individual patient care, he actively engages in community outreach programs, aiming to raise awareness about early cancer detection and prevention. His leadership in organizing workshops and seminars has educated countless individuals, emphasizing the importance of regular screenings and a proactive approach to health. Through these endeavors, Dr. Alok Tiwari continues to inspire and lead in the fight against cancer."
-    ],
-    thirdImage: "/leaders/doc-alok-tiwari-2.webp",
-    thirdSectionDescription: [
-        "Dr. Alok Tiwari has actively participated in numerous research projects, focusing on improving surgical techniques and patient care protocols. His work has been published in several reputable medical journals, contributing to the global body of oncology knowledge.",
-        "He regularly attends international oncology conferences, both as a participant and a speaker, sharing his insights and learning about the latest advancements in cancer treatment. This continuous engagement ensures that his patients benefit from the most current and effective therapies available.",
-        "His commitment to education extends to mentoring young surgeons, providing guidance and training to the next generation of oncologists, ensuring that the standards of care continue to evolve and improve."
-    ],
-    fourthSectionDescription: [
-        "Dr. Alok Tiwari's leadership extends beyond clinical practice, he has been instrumental in establishing cancer awareness programs, aiming to educate the public about preventive measures and early detection.",
-        "His collaborative efforts with multidisciplinary teams ensure that patients receive comprehensive care, addressing not just the physical aspects of cancer treatment but also the emotional and psychological support needed during such challenging times.",
-        "Looking ahead, Dr. Alok Tiwari envisions a future where technological advancements in surgery are seamlessly integrated with holistic patient care, setting new benchmarks in the fight against cancer."
-    ],
-    fifthSectionDescription:
-        "Dr. Alok Tiwari, a distinguished Surgical Oncologist, is widely recognized for his exceptional skills and experience in breast cancer treatments. His expertise and compassionate care have positively impacted numerous lives, earning him a reputation as a leading authority in oncology.",
-    videoModalForJourney: {
-        image: "/mission-horizontal.webp",
-        videoUrl: "/videos/testimonials/vid.mp4",
-    },
-}
-
-export const leaderAnjaliJain: LeaderPageProps = {
-    name: "Dr. Anjali Jain",
-    role: "Gynecologic Oncologist",
-    description:
-        "Dr. Anjali Jain is a renowned gynae oncologist, laparoscopic and robotic surgeon, presently working at Synergy Super Speciality Hospital & Cancer Institute. She has a vast experience in the field of gynae oncology and has performed many surgeries related to ovarian, cervical, endometrial, vulval cancers. She has worked at many reputed institutes of Delhi NCR region like Fortis memorial research institute and Medanta The Medicity Gurugram. She is routinely performing cervical cancer screening, hysteroscopies, cystoscopies, conization, LEEP/LLETZ, open and laparoscopic procedures, cytoreductive surgeries, radical hysterectomies at her center. She has a keen interest in the management of ovarian and primary peritoneal malignancies and HIPEC surgeries. She actively participates in many activities and conducts free camps related to cancer screening and awareness.",
-    image: "/leaders/doc-anjali-jain.webp",
-    customFirstHeading: "Meet Dr. Anjali Jain: Expert in Gynecologic Oncology",
-    theirStory: [
-        "Dr. Anjali Jain's commitment to women's health led her to specialize in gynecologic oncology, where she combines her surgical expertise with a compassionate approach. Her academic excellence, highlighted by a Gold Medal in MBBS, laid the foundation for her pursuit of advanced training in surgical oncology. Dr. Anjali Jain's dedication to continuous learning is evident in her certifications and specialized training, which she applies to offer personalized care to each patient. Her approach emphasizes not just treatment but also education, empowering women to take charge of their health."
-    ],
-    customSecondHeading: "Dr. Anjali Jain's Philosophy: Personalized and Compassionate Care",
-    secondImage: "/leaders/doc-anjali-jain-2.jpg",
-    secondSectionDescription: [
-        "Dr. Anjali Jain emphasizes the importance of personalized treatment plans, considering each patient's unique medical history and personal circumstances to ensure the most effective care.",
-        "Her compassionate approach involves active listening and emotional support, creating a safe environment where patients feel valued and understood throughout their treatment journey.",
-        "Beyond her clinical practice, Dr. Anjali Jain actively engages in research aimed at improving treatment modalities for gynecologic cancers. She collaborates with multidisciplinary teams to enhance patient care protocols and participates in community outreach programs to raise awareness about women's health issues. Her holistic approach addresses both the physical and emotional aspects of cancer care, ensuring that patients receive comprehensive support throughout their journey."
-    ],
-    thirdImage: "/leaders/doc-anjali-jain-3.webp",
-    thirdSectionDescription: [
-        "Dr. Anjali Jain's research focuses on developing less invasive surgical techniques and improving postoperative care, aiming to enhance recovery and quality of life for her patients.",
-        "She collaborates with international oncology experts and institutions, contributing to global advancements in gynecologic oncology while ensuring her own patients benefit from the latest scientific breakthroughs.",
-        "Her training and mentorship programs for young doctors are designed to foster a new generation of compassionate, well-informed, and skilled gynecologic oncologists."
-    ],
-    fourthSectionDescription: [
-        "Dr. Anjali Jain is deeply involved in cancer awareness campaigns focused on early detection and preventive care for women. She frequently organizes workshops and seminars in both urban and rural areas, aiming to bridge the information gap on gynecologic health.",
-        "Her collaborative style ensures that each case benefits from multidisciplinary expertise, integrating surgery, chemotherapy, counseling, and rehabilitation for truly holistic care.",
-        "She continues to advocate for greater awareness and access to cancer screenings, envisioning a future where every woman receives timely, effective, and empathetic oncology care."
-    ],
-    fifthSectionDescription:
-        "Dr. Anjali Jain stands out as a compassionate Gynecologic Oncologist committed to empowering women through early detection, advanced treatment options, and holistic support. Her expertise and empathetic approach ensure that her patients feel cared for at every step of their cancer journey.",
-    videoModalForJourney: {
-        image: "/mission-horizontal.webp",
-        videoUrl: "/videos/testimonials/vid.mp4",
-    },
-}
-
-export const leaderSaurabhMishra: LeaderPageProps = {
-    name: "Dr. Saurabh Mishra",
-    role: "Head & Neck Surgical Oncologist",
-    description:
-        "Dr. Saurabh Mishra is a highly respected Head & Neck Surgical Oncologist known for his exceptional surgical skills and deep commitment to patient welfare. He earned his MBBS and MS in General Surgery from KGMU, Lucknow, followed by a DNB in Surgical Oncology. His professional credentials also include FMAS, FALS (Colorectal), Dip MAS, and advanced training in Head & Neck surgeries. Dr. Saurabh Mishra’s expertise lies in treating complex cancers involving the oral cavity, thyroid, larynx, and other structures of the head and neck region. His precise surgical techniques and compassionate patient care have earned him widespread recognition in the field of oncology.",
-    image: "/leaders/doc-saurabh-mishra.jpg",
-    customFirstHeading: "Introducing Dr. Saurabh Mishra: Excellence in Head & Neck Oncology",
-    theirStory: [
-        "Dr. Saurabh Mishra’s journey into the world of head and neck oncology was driven by a personal mission to make a meaningful impact in the lives of cancer patients. After completing his medical education from KGMU Lucknow, his fascination with complex anatomy and reconstructive surgery led him to specialize in head and neck surgical oncology. Over the years, he has developed a deep understanding of the intricate challenges these cancers pose, especially those affecting speech, swallowing, and facial function. His meticulous approach and deep empathy have earned him immense respect from both colleagues and patients alike.",
-    ],
-    customSecondHeading: "Dr. Saurabh Mishra’s Vision: Precision Surgery with Compassionate Healing",
-    secondImage: "/leaders/doc-saurabh-mishra-2.jpg",
-    secondSectionDescription: [
-        "What truly sets Dr. Saurabh Mishra apart is his relentless pursuit of surgical precision combined with an innate ability to emotionally connect with his patients. He believes that cancer care is not just about treating the disease—it’s about walking hand-in-hand with patients through their most vulnerable moments. His collaborative work with speech therapists and nutritionists ensures that patients recover not only physically but also emotionally and socially. Dr. Saurabh Mishra is a strong advocate for early detection, routinely conducting screening drives and educating communities about head and neck cancer symptoms and risk factors.",
-        "Dr. Saurabh Mishra integrates advanced surgical planning with functional and cosmetic preservation, ensuring optimal outcomes in complex head and neck cases.",
-        "He prioritizes a patient-first approach, collaborating with multidisciplinary teams to provide comprehensive care that supports not just recovery but complete rehabilitation."
-    ],
-    thirdImage: "/leaders/doc-saurabh-mishra-3.jpg",
-    thirdSectionDescription: [
-        "His research interests include minimally invasive approaches for oral and laryngeal cancers, and he has published extensively on surgical techniques and case studies in peer-reviewed journals.",
-        "Dr. Saurabh Mishra is also a passionate educator, regularly training young surgeons and conducting skill-development workshops to promote excellence in oncologic surgery.",
-        "He remains committed to global knowledge-sharing and often represents India in international oncology summits and surgical forums."
-    ],
-    fourthSectionDescription: [
-        "Dr. Saurabh Mishra’s community engagement includes organizing free camps for early detection of oral and throat cancers, particularly targeting high-risk groups such as tobacco users.",
-        "He champions the integration of post-surgical counseling and voice therapy into standard treatment protocols for better long-term outcomes.",
-        "His goal is to develop a model of care that not only treats cancer effectively but also helps patients regain their identity, dignity, and quality of life after treatment."
-    ],
-    fifthSectionDescription:
-        "Dr. Saurabh Mishra is a distinguished Head & Neck Surgical Oncologist whose surgical precision, patient empathy, and commitment to long-term wellness make him a trusted name in cancer care. His vision is to restore both function and confidence to every life he touches.",
-    videoModalForJourney: {
-        image: "/mission-horizontal.webp",
-        videoUrl: "/videos/testimonials/vid.mp4",
-    },
-}
+    return [
+        {
+            name: t('drAlokTiwari.name'),
+            role: t('drAlokTiwari.role'),
+            description: t('drAlokTiwari.description'),
+            image: "/leaders/doc-alok-tiwari-with-background.jpg",
+            onDownload: "/leaders/doc-alok-tiwari.webp",
+            onReadMore: "/leadership/Dr-Alok-Tiwari"
+        },
+        {
+            name: t('drAnjaliJain.name'),
+            role: t('drAnjaliJain.role'),
+            description: t('drAnjaliJain.description'),
+            image: "/leaders/doc-anjali-jain-with-background.jpg",
+            onDownload: '/leaders/doc-anjali-jain.webp',
+            onReadMore: '/leadership/Dr-Anjali-Jain'
+        },
+        {
+            name: t('drSaurabhMishra.name'),
+            role: t('drSaurabhMishra.role'),
+            description: t('drSaurabhMishra.description'),
+            image: "/leaders/doc-saurabh-mishra-with-background.jpg",
+            onDownload: "/leaders/doc-saurabh-mishra.webp",
+            onReadMore: "/leadership/Dr-Saurabh-Mishra",
+        },
+    ];
+};
 
 export const pressReleases: PressRelease[] = [
     {
@@ -750,8 +647,6 @@ export const pressReleases: PressRelease[] = [
 
 export const ContactUsMessage = encodeURIComponent("Hello, I would like to know more about your services.");
 export const phoneNumber = "917234006595";
-
-
 
 // Support services data with images
 export const supportServices = [

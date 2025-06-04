@@ -1,9 +1,716 @@
 {
     "homepage": {
-      "exploreMore": "Explore More",
-      "sectionOne": {
-        "main-h1":"Discover Our Centres of Clinical Excellence",
-        "subtext":"At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare..."
-      }
+        "exploreMore": "Explore More",
+        "sectionOne": {
+            "main-h1": "Discover Our Centres of Clinical Excellence",
+            "subtext": "At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare..."
+        },
+        "specialties": {
+            "title": "Discover Our Centres of Clinical Excellence",
+            "description": "At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare..."
+        },
+        "GalleryMarquee": {
+            "mediaGallery": "Media Gallery",
+            "subtitle": "Explore our collection of photos and videos showcasing hospital facilities, medical advancements, community events, and patient stories.",
+            "viewMore": "View More"
+        },
+        "TestimonialCards": {
+            "title": "Transforming Lives Through Healthcare Excellence",
+            "description": "Synergy Super-specialty Hospital and Cancer Institute, established in 2021, is committed to delivering exceptional healthcare..."
+        },
+        "NewsSlider": {
+            "heading": "What's New At Synergy",
+            "exploreMore": "EXPLORE MORE →",
+            "newsItems": [
+              "Synergy & University of Leicester launch Digital Health Centre in India",
+              "Synergy Neuro Conclave 2024",
+              "Synergy Hospitals completes 500 robotic cardiac procedures.",
+              "Synergy Expands AI-based Health Analytics"
+            ]
+          },
+          "Gallery": {
+            "items": {
+              "1": {
+                "title": "Hospital Inauguration",
+                "category": "Events"
+              },
+              "2": {
+                "title": "Cardiology Department Tour",
+                "category": "Facilities"
+              },
+              "3": {
+                "title": "Annual Health Camp",
+                "category": "Community"
+              },
+              "4": {
+                "title": "New Robotic Surgery System",
+                "category": "Technology"
+              },
+              "5": {
+                "title": "Patient Success Stories",
+                "category": "Testimonials"
+              },
+              "6": {
+                "title": "Research Symposium",
+                "category": "Education"
+              }
+            }
+          }
+
+    },
+    "menu": {
+        "discoverSynergy": "discover synergy",
+        "medicalServices": "medical services",
+        "healthLibrary": "health library",
+        "cancerSurvivors": "cancer survivors",
+        "sections": {
+            "synergyStory": {
+                "name": "Synergy Story",
+                "links": {
+                    "overview": "Overview",
+                    "ourVision": "Our Vision",
+                    "ourMission": "Our Mission",
+                    "leadership": "Leadership",
+                    "achievements": "See What Synergy Achieved",
+                    "milestones": "Milestones",
+                    "awards": "Awards",
+                    "lifeAtSynergy": "Life at Synergy"
+                }
+            },
+            "ourDoctors": {
+                "name": "Our Doctors",
+                "links": {
+                    "drAlokTiwari": "Dr. Alok Tiwari",
+                    "drSaurabhMishra": "Dr. Saurabh Mishra",
+                    "drAnjaliJain": "Dr. Anjali Jain",
+                    "seeAll": "See All Our Doctors"
+                }
+            },
+            "mediaCenter": {
+                "name": "Media Center",
+                "links": {
+                    "inTheNews": "In the News",
+                    "pressReleases": "Press Releases",
+                    "events": "Events & Conferences",
+                    "mediaGallery": "Media Gallery",
+                    "mediaContact": "Media Contact"
+                },
+                "synergyInTheNews": {
+                    "title": "Synergy in the News",
+                    "description": "Stay updated with our latest achievements, breakthroughs, and contributions to healthcare innovation.",
+                    "awardWinningCare": {
+                        "title": "Award-Winning Care",
+                        "description": "Recognized nationally for excellence"
+                    },
+                    "mediaFeatures": {
+                        "title": "Media Features",
+                        "description": "Featured in leading healthcare publications"
+                    },
+                    "viewAllMedia": "View All Media Coverage"
+                }
+            },
+            "termsPrivacy": {
+                "name": "Terms & Privacy",
+                "links": {
+                    "privacyPolicy": "Your Privacy is Our Policy",
+                    "termsConditions": "Our Terms and Conditions"
+                }
+            },
+            "specialties": {
+                "name": "Our Specialties",
+                "links": {
+                    "medicalOncology": "Medical Oncology",
+                    "surgicalOncology": "Surgical Oncology",
+                    "gynecology": "Gynecology & Obstetrics",
+                    "neurology": "Neurology",
+                    "neurosurgery": "Neurosurgery",
+                    "gastroenterology": "Gastroenterology",
+                    "nephrology": "Nephrology",
+                    "urology": "Urology",
+                    "orthopedics": "Orthopedics",
+                    "anesthesia": "Anesthesia",
+                    "generalSurgery": "General Surgery",
+                    "pediatrics": "Pediatrics",
+                    "headNeck": "Head & Neck",
+                    "emergency": "Emergency & Critical Care",
+                    "palliativeCare": "Pain & Palliative Care",
+                    "viewAll": "View All"
+                }
+            },
+            "supportServices": {
+                "name": "Support Services",
+                "links": {
+                    "pharmacy": "Pharmacy",
+                    "bloodBank": "Blood Bank",
+                    "dietary": "Dietary",
+                    "laundry": "Laundry",
+                    "houseKeeping": "House Keeping",
+                    "security": "Security",
+                    "ambulance": "Ambulance Services",
+                    "viewAll": "View All"
+                }
+            },
+            "diagnosticServices": {
+                "name": "Diagnostic Services",
+                "links": {
+                    "diagnosticImaging": "Diagnostic Imaging",
+                    "dialysis": "Dialysis Unit",
+                    "radiology": "Radiology",
+                    "pathology": "Pathology",
+                    "microbiology": "Microbiology",
+                    "biochemistry": "Biochemistry",
+                    "viewAll": "View All"
+                }
+            },
+            "specializedServices": {
+                "name": "Specialized Services",
+                "links": {
+                    "icu": "ICU (Intensive Care Unit)",
+                    "nicu": "NICU (Neonatal Intensive Care Unit)",
+                    "ot": "OT (Operation Theater)",
+                    "endoscopy": "Endoscopy",
+                    "physiotherapy": "Physiotherapy",
+                    "viewAll": "View All"
+                }
+            },
+            "administrativeServices": {
+                "name": "Administrative Services",
+                "links": {
+                    "admission": "Admission & Discharge",
+                    "billing": "Billing & Insurance",
+                    "medicalRecords": "Medical Records"
+                }
+            },
+            "patientCare": {
+                "name": "Patient Care",
+                "links": {
+                    "secondOpinion": "Second Opinion",
+                    "emergency": "24x7 Emergency",
+                    "inPatient": "In-Patient Facilities",
+                    "outPatient": "Outpatient Clinics",
+                    "healthChecks": "Health Check Packages"
+                }
+            },
+            "insurance": {
+                "name": "Insurance",
+                "links": {
+                    "insuranceServices": "Insurance & TPA Services"
+                }
+            },
+            "cancerTypes": {
+                "name": "Cancer Types",
+                "links": {
+                    "adrenalCancer": "Adrenal Cancer",
+                    "analCancer": "Anal Cancer",
+                    "bileDuctCancer": "Bile Duct Cancer",
+                    "bladderCancer": "Bladder Cancer",
+                    "bloodCancer": "Blood Cancer",
+                    "boneCancer": "Bone Cancer",
+                    "brainCancer": "Brain Cancer",
+                    "breastCancer": "Breast Cancer",
+                    "breastCancerMen": "Breast Cancer in Men",
+                    "cervicalCancer": "Cervical Cancer",
+                    "colonRectalCancer": "Colon/Rectal Cancer",
+                    "endometrialCancer": "Endometrial Cancer",
+                    "esophagealCancer": "Esophageal Cancer",
+                    "eyeCancer": "Eye Cancer",
+                    "gallbladderCancer": "Gallbladder Cancer",
+                    "gastricCancer": "Gastric Cancer",
+                    "headNeckCancer": "Head and Neck Cancer",
+                    "kidneyCancer": "Kidney Cancer",
+                    "laryngealCancer": "Laryngeal Cancer",
+                    "liverCancer": "Liver Cancer",
+                    "lungCancer": "Lung Cancer",
+                    "multipleMyeloma": "Multiple Myeloma",
+                    "neuroendocrineTumors": "Neuroendocrine Tumors",
+                    "nonHodgkinLymphoma": "Non-Hodgkin Lymphoma",
+                    "oralCancer": "Oral Cancer",
+                    "ovarianCancer": "Ovarian Cancer",
+                    "pancreaticCancer": "Pancreatic Cancer",
+                    "penileCancer": "Penile Cancer",
+                    "pituitaryTumors": "Pituitary Tumors",
+                    "prostateCancer": "Prostate Cancer",
+                    "salivaryGlandCancer": "Salivary Gland Cancer",
+                    "skinCancer": "Skin Cancer",
+                    "stomachCancer": "Stomach Cancer",
+                    "uterineCancer": "Uterine Cancer"
+                }
+            },
+            "patientEducation": {
+                "name": "Patient Education",
+                "links": {
+                    "prevention": "Cancer Prevention",
+                    "diagnosis": "Diagnosis & Staging",
+                    "treatments": "Treatment Options",
+                    "nutrition": "Nutrition & Wellness"
+                }
+            },
+            "faqs": {
+                "name": "FAQs",
+                "links": {
+                    "general": "General Questions",
+                    "beforeVisit": "Before Your Visit",
+                    "duringTreatment": "During Treatment",
+                    "afterTreatment": "After Treatment"
+                }
+            },
+            "storiesOfHope": {
+                "name": "Stories of Hope",
+                "links": {
+                    "testimonials": "Patient Testimonials",
+                    "victoryStories": "Victory Stories"
+                }
+            },
+            "supportPrograms": {
+                "name": "Support Programs",
+                "links": {
+                    "counseling": "Counseling & Mental Health",
+                    "rehab": "Rehabilitation Programs"
+                }
+            }
+        }
+    },
+    "quickLinks": {
+        "emergency": {
+            "label": "Emergency",
+            "value": "+91 7234006595"
+        },
+        "contactNumbers": {
+            "label": "Contact Numbers",
+            "value": "+91 7234006597"
+        },
+        "support": {
+            "label": "Support",
+            "value": "+91 7234006595"
+        }
+    },
+    "testimonials": {
+        "mohammadWarisAli": {
+            "name": "Mohammad Waris Ali",
+            "description": "My patient's name is Jahir Ahmad whose surgery was done by Dr. Alok Tiwari sir. Now my patient is completely fine. Lap cholecystectomy was done."
+        },
+        "parmatmaMishra": {
+            "name": "Parmatma Mishra",
+            "description": "Yes, I came with my child and he had an ulcer complaint. Dr. Vishal Mishra and Dr. Alok Tiwari treated him very well. My child is now completely healthy and I really liked how the doctor treated him so well."
+        },
+        "sohanPaswan": {
+            "name": "Sohan Paswan",
+            "description": "My patient's name is Ramesh, his surgery was done by Alok sir. He is fine now, his stitches are healing and he is also showing it to sir."
+        },
+        "govindVerma": {
+            "name": "Govind Verma",
+            "description": "My name is Govind Verma, my uncle's name is Ramkishun Verma. He had been having chest pain for many days and had a lot of cough, but since he was treated by Dr. Saurabh sir, uncle is now very well. Thank you doctor."
+        },
+        "tigerKumar": {
+            "name": "Tiger Kumar",
+            "description": "My patient's name is Kunti Devi. She had a very serious problem. We admitted her to Synergy Cancer Institute Hospital. She had sepsis and hypoalbuminemia. Now my patient is completely fine, so I thank the entire hospital team and doctors."
+        },
+        "armanAli": {
+            "name": "Arman Ali",
+            "description": "My mother Nooraisa BEGAM had a tumor in her uterus which was very troubling. I went to many hospitals but got no benefit. Then I came to know about Synergy Hospital Gorakhpur. I met Dr. Anjali Jain at Synergy and then had surgery with Dr. Anjali Jain. Now my mother is completely fine. Thanks to all staff and Synergy team."
+        }
+    },
+    "actions": {
+        "bookAppointment": {
+            "label": "Book Appointment"
+        },
+        "hospitals": {
+            "label": "Hospitals"
+        },
+        "callUs": {
+            "label": "Call Us"
+        },
+        "search": {
+            "label": "Search"
+        }
+    },
+    "excellence": {
+        "items": {
+            "quality": {
+                "question": "01. Quality and Patient Centricity",
+                "answer": "At SSSHCI, we place patients at the heart of everything we do. Our team works with compassion and professionalism to ensure each patient receives personalized, evidence-based cancer care with dignity and respect."
+            },
+            "multidisciplinary": {
+                "question": "02. Multidisciplinary Centres of Excellence",
+                "answer": "Our hospital houses advanced facilities for surgery, chemotherapy, immunotherapy, palliative care, and diagnostics—all under one roof. A unified approach ensures seamless coordination and holistic treatment planning."
+            },
+            "affordable": {
+                "question": "03. Affordable and Accessible Care",
+                "answer": "We believe that quality cancer treatment should be accessible to all. Located in Gorakhpur, we serve patients from Eastern Uttar Pradesh, Western Bihar, and Southern Nepal with cost-effective yet advanced medical care."
+            },
+            "compassionate": {
+                "question": "04. Compassionate Team and Environment",
+                "answer": "Driven by our SYNERGY values, our dedicated medical professionals create a peaceful, respectful, and healing environment that supports patients and their families through every step of their journey."
+            },
+            "innovation": {
+                "question": "05. Innovation and Advanced Therapies",
+                "answer": "SSSHCI integrates the latest in oncology—like targeted therapy, hormonal therapy, and day-care procedures—ensuring our patients benefit from globally recognized treatment protocols and research-backed practices."
+            }
+        }
+    },
+    "leaders": {
+        "drAlokTiwari": {
+            "name": "Dr. Alok Tiwari",
+            "role": "Surgical Oncologist",
+            "description": "MBBS (Gold Medalist), MS (Gen Surgery), KGMU Lucknow, DNB Superspeciality (Surgical Oncology), ESSO (Breast Oncoplasty), FMAS, FALS (Colorectal), Dip MAS, daVinciXi Certified Robotic Onco Surgeon"
+        },
+        "drAnjaliJain": {
+            "name": "Dr. Anjali Jain",
+            "role": "Director & Head – Gynae Oncology",
+            "description": "Dr. Anjali Jain Director and Head, Department of Gynae & Oncology. Dr. Anjali Jain is a renowned gynae oncologist, laparoscopic and robotic surgeon, presently working at Synergy Super Speciality Hospital & Cancer Institute."
+        },
+        "drSaurabhMishra": {
+            "name": "Dr. Saurabh Mishra",
+            "role": "Medical Oncologist & Haemat Oncologist",
+            "description": "Director – Synergy Superspeciality Hospital and Cancer Institute. M.B.B.S. (KGMU), M.D. (Internal Medicine), ECMO, D.N.B. Superspeciality (Medical Oncology)."
+        }
+    },
+    "faqs": {
+        "general": {
+            "appointment": {
+                "question": "How can I book an appointment at Synergy Hospital?",
+                "answer": "You can book appointments online through our website, by calling our helpline, or by visiting the hospital. Walk-ins may also be available."
+            },
+            "specialist": {
+                "question": "Can I book an appointment with a specialist without a referral?",
+                "answer": "Yes, you can book appointments directly with our specialists without requiring a local referral."
+            },
+            "secondOpinion": {
+                "question": "Does Synergy provide second opinions or online consultations?",
+                "answer": "Absolutely. We provide second opinions and online consultations through our digital health platform."
+            },
+            "bookingInfo": {
+                "question": "What information do I need to provide before booking?",
+                "answer": "Basic personal information, medical history, and any previous reports or prescriptions will help us serve you better."
+            },
+            "emergency": {
+                "question": "Is Synergy Hospital open 24/7 for emergencies?",
+                "answer": "Yes, our emergency department operates 24/7 with trained medical staff and necessary infrastructure."
+            },
+            "insurance": {
+                "question": "Does the hospital accept insurance or cashless claims?",
+                "answer": "Yes, we have agreements with most major insurance providers and offer cashless claim facilities. Please contact our billing desk for details."
+            },
+            "medicalRecords": {
+                "question": "How can I view my lab test reports or medical records?",
+                "answer": "Patients can view lab reports and medical records through our patient portal or by contacting the hospital's medical records department."
+            },
+            "accommodation": {
+                "question": "Are accommodation facilities available for family members of in-patients?",
+                "answer": "Yes, we have comfortable waiting areas and attendant stay arrangements. Some patient rooms also allow one family member to stay overnight."
+            },
+            "reschedule": {
+                "question": "Can I reschedule or cancel my appointment?",
+                "answer": "Yes, appointments can be rescheduled or cancelled through our website or by calling our helpdesk. We recommend informing us at least 24 hours in advance."
+            },
+            "interpreters": {
+                "question": "Are interpreters available for non-local or international patients?",
+                "answer": "Yes, we provide interpreter services in various languages to support local and international patients."
+            },
+            "safety": {
+                "question": "What safety protocols are in place for infection control?",
+                "answer": "We follow strict hygiene protocols including regular sanitization, PPE usage, and isolated areas for infectious patients."
+            },
+            "specialties": {
+                "question": "What specialties and departments are available at Synergy Hospital?",
+                "answer": "We offer various specialties including cardiology, neurology, orthopedics, pediatrics, oncology, gynecology, and many more."
+            }
+        },
+        "generalQuestions": {
+            "services": {
+                "question": "What services does Synergy Super Speciality Hospital and Cancer Institute provide?",
+                "answer": "We offer a complete range of oncology services including Surgical, Medical, and Radiation Oncology, along with diagnostics, rehabilitation, pain management, and supportive care."
+            },
+            "operational": {
+                "question": "Is Synergy Cancer Hospital open 24/7?",
+                "answer": "Yes, our hospital is operational 24 hours a day, 7 days a week to ensure timely care for patients."
+            },
+            "cancerTypes": {
+                "question": "Do you treat all types of cancers?",
+                "answer": "Yes, we specialize in treating various forms of cancer including breast, lung, prostate, cervical, colorectal, blood cancers, and more."
+            },
+            "walkIn": {
+                "question": "Are walk-in consultations available?",
+                "answer": "While walk-ins are accepted, we recommend booking an appointment in advance to avoid waiting."
+            },
+            "location": {
+                "question": "How do I reach the hospital from the Gorakhpur railway station?",
+                "answer": "We are located a short drive from Gorakhpur Junction. You can use cab services, autos, or contact us for location assistance."
+            },
+            "doctors": {
+                "question": "Are the doctors certified and experienced in oncology?",
+                "answer": "Yes, all our oncologists are highly qualified and have advanced training in surgical, medical, and radiation oncology."
+            },
+            "payment": {
+                "question": "What are the available payment options?",
+                "answer": "We accept cash, credit/debit cards, UPI payments, and most major health insurance plans."
+            },
+            "insurance": {
+                "question": "Is insurance accepted at your hospital?",
+                "answer": "Yes, we work with multiple insurance providers. Please bring your insurance documents for smooth processing."
+            }
+        },
+        "beforeVisitQuestions": {
+            "appointment": {
+                "question": "How can I schedule my first appointment?",
+                "answer": "You can call us directly or use the appointment booking form on our official website."
+            },
+            "documents": {
+                "question": "What documents should I carry for the first consultation?",
+                "answer": "Please bring a valid ID proof, referral letter (if any), past medical records, test results, and insurance documents."
+            },
+            "secondOpinion": {
+                "question": "Can I get a second opinion before starting treatment?",
+                "answer": "Yes, we encourage second opinions to ensure you're comfortable and confident with your treatment plan."
+            },
+            "preparation": {
+                "question": "How do I prepare for my first consultation?",
+                "answer": "Be ready with your medical history, a list of current medications, and any specific questions you have for the doctor."
+            },
+            "cost": {
+                "question": "Is there any cost for the first consultation?",
+                "answer": "Yes, consultation fees apply but may vary based on the specialist. You can call our helpdesk for the exact pricing."
+            },
+            "fasting": {
+                "question": "Do I need to fast or follow any dietary restrictions before my visit?",
+                "answer": "Only if you're scheduled for blood tests or scans that require fasting. Our team will inform you in advance."
+            },
+            "familyMember": {
+                "question": "Can a family member accompany me to my consultation?",
+                "answer": "Absolutely. We encourage a family member to join for support and to help remember important details."
+            },
+            "parking": {
+                "question": "Is parking available on-site?",
+                "answer": "Yes, we provide ample parking for patients and visitors free of charge."
+            }
+        },
+        "duringTreatmentQuestions": {
+            "chemotherapy": {
+                "question": "What should I expect during chemotherapy?",
+                "answer": "Our staff will guide you through every step. Sessions may take a few hours and you might experience fatigue, nausea, or hair loss."
+            },
+            "sideEffects": {
+                "question": "Are side effects from treatment common?",
+                "answer": "Side effects are common but manageable. Our doctors will provide medications and support to reduce discomfort."
+            },
+            "working": {
+                "question": "Can I continue working during my treatment?",
+                "answer": "Depending on the treatment and your physical condition, many patients continue to work part-time. Discuss with your doctor for personalized advice."
+            },
+            "admission": {
+                "question": "Will I need to be admitted for treatment?",
+                "answer": "Some treatments are day-care procedures, while others may require admission. It varies based on your treatment plan."
+            },
+            "meals": {
+                "question": "Are meals provided during hospital stays?",
+                "answer": "Yes, we offer dietician-approved meals tailored for patients undergoing cancer treatment."
+            },
+            "supportServices": {
+                "question": "What support services are available during treatment?",
+                "answer": "We offer psychological counseling, nutritional support, pain management, and support groups."
+            },
+            "familyVisits": {
+                "question": "Can my family visit me during treatment?",
+                "answer": "Yes, family visits are allowed with some restrictions depending on your condition and COVID-19 protocols."
+            },
+            "careCoordinator": {
+                "question": "Will I have access to a dedicated care coordinator?",
+                "answer": "Yes, we assign case managers or coordinators to help guide patients through each stage of care."
+            }
+        },
+        "afterTreatmentQuestions": {
+            "followUp": {
+                "question": "How often do I need to follow up after treatment?",
+                "answer": "Follow-ups typically occur every 3 to 6 months initially and gradually decrease depending on your recovery and condition."
+            },
+            "rehabilitation": {
+                "question": "Are rehabilitation services provided post-treatment?",
+                "answer": "Yes, we offer physical therapy, occupational therapy, and psychological support to aid in recovery."
+            },
+            "sideEffects": {
+                "question": "Will I experience long-term side effects?",
+                "answer": "Some patients may experience fatigue, cognitive changes, or hormonal imbalances. Our team helps monitor and manage them."
+            },
+            "lifestyle": {
+                "question": "Is lifestyle counseling offered post-treatment?",
+                "answer": "Yes, we provide dietary advice, exercise routines, and mental wellness support to help you resume a healthy life."
+            },
+            "recurrence": {
+                "question": "Can cancer come back after treatment?",
+                "answer": "There is always a chance of recurrence. That's why regular follow-ups and scans are crucial to detect any changes early."
+            },
+            "monitoring": {
+                "question": "How can I monitor my health after treatment?",
+                "answer": "Stick to your follow-up schedule, report new symptoms promptly, and maintain a healthy lifestyle."
+            },
+            "medication": {
+                "question": "Will I need to take medication long-term?",
+                "answer": "Depending on the cancer type and treatment, you may be prescribed long-term maintenance medications."
+            },
+            "emotional": {
+                "question": "How do I deal with emotional challenges post-treatment?",
+                "answer": "We offer support groups and one-on-one counseling with psychologists to help patients transition emotionally post-treatment."
+            }
+        }
+    },
+    "ayushmaanBharat": {
+        "title": "Pradhan Mantri Ayushmaan Bharat Yojana",
+        "description": "The Ayushmaan Bharat Card, launched under the Pradhan Mantri Jan Arogya Yojana (PM-JAY), is a revolutionary step toward providing universal health coverage in India. It offers cashless healthcare services up to ₹5 lakh per family per year for secondary and tertiary hospitalization across public and private empanelled hospitals. Targeting economically vulnerable families, the scheme ensures access to quality healthcare without financial hardship. Beneficiaries can avail treatments for a wide range of diseases, surgeries, and medical procedures. With minimal documentation, quick approvals, and a vast network of hospitals, Ayushmaan Bharat empowers millions to lead healthier, more secure lives with dignity.",
+        "benefits": {
+            "title": "Ayushmaan Bharat Card Benefits",
+            "whatIs": {
+                "title": "What is Ayushmaan Bharat?",
+                "description": "A national health protection scheme providing coverage of ₹5 lakh per family annually for secondary and tertiary care hospitalization."
+            },
+            "availing": {
+                "title": "Availing Benefits",
+                "description": "Present your valid Ayushmaan Bharat Card and ID proof at our insurance desk. We handle all authorization processes directly with the scheme administrators."
+            }
+        },
+        "getCovered": {
+            "title": "Get Covered Today",
+            "description": "Visit our Insurance Desk for easy enrollment and cashless treatment assistance.",
+            "button": "Know More"
+        }
+    },
+    "SliderWithTriggers": {
+        "readMore": "Read More",
+        "exploreMore": "Explore More",
+        "findDoctor": "Find Doctor",
+        "viewAllSpecialities": "View all Specialties"
+    },
+    "meetOurLeaders": "Meet Our Leaders",
+    "hospitalHighlights": {
+        "patientsTreated": {
+            "number": "1,00,000+",
+            "title": "Patients Treated",
+            "description": "Delivering quality healthcare to over one lakh patients with compassion and expertise."
+        },
+        "successfulSurgeries": {
+            "number": "12,000+",
+            "title": "Successful Surgeries",
+            "description": "Performed a wide range of complex surgeries with precision and care."
+        },
+        "departmentsOfExcellence": {
+            "number": "25+",
+            "title": "Departments of Excellence",
+            "description": "Comprehensive super-specialty departments including oncology, cardiology, neurology, and more."
+        },
+        "cancerCasesTreated": {
+            "number": "8,000+",
+            "title": "Cancer Cases Treated",
+            "description": "Advanced oncology treatments for all types of cancers with a patient-first approach."
+        },
+        "diagnosesPerformed": {
+            "number": "50,000+",
+            "title": "Diagnoses Performed",
+            "description": "State-of-the-art diagnostic infrastructure enabling early and accurate detection."
+        },
+        "livesSaved": {
+            "number": "Countless",
+            "title": "Lives Saved",
+            "description": "Round-the-clock emergency and critical care ensuring timely intervention and survival."
+        }
+    },
+    "LeadershipPage": {
+        "alokTiwari": {
+            "name": "Dr. Alok Tiwari",
+            "role": "Surgical Oncologist",
+            "description": "Dr. Alok Tiwari is a highly esteemed Surgical Oncologist with a distinguished academic and professional background. He graduated with an MBBS, securing a Gold Medal for his exceptional performance. He further pursued MS in General Surgery from King George's Medical University (KGMU), Lucknow, followed by DNB Superspeciality in Surgical Oncology. Dr. Alok Tiwari has undergone specialized training in Breast Oncoplasty from ESSO and holds certifications in FMAS, FALS (Colorectal), and Dip MAS. Additionally, he is a daVinciXi Certified Robotic Onco Surgeon, reflecting his commitment to embracing advanced surgical technologies. His extensive training and experience have positioned him as a leading authority in the field of oncology, particularly in breast cancer treatments.",
+            "customFirstHeading": "Introducing Dr. Alok Tiwari: A Leader in Surgical Oncology",
+            "theirStory": [
+                "Dr. Alok Tiwari's journey into the realm of surgical oncology is marked by unwavering dedication and a pursuit of excellence. From his early academic achievements, including a Gold Medal in MBBS, to his comprehensive training at prestigious institutions like KGMU Lucknow, his commitment to mastering the intricacies of surgery is evident.",
+                "His pursuit of specialized skills in breast oncoplasty and robotic surgery showcases his forward-thinking approach, ensuring patients receive state-of-the-art care.",
+                "Beyond the operating room, Dr. Alok Tiwari's mentorship and research contributions reflect his holistic commitment to advancing oncology."
+            ],
+            "customSecondHeading": "Dr. Alok Tiwari's Approach: Merging Technology with Compassion",
+            "secondSectionDescription": [
+                "Dr. Alok Tiwari believes in a patient-centric approach, where each treatment plan is tailored to the individual's specific needs, ensuring the most effective and compassionate care.",
+                "His expertise in robotic-assisted surgeries allows for minimally invasive procedures, leading to faster recovery times and improved patient outcomes, all while maintaining a compassionate bedside manner.",
+                "His philosophy centers on integrating advanced technology with compassionate care, ensuring each patient receives personalized treatment plans tailored to their unique needs. Dr. Alok Tiwari's vision extends beyond individual patient care, he actively engages in community outreach programs, aiming to raise awareness about early cancer detection and prevention. His leadership in organizing workshops and seminars has educated countless individuals, emphasizing the importance of regular screenings and a proactive approach to health. Through these endeavors, Dr. Alok Tiwari continues to inspire and lead in the fight against cancer."
+            ],
+            "thirdSectionDescription": [
+                "Dr. Alok Tiwari has actively participated in numerous research projects, focusing on improving surgical techniques and patient care protocols. His work has been published in several reputable medical journals, contributing to the global body of oncology knowledge.",
+                "He regularly attends international oncology conferences, both as a participant and a speaker, sharing his insights and learning about the latest advancements in cancer treatment. This continuous engagement ensures that his patients benefit from the most current and effective therapies available.",
+                "His commitment to education extends to mentoring young surgeons, providing guidance and training to the next generation of oncologists, ensuring that the standards of care continue to evolve and improve."
+            ],
+            "fourthSectionDescription": [
+                "Dr. Alok Tiwari's leadership extends beyond clinical practice, he has been instrumental in establishing cancer awareness programs, aiming to educate the public about preventive measures and early detection.",
+                "His collaborative efforts with multidisciplinary teams ensure that patients receive comprehensive care, addressing not just the physical aspects of cancer treatment but also the emotional and psychological support needed during such challenging times.",
+                "Looking ahead, Dr. Alok Tiwari envisions a future where technological advancements in surgery are seamlessly integrated with holistic patient care, setting new benchmarks in the fight against cancer."
+            ],
+            "fifthSectionDescription": "Dr. Alok Tiwari, a distinguished Surgical Oncologist, is widely recognized for his exceptional skills and experience in breast cancer treatments. His expertise and compassionate care have positively impacted numerous lives, earning him a reputation as a leading authority in oncology.",
+            "journeyHeading": "Journey"
+        },
+        "anjaliJain": {
+            "name": "Dr. Anjali Jain",
+            "role": "Gynecologic Oncologist",
+            "description": "Dr. Anjali Jain is a renowned gynae oncologist, laparoscopic and robotic surgeon, presently working at Synergy Super Speciality Hospital & Cancer Institute. She has a vast experience in the field of gynae oncology and has performed many surgeries related to ovarian, cervical, endometrial, vulval cancers. She has worked at many reputed institutes of Delhi NCR region like Fortis memorial research institute and Medanta The Medicity Gurugram. She is routinely performing cervical cancer screening, hysteroscopies, cystoscopies, conization, LEEP/LLETZ, open and laparoscopic procedures, cytoreductive surgeries, radical hysterectomies at her center. She has a keen interest in the management of ovarian and primary peritoneal malignancies and HIPEC surgeries. She actively participates in many activities and conducts free camps related to cancer screening and awareness.",
+            "customFirstHeading": "Meet Dr. Anjali Jain: Expert in Gynecologic Oncology",
+            "theirStory": [
+                "Dr. Anjali Jain's commitment to women's health led her to specialize in gynecologic oncology, where she combines her surgical expertise with a compassionate approach. Her academic excellence, highlighted by a Gold Medal in MBBS, laid the foundation for her pursuit of advanced training in surgical oncology. Dr. Anjali Jain's dedication to continuous learning is evident in her certifications and specialized training, which she applies to offer personalized care to each patient. Her approach emphasizes not just treatment but also education, empowering women to take charge of their health."
+            ],
+            "customSecondHeading": "Dr. Anjali Jain's Philosophy: Personalized and Compassionate Care",
+            "secondSectionDescription": [
+                "Dr. Anjali Jain emphasizes the importance of personalized treatment plans, considering each patient's unique medical history and personal circumstances to ensure the most effective care.",
+                "Her compassionate approach involves active listening and emotional support, creating a safe environment where patients feel valued and understood throughout their treatment journey.",
+                "Beyond her clinical practice, Dr. Anjali Jain actively engages in research aimed at improving treatment modalities for gynecologic cancers. She collaborates with multidisciplinary teams to enhance patient care protocols and participates in community outreach programs to raise awareness about women's health issues. Her holistic approach addresses both the physical and emotional aspects of cancer care, ensuring that patients receive comprehensive support throughout their journey."
+            ],
+            "thirdSectionDescription": [
+                "Dr. Anjali Jain's research focuses on developing less invasive surgical techniques and improving postoperative care, aiming to enhance recovery and quality of life for her patients.",
+                "She collaborates with international oncology experts and institutions, contributing to global advancements in gynecologic oncology while ensuring her own patients benefit from the latest scientific breakthroughs.",
+                "Her training and mentorship programs for young doctors are designed to foster a new generation of compassionate, well-informed, and skilled gynecologic oncologists."
+            ],
+            "fourthSectionDescription": [
+                "Dr. Anjali Jain is deeply involved in cancer awareness campaigns focused on early detection and preventive care for women. She frequently organizes workshops and seminars in both urban and rural areas, aiming to bridge the information gap on gynecologic health",
+                "Her collaborative style ensures that each case benefits from multidisciplinary expertise, integrating surgery, chemotherapy, counseling, and rehabilitation for truly holistic care.",
+                "She continues to advocate for greater awareness and access to cancer screenings, envisioning a future where every woman receives timely, effective, and empathetic oncology care."
+            ],
+            "fifthSectionDescription": "Dr. Anjali Jain stands out as a compassionate Gynecologic Oncologist committed to empowering women through early detection, advanced treatment options, and holistic support. Her expertise and empathetic approach ensure that her patients feel cared for at every step of their cancer journey.",
+            "journeyHeading": "Journey"
+        },
+        "saurabhMishra": {
+            "name": "Dr. Saurabh Mishra",
+            "role": "Medical Oncologist",
+            "description": "Dr. Saurabh Mishra is a highly respected Head & Neck Surgical Oncologist known for his exceptional surgical skills and deep commitment to patient welfare. He earned his MBBS and MS in General Surgery from KGMU, Lucknow, followed by a DNB in Surgical Oncology. His professional credentials also include FMAS, FALS (Colorectal), Dip MAS, and advanced training in Head & Neck surgeries. Dr. Saurabh Mishra's expertise lies in treating complex cancers involving the oral cavity, thyroid, larynx, and other structures of the head and neck region. His precise surgical techniques and compassionate patient care have earned him widespread recognition in the field of oncology.",
+            "customFirstHeading": "Introducing Dr. Saurabh Mishra: Excellence in Head & Neck Oncology",
+            "theirStory": [
+                "Dr. Saurabh Mishra's journey into the world of head and neck oncology was driven by a personal mission to make a meaningful impact in the lives of cancer patients. After completing his medical education from KGMU Lucknow, his fascination with complex anatomy and reconstructive surgery led him to specialize in head and neck surgical oncology. Over the years, he has developed a deep understanding of the intricate challenges these cancers pose, especially those affecting speech, swallowing, and facial function. His meticulous approach and deep empathy have earned him immense respect from both colleagues and patients alike."
+            ],
+            "customSecondHeading": "Dr. Saurabh Mishra's Vision: Precision Surgery with Compassionate Healing",
+            "secondSectionDescription": [
+                "What truly sets Dr. Saurabh Mishra apart is his relentless pursuit of surgical precision combined with an innate ability to emotionally connect with his patients. He believes that cancer care is not just about treating the disease—it's about walking hand-in-hand with patients through their most vulnerable moments. His collaborative work with speech therapists and nutritionists ensures that patients recover not only physically but also emotionally and socially. Dr. Saurabh Mishra is a strong advocate for early detection, routinely conducting screening drives and educating communities about head and neck cancer symptoms and risk factors.",
+                "Dr. Saurabh Mishra integrates advanced surgical planning with functional and cosmetic preservation, ensuring optimal outcomes in complex head and neck cases.",
+                "He prioritizes a patient-first approach, collaborating with multidisciplinary teams to provide comprehensive care that supports not just recovery but complete rehabilitation."
+            ],
+            "thirdSectionDescription": [
+                "His research interests include minimally invasive approaches for oral and laryngeal cancers, and he has published extensively on surgical techniques and case studies in peer-reviewed journals.",
+                "Dr. Saurabh Mishra is also a passionate educator, regularly training young surgeons and conducting skill-development workshops to promote excellence in oncologic surgery.",
+                "He remains committed to global knowledge-sharing and often represents India in international oncology summits and surgical forums."
+            ],
+            "fourthSectionDescription": [
+                "Dr. Saurabh Mishra's community engagement includes organizing free camps for early detection of oral and throat cancers, particularly targeting high-risk groups such as tobacco users.",
+                "He champions the integration of post-surgical counseling and voice therapy into standard treatment protocols for better long-term outcomes.",
+                "His goal is to develop a model of care that not only treats cancer effectively but also helps patients regain their identity, dignity, and quality of life after treatment."
+            ],
+            "fifthSectionDescription": "Dr. Saurabh Mishra is a distinguished Head & Neck Surgical Oncologist whose surgical precision, patient empathy, and commitment to long-term wellness make him a trusted name in cancer care. His vision is to restore both function and confidence to every life he touches.",
+            "journeyHeading": "Journey"
+        }
+    },
+    "mediaCenter": {
+        "synergyInTheNews": {
+            "title": "Synergy in the News",
+            "description": " Stay updated with our latest achievements, breakthroughs, and contributions to healthcare innovation.",
+            "awardWinningCare": {
+                "title": "Award-Winning Care",
+                "description": "Recognized nationally for excellence"
+            },
+            "mediaFeatures": {
+                "title": "Media Features",
+                "description": "Featured in leading healthcare publications"
+            },
+            "viewAllMedia": "View All Media Coverage"
+        }
+
     }
-  }
+}

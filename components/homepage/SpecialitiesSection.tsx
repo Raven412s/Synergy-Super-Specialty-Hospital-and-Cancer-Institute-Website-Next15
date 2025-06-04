@@ -2,11 +2,12 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import SliderWithTriggers from "./SliderWithTriggers";
-
+import { useTranslations } from 'next-intl';
 
 export const SpecialitiesSection = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const t = useTranslations('homepage.specialties');
 
     return (
         <section
@@ -22,7 +23,7 @@ export const SpecialitiesSection = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-heading text-2xl sm:text-3xl lg:text-4xl text-center leading-relaxed "
                     >
-                        Discover Our Centres of Clinical Excellence
+                        {t('title')}
                     </motion.h1>
                     <motion.p
                         initial={{ x: -100, opacity: 0 }}
@@ -30,7 +31,7 @@ export const SpecialitiesSection = () => {
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                         className="font-sans text-sm sm:text-base lg:text-lg text-neutral-700 text-center leading-8"
                     >
-                       At Synergy Superspecialty Hospital and Cancer Institute, we are committed to delivering world-class healthcare...
+                        {t('description')}
                     </motion.p>
                 </div>
 

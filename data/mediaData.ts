@@ -1,9 +1,13 @@
+import { useTranslations } from "next-intl"
+
 // Sample media data
-export const galleryItems = [
+export const useGalleryItems = () => {
+const t = useTranslations('homepage.Gallery')
+const galleryItems = [
     {
         id: 1,
         type: 'image',
-        title: 'Hospital Inauguration',
+        title: t('title.0'),
         date: '15 Jan 2023',
         category: 'Events',
         image: '/media/inauguration.jpg'
@@ -49,3 +53,4 @@ export const galleryItems = [
         image: '/media/symposium.jpg'
     }
 ]
+}

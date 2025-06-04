@@ -1,12 +1,15 @@
 "use client"
 import React, { useRef } from 'react'
-import { Leaders } from "@/data";
+import { useLeaders } from "@/data";
 import { LeaderCard } from "../global/LeaderCard";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from 'next-intl';
 
 export const LeaderCards = () => {
+    const Leaders = useLeaders()
     const leaderRef = useRef(null);
     const isInView = useInView(leaderRef, { once: true, margin: "-100px" });
+    const t = useTranslations()
     return (
         <div ref={leaderRef} className="max-w-6xl h-full w-full lg:py-16 p-4 space-y-10 ">
             <motion.h1
@@ -15,7 +18,7 @@ export const LeaderCards = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="text-heading text-center"
             >
-                Meet Our Leadership
+                {t('meetOurLeaders')}
             </motion.h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 {Leaders.map((leader, index) => (

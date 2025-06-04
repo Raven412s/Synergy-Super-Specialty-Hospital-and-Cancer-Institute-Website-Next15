@@ -4,9 +4,9 @@ import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
-    CardFooter,
 } from "@/components/ui/card";
 import { departmentData } from "@/data/departmentData";
 import { cn } from "@/lib/utils";
@@ -18,12 +18,14 @@ import {
     MinusIcon,
     PlusIcon,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ImageWithFallback } from "../global/ImageWithFallback";
 import { Badge } from "../ui/badge";
 
 export default function SliderWithTriggers() {
+    const t = useTranslations('SliderWithTriggers');
     const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -90,7 +92,7 @@ export default function SliderWithTriggers() {
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
                                 >
-                                    <SliderCard {...department} />
+                                    <SliderCard props={department} t={t} />
                                 </motion.div>
                             ) : null
                         )}
@@ -124,7 +126,7 @@ export default function SliderWithTriggers() {
                         size="lg"
                         className="w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 rounded-xl bg-indigo-800 text-white hover:bg-indigo-900"
                     >
-                        View All Specialties
+                        {t('viewAllSpecialities')}
                     </Button>
                 </Link>
 
@@ -149,7 +151,7 @@ export default function SliderWithTriggers() {
     );
 }
 
-const SliderCard = (props: DepartmentData) => {
+const SliderCard = ({ props, t }: { props: DepartmentData, t: (key: string) => string }) => {
     const [showAll, setShowAll] = useState(false);
     const [cardHovered, setCardHovered] = useState(false);
 
@@ -190,7 +192,7 @@ const SliderCard = (props: DepartmentData) => {
                     <CardDescription className="text-neutral-600 text-xs sm:text-sm leading-normal mb-2 line-clamp-3">
                         {props.heroTitle + " " + props.heroSubtitle} ...
                         <Link href={`/services/${props.slug}`} className="ml-1 sm:ml-2 underline hover:text-primary text-xs sm:text-sm">
-                            Read More
+                            {t('readMore')}
                         </Link>
                     </CardDescription>
                 </CardHeader>
@@ -233,7 +235,7 @@ const SliderCard = (props: DepartmentData) => {
                             variant={"outline"}
                             className="w-full rounded-lg border-gray-300 py-1 px-3 text-xs sm:text-sm"
                         >
-                            Find Doctor
+                            {t('findDoctor')}
                         </Button>
                     </Link>
                     <Link href={`/services/${props.slug}` || "#"} className="w-full">
@@ -241,7 +243,7 @@ const SliderCard = (props: DepartmentData) => {
                             variant={"default"}
                             className="w-full rounded-lg bg-synergy-blue hover:bg-synergy-blue/90 text-white py-1 px-3 text-xs sm:text-sm"
                         >
-                            Explore More
+                            {t("exploreMore")}
                         </Button>
                     </Link>
                 </CardFooter>

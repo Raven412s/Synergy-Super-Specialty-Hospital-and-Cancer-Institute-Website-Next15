@@ -4,12 +4,12 @@ import {
     CancerSurvivorsMap,
     DoctorsMap,
     HealthLibraryMap,
-    LeadershipMap,
     PatientCareMap,
-    ServicesMap,
+    ServicesMap
 } from "@/data/DYNAMIC_MAPS";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { JSX } from "react";
 
@@ -67,9 +67,12 @@ export default async function DynamicPage(props: {
     params: Promise<{ section: string; slug: string }>;
   }) {
     const { section, slug } = await props.params;
+    if (section === "leadership") {
+        const DynamicComponent = dynamic(() => import(`@/components/leadership-pages/${slug}`));
+        return <DynamicComponent />;
+      }
 
     const sectionMap: Record<string, Record<string, JSX.Element>> = {
-      leadership: LeadershipMap,
       services: ServicesMap,
       "patient-care": PatientCareMap,
       "health-library": HealthLibraryMap,

@@ -7,7 +7,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { menuItems, quickLinks } from "@/data";
+import { useMenuItems, useQuickLinks } from "@/data";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, MenuIcon, Search } from "lucide-react";
@@ -27,6 +27,7 @@ import {
     SheetTitle,
     SheetTrigger
 } from "../ui/sheet";
+import { LanguageSwitch } from "./LanguageSwitch";
 
 // Animation variants
 const dropdownVariants = {
@@ -64,6 +65,8 @@ export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [outerOpen, setOuterOpen] = useState(false);
     const [innerOpen, setInnerOpen] = useState(false);
+    const menuItems = useMenuItems();
+    const quickLinks = useQuickLinks();
     const [selectedMenuItem, setSelectedMenuItem] = useState<typeof menuItems[0] | null>(null);
 
     const handleScroll = () => {
@@ -80,8 +83,15 @@ export function Navbar() {
         };
     }, []);
 
-    const result: boolean = isHovered || isScrolled || pathname !== "/en";
-
+    const result: boolean = isHovered || isScrolled || (pathname !== "/en" && pathname !== "/hi");
+    const switchLocale =  (locale: string) => {
+        // Get the current path without the locale prefix
+        const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '')
+        // Construct the new path with the selected locale
+        const newPath = `/${locale}${pathWithoutLocale}`
+        router.push(newPath)
+        router.refresh()
+    }
     return (
         <div className={cn(
             "h-16 xl:h-20 fixed w-full top-0 z-50 transition-all duration-300 m-0 p-0 space-y-0",
@@ -244,7 +254,7 @@ export function Navbar() {
                                                                 className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
                                                                 title="Get in touch with us"
                                                                 onClick={() => {
-                                                                   router.push("#footer")
+                                                                    router.push("#footer")
                                                                 }}
                                                             >
                                                                 Contact Us <span>→</span>
@@ -266,6 +276,9 @@ export function Navbar() {
                     ))}
                 </NavigationMenuList>
                 <div className="w-1/4 flex items-center justify-end gap-4">
+                    {/* Language Switch */}
+                    <LanguageSwitch switchLocale={switchLocale} />
+
                     {/* Emergency Button */}
                     <Link href="/patient-care/emergency">
                         <Button

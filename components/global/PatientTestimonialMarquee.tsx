@@ -1,50 +1,33 @@
 import { cn } from "@/lib/utils";
-import { PatientTestimonialMarqueeProps } from "@/types";
+import { useTestimonials } from "@/data";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { VideoModal } from "./VideoModal";
 import PatientSpeaksWrittenTestimonialCard from "./PatientSpeaksWrittenTestimonialCard";
 
-const PatientTestimonialMarquee = (props: PatientTestimonialMarqueeProps) => {
-  const { marqueeArray, className, ...rest } = props;
+const PatientTestimonialMarquee = ({ className, ...rest }: { className?: string }) => {
+    const testimonials = useTestimonials();
 
-  return (
-    <div className={cn("relative mt-6 overflow-hidden space-y-6", className)} {...rest}>
-      <Marquee speed={60}  pauseOnHover className="pt-4 ">
-        {marqueeArray.map((item, index) => (
-          <div key={index} className="mx-4 flex items-center">
-            {item.type === "written" && (
-              <PatientSpeaksWrittenTestimonialCard testimonial={item} />
-            )}
-            {item.type === "video" && (
-              <VideoModal
-                image={item.image}
-                videoUrl={item.videoUrl}
-                className="w-full"
-              />
-            )}
-          </div>
-        ))}
-      </Marquee>
-
-      <Marquee speed={60}  pauseOnHover direction="right" className=" pb-4 ">
-        {marqueeArray.map((item, index) => (
-          <div key={index} className="mx-4">
-            {item.type === "written" && (
-              <PatientSpeaksWrittenTestimonialCard testimonial={item} />
-            )}
-            {item.type === "video" && (
-              <VideoModal
-                image={item.image}
-                videoUrl={item.videoUrl}
-                className="w-full"
-              />
-            )}
-          </div>
-        ))}
-      </Marquee>
-    </div>
-  );
+    return (
+        <div className={cn("relative mt-6 overflow-hidden space-y-6", className)} {...rest}>
+            <Marquee speed={60} pauseOnHover className="pt-4">
+                {testimonials.map((item, index) => (
+                    <div key={index} className="mx-4 flex items-center">
+                        {item.type === "written" && (
+                            <PatientSpeaksWrittenTestimonialCard testimonial={item} />
+                        )}
+                        {item.type === "video" && (
+                            <VideoModal
+                                image={item.image}
+                                videoUrl={item.videoUrl}
+                                className="w-full"
+                            />
+                        )}
+                    </div>
+                ))}
+            </Marquee>
+        </div>
+    );
 };
 
 export default PatientTestimonialMarquee;

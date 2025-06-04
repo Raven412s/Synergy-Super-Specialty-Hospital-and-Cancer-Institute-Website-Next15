@@ -1,6 +1,6 @@
 // components/FloatingBarWrapper.tsx
 "use client";
-import { actions } from "@/data";
+import { useActions } from "@/data";
 import { FloatingActionBar } from "./FloatingActionBar";
 
 type Props = {
@@ -9,5 +9,6 @@ type Props = {
 };
 
 export const FloatingBarWrapper = ({ isOnFooter, isOnHomePage }: Props) => {
+    const actions = useActions();
     return <FloatingActionBar isOnFooter={isOnFooter} isOnHomePage={isOnHomePage} items={actions} />;
 };

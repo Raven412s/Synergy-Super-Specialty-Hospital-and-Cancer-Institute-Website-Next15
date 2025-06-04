@@ -7,12 +7,15 @@ import NewsSlider from "@/components/homepage/NewsSlider";
 import { PatientTestimonials } from "@/components/homepage/PatientTestimonials";
 import { SpecialitiesSection } from "@/components/homepage/SpecialitiesSection";
 import { TestimonialCards } from "@/components/homepage/TestimonialCards";
-import { faqItems, MAIN_URL } from "@/data";
+import { MAIN_URL } from "@/data";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useGeneralQuestions } from '@/data';
 
 export const Homepage = () => {
     const t = useTranslations('homepage');
+    const generalQuestions = useGeneralQuestions();
+
     return (
         <main className="w-full flex flex-col items-center justify-center ">
             {/* Hero Section with Video */}
@@ -47,10 +50,10 @@ export const Homepage = () => {
             <SpecialitiesSection />
             {/*The Leader Card Grid*/}
             <div className="bg-gradient-to-b from-fuchsia-100 to-white w-full flex items-center justify-center">
-            <LeaderCards />
+                <LeaderCards />
             </div>
 
-    <GalleryMarquee/>
+            <GalleryMarquee />
 
 
             {/* Testimonial Cards */}
@@ -77,7 +80,7 @@ export const Homepage = () => {
                             Find answers to common questions about our services, treatments, appointments...
                         </p>
                     </div>
-                    <FaqAccordion items={faqItems} />
+                    <FaqAccordion items={generalQuestions} />
                 </div>
             </section>
         </main>

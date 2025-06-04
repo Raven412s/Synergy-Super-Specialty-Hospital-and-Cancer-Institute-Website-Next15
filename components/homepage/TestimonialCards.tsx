@@ -2,12 +2,14 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import TestimonialCard from "@/components/homepage/TestimonialCard";
-import { hospitalHighlights } from "@/app/[locale]/(with nav and footer)/(Home-Page)/_data";
+import { useHospitalHighlights } from "@/app/[locale]/(with nav and footer)/(Home-Page)/_data";
+import { useTranslations } from "next-intl";
 
 export const TestimonialCards = () => {
     const testimonialRef = useRef(null);
     const isInView = useInView(testimonialRef, { once: true, margin: "-100px" });
-
+    const t = useTranslations("homepage.TestimonialCards")
+    const hospitalHighlights = useHospitalHighlights()
     return (
         <section
             ref={testimonialRef}
@@ -22,7 +24,7 @@ export const TestimonialCards = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-heading text-2xl sm:text-3xl lg:text-4xl"
                     >
-                        Transforming Lives Through Healthcare Excellence
+                        {t('title')}
                     </motion.h1>
                     <motion.p
                         initial={{ x: -100, opacity: 0 }}
@@ -30,7 +32,7 @@ export const TestimonialCards = () => {
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                         className="font-sans text-sm sm:text-base lg:text-lg text-slate-700"
                     >
-                        Synergy Super-specialty Hospital and Cancer Institute, established in 2021, is committed to delivering exceptional healthcare...
+                        {t('description')}
                     </motion.p>
                 </div>
 

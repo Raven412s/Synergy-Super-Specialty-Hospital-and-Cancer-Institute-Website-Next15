@@ -1,4 +1,5 @@
 import { SupportServiceProps } from "@/types"
+import { FaXRay } from "react-icons/fa6"
 
 export const diagnosticImagingData : SupportServiceProps= {
     heroImage: "/diagnostic-imaging-hero.jpg",
@@ -9,7 +10,7 @@ export const diagnosticImagingData : SupportServiceProps= {
             id: "xray",
             title: "X-Ray",
             description: "High-resolution imaging for bones and chest examinations",
-            icon: "/icons/xray.svg",
+            icon: FaXRay,
             details: "Our digital X-ray technology provides immediate high-quality images with significantly lower radiation exposure compared to traditional methods. Ideal for bone fractures, chest examinations, and dental imaging.",
             commonUses: ["Fracture detection", "Pneumonia diagnosis", "Dental examinations"]
         },
@@ -17,7 +18,7 @@ export const diagnosticImagingData : SupportServiceProps= {
             id: "mri",
             title: "MRI Scan",
             description: "Detailed imaging of organs and tissues using magnetic fields",
-            icon: "/icons/mri.svg",
+            icon: FaXRay,
             details: "Our 3T MRI scanners offer exceptional image quality for neurological, musculoskeletal, and abdominal imaging. The wide-bore design provides a more comfortable experience for patients with claustrophobia.",
             commonUses: ["Brain and spinal cord imaging", "Joint and soft tissue evaluation", "Tumor detection"]
         },
@@ -25,7 +26,7 @@ export const diagnosticImagingData : SupportServiceProps= {
             id: "ctscan",
             title: "CT Scan",
             description: "Cross-sectional views of body structures with precision",
-            icon: "/icons/ctscan.svg",
+            icon: FaXRay,
             details: "Advanced 128-slice CT technology enables rapid scanning with exceptional detail, reducing scan times and patient discomfort. Particularly effective for trauma cases, cancer detection, and vascular studies.",
             commonUses: ["Trauma assessment", "Cancer staging", "Pulmonary embolism detection"]
         },
@@ -33,7 +34,7 @@ export const diagnosticImagingData : SupportServiceProps= {
             id: "ultrasound",
             title: "Ultrasound",
             description: "Non-invasive imaging for abdominal and obstetric evaluation",
-            icon: "/icons/ultrasound.svg",
+            icon: FaXRay,
             details: "Our ultrasound services include abdominal, pelvic, obstetric, vascular, and small parts examinations. Using the latest Doppler technology, we provide comprehensive evaluations without radiation exposure.",
             commonUses: ["Pregnancy monitoring", "Gallbladder evaluation", "Thyroid assessment"]
         },
@@ -41,7 +42,7 @@ export const diagnosticImagingData : SupportServiceProps= {
             id: "mammography",
             title: "Mammography",
             description: "Specialized imaging for breast tissue examination",
-            icon: "/icons/mammogram.svg",
+            icon: FaXRay,
             details: "Digital mammography with tomosynthesis (3D mammography) provides clearer images with fewer callbacks. Our comfortable mammography suites are staffed by specialized female technologists for your convenience.",
             commonUses: ["Breast cancer screening", "Lump evaluation", "Implant assessment"]
         },
@@ -49,7 +50,7 @@ export const diagnosticImagingData : SupportServiceProps= {
             id: "fluoroscopy",
             title: "Fluoroscopy",
             description: "Real-time moving images of internal structures",
-            icon: "/icons/fluoroscopy.svg",
+            icon: FaXRay,
             details: "Used for procedures like barium studies, joint injections, and swallowing evaluations. Our pulsed fluoroscopy technique minimizes radiation dose while maintaining excellent image quality.",
             commonUses: ["Barium swallow studies", "Angiography", "Spinal injections"]
         }
@@ -118,7 +119,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "hematology",
         title: "Hematology",
         description: "Complete blood count and specialized blood tests",
-        icon: "/icons/blood-test.svg",
+        icon: FaXRay,
         details: "Our fully automated hematology analyzers provide accurate CBC results within minutes. Comprehensive testing including coagulation studies and hemoglobin analysis.",
         commonUses: ["Anemia diagnosis", "Infection detection", "Blood disorder screening"]
       },
@@ -126,7 +127,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "biochemistry",
         title: "Biochemistry",
         description: "Comprehensive metabolic panels and enzyme studies",
-        icon: "/icons/test-tube.svg",
+        icon: FaXRay,
         details: "Advanced analyzers for liver/kidney function tests, lipid profiles, and diabetes monitoring with STAT testing availability.",
         commonUses: ["Diabetes management", "Cholesterol checks", "Electrolyte imbalance detection"]
       },
@@ -134,7 +135,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "microbiology",
         title: "Microbiology",
         description: "Culture and sensitivity testing for infections",
-        icon: "/icons/microscope.svg",
+        icon: FaXRay,
         details: "Fully equipped lab with automated culture systems and rapid PCR testing for critical pathogens.",
         commonUses: ["Bacterial identification", "Antibiotic resistance testing", "Fungal infection diagnosis"]
       }
@@ -203,7 +204,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "opd",
         title: "Outpatient Pharmacy",
         description: "24/7 medication dispensing",
-        icon: "/icons/pharmacy.svg",
+        icon: FaXRay,
         details: "Robotic dispensing system with wide range of medicines and OTC products",
         commonUses: ["Prescription filling", "Chronic medication", "Emergency supplies"]
       },
@@ -211,7 +212,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "clinical",
         title: "Clinical Pharmacy",
         description: "Medication therapy management",
-        icon: "/icons/medication.svg",
+        icon: FaXRay,
         details: "Medication review and reconciliation services by clinical pharmacists",
         commonUses: ["Drug interaction checks", "Dosage adjustments", "Therapy monitoring"]
       }
@@ -275,7 +276,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "ortho",
         title: "Orthopedic Rehab",
         description: "Post-surgical recovery",
-        icon: "/icons/bone.svg",
+        icon: FaXRay,
         details: "Specialized programs for joint replacements and sports injuries",
         commonUses: ["Fracture rehab", "Arthritis management", "Post-op recovery"]
       },
@@ -283,7 +284,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "neuro",
         title: "Neuro Rehab",
         description: "Stroke rehabilitation",
-        icon: "/icons/brain.svg",
+        icon: FaXRay,
         details: "Advanced techniques for neurological disorders",
         commonUses: ["Stroke recovery", "Parkinson's therapy", "Spinal cord injury"]
       }
@@ -347,7 +348,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "donation",
         title: "Blood Donation",
         description: "Safe blood collection",
-        icon: "/icons/blood-donation.svg",
+        icon: FaXRay,
         details: "Sterile donation process with post-donation care",
         commonUses: ["Whole blood donation", "Platelet apheresis", "Plasma donation"]
       },
@@ -355,7 +356,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "storage",
         title: "Blood Storage",
         description: "Component separation",
-        icon: "/icons/blood-bag.svg",
+        icon: FaXRay,
         details: "State-of-the-art storage with temperature monitoring",
         commonUses: ["RBC storage", "Platelet storage", "Plasma freezing"]
       }
@@ -419,7 +420,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "hemo",
         title: "Hemodialysis",
         description: "Blood filtration treatment",
-        icon: "/icons/kidney.svg",
+        icon: FaXRay,
         details: "Advanced machines with biocompatible membranes",
         commonUses: ["ESRD management", "Toxin removal", "Fluid overload"]
       },
@@ -427,7 +428,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "peritoneal",
         title: "Peritoneal Dialysis",
         description: "Home-based treatment",
-        icon: "/icons/peritoneal.svg",
+        icon: FaXRay,
         details: "Training program for self-care dialysis",
         commonUses: ["Chronic dialysis", "Home therapy", "Pediatric cases"]
       }
@@ -491,7 +492,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "als",
         title: "Advanced Life Support",
         description: "Mobile ICU ambulances",
-        icon: "/icons/als.svg",
+        icon: FaXRay,
         details: "Staffed by emergency physicians with full crash cart",
         commonUses: ["Cardiac emergencies", "Trauma cases", "Critical transfers"]
       },
@@ -499,7 +500,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "bls",
         title: "Basic Life Support",
         description: "Emergency transport",
-        icon: "/icons/ambulance.svg",
+        icon: FaXRay,
         details: "EMT-staffed ambulances for stable patients",
         commonUses: ["Hospital transfers", "Non-emergency transport", "Discharge pickup"]
       }
@@ -568,7 +569,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "meal-planning",
         title: "Meal Planning",
         description: "Customized nutrition plans",
-        icon: "/icons/meal-plan.svg",
+        icon: FaXRay,
         details: "Dietitian-designed meals for specific health conditions",
         commonUses: ["Diabetes management", "Cardiac diets", "Post-surgical nutrition"]
       },
@@ -576,7 +577,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "therapeutic-diets",
         title: "Therapeutic Diets",
         description: "Specialized meal preparation",
-        icon: "/icons/nutrition.svg",
+        icon: FaXRay,
         details: "Meals tailored to medical requirements",
         commonUses: ["Renal diets", "Pureed diets", "Allergy-safe meals"]
       }
@@ -640,7 +641,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "linen-service",
         title: "Linen Service",
         description: "Bedding and gown cleaning",
-        icon: "/icons/bed-linen.svg",
+        icon: FaXRay,
         details: "Sanitary processing of all hospital linens",
         commonUses: ["Bed sheets", "Patient gowns", "Blankets"]
       },
@@ -648,7 +649,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "personal-laundry",
         title: "Personal Laundry",
         description: "Patient clothing care",
-        icon: "/icons/t-shirt.svg",
+        icon: FaXRay,
         details: "Gentle cleaning of personal items",
         commonUses: ["Everyday clothing", "Robes", "Special garments"]
       }
@@ -712,7 +713,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "room-cleaning",
         title: "Room Cleaning",
         description: "Daily sanitation service",
-        icon: "/icons/cleaning.svg",
+        icon: FaXRay,
         details: "Thorough disinfection of patient areas",
         commonUses: ["Patient rooms", "Bathrooms", "Common areas"]
       },
@@ -720,7 +721,7 @@ export const diagnosticImagingData : SupportServiceProps= {
         id: "waste-management",
         title: "Waste Management",
         description: "Medical waste disposal",
-        icon: "/icons/trash.svg",
+        icon: FaXRay,
         details: "Safe handling of biohazard materials",
         commonUses: ["Sharps containers", "Biohazard bags", "Recycling"]
       }
@@ -784,7 +785,7 @@ export const diagnosticImagingData : SupportServiceProps= {
       id: "patrols",
       title: "Facility Patrols",
       description: "24/7 monitoring",
-      icon: "/icons/security-camera.svg",
+      icon: FaXRay,
       details: "Regular rounds of all hospital areas",
       commonUses: ["Building security", "Parking lot safety", "Emergency response"]
     },
@@ -792,7 +793,7 @@ export const diagnosticImagingData : SupportServiceProps= {
       id: "access-control",
       title: "Access Control",
       description: "Restricted area management",
-      icon: "/icons/id-card.svg",
+      icon: FaXRay,
       details: "Secure entry to sensitive locations",
       commonUses: ["NICU access", "Pharmacy security", "Staff areas"]
     }

@@ -21,6 +21,7 @@ const LeadershipPage = (props: LeaderPageProps) => {
         thirdSectionDescription,
         fourthSectionDescription,
         fifthSectionDescription,
+        journeyHeading,
         videoModalForJourney,
     } = props;
 
@@ -248,7 +249,7 @@ const LeadershipPage = (props: LeaderPageProps) => {
                     transition={{ duration: 0.4 }}
                     className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-6"
                 >
-                    Journey
+                    {journeyHeading}
                 </motion.h2>
                 <motion.div
                     initial="hidden"

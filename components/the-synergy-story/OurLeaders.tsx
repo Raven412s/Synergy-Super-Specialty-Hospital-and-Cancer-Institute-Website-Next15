@@ -1,5 +1,5 @@
 "use client"
-import { Leaders } from '@/data';
+import { useLeaders } from '@/data';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { LeaderCard } from '../global/LeaderCard';
@@ -7,7 +7,7 @@ import { LeaderCard } from '../global/LeaderCard';
 export const OurLeaders = () => {
     const LeaderRef = useRef(null);
     const isInView = useInView(LeaderRef, { once: true, margin: "-50px" });
-
+    const Leaders = useLeaders()
     return (
         <section
             ref={LeaderRef}

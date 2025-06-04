@@ -1,4 +1,5 @@
-import React, { ComponentPropsWithoutRef } from "react"
+import React, { ComponentPropsWithoutRef, ReactElement } from "react"
+import { IconType } from "react-icons/lib"
 
 
 interface link  {
@@ -78,6 +79,7 @@ export  interface VideoModalTriggerProps  extends ComponentPropsWithoutRef<"div"
     thirdSectionDescription: string[]
     fourthSectionDescription: string[]
     fifthSectionDescription: string
+    journeyHeading:string
     videoModalForJourney: {
       image: string
       videoUrl: string
@@ -187,32 +189,39 @@ export  interface Service {
 }
 
 export interface SupportServiceProps {
-    heroImage: string
-    title: string
-    description: string
-    services: Service[]
-    preparationTips: string[]
+    heroImage: string;
+    title: string;
+    description: string;
+    services: {
+        id: string;
+        icon: IconType;
+        title: string;
+        description: string;
+        details: string;
+        commonUses: string[];
+    }[];
+    preparationTips: string[];
     whyChoose: {
-        title: string
+        title: string;
         items: {
-            badge: string
-            title: string
-            description: string
-        }[]
-    }
+            badge: string;
+            title: string;
+            description: string;
+        }[];
+    };
     faqs: {
-        question: string
-        answer: string
-    }[]
+        question: string;
+        answer: string;
+    }[];
     cta: {
-        title: string
-        description: string
+        title: string;
+        description: string;
         buttons: {
-            text: string
-            variant: "default" | "outline"
-            onClick: () => void
-        }[]
-    }
+            text: string;
+            variant: string;
+            onClick: () => void;
+        }[];
+    };
 }
 
 export interface CancerTypeData {

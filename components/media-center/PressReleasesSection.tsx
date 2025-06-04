@@ -39,8 +39,8 @@ export const PressReleasesSection = () => {
     ]
 
     return (
-        <section className='w-full px-2 sm:px-4 lg:px-8 py-8 md:py-12' id='press-releases'>
-            <div className="bg-white rounded-2xl md:rounded-3xl border border-neutral-200 shadow-sm md:shadow-expanded p-4 md:p-6 lg:p-8 flex flex-col lg:flex-row-reverse gap-6 lg:gap-8">
+        <section className='min-h-[80vh] w-full px-2 md:px-6 lg:px-24 py-4' id='press-releases'>
+            <div className="lg:p-8 md:px-4 px-2 py-5 rounded-3xl bg-white flex flex-col lg:flex-row-reverse gap-6 border-3 border-neutral-200 shadow-expanded">
                 {/* Interactive Timeline - Hidden on mobile, shown from md upwards */}
                 <motion.div
                     className="hidden md:block w-full lg:w-1/3"
@@ -159,7 +159,7 @@ export const PressReleasesSection = () => {
                                             shareText={`${release.title}: ${release.summary}`}
                                             shareUrl={`https://synergy-website-alpha.vercel.app${release.link}` || window.location.href}
                                             className="gap-1 md:gap-2 hover:bg-synergy-pink/10 text-synergy-pink hover:text-synergy-pink text-xs md:text-sm"
-                                            
+
                                         >
                                             <Share2 className="w-3 h-3 md:w-4 md:h-4" />
                                             Share

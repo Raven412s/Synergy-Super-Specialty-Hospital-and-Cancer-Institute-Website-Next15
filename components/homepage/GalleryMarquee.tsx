@@ -1,25 +1,26 @@
 "use client"
 
-import { MdArrowOutward } from "react-icons/md";
-import Marquee from 'react-fast-marquee'
-import { FaPlay } from 'react-icons/fa6'
-import { ImageWithFallback } from '../global/ImageWithFallback'
-import { Button } from '../ui/button'
+import { useGalleryItems } from "@/data/mediaData";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { galleryItems } from "@/data/mediaData";
+import Marquee from 'react-fast-marquee';
+import { MdArrowOutward } from "react-icons/md";
+import { Button } from '../ui/button';
 
 
 
 export const GalleryMarquee = () => {
-
+    const galleryItems = useGalleryItems()
+    console.log(galleryItems)
+const t = useTranslations('homepage.GalleryMarquee')
     return (
         <div className="py-10 overflow-hidden w-full " >
             <div className="p-3 flex flex-col items-center justify-start">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-left text-heading mb-4">
-                    Media Gallery
+                    {t('mediaGallery')}
                 </h2>
                 <p className="text-lg md:text-lg text-gray-700 mb-8 max-w-4xl">
-                    Explore our collection of photos and videos showcasing hospital facilities, medical advancements, community events, and patient stories.
+                    {t('subtitle')}
                 </p>
             </div>
 
@@ -30,7 +31,7 @@ export const GalleryMarquee = () => {
                 gradient={false}
                 pauseOnHover={true}
             >
-                {galleryItems.map((item) => (
+                {/* {galleryItems.map((item) => (
                     <div
                         key={item.id}
                         className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 mx-4"
@@ -62,7 +63,7 @@ export const GalleryMarquee = () => {
                             </div>
                         </div>
                     </div>
-                ))}
+                ))} */}
             </Marquee>
 
             <div className="w-full flex items-center justify-center">
@@ -72,7 +73,7 @@ export const GalleryMarquee = () => {
                     variant={"default"}
                     size={"lg"}
                 >
-                    <span>view more</span>
+                    <span>{t('viewMore')}</span>
                     <MdArrowOutward size={24} />
                 </Button>
                 </Link>

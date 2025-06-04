@@ -10,27 +10,29 @@ import { cn } from "@/lib/utils";
 import { MinusCircle, PlusCircle } from "lucide-react";
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-
-interface FAQItem {
-    question: string;
-    answer: string;
-}
+import { useFaqItems } from "@/data";
 
 interface FaqAccordionProps {
-    items: FAQItem[];
+    className?: string;
+    items?: Array<{
+        question: string;
+        answer: string;
+    }>;
 }
 
-export default function FaqAccordion({ items }: FaqAccordionProps) {
+export default function FaqAccordion({ className, items: propItems }: FaqAccordionProps) {
     const [openItem, setOpenItem] = useState<string | null>(null);
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.3 }); // Runs only once when 30% visible
+    const defaultItems = useFaqItems();
+    const items = propItems || defaultItems;
 
     const handleToggle = (itemValue: string) => {
         setOpenItem((prev) => (prev === itemValue ? null : itemValue));
     };
 
     return (
-        <Accordion type="single" collapsible className="w-full space-y-3" ref={ref}>
+        <Accordion type="single" collapsible className={cn("w-full space-y-3", className)} ref={ref}>
             {items.map((item, index) => {
                 const value = `item-${index}`;
                 const isOpen = openItem === value;
@@ -46,33 +48,20 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
                             ease: "easeOut",
                         }}
                     >
-                        <AccordionItem
-                            value={value}
-                            className={cn(
-                                "rounded-lg bg-muted/30 !border !border-indigo-200 focus-visible:!ring-0",
-                                isOpen && "shadow-expanded"
-                            )}
-                        >
+                        <AccordionItem value={value} className="border-none">
                             <AccordionTrigger
                                 onClick={() => handleToggle(value)}
-                                className={cn(
-                                    "flex justify-between items-center px-4 py-3 text-left text-base lg:text-lg font-medium hover:no-underline",
-                                    isOpen ? "text-primary" : "text-foreground"
-                                )}
+                                className="flex items-center justify-between w-full p-4 text-left bg-white rounded-lg shadow-sm hover:bg-gray-50 transition-colors"
                             >
-                                <span className="w-full text-sm md:text-base">
-                                    {item.question}
-                                </span>
-                                <span className="w-max">
-                                    {isOpen ? (
-                                        <MinusCircle className="size-7 md:size-8 text-primary" />
-                                    ) : (
-                                        <PlusCircle className="size-7 md:size-8 text-primary" />
-                                    )}
-                                </span>
+                                <span className="font-medium text-gray-900">{item.question}</span>
+                                {isOpen ? (
+                                    <MinusCircle className="h-5 w-5 text-gray-500" />
+                                ) : (
+                                    <PlusCircle className="h-5 w-5 text-gray-500" />
+                                )}
                             </AccordionTrigger>
-                            <AccordionContent className="px-4 text-gray-800 text-base">
-                                <p className="max-w-3/4">{item.answer}</p>
+                            <AccordionContent className="px-4 py-3 text-gray-600 bg-gray-50 rounded-b-lg">
+                                {item.answer}
                             </AccordionContent>
                         </AccordionItem>
                     </motion.div>

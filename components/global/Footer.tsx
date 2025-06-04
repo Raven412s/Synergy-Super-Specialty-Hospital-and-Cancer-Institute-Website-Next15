@@ -1,13 +1,15 @@
 "use client"
-import { menuItems } from '@/data';
+import { useMenuItems } from '@/data';
 import Link from 'next/link';
+import { useState } from 'react';
 import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 import { SiGooglemaps } from "react-icons/si";
 import { FooterFormContainer } from './FooterFormContainer';
-import { useState } from 'react';
 
 export const Footer = () => {
     const [expandedItems, setExpandedItems] = useState<Record<string, Record<string, number>>>({});
+    const menuItems = useMenuItems();
+
 
     const toggleExpand = (menuLabel: string, pageName: string, currentLimit: number, totalItems: number) => {
         setExpandedItems(prev => ({
@@ -23,7 +25,7 @@ export const Footer = () => {
         <footer
             id="footer"
             className="relative w-full mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-white "
-            
+
         >
             {/* Top Section - Form and Map */}
             <div className="flex flex-col lg:flex-row mb-8 gap-5 w-full">

@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import PatientTestimonialMarquee from "@/components/global/PatientTestimonialMarquee";
-import { testimonialsForMarquee } from "@/data";
 
 export const PatientTestimonials = () => {
     const ref = useRef(null);
@@ -21,7 +20,7 @@ export const PatientTestimonials = () => {
                     See What Our Patients Say
                 </motion.h1>
 
-                <PatientTestimonialMarquee marqueeArray={testimonialsForMarquee} />
+                <PatientTestimonialMarquee />
             </div>
         </section>
     );

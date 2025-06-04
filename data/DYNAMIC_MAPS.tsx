@@ -7,8 +7,8 @@ import { VictoryStories } from "@/components/Modules/cancer-survivors/stories-of
 import { CounselingAndMentalHealth } from "@/components/Modules/cancer-survivors/support-programs/CounselingAndMentalHealth"
 import { RehabilationPrograms } from "@/components/Modules/cancer-survivors/support-programs/RehabilationPrograms"
 
+import { PatientTestimonials } from "@/components/Modules/cancer-survivors/stories-of-hope/PatientTestimonials"
 import { DoctorsPage } from "@/components/Modules/discover-synergy/doctors/DoctorsPage"
-import LeadershipPage from "@/components/Modules/discover-synergy/leadership/LeadershipPage"
 import { Faqs } from "@/components/Modules/health-library/faqs/Faqs"
 import { CancerPrevention } from "@/components/Modules/health-library/patient-education/CancerPrevention"
 import { DiagnosisAndStaging } from "@/components/Modules/health-library/patient-education/DiagnosisAndStaging"
@@ -21,32 +21,21 @@ import { InPatientFacilities } from "@/components/Modules/patient-care/InPatient
 import Insurance from "@/components/Modules/patient-care/Insurance"
 import { OutPatientClinic } from "@/components/Modules/patient-care/OutPatientClinic"
 import { SecondOpinion } from "@/components/Modules/patient-care/SecondOpinion"
+import AdmissionDischarge from "@/components/Modules/services/administrative-services/AdmissionDischarge"
+import MedicalRecords from "@/components/Modules/services/administrative-services/MedicalRecords"
 import DiagnosticServices from "@/components/Modules/services/DiagnosticServices"
 import ServicesPage from "@/components/Modules/services/ServicesPage"
 import DepartmentPage from "@/components/Modules/services/SingleServicePage"
 import SpecializedServices from "@/components/Modules/services/SpecializedServices"
 import Ambulance from "@/components/Modules/services/support-services/Ambulance"
 import BloodBank from "@/components/Modules/services/support-services/BloodBank"
-import { DiagnosticImaging } from "@/components/Modules/services/support-services/DiagnosticImaging"
-import { Dialysis } from "@/components/Modules/services/support-services/Dialysis"
 import { Dietary } from "@/components/Modules/services/support-services/Dietary"
 import { HouseKeeping } from "@/components/Modules/services/support-services/HouseKeeping"
 import { Laundry } from "@/components/Modules/services/support-services/Laundry"
 import { Pharmacy } from "@/components/Modules/services/support-services/Pharmacy"
-import { Physiotherapy } from "@/components/Modules/services/support-services/Physiotherapy"
 import { Security } from "@/components/Modules/services/support-services/Security"
 import SupportServicesPage from "@/components/Modules/services/support-services/SupportServicesPage"
-import { leaderAlokTiwari, leaderAnjaliJain, leaderSaurabhMishra } from "."
-import AdmissionDischarge from "@/components/Modules/services/administrative-services/AdmissionDischarge"
-import MedicalRecords from "@/components/Modules/services/administrative-services/MedicalRecords"
-import { PatientTestimonials } from "@/components/Modules/cancer-survivors/stories-of-hope/PatientTestimonials"
 
-
-export const LeadershipMap = {
-    "Dr-Alok-Tiwari": <LeadershipPage {...leaderAlokTiwari} />,
-    "Dr-Anjali-Jain": <LeadershipPage {...leaderAnjaliJain} />,
-    "Dr-Saurabh-Mishra": <LeadershipPage {...leaderSaurabhMishra} />
-}
 
 export const DoctorsMap = {
     "Dr-Alok-Tiwari": <DoctorsPage />,
