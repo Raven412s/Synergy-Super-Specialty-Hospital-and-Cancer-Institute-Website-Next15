@@ -74,10 +74,10 @@ export const Homepage = () => {
                 <div className="max-w-6xl mx-auto space-y-6">
                     <div className="space-y-4 text-center">
                         <h2 className="text-heading text-2xl sm:text-3xl lg:text-4xl">
-                            Frequently Asked Questions
+                            {t('FaqsSection.title')}
                         </h2>
                         <p className="text-slate-600 text-sm sm:text-base lg:text-lg">
-                            Find answers to common questions about our services, treatments, appointments...
+                            {t('FaqsSection.subtitle')}
                         </p>
                     </div>
                     <FaqAccordion items={generalQuestions} />

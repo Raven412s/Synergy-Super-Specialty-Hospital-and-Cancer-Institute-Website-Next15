@@ -1,7 +1,8 @@
 "use client"
 import React, { useRef } from 'react'
 import { useInView, motion } from 'framer-motion';
-import { awards, dailySchedule, milestones } from '@/data/rest-sections-data';
+import { useAwards, useDailySchedule, useMilestones } from '@/data/rest-sections-data';
+import { useTranslations } from 'next-intl';
 
 export const RestSections = () => {
     const awardsRef = useRef(null);
@@ -13,7 +14,11 @@ export const RestSections = () => {
     const isAchievementsInView = useInView(achievementsRef, { once: true, margin: "-50px" });
     const isDayAtSynergyInView = useInView(dayAtSynergyRef, { once: true, margin: "-50px" });
     const isDailyVisionInView = useInView(dailyVisionRef, { once: true, margin: "-50px" });
+    const awards = useAwards()
+    const milestones = useMilestones()
+    const { dailySchedule, cards } = useDailySchedule()
 
+    const t = useTranslations('TheSynergyStory.RestSections')
     return (
         <div className="space-y-8 md:space-y-12">
             {/* Awards and Accolades Section */}
@@ -30,12 +35,12 @@ export const RestSections = () => {
                             transition={{ duration: 0.5, ease: "easeOut" }}
                             className="text-2xl sm:text-3xl font-bold text-gray-900"
                         >
-                            Awards and Accolades
+                            {t('AwardsSection.title')}
                         </motion.h2>
 
                         <div className="space-y-6">
                             <p className="text-gray-700 leading-relaxed max-w-3xl">
-                                Our recognitions reflect the dedication of our team who work tirelessly to deliver outstanding healthcare services.
+                                {t('AwardsSection.description')}
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4">
@@ -61,7 +66,7 @@ export const RestSections = () => {
                             </div>
 
                             <p className="text-gray-600 italic text-sm text-center max-w-2xl mx-auto">
-                                &quot;These recognitions motivate us to continually raise the bar in patient-centered care.&quot;
+                                &quot;{t('AwardsSection.summary')}&quot;
                             </p>
                         </div>
                     </div>
@@ -82,12 +87,12 @@ export const RestSections = () => {
                             transition={{ duration: 0.5, ease: "easeOut" }}
                             className="text-2xl sm:text-3xl font-bold text-gray-900"
                         >
-                            Achievements and Milestones
+                            {t('MilestonesSection.title')}
                         </motion.h2>
 
                         <div className="space-y-6">
                             <p className="text-gray-700 leading-relaxed max-w-3xl">
-                                Significant milestones that mark our journey toward transforming healthcare delivery.
+                                {t('MilestonesSection.description')}
                             </p>
 
                             <div className="relative">
@@ -121,9 +126,9 @@ export const RestSections = () => {
                             </div>
 
                             <div className="bg-yellow-50 border-l-2 border-yellow-400 p-4 rounded-r">
-                                <h3 className="font-semibold text-gray-800 mb-2">Looking Ahead</h3>
+                                <h3 className="font-semibold text-gray-800 mb-2">{t('MilestonesSection.summaryTitle')}</h3>
                                 <p className="text-gray-700 text-sm">
-                                    Expanding our bone marrow transplant unit and establishing a Center for Precision Oncology.
+                                    {t('MilestonesSection.summaryDescription')}
                                 </p>
                             </div>
                         </div>
@@ -145,20 +150,16 @@ export const RestSections = () => {
                             transition={{ duration: 0.5, ease: "easeOut" }}
                             className="text-2xl sm:text-3xl font-bold text-gray-900"
                         >
-                            A Day at Synergy
+                            {t('DayAtSynergySection.title')}
                         </motion.h2>
 
                         <div className="space-y-6">
                             <p className="text-gray-700 leading-relaxed max-w-3xl">
-                                Our hospital operates like a well-coordinated symphony where expertise meets empathy.
+                                {t('DayAtSynergySection.description')}
                             </p>
 
                             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                {[
-                                    { icon: "👨‍⚕️", color: "blue", title: "Clinical Excellence", description: "200+ specialists conducting 150+ procedures daily" },
-                                    { icon: "❤️", color: "green", title: "Patient Interactions", description: "500+ outpatients receive personalized care" },
-                                    { icon: "🔬", color: "purple", title: "Innovation", description: "15+ ongoing clinical trials" }
-                                ].map((item, index) => (
+                                {cards.map((item, index) => (
                                     <motion.div
                                         key={index}
                                         initial={{ scale: 0.95, opacity: 0 }}
@@ -174,7 +175,7 @@ export const RestSections = () => {
                             </div>
 
                             <div ref={dailyVisionRef} className="mt-6 space-y-6">
-                                <h3 className="text-xl font-bold text-gray-800">Daily Rhythm</h3>
+                                <h3 className="text-xl font-bold text-gray-800">{t('DayAtSynergySection.subtitle')}</h3>
 
                                 <div className="relative">
                                     <div className="hidden md:block absolute left-5 h-full w-0.5 bg-gradient-to-b from-blue-300 to-purple-400" />
@@ -200,7 +201,7 @@ export const RestSections = () => {
                                 </div>
 
                                 <p className="text-gray-600 italic text-sm text-center max-w-2xl mx-auto">
-                                    &quot;Every day at Synergy brings new challenges, new breakthroughs, and most importantly — new hope.&quot;
+                                    &quot;{t('DayAtSynergySection.summary')}&quot;
                                 </p>
                             </div>
                         </div>

@@ -2,11 +2,12 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ImageWithFallback } from '@/components/global/ImageWithFallback'
+import { useTranslations } from 'next-intl';
 
 export const OurMission = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-50px" });
-
+    const t =  useTranslations('TheSynergyStory.OurMission')
     return (
         <section
             ref={ref}
@@ -22,7 +23,7 @@ export const OurMission = () => {
                         transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
                         className="text-3xl sm:text-4xl font-bold text-synergy-blue leading-tight"
                     >
-                        Our Mission
+                        {t('title')}
                     </motion.h2>
 
                     <motion.div
@@ -32,23 +33,23 @@ export const OurMission = () => {
                         className="space-y-5 text-gray-700 text-base leading-relaxed"
                     >
                         <p>
-                            <strong className="text-primary">Synergy Super Speciality Hospital and Cancer Institute (SSSHCI)</strong> is dedicated to becoming the <strong className="text-primary">leading regional destination for cancer care</strong>, empowering patients and eliminating fear surrounding this disease.
+                            <strong className="text-primary">{t('description.strong1')}</strong> {t('description.normal1')} <strong className="text-primary">{t('description.strong2')}</strong>, {t('description.normal2')}
                         </p>
 
                         <p>
-                            Our core values, embodied in <strong className="text-primary">&quot;SYNERGY&quot;</strong>, guide our approach:
+                            {t('body.normal1')} <strong className="text-primary">&quot;{t('body.strong1')}&quot;</strong>, {t('body.normal2')}
                             <span className="block mt-1">
-                                <strong className="text-primary">Saviour</strong>, <strong className="text-primary">Youthfully</strong>, <strong className="text-primary">Nirvana</strong>,
-                                <strong className="text-primary"> Excellence</strong>, <strong className="text-primary">Respect</strong>, <strong className="text-primary">Gutsy</strong>, and <strong className="text-primary">Yours</strong>.
+                                <strong className="text-primary">{t('body.span.strong.0')}</strong>, <strong className="text-primary">{t('body.span.strong.1')}</strong>, <strong className="text-primary">{t('body.span.strong.2')}</strong>,
+                                <strong className="text-primary"> {t('body.span.strong.3')}</strong>, <strong className="text-primary">{t('body.span.strong.4')}</strong>, <strong className="text-primary">{t('body.span.strong.5')}</strong>, {t('body.span.and')} <strong className="text-primary">{t('body.span.strong.6')}</strong>.
                             </span>
                         </p>
 
                         <p>
-                            Based in <strong className="text-primary">Gorakhpur</strong>, we serve <strong className="text-primary">western Bihar</strong> and <strong className="text-primary">southern Nepal</strong> with a complete range of <strong className="text-primary">cancer care</strong> services including surgery, chemotherapy, immunotherapy, targeted therapy, and palliative care.
+                        {t('body2.normal1')} <strong className="text-primary">{t('body2.strong1')}</strong>, {t('body2.normal2')} <strong className="text-primary">{t('body2.strong2')}</strong> {t('body.span.and')}  <strong className="text-primary">{t('body2.strong3')}</strong> {t('body2.normal3')} <strong className="text-primary">{t('body2.strong4')}</strong> {t('body2.normal4')}
                         </p>
 
                         <p>
-                            We are committed to <strong className="text-primary">quality treatment</strong>, <strong className="text-primary">empathy</strong>, and <strong className="text-primary">professionalism</strong> at every stage of the patient journey.
+                        {t('body2.normal5')} <strong className="text-primary">{t('body2.strong5')}</strong>, <strong className="text-primary">{t('body2.strong6')}</strong>, {t('body.span.and')} <strong className="text-primary">{t('body2.strong7')}</strong> {t('body2.normal6')}
                         </p>
                     </motion.div>
                 </div>

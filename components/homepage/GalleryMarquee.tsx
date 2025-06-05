@@ -6,13 +6,14 @@ import Link from "next/link";
 import Marquee from 'react-fast-marquee';
 import { MdArrowOutward } from "react-icons/md";
 import { Button } from '../ui/button';
+import { ImageWithFallback } from "../global/ImageWithFallback";
+import { FaPlay } from "react-icons/fa6";
 
 
 
 export const GalleryMarquee = () => {
     const galleryItems = useGalleryItems()
-    console.log(galleryItems)
-const t = useTranslations('homepage.GalleryMarquee')
+    const t = useTranslations('homepage.GalleryMarquee')
     return (
         <div className="py-10 overflow-hidden w-full " >
             <div className="p-3 flex flex-col items-center justify-start">
@@ -31,7 +32,7 @@ const t = useTranslations('homepage.GalleryMarquee')
                 gradient={false}
                 pauseOnHover={true}
             >
-                {/* {galleryItems.map((item) => (
+                {galleryItems.map((item) => (
                     <div
                         key={item.id}
                         className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 mx-4"
@@ -63,19 +64,19 @@ const t = useTranslations('homepage.GalleryMarquee')
                             </div>
                         </div>
                     </div>
-                ))} */}
+                ))}
             </Marquee>
 
             <div className="w-full flex items-center justify-center">
                 <Link href={"/media-center#media-gallery"}>
-                <Button
-                    className='capitalize flex items-center justify-between'
-                    variant={"default"}
-                    size={"lg"}
-                >
-                    <span>{t('viewMore')}</span>
-                    <MdArrowOutward size={24} />
-                </Button>
+                    <Button
+                        className='capitalize flex items-center justify-between'
+                        variant={"default"}
+                        size={"lg"}
+                    >
+                        <span>{t('viewMore')}</span>
+                        <MdArrowOutward size={24} />
+                    </Button>
                 </Link>
             </div>
         </div>

@@ -26,7 +26,7 @@ export function LanguageSwitch({ switchLocale, className }: LanguageSwitchProps)
         };
     }, []);
 
-    const result: boolean = scrolled || (pathname !== "/en" && pathname !== "/hi");
+    const result: boolean =  scrolled || (pathname !== "/en" && pathname !== "/hi");
 
     return (
         <Button

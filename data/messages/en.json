@@ -22,41 +22,45 @@
             "heading": "What's New At Synergy",
             "exploreMore": "EXPLORE MORE →",
             "newsItems": [
-              "Synergy & University of Leicester launch Digital Health Centre in India",
-              "Synergy Neuro Conclave 2024",
-              "Synergy Hospitals completes 500 robotic cardiac procedures.",
-              "Synergy Expands AI-based Health Analytics"
+                "Synergy & University of Leicester launch Digital Health Centre in India",
+                "Synergy Neuro Conclave 2024",
+                "Synergy Hospitals completes 500 robotic cardiac procedures.",
+                "Synergy Expands AI-based Health Analytics"
             ]
-          },
-          "Gallery": {
+        },
+        "Gallery": {
             "items": {
-              "1": {
-                "title": "Hospital Inauguration",
-                "category": "Events"
-              },
-              "2": {
-                "title": "Cardiology Department Tour",
-                "category": "Facilities"
-              },
-              "3": {
-                "title": "Annual Health Camp",
-                "category": "Community"
-              },
-              "4": {
-                "title": "New Robotic Surgery System",
-                "category": "Technology"
-              },
-              "5": {
-                "title": "Patient Success Stories",
-                "category": "Testimonials"
-              },
-              "6": {
-                "title": "Research Symposium",
-                "category": "Education"
-              }
+                "1": {
+                    "title": "Hospital Inauguration",
+                    "category": "Events"
+                },
+                "2": {
+                    "title": "Cardiology Department Tour",
+                    "category": "Facilities"
+                },
+                "3": {
+                    "title": "Annual Health Camp",
+                    "category": "Community"
+                },
+                "4": {
+                    "title": "New Robotic Surgery System",
+                    "category": "Technology"
+                },
+                "5": {
+                    "title": "Patient Success Stories",
+                    "category": "Testimonials"
+                },
+                "6": {
+                    "title": "Research Symposium",
+                    "category": "Education"
+                }
             }
-          }
-
+        },
+        "PatientTestimonials": "See What Our Patients Say",
+        "FaqsSection": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Find answers to common questions about our services, treatments, appointments..."
+        }
     },
     "menu": {
         "discoverSynergy": "discover synergy",
@@ -697,6 +701,192 @@
             "journeyHeading": "Journey"
         }
     },
+    "TheSynergyStory": {
+        "OurMission": {
+            "title": "Our Mission",
+            "description": {
+                "strong1": "Synergy Super Speciality Hospital and Cancer Institute (SSSHCI)",
+                "normal1": "is dedicated to becoming the",
+                "strong2": "leading regional destination for cancer care",
+                "normal2": "empowering patients and eliminating fear surrounding this disease."
+            },
+            "body": {
+                "normal1": "Our core values, embodied in",
+                "strong1": "SYNERGY",
+                "normal2": "guide our approach:",
+                "span": {
+                    "strong": [
+                        "Saviour",
+                        "Youthfully",
+                        "Nirvana",
+                        "Excellence",
+                        "Respect",
+                        "Gutsy",
+                        "Yours"
+                    ],
+                    "and": "and"
+                }
+            },
+            "body2": {
+                "normal1": "Based in",
+                "strong1": "Gorakhpur",
+                "normal2": "we serve:",
+                "strong2": "western Bihar",
+                "strong3": "southern Nepal",
+                "normal3": "with a complete range of",
+                "strong4": "cancer care",
+                "normal4": "services including surgery, chemotherapy, immunotherapy, targeted therapy, and palliative care.",
+                "normal5": "We are committed to",
+                "strong5": "quality treatment",
+                "strong6": "empathy",
+                "strong7": "professionalism",
+                "normal6": "at every stage of the patient journey."
+            }
+        },
+        "OurVision": {
+            "title": "Synergy Super Specialty Hospital & Cancer Institute: A Beacon of Hope in the Fight Against Cancer",
+            "description": {
+                "normal1": "Synergy Super Specialty Hospital & Cancer Institute (SSSHCI) stands as a beacon of hope for cancer patients in Eastern Uttar Pradesh, aiming to become the",
+                "strong1": "trusted choice",
+                "normal2": "for comprehensive cancer care."
+            },
+            "vision": {
+                "normal1": "Our vision is to",
+                "strong1": "eliminate the fear of cancer",
+                "normal2": "and demonstrate that it is a",
+                "strong2": "curable disease",
+                "normal3": "through",
+                "strong3": "cost-effective, comprehensive care",
+                "normal4": "."
+            },
+            "location": {
+                "normal1": "Located in Gorakhpur, we serve patients from eastern UP, western Bihar, and southern Nepal with:",
+                "services": [
+                    "Complete team of oncology specialists",
+                    "Modern diagnostic and treatment facilities",
+                    "Comprehensive services including surgery, chemotherapy, immunotherapy, and palliative care"
+                ]
+            },
+            "conclusion": "SSSHCI is more than a medical facility - we're a symbol of hope and resilience in the fight against cancer.",
+            "coreValues": {
+                "title": "Our core values:",
+                "values": [
+                    "Saviour",
+                    "Youthfully",
+                    "Nirvana",
+                    "Excellence",
+                    "Respect",
+                    "Gutsy",
+                    "Yours"
+                ]
+            }
+        },
+        "OurExcellence": {
+            "title": "Synergy Excellence",
+            "subtitle": "A Journey of Compassion, Quality, and Comprehensive Cancer Care",
+            "description": "Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) is committed to offering world-class, affordable, and comprehensive cancer care. With a team of passionate oncology specialists and a focus on innovation and empathy, we provide cutting-edge treatments tailored to each patient's needs."
+        },
+        "OurLeaders": {
+            "title": "Meet Our Leadership",
+            "subtitle": "Guided by a team of experienced professionals dedicated to driving innovation, compassion, and excellence in healthcare.",
+            "description": "Synergy Super Speciality Hospital provides world-class, affordable cancer care with a team of passionate oncology specialists."
+        },
+        "RestSections": {
+            "AwardsSection": {
+                "AwardsData": {
+                    "1": {
+                        "title": "National Excellence in Oncology Care",
+                        "description": "Recognized as the top oncology center in North India for innovative cancer treatments."
+                    },
+                    "2": {
+                        "title": "Best Multispecialty Hospital",
+                        "description": "Awarded by the Healthcare Federation for outstanding services across 12 specialties."
+                    },
+                    "3": {
+                        "title": "Patient Safety Excellence Award",
+                        "description": "Recognized for implementing cutting-edge safety protocols with zero infections in ICU."
+                    },
+                    "4": {
+                        "title": "Pioneer in Robotic Surgery",
+                        "description": "First hospital in the region to perform 500+ successful robotic-assisted procedures."
+                    }
+                },
+                "title": "Awards and Accolades",
+                "description": "Our recognitions reflect the dedication of our team who work tirelessly to deliver outstanding healthcare services.",
+                "summary": "These recognitions motivate us to continually raise the bar in patient-centered care."
+            },
+            "MilestonesSection": {
+                "MilestonesData": {
+                    "1": {
+                        "title": "Expanded to 500 Beds",
+                        "description": "Doubled our capacity to serve more patients with state-of-the-art facilities."
+                    },
+                    "2": {
+                        "title": "Launched Nuclear Medicine Department",
+                        "description": "Introduced advanced PET-CT scanning and radioisotope therapies."
+                    },
+                    "3": {
+                        "title": "10,000 Successful Cancer Surgeries",
+                        "description": "Achieved this landmark while maintaining 98% patient satisfaction."
+                    },
+                    "4": {
+                        "title": "NABH Accreditation",
+                        "description": "Received highest national accreditation for hospital quality standards."
+                    }
+                },
+                "title": "Achievements and Milestones",
+                "description": "Significant milestones that mark our journey toward transforming healthcare delivery.",
+                "summaryTitle": "Looking Ahead",
+                "summaryDescription": " Expanding our bone marrow transplant unit and establishing a Center for Precision Oncology."
+            },
+            "DayAtSynergySection": {
+                "DailyScheduleData": {
+                    "1": {
+                        "activity": "Morning Rounds",
+                        "description": "Doctors review overnight patient progress with nursing teams"
+                    },
+                    "2": {
+                        "activity": "Multidisciplinary Tumor Board",
+                        "description": "Oncology experts collaborate on complex cancer cases"
+                    },
+                    "3": {
+                        "activity": "Theater Sessions Begin",
+                        "description": "Robotic, laparoscopic and open surgeries conducted simultaneously"
+                    },
+                    "4": {
+                        "activity": "Patient Education Sessions",
+                        "description": "Interactive workshops on treatment plans and recovery"
+                    },
+                    "5": {
+                        "activity": "Research Meetings",
+                        "description": "Clinical trial teams review progress on innovative therapies"
+                    },
+                    "6": {
+                        "activity": "Evening Visits",
+                        "description": "Consultants check on post-op patients with personalized attention"
+                    }
+                },
+                "DailyScheduleCards": {
+                    "1": {
+                        "title": "Clinical Excellence",
+                        "description": "200+ specialists conducting 150+ procedures daily"
+                    },
+                    "2": {
+                        "title": "Patient Interactions",
+                        "description": "500+ outpatients receive personalized care"
+                    },
+                    "3": {
+                        "title": "Innovation",
+                        "description": "15+ ongoing clinical trials"
+                    }
+                },
+                "title": "A Day at Synergy",
+                "description": "Our hospital operates like a well-coordinated symphony where expertise meets empathy.",
+                "subtitle": "Daily Rhythm",
+                "summary": "Every day at Synergy brings new challenges, new breakthroughs, and most importantly — new hope."
+            }
+        }
+    },
     "mediaCenter": {
         "synergyInTheNews": {
             "title": "Synergy in the News",
@@ -711,6 +901,5 @@
             },
             "viewAllMedia": "View All Media Coverage"
         }
-
     }
 }

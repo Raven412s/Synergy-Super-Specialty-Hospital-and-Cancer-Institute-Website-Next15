@@ -84,7 +84,7 @@ export function Navbar() {
     }, []);
 
     const result: boolean = isHovered || isScrolled || (pathname !== "/en" && pathname !== "/hi");
-    const switchLocale =  (locale: string) => {
+    const switchLocale = (locale: string) => {
         // Get the current path without the locale prefix
         const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '')
         // Construct the new path with the selected locale
@@ -320,7 +320,9 @@ export function Navbar() {
                 <Link href={"/"} className="w-[160px] h-[68px] !py-2 rounded-none !m-0">
                     <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
                 </Link>
-                <div className="absolute right-10 top-1/2 -translate-y-1/2">
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2 items-center justify-end">
+                    {/* Language Switch */}
+                    <LanguageSwitch switchLocale={switchLocale} />
                     <Sheet open={outerOpen} onOpenChange={setOuterOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost" onClick={() => setOuterOpen(true)}>
@@ -515,6 +517,7 @@ export function Navbar() {
                             )}
                         </AnimatePresence>
                     </Sheet>
+
                 </div>
             </div>
         </div>

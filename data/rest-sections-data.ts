@@ -1,81 +1,106 @@
+import { useTranslations } from "next-intl";
+
     // Awards data
-  export  const awards = [
+  export const useAwards =() => {
+    const t = useTranslations("TheSynergyStory.RestSections.AwardsSection.AwardsData")
+    const awards = [
         {
             year: "2023",
-            title: "National Excellence in Oncology Care",
-            description: "Recognized as the top oncology center in North India for innovative cancer treatments."
+            title:  t('1.title'),
+            description: t('1.description')
         },
         {
             year: "2022",
-            title: "Best Multispecialty Hospital",
-            description: "Awarded by the Healthcare Federation for outstanding services across 12 specialties."
+            title:  t('2.title'),
+            description: t('2.description')
         },
         {
             year: "2021",
-            title: "Patient Safety Excellence Award",
-            description: "Recognized for implementing cutting-edge safety protocols with zero infections in ICU."
+            title:  t('3.title'),
+            description: t('3.description')
         },
         {
             year: "2020",
-            title: "Pioneer in Robotic Surgery",
-            description: "First hospital in the region to perform 500+ successful robotic-assisted procedures."
+            title:  t('4.title'),
+            description: t('4.description')
         }
     ];
 
+    return awards
+  }
+
     // Milestones data
- export   const milestones = [
+export const useMilestones = () => {
+    const t = useTranslations("TheSynergyStory.RestSections.MilestonesSection.MilestonesData")
+    const milestones = [
         {
             year: "2019",
-            title: "Expanded to 500 Beds",
-            description: "Doubled our capacity to serve more patients with state-of-the-art facilities."
+            title: t('1.title'),
+            description: t('1.description')
         },
         {
             year: "2018",
-            title: "Launched Nuclear Medicine Department",
-            description: "Introduced advanced PET-CT scanning and radioisotope therapies."
+            title: t('2.title'),
+            description: t('2.description')
         },
         {
             year: "2017",
-            title: "10,000 Successful Cancer Surgeries",
-            description: "Achieved this landmark while maintaining 98% patient satisfaction."
+            title: t('3.title'),
+            description: t('3.description')
         },
         {
             year: "2016",
-            title: "NABH Accreditation",
-            description: "Received highest national accreditation for hospital quality standards."
+            title: t('4.title'),
+            description: t('4.description')
         }
     ];
 
+    return milestones;
+}
+
     // Day at Synergy timeline
- export   const dailySchedule = [
+export const useDailySchedule = () => {
+    const t = useTranslations("TheSynergyStory.RestSections.DayAtSynergySection.DailyScheduleData")
+    const c = useTranslations("TheSynergyStory.RestSections.DayAtSynergySection.DailyScheduleCards")
+
+    const cards = [
+        { icon: "👨‍⚕️", color: "blue", title: c('1.title'), description: c('1.description') },
+        { icon: "❤️", color: "green", title: c('2.title'), description: c('2.description') },
+        { icon: "🔬", color: "purple", title: c('3.title'), description: c('3.description') }
+    ]
+
+    const dailySchedule = [
         {
             time: "6:00 AM",
-            activity: "Morning Rounds",
-            description: "Doctors review overnight patient progress with nursing teams"
+            activity: t('1.activity'),
+            description: t('1.description')
         },
         {
             time: "8:00 AM",
-            activity: "Multidisciplinary Tumor Board",
-            description: "Oncology experts collaborate on complex cancer cases"
+            activity: t('2.activity'),
+            description: t('2.description')
         },
         {
             time: "10:00 AM",
-            activity: "Theater Sessions Begin",
-            description: "Robotic, laparoscopic and open surgeries conducted simultaneously"
+            activity: t('3.activity'),
+            description: t('3.description')
         },
         {
             time: "1:00 PM",
-            activity: "Patient Education Sessions",
-            description: "Interactive workshops on treatment plans and recovery"
+            activity: t('4.activity'),
+            description: t('4.description')
         },
         {
             time: "3:00 PM",
-            activity: "Research Meetings",
-            description: "Clinical trial teams review progress on innovative therapies"
+            activity: t('5.activity'),
+            description: t('5.description')
         },
         {
             time: "6:00 PM",
-            activity: "Evening Visits",
-            description: "Consultants check on post-op patients with personalized attention"
+            activity: t('6.activity'),
+            description: t('6.description')
         }
     ];
+
+    return { dailySchedule, cards };
+}

@@ -3,11 +3,13 @@ import { useLeaders } from '@/data';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { LeaderCard } from '../global/LeaderCard';
+import { useTranslations } from 'next-intl';
 
 export const OurLeaders = () => {
     const LeaderRef = useRef(null);
     const isInView = useInView(LeaderRef, { once: true, margin: "-50px" });
     const Leaders = useLeaders()
+    const t = useTranslations("TheSynergyStory.OurLeaders")
     return (
         <section
             ref={LeaderRef}
@@ -24,7 +26,7 @@ export const OurLeaders = () => {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         className="text-2xl sm:text-3xl font-semibold text-gray-900"
                     >
-                        Meet Our Leadership
+                        {t('title')}
                     </motion.h2>
 
                     {/* Subheading + Description */}
@@ -35,7 +37,7 @@ export const OurLeaders = () => {
                             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
                             className="text-sm sm:text-base text-gray-600"
                         >
-                            Guided by a team of experienced professionals dedicated to driving innovation, compassion, and excellence in healthcare.
+                            {t('subtitle')}
                         </motion.p>
 
                         <motion.p
@@ -44,7 +46,7 @@ export const OurLeaders = () => {
                             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                             className="text-sm sm:text-base text-gray-700"
                         >
-                            Synergy Super Speciality Hospital provides world-class, affordable cancer care with a team of passionate oncology specialists.
+                            {t('description')}
                         </motion.p>
                     </div>
                 </div>
