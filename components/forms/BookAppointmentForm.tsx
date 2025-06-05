@@ -33,7 +33,7 @@ import {
 import {
     Textarea
 } from "@/components/ui/textarea"
-import { departmentData } from "@/data/departmentData"
+import { useDepartmentData } from "@/data/departmentData"
 import { doctors } from "@/data/doctors"
 import { timeSlots } from "@/data/timeSlot"
 import {
@@ -86,7 +86,7 @@ export default function BookAppointmentForm() {
       'emergency': false,
     }
   })
-
+const departmentData = useDepartmentData()
   // Get available doctors based on selected department
   const availableDoctors = selectedDepartment
   ? doctors.filter((doc) => doc.department.toLowerCase() === selectedDepartment.toLowerCase())

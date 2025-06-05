@@ -1,6 +1,6 @@
 "use client"
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
-import { departmentData } from '@/data/departmentData';
+import { useDepartmentData } from '@/data/departmentData';
 import { DepartmentData } from '@/types';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -35,6 +35,7 @@ const fadeIn = {
 };
 
 export default function ServicesPage() {
+    const departmentData = useDepartmentData()
   return (
     <motion.main
       className="min-h-screen bg-gray-50"

@@ -2,7 +2,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { departmentData } from '@/data/departmentData';
+import { useDepartmentData } from '@/data/departmentData';
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -63,7 +63,7 @@ export default function DepartmentPage() {
 
   // Extract slug from pathname
   const slug = pathname?.split('/').pop() || '';
-
+const departmentData = useDepartmentData()
   // Find matching department data
   const department = departmentData.find(dept => dept.slug === slug);
 
@@ -365,7 +365,7 @@ export default function DepartmentPage() {
         className="bg-blue-900 text-white py-16 rounded-lg"
       >
         <div className="max-w-4xl mx-auto text-center px-4">
-          <motion.h2 variants={itemVariants} className={`${newYorkTypography.h1} mb-6`}>
+          <motion.h2 variants={itemVariants} className={`${newYorkTypography.h1} mb-6 w-max`}>
             {department.cta.title}
           </motion.h2>
           <motion.p variants={itemVariants} className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

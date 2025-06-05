@@ -1142,7 +1142,263 @@
       }
     }
   }
+},
+"Gynecology": {
+  "name": "Gynecology & Obstetrics",
+  "heroTitle": "Comprehensive Women's Health Services",
+  "heroSubtitle": "Expert care for all stages of a woman's life in Gorakhpur.",
+  "overview": {
+    "title": "Our Women's Health Approach",
+    "description": [
+      "The Gynecology & Obstetrics department at Synergy Super Speciality Hospital provides complete care for women through all life stages, from adolescence through menopause.",
+      "Our team offers compassionate, personalized care for routine gynecologic needs, high-risk pregnancies, fertility concerns, and gynecologic surgeries."
+    ],
+    "whyChooseUs": [
+      "Experienced OB/GYN specialists",
+      "Comprehensive prenatal and maternity care",
+      "Advanced gynecologic surgery options",
+      "Personalized approach to women's health"
+    ]
+  },
+  "treatments": {
+    "title": "Our Services",
+    "items": {
+      "prenatalCare": {
+        "title": "Prenatal & Maternity Care",
+        "description": "Comprehensive care through pregnancy, delivery, and postpartum."
+      },
+      "gynecologicSurgery": {
+        "title": "Gynecologic Surgery",
+        "description": "Minimally invasive options for hysterectomy, fibroid removal, and other procedures."
+      },
+      "preventiveCare": {
+        "title": "Preventive Care",
+        "description": "Annual exams, cancer screenings, and contraceptive counseling."
+      }
+    }
+  },
+  "stats": {
+    "title": "Women's Health Statistics",
+    "items": {
+      "babiesDelivered": {
+        "value": "2,000+",
+        "label": "Healthy Babies Delivered"
+      },
+      "surgeryRate": {
+        "value": "90%",
+        "label": "Minimally Invasive Gynecologic Surgeries"
+      },
+      "availability": {
+        "value": "24/7",
+        "label": "Labor & Delivery Availability"
+      },
+      "experienceYears": {
+        "value": "30+",
+        "label": "Years of Combined Experience"
+      }
+    }
+  },
+  "team": {
+    "title": "Our OB/GYN Team",
+    "members": {
+      "drAnjali": {
+        "name": "Dr. Anjali Jain",
+        "role": "Gynecologist",
+        "credentials": "MBBS, MD (General Physician), GENERAL MEDICINE",
+        "specialty": "General Gynecology, Obstetrics"
+      }
+    }
+  },
+  "facilities": {
+    "title": "Women's Health Facilities",
+    "description": "Our department offers comfortable, private spaces for all women's health needs.",
+    "features": [
+      "Modern labor and delivery suites",
+      "Advanced ultrasound technology",
+      "Comfortable exam rooms",
+      "Private consultation areas",
+      "Minimally invasive surgery capabilities"
+    ]
+  },
+  "research": {
+    "title": "Women’s Health Research",
+    "items": {
+      "pregnancyOutcomes": {
+        "title": "Pregnancy Outcomes",
+        "content": "Studies on optimizing care for high-risk pregnancies."
+      },
+      "minimallyInvasive": {
+        "title": "Minimally Invasive Techniques",
+        "content": "Developing new approaches to gynecologic surgery."
+      },
+      "reproductiveHealth": {
+        "title": "Reproductive Health",
+        "content": "Research on common gynecologic conditions."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Patient Experiences",
+    "items": {
+      "priya": {
+        "quote": "The OB team made my pregnancy and delivery such a positive experience with their expertise and kindness.",
+        "author": "Priya K."
+      },
+      "ananya": {
+        "quote": "My gynecologic surgery went smoothly with minimal discomfort thanks to their skilled approach.",
+        "author": "Ananya S."
+      }
+    }
+  },
+  "cta": {
+    "title": "Schedule Your Women’s Health Visit",
+    "subtitle": "Our OB/GYN team is ready to provide compassionate, expert care.",
+    "buttons": {
+      "appointment": {
+        "text": "Book Appointment"
+      },
+      "learnMore": {
+        "text": "Learn About Services"
+      }
+    }
+  }
+},
+"Neurology": {
+  "name": "Neurology",
+  "heroTitle": "Expert Care for Neurological Conditions",
+  "heroSubtitle": "Comprehensive diagnosis and treatment for disorders of the nervous system.",
+
+  "overview": {
+    "title": "Our Neurological Approach",
+    "description": [
+      "Our Neurology department provides expert care for patients with disorders of the brain, spinal cord, nerves, and muscles. We combine advanced diagnostic techniques with evidence-based treatments to manage complex neurological conditions.",
+      "Our team of specialists works collaboratively to develop personalized treatment plans for conditions ranging from migraines to multiple sclerosis, ensuring each patient receives the most appropriate care."
+    ],
+    "whyChooseUs": [
+      "Board-certified neurologists with specialized expertise",
+      "Advanced neurodiagnostic testing capabilities",
+      "Multidisciplinary approach to complex cases",
+      "Comprehensive follow-up and rehabilitation planning"
+    ]
+  },
+
+  "treatments": {
+    "title": "Neurological Services",
+    "items": {
+      "strokeCare": {
+        "title": "Stroke Care",
+        "description": "Comprehensive stroke prevention, acute treatment, and rehabilitation services."
+      },
+      "epilepsy": {
+        "title": "Epilepsy Management",
+        "description": "Advanced diagnostics and treatment for seizure disorders, including medication management and monitoring."
+      },
+      "movementDisorders": {
+        "title": "Movement Disorders",
+        "description": "Specialized care for Parkinson's disease, tremors, and other movement disorders."
+      }
+    }
+  },
+
+  "stats": {
+    "title": "Neurology By The Numbers",
+    "items": {
+      "evaluations": {
+        "value": "10,000+",
+        "label": "Neurological Evaluations Annually"
+      },
+      "satisfaction": {
+        "value": "95%",
+        "label": "Patient Satisfaction Rate"
+      },
+      "strokeCare": {
+        "value": "24/7",
+        "label": "Acute Stroke Care Availability"
+      },
+      "services": {
+        "value": "15+",
+        "label": "Specialized Neurological Services"
+      }
+    }
+  },
+
+  "team": {
+    "title": "Our Neurology Specialists",
+    "members": {
+      "drTripurari": {
+        "name": "Dr. Tripurari Pandey",
+        "role": "Neurologist",
+        "credentials": "M.B.B.S, MCH Neuro Surgeon",
+        "specialty": "Neurological Disorders"
+      },
+      "drAnurag": {
+        "name": "Dr. Anurag Singh",
+        "role": "Neurologist",
+        "credentials": "M.B.B.S, MS, MCH Neuro Surgeon",
+        "specialty": "Neurological Surgery"
+      }
+    }
+  },
+
+  "facilities": {
+    "title": "Neurology Facilities",
+    "description": "Our neurology department features advanced diagnostic and treatment technologies.",
+    "features": [
+      "State-of-the-art EEG and EMG equipment",
+      "Advanced neuroimaging capabilities",
+      "Dedicated stroke unit",
+      "Specialized neurophysiology lab",
+      "Comfortable infusion center for neurological treatments"
+    ]
+  },
+
+  "research": {
+    "title": "Neurology Research",
+    "items": {
+      "strokeRecovery": {
+        "title": "Stroke Recovery",
+        "content": "Investigating new approaches to enhance recovery after stroke."
+      },
+      "neuroDegeneration": {
+        "title": "Neurodegenerative Diseases",
+        "content": "Research into novel treatments for Alzheimer's and Parkinson's diseases."
+      },
+      "headacheTherapies": {
+        "title": "Headache Therapies",
+        "content": "Developing more effective treatments for chronic migraine and headache disorders."
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "Patient Stories",
+    "items": {
+      "anita": {
+        "quote": "The neurology team accurately diagnosed my condition after years of uncertainty.",
+        "author": "Anita R."
+      },
+      "vikram": {
+        "quote": "Their compassionate care made all the difference in my recovery from stroke.",
+        "author": "Vikram S."
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Schedule Your Neurological Consultation",
+    "subtitle": "Contact us to book an appointment with our neurology specialists.",
+    "buttons": {
+      "bookNow": {
+        "text": "Book Now"
+      },
+      "learnMore": {
+        "text": "Learn More"
+      }
+    }
+  }
 }
+
+
 
 
 

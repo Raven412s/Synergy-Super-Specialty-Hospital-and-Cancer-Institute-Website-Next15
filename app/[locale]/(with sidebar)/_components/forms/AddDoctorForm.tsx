@@ -4,7 +4,7 @@ import { useForm, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Plus, Trash2, Calendar, User } from 'lucide-react';
-import { departmentData } from '@/data/departmentData';
+import { useDepartmentData } from '@/data/departmentData';
 
 // Form Schema
 const doctorSchema = z.object({
@@ -28,7 +28,7 @@ interface SavedDoctorData extends DoctorFormData {
 
 const DAYS_OF_WEEK = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-const DEPARTMENTS = departmentData.map((dept) => dept.name);
+
 
 export default function AddDoctorForm() {
     const [savedData, setSavedData] = useState<SavedDoctorData | null>(null);
@@ -51,7 +51,8 @@ export default function AddDoctorForm() {
             isSenior: false
         }
     });
-
+    const departmentData = useDepartmentData()
+    const DEPARTMENTS = departmentData.map((dept) => dept.name);
     const { fields, append, remove } = useFieldArray({
         control,
         name: 'availability'

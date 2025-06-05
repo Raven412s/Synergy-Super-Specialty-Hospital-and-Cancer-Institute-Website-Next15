@@ -8,7 +8,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import { departmentData } from "@/data/departmentData";
+import { useDepartmentData } from "@/data/departmentData";
 import { cn } from "@/lib/utils";
 import { DepartmentData } from "@/types";
 import { AnimatePresence, motion } from "framer-motion";
@@ -25,6 +25,7 @@ import { ImageWithFallback } from "../global/ImageWithFallback";
 import { Badge } from "../ui/badge";
 
 export default function SliderWithTriggers() {
+    const departmentData = useDepartmentData()
     const t = useTranslations('SliderWithTriggers');
     const featuredDepartments = departmentData.filter(dept => dept.isFeatured);
     const [isHovered, setIsHovered] = useState<boolean>(false);

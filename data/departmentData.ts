@@ -290,301 +290,300 @@ export const useDepartmentData = () => {
             ]
           },
         },
-
         {
             id: 'gynecology',
             index: 11,
-            name: 'Gynecology & Obstetrics',
+            name: t('Gynecology.name'),
             slug: 'gynecology',
             heroImage: '/department/gynaecology.webp',
             bannerImage: '/department/gynae-banner.jpeg',
-            heroTitle: 'Comprehensive Women\'s Health Services',
-            heroSubtitle: 'Expert care for all stages of a woman\'s life in Gorakhpur.',
+            heroTitle: t('Gynecology.heroTitle'),
+            heroSubtitle: t('Gynecology.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Women\'s Health Approach',
+              title: t('Gynecology.overview.title'),
               description: [
-                'The Gynecology & Obstetrics department at Synergy Super Speciality Hospital provides complete care for women through all life stages, from adolescence through menopause.',
-                'Our team offers compassionate, personalized care for routine gynecologic needs, high-risk pregnancies, fertility concerns, and gynecologic surgeries.'
+                t('Gynecology.overview.description.0'),
+                t('Gynecology.overview.description.1')
               ],
               whyChooseUs: [
-                'Experienced OB/GYN specialists',
-                'Comprehensive prenatal and maternity care',
-                'Advanced gynecologic surgery options',
-                'Personalized approach to women\'s health'
+                t('Gynecology.overview.whyChooseUs.0'),
+                t('Gynecology.overview.whyChooseUs.1'),
+                t('Gynecology.overview.whyChooseUs.2'),
+                t('Gynecology.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('Gynecology.treatments.title'),
               items: [
                 {
-                  title: 'Prenatal & Maternity Care',
-                  description: 'Comprehensive care through pregnancy, delivery, and postpartum.'
+                  title: t('Gynecology.treatments.items.prenatalCare.title'),
+                  description: t('Gynecology.treatments.items.prenatalCare.description')
                 },
                 {
-                  title: 'Gynecologic Surgery',
-                  description: 'Minimally invasive options for hysterectomy, fibroid removal, and other procedures.'
+                  title: t('Gynecology.treatments.items.gynecologicSurgery.title'),
+                  description: t('Gynecology.treatments.items.gynecologicSurgery.description')
                 },
                 {
-                  title: 'Preventive Care',
-                  description: 'Annual exams, cancer screenings, and contraceptive counseling.'
+                  title: t('Gynecology.treatments.items.preventiveCare.title'),
+                  description: t('Gynecology.treatments.items.preventiveCare.description')
                 }
               ]
             },
 
             stats: {
-              title: 'Women\'s Health Statistics',
+              title: t('Gynecology.stats.title'),
               items: [
                 {
-                  value: '2,000+',
-                  label: 'Healthy Babies Delivered'
+                  value: t('Gynecology.stats.items.babiesDelivered.value'),
+                  label: t('Gynecology.stats.items.babiesDelivered.label')
                 },
                 {
-                  value: '90%',
-                  label: 'Minimally Invasive Gynecologic Surgeries'
+                  value: t('Gynecology.stats.items.surgeryRate.value'),
+                  label: t('Gynecology.stats.items.surgeryRate.label')
                 },
                 {
-                  value: '24/7',
-                  label: 'Labor & Delivery Availability'
+                  value: t('Gynecology.stats.items.availability.value'),
+                  label: t('Gynecology.stats.items.availability.label')
                 },
                 {
-                  value: '30+',
-                  label: 'Years of Combined Experience'
+                  value: t('Gynecology.stats.items.experienceYears.value'),
+                  label: t('Gynecology.stats.items.experienceYears.label')
                 }
               ]
             },
 
             team: {
-              title: 'Our OB/GYN Team',
+              title: t('Gynecology.team.title'),
               members: [
                 {
-                  name: 'Dr. Anjali Jain',
-                  role: 'Gynecologist',
-                  credentials: 'MBBS, MD (General Physician), GENERAL MEDICINE',
+                  name: t('Gynecology.team.members.drAnjali.name'),
+                  role: t('Gynecology.team.members.drAnjali.role'),
+                  credentials: t('Gynecology.team.members.drAnjali.credentials'),
                   image: '/doctors/dr-anjali-jain.webp',
-                  specialty: 'General Gynecology, Obstetrics'
+                  specialty: t('Gynecology.team.members.drAnjali.specialty')
                 }
               ]
             },
 
             facilities: {
-              title: 'Women\'s Health Facilities',
-              description: 'Our department offers comfortable, private spaces for all women\'s health needs.',
+              title: t('Gynecology.facilities.title'),
+              description: t('Gynecology.facilities.description'),
               features: [
-                'Modern labor and delivery suites',
-                'Advanced ultrasound technology',
-                'Comfortable exam rooms',
-                'Private consultation areas',
-                'Minimally invasive surgery capabilities'
+                t('Gynecology.facilities.features.0'),
+                t('Gynecology.facilities.features.1'),
+                t('Gynecology.facilities.features.2'),
+                t('Gynecology.facilities.features.3'),
+                t('Gynecology.facilities.features.4')
               ],
               image: '/fallback-image.webp'
             },
 
             research: {
-              title: 'Women\'s Health Research',
+              title: t('Gynecology.research.title'),
               items: [
                 {
-                  title: 'Pregnancy Outcomes',
-                  content: 'Studies on optimizing care for high-risk pregnancies.',
+                  title: t('Gynecology.research.items.pregnancyOutcomes.title'),
+                  content: t('Gynecology.research.items.pregnancyOutcomes.content'),
                   icon: 'flask'
                 },
                 {
-                  title: 'Minimally Invasive Techniques',
-                  content: 'Developing new approaches to gynecologic surgery.',
+                  title: t('Gynecology.research.items.minimallyInvasive.title'),
+                  content: t('Gynecology.research.items.minimallyInvasive.content'),
                   icon: 'dna'
                 },
                 {
-                  title: 'Reproductive Health',
-                  content: 'Research on common gynecologic conditions.',
+                  title: t('Gynecology.research.items.reproductiveHealth.title'),
+                  content: t('Gynecology.research.items.reproductiveHealth.content'),
                   icon: 'cpu'
                 }
               ]
             },
 
             testimonials: {
-              title: 'Patient Experiences',
+              title: t('Gynecology.testimonials.title'),
               items: [
                 {
-                  quote: 'The OB team made my pregnancy and delivery such a positive experience with their expertise and kindness.',
-                  author: 'Priya K.',
+                  quote: t('Gynecology.testimonials.items.priya.quote'),
+                  author: t('Gynecology.testimonials.items.priya.author'),
                   image: '/fallback-image.webp'
                 },
                 {
-                  quote: 'My gynecologic surgery went smoothly with minimal discomfort thanks to their skilled approach.',
-                  author: 'Ananya S.',
+                  quote: t('Gynecology.testimonials.items.ananya.quote'),
+                  author: t('Gynecology.testimonials.items.ananya.author'),
                   image: '/fallback-image.webp'
                 }
               ]
             },
 
             cta: {
-              title: 'Schedule Your Women\'s Health Visit',
-              subtitle: 'Our OB/GYN team is ready to provide compassionate, expert care.',
+              title: t('Gynecology.cta.title'),
+              subtitle: t('Gynecology.cta.subtitle'),
               buttons: [
                 {
-                  text: 'Book Appointment',
+                  text: t('Gynecology.cta.buttons.appointment.text'),
                   isPrimary: true
                 },
                 {
-                  text: 'Learn About Services',
+                  text: t('Gynecology.cta.buttons.learnMore.text'),
                   isPrimary: false
                 }
               ]
             }
           },
+          {
+            id: 'neurology',
+            index: 2,
+            name: t('Neurology.name'),
+            slug: 'neurology',
+            heroImage: '/department/neurology.jpeg',
+            bannerImage: '/department/neurology-banner.webp',
+            heroTitle: t('Neurology.heroTitle'),
+            isFeatured: false,
+            heroSubtitle: t('Neurology.heroSubtitle'),
 
-        {
-          id: 'neurology',
-          index: 2,
-          name: 'Neurology',
-          slug: 'neurology',
-          heroImage: '/department/neurology.jpeg',
-          bannerImage: '/department/neurology-banner.webp',
-          heroTitle: 'Expert Care for Neurological Conditions',
-          isFeatured: false,
-          heroSubtitle: 'Comprehensive diagnosis and treatment for disorders of the nervous system.',
+            overview: {
+              title: t('Neurology.overview.title'),
+              description: [
+                t('Neurology.overview.description.0'),
+                t('Neurology.overview.description.1')
+              ],
+              whyChooseUs: [
+                t('Neurology.overview.whyChooseUs.0'),
+                t('Neurology.overview.whyChooseUs.1'),
+                t('Neurology.overview.whyChooseUs.2'),
+                t('Neurology.overview.whyChooseUs.3')
+              ]
+            },
 
-          overview: {
-            title: 'Our Neurological Approach',
-            description: [
-              'Our Neurology department provides expert care for patients with disorders of the brain, spinal cord, nerves, and muscles. We combine advanced diagnostic techniques with evidence-based treatments to manage complex neurological conditions.',
-              'Our team of specialists works collaboratively to develop personalized treatment plans for conditions ranging from migraines to multiple sclerosis, ensuring each patient receives the most appropriate care.'
-            ],
-            whyChooseUs: [
-              'Board-certified neurologists with specialized expertise',
-              'Advanced neurodiagnostic testing capabilities',
-              'Multidisciplinary approach to complex cases',
-              'Comprehensive follow-up and rehabilitation planning'
-            ]
+            treatments: {
+              title: t('Neurology.treatments.title'),
+              items: [
+                {
+                  title: t('Neurology.treatments.items.strokeCare.title'),
+                  description: t('Neurology.treatments.items.strokeCare.description')
+                },
+                {
+                  title: t('Neurology.treatments.items.epilepsy.title'),
+                  description: t('Neurology.treatments.items.epilepsy.description')
+                },
+                {
+                  title: t('Neurology.treatments.items.movementDisorders.title'),
+                  description: t('Neurology.treatments.items.movementDisorders.description')
+                }
+              ]
+            },
+
+            stats: {
+              title: t('Neurology.stats.title'),
+              items: [
+                {
+                  value: t('Neurology.stats.items.evaluations.value'),
+                  label: t('Neurology.stats.items.evaluations.label')
+                },
+                {
+                  value: t('Neurology.stats.items.satisfaction.value'),
+                  label: t('Neurology.stats.items.satisfaction.label')
+                },
+                {
+                  value: t('Neurology.stats.items.strokeCare.value'),
+                  label: t('Neurology.stats.items.strokeCare.label')
+                },
+                {
+                  value: t('Neurology.stats.items.services.value'),
+                  label: t('Neurology.stats.items.services.label')
+                }
+              ]
+            },
+
+            team: {
+              title: t('Neurology.team.title'),
+              members: [
+                {
+                  name: t('Neurology.team.members.drTripurari.name'),
+                  role: t('Neurology.team.members.drTripurari.role'),
+                  credentials: t('Neurology.team.members.drTripurari.credentials'),
+                  image: '/doctors/dr-tripurari-pandey.webp',
+                  specialty: t('Neurology.team.members.drTripurari.specialty')
+                },
+                {
+                  name: t('Neurology.team.members.drAnurag.name'),
+                  role: t('Neurology.team.members.drAnurag.role'),
+                  credentials: t('Neurology.team.members.drAnurag.credentials'),
+                  image: '/doctors/dr-anurag-singh.webp',
+                  specialty: t('Neurology.team.members.drAnurag.specialty')
+                }
+              ]
+            },
+
+            facilities: {
+              title: t('Neurology.facilities.title'),
+              description: t('Neurology.facilities.description'),
+              features: [
+                t('Neurology.facilities.features.0'),
+                t('Neurology.facilities.features.1'),
+                t('Neurology.facilities.features.2'),
+                t('Neurology.facilities.features.3'),
+                t('Neurology.facilities.features.4')
+              ],
+              image: '/fallback-image.webp',
+            },
+
+            research: {
+              title: t('Neurology.research.title'),
+              items: [
+                {
+                  title: t('Neurology.research.items.strokeRecovery.title'),
+                  content: t('Neurology.research.items.strokeRecovery.content'),
+                  icon: 'brain'
+                },
+                {
+                  title: t('Neurology.research.items.neuroDegeneration.title'),
+                  content: t('Neurology.research.items.neuroDegeneration.content'),
+                  icon: 'microscope'
+                },
+                {
+                  title: t('Neurology.research.items.headacheTherapies.title'),
+                  content: t('Neurology.research.items.headacheTherapies.content'),
+                  icon: 'head-side-virus'
+                }
+              ]
+            },
+
+            testimonials: {
+              title: t('Neurology.testimonials.title'),
+              items: [
+                {
+                  quote: t('Neurology.testimonials.items.anita.quote'),
+                  author: t('Neurology.testimonials.items.anita.author'),
+                  image: '/fallback-image.webp',
+                },
+                {
+                  quote: t('Neurology.testimonials.items.vikram.quote'),
+                  author: t('Neurology.testimonials.items.vikram.author'),
+                  image: '/fallback-image.webp',
+                }
+              ]
+            },
+
+            cta: {
+              title: t('Neurology.cta.title'),
+              subtitle: t('Neurology.cta.subtitle'),
+              buttons: [
+                {
+                  text: t('Neurology.cta.buttons.bookNow.text'),
+                  isPrimary: true,
+                },
+                {
+                  text: t('Neurology.cta.buttons.learnMore.text'),
+                  isPrimary: false,
+                }
+              ]
+            }
           },
 
-          treatments: {
-            title: 'Neurological Services',
-            items: [
-              {
-                title: 'Stroke Care',
-                description: 'Comprehensive stroke prevention, acute treatment, and rehabilitation services.'
-              },
-              {
-                title: 'Epilepsy Management',
-                description: 'Advanced diagnostics and treatment for seizure disorders, including medication management and monitoring.'
-              },
-              {
-                title: 'Movement Disorders',
-                description: 'Specialized care for Parkinson\'s disease, tremors, and other movement disorders.'
-              }
-            ]
-          },
-
-          stats: {
-            title: 'Neurology By The Numbers',
-            items: [
-              {
-                value: '10,000+',
-                label: 'Neurological Evaluations Annually'
-              },
-              {
-                value: '95%',
-                label: 'Patient Satisfaction Rate'
-              },
-              {
-                value: '24/7',
-                label: 'Acute Stroke Care Availability'
-              },
-              {
-                value: '15+',
-                label: 'Specialized Neurological Services'
-              }
-            ]
-          },
-
-          team: {
-            title: 'Our Neurology Specialists',
-            members: [
-              {
-                name: 'Dr. Tripurari Pandey',
-                role: 'Neurologist',
-                credentials: 'M.B.B.S, MCH Neuro Surgeon',
-                image: '/doctors/dr-tripurari-pandey.webp',
-                specialty: 'Neurological Disorders'
-              },
-              {
-                name: 'Dr. Anurag Singh',
-                role: 'Neurologist',
-                credentials: 'M.B.B.S, MS, MCH Neuro Surgeon',
-                image: '/doctors/dr-anurag-singh.webp',
-                specialty: 'Neurological Surgery'
-              }
-            ]
-          },
-
-          facilities: {
-            title: 'Neurology Facilities',
-            description: 'Our neurology department features advanced diagnostic and treatment technologies.',
-            features: [
-              'State-of-the-art EEG and EMG equipment',
-              'Advanced neuroimaging capabilities',
-              'Dedicated stroke unit',
-              'Specialized neurophysiology lab',
-              'Comfortable infusion center for neurological treatments'
-            ],
-            image: '/fallback-image.webp',
-          },
-
-          research: {
-            title: 'Neurology Research',
-            items: [
-              {
-                title: 'Stroke Recovery',
-                content: 'Investigating new approaches to enhance recovery after stroke.',
-                icon: 'brain'
-              },
-              {
-                title: 'Neurodegenerative Diseases',
-                content: 'Research into novel treatments for Alzheimer\'s and Parkinson\'s diseases.',
-                icon: 'microscope'
-              },
-              {
-                title: 'Headache Therapies',
-                content: 'Developing more effective treatments for chronic migraine and headache disorders.',
-                icon: 'head-side-virus'
-              }
-            ]
-          },
-
-          testimonials: {
-            title: 'Patient Stories',
-            items: [
-              {
-                quote: 'The neurology team accurately diagnosed my condition after years of uncertainty.',
-                author: 'Anita R.',
-                image: '/fallback-image.webp',
-              },
-              {
-                quote: 'Their compassionate care made all the difference in my recovery from stroke.',
-                author: 'Vikram S.',
-                image: '/fallback-image.webp',
-              },
-            ]
-          },
-
-          cta: {
-            title: 'Schedule Your Neurological Consultation',
-            subtitle: 'Contact us to book an appointment with our neurology specialists.',
-            buttons: [
-              {
-                text: 'Book Now',
-                isPrimary: true,
-              },
-              {
-                text: 'Learn More',
-                isPrimary: false,
-              }
-            ]
-          },
-        },
 
         {
           id: 'neurosurgery',
