@@ -1,0 +1,100 @@
+{
+    "TheSynergyStory": {
+        "OurExcellence": {
+            "title": "Synergy Excellence",
+            "subtitle": "A Journey of Compassion, Quality, and Comprehensive Cancer Care",
+            "description": "Synergy Super Speciality Hospital and Cancer Institute (SSSHCI) is committed to offering world-class, affordable, and comprehensive cancer care. With a team of passionate oncology specialists and a focus on innovation and empathy, we provide cutting-edge treatments tailored to each patient's needs."
+        },
+        "RestSections": {
+            "AwardsSection": {
+                "AwardsData": {
+                    "1": {
+                        "title": "Best Cancer Care Hospital 2023",
+                        "description": "Recognized for excellence in comprehensive cancer care and patient outcomes"
+                    },
+                    "2": {
+                        "title": "Healthcare Innovation Award 2022",
+                        "description": "Acknowledged for pioneering new treatment approaches and technologies"
+                    },
+                    "3": {
+                        "title": "Patient Safety Excellence 2021",
+                        "description": "Honored for maintaining highest standards in patient safety protocols"
+                    },
+                    "4": {
+                        "title": "Community Service Award 2020",
+                        "description": "Recognized for outstanding contributions to community healthcare"
+                    }
+                }
+            },
+            "MilestonesSection": {
+                "MilestonesData": {
+                    "1": {
+                        "title": "Expanded to 500 Beds",
+                        "description": "Doubled our capacity to serve more patients with state-of-the-art facilities"
+                    },
+                    "2": {
+                        "title": "Launched Nuclear Medicine Department",
+                        "description": "Introduced advanced PET-CT scanning and radioisotope therapies"
+                    },
+                    "3": {
+                        "title": "10,000 Successful Cancer Surgeries",
+                        "description": "Achieved this landmark while maintaining 98% patient satisfaction"
+                    },
+                    "4": {
+                        "title": "NABH Accreditation",
+                        "description": "Received highest national accreditation for hospital quality standards"
+                    }
+                }
+            },
+            "DayAtSynergySection": {
+                "DailyScheduleData": {
+                    "1": {
+                        "activity": "Morning Rounds",
+                        "description": "Doctors review overnight patient progress with nursing teams"
+                    },
+                    "2": {
+                        "activity": "Multidisciplinary Tumor Board",
+                        "description": "Oncology experts collaborate on complex cancer cases"
+                    },
+                    "3": {
+                        "activity": "Theater Sessions Begin",
+                        "description": "Robotic, laparoscopic and open surgeries conducted simultaneously"
+                    },
+                    "4": {
+                        "activity": "Patient Education Sessions",
+                        "description": "Interactive workshops on treatment plans and recovery"
+                    },
+                    "5": {
+                        "activity": "Research Meetings",
+                        "description": "Clinical trial teams review progress on innovative therapies"
+                    },
+                    "6": {
+                        "activity": "Evening Visits",
+                        "description": "Consultants check on post-op patients with personalized attention"
+                    }
+                },
+                "DailyScheduleCards": {
+                    "1": {
+                        "title": "Expert Medical Team",
+                        "description": "Our specialists work together to provide comprehensive care"
+                    },
+                    "2": {
+                        "title": "Patient-Centered Care",
+                        "description": "Every patient receives personalized attention and support"
+                    },
+                    "3": {
+                        "title": "Advanced Research",
+                        "description": "Continuous innovation in cancer treatment and care"
+                    }
+                }
+            }
+        }
+    },
+    "DepartmentDataMegaArray": {
+        "MedicalOncology": {
+            "name": "Medical Oncology",
+            "heroTitle": "Advanced Cancer Care",
+            "heroSubtitle": "Comprehensive medical oncology services with cutting-edge treatments"
+        }
+    }
+}

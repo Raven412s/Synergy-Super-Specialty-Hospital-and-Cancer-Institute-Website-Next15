@@ -901,5 +901,250 @@
             },
             "viewAllMedia": "View All Media Coverage"
         }
+    },
+    "DepartmentDataMegaArray": {
+        "MedicalOncology": {
+            "name": "Medical Oncology",
+            "heroTitle": "Comprehensive Cancer Treatment & Care",
+            "heroSubtitle": "'Advanced medical oncology services with personalized treatment plans in Gorakhpur.'",
+            "overview": {
+                "title": "Our Medical Oncology Approach",
+                "description": [
+                    "At Synergy Super Speciality Hospital & Cancer Institute, our Medical Oncology team provides cutting-edge cancer treatments including chemotherapy, immunotherapy, and targeted therapy. We focus on delivering compassionate, patient-centered care tailored to each individual's needs.",
+                    "Our multidisciplinary team collaborates to develop optimal treatment strategies, ensuring the best possible outcomes for our patients. With state-of-the-art facilities and a commitment to innovation, we bring world-class cancer care to Gorakhpur."
+                ],
+                "whyChooseUs": [
+                    "Experienced oncologists with specialized training in the latest cancer treatments",
+                    "Personalized treatment plans developed through tumor board reviews",
+                    "Access to cutting-edge therapies and clinical trials",
+                    "Comprehensive supportive care to manage side effects and improve quality of life"
+                ]
+            },
+            "treatments": {
+                "title": "Treatment Options & Specialties",
+                "items": {
+                    "chemotherapy": {
+                        "title": "Chemotherapy",
+                        "description": "Advanced chemotherapy protocols tailored to your specific cancer type and stage, administered with precision and care."
+                    },
+                    "immunotherapy": {
+                        "title": "Immunotherapy",
+                        "description": "Innovative treatments that harness your immune system to fight cancer, offering new hope for many patients."
+                    },
+                    "targetedTherapy": {
+                        "title": "Targeted Therapy",
+                        "description": "Precision medicines designed to attack specific cancer cells while sparing healthy tissue."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Our Impact in Numbers",
+                "items": {
+                    "patients": {
+                        "value": "5,000+",
+                        "label": "Patients Treated Annually"
+                    },
+                    "satisfaction": {
+                        "value": "98%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "trials": {
+                        "value": "50+",
+                        "label": "Clinical Trials Available"
+                    },
+                    "care": {
+                        "value": "24/7",
+                        "label": "Supportive Care Availability"
+                    }
+                }
+            },
+            "team": {
+                "title": "Meet Our Oncologists",
+                "members": {
+                    "drSaurabh": {
+                        "name": "Dr. Saurabh Mishra",
+                        "role": "Medical Oncologist & Haemat Oncologist",
+                        "credentials": "MBBS (KGMU), MD (internal Medicine) ECMO DNB",
+                        "specialty": "Director Synergy Super Speciality Hospital & Cancer Institue"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Advanced Treatment Facilities",
+                "description": "Our center is equipped with the latest technology to provide comprehensive cancer care.",
+                "features": [
+                    "Modern chemotherapy infusion suites",
+                    "Specialized pharmacy for cancer medications",
+                    "On-site laboratory for rapid testing",
+                    "Comfortable recovery areas",
+                    "Dedicated patient education resources"
+                ]
+            },
+            "research": {
+                "title": "Research & Clinical Trials",
+                "items": {
+                    "novelTherapies": {
+                        "title": "Novel Therapies",
+                        "content": "Participating in groundbreaking research to bring new treatment options to our patients."
+                    },
+                    "precisionMedicine": {
+                        "title": "Precision Medicine",
+                        "content": "Research focused on tailoring treatments based on genetic markers and tumor characteristics."
+                    },
+                    "qualityOfLife": {
+                        "title": "Quality of Life Studies",
+                        "content": "Investigating ways to improve patient comfort and outcomes during treatment."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "priya": {
+                        "quote": "The compassion and expertise of the medical oncology team gave me hope during my toughest days.",
+                        "author": "Priya K."
+                    },
+                    "rahul": {
+                        "quote": "I received personalized care that made all the difference in my cancer journey.",
+                        "author": "Rahul S."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Begin Your Personalized Treatment Plan",
+                "subtitle": "Schedule a consultation with our medical oncology specialists today.",
+                "buttons": {
+                    "appointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learnMore": {
+                        "text": "Learn More"
+                    }
+                }
+            }
+        },
+        "SurgicalOncology": {
+  "name": "Surgical Oncology",
+  "heroTitle": "Expert Surgical Solutions for Cancer Care",
+  "heroSubtitle": "Combining surgical excellence with personalized oncology care in Gorakhpur.",
+  "overview": {
+    "title": "Our Surgical Oncology Approach",
+    "description": [
+      "At Synergy Super Speciality Hospital & Cancer Institute, our Surgical Oncology team is dedicated to providing precise, effective cancer surgeries tailored to each patient's needs. We combine advanced surgical techniques with a compassionate, patient-first philosophy to ensure the best possible outcomes.",
+      "Since 2005, we have been a trusted leader in surgical cancer care, offering integrated treatment plans developed in collaboration with medical oncologists, radiation specialists, and support teams. Our commitment to innovation and excellence drives us to deliver superior care every step of the way."
+    ],
+    "whyChooseUs": [
+      "Experienced and highly skilled cancer surgeons specialized in complex procedures",
+      "Collaborative tumor board ensures personalized surgical treatment plans",
+      "Minimally invasive and organ-preserving surgical options available",
+      "Comprehensive pre- and post-surgical care with emotional and rehabilitative support"
+    ]
+  },
+  "treatments": {
+    "title": "Surgical Expertise & Specialties",
+    "items": {
+      "complexSurgeries": {
+        "title": "Complex Cancer Surgeries",
+        "description": "Expertise in performing intricate oncologic surgeries, including tumor resections in challenging anatomical locations while preserving function and aesthetics."
+      },
+      "laparoscopicSurgery": {
+        "title": "Minimally Invasive & Laparoscopic Surgery",
+        "description": "Advanced laparoscopic and keyhole procedures for faster recovery, less pain, and minimal scarring in select cancer types."
+      },
+      "organPreserving": {
+        "title": "Organ-Preserving Cancer Surgeries",
+        "description": "Surgical techniques focused on removing tumors while retaining maximum healthy tissue to maintain organ function and improve quality of life."
+      }
+    }
+  },
+  "stats": {
+    "title": "Our Impact in Numbers",
+    "items": {
+      "surgeries": {
+        "value": "2,500+",
+        "label": "Successful Cancer Surgeries Performed"
+      },
+      "experience": {
+        "value": "20+",
+        "label": "Years of Specialized Surgical Experience"
+      },
+      "satisfaction": {
+        "value": "95%",
+        "label": "Post-Surgical Recovery Satisfaction Rate"
+      },
+      "procedures": {
+        "value": "100+",
+        "label": "Complex Multispecialty Procedures Annually"
+      }
+    }
+  },
+  "team": {
+    "title": "Meet Our Specialists",
+    "members": {
+      "drAlok": {
+        "name": "Dr. Alok Tiwari",
+        "role": "Chief Surgical Oncologist",
+        "credentials": "MBBS (Gold Medalist), MS (Gen Surgery) KGMU LucknowDNB, Dip MAS daVinciXi Certified Robotic Onco Surgeon",
+        "specialty": "Surgical Oncology, ESSO (Breast Oncoplasty) FMAS, FALS (Colorectal)"
+      }
+    }
+  },
+  "facilities": {
+    "title": "State-of-the-Art Facilities",
+    "description": "Our center is equipped with the latest in medical technology to support both standard care and advanced research.",
+    "features": [
+      "Dedicated infusion suites with comfort-focused design",
+      "On-site genomic and pathology labs",
+      "Real-time treatment monitoring systems",
+      "Private consultation rooms for family discussions",
+      "Fully integrated electronic health records"
+    ]
+  },
+  "research": {
+    "title": "Research & Innovation",
+    "items": {
+      "precisionOncology": {
+        "title": "Precision Oncology Trials",
+        "content": "We lead Phase I-III clinical trials aimed at targeting the molecular basis of cancer."
+      },
+      "biobankGenomics": {
+        "title": "Biobank & Genomics",
+        "content": "Our biobank supports large-scale genomic studies and data-driven treatment personalization."
+      },
+      "aiDetection": {
+        "title": "AI in Cancer Detection",
+        "content": "Collaborating with tech partners to utilize artificial intelligence in early diagnosis."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Patients Say",
+    "items": {
+      "sophia": {
+        "quote": "The care I received at Synergy Oncology was beyond exceptional. Every doctor and nurse treated me like family.",
+        "author": "Sophia M."
+      },
+      "james": {
+        "quote": "They gave me hope when I had none. I'm now two years cancer-free and forever grateful.",
+        "author": "James R."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Begin Your Treatment Journey?",
+    "subtitle": "Schedule a consultation today with one of our medical oncology specialists.",
+    "buttons": {
+      "appointment": {
+        "text": "Book an Appointment"
+      },
+      "contact": {
+        "text": "Contact Our Team"
+      }
+    }
+  }
+}
+
+
+
     }
 }
