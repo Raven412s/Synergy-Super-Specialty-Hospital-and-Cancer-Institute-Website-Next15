@@ -121,7 +121,7 @@ export const EmergencyCare = () => {
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center justify-center transition-all animate-pulse"
               >
                 <PhoneIcon className="h-6 w-6 mr-2" />
-                CALL NOW: +91-7234006595
+                CALL NOW: 18005706595
               </a>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center justify-center transition-all"
               onClick={() => {
@@ -250,7 +250,7 @@ export const EmergencyCare = () => {
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-bold flex items-center justify-center transition-all"
             >
               <PhoneIcon className="h-6 w-6 mr-2" />
-              CALL EMERGENCY: +91-7234006595
+              CALL EMERGENCY: 18005706595
             </a>
             <button className="bg-transparent border-2 border-white hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-bold flex items-center justify-center transition-all"
             onClick={() => {

@@ -646,7 +646,7 @@ export const pressReleases: PressRelease[] = [
 ]
 
 export const ContactUsMessage = encodeURIComponent("Hello, I would like to know more about your services.");
-export const phoneNumber = "917234006595";
+export const phoneNumber = "18005706595";
 
 // Support services data with images
 export const supportServices = [
