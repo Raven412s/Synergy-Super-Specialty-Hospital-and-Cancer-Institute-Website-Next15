@@ -231,7 +231,7 @@ export const useQuickLinks = () => {
         {
             label: t('emergency.label'),
             value: t('emergency.value'),
-            bg: "bg-teal-50"
+            bg: "bg-red-50"
         },
         {
             label: t('contactNumbers.label'),
@@ -241,7 +241,7 @@ export const useQuickLinks = () => {
         {
             label: t('support.label'),
             value: t('support.value'),
-            bg: "bg-gray-50"
+            bg: "bg-teal-50"
         },
     ];
 };

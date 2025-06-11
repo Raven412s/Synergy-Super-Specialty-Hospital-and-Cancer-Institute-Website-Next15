@@ -42,7 +42,7 @@ export const EmergencyCare = () => {
   };
 
   // Emergency numbers
-  const emergencyNumber = "+91-7234006595";
+  const emergencyNumber = "18005706595";
   const ambulanceNumber = "+91-7234006597";
 
   return (
@@ -92,7 +92,7 @@ export const EmergencyCare = () => {
           <div className="flex items-center">
             <PhoneIcon className="h-5 w-5 mr-2 animate-pulse" />
             <span className="font-bold">FOR EMERGENCIES: </span>
-            <a href="tel:+917234006595" className="ml-2 hover:underline">+91-7234006595</a>
+            <a href="tel:18005706595" className="ml-2 hover:underline">18005706595</a>
           </div>
           <div className="flex items-center">
             <MapPinIcon className="h-5 w-5 mr-2" />
@@ -117,7 +117,7 @@ export const EmergencyCare = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+917234006595"
+                href="tel:18005706595"
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center justify-center transition-all animate-pulse"
               >
                 <PhoneIcon className="h-6 w-6 mr-2" />
@@ -246,7 +246,7 @@ export const EmergencyCare = () => {
           <h2 className="text-3xl font-bold mb-6">Need Emergency Care Right Now?</h2>
           <div className="flex flex-col md:flex-row justify-center gap-6 mb-8">
             <a
-              href="tel:+917234006595"
+              href="tel:18005706595"
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-bold flex items-center justify-center transition-all"
             >
               <PhoneIcon className="h-6 w-6 mr-2" />
