@@ -215,16 +215,29 @@ export function Navbar() {
                                                         className="w-1/4 p-4 space-y-4  overflow-y-auto max-h-[478px]"
                                                     >
                                                         <h4 className="font-semibold text-gray-700">Quick Links</h4>
-                                                        {quickLinks.map((qLink) => (
-                                                            <motion.div
-                                                                key={qLink.label}
-                                                                variants={itemVariants}
-                                                                className={cn("px-4 py-2 rounded-lg text-sm border border-neutral-300", qLink.bg)}
-                                                            >
-                                                                <div className="text-gray-500 text-[10px]">{qLink.label}</div>
-                                                                <div className="font-normal ">{qLink.value}</div>
-                                                            </motion.div>
-                                                        ))}
+                                                        {quickLinks.map((qLink) => {
+                                                            const isPeripheralOPD = qLink.label === "Our Peripheral OPDs";
+                                                            return isPeripheralOPD ? (
+                                                                <Button
+                                                                    key={qLink.label}
+                                                                    variant="link"
+                                                                    className="bg-indigo-100 text-black px-4 py-2 rounded-full hover:shadow-blob w-full justify-between hover:no-underline"
+                                                                    title="Book an Appointment"
+                                                                    onClick={() => { router.push(qLink.value) }}
+                                                                >
+                                                                    {qLink.label} <span>→</span>
+                                                                </Button>
+                                                            ) : (
+                                                                <motion.div
+                                                                    key={qLink.label}
+                                                                    variants={itemVariants}
+                                                                    className={cn("px-4 py-2 rounded-lg text-sm border border-neutral-300", qLink.bg)}
+                                                                >
+                                                                    <div className="text-gray-500 text-[10px]">{qLink.label}</div>
+                                                                    <div className="font-normal">{qLink.value}</div>
+                                                                </motion.div>
+                                                            );
+                                                        })}
 
                                                         <motion.div variants={itemVariants}>
                                                             <Button

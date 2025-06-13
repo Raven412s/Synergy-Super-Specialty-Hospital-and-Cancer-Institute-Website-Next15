@@ -286,6 +286,10 @@
         "support": {
             "label": "Support",
             "value": "+91 7234006595"
+        },
+        "peripheralOpd": {
+            "label": "Our Peripheral OPDs",
+            "value": "/peripheral-opd"
         }
     },
     "testimonials": {
@@ -1024,383 +1028,636 @@
             }
         },
         "SurgicalOncology": {
-  "name": "Surgical Oncology",
-  "heroTitle": "Expert Surgical Solutions for Cancer Care",
-  "heroSubtitle": "Combining surgical excellence with personalized oncology care in Gorakhpur.",
-  "overview": {
-    "title": "Our Surgical Oncology Approach",
-    "description": [
-      "At Synergy Super Speciality Hospital & Cancer Institute, our Surgical Oncology team is dedicated to providing precise, effective cancer surgeries tailored to each patient's needs. We combine advanced surgical techniques with a compassionate, patient-first philosophy to ensure the best possible outcomes.",
-      "Since 2005, we have been a trusted leader in surgical cancer care, offering integrated treatment plans developed in collaboration with medical oncologists, radiation specialists, and support teams. Our commitment to innovation and excellence drives us to deliver superior care every step of the way."
+            "name": "Surgical Oncology",
+            "heroTitle": "Expert Surgical Solutions for Cancer Care",
+            "heroSubtitle": "Combining surgical excellence with personalized oncology care in Gorakhpur.",
+            "overview": {
+                "title": "Our Surgical Oncology Approach",
+                "description": [
+                    "At Synergy Super Speciality Hospital & Cancer Institute, our Surgical Oncology team is dedicated to providing precise, effective cancer surgeries tailored to each patient's needs. We combine advanced surgical techniques with a compassionate, patient-first philosophy to ensure the best possible outcomes.",
+                    "Since 2005, we have been a trusted leader in surgical cancer care, offering integrated treatment plans developed in collaboration with medical oncologists, radiation specialists, and support teams. Our commitment to innovation and excellence drives us to deliver superior care every step of the way."
+                ],
+                "whyChooseUs": [
+                    "Experienced and highly skilled cancer surgeons specialized in complex procedures",
+                    "Collaborative tumor board ensures personalized surgical treatment plans",
+                    "Minimally invasive and organ-preserving surgical options available",
+                    "Comprehensive pre- and post-surgical care with emotional and rehabilitative support"
+                ]
+            },
+            "treatments": {
+                "title": "Surgical Expertise & Specialties",
+                "items": {
+                    "complexSurgeries": {
+                        "title": "Complex Cancer Surgeries",
+                        "description": "Expertise in performing intricate oncologic surgeries, including tumor resections in challenging anatomical locations while preserving function and aesthetics."
+                    },
+                    "laparoscopicSurgery": {
+                        "title": "Minimally Invasive & Laparoscopic Surgery",
+                        "description": "Advanced laparoscopic and keyhole procedures for faster recovery, less pain, and minimal scarring in select cancer types."
+                    },
+                    "organPreserving": {
+                        "title": "Organ-Preserving Cancer Surgeries",
+                        "description": "Surgical techniques focused on removing tumors while retaining maximum healthy tissue to maintain organ function and improve quality of life."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Our Impact in Numbers",
+                "items": {
+                    "surgeries": {
+                        "value": "2,500+",
+                        "label": "Successful Cancer Surgeries Performed"
+                    },
+                    "experience": {
+                        "value": "20+",
+                        "label": "Years of Specialized Surgical Experience"
+                    },
+                    "satisfaction": {
+                        "value": "95%",
+                        "label": "Post-Surgical Recovery Satisfaction Rate"
+                    },
+                    "procedures": {
+                        "value": "100+",
+                        "label": "Complex Multispecialty Procedures Annually"
+                    }
+                }
+            },
+            "team": {
+                "title": "Meet Our Specialists",
+                "members": {
+                    "drAlok": {
+                        "name": "Dr. Alok Tiwari",
+                        "role": "Chief Surgical Oncologist",
+                        "credentials": "MBBS (Gold Medalist), MS (Gen Surgery) KGMU LucknowDNB, Dip MAS daVinciXi Certified Robotic Onco Surgeon",
+                        "specialty": "Surgical Oncology, ESSO (Breast Oncoplasty) FMAS, FALS (Colorectal)"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "State-of-the-Art Facilities",
+                "description": "Our center is equipped with the latest in medical technology to support both standard care and advanced research.",
+                "features": [
+                    "Dedicated infusion suites with comfort-focused design",
+                    "On-site genomic and pathology labs",
+                    "Real-time treatment monitoring systems",
+                    "Private consultation rooms for family discussions",
+                    "Fully integrated electronic health records"
+                ]
+            },
+            "research": {
+                "title": "Research & Innovation",
+                "items": {
+                    "precisionOncology": {
+                        "title": "Precision Oncology Trials",
+                        "content": "We lead Phase I-III clinical trials aimed at targeting the molecular basis of cancer."
+                    },
+                    "biobankGenomics": {
+                        "title": "Biobank & Genomics",
+                        "content": "Our biobank supports large-scale genomic studies and data-driven treatment personalization."
+                    },
+                    "aiDetection": {
+                        "title": "AI in Cancer Detection",
+                        "content": "Collaborating with tech partners to utilize artificial intelligence in early diagnosis."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "What Our Patients Say",
+                "items": {
+                    "sophia": {
+                        "quote": "The care I received at Synergy Oncology was beyond exceptional. Every doctor and nurse treated me like family.",
+                        "author": "Sophia M."
+                    },
+                    "james": {
+                        "quote": "They gave me hope when I had none. I'm now two years cancer-free and forever grateful.",
+                        "author": "James R."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Ready to Begin Your Treatment Journey?",
+                "subtitle": "Schedule a consultation today with one of our medical oncology specialists.",
+                "buttons": {
+                    "appointment": {
+                        "text": "Book an Appointment"
+                    },
+                    "contact": {
+                        "text": "Contact Our Team"
+                    }
+                }
+            }
+        },
+        "Gynecology": {
+            "name": "Gynecology & Obstetrics",
+            "heroTitle": "Comprehensive Women's Health Services",
+            "heroSubtitle": "Expert care for all stages of a woman's life in Gorakhpur.",
+            "overview": {
+                "title": "Our Women's Health Approach",
+                "description": [
+                    "The Gynecology & Obstetrics department at Synergy Super Speciality Hospital provides complete care for women through all life stages, from adolescence through menopause.",
+                    "Our team offers compassionate, personalized care for routine gynecologic needs, high-risk pregnancies, fertility concerns, and gynecologic surgeries."
+                ],
+                "whyChooseUs": [
+                    "Experienced OB/GYN specialists",
+                    "Comprehensive prenatal and maternity care",
+                    "Advanced gynecologic surgery options",
+                    "Personalized approach to women's health"
+                ]
+            },
+            "treatments": {
+                "title": "Our Services",
+                "items": {
+                    "prenatalCare": {
+                        "title": "Prenatal & Maternity Care",
+                        "description": "Comprehensive care through pregnancy, delivery, and postpartum."
+                    },
+                    "gynecologicSurgery": {
+                        "title": "Gynecologic Surgery",
+                        "description": "Minimally invasive options for hysterectomy, fibroid removal, and other procedures."
+                    },
+                    "preventiveCare": {
+                        "title": "Preventive Care",
+                        "description": "Annual exams, cancer screenings, and contraceptive counseling."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Women's Health Statistics",
+                "items": {
+                    "babiesDelivered": {
+                        "value": "2,000+",
+                        "label": "Healthy Babies Delivered"
+                    },
+                    "surgeryRate": {
+                        "value": "90%",
+                        "label": "Minimally Invasive Gynecologic Surgeries"
+                    },
+                    "availability": {
+                        "value": "24/7",
+                        "label": "Labor & Delivery Availability"
+                    },
+                    "experienceYears": {
+                        "value": "30+",
+                        "label": "Years of Combined Experience"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our OB/GYN Team",
+                "members": {
+                    "drAnjali": {
+                        "name": "Dr. Anjali Jain",
+                        "role": "Gynecologist",
+                        "credentials": "MBBS, MD (General Physician), GENERAL MEDICINE",
+                        "specialty": "General Gynecology, Obstetrics"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Women's Health Facilities",
+                "description": "Our department offers comfortable, private spaces for all women's health needs.",
+                "features": [
+                    "Modern labor and delivery suites",
+                    "Advanced ultrasound technology",
+                    "Comfortable exam rooms",
+                    "Private consultation areas",
+                    "Minimally invasive surgery capabilities"
+                ]
+            },
+            "research": {
+                "title": "Women's Health Research",
+                "items": {
+                    "pregnancyOutcomes": {
+                        "title": "Pregnancy Outcomes",
+                        "content": "Studies on optimizing care for high-risk pregnancies."
+                    },
+                    "minimallyInvasive": {
+                        "title": "Minimally Invasive Techniques",
+                        "content": "Developing new approaches to gynecologic surgery."
+                    },
+                    "reproductiveHealth": {
+                        "title": "Reproductive Health",
+                        "content": "Research on common gynecologic conditions."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "priya": {
+                        "quote": "The OB team made my pregnancy and delivery such a positive experience with their expertise and kindness.",
+                        "author": "Priya K."
+                    },
+                    "ananya": {
+                        "quote": "My gynecologic surgery went smoothly with minimal discomfort thanks to their skilled approach.",
+                        "author": "Ananya S."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your Women's Health Visit",
+                "subtitle": "Our OB/GYN team is ready to provide compassionate, expert care.",
+                "buttons": {
+                    "appointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learnMore": {
+                        "text": "Learn About Services"
+                    }
+                }
+            }
+        },
+        "Neurology": {
+            "name": "Neurology",
+            "heroTitle": "Expert Care for Neurological Conditions",
+            "heroSubtitle": "Comprehensive diagnosis and treatment for disorders of the nervous system.",
+            "overview": {
+                "title": "Our Neurological Approach",
+                "description": [
+                    "Our Neurology department provides expert care for patients with disorders of the brain, spinal cord, nerves, and muscles. We combine advanced diagnostic techniques with evidence-based treatments to manage complex neurological conditions.",
+                    "Our team of specialists works collaboratively to develop personalized treatment plans for conditions ranging from migraines to multiple sclerosis, ensuring each patient receives the most appropriate care."
+                ],
+                "whyChooseUs": [
+                    "Board-certified neurologists with specialized expertise",
+                    "Advanced neurodiagnostic testing capabilities",
+                    "Multidisciplinary approach to complex cases",
+                    "Comprehensive follow-up and rehabilitation planning"
+                ]
+            },
+            "treatments": {
+                "title": "Neurological Services",
+                "items": {
+                    "strokeCare": {
+                        "title": "Stroke Care",
+                        "description": "Comprehensive stroke prevention, acute treatment, and rehabilitation services."
+                    },
+                    "epilepsy": {
+                        "title": "Epilepsy Management",
+                        "description": "Advanced diagnostics and treatment for seizure disorders, including medication management and monitoring."
+                    },
+                    "movementDisorders": {
+                        "title": "Movement Disorders",
+                        "description": "Specialized care for Parkinson's disease, tremors, and other movement disorders."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Neurology By The Numbers",
+                "items": {
+                    "evaluations": {
+                        "value": "10,000+",
+                        "label": "Neurological Evaluations Annually"
+                    },
+                    "satisfaction": {
+                        "value": "95%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "strokeCare": {
+                        "value": "24/7",
+                        "label": "Acute Stroke Care Availability"
+                    },
+                    "services": {
+                        "value": "15+",
+                        "label": "Specialized Neurological Services"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Neurology Specialists",
+                "members": {
+                    "drTripurari": {
+                        "name": "Dr. Tripurari Pandey",
+                        "role": "Neurologist",
+                        "credentials": "M.B.B.S, MCH Neuro Surgeon",
+                        "specialty": "Neurological Disorders"
+                    },
+                    "drAnurag": {
+                        "name": "Dr. Anurag Singh",
+                        "role": "Neurologist",
+                        "credentials": "M.B.B.S, MS, MCH Neuro Surgeon",
+                        "specialty": "Neurological Surgery"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Neurology Facilities",
+                "description": "Our neurology department features advanced diagnostic and treatment technologies.",
+                "features": [
+                    "State-of-the-art EEG and EMG equipment",
+                    "Advanced neuroimaging capabilities",
+                    "Dedicated stroke unit",
+                    "Specialized neurophysiology lab",
+                    "Comfortable infusion center for neurological treatments"
+                ]
+            },
+            "research": {
+                "title": "Neurology Research",
+                "items": {
+                    "strokeRecovery": {
+                        "title": "Stroke Recovery",
+                        "content": "Investigating new approaches to enhance recovery after stroke."
+                    },
+                    "neuroDegeneration": {
+                        "title": "Neurodegenerative Diseases",
+                        "content": "Research into novel treatments for Alzheimer's and Parkinson's diseases."
+                    },
+                    "headacheTherapies": {
+                        "title": "Headache Therapies",
+                        "content": "Developing more effective treatments for chronic migraine and headache disorders."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {
+                    "anita": {
+                        "quote": "The neurology team accurately diagnosed my condition after years of uncertainty.",
+                        "author": "Anita R."
+                    },
+                    "vikram": {
+                        "quote": "Their compassionate care made all the difference in my recovery from stroke.",
+                        "author": "Vikram S."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your Neurological Consultation",
+                "subtitle": "Contact us to book an appointment with our neurology specialists.",
+                "buttons": {
+                    "bookNow": {
+                        "text": "Book Now"
+                    },
+                    "learnMore": {
+                        "text": "Learn More"
+                    }
+                }
+            }
+        }
+    },
+    "opdData": [
+        {
+            "id": 1,
+            "place": "Ayodhya",
+            "hospitalName": "Sanjafi Hospital",
+            "hospitalAddress": "Sanjafi Hospital",
+            "hospitalAddressLink": "/Sanjafi Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Alok Tiwari",
+                    "imageUrl": "/doctors/dr-alok-tiwari.webp",
+                    "qualifications": [
+                        "MD",
+                        "DM (Cardiology)"
+                    ],
+                    "experience": "15 years",
+                    "specialization": "Cardiologist"
+                },
+                {
+                    "name": "Dr. Saurabh Mishra",
+                    "imageUrl": "/doctors/dr-saurabh-mishra.webp",
+                    "qualifications": [
+                        "MS (Ortho)",
+                        "MCh (Ortho)"
+                    ],
+                    "experience": "12 years",
+                    "specialization": "Orthopedic Surgeon"
+                }
+            ],
+            "day": "Friday",
+            "time": "10:00 AM TO 02:00 PM",
+            "district": "Ayodhya"
+        },
+        {
+            "id": 2,
+            "place": "Siddharth Nagar",
+            "hospitalName": "VPL Hospital",
+            "hospitalAddress": "VPL Hospital",
+            "hospitalAddressLink": "/VPL Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Vishal Mishra",
+                    "imageUrl": "/doctors/dr-vishal-mishra.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Neurology)"
+                    ],
+                    "experience": "10 years",
+                    "specialization": "Neurologist"
+                }
+            ],
+            "day": "Wednesday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Siddharth Nagar"
+        },
+        {
+            "id": 3,
+            "place": "Barhalganj",
+            "hospitalName": "Ramdhani Hospital",
+            "hospitalAddress": "Ramdhani Hospital",
+            "hospitalAddressLink": "/Ramdhani Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Tarique Anwar",
+                    "imageUrl": "/doctors/dr-tarik-anwar.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Gastroenterology)"
+                    ],
+                    "experience": "8 years",
+                    "specialization": "Gastroenterologist"
+                },
+                {
+                    "name": "Dr. Vishal Mishra",
+                    "imageUrl": "/doctors/dr-vishal-mishra.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Neurology)"
+                    ],
+                    "experience": "10 years",
+                    "specialization": "Neurologist"
+                }
+            ],
+            "day": "Sunday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Barhalganj"
+        },
+        {
+            "id": 4,
+            "place": "Azamgarh",
+            "hospitalName": "Rama Hospital",
+            "hospitalAddress": "Rama Hospital",
+            "hospitalAddressLink": "/Rama Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Vishal Mishra",
+                    "imageUrl": "/doctors/dr-vishal-mishra.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Neurology)"
+                    ],
+                    "experience": "10 years",
+                    "specialization": "Neurologist"
+                }
+            ],
+            "day": "Thursday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Azamgarh"
+        },
+        {
+            "id": 5,
+            "place": "Deoria",
+            "hospitalName": "Aashirvad Hospital",
+            "hospitalAddress": "Aashirvad Hospital",
+            "hospitalAddressLink": "/Aashirvad Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Saurabh Mishra",
+                    "imageUrl": "/doctors/dr-saurabh-mishra.webp",
+                    "qualifications": [
+                        "MS (Ortho)",
+                        "MCh (Ortho)"
+                    ],
+                    "experience": "12 years",
+                    "specialization": "Orthopedic Surgeon"
+                },
+                {
+                    "name": "Dr. Arpit Tripathi",
+                    "qualifications": [
+                        "MD",
+                        "DM (Cardiology)"
+                    ],
+                    "experience": "7 years",
+                    "specialization": "Cardiologist"
+                }
+            ],
+            "day": "Sunday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Deoria"
+        },
+        {
+            "id": 6,
+            "place": "Salempur",
+            "hospitalName": "Shanti Diagnostic",
+            "hospitalAddress": "Shanti Diagnostic",
+            "hospitalAddressLink": "/Shanti Diagnostic",
+            "doctors": [
+                {
+                    "name": "Dr. Tarique Anwar",
+                    "imageUrl": "/doctors/dr-tarik-anwar.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Gastroenterology)"
+                    ],
+                    "experience": "8 years",
+                    "specialization": "Gastroenterologist"
+                }
+            ],
+            "day": "Thursday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Salempur"
+        },
+        {
+            "id": 7,
+            "place": "Maharaiganj",
+            "hospitalName": "City Hospital",
+            "hospitalAddress": "City Hospital",
+            "hospitalAddressLink": "/City Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Gaurav Bhawar",
+                    "qualifications": [
+                        "MS (General Surgery)",
+                        "MCh (Urology)"
+                    ],
+                    "experience": "9 years",
+                    "specialization": "Urologist"
+                }
+            ],
+            "day": "Monday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Maharaiganj"
+        },
+        {
+            "id": 8,
+            "place": "Kasiya",
+            "hospitalName": "Vardan Hospital",
+            "hospitalAddress": "Vardan Hospital",
+            "hospitalAddressLink": "/Vardan Hospital",
+            "doctors": [
+                {
+                    "name": "Dr. Anjali Jain",
+                    "imageUrl": "/doctors/dr-anjali-jain.webp",
+                    "qualifications": [
+                        "MD",
+                        "DM (Endocrinology)"
+                    ],
+                    "experience": "11 years",
+                    "specialization": "Endocrinologist"
+                }
+            ],
+            "day": "Thursday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Kasiya"
+        },
+        {
+            "id": 9,
+            "place": "Siwan Bihar",
+            "hospitalName": "Dr. Vishal Chaudhary",
+            "hospitalAddress": "Dr. Vishal Chaudhary",
+            "hospitalAddressLink": "Dr. /Vishal Chaudhary",
+            "doctors": [
+                {
+                    "name": "Dr. Tarique Anwar",
+                    "imageUrl": "/doctors/dr-tarik-anwar.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Gastroenterology)"
+                    ],
+                    "experience": "8 years",
+                    "specialization": "Gastroenterologist"
+                }
+            ],
+            "day": "Saturday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Siwan Bihar"
+        },
+        {
+            "id": 10,
+            "place": "Gopalganj Bihar",
+            "hospitalName": "Dr. Tiripurari Pandey",
+            "hospitalAddress": "Dr. Tiripurari Pandey",
+            "hospitalAddressLink": "Dr. /Tiripurari Pandey",
+            "doctors": [
+                {
+                    "name": "Dr. Tarique Anwar",
+                    "imageUrl": "/doctors/dr-tarik-anwar.png",
+                    "qualifications": [
+                        "MD",
+                        "DM (Gastroenterology)"
+                    ],
+                    "experience": "8 years",
+                    "specialization": "Gastroenterologist"
+                }
+            ],
+            "day": "Wednesday",
+            "time": "10:00 AM TO 05:00 PM",
+            "district": "Gopalganj Bihar"
+        }
     ],
-    "whyChooseUs": [
-      "Experienced and highly skilled cancer surgeons specialized in complex procedures",
-      "Collaborative tumor board ensures personalized surgical treatment plans",
-      "Minimally invasive and organ-preserving surgical options available",
-      "Comprehensive pre- and post-surgical care with emotional and rehabilitative support"
-    ]
-  },
-  "treatments": {
-    "title": "Surgical Expertise & Specialties",
-    "items": {
-      "complexSurgeries": {
-        "title": "Complex Cancer Surgeries",
-        "description": "Expertise in performing intricate oncologic surgeries, including tumor resections in challenging anatomical locations while preserving function and aesthetics."
-      },
-      "laparoscopicSurgery": {
-        "title": "Minimally Invasive & Laparoscopic Surgery",
-        "description": "Advanced laparoscopic and keyhole procedures for faster recovery, less pain, and minimal scarring in select cancer types."
-      },
-      "organPreserving": {
-        "title": "Organ-Preserving Cancer Surgeries",
-        "description": "Surgical techniques focused on removing tumors while retaining maximum healthy tissue to maintain organ function and improve quality of life."
-      }
-    }
-  },
-  "stats": {
-    "title": "Our Impact in Numbers",
-    "items": {
-      "surgeries": {
-        "value": "2,500+",
-        "label": "Successful Cancer Surgeries Performed"
-      },
-      "experience": {
-        "value": "20+",
-        "label": "Years of Specialized Surgical Experience"
-      },
-      "satisfaction": {
-        "value": "95%",
-        "label": "Post-Surgical Recovery Satisfaction Rate"
-      },
-      "procedures": {
-        "value": "100+",
-        "label": "Complex Multispecialty Procedures Annually"
-      }
-    }
-  },
-  "team": {
-    "title": "Meet Our Specialists",
-    "members": {
-      "drAlok": {
-        "name": "Dr. Alok Tiwari",
-        "role": "Chief Surgical Oncologist",
-        "credentials": "MBBS (Gold Medalist), MS (Gen Surgery) KGMU LucknowDNB, Dip MAS daVinciXi Certified Robotic Onco Surgeon",
-        "specialty": "Surgical Oncology, ESSO (Breast Oncoplasty) FMAS, FALS (Colorectal)"
-      }
-    }
-  },
-  "facilities": {
-    "title": "State-of-the-Art Facilities",
-    "description": "Our center is equipped with the latest in medical technology to support both standard care and advanced research.",
-    "features": [
-      "Dedicated infusion suites with comfort-focused design",
-      "On-site genomic and pathology labs",
-      "Real-time treatment monitoring systems",
-      "Private consultation rooms for family discussions",
-      "Fully integrated electronic health records"
-    ]
-  },
-  "research": {
-    "title": "Research & Innovation",
-    "items": {
-      "precisionOncology": {
-        "title": "Precision Oncology Trials",
-        "content": "We lead Phase I-III clinical trials aimed at targeting the molecular basis of cancer."
-      },
-      "biobankGenomics": {
-        "title": "Biobank & Genomics",
-        "content": "Our biobank supports large-scale genomic studies and data-driven treatment personalization."
-      },
-      "aiDetection": {
-        "title": "AI in Cancer Detection",
-        "content": "Collaborating with tech partners to utilize artificial intelligence in early diagnosis."
-      }
-    }
-  },
-  "testimonials": {
-    "title": "What Our Patients Say",
-    "items": {
-      "sophia": {
-        "quote": "The care I received at Synergy Oncology was beyond exceptional. Every doctor and nurse treated me like family.",
-        "author": "Sophia M."
-      },
-      "james": {
-        "quote": "They gave me hope when I had none. I'm now two years cancer-free and forever grateful.",
-        "author": "James R."
-      }
-    }
-  },
-  "cta": {
-    "title": "Ready to Begin Your Treatment Journey?",
-    "subtitle": "Schedule a consultation today with one of our medical oncology specialists.",
-    "buttons": {
-      "appointment": {
-        "text": "Book an Appointment"
-      },
-      "contact": {
-        "text": "Contact Our Team"
-      }
-    }
-  }
-},
-"Gynecology": {
-  "name": "Gynecology & Obstetrics",
-  "heroTitle": "Comprehensive Women's Health Services",
-  "heroSubtitle": "Expert care for all stages of a woman's life in Gorakhpur.",
-  "overview": {
-    "title": "Our Women's Health Approach",
-    "description": [
-      "The Gynecology & Obstetrics department at Synergy Super Speciality Hospital provides complete care for women through all life stages, from adolescence through menopause.",
-      "Our team offers compassionate, personalized care for routine gynecologic needs, high-risk pregnancies, fertility concerns, and gynecologic surgeries."
-    ],
-    "whyChooseUs": [
-      "Experienced OB/GYN specialists",
-      "Comprehensive prenatal and maternity care",
-      "Advanced gynecologic surgery options",
-      "Personalized approach to women's health"
-    ]
-  },
-  "treatments": {
-    "title": "Our Services",
-    "items": {
-      "prenatalCare": {
-        "title": "Prenatal & Maternity Care",
-        "description": "Comprehensive care through pregnancy, delivery, and postpartum."
-      },
-      "gynecologicSurgery": {
-        "title": "Gynecologic Surgery",
-        "description": "Minimally invasive options for hysterectomy, fibroid removal, and other procedures."
-      },
-      "preventiveCare": {
-        "title": "Preventive Care",
-        "description": "Annual exams, cancer screenings, and contraceptive counseling."
-      }
-    }
-  },
-  "stats": {
-    "title": "Women's Health Statistics",
-    "items": {
-      "babiesDelivered": {
-        "value": "2,000+",
-        "label": "Healthy Babies Delivered"
-      },
-      "surgeryRate": {
-        "value": "90%",
-        "label": "Minimally Invasive Gynecologic Surgeries"
-      },
-      "availability": {
-        "value": "24/7",
-        "label": "Labor & Delivery Availability"
-      },
-      "experienceYears": {
-        "value": "30+",
-        "label": "Years of Combined Experience"
-      }
-    }
-  },
-  "team": {
-    "title": "Our OB/GYN Team",
-    "members": {
-      "drAnjali": {
-        "name": "Dr. Anjali Jain",
-        "role": "Gynecologist",
-        "credentials": "MBBS, MD (General Physician), GENERAL MEDICINE",
-        "specialty": "General Gynecology, Obstetrics"
-      }
-    }
-  },
-  "facilities": {
-    "title": "Women's Health Facilities",
-    "description": "Our department offers comfortable, private spaces for all women's health needs.",
-    "features": [
-      "Modern labor and delivery suites",
-      "Advanced ultrasound technology",
-      "Comfortable exam rooms",
-      "Private consultation areas",
-      "Minimally invasive surgery capabilities"
-    ]
-  },
-  "research": {
-    "title": "Women’s Health Research",
-    "items": {
-      "pregnancyOutcomes": {
-        "title": "Pregnancy Outcomes",
-        "content": "Studies on optimizing care for high-risk pregnancies."
-      },
-      "minimallyInvasive": {
-        "title": "Minimally Invasive Techniques",
-        "content": "Developing new approaches to gynecologic surgery."
-      },
-      "reproductiveHealth": {
-        "title": "Reproductive Health",
-        "content": "Research on common gynecologic conditions."
-      }
-    }
-  },
-  "testimonials": {
-    "title": "Patient Experiences",
-    "items": {
-      "priya": {
-        "quote": "The OB team made my pregnancy and delivery such a positive experience with their expertise and kindness.",
-        "author": "Priya K."
-      },
-      "ananya": {
-        "quote": "My gynecologic surgery went smoothly with minimal discomfort thanks to their skilled approach.",
-        "author": "Ananya S."
-      }
-    }
-  },
-  "cta": {
-    "title": "Schedule Your Women’s Health Visit",
-    "subtitle": "Our OB/GYN team is ready to provide compassionate, expert care.",
-    "buttons": {
-      "appointment": {
-        "text": "Book Appointment"
-      },
-      "learnMore": {
-        "text": "Learn About Services"
-      }
-    }
-  }
-},
-"Neurology": {
-  "name": "Neurology",
-  "heroTitle": "Expert Care for Neurological Conditions",
-  "heroSubtitle": "Comprehensive diagnosis and treatment for disorders of the nervous system.",
-
-  "overview": {
-    "title": "Our Neurological Approach",
-    "description": [
-      "Our Neurology department provides expert care for patients with disorders of the brain, spinal cord, nerves, and muscles. We combine advanced diagnostic techniques with evidence-based treatments to manage complex neurological conditions.",
-      "Our team of specialists works collaboratively to develop personalized treatment plans for conditions ranging from migraines to multiple sclerosis, ensuring each patient receives the most appropriate care."
-    ],
-    "whyChooseUs": [
-      "Board-certified neurologists with specialized expertise",
-      "Advanced neurodiagnostic testing capabilities",
-      "Multidisciplinary approach to complex cases",
-      "Comprehensive follow-up and rehabilitation planning"
-    ]
-  },
-
-  "treatments": {
-    "title": "Neurological Services",
-    "items": {
-      "strokeCare": {
-        "title": "Stroke Care",
-        "description": "Comprehensive stroke prevention, acute treatment, and rehabilitation services."
-      },
-      "epilepsy": {
-        "title": "Epilepsy Management",
-        "description": "Advanced diagnostics and treatment for seizure disorders, including medication management and monitoring."
-      },
-      "movementDisorders": {
-        "title": "Movement Disorders",
-        "description": "Specialized care for Parkinson's disease, tremors, and other movement disorders."
-      }
-    }
-  },
-
-  "stats": {
-    "title": "Neurology By The Numbers",
-    "items": {
-      "evaluations": {
-        "value": "10,000+",
-        "label": "Neurological Evaluations Annually"
-      },
-      "satisfaction": {
-        "value": "95%",
-        "label": "Patient Satisfaction Rate"
-      },
-      "strokeCare": {
-        "value": "24/7",
-        "label": "Acute Stroke Care Availability"
-      },
-      "services": {
-        "value": "15+",
-        "label": "Specialized Neurological Services"
-      }
-    }
-  },
-
-  "team": {
-    "title": "Our Neurology Specialists",
-    "members": {
-      "drTripurari": {
-        "name": "Dr. Tripurari Pandey",
-        "role": "Neurologist",
-        "credentials": "M.B.B.S, MCH Neuro Surgeon",
-        "specialty": "Neurological Disorders"
-      },
-      "drAnurag": {
-        "name": "Dr. Anurag Singh",
-        "role": "Neurologist",
-        "credentials": "M.B.B.S, MS, MCH Neuro Surgeon",
-        "specialty": "Neurological Surgery"
-      }
-    }
-  },
-
-  "facilities": {
-    "title": "Neurology Facilities",
-    "description": "Our neurology department features advanced diagnostic and treatment technologies.",
-    "features": [
-      "State-of-the-art EEG and EMG equipment",
-      "Advanced neuroimaging capabilities",
-      "Dedicated stroke unit",
-      "Specialized neurophysiology lab",
-      "Comfortable infusion center for neurological treatments"
-    ]
-  },
-
-  "research": {
-    "title": "Neurology Research",
-    "items": {
-      "strokeRecovery": {
-        "title": "Stroke Recovery",
-        "content": "Investigating new approaches to enhance recovery after stroke."
-      },
-      "neuroDegeneration": {
-        "title": "Neurodegenerative Diseases",
-        "content": "Research into novel treatments for Alzheimer's and Parkinson's diseases."
-      },
-      "headacheTherapies": {
-        "title": "Headache Therapies",
-        "content": "Developing more effective treatments for chronic migraine and headache disorders."
-      }
-    }
-  },
-
-  "testimonials": {
-    "title": "Patient Stories",
-    "items": {
-      "anita": {
-        "quote": "The neurology team accurately diagnosed my condition after years of uncertainty.",
-        "author": "Anita R."
-      },
-      "vikram": {
-        "quote": "Their compassionate care made all the difference in my recovery from stroke.",
-        "author": "Vikram S."
-      }
-    }
-  },
-
-  "cta": {
-    "title": "Schedule Your Neurological Consultation",
-    "subtitle": "Contact us to book an appointment with our neurology specialists.",
-    "buttons": {
-      "bookNow": {
-        "text": "Book Now"
-      },
-      "learnMore": {
-        "text": "Learn More"
-      }
-    }
-  }
-}
-
-
-
-
-
+    "experience": "experience",
+    "peripheralOPD": {
+        "title": "Synergy Super Speciality Hospital & Cancer Center's Peripheral OPD List 2025-2026",
+        "subtitle": "Find all our peripheral OPD locations, doctors, and timings",
+        "searchPlaceholder": "Search by hospital, doctor, or place...",
+        "filterPlaceholder": "Filter by district",
+        "tableCaption": "Synergy Super Speciality Hospital & Cancer Center's Peripheral OPD List - {count} locations found",
+        "tableHeaders": {
+            "place": "Place",
+            "hospitalName": "Hospital Name",
+            "doctors": "Doctor(s)",
+            "day": "Day",
+            "time": "Time"
+        },
+        "noResults": "No OPDs found matching your search criteria"
     }
 }

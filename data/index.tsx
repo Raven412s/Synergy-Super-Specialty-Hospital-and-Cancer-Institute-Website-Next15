@@ -1,4 +1,4 @@
-import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, PressRelease, TestimonialItem } from "@/types"
+import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, OPD, PressRelease, TestimonialItem } from "@/types"
 import { useTranslations } from 'next-intl';
 
 export const MAIN_URL = "https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto/qi0ggafhojvfvpjcuunt"
@@ -243,84 +243,89 @@ export const useQuickLinks = () => {
             value: t('support.value'),
             bg: "bg-teal-50"
         },
+        {
+            label: t('peripheralOpd.label'),
+            value: t('peripheralOpd.value'),
+            bg: "bg-yellow-50"
+        },
     ];
 };
 
 export const useTestimonials = () => {
     const t = useTranslations('testimonials');
-const testimonials: TestimonialItem[] =  [
-    {
-        type: "written",
-        name: t('mohammadWarisAli.name'),
-        description: t('mohammadWarisAli.description'),
-        image: "/patients/anita.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/mrs-saroj-devi.png",
-        videoUrl: "/videos/testimonials/mrs-saroj-devi.mp4",
-    },
-    {
-        type: "written",
-        name: t('parmatmaMishra.name'),
-        description: t('parmatmaMishra.description'),
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/mahaveeram.png",
-        videoUrl: "/videos/testimonials/mahaveeram.mp4",
-    },
-    {
-        type: "video",
-        image: "/patients/mrs-neetu.png",
-        videoUrl: "/videos/testimonials/mrs-neetu.mp4",
-    },
-    {
-        type: "written",
-        name: t('sohanPaswan.name'),
-        description: t('sohanPaswan.description'),
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "written",
-        name: t('govindVerma.name'),
-        description: t('govindVerma.description'),
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/siddhi-mishra.png",
-        videoUrl: "/videos/testimonials/siddhi-mishra.mp4",
-    },
-    {
-        type: "written",
-        name: t('tigerKumar.name'),
-        description: t('tigerKumar.description'),
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/anita.jpeg",
-        videoUrl: "/videos/testimonials/vid.mp4",
-    },
-    {
-        type: "video",
-        image: "/patients/mr-naresh-ram.png",
-        videoUrl: "/videos/testimonials/mr-naresh-ram.mp4",
-    },
-    {
-        type: "written",
-        name: t('armanAli.name'),
-        description: t('armanAli.description'),
-        image: "/patients/suresh.jpeg",
-    },
-    {
-        type: "video",
-        image: "/patients/kalavati-devi.png",
-        videoUrl: "/videos/testimonials/kalavati-devi.mp4",
-    },
-];
+    const testimonials: TestimonialItem[] = [
+        {
+            type: "written",
+            name: t('mohammadWarisAli.name'),
+            description: t('mohammadWarisAli.description'),
+            image: "/patients/anita.jpeg",
+        },
+        {
+            type: "video",
+            image: "/patients/mrs-saroj-devi.png",
+            videoUrl: "/videos/testimonials/mrs-saroj-devi.mp4",
+        },
+        {
+            type: "written",
+            name: t('parmatmaMishra.name'),
+            description: t('parmatmaMishra.description'),
+            image: "/patients/suresh.jpeg",
+        },
+        {
+            type: "video",
+            image: "/patients/mahaveeram.png",
+            videoUrl: "/videos/testimonials/mahaveeram.mp4",
+        },
+        {
+            type: "video",
+            image: "/patients/mrs-neetu.png",
+            videoUrl: "/videos/testimonials/mrs-neetu.mp4",
+        },
+        {
+            type: "written",
+            name: t('sohanPaswan.name'),
+            description: t('sohanPaswan.description'),
+            image: "/patients/suresh.jpeg",
+        },
+        {
+            type: "written",
+            name: t('govindVerma.name'),
+            description: t('govindVerma.description'),
+            image: "/patients/suresh.jpeg",
+        },
+        {
+            type: "video",
+            image: "/patients/siddhi-mishra.png",
+            videoUrl: "/videos/testimonials/siddhi-mishra.mp4",
+        },
+        {
+            type: "written",
+            name: t('tigerKumar.name'),
+            description: t('tigerKumar.description'),
+            image: "/patients/suresh.jpeg",
+        },
+        {
+            type: "video",
+            image: "/patients/anita.jpeg",
+            videoUrl: "/videos/testimonials/vid.mp4",
+        },
+        {
+            type: "video",
+            image: "/patients/mr-naresh-ram.png",
+            videoUrl: "/videos/testimonials/mr-naresh-ram.mp4",
+        },
+        {
+            type: "written",
+            name: t('armanAli.name'),
+            description: t('armanAli.description'),
+            image: "/patients/suresh.jpeg",
+        },
+        {
+            type: "video",
+            image: "/patients/kalavati-devi.png",
+            videoUrl: "/videos/testimonials/kalavati-devi.mp4",
+        },
+    ];
     return testimonials
 };
 
@@ -617,6 +622,15 @@ export const useLeaders = () => {
         },
     ];
 };
+
+export const useOPD_Data = () => {
+    const t = useTranslations();
+
+    const opdData: OPD[] = t.raw("opdData");
+
+    return opdData;
+}
+
 
 export const pressReleases: PressRelease[] = [
     {

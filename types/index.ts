@@ -292,3 +292,38 @@ export interface CancerTypeData {
     availability: DoctorAvailability[];
     isSenior: boolean;
   }
+
+  // types.ts
+export interface DoctorPeripheralOPD {
+    name: string;
+    imageUrl?: string; // Can be optional if some doctors don't have images
+    qualifications: string[];
+    experience: string;
+    specialization?: string;
+  }
+
+export interface OPD {
+    id: number;
+    place: string;
+    hospitalName: string;
+    hospitalAddress: string;
+    hospitalAddressLink: string;
+    doctors: DoctorPeripheralOPD[];
+    day: string;
+    time: string;
+    district: string;
+  }
+
+  export const districts = [
+    "All",
+    "Ayodhya",
+    "Siddharth Nagar",
+    "Barhalganj",
+    "Azamgarh",
+    "Deoria",
+    "Salempur",
+    "Maharaiganj",
+    "Kasiya",
+    "Siwan Bihar",
+    "Gopalganj Bihar"
+  ];
