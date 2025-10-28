@@ -1,5 +1,5 @@
 "use client"
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 // Import your images (replace with actual paths)
@@ -19,7 +19,7 @@ const SupportServicesPage = () => {
         },
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: { y: 50, opacity: 0 },
         visible: {
             y: 0,

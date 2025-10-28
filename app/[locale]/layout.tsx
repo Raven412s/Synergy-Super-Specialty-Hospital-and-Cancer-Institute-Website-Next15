@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Kantumruy_Pro } from 'next/font/google';
-import "./globals.css";
+import "../globals.css";
 
 const nunito = Kantumruy_Pro({
     subsets: ['latin'],
@@ -29,7 +29,7 @@ export default async function RootLayout({
     params,
 }: {
     children: React.ReactNode;
-    params: Promise<{ locale: "en" | "hi" }>;
+    params: Promise<{ locale: string }>;
 }) {
     // Ensure that the incoming `locale` is valid
     const { locale } = await params;

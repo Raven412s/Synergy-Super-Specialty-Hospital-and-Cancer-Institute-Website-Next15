@@ -4,7 +4,7 @@
 import { usePathname } from 'next/navigation';
 import { useDepartmentData } from '@/data/departmentData';
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
 
@@ -20,7 +20,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,

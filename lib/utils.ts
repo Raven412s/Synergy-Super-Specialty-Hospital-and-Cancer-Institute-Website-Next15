@@ -1,4 +1,5 @@
 import { clsx, type ClassValue } from "clsx"
+import { Variants } from "framer-motion";
 import { twMerge } from "tailwind-merge"
 
 export function cn(...inputs: ClassValue[]) {
@@ -18,7 +19,7 @@ export const containerVariants = {
     }
   };
 
-  export const itemVariants = {
+  export const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
@@ -30,7 +31,7 @@ export const containerVariants = {
     }
   };
 
-  export const imageVariants = {
+  export const imageVariants: Variants = {
     hidden: { scale: 0.95, opacity: 0 },
     visible: {
       scale: 1,

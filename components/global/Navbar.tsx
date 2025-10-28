@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { useMenuItems, useQuickLinks } from "@/data";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import { ArrowRight, MenuIcon, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +30,7 @@ import {
 import { LanguageSwitch } from "./LanguageSwitch";
 
 // Animation variants
-const dropdownVariants = {
+const dropdownVariants: Variants = {
     hidden: {
         opacity: 0,
         y: -10,
@@ -52,7 +52,7 @@ const dropdownVariants = {
     }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 5 },
     visible: { opacity: 1, y: 0 }
 };

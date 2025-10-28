@@ -2,7 +2,7 @@
 import { ImageWithFallback } from '@/components/global/ImageWithFallback';
 import { useDepartmentData } from '@/data/departmentData';
 import { DepartmentData } from '@/types';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 
 // Animation variants (unchanged)
@@ -17,7 +17,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
