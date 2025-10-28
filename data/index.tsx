@@ -1,7 +1,7 @@
-import { ActionItem, LeaderCardProps, LeaderPageProps, MenuItemProps, OPD, PressRelease, TestimonialItem } from "@/types"
+import { MenuItemProps, OPD, PressRelease, TestimonialItem } from "@/types";
 import { useTranslations } from 'next-intl';
 
-export const MAIN_URL = "https://res.cloudinary.com/dzynl3hzk/video/upload/f_auto:video,q_auto/qi0ggafhojvfvpjcuunt"
+export const MAIN_URL = "https://res.cloudinary.com/dvjmhjpso/video/upload/v1761647880/VN20251028_160412_oxmigv.mp4"
 
 
 export const useMenuItems = () => {
