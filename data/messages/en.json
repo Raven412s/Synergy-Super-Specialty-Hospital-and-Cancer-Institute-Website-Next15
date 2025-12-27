@@ -744,7 +744,8 @@
                 "strong5": "quality treatment",
                 "strong6": "empathy",
                 "strong7": "professionalism",
-                "normal6": "at every stage of the patient journey."
+                "normal6": "at every stage of the patient journey.",
+                "normal7": ""
             }
         },
         "OurVision": {
@@ -1392,6 +1393,2234 @@
                     }
                 }
             }
+        },
+        "Gastroenterology": {
+            "name": "Gastroenterology",
+            "heroTitle": "Comprehensive Digestive Health Care",
+            "heroSubtitle": "Expert diagnosis and treatment for gastrointestinal and liver disorders.",
+            "overview": {
+                "title": "Our Gastroenterology Services",
+                "description": [
+                    "The Gastroenterology department provides complete care for disorders of the digestive system, including the esophagus, stomach, intestines, liver, pancreas, and gallbladder. Our specialists utilize advanced endoscopic techniques for both diagnosis and treatment.",
+                    "We offer personalized care plans for conditions ranging from acid reflux to inflammatory bowel disease, with a focus on both medical management and preventive care."
+                ],
+                "whyChooseUs": [
+                    "Board-certified gastroenterologists with specialized training",
+                    "Advanced endoscopic procedures including ERCP and EUS",
+                    "Comprehensive liver disease management",
+                    "Multidisciplinary approach to complex digestive disorders"
+                ]
+            },
+            "treatments": {
+                "title": "Gastroenterology Treatments",
+                "items": {
+                    "endoscopic": {
+                        "title": "Endoscopic Procedures",
+                        "description": "Diagnostic and therapeutic upper and lower endoscopy, including polyp removal and stent placement."
+                    },
+                    "liver": {
+                        "title": "Liver Disease Management",
+                        "description": "Comprehensive care for hepatitis, cirrhosis, and other liver conditions, including transplant evaluation."
+                    },
+                    "ibd": {
+                        "title": "IBD Center",
+                        "description": "Specialized care for Crohn's disease and ulcerative colitis with the latest medical therapies."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Gastroenterology By The Numbers",
+                "items": {
+                    "endoscopies": {
+                        "value": "5,000+",
+                        "label": "Endoscopic Procedures Annually"
+                    },
+                    "polyp": {
+                        "value": "98%",
+                        "label": "Polyp Detection Rate"
+                    },
+                    "emergency": {
+                        "value": "24/7",
+                        "label": "Emergency GI Bleed Coverage"
+                    },
+                    "clinics": {
+                        "value": "10+",
+                        "label": "Specialized GI Clinics"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Gastroenterology Team",
+                "members": {
+                    "drUpendra": {
+                        "name": "Dr. Upendra Gupta",
+                        "role": "Gastroenterologist",
+                        "credentials": "M.B.B.S , MD, DM-(GASTROENTEROLOGY)",
+                        "specialty": "Advanced Endoscopy"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Endoscopy Center",
+                "description": "Our state-of-the-art endoscopy suite features the latest technology for patient comfort and safety.",
+                "features": [
+                    "High-definition endoscopy systems",
+                    "ERCP capability for biliary and pancreatic disorders",
+                    "Endoscopic ultrasound (EUS)",
+                    "Capsule endoscopy for small bowel evaluation",
+                    "Comfortable recovery area"
+                ]
+            },
+            "research": {
+                "title": "GI Research",
+                "items": {
+                    "microbiome": {
+                        "title": "Microbiome Studies",
+                        "content": "Investigating the role of gut bacteria in digestive health and disease."
+                    },
+                    "endoscopy": {
+                        "title": "Advanced Endoscopy",
+                        "content": "Developing new techniques for minimally invasive treatment of complex GI disorders."
+                    },
+                    "ibd": {
+                        "title": "IBD Therapies",
+                        "content": "Clinical trials of new medications for inflammatory bowel diseases."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {
+                    "sunil": {
+                        "quote": "The gastroenterology team diagnosed my condition quickly and treated me with great care.",
+                        "author": "Sunil M."
+                    },
+                    "geeta": {
+                        "quote": "My colonoscopy was comfortable and professional - I highly recommend their services.",
+                        "author": "Geeta R."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your GI Consultation",
+                "subtitle": "Contact us to book an appointment or procedure.",
+                "buttons": {
+                    "bookAppointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learnProcedures": {
+                        "text": "Learn About Procedures"
+                    }
+                }
+            }
+        },
+        "Nephrology": {
+            "name": "Nephrology",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "overview": {
+                "title": "Our Nephrology Approach",
+                "description": [
+                    "The Nephrology department provides comprehensive care for patients with kidney disorders, including chronic kidney disease, acute kidney injury, hypertension, and electrolyte imbalances. We offer both medical management and dialysis services.",
+                    "Our team works closely with patients to slow disease progression, manage complications, and provide renal replacement therapies when needed, with a focus on quality of life and patient education."
+                ],
+                "whyChooseUs": [
+                    "Board-certified nephrologists with specialized training",
+                    "Comprehensive dialysis services",
+                    "Multidisciplinary approach to complex kidney disorders",
+                    "Chronic disease management programs"
+                ]
+            },
+            "treatments": {
+                "title": "Nephrology Services",
+                "items": {
+                    "dialysis": {
+                        "title": "Dialysis Care",
+                        "description": "In-center hemodialysis, peritoneal dialysis, and home dialysis training programs."
+                    },
+                    "hypertension": {
+                        "title": "Hypertension Management",
+                        "description": "Specialized care for difficult-to-control high blood pressure and its complications."
+                    },
+                    "ckd": {
+                        "title": "Chronic Kidney Disease",
+                        "description": "Comprehensive management to slow progression and manage complications of CKD."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Nephrology By The Numbers",
+                "items": {
+                    "dialysis": {
+                        "value": "1,200+",
+                        "label": "Dialysis Treatments Monthly"
+                    },
+                    "satisfaction": {
+                        "value": "90%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "experience": {
+                        "value": "15+",
+                        "label": "Years of Nephrology Experience"
+                    },
+                    "acute": {
+                        "value": "24/7",
+                        "label": "Acute Dialysis Availability"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Nephrology Team",
+                "members": {
+                    "drAnindya": {
+                        "name": "Dr. Anindya Biswas",
+                        "role": "Nephrologist",
+                        "credentials": "MBBS, DNB,DrNB(NEFROLOGY)",
+                        "specialty": "Chronic Kidney Disease Management"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Dialysis Center",
+                "description": "Our modern dialysis unit provides comfortable, high-quality care for patients with kidney failure.",
+                "features": [
+                    "State-of-the-art hemodialysis machines",
+                    "Comfortable dialysis chairs with entertainment options",
+                    "Specialized water treatment system",
+                    "Dedicated infection control protocols",
+                    "Private consultation rooms"
+                ]
+            },
+            "research": {
+                "title": "Kidney Research",
+                "items": {
+                    "ckd": {
+                        "title": "CKD Progression",
+                        "content": "Investigating factors that influence the progression of chronic kidney disease."
+                    },
+                    "dialysis": {
+                        "title": "Dialysis Innovations",
+                        "content": "Research into improving outcomes and quality of life for dialysis patients."
+                    },
+                    "hypertension": {
+                        "title": "Hypertension Studies",
+                        "content": "Clinical trials of new approaches to managing resistant hypertension."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "arun": {
+                        "quote": "The nephrology team has taken excellent care of me through my kidney disease journey.",
+                        "author": "Arun S."
+                    },
+                    "lata": {
+                        "quote": "They made dialysis much less intimidating and always treat me with respect.",
+                        "author": "Lata M."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your Nephrology Consultation",
+                "subtitle": "Contact us to discuss your kidney health needs.",
+                "buttons": {
+                    "bookAppointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learnServices": {
+                        "text": "Learn About Services"
+                    }
+                }
+            }
+        },
+        "Urology": {
+            "name": "Urology",
+            "heroTitle": "Comprehensive Urological Care",
+            "heroSubtitle": "Advanced diagnosis and treatment for urinary tract and male reproductive system disorders.",
+            "overview": {
+                "title": "Our Urology Services",
+                "description": [
+                    "The Urology department provides complete care for disorders of the urinary tract in both men and women, as well as male reproductive health. Our specialists utilize both medical and surgical approaches to treat conditions ranging from kidney stones to prostate cancer.",
+                    "We offer minimally invasive and robotic-assisted surgical techniques when appropriate, with a focus on patient-centered care and optimal outcomes."
+                ],
+                "whyChooseUs": [
+                    "Board-certified urologists with specialized training",
+                    "Advanced minimally invasive and robotic surgical techniques",
+                    "Comprehensive prostate health services",
+                    "Multidisciplinary approach to complex urologic cancers"
+                ]
+            },
+            "treatments": {
+                "title": "Urological Treatments",
+                "items": {
+                    "kidneyStone": {
+                        "title": "Kidney Stone Management",
+                        "description": "Medical expulsive therapy, lithotripsy, and minimally invasive stone removal procedures."
+                    },
+                    "prostate": {
+                        "title": "Prostate Care",
+                        "description": "Comprehensive services for BPH, prostatitis, and prostate cancer screening and treatment."
+                    },
+                    "oncology": {
+                        "title": "Urologic Oncology",
+                        "description": "Specialized care for cancers of the bladder, kidney, prostate, and testicles."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Urology By The Numbers",
+                "items": {
+                    "surgeries": {
+                        "value": "1,000+",
+                        "label": "Surgical Procedures Annually"
+                    },
+                    "stoneFree": {
+                        "value": "95%",
+                        "label": "Stone-Free Rate After Treatment"
+                    },
+                    "robotic": {
+                        "value": "50+",
+                        "label": "Robotic Surgeries Performed Yearly"
+                    },
+                    "emergency": {
+                        "value": "24/7",
+                        "label": "Emergency Urology Coverage"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Urology Team",
+                "members": {
+                    "drRohit": {
+                        "name": "Dr. Rohit Kumar Singh",
+                        "role": "Urologist",
+                        "credentials": "M.B.B.S, M.S, Mch. Urology, Davinci certified Robotic Uro Surgeon",
+                        "specialty": "Robotic Urologic Surgery"
+                    },
+                    "drVishrut": {
+                        "name": "Dr. Vishrut Bharti",
+                        "role": "Urologist",
+                        "credentials": "M.B.B.S M.S (General Surgery) MCH (Urologist) Gold Medalist",
+                        "specialty": "Endourology and Stone Disease"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Urology Center",
+                "description": "Our urology department features advanced diagnostic and treatment technologies.",
+                "features": [
+                    "Digital urodynamics equipment",
+                    "Flexible and rigid ureteroscopy capabilities",
+                    "Da Vinci robotic surgical system",
+                    "Shock wave lithotripsy unit",
+                    "Comfortable cystoscopy suite"
+                ]
+            },
+            "research": {
+                "title": "Urology Research",
+                "items": {
+                    "stonePrevention": {
+                        "title": "Stone Prevention",
+                        "content": "Investigating dietary and medical approaches to prevent recurrent kidney stones."
+                    },
+                    "robotic": {
+                        "title": "Robotic Techniques",
+                        "content": "Developing improved robotic surgical approaches for urologic cancers."
+                    },
+                    "bph": {
+                        "title": "BPH Therapies",
+                        "content": "Clinical trials of new minimally invasive treatments for enlarged prostate."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {
+                    "sanjay": {
+                        "quote": "The urology team made my kidney stone treatment virtually painless and very effective.",
+                        "author": "Sanjay P."
+                    },
+                    "mohan": {
+                        "quote": "Their expertise in robotic prostate surgery gave me confidence in my treatment choice.",
+                        "author": "Mohan D."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your Urology Consultation",
+                "subtitle": "Contact us to discuss your urological health needs.",
+                "buttons": {
+                    "bookAppointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learnServices": {
+                        "text": "Learn About Services"
+                    }
+                }
+            }
+        },
+        "Orthopedics": {
+            "name": "Orthopedics",
+            "heroTitle": "Comprehensive Bone, Joint and Spine Care",
+            "heroSubtitle": "Specialized orthopedic treatments for all ages.",
+            "overview": {
+                "title": "Our Orthopedic Approach",
+                "description": [
+                    "The Orthopedics department provides complete care for musculoskeletal conditions, including arthritis, sports injuries, fractures, and spinal disorders. Our specialists utilize both surgical and non-surgical approaches to restore function and relieve pain.",
+                    "We offer specialized clinics for joint replacement, sports medicine, hand surgery, and spine care, with a focus on personalized treatment plans and rehabilitation."
+                ],
+                "whyChooseUs": [
+                    "Board-certified orthopedic surgeons with subspecialty training",
+                    "Advanced joint replacement and arthroscopic techniques",
+                    "Multidisciplinary approach to complex musculoskeletal problems",
+                    "Comprehensive rehabilitation services"
+                ]
+            },
+            "treatments": {
+                "title": "Orthopedic Services",
+                "items": {
+                    "jointReplacement": {
+                        "title": "Joint Replacement",
+                        "description": "Hip, knee, and shoulder replacement surgery using advanced techniques and implants."
+                    },
+                    "sportsMedicine": {
+                        "title": "Sports Medicine",
+                        "description": "Treatment for athletic injuries, including arthroscopic surgery and rehabilitation."
+                    },
+                    "spineCare": {
+                        "title": "Spine Care",
+                        "description": "Surgical and non-surgical management of back and neck disorders."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Orthopedics By The Numbers",
+                "items": {
+                    "jointReplacements": {
+                        "value": "500+",
+                        "label": "Joint Replacements Annually"
+                    },
+                    "satisfaction": {
+                        "value": "95%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "experience": {
+                        "value": "20+",
+                        "label": "Years of Orthopedic Experience"
+                    },
+                    "fractureCare": {
+                        "value": "24/7",
+                        "label": "Fracture Care Availability"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Orthopedic Team",
+                "members": {
+                    "drPrateek": {
+                        "name": "Dr. Prateek",
+                        "role": "Orthopedic Surgeon",
+                        "credentials": "M.B.B.S. MS ORTHO,FIJR,FAGE orthopedic trauma Joint Replacement,Spine Specialist Surgeon & Sports Injury Surgeon",
+                        "specialty": "Joint Replacement and Sports Medicine"
+                    },
+                    "drAnil": {
+                        "name": "Dr. Anil Srivastava",
+                        "role": "Orthopedic Surgeon",
+                        "credentials": "M.B.B.S. MS ORTHO",
+                        "specialty": "Trauma and General Orthopedics"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Orthopedic Center",
+                "description": "Our orthopedic facility features advanced technology for diagnosis, treatment, and rehabilitation.",
+                "features": [
+                    "Digital radiography and advanced imaging",
+                    "Modern operating rooms with specialized equipment",
+                    "Dedicated joint replacement unit",
+                    "Physical therapy and rehabilitation center",
+                    "On-site orthotics and bracing"
+                ],
+                "image": "/fallback-image.webp"
+            },
+            "research": {
+                "title": "Orthopedic Research",
+                "items": {
+                    "implant": {
+                        "title": "Implant Longevity",
+                        "content": "Studying factors that influence the longevity of joint replacements."
+                    },
+                    "regenerative": {
+                        "title": "Regenerative Medicine",
+                        "content": "Investigating stem cell and PRP therapies for musculoskeletal injuries."
+                    },
+                    "minimallyInvasive": {
+                        "title": "Minimally Invasive Techniques",
+                        "content": "Developing less invasive surgical approaches with faster recovery."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "rekha": {
+                        "quote": "My knee replacement went smoothly and I was walking the same day - amazing care!",
+                        "author": "Rekha M."
+                    },
+                    "vivek": {
+                        "quote": "The sports medicine team got me back to playing cricket after my shoulder injury.",
+                        "author": "Vivek S."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your Orthopedic Consultation",
+                "subtitle": "Contact us to discuss your bone and joint health needs.",
+                "buttons": {
+                    "bookAppointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learnServices": {
+                        "text": "Learn About Services"
+                    }
+                }
+            }
+        },
+        "Anesthesia": {
+            "name": "Anesthesia",
+            "heroTitle": "Expert Anesthesia Care for Safe Procedures",
+            "heroSubtitle": "Providing advanced anesthesia solutions with patient safety as our top priority in Gorakhpur.",
+            "overview": {
+                "title": "Our Anesthesia Approach",
+                "description": [
+                    "At Synergy Super Speciality Hospital, our Anesthesia department provides comprehensive perioperative care using the latest techniques and monitoring technology. Our team ensures patient comfort and safety during surgical procedures.",
+                    "With specialized training in various anesthesia subspecialties, our experts tailor anesthesia plans to each patient's medical needs, minimizing risks and optimizing recovery."
+                ],
+                "whyChooseUs": [
+                    "Board-certified anesthesiologists with subspecialty expertise",
+                    "Advanced monitoring and pain management techniques",
+                    "Pediatric and geriatric anesthesia specialists",
+                    "Comprehensive pre-anesthesia evaluation and post-op care"
+                ]
+            },
+            "treatments": {
+                "title": "Anesthesia Services",
+                "items": {
+                    "general": {
+                        "title": "General Anesthesia",
+                        "description": "Safe administration of anesthesia for patients undergoing major surgical procedures with advanced monitoring."
+                    },
+                    "regional": {
+                        "title": "Regional Anesthesia",
+                        "description": "Expertise in spinal, epidural and nerve block techniques for targeted pain relief and faster recovery."
+                    },
+                    "pain": {
+                        "title": "Pain Management",
+                        "description": "Multimodal approaches to acute and chronic pain management during and after procedures."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Our Anesthesia Expertise",
+                "items": {
+                    "procedures": {
+                        "value": "10,000+",
+                        "label": "Safe Anesthesia Procedures Performed"
+                    },
+                    "coverage": {
+                        "value": "24/7",
+                        "label": "Anesthesia Coverage Availability"
+                    },
+                    "satisfaction": {
+                        "value": "99%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "techniques": {
+                        "value": "5",
+                        "label": "Specialized Anesthesia Techniques Offered"
+                    }
+                }
+            },
+            "team": {
+                "title": "Meet Our Anesthesiologists",
+                "members": {
+                    "drHarshit": {
+                        "name": "Dr. Harshit Mishra",
+                        "role": "Anesthesiologist",
+                        "credentials": "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
+                        "specialty": "Neuroanesthesia"
+                    },
+                    "drAmritansh": {
+                        "name": "Dr. Amritansh Pandey",
+                        "role": "Anesthesiologist",
+                        "credentials": "M.B.B.S, MD-Anesthesia",
+                        "specialty": "General Anesthesia"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Advanced Anesthesia Facilities",
+                "description": "Our department is equipped with cutting-edge technology to ensure safe anesthesia delivery and monitoring.",
+                "features": [
+                    "State-of-the-art anesthesia machines with advanced ventilation modes",
+                    "Comprehensive hemodynamic monitoring systems",
+                    "Dedicated post-anesthesia care unit (PACU)",
+                    "Advanced pain management equipment",
+                    "Emergency airway management resources"
+                ],
+                "image": "/department/anesthesia-facilities.webp"
+            },
+            "research": {
+                "title": "Research & Innovation",
+                "items": {
+                    "enhancedRecovery": {
+                        "title": "Enhanced Recovery Protocols",
+                        "content": "Developing optimized anesthesia protocols for faster postoperative recovery."
+                    },
+                    "painStudies": {
+                        "title": "Pain Management Studies",
+                        "content": "Researching novel approaches to perioperative pain control."
+                    },
+                    "safetySystems": {
+                        "title": "Safety Monitoring Systems",
+                        "content": "Implementing AI-assisted monitoring for anesthesia safety."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "rajesh": {
+                        "quote": "The anesthesia team made me feel completely at ease before my surgery. I woke up comfortable with excellent pain control.",
+                        "author": "Rajesh K."
+                    },
+                    "priya": {
+                        "quote": "Their expertise in regional anesthesia helped me recover quickly with minimal pain after my procedure.",
+                        "author": "Priya M."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Have Questions About Anesthesia?",
+                "subtitle": "Our anesthesia specialists are available to discuss your upcoming procedure.",
+                "buttons": {
+                    "consult": {
+                        "text": "Consult Our Team"
+                    },
+                    "learnMore": {
+                        "text": "Learn More"
+                    }
+                }
+            }
+        },
+        "GeneralSurgery": {
+            "name": "General Surgery",
+            "heroTitle": "Comprehensive Surgical Care for All Needs",
+            "heroSubtitle": "Expert surgical solutions with compassionate care in Gorakhpur.",
+            "overview": {
+                "title": "Our Surgical Services",
+                "description": [
+                    "The General Surgery department at Synergy Super Speciality Hospital provides a full spectrum of surgical care using both traditional and minimally invasive techniques.",
+                    "Our experienced surgeons perform procedures ranging from routine appendectomies to complex abdominal surgeries, always prioritizing patient safety and optimal outcomes."
+                ],
+                "whyChooseUs": [
+                    "Experienced surgeons with specialized training",
+                    "Minimally invasive laparoscopic options",
+                    "Comprehensive pre- and post-operative care",
+                    "Multidisciplinary approach to complex cases"
+                ]
+            },
+            "treatments": {
+                "title": "Surgical Procedures",
+                "items": {
+                    "laparoscopic": {
+                        "title": "Laparoscopic Surgery",
+                        "description": "Minimally invasive procedures for gallbladder, appendix, hernia and other abdominal conditions."
+                    },
+                    "gastrointestinal": {
+                        "title": "Gastrointestinal Surgery",
+                        "description": "Expert management of conditions affecting the stomach, intestines, colon and rectum."
+                    },
+                    "hernia": {
+                        "title": "Hernia Repair",
+                        "description": "Advanced techniques for inguinal, umbilical and ventral hernia repairs."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Our Surgical Expertise",
+                "items": {
+                    "surgeries": {
+                        "value": "5,000+",
+                        "label": "Successful Surgeries Performed"
+                    },
+                    "minimallyInvasive": {
+                        "value": "85%",
+                        "label": "Minimally Invasive Procedures"
+                    },
+                    "satisfaction": {
+                        "value": "98%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "coverage": {
+                        "value": "24/7",
+                        "label": "Emergency Surgical Coverage"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Surgical Team",
+                "members": {
+                    "drDpSingh": {
+                        "name": "Dr. D.P. Singh",
+                        "role": "General Surgeon",
+                        "credentials": "M.B.B.S, MS GENERAL SURGERY, DEPARTMENT OF GI SURGERY",
+                        "specialty": "Gastrointestinal Surgery"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Surgical Facilities",
+                "description": "Our modern operating suites are equipped with the latest technology for safe, effective procedures.",
+                "features": [
+                    "Advanced laparoscopic equipment",
+                    "State-of-the-art operating rooms",
+                    "Comprehensive sterilization systems",
+                    "Dedicated recovery areas",
+                    "24/7 emergency surgical capability"
+                ],
+                "image": "/fallback-image.webp"
+            },
+            "research": {
+                "title": "Surgical Innovation",
+                "items": {
+                    "minimallyInvasive": {
+                        "title": "Minimally Invasive Techniques",
+                        "content": "Developing new approaches to reduce surgical trauma and improve recovery."
+                    },
+                    "enhancedRecovery": {
+                        "title": "Enhanced Recovery Protocols",
+                        "content": "Researching optimized pathways for postoperative recovery."
+                    },
+                    "education": {
+                        "title": "Surgical Education",
+                        "content": "Training programs for advancing surgical skills in the region."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {
+                    "amit": {
+                        "quote": "My laparoscopic gallbladder surgery was smooth with minimal pain and quick recovery thanks to the skilled surgical team.",
+                        "author": "Amit S."
+                    },
+                    "neha": {
+                        "quote": "The surgeons explained everything clearly and took excellent care of me before and after my procedure.",
+                        "author": "Neha P."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Need Surgical Consultation?",
+                "subtitle": "Our general surgeons are available to evaluate your condition and discuss treatment options.",
+                "buttons": {
+                    "schedule": {
+                        "text": "Schedule Consultation"
+                    },
+                    "learn": {
+                        "text": "Learn About Procedures"
+                    }
+                }
+            }
+        },
+        "Pediatrics": {
+            "name": "Pediatrics",
+            "heroTitle": "Compassionate Care for Children of All Ages",
+            "heroSubtitle": "Specialized pediatric services for infants through adolescents in Gorakhpur.",
+            "overview": {
+                "title": "Our Pediatric Approach",
+                "description": [
+                    "The Pediatrics department at Synergy Super Speciality Hospital provides comprehensive medical care for children from birth through adolescence.",
+                    "Our team of pediatric specialists focuses on preventive care, early intervention, and treatment of childhood illnesses in a child-friendly environment."
+                ],
+                "whyChooseUs": [
+                    "Board-certified pediatricians and neonatologists",
+                    "Child-friendly clinic environment",
+                    "Developmental and behavioral specialists",
+                    "24/7 pediatric emergency care"
+                ]
+            },
+            "treatments": {
+                "title": "Pediatric Services",
+                "items": {
+                    "wellChild": {
+                        "title": "Well-Child Care",
+                        "description": "Comprehensive check-ups, immunizations, and developmental screenings."
+                    },
+                    "neonatal": {
+                        "title": "Neonatal Care",
+                        "description": "Specialized care for newborns, including premature and high-risk infants."
+                    },
+                    "illnessManagement": {
+                        "title": "Pediatric Illness Management",
+                        "description": "Expert diagnosis and treatment of childhood illnesses and chronic conditions."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Our Pediatric Impact",
+                "items": {
+                    "children": {
+                        "value": "10,000+",
+                        "label": "Healthy Children in Our Care"
+                    },
+                    "vaccination": {
+                        "value": "98%",
+                        "label": "Vaccination Completion Rate"
+                    },
+                    "availability": {
+                        "value": "24/7",
+                        "label": "Availability for Emergencies"
+                    },
+                    "experience": {
+                        "value": "15+",
+                        "label": "Years of Pediatric Experience"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Pediatric Team",
+                "members": {
+                    "drApShahi": {
+                        "name": "Dr. AP Shahi",
+                        "role": "Pediatrician & Neonatologist",
+                        "credentials": "M.B.B.S, DCH,MIAP ,Pediatrician & Neonatologist Fellowship ,POPN Boston(USA)",
+                        "specialty": "Neonatology, General Pediatrics"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Child-Friendly Facilities",
+                "description": "Our pediatric unit is designed to make children feel comfortable while receiving top-quality medical care.",
+                "features": [
+                    "Colorful, welcoming clinic environment",
+                    "Specialized pediatric equipment",
+                    "Neonatal intensive care capabilities",
+                    "Child life specialists",
+                    "Family-centered care approach"
+                ],
+                "image": "/fallback-image.webp"
+            },
+            "research": {
+                "title": "Pediatric Research",
+                "items": {
+                    "nutrition": {
+                        "title": "Childhood Nutrition",
+                        "content": "Studies on optimal nutrition for growth and development."
+                    },
+                    "vaccine": {
+                        "title": "Vaccine Effectiveness",
+                        "content": "Monitoring local vaccine efficacy and safety."
+                    },
+                    "development": {
+                        "title": "Developmental Milestones",
+                        "content": "Research on early childhood development patterns."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Parent Testimonials",
+                "items": {
+                    "sunita": {
+                        "quote": "The pediatric team has cared for all three of our children with such warmth and expertise.",
+                        "author": "Sunita R."
+                    },
+                    "rahul": {
+                        "quote": "They made my nervous toddler feel completely at ease during every visit.",
+                        "author": "Rahul G."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Schedule Your Child's Visit",
+                "subtitle": "Our pediatric team is ready to provide compassionate care for your child.",
+                "buttons": {
+                    "bookAppointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learn": {
+                        "text": "Learn About Services"
+                    }
+                }
+            }
+        },
+        "HeadNeck": {
+            "name": "Head & Neck",
+            "heroTitle": "Specialized Care for Head & Neck Conditions",
+            "heroSubtitle": "Expert diagnosis and treatment of complex head and neck disorders in Gorakhpur.",
+            "overview": {
+                "title": "Our Head & Neck Approach",
+                "description": [
+                    "The Head & Neck department at Synergy Super Speciality Hospital provides comprehensive care for conditions affecting this complex anatomical region.",
+                    "Our team of specialists offers medical and surgical management of benign and malignant conditions, combining expertise with compassionate care."
+                ],
+                "whyChooseUs": [
+                    "Specialized head and neck surgeons",
+                    "Multidisciplinary tumor board review",
+                    "Advanced diagnostic capabilities",
+                    "Reconstructive surgery options"
+                ]
+            },
+            "treatments": {
+                "title": "Our Services",
+                "items": {
+                    "surgery": {
+                        "title": "Head & Neck Surgery",
+                        "description": "Expert surgical management of tumors, trauma, and other conditions."
+                    },
+                    "oncologic": {
+                        "title": "Oncologic Care",
+                        "description": "Comprehensive treatment for head and neck cancers."
+                    },
+                    "reconstructive": {
+                        "title": "Reconstructive Procedures",
+                        "description": "Advanced techniques to restore form and function after surgery."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Head & Neck Expertise",
+                "items": {
+                    "procedures": {
+                        "value": "500+",
+                        "label": "Complex Procedures Performed"
+                    },
+                    "success": {
+                        "value": "95%",
+                        "label": "Successful Treatment Outcomes"
+                    },
+                    "availability": {
+                        "value": "24/7",
+                        "label": "Trauma Care Availability"
+                    },
+                    "experience": {
+                        "value": "10+",
+                        "label": "Years of Specialized Experience"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Head & Neck Team",
+                "members": {}
+            },
+            "facilities": {
+                "title": "Head & Neck Facilities",
+                "description": "Advanced diagnostics and surgical suites for head and neck care.",
+                "features": [
+                    "High-resolution imaging for ENT and head-neck conditions",
+                    "Specialized operating microscopes",
+                    "Reconstructive surgery support",
+                    "Dedicated outpatient clinic",
+                    "Speech and swallow rehabilitation"
+                ],
+                "image": "/fallback-image.webp"
+            },
+            "research": {
+                "title": "Head & Neck Research",
+                "items": {
+                    "reconstruction": {
+                        "title": "Reconstructive Techniques",
+                        "content": "Innovations in reconstruction after oncologic surgery."
+                    },
+                    "oncology": {
+                        "title": "Oncologic Outcomes",
+                        "content": "Improving survival and function after head and neck cancer treatment."
+                    },
+                    "diagnostics": {
+                        "title": "Advanced Diagnostics",
+                        "content": "Developing better imaging and biopsy techniques."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {}
+            },
+            "cta": {
+                "title": "Consult Our Head & Neck Specialists",
+                "subtitle": "Contact us for evaluation and treatment planning.",
+                "buttons": {
+                    "bookAppointment": {
+                        "text": "Book Appointment"
+                    },
+                    "learn": {
+                        "text": "Learn About Services"
+                    }
+                }
+            }
+        },
+        "EmergencyCriticalCare": {
+            "name": "Emergency & Critical Care",
+            "heroTitle": "24/7 Emergency & Critical Care Services",
+            "heroSubtitle": "Immediate, life-saving care when every second counts in Gorakhpur.",
+            "overview": {
+                "title": "Our Emergency Approach",
+                "description": [
+                    "The Emergency & Critical Care department at Synergy Super Speciality Hospital provides round-the-clock care for acute illnesses and injuries.",
+                    "Our team of emergency physicians and critical care specialists is trained to handle medical emergencies of all kinds, from trauma to heart attacks, with rapid response and expert intervention."
+                ],
+                "whyChooseUs": [
+                    "Board-certified emergency physicians",
+                    "24/7 availability of all specialties",
+                    "Advanced life support capabilities",
+                    "Seamless ICU transition when needed"
+                ]
+            },
+            "treatments": {
+                "title": "Our Services",
+                "items": {
+                    "emergency": {
+                        "title": "Emergency Care",
+                        "description": "Immediate evaluation and treatment for acute medical conditions and injuries."
+                    },
+                    "critical": {
+                        "title": "Critical Care",
+                        "description": "Specialized ICU management for severely ill patients."
+                    },
+                    "trauma": {
+                        "title": "Trauma Response",
+                        "description": "Organized team approach to serious injuries and multi-system trauma."
+                    }
+                }
+            },
+            "DiagnosticImaging": {
+                "name": "Diagnostic Imaging",
+                "heroTitle": "Advanced Diagnostic Imaging Services",
+                "heroSubtitle": "Precision imaging for accurate diagnoses in Gorakhpur.",
+                "overview": {
+                    "title": "Our Imaging Approach",
+                    "description": [
+                        "The Diagnostic Imaging department at Synergy Super Speciality Hospital utilizes cutting-edge technology to provide comprehensive imaging services.",
+                        "Our radiologists and technicians deliver high-quality diagnostic results with minimal patient discomfort using the latest imaging modalities."
+                    ],
+                    "whyChooseUs": [
+                        "Board-certified radiologists",
+                        "Advanced imaging technology",
+                        "Fast result turnaround",
+                        "Low-dose radiation protocols"
+                    ]
+                },
+                "treatments": {
+                    "title": "Our Services",
+                    "items": {
+                        "mri": {
+                            "title": "MRI Scans",
+                            "description": "High-resolution magnetic resonance imaging for soft tissue evaluation."
+                        },
+                        "ct": {
+                            "title": "CT Scans",
+                            "description": "Advanced computed tomography with 3D reconstruction capabilities."
+                        },
+                        "ultrasound": {
+                            "title": "Ultrasound",
+                            "description": "Real-time imaging for abdominal, obstetric and vascular studies."
+                        }
+                    }
+                },
+                "stats": {
+                    "title": "Imaging Statistics",
+                    "items": {
+                        "scanTime": {
+                            "value": "30 min",
+                            "label": "Average Scan Time"
+                        },
+                        "emergency": {
+                            "value": "24/7",
+                            "label": "Emergency Imaging Availability"
+                        },
+                        "accuracy": {
+                            "value": "98%",
+                            "label": "Diagnostic Accuracy Rate"
+                        },
+                        "modalities": {
+                            "value": "10+",
+                            "label": "Imaging Modalities Available"
+                        }
+                    }
+                },
+                "team": {
+                    "title": "Our Imaging Team",
+                    "members": {
+                        "drRajesh": {
+                            "name": "Dr. Rajesh Verma",
+                            "role": "Chief Radiologist",
+                            "credentials": "M.B.B.S, MD Radiology",
+                            "specialty": "Neuroimaging"
+                        }
+                    }
+                },
+                "facilities": {
+                    "title": "Imaging Facilities",
+                    "description": "Comprehensive imaging technology for diagnosis and treatment.",
+                    "features": [
+                        "Digital radiography suites",
+                        "Angiography lab",
+                        "PET-CT scanner",
+                        "Bone densitometry",
+                        "Teleradiology capabilities"
+                    ],
+                    "image": "/diagnostic-imaging.webp"
+                },
+                "research": {
+                    "title": "Imaging Research",
+                    "items": {
+                        "modalities": {
+                            "title": "Modalities Development",
+                            "content": "Advancements in image acquisition and reconstruction."
+                        }
+                    }
+                },
+                "testimonials": {
+                    "title": "Patient Stories",
+                    "items": {}
+                },
+                "cta": {
+                    "title": "Schedule an Imaging Appointment",
+                    "subtitle": "Book scans with our imaging specialists.",
+                    "buttons": {
+                        "book": {
+                            "text": "Book Scan"
+                        },
+                        "learn": {
+                            "text": "Learn More"
+                        }
+                    }
+                }
+            },
+            "Dialysis": {
+                "name": "Dialysis",
+                "heroTitle": "Comprehensive Renal Care Services",
+                "heroSubtitle": "Advanced dialysis treatments for kidney health in Gorakhpur.",
+                "overview": {
+                    "title": "Our Dialysis Approach",
+                    "description": [
+                        "The Dialysis Unit at Synergy Super Speciality Hospital provides life-sustaining treatments for patients with renal failure.",
+                        "Our nephrology team offers personalized dialysis regimens using the latest technology in a comfortable environment."
+                    ],
+                    "whyChooseUs": [
+                        "Experienced nephrologists",
+                        "Individualized treatment plans",
+                        "Advanced water purification",
+                        "Compassionate care"
+                    ]
+                },
+                "treatments": {
+                    "title": "Our Services",
+                    "items": {
+                        "hemodialysis": {
+                            "title": "Hemodialysis",
+                            "description": "Blood filtration using advanced dialysis machines."
+                        },
+                        "peritoneal": {
+                            "title": "Peritoneal Dialysis",
+                            "description": "Home dialysis training and support services."
+                        },
+                        "crrt": {
+                            "title": "Continuous Renal Replacement",
+                            "description": "Critical care dialysis for ICU patients."
+                        }
+                    }
+                },
+                "stats": {
+                    "title": "Dialysis Statistics",
+                    "items": {
+                        "stations": {
+                            "value": "15+",
+                            "label": "Dialysis Stations"
+                        },
+                        "weekly": {
+                            "value": "6 days",
+                            "label": "Weekly Operation"
+                        },
+                        "efficacy": {
+                            "value": "95%",
+                            "label": "Treatment Efficacy"
+                        },
+                        "patients": {
+                            "value": "500+",
+                            "label": "Patients Served Monthly"
+                        }
+                    }
+                },
+                "team": {
+                    "title": "Dialysis Team",
+                    "members": {}
+                },
+                "facilities": {
+                    "title": "Dialysis Facilities",
+                    "description": "Dedicated dialysis suites with modern water treatment and monitoring.",
+                    "features": [
+                        "Hemodialysis stations",
+                        "Peritoneal dialysis support",
+                        "Infection control protocols",
+                        "Dietary counseling",
+                        "Patient education resources"
+                    ],
+                    "image": "/dialysis-hero.webp"
+                },
+                "testimonials": {
+                    "title": "Patient Stories",
+                    "items": {}
+                },
+                "cta": {
+                    "title": "Schedule Dialysis",
+                    "subtitle": "Contact our renal team to arrange sessions.",
+                    "buttons": {
+                        "book": {
+                            "text": "Book Session"
+                        },
+                        "learn": {
+                            "text": "Learn More"
+                        }
+                    }
+                }
+            },
+            "Radiology": {
+                "name": "Radiology",
+                "heroTitle": "Comprehensive Radiology Services",
+                "heroSubtitle": "Advanced diagnostic and interventional radiology in Gorakhpur.",
+                "overview": {
+                    "title": "Our Radiology Approach",
+                    "description": [
+                        "The Radiology Department at Synergy Super Speciality Hospital provides both diagnostic and therapeutic imaging services.",
+                        "Our subspecialty-trained radiologists deliver precise interpretations using cutting-edge imaging technology."
+                    ],
+                    "whyChooseUs": [
+                        "Fellowship-trained radiologists",
+                        "Multidisciplinary approach",
+                        "Minimally invasive procedures",
+                        "Rapid reporting"
+                    ]
+                },
+                "treatments": {
+                    "title": "Our Services",
+                    "items": {
+                        "diagnostic": {
+                            "title": "Diagnostic Radiology",
+                            "description": "X-ray, fluoroscopy and contrast studies for accurate diagnosis."
+                        },
+                        "interventional": {
+                            "title": "Interventional Radiology",
+                            "description": "Image-guided minimally invasive procedures."
+                        },
+                        "nuclear": {
+                            "title": "Nuclear Medicine",
+                            "description": "Advanced molecular imaging and therapy."
+                        }
+                    }
+                },
+                "stats": {
+                    "title": "Radiology Statistics",
+                    "items": {
+                        "turnaround": {
+                            "value": "<2 hrs",
+                            "label": "Stat Report Turnaround"
+                        },
+                        "subspecialties": {
+                            "value": "15+",
+                            "label": "Radiology Subspecialties"
+                        },
+                        "success": {
+                            "value": "99%",
+                            "label": "Procedure Success Rate"
+                        },
+                        "coverage": {
+                            "value": "24/7",
+                            "label": "Emergency Coverage"
+                        }
+                    }
+                },
+                "team": {
+                    "title": "Our Radiology Team",
+                    "members": {
+                        "drAmit": {
+                            "name": "Dr. Amit Patel",
+                            "role": "Interventional Radiologist",
+                            "credentials": "M.B.B.S, MD, DNB Radiology",
+                            "specialty": "Vascular Interventions"
+                        }
+                    }
+                },
+                "facilities": {
+                    "title": "Radiology Facilities",
+                    "description": "Comprehensive imaging technology for diagnosis and treatment.",
+                    "features": [
+                        "Digital radiography suites",
+                        "Angiography lab",
+                        "PET-CT scanner",
+                        "Bone densitometry",
+                        "Teleradiology capabilities"
+                    ],
+                    "image": "/radiology-lab.webp"
+                },
+                "research": {
+                    "title": "Radiology Research",
+                    "items": {
+                        "imageGuided": {
+                            "title": "Image-Guided Therapy",
+                            "content": "Developing new minimally invasive treatments."
+                        },
+                        "contrast": {
+                            "title": "Contrast Optimization",
+                            "content": "Reducing contrast media requirements."
+                        },
+                        "ai": {
+                            "title": "AI in Radiology",
+                            "content": "Implementing machine learning for image analysis."
+                        }
+                    }
+                },
+                "testimonials": {
+                    "title": "Patient Experiences",
+                    "items": {
+                        "rahul": {
+                            "quote": "The CT-guided biopsy was quick and painless, with precise results that guided my treatment.",
+                            "author": "Rahul D."
+                        },
+                        "geeta": {
+                            "quote": "Their interventional radiology procedure solved my problem without major surgery.",
+                            "author": "Geeta M."
+                        }
+                    }
+                },
+                "cta": {
+                    "title": "Advanced Radiology Services",
+                    "subtitle": "Schedule your imaging study or consult with our radiologists.",
+                    "buttons": {
+                        "bookImaging": {
+                            "text": "Book Imaging"
+                        },
+                        "learn": {
+                            "text": "Learn About Procedures"
+                        }
+                    }
+                }
+            },
+            "Pathology": {
+                "name": "Pathology",
+                "heroTitle": "Comprehensive Pathology Services",
+                "heroSubtitle": "Precise diagnostic testing for accurate treatment in Gorakhpur.",
+                "overview": {
+                    "title": "Our Pathology Approach",
+                    "description": [
+                        "The Pathology Department at Synergy Super Speciality Hospital provides comprehensive laboratory diagnostics.",
+                        "Our pathologists deliver accurate and timely results using advanced techniques and quality-controlled processes."
+                    ],
+                    "whyChooseUs": [
+                        "Board-certified pathologists",
+                        "CAP-accredited lab",
+                        "Rapid turnaround times",
+                        "Subspecialty expertise"
+                    ]
+                },
+                "treatments": {
+                    "title": "Our Services",
+                    "items": {
+                        "histopathology": {
+                            "title": "Histopathology",
+                            "description": "Tissue diagnosis for cancers and other diseases."
+                        },
+                        "cytopathology": {
+                            "title": "Cytopathology",
+                            "description": "Cell analysis including Pap smears and FNAC."
+                        },
+                        "molecular": {
+                            "title": "Molecular Pathology",
+                            "description": "Advanced genetic and molecular testing."
+                        }
+                    }
+                },
+                "stats": {
+                    "title": "Pathology Statistics",
+                    "items": {
+                        "routine": {
+                            "value": "24 hrs",
+                            "label": "Routine Report Time"
+                        },
+                        "accuracy": {
+                            "value": "99.8%",
+                            "label": "Test Accuracy"
+                        },
+                        "available": {
+                            "value": "200+",
+                            "label": "Available Tests"
+                        },
+                        "accreditation": {
+                            "value": "NABL",
+                            "label": "Accreditation"
+                        }
+                    }
+                },
+                "team": {
+                    "title": "Our Pathology Team",
+                    "members": {
+                        "drSunita": {
+                            "name": "Dr. Sunita Rao",
+                            "role": "Pathologist",
+                            "credentials": "M.B.B.S, MD Pathology",
+                            "specialty": "Oncopathology"
+                        }
+                    }
+                },
+                "facilities": {
+                    "title": "Pathology Facilities",
+                    "description": "Our laboratory features advanced diagnostic technology with rigorous quality control.",
+                    "features": [
+                        "Automated analyzers",
+                        "Immunohistochemistry lab",
+                        "Flow cytometry",
+                        "Molecular diagnostics",
+                        "Digital pathology"
+                    ],
+                    "image": "/pathology-lab.webp"
+                },
+                "research": {
+                    "title": "Pathology Research",
+                    "items": {
+                        "biomarkers": {
+                            "title": "Cancer Biomarkers",
+                            "content": "Identifying new diagnostic markers."
+                        },
+                        "digital": {
+                            "title": "Digital Pathology",
+                            "content": "Implementing AI for slide analysis."
+                        },
+                        "liquid": {
+                            "title": "Liquid Biopsies",
+                            "content": "Developing blood-based diagnostics."
+                        }
+                    }
+                },
+                "testimonials": {
+                    "title": "Patient Experiences",
+                    "items": {
+                        "arun": {
+                            "quote": "The detailed pathology report gave my oncologist exactly the information needed for my treatment plan.",
+                            "author": "Arun T."
+                        },
+                        "meena": {
+                            "quote": "Quick and accurate test results helped diagnose my rare condition promptly.",
+                            "author": "Meena K."
+                        }
+                    }
+                },
+                "cta": {
+                    "title": "Precision Diagnostics",
+                    "subtitle": "Contact the lab for test scheduling and specimen collection.",
+                    "buttons": {
+                        "book": {
+                            "text": "Book Test"
+                        },
+                        "learn": {
+                            "text": "Learn More"
+                        }
+                    }
+                }
+            },
+            "Microbiology": {
+                "name": "Microbiology",
+                "heroTitle": "Comprehensive Microbiology Laboratory",
+                "heroSubtitle": "Advanced infectious disease testing and antimicrobial stewardship.",
+                "overview": {
+                    "title": "Our Microbiology Approach",
+                    "description": [
+                        "The Microbiology Laboratory at Synergy Super Speciality Hospital provides comprehensive infectious disease testing.",
+                        "Our team identifies pathogens and provides antimicrobial susceptibility testing to guide effective treatment."
+                    ],
+                    "whyChooseUs": [
+                        "Expert microbiologists",
+                        "Rapid diagnostic methods",
+                        "Antimicrobial stewardship",
+                        "Infection control support"
+                    ]
+                },
+                "treatments": {
+                    "title": "Our Services",
+                    "items": {
+                        "culture": {
+                            "title": "Culture & Sensitivity",
+                            "description": "Identification of pathogens and effective antibiotics."
+                        },
+                        "molecular": {
+                            "title": "Molecular Diagnostics",
+                            "description": "PCR-based detection of microorganisms."
+                        },
+                        "serology": {
+                            "title": "Serology",
+                            "description": "Antibody detection for infectious diseases."
+                        }
+                    }
+                },
+                "stats": {
+                    "title": "Microbiology Statistics",
+                    "items": {
+                        "cultureTime": {
+                            "value": "48 hrs",
+                            "label": "Average Culture Time"
+                        },
+                        "accuracy": {
+                            "value": "95%",
+                            "label": "Identification Accuracy"
+                        },
+                        "pathogens": {
+                            "value": "100+",
+                            "label": "Pathogens Tested"
+                        },
+                        "emergency": {
+                            "value": "24/7",
+                            "label": "Emergency Testing"
+                        }
+                    }
+                },
+                "team": {
+                    "title": "Our Microbiology Team",
+                    "members": {
+                        "drAnil": {
+                            "name": "Dr. Anil Kumar",
+                            "role": "Microbiologist",
+                            "credentials": "M.B.B.S, MD Microbiology",
+                            "specialty": "Antimicrobial Resistance"
+                        }
+                    }
+                },
+                "facilities": {
+                    "title": "Microbiology Facilities",
+                    "description": "Advanced technology for comprehensive infectious disease testing.",
+                    "features": [
+                        "Automated culture systems",
+                        "MALDI-TOF identification",
+                        "Molecular biology lab",
+                        "Biosafety level 2 containment",
+                        "Antimicrobial susceptibility testing"
+                    ],
+                    "image": "/microbiology-lab.webp"
+                },
+                "research": {
+                    "title": "Microbiology Research",
+                    "items": {
+                        "resistance": {
+                            "title": "Antibiotic Resistance",
+                            "content": "Tracking emerging resistance patterns."
+                        },
+                        "rapid": {
+                            "title": "Rapid Diagnostics",
+                            "content": "Developing faster identification methods."
+                        },
+                        "epi": {
+                            "title": "Hospital Epidemiology",
+                            "content": "Studying infection transmission patterns."
+                        }
+                    }
+                },
+                "testimonials": {
+                    "title": "Patient Experiences",
+                    "items": {
+                        "sanjay": {
+                            "quote": "The microbiology team identified the exact bacteria causing my infection and which antibiotics would work best.",
+                            "author": "Sanjay M."
+                        },
+                        "neha": {
+                            "quote": "Their rapid COVID-19 testing helped protect my elderly parents when I developed symptoms.",
+                            "author": "Neha S."
+                        }
+                    }
+                },
+                "cta": {
+                    "title": "Infection Diagnostics",
+                    "subtitle": "Contact us for microbiology testing or infection control consultation.",
+                    "buttons": {
+                        "request": {
+                            "text": "Request Testing"
+                        },
+                        "consult": {
+                            "text": "Consult"
+                        }
+                    }
+                }
+            },
+            "stats": {
+                "title": "Emergency Care Statistics",
+                "items": {
+                    "availability": {
+                        "value": "24/7",
+                        "label": "Emergency Department Availability"
+                    },
+                    "response": {
+                        "value": "<15 min",
+                        "label": "Average Physician Response Time"
+                    },
+                    "satisfaction": {
+                        "value": "95%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "specialties": {
+                        "value": "10+",
+                        "label": "Specialties Available for Consultation"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Emergency Team",
+                "members": {
+                    "drHarshit": {
+                        "name": "Dr. Harshit Mishra",
+                        "role": "Critical Care Specialist",
+                        "credentials": "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
+                        "specialty": "Neurocritical Care"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Emergency & ICU Facilities",
+                "description": "Our department is equipped to handle the most critical emergencies with advanced technology.",
+                "features": [
+                    "Fully-equipped resuscitation bays",
+                    "Advanced monitoring systems",
+                    "Dedicated trauma room",
+                    "Critical care pharmacy",
+                    "24/7 imaging and lab services"
+                ],
+                "image": "/fallback-image.webp"
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {}
+            },
+            "cta": {
+                "title": "Immediate Emergency Assistance",
+                "subtitle": "Call our emergency desk for urgent support.",
+                "buttons": {
+                    "call": {
+                        "text": "Call Emergency"
+                    },
+                    "visit": {
+                        "text": "Visit ER"
+                    }
+                }
+            }
+        },
+        "Neurosurgery": {
+            "name": "Neurosurgery",
+            "heroTitle": "Advanced Surgical Care for Brain and Spine",
+            "heroSubtitle": "Precision neurosurgical interventions for complex neurological conditions.",
+            "overview": {
+                "title": "Our Neurosurgical Approach",
+                "description": [
+                    "The Neurosurgery department at Synergy Hospital provides comprehensive surgical care for disorders of the brain, spine, and peripheral nerves. Our team utilizes minimally invasive techniques and advanced technology to achieve optimal outcomes.",
+                    "We specialize in treating complex conditions including brain tumors, spinal disorders, cerebrovascular diseases, and traumatic injuries, offering both surgical and non-surgical management options."
+                ],
+                "whyChooseUs": [
+                    "Highly skilled neurosurgeons with specialized training",
+                    "Advanced intraoperative imaging and navigation systems",
+                    "Multidisciplinary approach to complex cases",
+                    "Comprehensive post-operative rehabilitation programs"
+                ]
+            },
+            "treatments": {
+                "title": "Neurosurgical Services",
+                "items": {
+                    "brainTumor": {
+                        "title": "Brain Tumor Surgery",
+                        "description": "Advanced surgical techniques for benign and malignant brain tumors, including awake craniotomies."
+                    },
+                    "spinalSurgery": {
+                        "title": "Spinal Surgery",
+                        "description": "Minimally invasive and complex spinal procedures for degenerative conditions, trauma, and deformities."
+                    },
+                    "cerebrovascular": {
+                        "title": "Cerebrovascular Surgery",
+                        "description": "Surgical treatment for aneurysms, AVMs, and other vascular disorders of the brain."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Our Neurosurgical Outcomes",
+                "items": {
+                    "surgeries": {
+                        "value": "500+",
+                        "label": "Complex Brain Surgeries Annually"
+                    },
+                    "resectionRate": {
+                        "value": "90%",
+                        "label": "Successful Tumor Resection Rate"
+                    },
+                    "trauma": {
+                        "value": "24/7",
+                        "label": "Trauma Neurosurgery Availability"
+                    },
+                    "minimallyInvasive": {
+                        "value": "30%",
+                        "label": "Minimally Invasive Procedures"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Neurosurgical Team",
+                "members": {
+                    "drTripurari": {
+                        "name": "Dr. Tripurari Pandey",
+                        "role": "Neurosurgeon",
+                        "credentials": "M.B.B.S, MCH Neuro Surgeon",
+                        "specialty": "Brain and Spine Surgery"
+                    },
+                    "drAnurag": {
+                        "name": "Dr. Anurag Singh",
+                        "role": "Neurosurgeon",
+                        "credentials": "M.B.B.S, MS, MCH Neuro Surgeon",
+                        "specialty": "Complex Spinal Procedures"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Neurosurgical Facilities",
+                "description": "Our neurosurgery suite features the latest technology for precision interventions.",
+                "features": [
+                    "Advanced intraoperative MRI and CT",
+                    "Neuronavigation systems",
+                    "Intraoperative neurophysiological monitoring",
+                    "Dedicated neuro ICU",
+                    "Minimally invasive spinal surgery equipment"
+                ]
+            },
+            "research": {
+                "title": "Neurosurgical Innovation",
+                "items": {
+                    "skullBase": {
+                        "title": "Skull Base Techniques",
+                        "content": "Developing less invasive approaches to complex skull base tumors."
+                    },
+                    "spinalBiomechanics": {
+                        "title": "Spinal Biomechanics",
+                        "content": "Research into improved stabilization techniques for spinal disorders."
+                    },
+                    "neuroprotection": {
+                        "title": "Neuroprotection",
+                        "content": "Investigating methods to protect neural tissue during surgery."
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "rajesh": {
+                        "quote": "The neurosurgeons gave me back my quality of life after years of spinal problems.",
+                        "author": "Rajesh K."
+                    },
+                    "meena": {
+                        "quote": "Their skill and care during my brain tumor surgery were extraordinary.",
+                        "author": "Meena P."
+                    }
+                }
+            },
+            "cta": {
+                "title": "Consult Our Neurosurgical Team",
+                "subtitle": "Contact us to discuss your surgical options.",
+                "buttons": {
+                    "requestConsultation": {
+                        "text": "Request Consultation"
+                    },
+                    "learnAboutProcedures": {
+                        "text": "Learn About Procedures"
+                    }
+                }
+            }
+        },
+        "DiagnosticImaging": {
+            "name": "",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "overview": {
+                "title": "",
+                "description": [],
+                "whyChooseUs": []
+            },
+            "treatments": {
+                "title": "",
+                "items": {
+                    "mri": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "ct": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "ultrasound": {
+                        "title": "",
+                        "description": ""
+                    }
+                }
+            },
+            "stats": {
+                "title": "",
+                "items": {
+                    "scanTime": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "emergency": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "accuracy": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "modalities": {
+                        "value": "",
+                        "label": ""
+                    }
+                }
+            },
+            "team": {
+                "title": "",
+                "members": {
+                    "drRajesh": {
+                        "name": "",
+                        "role": "",
+                        "credentials": "",
+                        "specialty": ""
+                    }
+                }
+            },
+            "facilities": {
+                "title": "",
+                "description": "",
+                "features": [],
+                "image": ""
+            },
+            "research": {
+                "title": "",
+                "items": {
+                    "modalities": {
+                        "title": "",
+                        "content": ""
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "",
+                "items": {}
+            },
+            "cta": {
+                "title": "",
+                "subtitle": "",
+                "buttons": {
+                    "book": {
+                        "text": ""
+                    },
+                    "learn": {
+                        "text": ""
+                    }
+                }
+            }
+        },
+        "Dialysis": {
+            "name": "",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "overview": {
+                "title": "",
+                "description": [],
+                "whyChooseUs": []
+            },
+            "treatments": {
+                "title": "",
+                "items": {
+                    "hemodialysis": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "peritoneal": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "crrt": {
+                        "title": "",
+                        "description": ""
+                    }
+                }
+            },
+            "stats": {
+                "title": "",
+                "items": {
+                    "stations": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "weekly": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "efficacy": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "patients": {
+                        "value": "",
+                        "label": ""
+                    }
+                }
+            },
+            "team": {
+                "title": "",
+                "members": {}
+            },
+            "facilities": {
+                "title": "",
+                "description": "",
+                "features": [],
+                "image": ""
+            },
+            "testimonials": {
+                "title": "",
+                "items": {}
+            },
+            "cta": {
+                "title": "",
+                "subtitle": "",
+                "buttons": {
+                    "book": {
+                        "text": ""
+                    },
+                    "learn": {
+                        "text": ""
+                    }
+                }
+            }
+        },
+        "Radiology": {
+            "name": "",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "overview": {
+                "title": "",
+                "description": [],
+                "whyChooseUs": []
+            },
+            "treatments": {
+                "title": "",
+                "items": {
+                    "diagnostic": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "interventional": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "nuclear": {
+                        "title": "",
+                        "description": ""
+                    }
+                }
+            },
+            "stats": {
+                "title": "",
+                "items": {
+                    "turnaround": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "subspecialties": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "success": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "coverage": {
+                        "value": "",
+                        "label": ""
+                    }
+                }
+            },
+            "team": {
+                "title": "",
+                "members": {
+                    "drAmit": {
+                        "name": "",
+                        "role": "",
+                        "credentials": "",
+                        "specialty": ""
+                    }
+                }
+            },
+            "facilities": {
+                "title": "",
+                "description": "",
+                "features": [],
+                "image": ""
+            },
+            "research": {
+                "title": "",
+                "items": {
+                    "imageGuided": {
+                        "title": "",
+                        "content": ""
+                    },
+                    "contrast": {
+                        "title": "",
+                        "content": ""
+                    },
+                    "ai": {
+                        "title": "",
+                        "content": ""
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "",
+                "items": {
+                    "rahul": {
+                        "quote": "",
+                        "author": ""
+                    },
+                    "geeta": {
+                        "quote": "",
+                        "author": ""
+                    }
+                }
+            },
+            "cta": {
+                "title": "",
+                "subtitle": "",
+                "buttons": {
+                    "bookImaging": {
+                        "text": ""
+                    },
+                    "learn": {
+                        "text": ""
+                    }
+                }
+            }
+        },
+        "Pathology": {
+            "name": "",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "overview": {
+                "title": "",
+                "description": [],
+                "whyChooseUs": []
+            },
+            "treatments": {
+                "title": "",
+                "items": {
+                    "histopathology": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "cytopathology": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "molecular": {
+                        "title": "",
+                        "description": ""
+                    }
+                }
+            },
+            "stats": {
+                "title": "",
+                "items": {
+                    "routine": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "accuracy": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "available": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "accreditation": {
+                        "value": "",
+                        "label": ""
+                    }
+                }
+            },
+            "team": {
+                "title": "",
+                "members": {
+                    "drSunita": {
+                        "name": "",
+                        "role": "",
+                        "credentials": "",
+                        "specialty": ""
+                    }
+                }
+            },
+            "facilities": {
+                "title": "",
+                "description": "",
+                "features": [],
+                "image": ""
+            },
+            "research": {
+                "title": "",
+                "items": {
+                    "biomarkers": {
+                        "title": "",
+                        "content": ""
+                    },
+                    "digital": {
+                        "title": "",
+                        "content": ""
+                    },
+                    "liquid": {
+                        "title": "",
+                        "content": ""
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "",
+                "items": {
+                    "arun": {
+                        "quote": "",
+                        "author": ""
+                    },
+                    "meena": {
+                        "quote": "",
+                        "author": ""
+                    }
+                }
+            },
+            "cta": {
+                "title": "",
+                "subtitle": "",
+                "buttons": {
+                    "book": {
+                        "text": ""
+                    },
+                    "learn": {
+                        "text": ""
+                    }
+                }
+            }
+        },
+        "Microbiology": {
+            "name": "",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "overview": {
+                "title": "",
+                "description": [],
+                "whyChooseUs": []
+            },
+            "treatments": {
+                "title": "",
+                "items": {
+                    "culture": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "molecular": {
+                        "title": "",
+                        "description": ""
+                    },
+                    "serology": {
+                        "title": "",
+                        "description": ""
+                    }
+                }
+            },
+            "stats": {
+                "title": "",
+                "items": {
+                    "cultureTime": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "accuracy": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "pathogens": {
+                        "value": "",
+                        "label": ""
+                    },
+                    "emergency": {
+                        "value": "",
+                        "label": ""
+                    }
+                }
+            },
+            "team": {
+                "title": "",
+                "members": {
+                    "drAnil": {
+                        "name": "",
+                        "role": "",
+                        "credentials": "",
+                        "specialty": ""
+                    }
+                }
+            },
+            "facilities": {
+                "title": "",
+                "description": "",
+                "features": [],
+                "image": ""
+            },
+            "research": {
+                "title": "",
+                "items": {
+                    "resistance": {
+                        "title": "",
+                        "content": ""
+                    },
+                    "rapid": {
+                        "title": "",
+                        "content": ""
+                    },
+                    "epi": {
+                        "title": "",
+                        "content": ""
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "",
+                "items": {
+                    "sanjay": {
+                        "quote": "",
+                        "author": ""
+                    },
+                    "neha": {
+                        "quote": "",
+                        "author": ""
+                    }
+                }
+            },
+            "cta": {
+                "title": "",
+                "subtitle": "",
+                "buttons": {
+                    "request": {
+                        "text": ""
+                    },
+                    "consult": {
+                        "text": ""
+                    }
+                }
+            }
         }
     },
     "opdData": [
@@ -1659,5 +3888,27 @@
             "time": "Time"
         },
         "noResults": "No OPDs found matching your search criteria"
+    },
+    "global": {
+        "whatsappButton": "WhatsApp Button",
+        "videoThumbnail": "Video Thumbnail",
+        "playButtonOverlay": "Play Button Overlay",
+        "playPatientTestimonialVideo": "Play Patient Testimonial Video",
+        "playVideo": "Play Video",
+        "logo": "Logo",
+        "bookAppointment": "Book Appointment",
+        "findAvailableDoctors": "Find Available Doctors",
+        "contactUs": "Contact Us",
+        "toggleSidebar": "Toggle Sidebar",
+        "ayushmaanBharatScheme": "Ayushmaan Bharat Scheme",
+        "primeMinisterModi": "Prime Minister Narendra Modi"
+    },
+    "forms": {
+        "searchCountryPlaceholder": "Search Country..."
+    },
+    "theSynergyStory": {
+        "ourVision": "Our Vision",
+        "doctorsTreatingCancer": "Doctors Treating Cancer Patients at Synergy Super Specialty Hospital",
+        "clickToDownloadImage": "Click to Download Image"
     }
 }
