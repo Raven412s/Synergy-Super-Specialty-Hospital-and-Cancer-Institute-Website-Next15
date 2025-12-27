@@ -108,7 +108,7 @@ export const PressReleasesSection = () => {
                             <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/v1743251914/baakragdxlbykwpi5ubu.webm" type="video/webm" />
                             <source src="https://res.cloudinary.com/dzynl3hzk/video/upload/v1743251922/wfi5yxe5wotlvfawbtpw.mp4" type="video/mp4" />
                         </video>
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4 md:p-6">
+                        <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 p-4 md:p-6">
                             <div className="flex items-center gap-2 text-white mb-1 md:mb-2">
                                 <Newspaper className="w-4 h-4 md:w-5 md:h-5" />
                                 <span className="font-medium md:font-semibold text-sm md:text-base">Featured Release</span>

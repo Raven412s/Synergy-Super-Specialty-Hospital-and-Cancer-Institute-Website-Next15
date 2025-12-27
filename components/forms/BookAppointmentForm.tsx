@@ -132,7 +132,7 @@ const departmentData = useDepartmentData()
     }
   }
 
-
+  
 
   return (
     <div className="bg-white px-4 py-6 md:p-8 rounded-lg shadow-md max-w-6xl w-full my-10">

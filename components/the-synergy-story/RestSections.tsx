@@ -96,7 +96,7 @@ export const RestSections = () => {
                             </p>
 
                             <div className="relative">
-                                <div className="hidden md:block absolute left-1/2 h-full w-0.5 bg-gradient-to-b from-blue-400 to-purple-500 transform -translate-x-1/2" />
+                                <div className="hidden md:block absolute left-1/2 h-full w-0.5 bg-linear-to-b from-blue-400 to-purple-500 transform -translate-x-1/2" />
 
                                 <div className="space-y-4">
                                     {milestones.map((milestone, index) => (
@@ -115,7 +115,7 @@ export const RestSections = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="hidden md:flex py-1 px-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-indigo-600 items-center justify-center text-white font-medium text-xs mx-2">
+                                            <div className="hidden md:flex py-1 px-3 rounded-full bg-linear-to-r from-fuchsia-500 to-indigo-600 items-center justify-center text-white font-medium text-xs mx-2">
                                                 {milestone.year}
                                             </div>
 
@@ -178,7 +178,7 @@ export const RestSections = () => {
                                 <h3 className="text-xl font-bold text-gray-800">{t('DayAtSynergySection.subtitle')}</h3>
 
                                 <div className="relative">
-                                    <div className="hidden md:block absolute left-5 h-full w-0.5 bg-gradient-to-b from-blue-300 to-purple-400" />
+                                    <div className="hidden md:block absolute left-5 h-full w-0.5 bg-linear-to-b from-blue-300 to-purple-400" />
 
                                     <div className="space-y-4">
                                         {dailySchedule.map((item, index) => (

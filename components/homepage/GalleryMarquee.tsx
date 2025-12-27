@@ -38,7 +38,7 @@ export const GalleryMarquee = () => {
                         className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 mx-4"
                         style={{ width: '300px' }}
                     >
-                        <div className="aspect-[4/3] relative">
+                        <div className="aspect-4/3 relative">
                             <ImageWithFallback
                                 fallbackSrc='/fallback-image.webp'
                                 src={item.image}
@@ -54,7 +54,7 @@ export const GalleryMarquee = () => {
                                 </div>
                             )}
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                             <div>
                                 <span className="text-xs font-medium text-white bg-blue-600 px-2 py-1 rounded-full">
                                     {item.category}

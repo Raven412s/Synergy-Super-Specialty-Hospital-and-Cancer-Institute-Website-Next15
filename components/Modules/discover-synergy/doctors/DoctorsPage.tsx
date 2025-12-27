@@ -81,7 +81,7 @@ export const DoctorsPage = () => {
                     {/* Search and Filter Bar */}
                     <div className="mb-12">
                         <div className="flex flex-col md:flex-row gap-4 mb-6">
-                            <div className="relative flex-grow">
+                            <div className="relative grow">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                     <FaSearch className="text-gray-400" />
                                 </div>
@@ -95,7 +95,7 @@ export const DoctorsPage = () => {
                             </div>
                             <button
                                 onClick={() => setShowFilters(!showFilters)}
-                                className="px-6 py-3 bg-gradient-to-tl from-synergy-pink to-fuchsia-300 from-40% shadow-blob text-white rounded-lg  flex items-center justify-center"
+                                className="px-6 py-3 bg-linear-to-tl from-synergy-pink to-fuchsia-300 from-40% shadow-blob text-white rounded-lg  flex items-center justify-center"
                             >
                                 <FaFilter className="mr-2" />
                                 Filters
@@ -186,14 +186,14 @@ export const DoctorsPage = () => {
                                     className="flex flex-col h-full bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden max-w-[400px]"
                                 >
                                     {/* Image/Header */}
-                                    <div className="relative h-60 bg-gradient-to-r from-fuchsia-400 to-indigo-700">
+                                    <div className="relative h-60 bg-linear-to-r from-fuchsia-400 to-indigo-700">
                                         {doctor.image ? (
                                             <ImageWithFallback
                                                 fallbackSrc="/fallback-image.webp"
                                                 src={doctor.image}
                                                 alt={doctor.name}
                                                 fill
-                                                className="object-cover aspect-video size-full object-center lg:object-left-top"
+                                                className="object-cover aspect-video size-full object-center lg:object-top-left"
                                             />
                                         ) : (
                                             <div className="absolute inset-0 flex items-center justify-center text-white">
@@ -209,7 +209,7 @@ export const DoctorsPage = () => {
                                     </div>
 
                                     {/* Content */}
-                                    <div className="flex flex-col flex-grow p-6">
+                                    <div className="flex flex-col grow p-6">
                                         <h3 className="text-lg font-bold text-gray-800 mb-1">{doctor.name}</h3>
 
                                         <p className="text-neutral-600 font-light text-xs mb-2 line-clamp-2">
@@ -245,7 +245,7 @@ export const DoctorsPage = () => {
 
                                         {/* CTA Button - Pushed to Bottom */}
                                         <div className="mt-auto">
-                                            <button className="w-full flex items-center justify-center px-4 py-2 bg-gradient-to-tl from-synergy-pink to-fuchsia-300 from-40% shadow-blob text-white rounded-lg transition-colors">
+                                            <button className="w-full flex items-center justify-center px-4 py-2 bg-linear-to-tl from-synergy-pink to-fuchsia-300 from-40% shadow-blob text-white rounded-lg transition-colors">
                                                 Book Appointment
                                                 <FaArrowRight className="ml-2" />
                                             </button>

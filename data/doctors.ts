@@ -108,20 +108,6 @@ export  const doctors: Doctor[] = [
           isSenior: false
         },
     {
-      id: 1,
-      name: "Dr. Prateek",
-      qualification: "M.B.B.S. MS ORTHO,FIJR,FAGE orthopedic trauma Jioint Replacement,Spine Specialist Surgeon & Sports Injury  Surgeon",
-      department: "Orthopedics",
-      experience: "12 years",
-      image: "/doctors/dr-prateek-kumar.png",
-      availability: [
-        { day: "Mon", time: "9:00 AM - 5:00 PM" },
-        { day: "Wed", time: "9:00 AM - 5:00 PM" },
-        { day: "Fri", time: "9:00 AM - 5:00 PM" }
-      ],
-      isSenior: true
-    },
-    {
       id: 2,
       name: "Dr. Anil Srivastava",
       qualification: "M.B.B.S. MS ORTHO",

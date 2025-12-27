@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { ImageWithFallback } from './ImageWithFallback'
+import { useTranslations } from 'next-intl';
 
 export const WhatsappReachOutButton = () => {
+    const t = useTranslations('global');
     return (
         <Link
             href="https://wa.me/917234006595"
@@ -14,7 +16,7 @@ export const WhatsappReachOutButton = () => {
             <ImageWithFallback
                 fallbackSrc='/fallback-image.webp'
                 src="/WhatsApp.svg"
-                alt="whatsapp button"
+                alt={t('whatsappButton')}
                 width={80}
                 height={80}
                 className="size-full"

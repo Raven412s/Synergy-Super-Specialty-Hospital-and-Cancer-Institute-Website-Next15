@@ -4,6 +4,7 @@ import { useDepartmentData } from '@/data/departmentData';
 import { DepartmentData } from '@/types';
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 // Animation variants (unchanged)
 const containerVariants = {
@@ -36,6 +37,7 @@ const fadeIn = {
 
 export default function ServicesPage() {
     const departmentData = useDepartmentData()
+    
   return (
     <motion.main
       className="min-h-screen bg-gray-50"
@@ -80,7 +82,7 @@ export default function ServicesPage() {
                     className="flex items-start"
                     variants={itemVariants}
                   >
-                    <svg className="w-5 h-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-500 mt-0.5 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700 font-sans font-light">{item}</span>
@@ -107,7 +109,7 @@ export default function ServicesPage() {
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/30 via-black/10 to-transparent" />
             </motion.div>
           </div>
         </div>
@@ -142,6 +144,7 @@ export default function ServicesPage() {
 
 // Improved DepartmentCard component with consistent sizing
 function DepartmentCard(department: DepartmentData) {
+  const t = useTranslations('global');
   return (
     <motion.div
       variants={itemVariants}
@@ -152,7 +155,7 @@ function DepartmentCard(department: DepartmentData) {
         className="group  h-full rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 flex flex-col"
       >
         {/* Image or Icon */}
-        <div className="mb-4 flex-shrink-0">
+        <div className="mb-4 shrink-0">
           {department.heroImage ? (
             <motion.div
               className="w-full h-40 relative rounded-lg overflow-hidden"
@@ -176,14 +179,14 @@ function DepartmentCard(department: DepartmentData) {
         </div>
 
         {/* Content area with consistent height */}
-        <div className="flex flex-col flex-grow">
+        <div className="flex flex-col grow">
           {/* Header with name and featured tag */}
           <div className="mb-2 flex items-start justify-between">
             <h3 className="text-xl font-semibold text-gray-900 group-hover:text-primary line-clamp-2">
               {department.name}
             </h3>
             {department.isFeatured && (
-              <span className="text-xs font-semibold text-white bg-pink-600 px-2 py-0.5 rounded ml-2 flex-shrink-0">
+              <span className="text-xs font-semibold text-white bg-pink-600 px-2 py-0.5 rounded ml-2 shrink-0">
                 Featured
               </span>
             )}
@@ -218,8 +221,8 @@ function DepartmentCard(department: DepartmentData) {
               {department.facilities.features} services
             </span>
           )}
-          <div className="flex items-center text-white bg-gradient-to-tl from-synergy-blue to-indigo-300 from-40% shadow-blob  py-1 px-2 rounded-sm group-hover:text-slate-50">
-            <span className="text-sm font-medium">Learn More</span>
+          <div className="flex items-center text-white bg-linear-to-tl from-synergy-blue to-indigo-300 from-40% shadow-blob  py-1 px-2 rounded-sm group-hover:text-slate-50">
+            <span className="text-sm font-medium">{t('learnMore')}</span>
             <svg
               className="w-4 h-4 ml-2"
               fill="none"

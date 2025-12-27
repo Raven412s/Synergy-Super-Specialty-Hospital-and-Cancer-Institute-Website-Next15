@@ -28,6 +28,7 @@ import {
     SheetTrigger
 } from "../ui/sheet";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { useTranslations } from 'next-intl';
 
 // Animation variants
 const dropdownVariants: Variants = {
@@ -68,6 +69,7 @@ export function Navbar() {
     const menuItems = useMenuItems();
     const quickLinks = useQuickLinks();
     const [selectedMenuItem, setSelectedMenuItem] = useState<typeof menuItems[0] | null>(null);
+    const t = useTranslations('global');
 
     const handleScroll = () => {
         const scrollTop = window.scrollY;
@@ -112,11 +114,11 @@ export function Navbar() {
                 <div className="flex items-center justify-start w-1/4 px-2">
                     <NavigationMenuLink
                         href="/"
-                        className="h-[64px] py-2 xl:!p-0 rounded-none !m-0 hover:bg-transparent"
+                        className="h-16 py-2 xl:p-0! rounded-none m-0! hover:bg-transparent"
                     >
                         <Image
                             src="/LOGO.svg"
-                            alt="Logo"
+                            alt={t('logo')}
                             height={40}
                             width={100}
                             className="h-full w-auto object-cover"
@@ -130,12 +132,12 @@ export function Navbar() {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger
                                     onMouseEnter={() => setActivePageIndex(0)}
-                                    className="xl:px-4 md:px-2 !px-0 py-2 uppercase !font-[500] font-display lg:text-base text-xs"
+                                    className="xl:px-4 md:px-2 px-0! py-2 uppercase font-medium! font-display lg:text-base text-xs"
                                 >
                                     {item.label}
                                 </NavigationMenuTrigger>
 
-                                <NavigationMenuContent className="xl:min-w-7xl lg:min-w-6xl md:min-w-5xl w-full bg-slate-50 flex items-center justify-center p-0 !outline-none !ring-0 !border-none !rounded-none min-h-[450px] h-full ">
+                                <NavigationMenuContent className="xl:min-w-7xl lg:min-w-6xl md:min-w-5xl w-full bg-slate-50 flex items-center justify-center p-0 outline-none! ring-0! border-none! rounded-none! min-h-[450px] h-full ">
                                     <AnimatePresence>
                                         <motion.div
                                             initial="hidden"
@@ -246,7 +248,7 @@ export function Navbar() {
                                                                 title="Book an Appointment"
                                                                 onClick={() => { router.push("/book-appointment") }}
                                                             >
-                                                                Book Appointment <span>→</span>
+                                                                {t('bookAppointment')} <span>→</span>
                                                             </Button>
                                                         </motion.div>
 
@@ -257,7 +259,7 @@ export function Navbar() {
                                                                 title="Search for available doctors"
                                                                 onClick={() => { router.push("/doctors/all") }}
                                                             >
-                                                                Find Doctors <span>→</span>
+                                                                {t('findAvailableDoctors')} <span>→</span>
                                                             </Button>
                                                         </motion.div>
 
@@ -270,7 +272,7 @@ export function Navbar() {
                                                                     router.push("#footer")
                                                                 }}
                                                             >
-                                                                Contact Us <span>→</span>
+                                                                {t('contactUs')} <span>→</span>
                                                             </Button>
 
                                                         </motion.div>
@@ -330,7 +332,7 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             <div className="w-full md:hidden flex h-full relative">
-                <Link href={"/"} className="w-[160px] h-[68px] !py-2 rounded-none !m-0">
+                <Link href={"/"} className="w-40 h-[68px] py-2! rounded-none m-0!">
                     <Image src="/LOGO.svg" alt="Logo" height={40} width={50} className="size-full rounded-none" priority />
                 </Link>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2 items-center justify-end">
@@ -351,7 +353,7 @@ export function Navbar() {
                                     exit={{ x: '100%' }}
                                     transition={{ type: 'tween', ease: 'easeInOut' }}
                                 >
-                                    <SheetContent className="!w-full !max-w-screen h-full">
+                                    <SheetContent className="w-full max-w-screen h-full">
                                         <SheetHeader>
                                             <SheetTitle className="text-heading sr-only">
                                                 Synergy Super Speciality Hospital & Cancer Institute
@@ -395,7 +397,7 @@ export function Navbar() {
                                                 exit={{ x: '100%' }}
                                                 transition={{ type: 'tween', ease: 'easeInOut' }}
                                             >
-                                                <SheetContent className="!w-full !max-w-screen">
+                                                <SheetContent className="w-full max-w-screen">
                                                     <SheetHeader>
                                                         <SheetTitle className="text-heading sr-only">
                                                             {selectedMenuItem?.label}
@@ -497,7 +499,7 @@ export function Navbar() {
                                                     variant={"link"}
                                                     className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full"
                                                 >
-                                                    Book Appointment <span>→</span>
+                                                    {t('bookAppointment')} <span>→</span>
                                                 </Button>
                                             </motion.div>
                                             <motion.div
@@ -509,7 +511,7 @@ export function Navbar() {
                                                     variant={"link"}
                                                     className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full"
                                                 >
-                                                    Find Doctors <span>→</span>
+                                                    {t('findAvailableDoctors')} <span>→</span>
                                                 </Button>
                                             </motion.div>
                                             <motion.div
@@ -521,7 +523,7 @@ export function Navbar() {
                                                     variant={"link"}
                                                     className="bg-indigo-400 text-black px-4 py-2 rounded flex items-center justify-between w-full"
                                                 >
-                                                    Contact Us <span>→</span>
+                                                    {t('contactUs')} <span>→</span>
                                                 </Button>
                                             </motion.div>
                                         </motion.div>

@@ -34,7 +34,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
     const isImageInView = useInView(imageRef, { once: true, margin: "-100px" })
 
     return (
-<Card className="h-full w-full flex flex-col justify-between bg-gradient-to-t from-slate-100 to-transparent rounded-xl shadow-md overflow-hidden !py-2 max-w-[640px] border-border/10 hover:border-border transition-colors duration-200 ease-in-out">
+<Card className="h-full w-full flex flex-col justify-between bg-gradient-to-t from-slate-100 to-transparent rounded-xl shadow-md overflow-hidden py-2! max-w-[640px] border-border/10 hover:border-border transition-colors duration-200 ease-in-out">
     <CardContent className="flex justify-center py-1 px-3">
         <motion.div
             ref={imageRef}

@@ -9,6 +9,7 @@ import { VideoModalTriggerProps } from "@/types";
 import React, { useRef, useState } from "react";
 import { ImageWithFallback } from "./ImageWithFallback";
 import { Pause, Play, Volume2, VolumeX } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function VideoModal({
     image,
@@ -16,6 +17,7 @@ export function VideoModal({
     children,
     className,
 }: VideoModalTriggerProps) {
+    const t = useTranslations("global");
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
     const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -45,7 +47,7 @@ export function VideoModal({
             <DialogTrigger
                 className={cn(
                     image
-                        ? "relative rounded-xl aspect-square w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[240px] lg:h-[240px] overflow-hidden group cursor-pointer"
+                        ? "relative rounded-xl aspect-square w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-60 lg:h-60 overflow-hidden group cursor-pointer"
                         : "",
                     className
                 )}
@@ -57,7 +59,7 @@ export function VideoModal({
                         <ImageWithFallback
                             fallbackSrc="/fallback-image.webp"
                             src={image}
-                            alt="Video thumbnail"
+                            alt={t("videoThumbnail")}
                             fill
                             className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
@@ -88,19 +90,27 @@ export function VideoModal({
                     />
 
                     {/* Video controls */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent flex items-center">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/80 to-transparent flex items-center">
                         <button
                             onClick={togglePlay}
                             className="p-2 rounded-full bg-white/10 hover:bg-white/20 mr-4 flex items-center justify-center"
                         >
-                            {isPlaying ? <Pause size={20} className="text-white" /> : <Play size={20} className="text-white" />}
+                            {isPlaying ? (
+                                <Pause size={20} className="text-white" />
+                            ) : (
+                                <Play size={20} className="text-white" />
+                            )}
                         </button>
 
                         <button
                             onClick={toggleMute}
                             className="p-2 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center"
                         >
-                            {isMuted ? <VolumeX size={20} className="text-white" /> : <Volume2 size={20} className="text-white" />}
+                            {isMuted ? (
+                                <VolumeX size={20} className="text-white" />
+                            ) : (
+                                <Volume2 size={20} className="text-white" />
+                            )}
                         </button>
                     </div>
                 </div>

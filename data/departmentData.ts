@@ -588,148 +588,148 @@ export const useDepartmentData = () => {
         {
           id: 'neurosurgery',
           index: 3,
-          name: 'Neurosurgery',
+          name: t('Neurosurgery.name'),
           slug: 'neurosurgery',
           heroImage: '/department/neurosurgery.jpg',
           bannerImage: '/department/neurology-banner.webp',
-          heroTitle: 'Advanced Surgical Care for Brain and Spine',
+          heroTitle: t('Neurosurgery.heroTitle'),
           isFeatured: false,
-          heroSubtitle: 'Precision neurosurgical interventions for complex neurological conditions.',
+          heroSubtitle: t('Neurosurgery.heroSubtitle'),
 
           overview: {
-            title: 'Our Neurosurgical Approach',
+            title: t('Neurosurgery.overview.title'),
             description: [
-              'The Neurosurgery department at Synergy Hospital provides comprehensive surgical care for disorders of the brain, spine, and peripheral nerves. Our team utilizes minimally invasive techniques and advanced technology to achieve optimal outcomes.',
-              'We specialize in treating complex conditions including brain tumors, spinal disorders, cerebrovascular diseases, and traumatic injuries, offering both surgical and non-surgical management options.'
+              t('Neurosurgery.overview.description.0'),
+              t('Neurosurgery.overview.description.1')
             ],
             whyChooseUs: [
-              'Highly skilled neurosurgeons with specialized training',
-              'Advanced intraoperative imaging and navigation systems',
-              'Multidisciplinary approach to complex cases',
-              'Comprehensive post-operative rehabilitation programs'
+              t('Neurosurgery.overview.whyChooseUs.0'),
+              t('Neurosurgery.overview.whyChooseUs.1'),
+              t('Neurosurgery.overview.whyChooseUs.2'),
+              t('Neurosurgery.overview.whyChooseUs.3')
             ]
           },
 
           treatments: {
-            title: 'Neurosurgical Services',
+            title: t('Neurosurgery.treatments.title'),
             items: [
               {
-                title: 'Brain Tumor Surgery',
-                description: 'Advanced surgical techniques for benign and malignant brain tumors, including awake craniotomies.'
+                title: t('Neurosurgery.treatments.items.brainTumor.title'),
+                description: t('Neurosurgery.treatments.items.brainTumor.description')
               },
               {
-                title: 'Spinal Surgery',
-                description: 'Minimally invasive and complex spinal procedures for degenerative conditions, trauma, and deformities.'
+                title: t('Neurosurgery.treatments.items.spinalSurgery.title'),
+                description: t('Neurosurgery.treatments.items.spinalSurgery.description')
               },
               {
-                title: 'Cerebrovascular Surgery',
-                description: 'Surgical treatment for aneurysms, AVMs, and other vascular disorders of the brain.'
+                title: t('Neurosurgery.treatments.items.cerebrovascular.title'),
+                description: t('Neurosurgery.treatments.items.cerebrovascular.description')
               }
             ]
           },
 
           stats: {
-            title: 'Our Neurosurgical Outcomes',
+            title: t('Neurosurgery.stats.title'),
             items: [
               {
-                value: '500+',
-                label: 'Complex Brain Surgeries Annually'
+                value: t('Neurosurgery.stats.items.surgeries.value'),
+                label: t('Neurosurgery.stats.items.surgeries.label')
               },
               {
-                value: '90%',
-                label: 'Successful Tumor Resection Rate'
+                value: t('Neurosurgery.stats.items.resectionRate.value'),
+                label: t('Neurosurgery.stats.items.resectionRate.label')
               },
               {
-                value: '24/7',
-                label: 'Trauma Neurosurgery Availability'
+                value: t('Neurosurgery.stats.items.trauma.value'),
+                label: t('Neurosurgery.stats.items.trauma.label')
               },
               {
-                value: '30%',
-                label: 'Minimally Invasive Procedures'
+                value: t('Neurosurgery.stats.items.minimallyInvasive.value'),
+                label: t('Neurosurgery.stats.items.minimallyInvasive.label')
               }
             ]
           },
 
           team: {
-            title: 'Our Neurosurgical Team',
+            title: t('Neurosurgery.team.title'),
             members: [
               {
-                name: 'Dr. Tripurari Pandey',
-                role: 'Neurosurgeon',
-                credentials: 'M.B.B.S, MCH Neuro Surgeon',
+                name: t('Neurosurgery.team.members.drTripurari.name'),
+                role: t('Neurosurgery.team.members.drTripurari.role'),
+                credentials: t('Neurosurgery.team.members.drTripurari.credentials'),
                 image: '/doctors/dr-tripurari-pandey.webp',
-                specialty: 'Brain and Spine Surgery'
+                specialty: t('Neurosurgery.team.members.drTripurari.specialty')
               },
               {
-                name: 'Dr. Anurag Singh',
-                role: 'Neurosurgeon',
-                credentials: 'M.B.B.S, MS, MCH Neuro Surgeon',
+                name: t('Neurosurgery.team.members.drAnurag.name'),
+                role: t('Neurosurgery.team.members.drAnurag.role'),
+                credentials: t('Neurosurgery.team.members.drAnurag.credentials'),
                 image: '/doctors/dr-anurag-singh.webp',
-                specialty: 'Complex Spinal Procedures'
+                specialty: t('Neurosurgery.team.members.drAnurag.specialty')
               }
             ]
           },
 
           facilities: {
-            title: 'Neurosurgical Facilities',
-            description: 'Our neurosurgery suite features the latest technology for precision interventions.',
+            title: t('Neurosurgery.facilities.title'),
+            description: t('Neurosurgery.facilities.description'),
             features: [
-              'Advanced intraoperative MRI and CT',
-              'Neuronavigation systems',
-              'Intraoperative neurophysiological monitoring',
-              'Dedicated neuro ICU',
-              'Minimally invasive spinal surgery equipment'
+              t('Neurosurgery.facilities.features.0'),
+              t('Neurosurgery.facilities.features.1'),
+              t('Neurosurgery.facilities.features.2'),
+              t('Neurosurgery.facilities.features.3'),
+              t('Neurosurgery.facilities.features.4')
             ],
             image: '/fallback-image.webp',
           },
 
           research: {
-            title: 'Neurosurgical Innovation',
+            title: t('Neurosurgery.research.title'),
             items: [
               {
-                title: 'Skull Base Techniques',
-                content: 'Developing less invasive approaches to complex skull base tumors.',
+                title: t('Neurosurgery.research.items.skullBase.title'),
+                content: t('Neurosurgery.research.items.skullBase.content'),
                 icon: 'skull'
               },
               {
-                title: 'Spinal Biomechanics',
-                content: 'Research into improved stabilization techniques for spinal disorders.',
+                title: t('Neurosurgery.research.items.spinalBiomechanics.title'),
+                content: t('Neurosurgery.research.items.spinalBiomechanics.content'),
                 icon: 'spine'
               },
               {
-                title: 'Neuroprotection',
-                content: 'Investigating methods to protect neural tissue during surgery.',
+                title: t('Neurosurgery.research.items.neuroprotection.title'),
+                content: t('Neurosurgery.research.items.neuroprotection.content'),
                 icon: 'shield-alt'
               }
             ]
           },
 
           testimonials: {
-            title: 'Patient Experiences',
+            title: t('Neurosurgery.testimonials.title'),
             items: [
               {
-                quote: 'The neurosurgeons gave me back my quality of life after years of spinal problems.',
-                author: 'Rajesh K.',
+                quote: t('Neurosurgery.testimonials.items.rajesh.quote'),
+                author: t('Neurosurgery.testimonials.items.rajesh.author'),
                 image: '/fallback-image.webp',
               },
               {
-                quote: 'Their skill and care during my brain tumor surgery were extraordinary.',
-                author: 'Meena P.',
+                quote: t('Neurosurgery.testimonials.items.meena.quote'),
+                author: t('Neurosurgery.testimonials.items.meena.author'),
                 image: '/fallback-image.webp',
               },
             ]
           },
 
           cta: {
-            title: 'Consult Our Neurosurgical Team',
-            subtitle: 'Contact us to discuss your surgical options.',
+            title: t('Neurosurgery.cta.title'),
+            subtitle: t('Neurosurgery.cta.subtitle'),
             buttons: [
               {
-                text: 'Request Consultation',
+                text: t('Neurosurgery.cta.buttons.requestConsultation.text'),
                 isPrimary: true,
               },
               {
-                text: 'Learn About Procedures',
+                text: t('Neurosurgery.cta.buttons.learnAboutProcedures.text'),
                 isPrimary: false,
               }
             ]
@@ -739,141 +739,141 @@ export const useDepartmentData = () => {
         {
           id: 'gastroenterology',
           index: 4,
-          name: 'Gastroenterology',
+          name: t('Gastroenterology.name'),
           slug: 'gastroenterology',
           heroImage: '/department/gastroenterology.webp',
           bannerImage: '/department/gastroenterology-banner.jpg',
-          heroTitle: 'Comprehensive Digestive Health Care',
+          heroTitle: t('Gastroenterology.heroTitle'),
           isFeatured: false,
-          heroSubtitle: 'Expert diagnosis and treatment for gastrointestinal and liver disorders.',
+          heroSubtitle: t('Gastroenterology.heroSubtitle'),
 
           overview: {
-            title: 'Our Gastroenterology Services',
+            title: t('Gastroenterology.overview.title'),
             description: [
-              'The Gastroenterology department provides complete care for disorders of the digestive system, including the esophagus, stomach, intestines, liver, pancreas, and gallbladder. Our specialists utilize advanced endoscopic techniques for both diagnosis and treatment.',
-              'We offer personalized care plans for conditions ranging from acid reflux to inflammatory bowel disease, with a focus on both medical management and preventive care.'
+              t('Gastroenterology.overview.description.0'),
+              t('Gastroenterology.overview.description.1')
             ],
             whyChooseUs: [
-              'Board-certified gastroenterologists with specialized training',
-              'Advanced endoscopic procedures including ERCP and EUS',
-              'Comprehensive liver disease management',
-              'Multidisciplinary approach to complex digestive disorders'
+              t('Gastroenterology.overview.whyChooseUs.0'),
+              t('Gastroenterology.overview.whyChooseUs.1'),
+              t('Gastroenterology.overview.whyChooseUs.2'),
+              t('Gastroenterology.overview.whyChooseUs.3')
             ]
           },
 
           treatments: {
-            title: 'Gastroenterology Treatments',
+            title: t('Gastroenterology.treatments.title'),
             items: [
               {
-                title: 'Endoscopic Procedures',
-                description: 'Diagnostic and therapeutic upper and lower endoscopy, including polyp removal and stent placement.'
+                title: t('Gastroenterology.treatments.items.endoscopic.title'),
+                description: t('Gastroenterology.treatments.items.endoscopic.description')
               },
               {
-                title: 'Liver Disease Management',
-                description: 'Comprehensive care for hepatitis, cirrhosis, and other liver conditions, including transplant evaluation.'
+                title: t('Gastroenterology.treatments.items.liver.title'),
+                description: t('Gastroenterology.treatments.items.liver.description')
               },
               {
-                title: 'IBD Center',
-                description: 'Specialized care for Crohn\'s disease and ulcerative colitis with the latest medical therapies.'
+                title: t('Gastroenterology.treatments.items.ibd.title'),
+                description: t('Gastroenterology.treatments.items.ibd.description')
               }
             ]
           },
 
           stats: {
-            title: 'Gastroenterology By The Numbers',
+            title: t('Gastroenterology.stats.title'),
             items: [
               {
-                value: '5,000+',
-                label: 'Endoscopic Procedures Annually'
+                value: t('Gastroenterology.stats.items.endoscopies.value'),
+                label: t('Gastroenterology.stats.items.endoscopies.label')
               },
               {
-                value: '98%',
-                label: 'Polyp Detection Rate'
+                value: t('Gastroenterology.stats.items.polyp.value'),
+                label: t('Gastroenterology.stats.items.polyp.label')
               },
               {
-                value: '24/7',
-                label: 'Emergency GI Bleed Coverage'
+                value: t('Gastroenterology.stats.items.emergency.value'),
+                label: t('Gastroenterology.stats.items.emergency.label')
               },
               {
-                value: '10+',
-                label: 'Specialized GI Clinics'
+                value: t('Gastroenterology.stats.items.clinics.value'),
+                label: t('Gastroenterology.stats.items.clinics.label')
               }
             ]
           },
 
           team: {
-            title: 'Our Gastroenterology Team',
+            title: t('Gastroenterology.team.title'),
             members: [
               {
-                name: 'Dr. Upendra Gupta',
-                role: 'Gastroenterologist',
-                credentials: 'M.B.B.S , MD, DM-(GASTROENTEROLOGY)',
+                name: t('Gastroenterology.team.members.drUpendra.name'),
+                role: t('Gastroenterology.team.members.drUpendra.role'),
+                credentials: t('Gastroenterology.team.members.drUpendra.credentials'),
                 image: '/doctors/dr-upendra-gupta.webp',
-                specialty: 'Advanced Endoscopy'
+                specialty: t('Gastroenterology.team.members.drUpendra.specialty')
               }
             ]
           },
 
           facilities: {
-            title: 'Endoscopy Center',
-            description: 'Our state-of-the-art endoscopy suite features the latest technology for patient comfort and safety.',
+            title: t('Gastroenterology.facilities.title'),
+            description: t('Gastroenterology.facilities.description'),
             features: [
-              'High-definition endoscopy systems',
-              'ERCP capability for biliary and pancreatic disorders',
-              'Endoscopic ultrasound (EUS)',
-              'Capsule endoscopy for small bowel evaluation',
-              'Comfortable recovery area'
+              t('Gastroenterology.facilities.features.0'),
+              t('Gastroenterology.facilities.features.1'),
+              t('Gastroenterology.facilities.features.2'),
+              t('Gastroenterology.facilities.features.3'),
+              t('Gastroenterology.facilities.features.4')
             ],
             image: '/fallback-image.webp',
           },
 
           research: {
-            title: 'GI Research',
+            title: t('Gastroenterology.research.title'),
             items: [
               {
-                title: 'Microbiome Studies',
-                content: 'Investigating the role of gut bacteria in digestive health and disease.',
+                title: t('Gastroenterology.research.items.microbiome.title'),
+                content: t('Gastroenterology.research.items.microbiome.content'),
                 icon: 'bacteria'
               },
               {
-                title: 'Advanced Endoscopy',
-                content: 'Developing new techniques for minimally invasive treatment of complex GI disorders.',
+                title: t('Gastroenterology.research.items.endoscopy.title'),
+                content: t('Gastroenterology.research.items.endoscopy.content'),
                 icon: 'endoscope'
               },
               {
-                title: 'IBD Therapies',
-                content: 'Clinical trials of new medications for inflammatory bowel diseases.',
+                title: t('Gastroenterology.research.items.ibd.title'),
+                content: t('Gastroenterology.research.items.ibd.content'),
                 icon: 'prescription-bottle-alt'
               }
             ]
           },
 
           testimonials: {
-            title: 'Patient Stories',
+            title: t('Gastroenterology.testimonials.title'),
             items: [
               {
-                quote: 'The gastroenterology team diagnosed my condition quickly and treated me with great care.',
-                author: 'Sunil M.',
+                quote: t('Gastroenterology.testimonials.items.sunil.quote'),
+                author: t('Gastroenterology.testimonials.items.sunil.author'),
                 image: '/fallback-image.webp',
               },
               {
-                quote: 'My colonoscopy was comfortable and professional - I highly recommend their services.',
-                author: 'Geeta R.',
+                quote: t('Gastroenterology.testimonials.items.geeta.quote'),
+                author: t('Gastroenterology.testimonials.items.geeta.author'),
                 image: '/fallback-image.webp',
               },
             ]
           },
 
           cta: {
-            title: 'Schedule Your GI Consultation',
-            subtitle: 'Contact us to book an appointment or procedure.',
+            title: t('Gastroenterology.cta.title'),
+            subtitle: t('Gastroenterology.cta.subtitle'),
             buttons: [
               {
-                text: 'Book Appointment',
+                text: t('Gastroenterology.cta.buttons.bookAppointment.text'),
                 isPrimary: true,
               },
               {
-                text: 'Learn About Procedures',
+                text: t('Gastroenterology.cta.buttons.learnProcedures.text'),
                 isPrimary: false,
               }
             ]
@@ -883,141 +883,121 @@ export const useDepartmentData = () => {
         {
           id: 'nephrology',
           index: 5,
-          name: 'Nephrology',
+          name: t('Nephrology.name'),
           slug: 'nephrology',
           heroImage: '/department/pediatrics.jpeg',
           bannerImage: '/department/nephrology-banner.jpg',
-          heroTitle: '',
+          heroTitle: t('Nephrology.heroTitle'),
           isFeatured: false,
-          heroSubtitle: '',
+          heroSubtitle: t('Nephrology.heroSubtitle'),
 
           overview: {
-            title: 'Our Nephrology Approach',
+            title: t('Nephrology.overview.title'),
             description: [
-              'The Nephrology department provides comprehensive care for patients with kidney disorders, including chronic kidney disease, acute kidney injury, hypertension, and electrolyte imbalances. We offer both medical management and dialysis services.',
-              'Our team works closely with patients to slow disease progression, manage complications, and provide renal replacement therapies when needed, with a focus on quality of life and patient education.'
+              t('Nephrology.overview.description.0'),
+              t('Nephrology.overview.description.1')
             ],
             whyChooseUs: [
-              'Board-certified nephrologists with specialized training',
-              'Comprehensive dialysis services',
-              'Multidisciplinary approach to complex kidney disorders',
-              'Chronic disease management programs'
+              t('Nephrology.overview.whyChooseUs.0'),
+              t('Nephrology.overview.whyChooseUs.1'),
+              t('Nephrology.overview.whyChooseUs.2'),
+              t('Nephrology.overview.whyChooseUs.3')
             ]
           },
 
           treatments: {
-            title: 'Nephrology Services',
+            title: t('Nephrology.treatments.title'),
             items: [
               {
-                title: 'Dialysis Care',
-                description: 'In-center hemodialysis, peritoneal dialysis, and home dialysis training programs.'
+                title: t('Nephrology.treatments.items.dialysis.title'),
+                description: t('Nephrology.treatments.items.dialysis.description')
               },
               {
-                title: 'Hypertension Management',
-                description: 'Specialized care for difficult-to-control high blood pressure and its complications.'
+                title: t('Nephrology.treatments.items.hypertension.title'),
+                description: t('Nephrology.treatments.items.hypertension.description')
               },
               {
-                title: 'Chronic Kidney Disease',
-                description: 'Comprehensive management to slow progression and manage complications of CKD.'
+                title: t('Nephrology.treatments.items.ckd.title'),
+                description: t('Nephrology.treatments.items.ckd.description')
               }
             ]
           },
 
           stats: {
-            title: 'Nephrology By The Numbers',
+            title: t('Nephrology.stats.title'),
             items: [
               {
-                value: '1,200+',
-                label: 'Dialysis Treatments Monthly'
+                value: t('Nephrology.stats.items.dialysis.value'),
+                label: t('Nephrology.stats.items.dialysis.label')
               },
               {
-                value: '90%',
-                label: 'Patient Satisfaction Rate'
+                value: t('Nephrology.stats.items.satisfaction.value'),
+                label: t('Nephrology.stats.items.satisfaction.label')
               },
               {
-                value: '15+',
-                label: 'Years of Nephrology Experience'
+                value: t('Nephrology.stats.items.experience.value'),
+                label: t('Nephrology.stats.items.experience.label')
               },
               {
-                value: '24/7',
-                label: 'Acute Dialysis Availability'
+                value: t('Nephrology.stats.items.acute.value'),
+                label: t('Nephrology.stats.items.acute.label')
               }
             ]
           },
 
           team: {
-            title: 'Our Nephrology Team',
+            title: t('Nephrology.team.title'),
             members: [
               {
-                name: 'Dr. Anindya Biswas',
-                role: 'Nephrologist',
-                credentials: 'MBBS, DNB,DrNB(NEFROLOGY)',
+                name: t('Nephrology.team.members.drAnindya.name'),
+                role: t('Nephrology.team.members.drAnindya.role'),
+                credentials: t('Nephrology.team.members.drAnindya.credentials'),
                 image: '/doctors/dr-anindya-biswas.webp',
-                specialty: 'Chronic Kidney Disease Management'
+                specialty: t('Nephrology.team.members.drAnindya.specialty')
               }
             ]
           },
 
           facilities: {
-            title: 'Dialysis Center',
-            description: 'Our modern dialysis unit provides comfortable, high-quality care for patients with kidney failure.',
+            title: t('Nephrology.facilities.title'),
+            description: t('Nephrology.facilities.description'),
             features: [
-              'State-of-the-art hemodialysis machines',
-              'Comfortable dialysis chairs with entertainment options',
-              'Specialized water treatment system',
-              'Dedicated infection control protocols',
-              'Private consultation rooms'
+              t('Nephrology.facilities.features.0'),
+              t('Nephrology.facilities.features.1'),
+              t('Nephrology.facilities.features.2'),
+              t('Nephrology.facilities.features.3'),
+              t('Nephrology.facilities.features.4')
             ],
             image: '/fallback-image.webp',
           },
 
           research: {
-            title: 'Kidney Research',
+            title: t('Nephrology.research.title'),
             items: [
-              {
-                title: 'CKD Progression',
-                content: 'Investigating factors that influence the progression of chronic kidney disease.',
-                icon: 'kidneys'
-              },
-              {
-                title: 'Dialysis Innovations',
-                content: 'Research into improving outcomes and quality of life for dialysis patients.',
-                icon: 'clinic-medical'
-              },
-              {
-                title: 'Hypertension Studies',
-                content: 'Clinical trials of new approaches to managing resistant hypertension.',
-                icon: 'heartbeat'
-              }
+              { title: t('Nephrology.research.items.ckd.title'), content: t('Nephrology.research.items.ckd.content'), icon: 'kidneys' },
+              { title: t('Nephrology.research.items.dialysis.title'), content: t('Nephrology.research.items.dialysis.content'), icon: 'clinic-medical' },
+              { title: t('Nephrology.research.items.hypertension.title'), content: t('Nephrology.research.items.hypertension.content'), icon: 'heartbeat' }
             ]
           },
 
           testimonials: {
-            title: 'Patient Experiences',
+            title: t('Nephrology.testimonials.title'),
             items: [
-              {
-                quote: 'The nephrology team has taken excellent care of me through my kidney disease journey.',
-                author: 'Arun S.',
-                image: '/fallback-image.webp',
-              },
-              {
-                quote: 'They made dialysis much less intimidating and always treat me with respect.',
-                author: 'Lata M.',
-                image: '/fallback-image.webp',
-              },
+              { quote: t('Nephrology.testimonials.items.arun.quote'), author: t('Nephrology.testimonials.items.arun.author'), image: '/fallback-image.webp' },
+              { quote: t('Nephrology.testimonials.items.lata.quote'), author: t('Nephrology.testimonials.items.lata.author'), image: '/fallback-image.webp' }
             ]
           },
 
           cta: {
-            title: 'Schedule Your Nephrology Consultation',
-            subtitle: 'Contact us to discuss your kidney health needs.',
+            title: t('Nephrology.cta.title'),
+            subtitle: t('Nephrology.cta.subtitle'),
             buttons: [
               {
-                text: 'Book Appointment',
+                text: t('Nephrology.cta.buttons.bookAppointment.text'),
                 isPrimary: true,
               },
               {
-                text: 'Learn About Services',
+                text: t('Nephrology.cta.buttons.learnServices.text'),
                 isPrimary: false,
               }
             ]
@@ -1027,148 +1007,128 @@ export const useDepartmentData = () => {
         {
           id: 'urology',
           index: 6,
-          name: 'Urology',
+          name: t('Urology.name'),
           slug: 'urology',
           heroImage: '/department/urology.jpeg',
           bannerImage: '/department/urology-banner.jpeg',
-          heroTitle: 'Comprehensive Urological Care',
+          heroTitle: t('Urology.heroTitle'),
           isFeatured: false,
-          heroSubtitle: 'Advanced diagnosis and treatment for urinary tract and male reproductive system disorders.',
+          heroSubtitle: t('Urology.heroSubtitle'),
 
           overview: {
-            title: 'Our Urology Services',
+            title: t('Urology.overview.title'),
             description: [
-              'The Urology department provides complete care for disorders of the urinary tract in both men and women, as well as male reproductive health. Our specialists utilize both medical and surgical approaches to treat conditions ranging from kidney stones to prostate cancer.',
-              'We offer minimally invasive and robotic-assisted surgical techniques when appropriate, with a focus on patient-centered care and optimal outcomes.'
+              t('Urology.overview.description.0'),
+              t('Urology.overview.description.1')
             ],
             whyChooseUs: [
-              'Board-certified urologists with specialized training',
-              'Advanced minimally invasive and robotic surgical techniques',
-              'Comprehensive prostate health services',
-              'Multidisciplinary approach to complex urologic cancers'
+              t('Urology.overview.whyChooseUs.0'),
+              t('Urology.overview.whyChooseUs.1'),
+              t('Urology.overview.whyChooseUs.2'),
+              t('Urology.overview.whyChooseUs.3')
             ]
           },
 
           treatments: {
-            title: 'Urological Treatments',
+            title: t('Urology.treatments.title'),
             items: [
               {
-                title: 'Kidney Stone Management',
-                description: 'Medical expulsive therapy, lithotripsy, and minimally invasive stone removal procedures.'
+                title: t('Urology.treatments.items.kidneyStone.title'),
+                description: t('Urology.treatments.items.kidneyStone.description')
               },
               {
-                title: 'Prostate Care',
-                description: 'Comprehensive services for BPH, prostatitis, and prostate cancer screening and treatment.'
+                title: t('Urology.treatments.items.prostate.title'),
+                description: t('Urology.treatments.items.prostate.description')
               },
               {
-                title: 'Urologic Oncology',
-                description: 'Specialized care for cancers of the bladder, kidney, prostate, and testicles.'
+                title: t('Urology.treatments.items.oncology.title'),
+                description: t('Urology.treatments.items.oncology.description')
               }
             ]
           },
 
           stats: {
-            title: 'Urology By The Numbers',
+            title: t('Urology.stats.title'),
             items: [
               {
-                value: '1,000+',
-                label: 'Surgical Procedures Annually'
+                value: t('Urology.stats.items.surgeries.value'),
+                label: t('Urology.stats.items.surgeries.label')
               },
               {
-                value: '95%',
-                label: 'Stone-Free Rate After Treatment'
+                value: t('Urology.stats.items.stoneFree.value'),
+                label: t('Urology.stats.items.stoneFree.label')
               },
               {
-                value: '50+',
-                label: 'Robotic Surgeries Performed Yearly'
+                value: t('Urology.stats.items.robotic.value'),
+                label: t('Urology.stats.items.robotic.label')
               },
               {
-                value: '24/7',
-                label: 'Emergency Urology Coverage'
+                value: t('Urology.stats.items.emergency.value'),
+                label: t('Urology.stats.items.emergency.label')
               }
             ]
           },
 
           team: {
-            title: 'Our Urology Team',
+            title: t('Urology.team.title'),
             members: [
               {
-                name: 'Dr. Rohit Kumar Singh',
-                role: 'Urologist',
-                credentials: 'M.B.B.S, M.S, Mch. Urology, Davinci certified Robotic Uro Surgeon',
+                name: t('Urology.team.members.drRohit.name'),
+                role: t('Urology.team.members.drRohit.role'),
+                credentials: t('Urology.team.members.drRohit.credentials'),
                 image: '/doctors/dr-rohit-kumar-singh.webp',
-                specialty: 'Robotic Urologic Surgery'
+                specialty: t('Urology.team.members.drRohit.specialty')
               },
               {
-                name: 'Dr. Vishrut Bharti',
-                role: 'Urologist',
-                credentials: 'M.B.B.S M.S (General Surgery) MCH (Urologist) Gold Medalist',
+                name: t('Urology.team.members.drVishrut.name'),
+                role: t('Urology.team.members.drVishrut.role'),
+                credentials: t('Urology.team.members.drVishrut.credentials'),
                 image: '/doctors/dr-vishrut-bharti.webp',
-                specialty: 'Endourology and Stone Disease'
+                specialty: t('Urology.team.members.drVishrut.specialty')
               }
             ]
           },
 
           facilities: {
-            title: 'Urology Center',
-            description: 'Our urology department features advanced diagnostic and treatment technologies.',
+            title: t('Urology.facilities.title'),
+            description: t('Urology.facilities.description'),
             features: [
-              'Digital urodynamics equipment',
-              'Flexible and rigid ureteroscopy capabilities',
-              'Da Vinci robotic surgical system',
-              'Shock wave lithotripsy unit',
-              'Comfortable cystoscopy suite'
+              t('Urology.facilities.features.0'),
+              t('Urology.facilities.features.1'),
+              t('Urology.facilities.features.2'),
+              t('Urology.facilities.features.3'),
+              t('Urology.facilities.features.4')
             ],
             image: '/fallback-image.webp',
           },
 
           research: {
-            title: 'Urology Research',
+            title: t('Urology.research.title'),
             items: [
-              {
-                title: 'Stone Prevention',
-                content: 'Investigating dietary and medical approaches to prevent recurrent kidney stones.',
-                icon: 'stone'
-              },
-              {
-                title: 'Robotic Techniques',
-                content: 'Developing improved robotic surgical approaches for urologic cancers.',
-                icon: 'robot'
-              },
-              {
-                title: 'BPH Therapies',
-                content: 'Clinical trials of new minimally invasive treatments for enlarged prostate.',
-                icon: 'prostate'
-              }
+              { title: t('Urology.research.items.stonePrevention.title'), content: t('Urology.research.items.stonePrevention.content'), icon: 'stone' },
+              { title: t('Urology.research.items.robotic.title'), content: t('Urology.research.items.robotic.content'), icon: 'robot' },
+              { title: t('Urology.research.items.bph.title'), content: t('Urology.research.items.bph.content'), icon: 'prostate' }
             ]
           },
 
           testimonials: {
-            title: 'Patient Stories',
+            title: t('Urology.testimonials.title'),
             items: [
-              {
-                quote: 'The urology team made my kidney stone treatment virtually painless and very effective.',
-                author: 'Sanjay P.',
-                image: '/fallback-image.webp',
-              },
-              {
-                quote: 'Their expertise in robotic prostate surgery gave me confidence in my treatment choice.',
-                author: 'Mohan D.',
-                image: '/fallback-image.webp',
-              },
+              { quote: t('Urology.testimonials.items.sanjay.quote'), author: t('Urology.testimonials.items.sanjay.author'), image: '/fallback-image.webp' },
+              { quote: t('Urology.testimonials.items.mohan.quote'), author: t('Urology.testimonials.items.mohan.author'), image: '/fallback-image.webp' }
             ]
           },
 
           cta: {
-            title: 'Schedule Your Urology Consultation',
-            subtitle: 'Contact us to discuss your urological health needs.',
+            title: t('Urology.cta.title'),
+            subtitle: t('Urology.cta.subtitle'),
             buttons: [
               {
-                text: 'Book Appointment',
+                text: t('Urology.cta.buttons.bookAppointment.text'),
                 isPrimary: true,
               },
               {
-                text: 'Learn About Services',
+                text: t('Urology.cta.buttons.learnServices.text'),
                 isPrimary: false,
               }
             ]
@@ -1178,148 +1138,128 @@ export const useDepartmentData = () => {
         {
           id: 'orthopedics',
           index: 7,
-          name: 'Orthopedics',
+          name: t('Orthopedics.name'),
           slug: 'orthopedics',
           heroImage: '/department/pediatrics.jpeg',
           bannerImage: '/department/orthopaedic-banner.jpg',
-          heroTitle: '',
+          heroTitle: t('Orthopedics.heroTitle'),
           isFeatured: false,
-          heroSubtitle: '.',
+          heroSubtitle: t('Orthopedics.heroSubtitle'),
 
           overview: {
-            title: 'Our Orthopedic Approach',
+            title: t('Orthopedics.overview.title'),
             description: [
-              'The Orthopedics department provides complete care for musculoskeletal conditions, including arthritis, sports injuries, fractures, and spinal disorders. Our specialists utilize both surgical and non-surgical approaches to restore function and relieve pain.',
-              'We offer specialized clinics for joint replacement, sports medicine, hand surgery, and spine care, with a focus on personalized treatment plans and rehabilitation.'
+              t('Orthopedics.overview.description.0'),
+              t('Orthopedics.overview.description.1')
             ],
             whyChooseUs: [
-              'Board-certified orthopedic surgeons with subspecialty training',
-              'Advanced joint replacement and arthroscopic techniques',
-              'Multidisciplinary approach to complex musculoskeletal problems',
-              'Comprehensive rehabilitation services'
+              t('Orthopedics.overview.whyChooseUs.0'),
+              t('Orthopedics.overview.whyChooseUs.1'),
+              t('Orthopedics.overview.whyChooseUs.2'),
+              t('Orthopedics.overview.whyChooseUs.3')
             ]
           },
 
           treatments: {
-            title: 'Orthopedic Services',
+            title: t('Orthopedics.treatments.title'),
             items: [
               {
-                title: 'Joint Replacement',
-                description: 'Hip, knee, and shoulder replacement surgery using advanced techniques and implants.'
+                title: t('Orthopedics.treatments.items.jointReplacement.title'),
+                description: t('Orthopedics.treatments.items.jointReplacement.description')
               },
               {
-                title: 'Sports Medicine',
-                description: 'Treatment for athletic injuries, including arthroscopic surgery and rehabilitation.'
+                title: t('Orthopedics.treatments.items.sportsMedicine.title'),
+                description: t('Orthopedics.treatments.items.sportsMedicine.description')
               },
               {
-                title: 'Spine Care',
-                description: 'Surgical and non-surgical management of back and neck disorders.'
+                title: t('Orthopedics.treatments.items.spineCare.title'),
+                description: t('Orthopedics.treatments.items.spineCare.description')
               }
             ]
           },
 
           stats: {
-            title: 'Orthopedics By The Numbers',
+            title: t('Orthopedics.stats.title'),
             items: [
               {
-                value: '500+',
-                label: 'Joint Replacements Annually'
+                value: t('Orthopedics.stats.items.jointReplacements.value'),
+                label: t('Orthopedics.stats.items.jointReplacements.label')
               },
               {
-                value: '95%',
-                label: 'Patient Satisfaction Rate'
+                value: t('Orthopedics.stats.items.satisfaction.value'),
+                label: t('Orthopedics.stats.items.satisfaction.label')
               },
               {
-                value: '20+',
-                label: 'Years of Orthopedic Experience'
+                value: t('Orthopedics.stats.items.experience.value'),
+                label: t('Orthopedics.stats.items.experience.label')
               },
               {
-                value: '24/7',
-                label: 'Fracture Care Availability'
+                value: t('Orthopedics.stats.items.fractureCare.value'),
+                label: t('Orthopedics.stats.items.fractureCare.label')
               }
             ]
           },
 
           team: {
-            title: 'Our Orthopedic Team',
+            title: t('Orthopedics.team.title'),
             members: [
               {
-                name: 'Dr. Prateek',
-                role: 'Orthopedic Surgeon',
-                credentials: 'M.B.B.S. MS ORTHO,FIJR,FAGE orthopedic trauma Jioint Replacement,Spine Specialist Surgeon & Sports Injury Surgeon',
+                name: t('Orthopedics.team.members.drPrateek.name'),
+                role: t('Orthopedics.team.members.drPrateek.role'),
+                credentials: t('Orthopedics.team.members.drPrateek.credentials'),
                 image: '/doctors/dr-prateek.webp',
-                specialty: 'Joint Replacement and Sports Medicine'
+                specialty: t('Orthopedics.team.members.drPrateek.specialty')
               },
               {
-                name: 'Dr. Anil Srivastava',
-                role: 'Orthopedic Surgeon',
-                credentials: 'M.B.B.S. MS ORTHO',
+                name: t('Orthopedics.team.members.drAnil.name'),
+                role: t('Orthopedics.team.members.drAnil.role'),
+                credentials: t('Orthopedics.team.members.drAnil.credentials'),
                 image: '/doctors/dr-anil-srivastava.webp',
-                specialty: 'Trauma and General Orthopedics'
+                specialty: t('Orthopedics.team.members.drAnil.specialty')
               }
             ]
           },
 
           facilities: {
-            title: 'Orthopedic Center',
-            description: 'Our orthopedic facility features advanced technology for diagnosis, treatment, and rehabilitation.',
+            title: t('Orthopedics.facilities.title'),
+            description: t('Orthopedics.facilities.description'),
             features: [
-              'Digital radiography and advanced imaging',
-              'Modern operating rooms with specialized equipment',
-              'Dedicated joint replacement unit',
-              'Physical therapy and rehabilitation center',
-              'On-site orthotics and bracing'
+              t('Orthopedics.facilities.features.0'),
+              t('Orthopedics.facilities.features.1'),
+              t('Orthopedics.facilities.features.2'),
+              t('Orthopedics.facilities.features.3'),
+              t('Orthopedics.facilities.features.4')
             ],
             image: '/fallback-image.webp',
           },
 
           research: {
-            title: 'Orthopedic Research',
+            title: t('Orthopedics.research.title'),
             items: [
-              {
-                title: 'Implant Longevity',
-                content: 'Studying factors that influence the longevity of joint replacements.',
-                icon: 'bone'
-              },
-              {
-                title: 'Regenerative Medicine',
-                content: 'Investigating stem cell and PRP therapies for musculoskeletal injuries.',
-                icon: 'dna'
-              },
-              {
-                title: 'Minimally Invasive Techniques',
-                content: 'Developing less invasive surgical approaches with faster recovery.',
-                icon: 'scalpel-path'
-              }
+              { title: t('Orthopedics.research.items.implant.title'), content: t('Orthopedics.research.items.implant.content'), icon: 'bone' },
+              { title: t('Orthopedics.research.items.regenerative.title'), content: t('Orthopedics.research.items.regenerative.content'), icon: 'dna' },
+              { title: t('Orthopedics.research.items.minimallyInvasive.title'), content: t('Orthopedics.research.items.minimallyInvasive.content'), icon: 'scalpel-path' }
             ]
           },
 
           testimonials: {
-            title: 'Patient Experiences',
+            title: t('Orthopedics.testimonials.title'),
             items: [
-              {
-                quote: 'My knee replacement went smoothly and I was walking the same day - amazing care!',
-                author: 'Rekha M.',
-                image: '/fallback-image.webp',
-              },
-              {
-                quote: 'The sports medicine team got me back to playing cricket after my shoulder injury.',
-                author: 'Vivek S.',
-                image: '/fallback-image.webp',
-              },
+              { quote: t('Orthopedics.testimonials.items.rekha.quote'), author: t('Orthopedics.testimonials.items.rekha.author'), image: '/fallback-image.webp' },
+              { quote: t('Orthopedics.testimonials.items.vivek.quote'), author: t('Orthopedics.testimonials.items.vivek.author'), image: '/fallback-image.webp' }
             ]
           },
 
           cta: {
-            title: 'Schedule Your Orthopedic Consultation',
-            subtitle: 'Contact us to discuss your bone and joint health needs.',
+            title: t('Orthopedics.cta.title'),
+            subtitle: t('Orthopedics.cta.subtitle'),
             buttons: [
               {
-                text: 'Book Appointment',
+                text: t('Orthopedics.cta.buttons.bookAppointment.text'),
                 isPrimary: true,
               },
               {
-                text: 'Learn About Services',
+                text: t('Orthopedics.cta.buttons.learnServices.text'),
                 isPrimary: false,
               }
             ]
@@ -1329,150 +1269,91 @@ export const useDepartmentData = () => {
         {
             id: 'anesthesia',
             index: 8,
-            name: 'Anesthesia',
+            name: t('Anesthesia.name'),
             slug: 'anesthesia',
             heroImage: '/department/anesthesia.jpg',
             bannerImage: '/department/anesthesia-banner.webp',
-            heroTitle: 'Expert Anesthesia Care for Safe Procedures',
-            heroSubtitle: 'Providing advanced anesthesia solutions with patient safety as our top priority in Gorakhpur.',
+            heroTitle: t('Anesthesia.heroTitle'),
+            heroSubtitle: t('Anesthesia.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Anesthesia Approach',
+              title: t('Anesthesia.overview.title'),
               description: [
-                'At Synergy Super Speciality Hospital, our Anesthesia department provides comprehensive perioperative care using the latest techniques and monitoring technology. Our team ensures patient comfort and safety during surgical procedures.',
-                'With specialized training in various anesthesia subspecialties, our experts tailor anesthesia plans to each patient\'s medical needs, minimizing risks and optimizing recovery.'
+                t('Anesthesia.overview.description.0'),
+                t('Anesthesia.overview.description.1')
               ],
               whyChooseUs: [
-                'Board-certified anesthesiologists with subspecialty expertise',
-                'Advanced monitoring and pain management techniques',
-                'Pediatric and geriatric anesthesia specialists',
-                'Comprehensive pre-anesthesia evaluation and post-op care'
+                t('Anesthesia.overview.whyChooseUs.0'),
+                t('Anesthesia.overview.whyChooseUs.1'),
+                t('Anesthesia.overview.whyChooseUs.2'),
+                t('Anesthesia.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Anesthesia Services',
+              title: t('Anesthesia.treatments.title'),
               items: [
-                {
-                  title: 'General Anesthesia',
-                  description: 'Safe administration of anesthesia for patients undergoing major surgical procedures with advanced monitoring.'
-                },
-                {
-                  title: 'Regional Anesthesia',
-                  description: 'Expertise in spinal, epidural and nerve block techniques for targeted pain relief and faster recovery.'
-                },
-                {
-                  title: 'Pain Management',
-                  description: 'Multimodal approaches to acute and chronic pain management during and after procedures.'
-                }
-              ]
+                  { title: t('Anesthesia.treatments.items.general.title'), description: t('Anesthesia.treatments.items.general.description') },
+                  { title: t('Anesthesia.treatments.items.regional.title'), description: t('Anesthesia.treatments.items.regional.description') },
+                  { title: t('Anesthesia.treatments.items.pain.title'), description: t('Anesthesia.treatments.items.pain.description') }
+                ]
             },
 
             stats: {
-              title: 'Our Anesthesia Expertise',
+              title: t('Anesthesia.stats.title'),
               items: [
-                {
-                  value: '10,000+',
-                  label: 'Safe Anesthesia Procedures Performed'
-                },
-                {
-                  value: '24/7',
-                  label: 'Anesthesia Coverage Availability'
-                },
-                {
-                  value: '99%',
-                  label: 'Patient Satisfaction Rate'
-                },
-                {
-                  value: '5',
-                  label: 'Specialized Anesthesia Techniques Offered'
-                }
+                { value: t('Anesthesia.stats.items.procedures.value'), label: t('Anesthesia.stats.items.procedures.label') },
+                { value: t('Anesthesia.stats.items.coverage.value'), label: t('Anesthesia.stats.items.coverage.label') },
+                { value: t('Anesthesia.stats.items.satisfaction.value'), label: t('Anesthesia.stats.items.satisfaction.label') },
+                { value: t('Anesthesia.stats.items.techniques.value'), label: t('Anesthesia.stats.items.techniques.label') }
               ]
             },
 
             team: {
-              title: 'Meet Our Anesthesiologists',
+              title: t('Anesthesia.team.title'),
               members: [
-                {
-                  name: 'Dr. Harshit Mishra',
-                  role: 'Anesthesiologist',
-                  credentials: 'M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO',
-                  image: '/doctors/dr-harshit-mishra.webp',
-                  specialty: 'Neuroanesthesia'
-                },
-                {
-                  name: 'Dr. Amritansh Pandey',
-                  role: 'Anesthesiologist',
-                  credentials: 'M.B.B.S, MD-Anesthesia',
-                  image: '/doctors/dr-amritansh-pandey.webp',
-                  specialty: 'General Anesthesia'
-                }
+                { name: t('Anesthesia.team.members.drHarshit.name'), role: t('Anesthesia.team.members.drHarshit.role'), credentials: t('Anesthesia.team.members.drHarshit.credentials'), image: '/doctors/dr-harshit-mishra.webp', specialty: t('Anesthesia.team.members.drHarshit.specialty') },
+                { name: t('Anesthesia.team.members.drAmritansh.name'), role: t('Anesthesia.team.members.drAmritansh.role'), credentials: t('Anesthesia.team.members.drAmritansh.credentials'), image: '/doctors/dr-amritansh-pandey.webp', specialty: t('Anesthesia.team.members.drAmritansh.specialty') }
               ]
             },
 
             facilities: {
-              title: 'Advanced Anesthesia Facilities',
-              description: 'Our department is equipped with cutting-edge technology to ensure safe anesthesia delivery and monitoring.',
+              title: t('Anesthesia.facilities.title'),
+              description: t('Anesthesia.facilities.description'),
               features: [
-                'State-of-the-art anesthesia machines with advanced ventilation modes',
-                'Comprehensive hemodynamic monitoring systems',
-                'Dedicated post-anesthesia care unit (PACU)',
-                'Advanced pain management equipment',
-                'Emergency airway management resources'
+                t('Anesthesia.facilities.features.0'),
+                t('Anesthesia.facilities.features.1'),
+                t('Anesthesia.facilities.features.2'),
+                t('Anesthesia.facilities.features.3'),
+                t('Anesthesia.facilities.features.4')
               ],
               image: '/department/anesthesia-facilities.webp'
             },
 
             research: {
-              title: 'Research & Innovation',
+              title: t('Anesthesia.research.title'),
               items: [
-                {
-                  title: 'Enhanced Recovery Protocols',
-                  content: 'Developing optimized anesthesia protocols for faster postoperative recovery.',
-                  icon: 'flask'
-                },
-                {
-                  title: 'Pain Management Studies',
-                  content: 'Researching novel approaches to perioperative pain control.',
-                  icon: 'dna'
-                },
-                {
-                  title: 'Safety Monitoring Systems',
-                  content: 'Implementing AI-assisted monitoring for anesthesia safety.',
-                  icon: 'cpu'
-                }
+                { title: t('Anesthesia.research.items.enhancedRecovery.title'), content: t('Anesthesia.research.items.enhancedRecovery.content'), icon: 'flask' },
+                { title: t('Anesthesia.research.items.painStudies.title'), content: t('Anesthesia.research.items.painStudies.content'), icon: 'dna' },
+                { title: t('Anesthesia.research.items.safetySystems.title'), content: t('Anesthesia.research.items.safetySystems.content'), icon: 'cpu' }
               ]
             },
 
             testimonials: {
-              title: 'Patient Experiences',
+              title: t('Anesthesia.testimonials.title'),
               items: [
-                {
-                  quote: 'The anesthesia team made me feel completely at ease before my surgery. I woke up comfortable with excellent pain control.',
-                  author: 'Rajesh K.',
-                  image: '/fallback-image.webp'
-                },
-                {
-                  quote: 'Their expertise in regional anesthesia helped me recover quickly with minimal pain after my procedure.',
-                  author: 'Priya M.',
-                  image: '/fallback-image.webp'
-                }
+                { quote: t('Anesthesia.testimonials.items.rajesh.quote'), author: t('Anesthesia.testimonials.items.rajesh.author'), image: '/fallback-image.webp' },
+                { quote: t('Anesthesia.testimonials.items.priya.quote'), author: t('Anesthesia.testimonials.items.priya.author'), image: '/fallback-image.webp' }
               ]
             },
 
             cta: {
-              title: 'Have Questions About Anesthesia?',
-              subtitle: 'Our anesthesia specialists are available to discuss your upcoming procedure.',
+              title: t('Anesthesia.cta.title'),
+              subtitle: t('Anesthesia.cta.subtitle'),
               buttons: [
-                {
-                  text: 'Consult Our Team',
-                  isPrimary: true
-                },
-                {
-                  text: 'Learn More',
-                  isPrimary: false
-                }
+                { text: t('Anesthesia.cta.buttons.consult.text'), isPrimary: true },
+                { text: t('Anesthesia.cta.buttons.learnMore.text'), isPrimary: false }
               ]
             }
           },
@@ -1480,143 +1361,90 @@ export const useDepartmentData = () => {
           {
             id: 'general-surgery',
             index: 9,
-            name: 'General Surgery',
+              name: t('GeneralSurgery.name'),
             slug: 'general-surgery',
             heroImage: '/department/general-surgery.webp',
             bannerImage: '/department/general-surgery.webp',
-            heroTitle: 'Comprehensive Surgical Care for All Needs',
-            heroSubtitle: 'Expert surgical solutions with compassionate care in Gorakhpur.',
+              heroTitle: t('GeneralSurgery.heroTitle'),
+              heroSubtitle: t('GeneralSurgery.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Surgical Services',
+              title: t('GeneralSurgery.overview.title'),
               description: [
-                'The General Surgery department at Synergy Super Speciality Hospital provides a full spectrum of surgical care using both traditional and minimally invasive techniques.',
-                'Our experienced surgeons perform procedures ranging from routine appendectomies to complex abdominal surgeries, always prioritizing patient safety and optimal outcomes.'
+                t('GeneralSurgery.overview.description.0'),
+                t('GeneralSurgery.overview.description.1')
               ],
               whyChooseUs: [
-                'Experienced surgeons with specialized training',
-                'Minimally invasive laparoscopic options',
-                'Comprehensive pre- and post-operative care',
-                'Multidisciplinary approach to complex cases'
+                t('GeneralSurgery.overview.whyChooseUs.0'),
+                t('GeneralSurgery.overview.whyChooseUs.1'),
+                t('GeneralSurgery.overview.whyChooseUs.2'),
+                t('GeneralSurgery.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Surgical Procedures',
+              title: t('GeneralSurgery.treatments.title'),
               items: [
-                {
-                  title: 'Laparoscopic Surgery',
-                  description: 'Minimally invasive procedures for gallbladder, appendix, hernia and other abdominal conditions.'
-                },
-                {
-                  title: 'Gastrointestinal Surgery',
-                  description: 'Expert management of conditions affecting the stomach, intestines, colon and rectum.'
-                },
-                {
-                  title: 'Hernia Repair',
-                  description: 'Advanced techniques for inguinal, umbilical and ventral hernia repairs.'
-                }
+                { title: t('GeneralSurgery.treatments.items.laparoscopic.title'), description: t('GeneralSurgery.treatments.items.laparoscopic.description') },
+                { title: t('GeneralSurgery.treatments.items.gastrointestinal.title'), description: t('GeneralSurgery.treatments.items.gastrointestinal.description') },
+                { title: t('GeneralSurgery.treatments.items.hernia.title'), description: t('GeneralSurgery.treatments.items.hernia.description') }
               ]
             },
 
             stats: {
-              title: 'Our Surgical Expertise',
+              title: t('GeneralSurgery.stats.title'),
               items: [
-                {
-                  value: '5,000+',
-                  label: 'Successful Surgeries Performed'
-                },
-                {
-                  value: '85%',
-                  label: 'Minimally Invasive Procedures'
-                },
-                {
-                  value: '98%',
-                  label: 'Patient Satisfaction Rate'
-                },
-                {
-                  value: '24/7',
-                  label: 'Emergency Surgical Coverage'
-                }
+                { value: t('GeneralSurgery.stats.items.surgeries.value'), label: t('GeneralSurgery.stats.items.surgeries.label') },
+                { value: t('GeneralSurgery.stats.items.minimallyInvasive.value'), label: t('GeneralSurgery.stats.items.minimallyInvasive.label') },
+                { value: t('GeneralSurgery.stats.items.satisfaction.value'), label: t('GeneralSurgery.stats.items.satisfaction.label') },
+                { value: t('GeneralSurgery.stats.items.coverage.value'), label: t('GeneralSurgery.stats.items.coverage.label') }
               ]
             },
 
             team: {
-              title: 'Our Surgical Team',
+              title: t('GeneralSurgery.team.title'),
               members: [
-                {
-                  name: 'Dr. D.P. Singh',
-                  role: 'General Surgeon',
-                  credentials: 'M.B.B.S, MS GENERAL SURGERY, DEPARTMENT OF GI SURGERY',
-                  image: '/doctors/dr-dp-singh.webp',
-                  specialty: 'Gastrointestinal Surgery'
-                }
+                { name: t('GeneralSurgery.team.members.drDpSingh.name'), role: t('GeneralSurgery.team.members.drDpSingh.role'), credentials: t('GeneralSurgery.team.members.drDpSingh.credentials'), image: '/doctors/dr-dp-singh.webp', specialty: t('GeneralSurgery.team.members.drDpSingh.specialty') }
               ]
             },
 
             facilities: {
-              title: 'Surgical Facilities',
-              description: 'Our modern operating suites are equipped with the latest technology for safe, effective procedures.',
+              title: t('GeneralSurgery.facilities.title'),
+              description: t('GeneralSurgery.facilities.description'),
               features: [
-                'Advanced laparoscopic equipment',
-                'State-of-the-art operating rooms',
-                'Comprehensive sterilization systems',
-                'Dedicated recovery areas',
-                '24/7 emergency surgical capability'
+                t('GeneralSurgery.facilities.features.0'),
+                t('GeneralSurgery.facilities.features.1'),
+                t('GeneralSurgery.facilities.features.2'),
+                t('GeneralSurgery.facilities.features.3'),
+                t('GeneralSurgery.facilities.features.4')
               ],
               image: '/fallback-image.webp'
             },
 
             research: {
-              title: 'Surgical Innovation',
+              title: t('GeneralSurgery.research.title'),
               items: [
-                {
-                  title: 'Minimally Invasive Techniques',
-                  content: 'Developing new approaches to reduce surgical trauma and improve recovery.',
-                  icon: 'flask'
-                },
-                {
-                  title: 'Enhanced Recovery Protocols',
-                  content: 'Researching optimized pathways for postoperative recovery.',
-                  icon: 'dna'
-                },
-                {
-                  title: 'Surgical Education',
-                  content: 'Training programs for advancing surgical skills in the region.',
-                  icon: 'cpu'
-                }
+                { title: t('GeneralSurgery.research.items.minimallyInvasive.title'), content: t('GeneralSurgery.research.items.minimallyInvasive.content'), icon: 'flask' },
+                { title: t('GeneralSurgery.research.items.enhancedRecovery.title'), content: t('GeneralSurgery.research.items.enhancedRecovery.content'), icon: 'dna' },
+                { title: t('GeneralSurgery.research.items.education.title'), content: t('GeneralSurgery.research.items.education.content'), icon: 'cpu' }
               ]
             },
 
             testimonials: {
-              title: 'Patient Stories',
+              title: t('GeneralSurgery.testimonials.title'),
               items: [
-                {
-                  quote: 'My laparoscopic gallbladder surgery was smooth with minimal pain and quick recovery thanks to the skilled surgical team.',
-                  author: 'Amit S.',
-                  image: '/fallback-image.webp'
-                },
-                {
-                  quote: 'The surgeons explained everything clearly and took excellent care of me before and after my procedure.',
-                  author: 'Neha P.',
-                  image: '/fallback-image.webp'
-                }
+                { quote: t('GeneralSurgery.testimonials.items.amit.quote'), author: t('GeneralSurgery.testimonials.items.amit.author'), image: '/fallback-image.webp' },
+                { quote: t('GeneralSurgery.testimonials.items.neha.quote'), author: t('GeneralSurgery.testimonials.items.neha.author'), image: '/fallback-image.webp' }
               ]
             },
 
             cta: {
-              title: 'Need Surgical Consultation?',
-              subtitle: 'Our general surgeons are available to evaluate your condition and discuss treatment options.',
+              title: t('GeneralSurgery.cta.title'),
+              subtitle: t('GeneralSurgery.cta.subtitle'),
               buttons: [
-                {
-                  text: 'Schedule Consultation',
-                  isPrimary: true
-                },
-                {
-                  text: 'Learn About Procedures',
-                  isPrimary: false
-                }
+                { text: t('GeneralSurgery.cta.buttons.schedule.text'), isPrimary: true },
+                { text: t('GeneralSurgery.cta.buttons.learn.text'), isPrimary: false }
               ]
             }
           },
@@ -1624,143 +1452,90 @@ export const useDepartmentData = () => {
           {
             id: 'pediatrics',
             index: 10,
-            name: 'Pediatrics',
+              name: t('Pediatrics.name'),
             slug: 'pediatrics',
             heroImage: '/department/pediatrics.jpeg',
             bannerImage: '/department/pediatric-banner.jpeg',
-            heroTitle: 'Compassionate Care for Children of All Ages',
-            heroSubtitle: 'Specialized pediatric services for infants through adolescents in Gorakhpur.',
+              heroTitle: t('Pediatrics.heroTitle'),
+              heroSubtitle: t('Pediatrics.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Pediatric Approach',
-              description: [
-                'The Pediatrics department at Synergy Super Speciality Hospital provides comprehensive medical care for children from birth through adolescence.',
-                'Our team of pediatric specialists focuses on preventive care, early intervention, and treatment of childhood illnesses in a child-friendly environment.'
-              ],
-              whyChooseUs: [
-                'Board-certified pediatricians and neonatologists',
-                'Child-friendly clinic environment',
-                'Developmental and behavioral specialists',
-                '24/7 pediatric emergency care'
-              ]
+                title: t('Pediatrics.overview.title'),
+                description: [
+                  t('Pediatrics.overview.description.0'),
+                  t('Pediatrics.overview.description.1')
+                ],
+                whyChooseUs: [
+                  t('Pediatrics.overview.whyChooseUs.0'),
+                  t('Pediatrics.overview.whyChooseUs.1'),
+                  t('Pediatrics.overview.whyChooseUs.2'),
+                  t('Pediatrics.overview.whyChooseUs.3')
+                ]
             },
 
             treatments: {
-              title: 'Pediatric Services',
-              items: [
-                {
-                  title: 'Well-Child Care',
-                  description: 'Comprehensive check-ups, immunizations, and developmental screenings.'
-                },
-                {
-                  title: 'Neonatal Care',
-                  description: 'Specialized care for newborns, including premature and high-risk infants.'
-                },
-                {
-                  title: 'Pediatric Illness Management',
-                  description: 'Expert diagnosis and treatment of childhood illnesses and chronic conditions.'
-                }
-              ]
+                title: t('Pediatrics.treatments.title'),
+                items: [
+                  { title: t('Pediatrics.treatments.items.wellChild.title'), description: t('Pediatrics.treatments.items.wellChild.description') },
+                  { title: t('Pediatrics.treatments.items.neonatal.title'), description: t('Pediatrics.treatments.items.neonatal.description') },
+                  { title: t('Pediatrics.treatments.items.illnessManagement.title'), description: t('Pediatrics.treatments.items.illnessManagement.description') }
+                ]
             },
 
             stats: {
-              title: 'Our Pediatric Impact',
-              items: [
-                {
-                  value: '10,000+',
-                  label: 'Healthy Children in Our Care'
-                },
-                {
-                  value: '98%',
-                  label: 'Vaccination Completion Rate'
-                },
-                {
-                  value: '24/7',
-                  label: 'Availability for Emergencies'
-                },
-                {
-                  value: '15+',
-                  label: 'Years of Pediatric Experience'
-                }
-              ]
+                title: t('Pediatrics.stats.title'),
+                items: [
+                  { value: t('Pediatrics.stats.items.children.value'), label: t('Pediatrics.stats.items.children.label') },
+                  { value: t('Pediatrics.stats.items.vaccination.value'), label: t('Pediatrics.stats.items.vaccination.label') },
+                  { value: t('Pediatrics.stats.items.availability.value'), label: t('Pediatrics.stats.items.availability.label') },
+                  { value: t('Pediatrics.stats.items.experience.value'), label: t('Pediatrics.stats.items.experience.label') }
+                ]
             },
 
             team: {
-              title: 'Our Pediatric Team',
+              title: t('Pediatrics.team.title'),
               members: [
-                {
-                  name: 'Dr. AP Shahi',
-                  role: 'Pediatrician & Neonatologist',
-                  credentials: 'M.B.B.S, DCH,MIAP ,Pediatrician & Neonatologist Fellowship ,POPN Boston(USA)',
-                  image: '/doctors/dr-ap-shahi.webp',
-                  specialty: 'Neonatology, General Pediatrics'
-                }
+                { name: t('Pediatrics.team.members.drApShahi.name'), role: t('Pediatrics.team.members.drApShahi.role'), credentials: t('Pediatrics.team.members.drApShahi.credentials'), image: '/doctors/dr-ap-shahi.webp', specialty: t('Pediatrics.team.members.drApShahi.specialty') }
               ]
             },
 
             facilities: {
-              title: 'Child-Friendly Facilities',
-              description: 'Our pediatric unit is designed to make children feel comfortable while receiving top-quality medical care.',
+              title: t('Pediatrics.facilities.title'),
+              description: t('Pediatrics.facilities.description'),
               features: [
-                'Colorful, welcoming clinic environment',
-                'Specialized pediatric equipment',
-                'Neonatal intensive care capabilities',
-                'Child life specialists',
-                'Family-centered care approach'
+                t('Pediatrics.facilities.features.0'),
+                t('Pediatrics.facilities.features.1'),
+                t('Pediatrics.facilities.features.2'),
+                t('Pediatrics.facilities.features.3'),
+                t('Pediatrics.facilities.features.4')
               ],
               image: '/fallback-image.webp'
             },
 
             research: {
-              title: 'Pediatric Research',
+              title: t('Pediatrics.research.title'),
               items: [
-                {
-                  title: 'Childhood Nutrition',
-                  content: 'Studies on optimal nutrition for growth and development.',
-                  icon: 'flask'
-                },
-                {
-                  title: 'Vaccine Effectiveness',
-                  content: 'Monitoring local vaccine efficacy and safety.',
-                  icon: 'dna'
-                },
-                {
-                  title: 'Developmental Milestones',
-                  content: 'Research on early childhood development patterns.',
-                  icon: 'cpu'
-                }
+                { title: t('Pediatrics.research.items.nutrition.title'), content: t('Pediatrics.research.items.nutrition.content'), icon: 'flask' },
+                { title: t('Pediatrics.research.items.vaccine.title'), content: t('Pediatrics.research.items.vaccine.content'), icon: 'dna' },
+                { title: t('Pediatrics.research.items.development.title'), content: t('Pediatrics.research.items.development.content'), icon: 'cpu' }
               ]
             },
 
             testimonials: {
-              title: 'Parent Testimonials',
+              title: t('Pediatrics.testimonials.title'),
               items: [
-                {
-                  quote: 'The pediatric team has cared for all three of our children with such warmth and expertise.',
-                  author: 'Sunita R.',
-                  image: '/fallback-image.webp'
-                },
-                {
-                  quote: 'They made my nervous toddler feel completely at ease during every visit.',
-                  author: 'Rahul G.',
-                  image: '/fallback-image.webp'
-                }
+                { quote: t('Pediatrics.testimonials.items.sunita.quote'), author: t('Pediatrics.testimonials.items.sunita.author'), image: '/fallback-image.webp' },
+                { quote: t('Pediatrics.testimonials.items.rahul.quote'), author: t('Pediatrics.testimonials.items.rahul.author'), image: '/fallback-image.webp' }
               ]
             },
 
             cta: {
-              title: 'Schedule Your Child\'s Visit',
-              subtitle: 'Our pediatric team is ready to provide compassionate care for your child.',
+              title: t('Pediatrics.cta.title'),
+              subtitle: t('Pediatrics.cta.subtitle'),
               buttons: [
-                {
-                  text: 'Book Appointment',
-                  isPrimary: true
-                },
-                {
-                  text: 'Learn About Services',
-                  isPrimary: false
-                }
+                { text: t('Pediatrics.cta.buttons.bookAppointment.text'), isPrimary: true },
+                { text: t('Pediatrics.cta.buttons.learn.text'), isPrimary: false }
               ]
             }
           },
@@ -1768,65 +1543,44 @@ export const useDepartmentData = () => {
           {
             id: 'head-neck',
             index: 12,
-            name: 'Head & Neck',
+              name: t('HeadNeck.name'),
             slug: 'head-and-neck',
             heroImage: '/department/head-and-neck.jpeg',
             bannerImage: '/department/head-and-neck-banner.jpeg',
-            heroTitle: 'Specialized Care for Head & Neck Conditions',
-            heroSubtitle: 'Expert diagnosis and treatment of complex head and neck disorders in Gorakhpur.',
+              heroTitle: t('HeadNeck.heroTitle'),
+              heroSubtitle: t('HeadNeck.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Head & Neck Approach',
-              description: [
-                'The Head & Neck department at Synergy Super Speciality Hospital provides comprehensive care for conditions affecting this complex anatomical region.',
-                'Our team of specialists offers medical and surgical management of benign and malignant conditions, combining expertise with compassionate care.'
-              ],
-              whyChooseUs: [
-                'Specialized head and neck surgeons',
-                'Multidisciplinary tumor board review',
-                'Advanced diagnostic capabilities',
-                'Reconstructive surgery options'
-              ]
+                title: t('HeadNeck.overview.title'),
+                description: [
+                  t('HeadNeck.overview.description.0'),
+                  t('HeadNeck.overview.description.1')
+                ],
+                whyChooseUs: [
+                  t('HeadNeck.overview.whyChooseUs.0'),
+                  t('HeadNeck.overview.whyChooseUs.1'),
+                  t('HeadNeck.overview.whyChooseUs.2'),
+                  t('HeadNeck.overview.whyChooseUs.3')
+                ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('HeadNeck.treatments.title'),
               items: [
-                {
-                  title: 'Head & Neck Surgery',
-                  description: 'Expert surgical management of tumors, trauma, and other conditions.'
-                },
-                {
-                  title: 'Oncologic Care',
-                  description: 'Comprehensive treatment for head and neck cancers.'
-                },
-                {
-                  title: 'Reconstructive Procedures',
-                  description: 'Advanced techniques to restore form and function after surgery.'
-                }
+                { title: t('HeadNeck.treatments.items.surgery.title'), description: t('HeadNeck.treatments.items.surgery.description') },
+                { title: t('HeadNeck.treatments.items.oncologic.title'), description: t('HeadNeck.treatments.items.oncologic.description') },
+                { title: t('HeadNeck.treatments.items.reconstructive.title'), description: t('HeadNeck.treatments.items.reconstructive.description') }
               ]
             },
 
             stats: {
-              title: 'Head & Neck Expertise',
+              title: t('HeadNeck.stats.title'),
               items: [
-                {
-                  value: '500+',
-                  label: 'Complex Procedures Performed'
-                },
-                {
-                  value: '95%',
-                  label: 'Successful Treatment Outcomes'
-                },
-                {
-                  value: '24/7',
-                  label: 'Trauma Care Availability'
-                },
-                {
-                  value: '10+',
-                  label: 'Years of Specialized Experience'
-                }
+                { value: t('HeadNeck.stats.items.procedures.value'), label: t('HeadNeck.stats.items.procedures.label') },
+                { value: t('HeadNeck.stats.items.success.value'), label: t('HeadNeck.stats.items.success.label') },
+                { value: t('HeadNeck.stats.items.availability.value'), label: t('HeadNeck.stats.items.availability.label') },
+                { value: t('HeadNeck.stats.items.experience.value'), label: t('HeadNeck.stats.items.experience.label') }
               ]
             },
 
@@ -1919,92 +1673,65 @@ export const useDepartmentData = () => {
           {
             id: 'emergency-critical-care',
             index: 13,
-            name: 'Emergency & Critical Care',
+              name: t('EmergencyCriticalCare.name'),
             slug: 'emergency-critical-care',
             heroImage: '/department/emergency.jpg',
             bannerImage: '/department/emergency-banner.jpg',
-            heroTitle: '24/7 Emergency & Critical Care Services',
-            heroSubtitle: 'Immediate, life-saving care when every second counts in Gorakhpur.',
+              heroTitle: t('EmergencyCriticalCare.heroTitle'),
+              heroSubtitle: t('EmergencyCriticalCare.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Emergency Approach',
+              title: t('EmergencyCriticalCare.overview.title'),
               description: [
-                'The Emergency & Critical Care department at Synergy Super Speciality Hospital provides round-the-clock care for acute illnesses and injuries.',
-                'Our team of emergency physicians and critical care specialists is trained to handle medical emergencies of all kinds, from trauma to heart attacks, with rapid response and expert intervention.'
+                t('EmergencyCriticalCare.overview.description.0'),
+                t('EmergencyCriticalCare.overview.description.1')
               ],
               whyChooseUs: [
-                'Board-certified emergency physicians',
-                '24/7 availability of all specialties',
-                'Advanced life support capabilities',
-                'Seamless ICU transition when needed'
+                t('EmergencyCriticalCare.overview.whyChooseUs.0'),
+                t('EmergencyCriticalCare.overview.whyChooseUs.1'),
+                t('EmergencyCriticalCare.overview.whyChooseUs.2'),
+                t('EmergencyCriticalCare.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
-              items: [
-                {
-                  title: 'Emergency Care',
-                  description: 'Immediate evaluation and treatment for acute medical conditions and injuries.'
-                },
-                {
-                  title: 'Critical Care',
-                  description: 'Specialized ICU management for severely ill patients.'
-                },
-                {
-                  title: 'Trauma Response',
-                  description: 'Organized team approach to serious injuries and multi-system trauma.'
-                }
-              ]
+              title: t('EmergencyCriticalCare.treatments.title'),
+                items: [
+                  { title: t('EmergencyCriticalCare.treatments.items.emergency.title'), description: t('EmergencyCriticalCare.treatments.items.emergency.description') },
+                  { title: t('EmergencyCriticalCare.treatments.items.critical.title'), description: t('EmergencyCriticalCare.treatments.items.critical.description') },
+                  { title: t('EmergencyCriticalCare.treatments.items.trauma.title'), description: t('EmergencyCriticalCare.treatments.items.trauma.description') }
+                ]
             },
 
             stats: {
-              title: 'Emergency Care Statistics',
-              items: [
-                {
-                  value: '24/7',
-                  label: 'Emergency Department Availability'
-                },
-                {
-                  value: '<15 min',
-                  label: 'Average Physician Response Time'
-                },
-                {
-                  value: '95%',
-                  label: 'Patient Satisfaction Rate'
-                },
-                {
-                  value: '10+',
-                  label: 'Specialties Available for Consultation'
-                }
-              ]
+              title: t('EmergencyCriticalCare.stats.title'),
+                items: [
+                  { value: t('EmergencyCriticalCare.stats.items.availability.value'), label: t('EmergencyCriticalCare.stats.items.availability.label') },
+                  { value: t('EmergencyCriticalCare.stats.items.response.value'), label: t('EmergencyCriticalCare.stats.items.response.label') },
+                  { value: t('EmergencyCriticalCare.stats.items.satisfaction.value'), label: t('EmergencyCriticalCare.stats.items.satisfaction.label') },
+                  { value: t('EmergencyCriticalCare.stats.items.specialties.value'), label: t('EmergencyCriticalCare.stats.items.specialties.label') }
+                ]
             },
 
             team: {
-              title: 'Our Emergency Team',
-              members: [
-                {
-                  name: 'Dr. Harshit Mishra',
-                  role: 'Critical Care Specialist',
-                  credentials: 'M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO',
-                  image: '/doctors/dr-harshit-mishra.webp',
-                  specialty: 'Neurocritical Care'
-                }
-              ]
+              title: t('EmergencyCriticalCare.team.title'),
+                members: [
+                  { name: t('EmergencyCriticalCare.team.members.drHarshit.name'), role: t('EmergencyCriticalCare.team.members.drHarshit.role'), credentials: t('EmergencyCriticalCare.team.members.drHarshit.credentials'), image: '/doctors/dr-harshit-mishra.webp', specialty: t('EmergencyCriticalCare.team.members.drHarshit.specialty') }
+                ]
             },
 
             facilities: {
-              title: 'Emergency & ICU Facilities',
-              description: 'Our department is equipped to handle the most critical emergencies with advanced technology.',
+              title: t('EmergencyCriticalCare.facilities.title'),
+              description: t('EmergencyCriticalCare.facilities.description'),
               features: [
-                'Fully-equipped resuscitation bays',
-                'Advanced monitoring systems',
-                'Dedicated trauma room',
-                'Critical care pharmacy',
-                '24/7 imaging and lab services'
-              ],
-              image: '/fallback-image.webp'
+                  t('EmergencyCriticalCare.facilities.features.0'),
+                  t('EmergencyCriticalCare.facilities.features.1'),
+                  t('EmergencyCriticalCare.facilities.features.2'),
+                  t('EmergencyCriticalCare.facilities.features.3'),
+                  t('EmergencyCriticalCare.facilities.features.4')
+                ],
+                image: '/fallback-image.webp'
             },
 
             research: {
@@ -2063,78 +1790,51 @@ export const useDepartmentData = () => {
           {
             id: 'diagnostic-imaging',
             index: 14,
-            name: 'Diagnostic Imaging',
+            name: t('DiagnosticImaging.name'),
             slug: 'diagnostic-imaging',
             heroImage: '/department/diagnostic-imaging.webp',
             bannerImage: '/department/diagnostic-imaging-banner.webp',
-            heroTitle: 'Advanced Diagnostic Imaging Services',
-            heroSubtitle: 'Precision imaging for accurate diagnoses in Gorakhpur.',
+            heroTitle: t('DiagnosticImaging.heroTitle'),
+            heroSubtitle: t('DiagnosticImaging.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Imaging Approach',
+              title: t('DiagnosticImaging.overview.title'),
               description: [
-                'The Diagnostic Imaging department at Synergy Super Speciality Hospital utilizes cutting-edge technology to provide comprehensive imaging services.',
-                'Our radiologists and technicians deliver high-quality diagnostic results with minimal patient discomfort using the latest imaging modalities.'
+                t('DiagnosticImaging.overview.description.0'),
+                t('DiagnosticImaging.overview.description.1')
               ],
               whyChooseUs: [
-                'Board-certified radiologists',
-                'Advanced imaging technology',
-                'Fast result turnaround',
-                'Low-dose radiation protocols'
+                t('DiagnosticImaging.overview.whyChooseUs.0'),
+                t('DiagnosticImaging.overview.whyChooseUs.1'),
+                t('DiagnosticImaging.overview.whyChooseUs.2'),
+                t('DiagnosticImaging.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('DiagnosticImaging.treatments.title'),
               items: [
-                {
-                  title: 'MRI Scans',
-                  description: 'High-resolution magnetic resonance imaging for soft tissue evaluation.'
-                },
-                {
-                  title: 'CT Scans',
-                  description: 'Advanced computed tomography with 3D reconstruction capabilities.'
-                },
-                {
-                  title: 'Ultrasound',
-                  description: 'Real-time imaging for abdominal, obstetric and vascular studies.'
-                }
+                { title: t('DiagnosticImaging.treatments.items.mri.title'), description: t('DiagnosticImaging.treatments.items.mri.description') },
+                { title: t('DiagnosticImaging.treatments.items.ct.title'), description: t('DiagnosticImaging.treatments.items.ct.description') },
+                { title: t('DiagnosticImaging.treatments.items.ultrasound.title'), description: t('DiagnosticImaging.treatments.items.ultrasound.description') }
               ]
             },
 
             stats: {
-              title: 'Imaging Statistics',
+              title: t('DiagnosticImaging.stats.title'),
               items: [
-                {
-                  value: '30 min',
-                  label: 'Average Scan Time'
-                },
-                {
-                  value: '24/7',
-                  label: 'Emergency Imaging Availability'
-                },
-                {
-                  value: '98%',
-                  label: 'Diagnostic Accuracy Rate'
-                },
-                {
-                  value: '10+',
-                  label: 'Imaging Modalities Available'
-                }
+                { value: t('DiagnosticImaging.stats.items.scanTime.value'), label: t('DiagnosticImaging.stats.items.scanTime.label') },
+                { value: t('DiagnosticImaging.stats.items.emergency.value'), label: t('DiagnosticImaging.stats.items.emergency.label') },
+                { value: t('DiagnosticImaging.stats.items.accuracy.value'), label: t('DiagnosticImaging.stats.items.accuracy.label') },
+                { value: t('DiagnosticImaging.stats.items.modalities.value'), label: t('DiagnosticImaging.stats.items.modalities.label') }
               ]
             },
 
             team: {
-              title: 'Our Imaging Team',
+              title: t('DiagnosticImaging.team.title'),
               members: [
-                {
-                  name: 'Dr. Rajesh Verma',
-                  role: 'Chief Radiologist',
-                  credentials: 'M.B.B.S, MD Radiology',
-                  image: '/doctors/dr-rajesh-verma.webp',
-                  specialty: 'Neuroimaging'
-                }
+                { name: t('DiagnosticImaging.team.members.drRajesh.name'), role: t('DiagnosticImaging.team.members.drRajesh.role'), credentials: t('DiagnosticImaging.team.members.drRajesh.credentials'), image: '/doctors/dr-rajesh-verma.webp', specialty: t('DiagnosticImaging.team.members.drRajesh.specialty') }
               ]
             },
 
@@ -2207,65 +1907,44 @@ export const useDepartmentData = () => {
           {
             id: 'dialysis',
             index: 15,
-            name: 'Dialysis',
+            name: t('Dialysis.name'),
             slug: 'dialysis',
             heroImage: '/dialysis-hero.webp',
             bannerImage: '/dialysis-hero-banner.webp',
-            heroTitle: 'Comprehensive Renal Care Services',
-            heroSubtitle: 'Advanced dialysis treatments for kidney health in Gorakhpur.',
+            heroTitle: t('Dialysis.heroTitle'),
+            heroSubtitle: t('Dialysis.heroSubtitle'),
             isFeatured: false,
 
             overview: {
-              title: 'Our Dialysis Approach',
+              title: t('Dialysis.overview.title'),
               description: [
-                'The Dialysis Unit at Synergy Super Speciality Hospital provides life-sustaining treatments for patients with renal failure.',
-                'Our nephrology team offers personalized dialysis regimens using the latest technology in a comfortable environment.'
+                t('Dialysis.overview.description.0'),
+                t('Dialysis.overview.description.1')
               ],
               whyChooseUs: [
-                'Experienced nephrologists',
-                'Individualized treatment plans',
-                'Advanced water purification',
-                'Compassionate care'
+                t('Dialysis.overview.whyChooseUs.0'),
+                t('Dialysis.overview.whyChooseUs.1'),
+                t('Dialysis.overview.whyChooseUs.2'),
+                t('Dialysis.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
               title: 'Our Services',
               items: [
-                {
-                  title: 'Hemodialysis',
-                  description: 'Blood filtration using advanced dialysis machines.'
-                },
-                {
-                  title: 'Peritoneal Dialysis',
-                  description: 'Home dialysis training and support services.'
-                },
-                {
-                  title: 'Continuous Renal Replacement',
-                  description: 'Critical care dialysis for ICU patients.'
-                }
+                { title: t('Dialysis.treatments.items.hemodialysis.title'), description: t('Dialysis.treatments.items.hemodialysis.description') },
+                { title: t('Dialysis.treatments.items.peritoneal.title'), description: t('Dialysis.treatments.items.peritoneal.description') },
+                { title: t('Dialysis.treatments.items.crrt.title'), description: t('Dialysis.treatments.items.crrt.description') }
               ]
             },
 
             stats: {
               title: 'Dialysis Statistics',
               items: [
-                {
-                  value: '15+',
-                  label: 'Dialysis Stations'
-                },
-                {
-                  value: '6 days',
-                  label: 'Weekly Operation'
-                },
-                {
-                  value: '95%',
-                  label: 'Treatment Efficacy'
-                },
-                {
-                  value: '500+',
-                  label: 'Patients Served Monthly'
-                }
+                { value: t('Dialysis.stats.items.stations.value'), label: t('Dialysis.stats.items.stations.label') },
+                { value: t('Dialysis.stats.items.weekly.value'), label: t('Dialysis.stats.items.weekly.label') },
+                { value: t('Dialysis.stats.items.efficacy.value'), label: t('Dialysis.stats.items.efficacy.label') },
+                { value: t('Dialysis.stats.items.patients.value'), label: t('Dialysis.stats.items.patients.label') }
               ]
             },
 
@@ -2351,43 +2030,34 @@ export const useDepartmentData = () => {
           {
             id: 'radiology',
             index: 16,
-            name: 'Radiology',
+            name: t('Radiology.name'),
             slug: 'radiology',
             heroImage: '/radiology-hero.webp',
             bannerImage: '/radiology-hero-banner.webp',
-            heroTitle: 'Comprehensive Radiology Services',
-            heroSubtitle: 'Advanced diagnostic and interventional radiology in Gorakhpur.',
+            heroTitle: t('Radiology.heroTitle'),
+            heroSubtitle: t('Radiology.heroSubtitle'),
             isFeatured: false,
 
             overview: {
-              title: 'Our Radiology Approach',
+              title: t('Radiology.overview.title'),
               description: [
-                'The Radiology Department at Synergy Super Speciality Hospital provides both diagnostic and therapeutic imaging services.',
-                'Our subspecialty-trained radiologists deliver precise interpretations using cutting-edge imaging technology.'
+                t('Radiology.overview.description.0'),
+                t('Radiology.overview.description.1')
               ],
               whyChooseUs: [
-                'Fellowship-trained radiologists',
-                'Multidisciplinary approach',
-                'Minimally invasive procedures',
-                'Rapid reporting'
+                t('Radiology.overview.whyChooseUs.0'),
+                t('Radiology.overview.whyChooseUs.1'),
+                t('Radiology.overview.whyChooseUs.2'),
+                t('Radiology.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('Radiology.treatments.title'),
               items: [
-                {
-                  title: 'Diagnostic Radiology',
-                  description: 'X-ray, fluoroscopy and contrast studies for accurate diagnosis.'
-                },
-                {
-                  title: 'Interventional Radiology',
-                  description: 'Image-guided minimally invasive procedures.'
-                },
-                {
-                  title: 'Nuclear Medicine',
-                  description: 'Advanced molecular imaging and therapy.'
-                }
+                { title: t('Radiology.treatments.items.diagnostic.title'), description: t('Radiology.treatments.items.diagnostic.description') },
+                { title: t('Radiology.treatments.items.interventional.title'), description: t('Radiology.treatments.items.interventional.description') },
+                { title: t('Radiology.treatments.items.nuclear.title'), description: t('Radiology.treatments.items.nuclear.description') }
               ]
             },
 
@@ -2414,29 +2084,23 @@ export const useDepartmentData = () => {
             },
 
             team: {
-              title: 'Our Radiology Team',
+              title: t('Radiology.team.title'),
               members: [
-                {
-                  name: 'Dr. Amit Patel',
-                  role: 'Interventional Radiologist',
-                  credentials: 'M.B.B.S, MD, DNB Radiology',
-                  image: '/doctors/dr-amit-patel.webp',
-                  specialty: 'Vascular Interventions'
-                }
+                { name: t('Radiology.team.members.drAmit.name'), role: t('Radiology.team.members.drAmit.role'), credentials: t('Radiology.team.members.drAmit.credentials'), image: '/doctors/dr-amit-patel.webp', specialty: t('Radiology.team.members.drAmit.specialty') }
               ]
             },
 
             facilities: {
-              title: 'Radiology Facilities',
-              description: 'Our department features comprehensive imaging technology for diagnosis and treatment.',
+              title: t('Radiology.facilities.title'),
+              description: t('Radiology.facilities.description'),
               features: [
-                'Digital radiography suites',
-                'Angiography lab',
-                'PET-CT scanner',
-                'Bone densitometry',
-                'Teleradiology capabilities'
-              ],
-              image: '/radiology-lab.webp'
+                  t('Radiology.facilities.features.0'),
+                  t('Radiology.facilities.features.1'),
+                  t('Radiology.facilities.features.2'),
+                  t('Radiology.facilities.features.3'),
+                  t('Radiology.facilities.features.4')
+                ],
+                image: '/radiology-lab.webp'
             },
 
             research: {
@@ -2495,90 +2159,63 @@ export const useDepartmentData = () => {
           {
             id: 'pathology',
             index: 17,
-            name: 'Pathology',
+            name: t('Pathology.name'),
             slug: 'pathology',
             heroImage: '/pathology-hero.webp',
             bannerImage: '/pathology-hero-banner.webp',
-            heroTitle: 'Comprehensive Pathology Services',
-            heroSubtitle: 'Precise diagnostic testing for accurate treatment in Gorakhpur.',
+            heroTitle: t('Pathology.heroTitle'),
+            heroSubtitle: t('Pathology.heroSubtitle'),
             isFeatured: false,
 
             overview: {
-              title: 'Our Pathology Approach',
+              title: t('Pathology.overview.title'),
               description: [
-                'The Pathology Department at Synergy Super Speciality Hospital provides comprehensive laboratory diagnostics.',
-                'Our pathologists deliver accurate and timely results using advanced techniques and quality-controlled processes.'
+                t('Pathology.overview.description.0'),
+                t('Pathology.overview.description.1')
               ],
               whyChooseUs: [
-                'Board-certified pathologists',
-                'CAP-accredited lab',
-                'Rapid turnaround times',
-                'Subspecialty expertise'
+                t('Pathology.overview.whyChooseUs.0'),
+                t('Pathology.overview.whyChooseUs.1'),
+                t('Pathology.overview.whyChooseUs.2'),
+                t('Pathology.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
               title: 'Our Services',
               items: [
-                {
-                  title: 'Histopathology',
-                  description: 'Tissue diagnosis for cancers and other diseases.'
-                },
-                {
-                  title: 'Cytopathology',
-                  description: 'Cell analysis including Pap smears and FNAC.'
-                },
-                {
-                  title: 'Molecular Pathology',
-                  description: 'Advanced genetic and molecular testing.'
-                }
+                { title: t('Pathology.treatments.items.histopathology.title'), description: t('Pathology.treatments.items.histopathology.description') },
+                { title: t('Pathology.treatments.items.cytopathology.title'), description: t('Pathology.treatments.items.cytopathology.description') },
+                { title: t('Pathology.treatments.items.molecular.title'), description: t('Pathology.treatments.items.molecular.description') }
               ]
             },
 
             stats: {
               title: 'Pathology Statistics',
               items: [
-                {
-                  value: '24 hrs',
-                  label: 'Routine Report Time'
-                },
-                {
-                  value: '99.8%',
-                  label: 'Test Accuracy'
-                },
-                {
-                  value: '200+',
-                  label: 'Available Tests'
-                },
-                {
-                  value: 'NABL',
-                  label: 'Accreditation'
-                }
+                { value: t('Pathology.stats.items.routine.value'), label: t('Pathology.stats.items.routine.label') },
+                { value: t('Pathology.stats.items.accuracy.value'), label: t('Pathology.stats.items.accuracy.label') },
+                { value: t('Pathology.stats.items.available.value'), label: t('Pathology.stats.items.available.label') },
+                { value: t('Pathology.stats.items.accreditation.value'), label: t('Pathology.stats.items.accreditation.label') }
               ]
             },
 
             team: {
               title: 'Our Pathology Team',
               members: [
-                {
-                  name: 'Dr. Sunita Rao',
-                  role: 'Pathologist',
-                  credentials: 'M.B.B.S, MD Pathology',
-                  image: '/doctors/dr-sunita-rao.webp',
-                  specialty: 'Oncopathology'
-                }
+                { name: t('Pathology.team.members.drSunita.name'), role: t('Pathology.team.members.drSunita.role'), credentials: t('Pathology.team.members.drSunita.credentials'), image: '/doctors/dr-sunita-rao.webp', specialty: t('Pathology.team.members.drSunita.specialty') }
               ]
             },
 
             facilities: {
-              title: 'Pathology Facilities',
-              description: 'Our laboratory features advanced diagnostic technology with rigorous quality control.',
+              title: t('Pathology.facilities.title'),
+              description: t('Pathology.facilities.description'),
               features: [
-                'Automated analyzers',
-                'Immunohistochemistry lab',
-                'Flow cytometry',
-                'Molecular diagnostics',
-                'Digital pathology'
+                t('Pathology.facilities.features.0'),
+                t('Pathology.facilities.features.1'),
+                t('Pathology.facilities.features.2'),
+                t('Pathology.facilities.features.3'),
+                t('Pathology.facilities.features.4')
               ],
               image: '/pathology-lab.webp'
             },
@@ -2639,7 +2276,7 @@ export const useDepartmentData = () => {
           {
             id: 'microbiology',
             index: 18,
-            name: 'Microbiology',
+            name: t('Microbiology.name'),
             slug: 'microbiology',
             heroImage: '/microbiology-hero.webp',
             bannerImage: '/microbiology-hero-banner.webp',
@@ -2648,81 +2285,54 @@ export const useDepartmentData = () => {
             isFeatured: false,
 
             overview: {
-              title: 'Our Microbiology Approach',
+              title: t('Microbiology.overview.title'),
               description: [
-                'The Microbiology Laboratory at Synergy Super Speciality Hospital provides comprehensive infectious disease testing.',
-                'Our team identifies pathogens and provides antimicrobial susceptibility testing to guide effective treatment.'
+                t('Microbiology.overview.description.0'),
+                t('Microbiology.overview.description.1')
               ],
               whyChooseUs: [
-                'Expert microbiologists',
-                'Rapid diagnostic methods',
-                'Antimicrobial stewardship',
-                'Infection control support'
+                t('Microbiology.overview.whyChooseUs.0'),
+                t('Microbiology.overview.whyChooseUs.1'),
+                t('Microbiology.overview.whyChooseUs.2'),
+                t('Microbiology.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('Microbiology.treatments.title'),
               items: [
-                {
-                  title: 'Culture & Sensitivity',
-                  description: 'Identification of pathogens and effective antibiotics.'
-                },
-                {
-                  title: 'Molecular Diagnostics',
-                  description: 'PCR-based detection of microorganisms.'
-                },
-                {
-                  title: 'Serology',
-                  description: 'Antibody detection for infectious diseases.'
-                }
+                { title: t('Microbiology.treatments.items.culture.title'), description: t('Microbiology.treatments.items.culture.description') },
+                { title: t('Microbiology.treatments.items.molecular.title'), description: t('Microbiology.treatments.items.molecular.description') },
+                { title: t('Microbiology.treatments.items.serology.title'), description: t('Microbiology.treatments.items.serology.description') }
               ]
             },
 
             stats: {
-              title: 'Microbiology Statistics',
+              title: t('Microbiology.stats.title'),
               items: [
-                {
-                  value: '48 hrs',
-                  label: 'Average Culture Time'
-                },
-                {
-                  value: '95%',
-                  label: 'Identification Accuracy'
-                },
-                {
-                  value: '100+',
-                  label: 'Pathogens Tested'
-                },
-                {
-                  value: '24/7',
-                  label: 'Emergency Testing'
-                }
+                { value: t('Microbiology.stats.items.cultureTime.value'), label: t('Microbiology.stats.items.cultureTime.label') },
+                { value: t('Microbiology.stats.items.accuracy.value'), label: t('Microbiology.stats.items.accuracy.label') },
+                { value: t('Microbiology.stats.items.pathogens.value'), label: t('Microbiology.stats.items.pathogens.label') },
+                { value: t('Microbiology.stats.items.emergency.value'), label: t('Microbiology.stats.items.emergency.label') }
               ]
             },
 
             team: {
-              title: 'Our Microbiology Team',
+              title: t('Microbiology.team.title'),
               members: [
-                {
-                  name: 'Dr. Anil Kumar',
-                  role: 'Microbiologist',
-                  credentials: 'M.B.B.S, MD Microbiology',
-                  image: '/doctors/dr-anil-kumar.webp',
-                  specialty: 'Antimicrobial Resistance'
-                }
+                { name: t('Microbiology.team.members.drAnil.name'), role: t('Microbiology.team.members.drAnil.role'), credentials: t('Microbiology.team.members.drAnil.credentials'), image: '/doctors/dr-anil-kumar.webp', specialty: t('Microbiology.team.members.drAnil.specialty') }
               ]
             },
 
             facilities: {
-              title: 'Microbiology Facilities',
-              description: 'Our laboratory features advanced technology for comprehensive infectious disease testing.',
+              title: t('Microbiology.facilities.title'),
+              description: t('Microbiology.facilities.description'),
               features: [
-                'Automated culture systems',
-                'MALDI-TOF identification',
-                'Molecular biology lab',
-                'Biosafety level 2 containment',
-                'Antimicrobial susceptibility testing'
+                t('Microbiology.facilities.features.0'),
+                t('Microbiology.facilities.features.1'),
+                t('Microbiology.facilities.features.2'),
+                t('Microbiology.facilities.features.3'),
+                t('Microbiology.facilities.features.4')
               ],
               image: '/microbiology-lab.webp'
             },
@@ -2783,141 +2393,141 @@ export const useDepartmentData = () => {
           {
             id: 'biochemistry',
             index: 19,
-            name: 'Biochemistry',
+            name: t('Biochemistry.name'),
             slug: 'biochemistry',
             heroImage: '/biochemistry-hero.webp',
             bannerImage: '/biochemistry-hero-banner.webp',
-            heroTitle: 'Comprehensive Biochemistry Services',
-            heroSubtitle: 'Advanced metabolic and chemical pathology testing in Gorakhpur.',
+            heroTitle: t('Biochemistry.heroTitle'),
+            heroSubtitle: t('Biochemistry.heroSubtitle'),
             isFeatured: false,
 
             overview: {
-              title: 'Our Biochemistry Approach',
+              title: t('Biochemistry.overview.title'),
               description: [
-                'The Biochemistry Laboratory at Synergy Super Speciality Hospital provides comprehensive metabolic testing.',
-                'Our automated analyzers and quality-controlled processes deliver accurate results for disease diagnosis and monitoring.'
+                t('Biochemistry.overview.description.0'),
+                t('Biochemistry.overview.description.1')
               ],
               whyChooseUs: [
-                'Automated analyzers',
-                'Rapid turnaround',
-                'Specialized testing',
-                'Quality assurance'
+                t('Biochemistry.overview.whyChooseUs.0'),
+                t('Biochemistry.overview.whyChooseUs.1'),
+                t('Biochemistry.overview.whyChooseUs.2'),
+                t('Biochemistry.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('Biochemistry.treatments.title'),
               items: [
                 {
-                  title: 'Routine Chemistry',
-                  description: 'Comprehensive metabolic panels and electrolyte analysis.'
+                  title: t('Biochemistry.treatments.items.routineChemistry.title'),
+                  description: t('Biochemistry.treatments.items.routineChemistry.description')
                 },
                 {
-                  title: 'Endocrinology',
-                  description: 'Hormone testing and endocrine function evaluation.'
+                  title: t('Biochemistry.treatments.items.endocrinology.title'),
+                  description: t('Biochemistry.treatments.items.endocrinology.description')
                 },
                 {
-                  title: 'Therapeutic Drug Monitoring',
-                  description: 'Medication level testing for optimal dosing.'
+                  title: t('Biochemistry.treatments.items.therapeuticDrugMonitoring.title'),
+                  description: t('Biochemistry.treatments.items.therapeuticDrugMonitoring.description')
                 }
               ]
             },
 
             stats: {
-              title: 'Biochemistry Statistics',
+              title: t('Biochemistry.stats.title'),
               items: [
                 {
-                  value: '2 hrs',
-                  label: 'Routine Test Turnaround'
+                  value: t('Biochemistry.stats.items.turnaround.value'),
+                  label: t('Biochemistry.stats.items.turnaround.label')
                 },
                 {
-                  value: '99%',
-                  label: 'Analytical Accuracy'
+                  value: t('Biochemistry.stats.items.accuracy.value'),
+                  label: t('Biochemistry.stats.items.accuracy.label')
                 },
                 {
-                  value: '150+',
-                  label: 'Available Tests'
+                  value: t('Biochemistry.stats.items.available.value'),
+                  label: t('Biochemistry.stats.items.available.label')
                 },
                 {
-                  value: '24/7',
-                  label: 'Emergency Testing'
+                  value: t('Biochemistry.stats.items.emergency.value'),
+                  label: t('Biochemistry.stats.items.emergency.label')
                 }
               ]
             },
 
             team: {
-              title: 'Our Biochemistry Team',
+              title: t('Biochemistry.team.title'),
               members: [
                 {
-                  name: 'Dr. Priya Singh',
-                  role: 'Biochemist',
-                  credentials: 'M.Sc, PhD Biochemistry',
+                  name: t('Biochemistry.team.members.drPriya.name'),
+                  role: t('Biochemistry.team.members.drPriya.role'),
+                  credentials: t('Biochemistry.team.members.drPriya.credentials'),
                   image: '/doctors/dr-priya-singh.webp',
-                  specialty: 'Metabolic Disorders'
+                  specialty: t('Biochemistry.team.members.drPriya.specialty')
                 }
               ]
             },
 
             facilities: {
-              title: 'Biochemistry Facilities',
-              description: 'Our laboratory features state-of-the-art analyzers for precise biochemical testing.',
+              title: t('Biochemistry.facilities.title'),
+              description: t('Biochemistry.facilities.description'),
               features: [
-                'Automated chemistry analyzers',
-                'Electrolyte analyzers',
-                'HbA1c testing',
-                'Blood gas analysis',
-                'Quality control systems'
+                t('Biochemistry.facilities.features.0'),
+                t('Biochemistry.facilities.features.1'),
+                t('Biochemistry.facilities.features.2'),
+                t('Biochemistry.facilities.features.3'),
+                t('Biochemistry.facilities.features.4')
               ],
               image: '/biochemistry-lab.webp'
             },
 
             research: {
-              title: 'Biochemistry Research',
+              title: t('Biochemistry.research.title'),
               items: [
                 {
-                  title: 'Cardiac Markers',
-                  content: 'Evaluating new biomarkers for heart disease.',
+                  title: t('Biochemistry.research.items.cardiacMarkers.title'),
+                  content: t('Biochemistry.research.items.cardiacMarkers.content'),
                   icon: 'heart-pulse'
                 },
                 {
-                  title: 'Diabetes Monitoring',
-                  content: 'Improving glycemic control assessment.',
+                  title: t('Biochemistry.research.items.diabetesMonitoring.title'),
+                  content: t('Biochemistry.research.items.diabetesMonitoring.content'),
                   icon: 'vial'
                 },
                 {
-                  title: 'Automation',
-                  content: 'Enhancing laboratory efficiency.',
+                  title: t('Biochemistry.research.items.automation.title'),
+                  content: t('Biochemistry.research.items.automation.content'),
                   icon: 'cpu'
                 }
               ]
             },
 
             testimonials: {
-              title: 'Patient Experiences',
+              title: t('Biochemistry.testimonials.title'),
               items: [
                 {
-                  quote: 'The comprehensive metabolic panel gave my doctor a complete picture of my health status.',
-                  author: 'Rakesh B.',
+                  quote: t('Biochemistry.testimonials.items.rakesh.quote'),
+                  author: t('Biochemistry.testimonials.items.rakesh.author'),
                   image: '/fallback-image.webp'
                 },
                 {
-                  quote: 'Accurate and timely test results helped adjust my diabetes medication perfectly.',
-                  author: 'Anita L.',
+                  quote: t('Biochemistry.testimonials.items.anita.quote'),
+                  author: t('Biochemistry.testimonials.items.anita.author'),
                   image: '/fallback-image.webp'
                 }
               ]
             },
 
             cta: {
-              title: 'Metabolic Testing',
-              subtitle: 'Contact us for biochemistry testing or result inquiries.',
+              title: t('Biochemistry.cta.title'),
+              subtitle: t('Biochemistry.cta.subtitle'),
               buttons: [
                 {
-                  text: 'Request Tests',
+                  text: t('Biochemistry.cta.buttons.requestTests.text'),
                   isPrimary: true
                 },
                 {
-                  text: 'View Test Prep',
+                  text: t('Biochemistry.cta.buttons.viewTestPrep.text'),
                   isPrimary: false
                 }
               ]
@@ -2927,148 +2537,148 @@ export const useDepartmentData = () => {
           {
             id: 'pain-and-palliative-care',
             index: 20,
-            name: 'Pain & Palliative Care',
+            name: t('PainAndPalliativeCare.name'),
             slug: 'pain-and-palliative-care',
             heroImage: '/department/pain-and-palliative-care.jpeg',
             bannerImage: '/department/pain-and-palliative-care-banner.jpeg',
-            heroTitle: 'Compassionate Pain Management & Palliative Care',
-            heroSubtitle: 'Specialized care for chronic pain and serious illness in Gorakhpur.',
+            heroTitle: t('PainAndPalliativeCare.heroTitle'),
+            heroSubtitle: t('PainAndPalliativeCare.heroSubtitle'),
             isFeatured: true,
 
             overview: {
-              title: 'Our Palliative Approach',
+              title: t('PainAndPalliativeCare.overview.title'),
               description: [
-                'The Pain & Palliative Care department at Synergy Super Speciality Hospital provides comprehensive care for patients with chronic pain and life-limiting illnesses.',
-                'Our interdisciplinary team focuses on improving quality of life through expert pain management, symptom control, and psychosocial support for patients and families.'
+                t('PainAndPalliativeCare.overview.description.0'),
+                t('PainAndPalliativeCare.overview.description.1')
               ],
               whyChooseUs: [
-                'Board-certified pain specialists',
-                'Personalized treatment plans',
-                'Holistic approach to symptom management',
-                'Emotional and spiritual support services'
+                t('PainAndPalliativeCare.overview.whyChooseUs.0'),
+                t('PainAndPalliativeCare.overview.whyChooseUs.1'),
+                t('PainAndPalliativeCare.overview.whyChooseUs.2'),
+                t('PainAndPalliativeCare.overview.whyChooseUs.3')
               ]
             },
 
             treatments: {
-              title: 'Our Services',
+              title: t('PainAndPalliativeCare.treatments.title'),
               items: [
                 {
-                  title: 'Chronic Pain Management',
-                  description: 'Multimodal approaches for persistent pain conditions'
+                  title: t('PainAndPalliativeCare.treatments.items.chronicPain.title'),
+                  description: t('PainAndPalliativeCare.treatments.items.chronicPain.description')
                 },
                 {
-                  title: 'Symptom Control',
-                  description: 'Expert management of pain, nausea, fatigue and other symptoms'
+                  title: t('PainAndPalliativeCare.treatments.items.symptomControl.title'),
+                  description: t('PainAndPalliativeCare.treatments.items.symptomControl.description')
                 },
                 {
-                  title: 'End-of-Life Care',
-                  description: 'Compassionate care focused on comfort and dignity'
+                  title: t('PainAndPalliativeCare.treatments.items.endOfLife.title'),
+                  description: t('PainAndPalliativeCare.treatments.items.endOfLife.description')
                 }
               ]
             },
 
             stats: {
-              title: 'Palliative Care Statistics',
+              title: t('PainAndPalliativeCare.stats.title'),
               items: [
                 {
-                  value: '90%',
-                  label: 'Patients Report Improved Pain Control'
+                  value: t('PainAndPalliativeCare.stats.items.improved.value'),
+                  label: t('PainAndPalliativeCare.stats.items.improved.label')
                 },
                 {
-                  value: '24/7',
-                  label: 'On-Call Support Available'
+                  value: t('PainAndPalliativeCare.stats.items.onCall.value'),
+                  label: t('PainAndPalliativeCare.stats.items.onCall.label')
                 },
                 {
-                  value: '98%',
-                  label: 'Family Satisfaction Rate'
+                  value: t('PainAndPalliativeCare.stats.items.satisfaction.value'),
+                  label: t('PainAndPalliativeCare.stats.items.satisfaction.label')
                 },
                 {
-                  value: '50+',
-                  label: 'Pain Management Protocols'
+                  value: t('PainAndPalliativeCare.stats.items.protocols.value'),
+                  label: t('PainAndPalliativeCare.stats.items.protocols.label')
                 }
               ]
             },
 
             team: {
-              title: 'Our Palliative Care Team',
+              title: t('PainAndPalliativeCare.team.title'),
               members: [
                 {
-                  name: 'Dr. Anjali Verma',
-                  role: 'Palliative Care Specialist',
-                  credentials: 'M.B.B.S, MD (Pain Medicine), Fellowship in Palliative Care',
+                  name: t('PainAndPalliativeCare.team.members.drAnjali.name'),
+                  role: t('PainAndPalliativeCare.team.members.drAnjali.role'),
+                  credentials: t('PainAndPalliativeCare.team.members.drAnjali.credentials'),
                   image: '/doctors/dr-anjali-verma.webp',
-                  specialty: 'Cancer Pain Management'
+                  specialty: t('PainAndPalliativeCare.team.members.drAnjali.specialty')
                 },
                 {
-                  name: 'Dr. Rajiv Khanna',
-                  role: 'Pain Management Physician',
-                  credentials: 'M.B.B.S, DA, FIPM',
+                  name: t('PainAndPalliativeCare.team.members.drRajiv.name'),
+                  role: t('PainAndPalliativeCare.team.members.drRajiv.role'),
+                  credentials: t('PainAndPalliativeCare.team.members.drRajiv.credentials'),
                   image: '/doctors/dr-rajiv-khanna.webp',
-                  specialty: 'Interventional Pain Procedures'
+                  specialty: t('PainAndPalliativeCare.team.members.drRajiv.specialty')
                 }
               ]
             },
 
             facilities: {
-              title: 'Palliative Care Facilities',
-              description: 'Our department provides a healing environment with specialized equipment for comprehensive pain and symptom management.',
+              title: t('PainAndPalliativeCare.facilities.title'),
+              description: t('PainAndPalliativeCare.facilities.description'),
               features: [
-                'Dedicated pain management clinic',
-                'Procedure room for nerve blocks',
-                'Comfortable family consultation rooms',
-                'Palliative care inpatient unit',
-                '24/7 pain management support'
+                t('PainAndPalliativeCare.facilities.features.0'),
+                t('PainAndPalliativeCare.facilities.features.1'),
+                t('PainAndPalliativeCare.facilities.features.2'),
+                t('PainAndPalliativeCare.facilities.features.3'),
+                t('PainAndPalliativeCare.facilities.features.4')
               ],
               image: '/fallback-image.webp'
             },
 
             research: {
-              title: 'Pain Medicine Research',
+              title: t('PainAndPalliativeCare.research.title'),
               items: [
                 {
-                  title: 'Novel Analgesics',
-                  content: 'Studying new approaches to opioid-sparing pain control.',
+                  title: t('PainAndPalliativeCare.research.items.novelAnalgesics.title'),
+                  content: t('PainAndPalliativeCare.research.items.novelAnalgesics.content'),
                   icon: 'flask'
                 },
                 {
-                  title: 'Quality of Life Metrics',
-                  content: 'Developing better measurement tools for palliative outcomes.',
+                  title: t('PainAndPalliativeCare.research.items.qualityOfLife.title'),
+                  content: t('PainAndPalliativeCare.research.items.qualityOfLife.content'),
                   icon: 'chart-line'
                 },
                 {
-                  title: 'Interventional Techniques',
-                  content: 'Researching minimally invasive pain procedures.',
+                  title: t('PainAndPalliativeCare.research.items.interventionalTechniques.title'),
+                  content: t('PainAndPalliativeCare.research.items.interventionalTechniques.content'),
                   icon: 'microscope'
                 }
               ]
             },
 
             testimonials: {
-              title: 'Patient Experiences',
+              title: t('PainAndPalliativeCare.testimonials.title'),
               items: [
                 {
-                  quote: 'After years of chronic back pain, the team developed a plan that finally gave me relief and my life back.',
-                  author: 'Vikram S.',
+                  quote: t('PainAndPalliativeCare.testimonials.items.vikram.quote'),
+                  author: t('PainAndPalliativeCare.testimonials.items.vikram.author'),
                   image: '/fallback-image.webp'
                 },
                 {
-                  quote: 'The compassionate care my mother received in her final days brought comfort to our whole family.',
-                  author: 'Priya K.',
+                  quote: t('PainAndPalliativeCare.testimonials.items.priya.quote'),
+                  author: t('PainAndPalliativeCare.testimonials.items.priya.author'),
                   image: '/fallback-image.webp'
                 }
               ]
             },
 
             cta: {
-              title: 'Compassionate Care When You Need It Most',
-              subtitle: 'Consultations available for pain management and palliative care services.',
+              title: t('PainAndPalliativeCare.cta.title'),
+              subtitle: t('PainAndPalliativeCare.cta.subtitle'),
               buttons: [
                 {
-                  text: 'Schedule Consultation',
+                  text: t('PainAndPalliativeCare.cta.buttons.schedule.text'),
                   isPrimary: true
                 },
                 {
-                  text: 'Learn About Our Approach',
+                  text: t('PainAndPalliativeCare.cta.buttons.learn.text'),
                   isPrimary: false
                 }
               ]

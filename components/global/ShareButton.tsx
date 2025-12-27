@@ -87,7 +87,7 @@ const ShareButton = ({
           <DropdownMenuItem
             key={platform}
             onClick={() => shareOnPlatform(platform as SharePlatform)}
-            className="flex items-center gap-2 p-2 cursor-pointer hover:!bg-gray-100 hover:!text-black rounded-md"
+                        className="flex items-center gap-2 p-2 cursor-pointer hover:bg-gray-100! hover:text-black! rounded-md"
           >
             {icon}
             <span>{label}</span>

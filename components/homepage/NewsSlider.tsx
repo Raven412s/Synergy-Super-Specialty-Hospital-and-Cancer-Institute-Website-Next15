@@ -119,7 +119,7 @@ export default function NewsSlider() {
           {[...newsData, newsData[0]].map((news, index) => (
             <motion.div
               key={`${index}-${news.title}`}
-              className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72 rounded-xl overflow-hidden relative snap-start hide-scrollbar aspect-[3/4]"
+              className="min-w-full sm:min-w-[45%] lg:min-w-[30%] min-h-72 rounded-xl overflow-hidden relative snap-start hide-scrollbar aspect-3/4"
               initial={{ y: 60, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
@@ -132,7 +132,7 @@ export default function NewsSlider() {
                 fill
                 className="w-full h-60 object-cover object-center hover:scale-110 transition-all duration-400 ease-in-out"
               />
-              <div className="absolute flex items-center justify-end flex-col inset-0 bg-gradient-to-t from-black/60 to-transparent p-4 pointer-events-none z-10">
+              <div className="absolute flex items-center justify-end flex-col inset-0 bg-linear-to-t from-black/60 to-transparent p-4 pointer-events-none z-10">
                 <h3 className="text-base text-stone-50 font-medium text-center">
                   {news.title}
                 </h3>
@@ -147,7 +147,7 @@ export default function NewsSlider() {
             variant="outline"
             size="xl"
             title="Slide left by one card."
-            className="size-12 !p-5 z-10 hidden md:flex rounded-full bg-primary shadow-md hover:bg-indigo-100 hover:text-primary text-indigo-100"
+            className="size-12 p-5 z-10 hidden md:flex rounded-full bg-primary shadow-md hover:bg-indigo-100 hover:text-primary text-indigo-100"
           >
             <ChevronLeft className="size-6" />
           </Button>
@@ -156,7 +156,7 @@ export default function NewsSlider() {
             variant="outline"
             size="xl"
             title="Slide right by one card."
-            className="size-12 !p-5 z-10 hidden md:flex rounded-full bg-primary shadow-md hover:bg-indigo-100 hover:text-primary text-indigo-100"
+            className="size-12 p-5 z-10 hidden md:flex rounded-full bg-primary shadow-md hover:bg-indigo-100 hover:text-primary text-indigo-100"
           >
             <ChevronRight className="size-6" />
           </Button>

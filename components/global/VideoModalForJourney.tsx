@@ -11,6 +11,7 @@ import { VideoModalTriggerProps } from "@/types";
 import React, { useRef, useState } from "react";
 import { ImageWithFallback } from "./ImageWithFallback";
 import { Pause, Play, Volume2, VolumeX } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export function VideoModalForJourney({
     image,
@@ -18,6 +19,7 @@ export function VideoModalForJourney({
     children,
     className,
 }: VideoModalTriggerProps) {
+    const t = useTranslations('global');
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
     const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -55,9 +57,10 @@ export function VideoModalForJourney({
                         <ImageWithFallback
                             fallbackSrc='/fallback-image.webp'
                             src={image}
-                            alt="Video thumbnail"
-                            fill
-                            className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt={t('videoThumbnail')}
+                            width={240}
+                            height={240}
+                            className="object-cover"
                         />
                         <ImageWithFallback
                             fallbackSrc='/fallback-image.webp'
@@ -84,7 +87,7 @@ export function VideoModalForJourney({
                     />
 
                     {/* Video controls */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent flex items-center">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/80 to-transparent flex items-center">
                         <button
                             onClick={togglePlay}
                             className="p-2 rounded-full bg-white/10 hover:bg-white/20 mr-4 flex items-center justify-center"

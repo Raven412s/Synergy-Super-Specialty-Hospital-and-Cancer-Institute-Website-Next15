@@ -1028,6 +1028,168 @@
                 }
             }
         },
+        "Biochemistry": {
+            "name": "Biochemistry",
+            "heroTitle": "Comprehensive Biochemistry Services",
+            "heroSubtitle": "Advanced metabolic and chemical pathology testing in Gorakhpur.",
+            "overview": {
+                "title": "Our Biochemistry Approach",
+                "description": [
+                    "The Biochemistry Laboratory at Synergy Super Speciality Hospital provides comprehensive metabolic testing.",
+                    "Our automated analyzers and quality-controlled processes deliver accurate results for disease diagnosis and monitoring."
+                ],
+                "whyChooseUs": [
+                    "Automated analyzers",
+                    "Rapid turnaround",
+                    "Specialized testing",
+                    "Quality assurance"
+                ]
+            },
+            "treatments": {
+                "title": "Our Services",
+                "items": {
+                    "routineChemistry": {
+                        "title": "Routine Chemistry",
+                        "description": "Comprehensive metabolic panels and electrolyte analysis."
+                    },
+                    "endocrinology": {
+                        "title": "Endocrinology",
+                        "description": "Hormone testing and endocrine function evaluation."
+                    },
+                    "therapeuticDrugMonitoring": {
+                        "title": "Therapeutic Drug Monitoring",
+                        "description": "Medication level testing for optimal dosing."
+                    }
+                }
+            },
+            "stats": {
+                "title": "Biochemistry Statistics",
+                "items": {
+                    "turnaround": { "value": "2 hrs", "label": "Routine Test Turnaround" },
+                    "accuracy": { "value": "99%", "label": "Analytical Accuracy" },
+                    "available": { "value": "150+", "label": "Available Tests" },
+                    "emergency": { "value": "24/7", "label": "Emergency Testing" }
+                }
+            },
+            "team": {
+                "title": "Our Biochemistry Team",
+                "members": {
+                    "drPriya": {
+                        "name": "Dr. Priya Singh",
+                        "role": "Biochemist",
+                        "credentials": "M.Sc, PhD Biochemistry",
+                        "specialty": "Metabolic Disorders"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Biochemistry Facilities",
+                "description": "Our laboratory features state-of-the-art analyzers for precise biochemical testing.",
+                "features": [
+                    "Automated chemistry analyzers",
+                    "Electrolyte analyzers",
+                    "HbA1c testing",
+                    "Blood gas analysis",
+                    "Quality control systems"
+                ]
+            },
+            "research": {
+                "title": "Biochemistry Research",
+                "items": {
+                    "cardiacMarkers": { "title": "Cardiac Markers", "content": "Evaluating new biomarkers for heart disease." },
+                    "diabetesMonitoring": { "title": "Diabetes Monitoring", "content": "Improving glycemic control assessment." },
+                    "automation": { "title": "Automation", "content": "Enhancing laboratory efficiency." }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "rakesh": { "quote": "The comprehensive metabolic panel gave my doctor a complete picture of my health status.", "author": "Rakesh B." },
+                    "anita": { "quote": "Accurate and timely test results helped adjust my diabetes medication perfectly.", "author": "Anita L." }
+                }
+            },
+            "cta": {
+                "title": "Metabolic Testing",
+                "subtitle": "Contact us for biochemistry testing or result inquiries.",
+                "buttons": {
+                    "requestTests": { "text": "Request Tests" },
+                    "viewTestPrep": { "text": "View Test Prep" }
+                }
+            }
+        },
+        "PainAndPalliativeCare": {
+            "name": "Pain & Palliative Care",
+            "heroTitle": "Compassionate Pain Management & Palliative Care",
+            "heroSubtitle": "Specialized care for chronic pain and serious illness in Gorakhpur.",
+            "overview": {
+                "title": "Our Palliative Approach",
+                "description": [
+                    "The Pain & Palliative Care department at Synergy Super Speciality Hospital provides comprehensive care for patients with chronic pain and life-limiting illnesses.",
+                    "Our interdisciplinary team focuses on improving quality of life through expert pain management, symptom control, and psychosocial support for patients and families."
+                ],
+                "whyChooseUs": [
+                    "Board-certified pain specialists",
+                    "Personalized treatment plans",
+                    "Holistic approach to symptom management",
+                    "Emotional and spiritual support services"
+                ]
+            },
+            "treatments": {
+                "title": "Our Services",
+                "items": {
+                    "chronicPain": { "title": "Chronic Pain Management", "description": "Multimodal approaches for persistent pain conditions" },
+                    "symptomControl": { "title": "Symptom Control", "description": "Expert management of pain, nausea, fatigue and other symptoms" },
+                    "endOfLife": { "title": "End-of-Life Care", "description": "Compassionate care focused on comfort and dignity" }
+                }
+            },
+            "stats": {
+                "title": "Palliative Care Statistics",
+                "items": {
+                    "improved": { "value": "90%", "label": "Patients Report Improved Pain Control" },
+                    "onCall": { "value": "24/7", "label": "On-Call Support Available" },
+                    "satisfaction": { "value": "98%", "label": "Family Satisfaction Rate" },
+                    "protocols": { "value": "50+", "label": "Pain Management Protocols" }
+                }
+            },
+            "team": {
+                "title": "Our Palliative Care Team",
+                "members": {
+                    "drAnjali": { "name": "Dr. Anjali Verma", "role": "Palliative Care Specialist", "credentials": "M.B.B.S, MD (Pain Medicine), Fellowship in Palliative Care", "specialty": "Cancer Pain Management" },
+                    "drRajiv": { "name": "Dr. Rajiv Khanna", "role": "Pain Management Physician", "credentials": "M.B.B.S, DA, FIPM", "specialty": "Interventional Pain Procedures" }
+                }
+            },
+            "facilities": {
+                "title": "Palliative Care Facilities",
+                "description": "Our department provides a healing environment with specialized equipment for comprehensive pain and symptom management.",
+                "features": [
+                    "Dedicated pain management clinic",
+                    "Procedure room for nerve blocks",
+                    "Comfortable family consultation rooms",
+                    "Palliative care inpatient unit",
+                    "24/7 pain management support"
+                ]
+            },
+            "research": {
+                "title": "Pain Medicine Research",
+                "items": {
+                    "novelAnalgesics": { "title": "Novel Analgesics", "content": "Studying new approaches to opioid-sparing pain control." },
+                    "qualityOfLife": { "title": "Quality of Life Metrics", "content": "Developing better measurement tools for palliative outcomes." },
+                    "interventionalTechniques": { "title": "Interventional Techniques", "content": "Researching minimally invasive pain procedures." }
+                }
+            },
+            "testimonials": {
+                "title": "Patient Experiences",
+                "items": {
+                    "vikram": { "quote": "After years of chronic back pain, the team developed a plan that finally gave me relief and my life back.", "author": "Vikram S." },
+                    "priya": { "quote": "The compassionate care my mother received in her final days brought comfort to our whole family.", "author": "Priya K." }
+                }
+            },
+            "cta": {
+                "title": "Compassionate Care When You Need It Most",
+                "subtitle": "Consultations available for pain management and palliative care services.",
+                "buttons": { "schedule": { "text": "Schedule Consultation" }, "learn": { "text": "Learn About Our Approach" } }
+            }
+        },
         "SurgicalOncology": {
             "name": "Surgical Oncology",
             "heroTitle": "Expert Surgical Solutions for Cancer Care",
@@ -2395,7 +2557,69 @@
                     }
                 }
             },
-            "DiagnosticImaging": {
+            
+            "stats": {
+                "title": "Emergency Care Statistics",
+                "items": {
+                    "availability": {
+                        "value": "24/7",
+                        "label": "Emergency Department Availability"
+                    },
+                    "response": {
+                        "value": "<15 min",
+                        "label": "Average Physician Response Time"
+                    },
+                    "satisfaction": {
+                        "value": "95%",
+                        "label": "Patient Satisfaction Rate"
+                    },
+                    "specialties": {
+                        "value": "10+",
+                        "label": "Specialties Available for Consultation"
+                    }
+                }
+            },
+            "team": {
+                "title": "Our Emergency Team",
+                "members": {
+                    "drHarshit": {
+                        "name": "Dr. Harshit Mishra",
+                        "role": "Critical Care Specialist",
+                        "credentials": "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
+                        "specialty": "Neurocritical Care"
+                    }
+                }
+            },
+            "facilities": {
+                "title": "Emergency & ICU Facilities",
+                "description": "Our department is equipped to handle the most critical emergencies with advanced technology.",
+                "features": [
+                    "Fully-equipped resuscitation bays",
+                    "Advanced monitoring systems",
+                    "Dedicated trauma room",
+                    "Critical care pharmacy",
+                    "24/7 imaging and lab services"
+                ],
+                "image": "/fallback-image.webp"
+            },
+            "testimonials": {
+                "title": "Patient Stories",
+                "items": {}
+            },
+            "cta": {
+                "title": "Immediate Emergency Assistance",
+                "subtitle": "Call our emergency desk for urgent support.",
+                "buttons": {
+                    "call": {
+                        "text": "Call Emergency"
+                    },
+                    "visit": {
+                        "text": "Visit ER"
+                    }
+                }
+            }
+        },
+        "DiagnosticImaging": {
                 "name": "Diagnostic Imaging",
                 "heroTitle": "Advanced Diagnostic Imaging Services",
                 "heroSubtitle": "Precision imaging for accurate diagnoses in Gorakhpur.",
@@ -2950,67 +3174,6 @@
                     }
                 }
             },
-            "stats": {
-                "title": "Emergency Care Statistics",
-                "items": {
-                    "availability": {
-                        "value": "24/7",
-                        "label": "Emergency Department Availability"
-                    },
-                    "response": {
-                        "value": "<15 min",
-                        "label": "Average Physician Response Time"
-                    },
-                    "satisfaction": {
-                        "value": "95%",
-                        "label": "Patient Satisfaction Rate"
-                    },
-                    "specialties": {
-                        "value": "10+",
-                        "label": "Specialties Available for Consultation"
-                    }
-                }
-            },
-            "team": {
-                "title": "Our Emergency Team",
-                "members": {
-                    "drHarshit": {
-                        "name": "Dr. Harshit Mishra",
-                        "role": "Critical Care Specialist",
-                        "credentials": "M.B.B.S MD,PDAF(Neuroanesthesia),Ex Seniorfellow Resident SGPGI LKO",
-                        "specialty": "Neurocritical Care"
-                    }
-                }
-            },
-            "facilities": {
-                "title": "Emergency & ICU Facilities",
-                "description": "Our department is equipped to handle the most critical emergencies with advanced technology.",
-                "features": [
-                    "Fully-equipped resuscitation bays",
-                    "Advanced monitoring systems",
-                    "Dedicated trauma room",
-                    "Critical care pharmacy",
-                    "24/7 imaging and lab services"
-                ],
-                "image": "/fallback-image.webp"
-            },
-            "testimonials": {
-                "title": "Patient Stories",
-                "items": {}
-            },
-            "cta": {
-                "title": "Immediate Emergency Assistance",
-                "subtitle": "Call our emergency desk for urgent support.",
-                "buttons": {
-                    "call": {
-                        "text": "Call Emergency"
-                    },
-                    "visit": {
-                        "text": "Visit ER"
-                    }
-                }
-            }
-        },
         "Neurosurgery": {
             "name": "Neurosurgery",
             "heroTitle": "Advanced Surgical Care for Brain and Spine",
@@ -3133,491 +3296,6 @@
                     },
                     "learnAboutProcedures": {
                         "text": "Learn About Procedures"
-                    }
-                }
-            }
-        },
-        "DiagnosticImaging": {
-            "name": "",
-            "heroTitle": "",
-            "heroSubtitle": "",
-            "overview": {
-                "title": "",
-                "description": [],
-                "whyChooseUs": []
-            },
-            "treatments": {
-                "title": "",
-                "items": {
-                    "mri": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "ct": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "ultrasound": {
-                        "title": "",
-                        "description": ""
-                    }
-                }
-            },
-            "stats": {
-                "title": "",
-                "items": {
-                    "scanTime": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "emergency": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "accuracy": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "modalities": {
-                        "value": "",
-                        "label": ""
-                    }
-                }
-            },
-            "team": {
-                "title": "",
-                "members": {
-                    "drRajesh": {
-                        "name": "",
-                        "role": "",
-                        "credentials": "",
-                        "specialty": ""
-                    }
-                }
-            },
-            "facilities": {
-                "title": "",
-                "description": "",
-                "features": [],
-                "image": ""
-            },
-            "research": {
-                "title": "",
-                "items": {
-                    "modalities": {
-                        "title": "",
-                        "content": ""
-                    }
-                }
-            },
-            "testimonials": {
-                "title": "",
-                "items": {}
-            },
-            "cta": {
-                "title": "",
-                "subtitle": "",
-                "buttons": {
-                    "book": {
-                        "text": ""
-                    },
-                    "learn": {
-                        "text": ""
-                    }
-                }
-            }
-        },
-        "Dialysis": {
-            "name": "",
-            "heroTitle": "",
-            "heroSubtitle": "",
-            "overview": {
-                "title": "",
-                "description": [],
-                "whyChooseUs": []
-            },
-            "treatments": {
-                "title": "",
-                "items": {
-                    "hemodialysis": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "peritoneal": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "crrt": {
-                        "title": "",
-                        "description": ""
-                    }
-                }
-            },
-            "stats": {
-                "title": "",
-                "items": {
-                    "stations": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "weekly": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "efficacy": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "patients": {
-                        "value": "",
-                        "label": ""
-                    }
-                }
-            },
-            "team": {
-                "title": "",
-                "members": {}
-            },
-            "facilities": {
-                "title": "",
-                "description": "",
-                "features": [],
-                "image": ""
-            },
-            "testimonials": {
-                "title": "",
-                "items": {}
-            },
-            "cta": {
-                "title": "",
-                "subtitle": "",
-                "buttons": {
-                    "book": {
-                        "text": ""
-                    },
-                    "learn": {
-                        "text": ""
-                    }
-                }
-            }
-        },
-        "Radiology": {
-            "name": "",
-            "heroTitle": "",
-            "heroSubtitle": "",
-            "overview": {
-                "title": "",
-                "description": [],
-                "whyChooseUs": []
-            },
-            "treatments": {
-                "title": "",
-                "items": {
-                    "diagnostic": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "interventional": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "nuclear": {
-                        "title": "",
-                        "description": ""
-                    }
-                }
-            },
-            "stats": {
-                "title": "",
-                "items": {
-                    "turnaround": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "subspecialties": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "success": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "coverage": {
-                        "value": "",
-                        "label": ""
-                    }
-                }
-            },
-            "team": {
-                "title": "",
-                "members": {
-                    "drAmit": {
-                        "name": "",
-                        "role": "",
-                        "credentials": "",
-                        "specialty": ""
-                    }
-                }
-            },
-            "facilities": {
-                "title": "",
-                "description": "",
-                "features": [],
-                "image": ""
-            },
-            "research": {
-                "title": "",
-                "items": {
-                    "imageGuided": {
-                        "title": "",
-                        "content": ""
-                    },
-                    "contrast": {
-                        "title": "",
-                        "content": ""
-                    },
-                    "ai": {
-                        "title": "",
-                        "content": ""
-                    }
-                }
-            },
-            "testimonials": {
-                "title": "",
-                "items": {
-                    "rahul": {
-                        "quote": "",
-                        "author": ""
-                    },
-                    "geeta": {
-                        "quote": "",
-                        "author": ""
-                    }
-                }
-            },
-            "cta": {
-                "title": "",
-                "subtitle": "",
-                "buttons": {
-                    "bookImaging": {
-                        "text": ""
-                    },
-                    "learn": {
-                        "text": ""
-                    }
-                }
-            }
-        },
-        "Pathology": {
-            "name": "",
-            "heroTitle": "",
-            "heroSubtitle": "",
-            "overview": {
-                "title": "",
-                "description": [],
-                "whyChooseUs": []
-            },
-            "treatments": {
-                "title": "",
-                "items": {
-                    "histopathology": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "cytopathology": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "molecular": {
-                        "title": "",
-                        "description": ""
-                    }
-                }
-            },
-            "stats": {
-                "title": "",
-                "items": {
-                    "routine": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "accuracy": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "available": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "accreditation": {
-                        "value": "",
-                        "label": ""
-                    }
-                }
-            },
-            "team": {
-                "title": "",
-                "members": {
-                    "drSunita": {
-                        "name": "",
-                        "role": "",
-                        "credentials": "",
-                        "specialty": ""
-                    }
-                }
-            },
-            "facilities": {
-                "title": "",
-                "description": "",
-                "features": [],
-                "image": ""
-            },
-            "research": {
-                "title": "",
-                "items": {
-                    "biomarkers": {
-                        "title": "",
-                        "content": ""
-                    },
-                    "digital": {
-                        "title": "",
-                        "content": ""
-                    },
-                    "liquid": {
-                        "title": "",
-                        "content": ""
-                    }
-                }
-            },
-            "testimonials": {
-                "title": "",
-                "items": {
-                    "arun": {
-                        "quote": "",
-                        "author": ""
-                    },
-                    "meena": {
-                        "quote": "",
-                        "author": ""
-                    }
-                }
-            },
-            "cta": {
-                "title": "",
-                "subtitle": "",
-                "buttons": {
-                    "book": {
-                        "text": ""
-                    },
-                    "learn": {
-                        "text": ""
-                    }
-                }
-            }
-        },
-        "Microbiology": {
-            "name": "",
-            "heroTitle": "",
-            "heroSubtitle": "",
-            "overview": {
-                "title": "",
-                "description": [],
-                "whyChooseUs": []
-            },
-            "treatments": {
-                "title": "",
-                "items": {
-                    "culture": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "molecular": {
-                        "title": "",
-                        "description": ""
-                    },
-                    "serology": {
-                        "title": "",
-                        "description": ""
-                    }
-                }
-            },
-            "stats": {
-                "title": "",
-                "items": {
-                    "cultureTime": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "accuracy": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "pathogens": {
-                        "value": "",
-                        "label": ""
-                    },
-                    "emergency": {
-                        "value": "",
-                        "label": ""
-                    }
-                }
-            },
-            "team": {
-                "title": "",
-                "members": {
-                    "drAnil": {
-                        "name": "",
-                        "role": "",
-                        "credentials": "",
-                        "specialty": ""
-                    }
-                }
-            },
-            "facilities": {
-                "title": "",
-                "description": "",
-                "features": [],
-                "image": ""
-            },
-            "research": {
-                "title": "",
-                "items": {
-                    "resistance": {
-                        "title": "",
-                        "content": ""
-                    },
-                    "rapid": {
-                        "title": "",
-                        "content": ""
-                    },
-                    "epi": {
-                        "title": "",
-                        "content": ""
-                    }
-                }
-            },
-            "testimonials": {
-                "title": "",
-                "items": {
-                    "sanjay": {
-                        "quote": "",
-                        "author": ""
-                    },
-                    "neha": {
-                        "quote": "",
-                        "author": ""
-                    }
-                }
-            },
-            "cta": {
-                "title": "",
-                "subtitle": "",
-                "buttons": {
-                    "request": {
-                        "text": ""
-                    },
-                    "consult": {
-                        "text": ""
                     }
                 }
             }
@@ -3901,7 +3579,8 @@
         "contactUs": "Contact Us",
         "toggleSidebar": "Toggle Sidebar",
         "ayushmaanBharatScheme": "Ayushmaan Bharat Scheme",
-        "primeMinisterModi": "Prime Minister Narendra Modi"
+        "primeMinisterModi": "Prime Minister Narendra Modi",
+        "learnMore": "Learn More"
     },
     "forms": {
         "searchCountryPlaceholder": "Search Country..."

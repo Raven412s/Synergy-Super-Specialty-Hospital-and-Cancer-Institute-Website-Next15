@@ -230,7 +230,7 @@ const SliderCard = ({ props, t }: { props: DepartmentData, t: (key: string) => s
                     </div>
                 </CardContent>
 
-                <CardFooter className="flex flex-col sm:flex-row gap-2 !px-0 !pb-0 mt-3 sm:mt-4">
+                <CardFooter className="flex flex-col sm:flex-row gap-2 px-0! pb-0! mt-3 sm:mt-4">
                     <Link href={"#"} className="w-full">
                         <Button
                             variant={"outline"}
